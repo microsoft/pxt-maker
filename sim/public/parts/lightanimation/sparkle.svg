@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   height="100"
+   viewBox="0 0 99.999995 99.999995"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="sparkle.svg"
+   inkscape:export-filename="/Users/sammysam/Work/pxt-adafruit/sim/public/blocks/lightanimation/sparkle.png"
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ff39ff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="-9.7920653"
+     inkscape:cy="36.248041"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1676"
+     inkscape:window-height="1005"
+     inkscape:window-x="4"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     units="px" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-952.36221)">
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:7.99999905;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.84285715"
+       id="path4221"
+       sodipodi:sides="4"
+       sodipodi:cx="39.176643"
+       sodipodi:cy="990.88275"
+       sodipodi:r1="17.869633"
+       sodipodi:r2="8.9348145"
+       sodipodi:arg1="-0.035699113"
+       sodipodi:arg2="0.74969905"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 57.034891,990.24496 -11.318911,6.72614 -5.901542,11.7699 -6.726143,-11.31891 -11.769899,-5.90154 11.318911,-6.72615 5.901542,-11.7699 6.726142,11.31891 z" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:8.43468571;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.84285715"
+       id="path4223"
+       sodipodi:sides="4"
+       sodipodi:cx="72.983521"
+       sodipodi:cy="992.00555"
+       sodipodi:r1="14.90189"
+       sodipodi:r2="7.4509449"
+       sodipodi:arg1="0.01694753"
+       sodipodi:arg2="0.80234569"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 87.88327,992.25809 -9.721178,5.10461 -5.43111,9.5426 -5.104604,-9.72117 -9.542607,-5.43111 9.721178,-5.10461 5.43111,-9.54261 5.104604,9.72118 z"
+       transform="matrix(0.72729223,0,0,0.79161336,17.114342,221.95027)" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:3.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.84285715"
+       id="path4225"
+       sodipodi:sides="4"
+       sodipodi:cx="46.920692"
+       sodipodi:cy="1028.7778"
+       sodipodi:r1="7.9392152"
+       sodipodi:r2="3.9696076"
+       sodipodi:arg1="0"
+       sodipodi:arg2="0.78539816"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 54.859908,1028.7778 -5.132279,2.807 -2.806937,5.1322 -2.806936,-5.1322 -5.132279,-2.807 5.132279,-2.8069 2.806936,-5.1323 2.806937,5.1323 z" />
+  </g>
+</svg>

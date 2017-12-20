@@ -1,0 +1,94 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@importGoogleFonts: false;
+
+@fontName  : 'Open Sans';
+
+@emSize      : 14px;
+@fontSize    : 13px;
+
+@primaryColor: #2f2f2f;
+@secondaryColor: @blue;
+
+@red:#CC2936;
+@yellow:#FFC914;
+@teal:#08415C;
+@violet:#C200C0;
+@brown:#2E282A;
+@grey:#999;
+
+/* Adafruit colors */
+@blue:#2EB7ED;
+@pink:#FB48C7;
+
+@green: #40bf4a; /*#00922B;*/
+@purple:#8073E5;
+@orange:#FFA702;
+
+@pageBackground: #ecf0f1;
+@serialTextColor: #333;
+
+/*******************************
+         PXT Overrides
+*******************************/
+
+/*-------------------
+   Menu
+--------------------*/
+
+@mainMenuInvertedBackground: @primaryColor;
+@mainMenuTutorialBackground: @orange;
+
+@mainMenuBlocksJsToggleColor: @black;
+
+@tutorialSelectedMenuColor: @blue;
+
+/*-------------------
+   Layout
+--------------------*/
+
+@sideBarWidth: 22rem;
+@simulatorWidth: 24rem;
+@simulatorWidthSmall: 20rem;
+
+/*-------------------
+   Background
+--------------------*/
+
+@simulatorBackground: #dfdfdf; /*#313638;*/
+@editorToolsBackground: #dfdfdf; /*#1e1e1e;*/
+@blocklySvgColor: #4c4b4d; /*#1e1e1e;*/
+
+/*-------------------
+   Full screen
+--------------------*/
+
+@fullscreenBackgroundGradientStart: @mainMenuInvertedBackground;
+@fullscreenBackgroundGradientEnd: #fff;
+
+/*-------------------
+   Side Docs
+--------------------*/
+
+@sidedocsButtonsTop: (@mainMenuHeight + 1rem);
+@sidedocsButtonsRight: 4.25rem;
+
+/*-------------------
+   Editor
+--------------------*/
+
+@blocklyToolboxColor: transparent;
+@trashIconColor: @primaryColor;
+
+
+/*-------------------
+   Blockly
+--------------------*/
+
+@blocklyRowWidthWide: 160px;
+@blocklyRowWidthComputer: 140px;
+
+@blocklyScrollbarColor: #000;
+@blocklyScrollbarOpacity: 0.8;

@@ -1,0 +1,16 @@
+{
+    "name": "pixel",
+    "description": "The Adafruit NeoPixel driver",
+    "files": [
+        "neopixel.cpp",
+        "neopixel.ts",
+        "shims.d.ts",
+        "enums.d.ts"
+    ],
+    "testFiles": [
+    ],
+    "public": true,
+    "dependencies": {
+        "core": "file:../core"
+    }
+}

@@ -1,0 +1,216 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+
+/*--------------
+      Rotate In
+---------------*/
+
+/* Inward */
+.transition.rotate {
+  animation-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+.transition.rotate.in {
+  animation-name: rotateIn;
+}
+.transition[class*="rotate down left"].in {
+  animation-name: rotateInDownLeft;
+}
+.transition[class*="rotate down right"].in {
+  animation-name: rotateInDownRight;
+}
+.transition[class*="rotate up left"].in {
+  animation-name: rotateInUpLeft;
+}
+.transition[class*="rotate up right"].in {
+  animation-name: rotateInUpRight;
+}
+
+/* Outward */
+.transition.rotate.out {
+  animation-name: rotateOut;
+}
+.transition[class*="rotate down left"].out {
+  animation-name: rotateOutDownLeft;
+}
+.transition[class*="rotate down right"].out {
+  animation-name: rotateOutDownRight;
+}
+.transition[class*="rotate up left"].out {
+  animation-name: rotateOutUpLeft;
+}
+.transition[class*="rotate up right"].out {
+  animation-name: rotateOutUpRight;
+}
+
+/* In */
+@keyframes rotateIn {
+  from {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes rotateInDownLeft {
+  from {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes rotateInDownRight {
+  from {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: right bottom;
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes rotateInUpLeft {
+  from {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes rotateInUpRight {
+  from {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, -90deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: right bottom;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* Out */
+@keyframes rotateOut {
+  from {
+    transform-origin: center;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0;
+  }
+}
+@keyframes rotateOutDownLeft {
+  from {
+    transform-origin: left bottom;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+}
+@keyframes rotateOutDownRight {
+  from {
+    transform-origin: right bottom;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+}
+@keyframes rotateOutUpLeft {
+  from {
+    transform-origin: left bottom;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+}
+@keyframes rotateOutUpRight {
+  from {
+    transform-origin: right bottom;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, 90deg);
+    opacity: 0;
+  }
+}
+
+
+
+/*--------------
+    Roll in
+---------------*/
+
+/* Inward */
+.transition.roll {
+  animation-duration: 2s;
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+.transition.roll.in {
+  animation-name: rollIn;
+}
+.transition.roll.out {
+  animation-name: rollOut;
+}
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes rollOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "{0}",
+    "dependencies": {
+        "metro-express": "file:../metro-express"
+    },
+    "description": "",
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ]
+}

@@ -1,0 +1,5 @@
+# don't check in until OSS request is approved
+sparkfun-*
+raspberrypi-*
+arduino-*
+max6675*

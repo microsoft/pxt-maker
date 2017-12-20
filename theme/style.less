@@ -1,0 +1,83 @@
+/* Import all components */
+@import 'semantic';
+@import 'pxt';
+@import 'themes/default/globals/site.variables';
+@import 'themes/pxt/globals/site.variables';
+@import 'site/globals/site.variables';
+@import 'themes/default/collections/menu.variables';
+
+@import 'fieldeditors';
+
+/* Reference import */
+@import (reference) "semantic.less";
+
+/*******************************
+    Add your custom CSS here
+*******************************/
+
+.ui.button.download-button {
+    &:extend(.ui.secondary.button all);
+}
+
+.ui.button.editortools-btn {
+    &:extend(.ui.blue.button all);
+}
+
+.projectname-input {
+    &:extend(.inverted all);
+}
+
+.ui.button.getting-started-btn {
+    &:extend(.ui.green.button all);
+}
+
+.ui.button.exit-tutorial-btn {
+    &:extend(.ui.blue.button all);
+}
+
+.restart-button, .play-button, .collapse-button, .mute-button:not(.red), .trace-button:not(.orange), .fullscreen-button  {
+    background-color: #cfcfcf !important;
+}
+
+/* Editor menu toggle */
+#menubar .ui.menu.fixed .item.editor-menuitem .ui.grid {
+    background: fade(@black, 20%) !important;
+    border: 3px solid rgba(233, 236, 239, 0.2);
+}
+
+.sandboxfooter a:not(.thin) {
+    color:white !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+}
+
+/* Mobile */
+@media only screen and (max-width: @largestMobileScreen) {
+    #filelist {
+        background: transparent;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: @tabletBreakpoint) and (max-width: @largestTabletScreen) {
+}
+
+/* Small Monitor */
+@media only screen and (min-width: @computerBreakpoint) and (max-width: @largestSmallMonitor) {
+}
+
+/* Large Monitor */
+@media only screen and (min-width: @largeMonitorBreakpoint) {
+}
+/* Mobile, Tablet AND thin screen */
+@media only screen and (max-width: @largestTabletScreen) and (max-height: @thinEditorBreakpoint) {
+    .sandboxfooter a:not(.thin) {
+        color: @black !important;
+    }
+}

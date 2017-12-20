@@ -1,0 +1,163 @@
+{
+    "id": "maker",
+    "platformid": "codal",
+    "nickname": "maker",
+    "name": "MakeCode Maker Boards (Cortex class)",
+    "title": "MakeCode Maker Boards - Blocks / Javascript editor",
+    "description": "A Blocks / JavaScript code editor for MakeCode Maker Boards",
+    "corepkg": "metro-express",
+    "bundleddirs": [
+        "libs/base",
+        "libs/core",
+        "libs/music",
+        "libs/pixel",
+        "libs/buttons",
+        "libs/touch",
+        "libs/light",
+        "libs/trinket-m0",
+        "libs/metro-express"
+    ],
+    "serial": {
+        "useHF2": true,
+        "useEditor": true,
+        "log": true,
+        "editorTheme": {
+            "graphBackground": "#d9d9d9",
+            "lineColors": ["#CC2936", "#FFC914", "#2EB7ED", "#FB48C7", "#08415C", "#C200C0"]
+        }
+    },
+    "simulator": {
+        "autoRun": true,
+        "streams": false,
+        "aspectRatio": 1.0,
+        "parts": true,
+        "partsAspectRatio": 0.69,
+        "instructions": true,
+        "dynamicBoardDefinition": true,
+        "enableTrace": true 
+    },
+    "cloud": {
+        "workspace": false,
+        "packages": true,
+        "sharing": true,
+        "publishing": true,
+        "importing": false,
+        "preferredPackages": [],
+        "githubPackages": true
+    },
+    "compile": {
+        "isNative": true,
+        "useUF2": true,
+        "hasHex": true,
+        "deployDrives": ".*",
+        "deployFileMarker": "INFO_UF2.TXT",
+        "driveName": "METROBOOT",
+        "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
+        "flashChecksumAddr": 8372,
+        "flashCodeAlign": 256,
+        "floatingPoint": true,
+        "taggedInts": true,
+        "upgrades": []
+    },
+    "runtime": {
+        "mathBlocks": true,
+        "loopsBlocks": true,
+        "logicBlocks": true,
+        "variablesBlocks": true,
+        "textBlocks": true,
+        "listsBlocks": true,
+        "functionBlocks": true,
+        "onStartNamespace": "loops",
+        "onStartColor": "#40bf4a",
+        "onStartWeight": 100
+    },
+    "compileService": {
+        "buildEngine": "codal",
+        "codalTarget": {
+            "name": "codal-circuit-playground",
+            "url": "https://github.com/lancaster-university/codal-circuit-playground",
+            "branch": "v1.2.4",
+            "type": "git"
+        },
+        "codalBinary": "CIRCUIT_PLAYGROUND",
+        "yottaConfig": {
+            "pxt": {
+                "board": {
+                    "id": "BOARD_ID_CPLAY"
+                }
+            }
+        },
+        "githubCorePackage": "lancaster-university/codal",
+        "gittag": "v0.2.2",
+        "serviceId": "codal2cp"
+    },
+    "appTheme": {
+        "accentColor": "#000000",
+        "logoUrl": "https://www.adafruit.com/products/3505",
+        "logo": "./static/logo.svg",
+        "docsLogo": "./static/logo.square.svg",
+        "portraitLogo": "./static/logo.square.svg",
+        "footerLogo": "./static/logo.square.svg",
+        "cardLogo": "./static/icons/android-chrome-192x192.png",
+        "appLogo": "./static/icons/android-chrome-192x192.png",
+        "organization": "Microsoft MakeCode",
+        "organizationUrl": "https://makecode.com/",
+        "organizationLogo": "./static/Microsoft-logo_rgb_c-gray-square.png",
+        "organizationWideLogo": "./static/Microsoft-logo_rgb_c-white.png",
+        "homeUrl": "https://metro.makecode.com/",
+        "embedUrl": "https://metro.makecode.com/",
+        "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
+        "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
+        "githubUrl": "https://github.com/Microsoft/pxt",
+        "feedbackUrl": "https://makecode.com/",
+        "betaUrl": "https://makecode.com/",
+        "boardName": "Adafruit Metro Express",
+        "docMenu": [{
+                "name": "Blocks",
+                "path": "/blocks"
+            },
+            {
+                "name": "JavaScript",
+                "path": "/javascript"
+            },
+            {
+                "name": "Reference",
+                "path": "/reference"
+            },
+            {
+                "name": "Buy",
+                "path": "https://www.adafruit.com/products/3505"
+            }
+        ],
+        "sideDoc": "tutorials/getting-started",
+        "invertedMenu": true,
+        "invertedToolbox": true,
+        "invertedMonaco": true,
+        "monacoToolbox": true,
+        "simAnimationEnter": "fly right in",
+        "simAnimationExit": "fly right out",
+        "hasAudio": true,
+        "usbHelp": [],
+        "disableBlockIcons": true,
+        "blocklyOptions": {
+            "grid": {
+                "spacing": 20,
+                "length": 2,
+                "colour": "rgba(189, 195, 199, 0.20)",
+                "snap": true
+            }
+        },
+        "blockColors": {
+            "loops": "#40bf4a",
+            "logic": "#4cbfe6",
+            "math": "#9966ff",
+            "variables": "#FF6680",
+            "text": "#ffab19",
+            "advanced": "#00272B",
+            "functions": "#005a9e",
+            "arrays": "#8A1C7C"
+        },
+        "allowPackageExtensions": true
+    },
+    "ignoreDocsErrors": true
+}

@@ -1,0 +1,81 @@
+@import 'themes/default/globals/site.variables';
+@import 'themes/pxt/globals/site.variables';
+@import 'site/globals/site.variables';
+
+@import 'blockly-core';
+
+
+/* Remove shadow around blockly blocks */
+.blocklyPathDark, .blocklyPathLight {
+    display: none;
+}
+
+/* Specifying rounded toolbox borders. */
+div.blocklyTreeRow {
+    border-radius: 4px;
+    padding-left: 4px !important;
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.4);
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.4);
+}
+div.blocklyTreeRoot div div div div div.blocklyTreeRow {
+    border-left-width: 1px !important;
+}
+
+/* Highlight category item */
+div.blocklyTreeRow.blocklyTreeSelected, div.blocklyTreeRoot div div div div div.blocklyTreeRow.blocklyTreeSelected {
+    -webkit-box-shadow: inset 0px 0px 0px 2px #fc3;
+    -moz-box-shadow: inset 0px 0px 0px 2px #fc3;
+    box-shadow: inset 0px 0px 0px 2px #fc3;
+}
+
+/* This removes any padding at the top of the toolbox */
+div.blocklyTreeRoot {
+    padding: 0px !important;
+}
+
+/* Blockly Text */
+span.blocklyTreeLabel {
+    font-family: "Gotham SSm A","Gotham SSm B","Montserrat","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif  !important;
+    text-transform: uppercase !important;
+    font-size:1rem !important;
+}
+
+svg.blocklySvg {
+    background: #00487C; /* For browsers that do not support gradients */
+}
+
+.blocklyFlyoutBackground {
+    fill: #282828 !important;
+}
+.monacoFlyout {
+    background: rgba(40, 40, 40, 0.9);
+}
+
+.blocklyToolboxDiv, .monacoToolboxDiv {
+    padding: 0.5rem;
+    border-right: solid 1px #282828;
+    background-color: #cfcfcf !important;
+}
+
+/* Search box */
+#blocklySearchArea {
+    margin: 0.5rem;
+    margin-top: 0.1rem;
+}
+.blocklySearchInputField {
+    border-radius: 2.5rem !important;
+}
+
+/* Mobile */
+@media only screen and (max-width: @largestMobileScreen) {
+    div.blocklyTreeRow {
+        padding-left: 0px !important;
+    }
+    #blocklyTrashIcon {
+        margin: 0.2rem;
+    }
+    .blocklyToolboxDiv, .monacoToolboxDiv {
+        padding: 0.2rem;
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "TouchButton.setThreshold|block": "button %button|set threshold %threshold",
+  "TouchButton.value|block": "button %button|value",
+  "{id:category}AnalogPin": "AnalogPin",
+  "{id:category}Input": "Input",
+  "{id:group}More": "More"
+}

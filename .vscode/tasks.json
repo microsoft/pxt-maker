@@ -1,0 +1,20 @@
+{
+	"version": "0.1.0",
+	// Task runner is jake
+	"command": "pxt",
+	// Need to be executed in shell / cmd
+	"isShellCommand": true,
+	"showOutput": "always",
+	"tasks": [
+		{
+			// TS build command is local.
+			"taskName": "serve",
+			// Make this the default build command.
+			"isBuildCommand": true,
+			// Use the redefined Typescript output problem matcher.
+			"problemMatcher": [
+				"$tsc"
+			]
+		}
+	]
+}
