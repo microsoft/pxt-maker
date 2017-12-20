@@ -1,23 +1,23 @@
 {
-  "name": "pxt-adafruit-metro",
+  "name": "pxt-maker",
   "version": "0.14.23",
-  "description": "Adafruit Metro Express for Microsoft MakeCode",
+  "description": "Microsoft MakeCode Maker Boards",
   "private": true,
   "keywords": [
     "JavaScript",
     "education",
-    "adafruit",
+    "maker",
     "pxt",
     "MakeCode",
     "Microsoft"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Microsoft/pxt-adafruit.git"
+    "url": "git+https://github.com/Microsoft/pxt-maker.git"
   },
   "author": "",
   "license": "MIT",
-  "homepage": "https://github.com/Microsoft/pxt-adafruit#readme",
+  "homepage": "https://github.com/Microsoft/pxt-maker#readme",
   "files": [
     "README.md",
     "pxtarget.json",
@@ -32,15 +32,17 @@
   "main": "built/pxtrequire.js",
   "typings": "built/pxtrequire.d.ts",
   "devDependencies": {
-    "typescript": "^1.8.7",
+    "typescript": "2.6.1",
     "less": "^2.6.0",
-    "rtlcss": "^2.1.2",
-    "autoprefixer": "^6.7.6",
-    "semantic-ui-less": "^2.2.4"
+    "semantic-ui-less": "^2.2.11",
+    "@types/bluebird": "2.0.33",
+    "@types/jquery": "3.2.16",
+    "@types/marked": "0.3.0",
+    "@types/node": "8.0.53"
   },
   "dependencies": {
-    "pxt-common-packages": "0.14.5",
-    "pxt-core": "2.3.37"
+    "pxt-common-packages": "0.14.13",
+    "pxt-core": "3.0.2"
   },
   "scripts": {
     "test": "node node_modules/pxt-core/built/pxt.js travis"
