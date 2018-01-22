@@ -5,7 +5,7 @@ declare namespace pixel {
      * Sends a neopixel buffer to the specified digital pin
      * @param buf The buffer to send to the pin
      */
-    //% parts="neopixel" shim=pixel::sendBuffer
+    //% parts="pixel" shim=pixel::sendBuffer
     function sendBuffer(buf: Buffer): void;
 }
 

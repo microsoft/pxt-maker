@@ -40,7 +40,7 @@ namespace pixel {
     //% blockId="pixel_set_pixel" block="set pixel color %rgb=pixel_colors"
     //% weight=99
     //% blockGap=8
-    //% parts="neopixel"
+    //% parts="pixel"
     export function setColor(color: number): void {
         if (brightness < 255)
             color = fade(color, brightness);
@@ -74,7 +74,7 @@ namespace pixel {
      */
     //% blockId="pixel_set_brightness" block="set brightness %brightness"
     //% weight=98
-    //% parts="neopixel"
+    //% parts="pixel"
     //% brightness.min=0 brightness.max=255
     export function setBrightness(brightness: number): void {
         this._brightness = Math.max(0, Math.min(0xff, brightness >> 0));

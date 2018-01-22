@@ -7,7 +7,7 @@ namespace pixel {
  * Sends a neopixel buffer to the specified digital pin
  * @param buf The buffer to send to the pin
  */
-//% parts="neopixel"
+//% parts="pixel"
 void sendBuffer(Buffer buf) {
     int pinName = PIN(DOTSTAR_DATA);
     if (pinName < 0) {

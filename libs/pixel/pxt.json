@@ -1,6 +1,6 @@
 {
     "name": "pixel",
-    "description": "The Adafruit NeoPixel driver",
+    "description": "A single on-board light pixel",
     "files": [
         "neopixel.cpp",
         "neopixel.ts",

@@ -97,7 +97,7 @@
     },
     "groundPins": ["GND0", "GND1", "GND2"],
     "threeVoltPins": ["3.3V"],
-    "onboardComponents": [],
+    "onboardComponents": ["pixel"],
     "marginWhenBreadboarding": [
         0,
         0,
