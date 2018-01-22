@@ -22,4 +22,6 @@ If your board does not support UF2 yet,
 * add a code card in ``/docs/boards.md`` and a new markdown file under ``/docs/board/YOUBOARDNAME.md`` with an example that loads your board
 * run the local server to test your changes by launching ``pxt serve`` (make sure to run ``npm install``)
 
+More info at [Multi-board](/multiboard).
+
 ## Step 3: Send us a Pull Request!!!
