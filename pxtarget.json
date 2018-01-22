@@ -76,7 +76,7 @@
         "codalTarget": {
             "name": "codal-circuit-playground",
             "url": "https://github.com/lancaster-university/codal-circuit-playground",
-            "branch": "v1.2.4",
+            "branch": "v1.3.1",
             "type": "git"
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
@@ -104,14 +104,14 @@
         "organizationUrl": "https://makecode.com/",
         "organizationLogo": "./static/Microsoft-logo_rgb_c-gray-square.png",
         "organizationWideLogo": "./static/Microsoft-logo_rgb_c-white.png",
-        "homeUrl": "https://metro.makecode.com/",
-        "embedUrl": "https://metro.makecode.com/",
+        "homeUrl": "https://maker.makecode.com/",
+        "embedUrl": "https://maker.makecode.com/",
         "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
         "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
-        "githubUrl": "https://github.com/Microsoft/pxt",
+        "githubUrl": "https://github.com/Microsoft/pxt-maker",
         "feedbackUrl": "https://makecode.com/",
         "betaUrl": "https://makecode.com/",
-        "boardName": "Adafruit Metro Express",
+        "boardName": "Maker Board",
         "docMenu": [{
                 "name": "Blocks",
                 "path": "/blocks"
@@ -123,13 +123,8 @@
             {
                 "name": "Reference",
                 "path": "/reference"
-            },
-            {
-                "name": "Buy",
-                "path": "https://www.adafruit.com/products/3505"
             }
         ],
-        "sideDoc": "tutorials/getting-started",
         "invertedMenu": true,
         "invertedToolbox": true,
         "invertedMonaco": true,
