@@ -15,21 +15,21 @@ namespace pxsim {
         return p
     }
 
-    export class DalBoard extends CoreBoard implements MusicBoard, LightBoard {
+    export class DalBoard extends CoreBoard implements MusicBoard, LightBoard, CapTouchBoard {
         // state & update logic for component services
-
         edgeConnectorState: EdgeConnectorState;
         lightSensorState: LightSensorState;
         buttonState: CommonButtonState;
         _neopixelState: pxt.Map<CommonNeoPixelState>;
         audioState: AudioState;
         neopixelPin: Pin;
+        touchButtonState: TouchButtonState;
 
         constructor(public boardDefinition: BoardDefinition) {
             super();
 
-            let pinList: number[] = []
-            let servos: Map<number> = {}
+            const pinList: number[] = []
+            const servos: Map<number> = {}
 
             function pinId(name: string) {
                 let key = getConfigKey("PIN_" + name)
@@ -50,10 +50,10 @@ namespace pxsim {
                                 pinList.push(id)
                                 if ((DAL.PA02 <= id && id <= DAL.PA11) ||
                                     (DAL.PB00 <= id && id <= DAL.PB09))
-                                    servos[sublbl] = id
+                                    servos[sublbl] = id;
                             }
-                            pinIds[lbl] = id
-                            pinIds[sublbl] = id
+                            pinIds[lbl] = id;
+                            pinIds[sublbl] = id;
                         }
                     }
                 }
@@ -79,10 +79,11 @@ namespace pxsim {
 
             // TODO we need this.buttonState set for pxtcore.getButtonByPin(), but
             // this should be probably merged with buttonpair somehow
-            this.builtinParts["pinbuttons"] = this.buttonState = new CommonButtonState();
+            this.builtinParts["pinbuttons"] = this.builtinParts["buttons"]
+                = this.buttonState = new CommonButtonState();
+            this.builtinParts["touch"] = this.touchButtonState = new TouchButtonState(pinList);
             
             // components
-            this.builtinParts["buttons"] = this.buttonState = new CommonButtonState();
             this.builtinParts["slideswitch"] = (pin: Pin) => new ToggleState(pin);
 
             this.builtinParts["neopixel"] = (pin: Pin) => { return this.neopixelState(pin.id); } //this.neopixelState(this.neopixelPin.id);
