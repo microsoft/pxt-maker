@@ -32,7 +32,7 @@
         "aspectRatio": 1.0,
         "parts": true,
         "partsAspectRatio": 0.69,
-        "instructions": true,
+        "instructions": false,
         "dynamicBoardDefinition": true,
         "enableTrace": true 
     },
@@ -51,7 +51,7 @@
         "hasHex": true,
         "deployDrives": ".*",
         "deployFileMarker": "INFO_UF2.TXT",
-        "driveName": "METROBOOT",
+        "driveName": "DRIVE",
         "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
         "flashChecksumAddr": 8372,
         "flashCodeAlign": 256,
@@ -69,7 +69,10 @@
         "functionBlocks": true,
         "onStartNamespace": "loops",
         "onStartColor": "#40bf4a",
-        "onStartWeight": 100
+        "onStartWeight": 100,
+        "pauseUntilBlock": {
+            "category": "loops"
+        }
     },
     "compileService": {
         "buildEngine": "codal",
