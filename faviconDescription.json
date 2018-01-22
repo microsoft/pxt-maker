@@ -1,5 +1,5 @@
 {
-	"masterPicture": "docs/static/logo.square.svg",
+	"masterPicture": "docs/static/logo.svg",
 	"iconsPath": "/docs/static/icons",
 	"design": {
 		"ios": {
