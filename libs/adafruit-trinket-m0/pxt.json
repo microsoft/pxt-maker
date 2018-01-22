@@ -1,5 +1,5 @@
 {
-    "name": "trinket-m0",
+    "name": "adafruit-trinket-m0",
     "description": "Support for Adafruit Trinket M0",
     "files": [
         "README.md",

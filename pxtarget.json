@@ -5,7 +5,7 @@
     "name": "MakeCode Maker Boards (Cortex class)",
     "title": "MakeCode Maker Boards - Blocks / Javascript editor",
     "description": "A Blocks / JavaScript code editor for MakeCode Maker Boards",
-    "corepkg": "metro-express",
+    "corepkg": "adafruit-metro-m0-express",
     "bundleddirs": [
         "libs/base",
         "libs/core",
@@ -14,8 +14,8 @@
         "libs/buttons",
         "libs/touch",
         "libs/light",
-        "libs/trinket-m0",
-        "libs/metro-express"
+        "libs/adafruit-trinket-m0",
+        "libs/adafruit-metro-m0-express"
     ],
     "serial": {
         "useHF2": true,
@@ -93,13 +93,11 @@
     },
     "appTheme": {
         "accentColor": "#000000",
-        "logoUrl": "https://www.adafruit.com/products/3505",
+        "logoUrl": "https://github.com/Microsoft/pxt-maker",
         "logo": "./static/logo.svg",
         "docsLogo": "./static/logo.svg",
         "portraitLogo": "./static/logo.svg",
         "footerLogo": "./static/logo.svg",
-        "cardLogo": "./static/icons/android-chrome-192x192.png",
-        "appLogo": "./static/icons/android-chrome-192x192.png",
         "organization": "Microsoft MakeCode",
         "organizationUrl": "https://makecode.com/",
         "organizationLogo": "./static/Microsoft-logo_rgb_c-gray-square.png",

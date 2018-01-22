@@ -6,5 +6,8 @@
         ],
         "approvedRepos": [
         ]
+    },
+    "galleries": {
+        "Boards": "boards"
     }
 }

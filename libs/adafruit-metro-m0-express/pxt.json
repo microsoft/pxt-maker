@@ -1,5 +1,5 @@
 {
-    "name": "metro-express",
+    "name": "adafruit-metro-m0-express",
     "description": "Support for Adafruit Metro M0 Express",
     "files": [
         "README.md",
