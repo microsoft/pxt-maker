@@ -1,17 +1,10 @@
 # MakeCode Maker Boards
 
+This is an experimental code editor for maker boards, based on [Microsoft MakeCode](https://makecode.com).
+
 ## Code of Conduct
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## Misc
-
-* Art and logos  https://www.dropbox.com/sh/qvasw5uozbja9l1/AACear3H1X9QmX4ZU_2zCB-Xa?dl=0
-* Fonts https://www.dropbox.com/sh/xo03b1yhzj56q3g/AAAkKR3waKWTJbANfl5bftDKa?dl=0
-
-# Jenkins build
-
-https://ci2.dot.net/job/Private/job/pxt_project_grey/job/master/
 
 # Contributing
 
