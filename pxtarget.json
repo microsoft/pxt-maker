@@ -5,7 +5,7 @@
     "name": "MakeCode Maker Boards (Cortex class)",
     "title": "MakeCode Maker Boards - Blocks / Javascript editor",
     "description": "A Blocks / JavaScript code editor for MakeCode Maker Boards",
-    "corepkg": "adafruit-metro-m0-express",
+    "corepkg": "core",
     "bundleddirs": [
         "libs/base",
         "libs/core",
@@ -150,7 +150,8 @@
             "functions": "#005a9e",
             "arrays": "#8A1C7C"
         },
-        "allowPackageExtensions": true
+        "allowPackageExtensions": true,
+        "hideNewProjectButton": true
     },
     "ignoreDocsErrors": true
 }
