@@ -92,7 +92,7 @@
         "serviceId": "codal2cp"
     },
     "appTheme": {
-        "accentColor": "#b4009e",
+        "accentColor": "#ecf0f1",
         "logoUrl": "https://github.com/Microsoft/pxt-maker",
         "logo": "./static/logo.svg",
         "docsLogo": "./static/logo.svg",
