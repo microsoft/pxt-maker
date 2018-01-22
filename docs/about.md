@@ -1,18 +1,8 @@
 # About
 
-Welcome to the **Microsoft MakeCode** editor for the **@boardname@**!
+The **Maker Microsoft MakeCode editor** allows to program various Cortex-based microcontrollers.
 
-### ~ hint
-
-Heads up! This editor only works for the Metro **Express**.
-
-### ~
-
-## Metro Express
-
-Check out the awesome hardware spec at **[Adafruit.com](https://www.adafruit.com/products/3505)**.
-
-![](https://cdn-shop.adafruit.com/970x728/3333-04.jpg)
+* [Add a new board](/boards/add-a-new-board)
 
 ## Programming: [Blocks](/blocks) or [JavaScript](/javascript)
 
