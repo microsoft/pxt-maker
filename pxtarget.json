@@ -92,7 +92,7 @@
         "serviceId": "codal2cp"
     },
     "appTheme": {
-        "accentColor": "#000000",
+        "accentColor": "#b4009e",
         "logoUrl": "https://github.com/Microsoft/pxt-maker",
         "logo": "./static/logo.svg",
         "docsLogo": "./static/logo.svg",
@@ -111,9 +111,12 @@
         "betaUrl": "https://makecode.com/",
         "boardName": "Maker Board",
         "docMenu": [{
-                "name": "Blocks",
-                "path": "/blocks"
-            },
+            "name": "About",
+            "path": "/about"
+        },{
+            "name": "Blocks",
+            "path": "/blocks"
+        },
             {
                 "name": "JavaScript",
                 "path": "/javascript"
@@ -123,9 +126,9 @@
                 "path": "/reference"
             }
         ],
-        "invertedMenu": true,
-        "invertedToolbox": true,
-        "invertedMonaco": true,
+        "invertedMenu": false,
+        "invertedToolbox": false,
+        "invertedMonaco": false,
         "monacoToolbox": true,
         "simAnimationEnter": "fly right in",
         "simAnimationExit": "fly right out",

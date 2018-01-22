@@ -15,6 +15,11 @@
         "url": "/boards/adafruit-trinket-m0",
         "cardType": "template",
         "imageUrl": "/static/boards/adafruit-trinket-m0/gallery.jpg"  
+    },
+    {
+        "name": "Add a new board",
+        "url": "/boards/add-a-new-board",
+        "cardType": "url"
     }
 ]
 ```
