@@ -129,7 +129,10 @@
             {
                 "name": "Reference",
                 "path": "/reference"
-            }
+            }, {
+            "name": "GitHub",
+            "path": "https://github.com/Microsoft/pxt-maker"
+        }
         ],
         "invertedMenu": false,
         "invertedToolbox": false,
