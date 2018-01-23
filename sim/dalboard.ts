@@ -102,6 +102,14 @@ namespace pxsim {
 
             this.builtinPartVisuals["microservo"] = (xy: visuals.Coord) => visuals.mkMicroServoPart(xy);
             this.builtinPartVisuals["neopixel"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
+
+            this.builtinParts["slideswitch"] = (pin: Pin) => new ToggleState(pin);
+            this.builtinVisuals["slideswitch"] = () => new visuals.ToggleComponentVisual(parsePinString);
+            this.builtinPartVisuals["slideswitch"] = (xy: visuals.Coord) => visuals.mkSideSwitchPart(xy);
+
+            this.builtinParts["led"] = (pin: Pin) => new ToggleState(pin);
+            this.builtinVisuals["led"] = () => new visuals.LedView(parsePinString);
+            this.builtinPartVisuals["led"] = (xy: visuals.Coord) => visuals.mkLedPart(xy);
         }
 
         receiveMessage(msg: SimulatorMessage) {
