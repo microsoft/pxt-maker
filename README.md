@@ -1,6 +1,10 @@
-# MakeCode Maker Boards
+# MakeCode Maker [![Build Status](https://travis-ci.org/Microsoft/pxt-maker.svg?branch=master)](https://travis-ci.org/Microsoft/pxt-maker)
 
-This is an experimental code editor for maker boards, based on [Microsoft MakeCode](https://makecode.com).
+This is an experimental code editor for maker boards - try it at https://maker.makecode.com.
+
+## How is this for?
+
+This editor is meant for micro-controllers that are friendly to breadboarding. The editor is based on [Microsoft MakeCode](https://makecode.com).
 
 ## Code of Conduct
 
