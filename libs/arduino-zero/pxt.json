@@ -7,10 +7,7 @@
         "config.ts",
         "ns.ts",
         "board.json",
-        "board.svg",
-        "parts/headphone.svg",
-        "parts/speaker.svg",
-        "pxtparts.json"
+        "board.svg"
     ],
     "core": true,
     "dependencies": {
