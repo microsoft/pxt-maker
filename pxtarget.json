@@ -114,7 +114,8 @@
         "githubUrl": "https://github.com/Microsoft/pxt-maker",
         "feedbackUrl": "https://makecode.com/",
         "betaUrl": "https://makecode.com/",
-        "boardName": "Maker Board",
+        "boardName": "board",
+        "homeScreenHero": "./static/hero.jpg",
         "docMenu": [{
             "name": "About",
             "path": "/about"
