@@ -139,6 +139,7 @@
         "invertedToolbox": false,
         "invertedMonaco": false,
         "monacoToolbox": true,
+        "highContrast": true,
         "simAnimationEnter": "fly right in",
         "simAnimationExit": "fly right out",
         "hasAudio": true,
