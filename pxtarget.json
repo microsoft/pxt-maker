@@ -138,7 +138,7 @@
         "simAnimationEnter": "fly right in",
         "simAnimationExit": "fly right out",
         "hasAudio": true,
-        "usbHelp": [],
+        "usbDocs": "/device/usb",
         "disableBlockIcons": true,
         "blocklyOptions": {
             "grid": {
@@ -159,7 +159,8 @@
             "arrays": "#8A1C7C"
         },
         "allowPackageExtensions": true,
-        "hideNewProjectButton": true
+        "hideNewProjectButton": true,
+        "extendEditor": true
     },
     "ignoreDocsErrors": true
 }

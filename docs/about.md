@@ -13,10 +13,10 @@ The editor work in [most modern browsers](/browsers), work [offline](/offline) o
 ## [Compile and Flash: Your Program!](/device/usb)
 
 When you have your code ready, you connect your @boardname@ to a computer via a USB cable
-**then press the reset button** so it appears as a mounted drive (named **METROBOOT**).
+**then press the reset button** so it appears as a mounted drive (named @boardname@).
 
 Compilation to machine code from [Blocks](/blocks) or [JavaScript](/javascript) happens in the browser. You save the binary
-program to a **.uf2** file, which you then copy to the **METROBOOT** drive, which flashes the device with the new program.
+program to a **.uf2** file, which you then copy to the @boardname@ drive, which flashes the device with the new program.
 
 ## Simulator: Test Your Code
 
