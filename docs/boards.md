@@ -17,6 +17,18 @@
         "imageUrl": "/static/boards/adafruit-trinket-m0/gallery.jpg"  
     },
     {
+        "name": "Arduino Zero",
+        "url": "/boards/arduino-zero",
+        "cardType": "template",
+        "imageUrl": "/static/boards/arduino-zero/board.svg"  
+    },
+    {
+        "name": "Arduino MKR",
+        "url": "/boards/arduino-mkr",
+        "cardType": "template",
+        "imageUrl": "/static/boards/arduino-mkr/board.svg"  
+    },
+    {
         "name": "Add a new board",
         "url": "/boards/add-a-new-board",
         "cardType": "url"
