@@ -139,7 +139,7 @@
   "control.panic": "Display an error code and stop the program.",
   "control.panic|param|code": "an error number to display. eg: 5",
   "control.reset": "Reset the device.",
-  "control.runInBackground": "Run other code in the background.",
+  "control.runInParallel": "Run other code in the parallel.",
   "control.waitForEvent": "Blocks the calling thread until the specified event is raised.",
   "control.waitMicros": "Block the current fiber for the given microseconds",
   "control.waitMicros|param|micros": "number of micro-seconds to wait. eg: 4",

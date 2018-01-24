@@ -28,7 +28,7 @@
   "control.onEvent|block": "on event|from %src|with value %value",
   "control.panic|block": "panic %code",
   "control.reset|block": "reset",
-  "control.runInBackground|block": "run in background",
+  "control.runInParallel|block": "run in parallel",
   "control.waitForEvent|block": "wait for event|from %src|with value %value",
   "control.waitMicros|block": "wait (µs)%micros",
   "control|block": "control",

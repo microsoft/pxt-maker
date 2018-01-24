@@ -1,0 +1,11 @@
+{
+  "TestEvent": "Various test event in the execution cycle",
+  "tests": "A Unit tests framework",
+  "tests.assert": "Checks a boolean condition",
+  "tests.assertClose": "Checks that 2 values are close to each other",
+  "tests.assertClose|param|actual": "what the value was",
+  "tests.assertClose|param|expected": "what the value should be",
+  "tests.assertClose|param|tolerance": "the acceptable error margin, eg: 5",
+  "tests.onEvent": "Registers code to be called at various points in the test execution",
+  "tests.test": "Registers a test to run"
+}
