@@ -37,7 +37,7 @@
         "aspectRatio": 1.0,
         "parts": true,
         "partsAspectRatio": 0.69,
-        "instructions": false,
+        "instructions": true,
         "dynamicBoardDefinition": true,
         "enableTrace": true 
     },
