@@ -7,7 +7,8 @@
         "config.ts",
         "ns.ts",
         "board.json",
-        "board.svg"
+        "board.svg",
+        "boardwireframe.svg"
     ],
     "core": true,
     "dependencies": {
