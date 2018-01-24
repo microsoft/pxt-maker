@@ -20,13 +20,13 @@
         "name": "Arduino Zero",
         "url": "/boards/arduino-zero",
         "cardType": "template",
-        "imageUrl": "/static/boards/arduino-zero/board.svg"  
+        "imageUrl": "/static/boards/arduino-zero/gallery.jpg"  
     },
     {
         "name": "Arduino MKR",
         "url": "/boards/arduino-mkr",
         "cardType": "template",
-        "imageUrl": "/static/boards/arduino-mkr/board.svg"  
+        "imageUrl": "/static/boards/arduino-mkr/gallery.jpg"  
     },
     {
         "name": "Add a new board",
