@@ -17,7 +17,10 @@
         "libs/adafruit-trinket-m0",
         "libs/adafruit-metro-m0-express",
         "libs/arduino-zero",
-        "libs/arduino-mkr"
+        "libs/arduino-mkr",
+        "libs/tests",
+        "libs/automation",
+        "libs/dsp"
     ],
     "serial": {
         "useHF2": true,

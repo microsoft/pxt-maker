@@ -118,11 +118,11 @@ declare namespace control {
     function waitMicros(micros: int32): void;
 
     /**
-     * Run other code in the background.
+     * Run other code in the parallel.
      */
-    //% help=control/run-in-background blockAllowMultiple=1 afterOnStart=true
-    //% blockId="control_run_in_background" block="run in background" blockGap=8 shim=control::runInBackground
-    function runInBackground(a: () => void): void;
+    //% help=control/run-in-parallel handlerStatement=1
+    //% blockId="control_run_in_parallel" block="run in parallel" blockGap=8 shim=control::runInParallel
+    function runInParallel(a: () => void): void;
 
     /**
      * Blocks the calling thread until the specified event is raised.

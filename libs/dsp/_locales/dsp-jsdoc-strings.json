@@ -1,0 +1,7 @@
+{
+  "dsp": "Digital signal processing",
+  "dsp.MovingAverageFilter": "A moving average filter",
+  "dsp.MovingAverageFilter.filter": "Adds a new value to the filter and computes the filtered value",
+  "dsp.MovingAverageFilter.setLength": "Sets the number of samples in the filter",
+  "dsp.MovingAverageFilter.setLength|param|length": "number of samples in the moving average filter"
+}

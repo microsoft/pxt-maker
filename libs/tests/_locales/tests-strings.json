@@ -1,0 +1,11 @@
+{
+  "TestEvent.RunSetUp|block": "run setup",
+  "TestEvent.RunTearDown|block": "run teardown",
+  "TestEvent.TestSetUp|block": "test setup",
+  "TestEvent.TestTearDown|block": "test teardown",
+  "tests.assertClose|block": "assert %message|%expected|close to %actual|by %tolerance",
+  "tests.assert|block": "assert %message|%condition",
+  "tests.test|block": "test %name",
+  "tests|block": "tests",
+  "{id:category}Tests": "Tests"
+}
