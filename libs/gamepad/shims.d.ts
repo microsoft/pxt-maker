@@ -6,7 +6,6 @@ declare namespace gamepad {
      */
     //% help=gamepad/set-button
     //% blockId=joystickSetButton block="gamepad button %index=joystickStandardButton|%down"
-    //% index.min=0 index.max=127
     //% down.fieldEditor=toggleupdown shim=gamepad::setButton
     function setButton(index: int32, down: boolean): void;
 
