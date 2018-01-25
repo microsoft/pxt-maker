@@ -5,7 +5,7 @@ declare namespace mouse {
      * Sets the mouse button state to down
      */
     //% help=mouse/set-button
-    //% blockId=joystickSetButton block="mouse button %index=joystickStandardButton|%down"
+    //% blockId=mouseSetButton block="mouse button %index=joystickStandardButton|%down"
     //% down.fieldEditor=toggleupdown shim=mouse::setButton
     function setButton(button: MouseButton, down: boolean): void;
 
@@ -22,7 +22,7 @@ declare namespace mouse {
      * Moves the mouse
      **/
     //% help=mouse/wheel
-    //% blockId=mouseMove block="mouse wheel %w"
+    //% blockId=mouseWheel block="mouse wheel %w"
     //% w.min=-128 w.max=127 shim=mouse::wheel
     function wheel(w: int32): void;
 }
