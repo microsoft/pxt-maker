@@ -1,0 +1,10 @@
+{
+  "MouseButton.Left|block": "left",
+  "MouseButton.Middle|block": "middle",
+  "MouseButton.Right|block": "right",
+  "mouse.move|block": "mouse move x %x|y %y",
+  "mouse.setButton|block": "mouse button %index=joystickStandardButton|%down",
+  "mouse.turnWheel|block": "turn wheel %w",
+  "mouse|block": "mouse",
+  "{id:category}Mouse": "Mouse"
+}
