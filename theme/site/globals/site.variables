@@ -57,7 +57,7 @@
    Background
 --------------------*/
 
-@simulatorBackground: #dfdfdf; /*#313638;*/
+@simulatorBackground: #fafafa; /*#313638;*/
 @editorToolsBackground: #dfdfdf; /*#1e1e1e;*/
 @blocklySvgColor: #4c4b4d; /*#1e1e1e;*/
 
