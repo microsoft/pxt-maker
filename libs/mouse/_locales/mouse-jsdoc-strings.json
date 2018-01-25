@@ -2,5 +2,5 @@
   "mouse": "Mouse emulation",
   "mouse.move": "Moves the mouse",
   "mouse.setButton": "Sets the mouse button state to down",
-  "mouse.wheel": "Moves the mouse"
+  "mouse.turnWheel": "Moves the mouse"
 }

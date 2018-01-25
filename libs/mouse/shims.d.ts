@@ -6,7 +6,7 @@ declare namespace mouse {
      */
     //% help=mouse/set-button
     //% blockId=mouseSetButton block="mouse button %index=joystickStandardButton|%down"
-    //% down.fieldEditor=toggleupdown shim=mouse::setButton
+    //% down.fieldEditor=toggleupdown down.fieldOptions.inverted=true shim=mouse::setButton
     function setButton(button: MouseButton, down: boolean): void;
 
     /**
@@ -22,9 +22,9 @@ declare namespace mouse {
      * Moves the mouse
      **/
     //% help=mouse/wheel
-    //% blockId=mouseWheel block="mouse wheel %w"
-    //% w.min=-128 w.max=127 shim=mouse::wheel
-    function wheel(w: int32): void;
+    //% blockId=mouseWheel block="turn wheel %w"
+    //% w.min=-128 w.max=127 shim=mouse::turnWheel
+    function turnWheel(w: int32): void;
 }
 
 // Auto-generated. Do not edit. Really.
