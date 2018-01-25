@@ -2,7 +2,7 @@
   "name": "pxt-maker",
   "version": "0.2.20",
   "description": "Microsoft MakeCode Maker Boards",
-  "private": true,
+  "public": true,
   "keywords": [
     "JavaScript",
     "education",

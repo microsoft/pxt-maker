@@ -1,25 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.2" width="270.8" id="svg2" height="203" viewBox="0 0 203.1 152.2">
-  <path d="M195.9 37.2l7.2 7.2v93l-7.2 7.1v4.4c0 1.5-1.3 2.8-2.8 2.8H11.5a2.8 2.8 0 0 1-2.8-2.8V3.4C8.7 1.8 9.9.5 11.5.5h180l4.4 4.3v32.4m-184 92.6a2.3 2.3 0 1 0 4.5 0c.6-2.7-5-2.7-4.5 0zm12.5 0zm167-78.8c0 6 9 6 9 0s-9-6-9 0zm0 79.2c0 6 9 6 9 0s-9-6-9 0zM47.4 7.7c0 6 9 6 9 0s-9-6-9 0zm-3.6 136.8c0 6 9 6 9 0s-9-6-9 0z" id="path8" fill="#fff" stroke="#000" stroke-width=".7"/>
-  <path fill="#9a916c" stroke-width="0" d="M151.3 145.4h2.8v6h-2.8zm7.2-7.8h2.8v6h-2.8zm7.2 7.8h2.8v6h-2.8zm7.2-7.8h2.8v6H173zm7.2 7.8h2.8v6h-2.8zm7.2-7.8h2.8v6h-2.8z" id="path4714"/>
-  <rect y="136.3" rx="1.4" x="21.5" width="2.8" id="connector42pin" ry="1.4" height="2.8" fill="#9a916c" stroke-width="0"/>
-  <path fill="#9a916c" stroke-width="0" d="M60.5 8.6h3v6h-3zM67.7.8h3v6h-3zM75 8.6h3v6h-3zM82.1.8h3v6h-3zm7.2 7.8h3v6h-3zM96.5.8h3v6h-3zm7.2 7.8h3v6h-3zM111 .8h3v6h-3zm7.2 7.8h3v6h-3zm7.2-7.8h3v6h-3zM137 8.6h2.8v6H137zm7-7.8h2.8v6H144zm7.2 7.8h2.8v6h-2.8zm7.2-7.8h2.8v6h-2.8zm7.2 7.8h2.8v6h-2.8zm7.2-7.8h2.8v6H173zm7.2 7.8h2.8v6H180zm7.2-7.8h2.8v6h-2.8z" id="path4738"/>
-  <circle cx="24.2" id="connector72pin" r="1.9" cy="112.8" fill="none" stroke="#9a916c"/>
-  <path id="connector91pin" fill="#9a916c" stroke-width="0" d="M86.5 145.4h2.8v6h-2.8z"/>
-  <path fill="#9a916c" stroke-width="0" d="M93.7 137.7h2.8v5.9h-2.8zm7.2 7.7h2.8v6H101zm7.2-7.8h2.8v6h-2.8zm7.2 7.8h2.8v6h-2.8zm7.2-7.8h2.8v6h-2.8zm7.2 7.8h2.8v6h-2.8zm7.2-7.8h2.8v6H137z" id="path4798"/>
-  <path id="connector205pin" fill="#9a916c" stroke-width="0" d="M10.8 142.4h6.8v5.7h-6.8z"/>
-  <path id="connector206pin" fill="#9a916c" stroke-width="0" d="M28.3 142.4h6.8v5.7h-6.8z"/>
-  <path id="connector207pin" fill="#9a916c" stroke-width="0" d="M10.8 111.3h6.8v5.6h-6.8z"/>
-  <path id="connector208pin" fill="#9a916c" stroke-width="0" d="M28.3 111.3h6.8v5.6h-6.8z"/>
+  <path d="M195.9 37.2l7.2 7.2v93l-7.2 7.1v4.4c0 1.5-1.3 2.8-2.8 2.8H11.5a2.8 2.8 0 0 1-2.8-2.8V3.4C8.7 1.8 9.9.5 11.5.5h180l4.4 4.3v32.4m-184 92.6a2.3 2.3 0 1 0 4.5 0c.6-2.7-5-2.7-4.5 0zm12.5 0zm167-78.8c0 6 9 6 9 0s-9-6-9 0zm0 79.2c0 6 9 6 9 0s-9-6-9 0zM47.4 7.7c0 6 9 6 9 0s-9-6-9 0zm-3.6 136.8c0 6 9 6 9 0s-9-6-9 0z" id="path8" stroke-width=".7" stroke="#000" fill="#fff"/>
   <g transform="translate(149.1 138)" id="g5103">
     <g transform="scale(1.25)" id="1x06_smt_4ucon_20609_micro">
       <g id="g4211">
         <g id="g3">
-          <path id="rect5" fill="#dcdcdc" d="M2 6.2h1.7v4.1H2.1z"/>
-          <path id="rect7" fill="#dcdcdc" d="M7.8 0h1.7v4H7.8z"/>
-          <path id="rect9" fill="#dcdcdc" d="M13.6 6.2h1.6v4.1h-1.6z"/>
-          <path id="rect11" fill="#dcdcdc" d="M19.3 0H21v4h-1.7z"/>
-          <path id="rect13" fill="#dcdcdc" d="M25.1 6.2h1.6v4.1h-1.6z"/>
-          <path id="rect15" fill="#dcdcdc" d="M30.9 0h1.6v4h-1.6z"/>
           <path id="rect17" fill="#404040" d="M0 2.3h34.6V8H0z"/>
           <path id="connector0pin" d="M1.8 4H4v2.3H1.8z"/>
           <path id="polygon21" fill="#2a2a29" d="M4 4l.8-.8H1l.9.8z"/>
@@ -58,16 +42,6 @@
   <g transform="translate(58.4 1.3)" id="g5168">
     <g transform="scale(1.25)" id="1x10_smt_4ucon_20611_micro">
       <g id="g1640">
-        <path id="rect1642" fill="#dcdcdc" d="M2 6.2h1.7v4.1H2.1z"/>
-        <path id="rect1644" fill="#dcdcdc" d="M7.8 0h1.7v4H7.8z"/>
-        <path id="rect1646" fill="#dcdcdc" d="M13.6 6.2h1.6v4.1h-1.6z"/>
-        <path id="rect1648" fill="#dcdcdc" d="M19.3 0H21v4h-1.7z"/>
-        <path id="rect1650" fill="#dcdcdc" d="M25.1 6.2h1.6v4.1h-1.6z"/>
-        <path id="rect1652" fill="#dcdcdc" d="M30.9 0h1.6v4h-1.6z"/>
-        <path id="rect1654" fill="#dcdcdc" d="M36.6 6.2h1.7v4.1h-1.7z"/>
-        <path id="rect1656" fill="#dcdcdc" d="M42.4 0H44v4h-1.6z"/>
-        <path id="rect21" fill="#dcdcdc" d="M48.1 6.2h1.7v4.1H48z"/>
-        <path id="rect23" fill="#dcdcdc" d="M53.9 0h1.6v4H54z"/>
         <path id="rect25" fill="#404040" d="M0 2.3h57.6V8H0z"/>
         <path id="connector54pin" d="M1.8 4H4v2.3H1.8z"/>
         <path id="polygon29" fill="#2a2a29" d="M4 4l.8-.8H1l.9.8z"/>
@@ -126,14 +100,6 @@
     <g transform="scale(1.25)" id="1x08_smt_4ucon_20610_micro">
       <g id="g4351">
         <g id="g1731">
-          <path id="rect1733" fill="#dcdcdc" d="M2 6.2h1.7v4.1H2.1z"/>
-          <path id="rect1735" fill="#dcdcdc" d="M7.8 0h1.7v4H7.8z"/>
-          <path id="rect1737" fill="#dcdcdc" d="M13.6 6.2h1.6v4.1h-1.6z"/>
-          <path id="rect1739" fill="#dcdcdc" d="M19.3 0H21v4h-1.7z"/>
-          <path id="rect1741" fill="#dcdcdc" d="M25.1 6.2h1.6v4.1h-1.6z"/>
-          <path id="rect1743" fill="#dcdcdc" d="M30.9 0h1.6v4h-1.6z"/>
-          <path id="rect1745" fill="#dcdcdc" d="M36.6 6.2h1.7v4.1h-1.7z"/>
-          <path id="rect1747" fill="#dcdcdc" d="M42.4 0H44v4h-1.6z"/>
           <path id="rect1749" fill="#404040" d="M0 2.3h46V8H0z"/>
           <path id="connector64pin" d="M1.8 4H4v2.3H1.8z"/>
           <path id="polygon1753" fill="#2a2a29" d="M4 4l.8-.8H1l.9.8z"/>
@@ -183,14 +149,6 @@
     <g transform="scale(1.25)" id="g1957">
       <g id="g1965">
         <g id="g1967">
-          <path id="rect1969" fill="#dcdcdc" d="M2 6.2h1.7v4.1H2.1z"/>
-          <path id="rect1971" fill="#dcdcdc" d="M7.8 0h1.7v4H7.8z"/>
-          <path id="rect1973" fill="#dcdcdc" d="M13.6 6.2h1.6v4.1h-1.6z"/>
-          <path id="rect1975" fill="#dcdcdc" d="M19.3 0H21v4h-1.7z"/>
-          <path id="rect1977" fill="#dcdcdc" d="M25.1 6.2h1.6v4.1h-1.6z"/>
-          <path id="rect1979" fill="#dcdcdc" d="M30.9 0h1.6v4h-1.6z"/>
-          <path id="rect1981" fill="#dcdcdc" d="M36.6 6.2h1.7v4.1h-1.7z"/>
-          <path id="rect1983" fill="#dcdcdc" d="M42.4 0H44v4h-1.6z"/>
           <path id="rect1985" fill="#404040" d="M0 2.3h46V8H0z"/>
           <path id="rect1987" d="M1.8 4H4v2.3H1.8z"/>
           <path id="polygon1989" fill="#2a2a29" d="M4 4l.8-.8H1l.9.8z"/>
@@ -236,32 +194,25 @@
       </g>
     </g>
   </g>
-  <g transform="translate(.2 111.8)" id="g5366">
-    <g id="dcjack_2mm_smt">
-      <g transform="rotate(90)" id="g5345">
-        <path id="rect2247" fill="#dcdcdc" d="M0-16.9h35.7v5.7H0z"/>
-      </g>
-      <g transform="rotate(90)" id="g5348">
-        <path id="rect2249" fill="#dcdcdc" d="M0-34.5h35.7v5.7H0z"/>
-      </g>
-      <rect y="23.4" rx=".4" x="32" width="9.6" id="rect2251" height="6.2"/>
-      <path id="rect2253" fill="#232323" d="M4.5 6h33v23.7h-33z"/>
-      <path id="rect2255" fill="#494949" d="M5 6.5h32v1.7H5z"/>
-      <path id="rect2257" fill="#3d3d3d" fill-opacity=".3" d="M5 8.2h32v5.4H5z"/>
-      <path id="rect2259" d="M4 27.6h33v1.6H4z"/>
-      <path id="rect2261" fill="#0f0f0f" fill-opacity=".4" d="M4 21.8h33v5.8H4z"/>
-      <path id="rect2263" d="M36.8 6h.6v23.7h-.6z"/>
-      <path stroke-miterlimit="10" id="line23" fill="none" stroke="#000" stroke-width=".3" d="M34.6 29.7V6"/>
-      <path id="rect2266" d="M6.7 6H8v23.7H6.7z"/>
-      <path d="M7 10.3v15h13.3a7.5 7.5 0 0 0 7.5-7.5 7.5 7.5 0 0 0-7.5-7.5H7z" id="path27" fill="#232323"/>
-      <path id="rect2269" fill="#232323" d="M0 5h7.7v25.6H0z"/>
-      <path id="rect31" fill="#6d6d6d" d="M37.4 15h1.7v5.7h-1.7z"/>
-      <path id="rect2272" fill="#494949" d="M37.4 12.2h1v11.2h-1z"/>
-      <path id="rect35" fill="#494949" d="M.7 5.5H7v1H.7z"/>
-      <path id="rect2275" d="M.7 29.2H7v1H.7z"/>
+  <g id="dcjack_2mm_smt" transform="translate(.2 111.8)">
+    <g id="g5345" transform="rotate(90)">
+      <path d="M0-16.9h35.7v5.7H0z" id="rect2247" fill="#dcdcdc"/>
     </g>
+    <g id="g5348" transform="rotate(90)">
+      <path d="M0-34.5h35.7v5.7H0z" id="rect2249" fill="#dcdcdc"/>
+    </g>
+    <rect height="6.2" id="rect2251" width="9.6" x="32" rx=".4" y="23.4"/>
+    <path d="M4.5 6h33v23.7h-33z" id="rect2253" fill="#232323"/>
+    <path d="M5 6.5h32v1.7H5z" id="rect2255" fill="#494949"/>
+    <path d="M5 8.2h32v5.4H5z" id="rect2257" fill="#3d3d3d" fill-opacity=".3"/>
+    <path d="M4 27.6h33v1.6H4z" id="rect2259"/>
+    <path d="M4 21.8h33v5.8H4z" id="rect2261" fill="#0f0f0f" fill-opacity=".4"/>
+    <path d="M34.6 29.7V6" id="line23" stroke-miterlimit="10" fill="none" stroke="#000" stroke-width=".3"/>
+    <path d="M6.7 6H8v23.7H6.7z" id="rect2266"/>
+    <path d="M0 5h7.7v25.6H0z" id="rect2269" fill="#232323"/>
+    <path d="M.7 5.5H7v1H.7z" id="rect35" fill="#494949"/>
+    <path d="M.7 29.2H7v1H.7z" id="rect2275"/>
   </g>
-  <path d="M143.7 15v-3.7" id="path9769" stroke-miterlimit="10" stroke="#fff" stroke-width=".7"/>
   <path d="M151.9 34.7V34h-1l-.7.1v.9h.7l1-.2m-2.6-3.5c.2-.2.4-.2.9-.2h1.8c.5 0 .8 0 1 .2.2.3.3.5.3 1.4V36h-1.4v-.6c-.6.5-.8.6-1.3.6h-.7c-.4 0-.6 0-.8-.3-.2-.2-.3-.5-.3-1.1 0-.6 0-1 .3-1.2.2-.3.5-.4 1.4-.4.5 0 1 0 1.4.2v-.5l-.1-.6-.4-.1h-1l-.1.5H149c0-.8 0-1 .3-1.3" id="path9995" fill="#6c6c6c"/>
   <path d="M157 34.6v-2.3c-.3-.2-.5-.2-.7-.2h-1l-.1 1.4.1 1.2.5.1h.5c.2 0 .4 0 .7-.2m0 1.4v-.7c-.6.6-.8.7-1.2.7h-.6c-.5 0-.8-.1-1-.3-.3-.3-.4-.8-.4-2.2 0-1.5.1-2 .5-2.2.2-.3.5-.4 1-.4h.5c.4 0 .7.1 1.2.6v-2.3h1.4V36z" id="path9997" fill="#6c6c6c"/>
   <path d="M162 34.7V34h-.9l-.7.1-.1.4v.5h.8l1-.2m-2.7-3.5c.2-.2.5-.2 1-.2h1.8c.5 0 .8 0 1 .2.2.3.3.5.3 1.4V36H162v-.6c-.6.5-.9.6-1.3.6h-.7c-.4 0-.7 0-.9-.3-.1-.2-.3-.5-.3-1.1 0-.6.1-1 .4-1.2.2-.3.5-.4 1.4-.4.5 0 1 0 1.4.2v-.5l-.1-.6-.4-.1h-1l-.1.5H159c0-.8.1-1 .3-1.3" id="path9999" fill="#6c6c6c"/>
@@ -283,14 +234,4 @@
   <path d="M104.1 87.5l1.4 1.5c.7-.5.9-.6.9-.8 0 0 0-.2-.3-.4l-.5-.5c-.2-.2-.3-.3-.5-.3 0 0-.3 0-1 .5m-2.7 2c-.4-.3-.6-.6-.6-1 0-.5.5-1 1.9-1.9 1.3-.8 1.8-1 2.3-1 .5 0 .8.3 1.3.7l1.1 1.2c.4.4.5.7.5 1 0 .5-.4 1-1.8 1.9h-.4l-2.4-2.4c-.8.5-1 .6-1 .8l.3.4.6.5c.2.3.3.3.5.3l.6-.2 1 1c-.8.5-1.1.6-1.5.6-.5 0-.8-.2-1.2-.6z" id="path10083" fill="#6c6c6c"/>
   <path d="M106.6 92.2l-.4.4c0 .1 0 .2.2.3l.8.9c.2.1.2.2.3.1l.5-.1c.2-.1.2-.2.2-.3v-.3l-1-1.3-.3-.8c0-.4.3-.7.9-1 .6-.4 1-.5 1.3-.5.3 0 .6.2 1 .5l1.4 1.5c.3.3.4.5.4.8 0 .3-.2.7-1 1.1l-1-1 .4-.3-.2-.4-.7-.7-.3-.1-.4.1c-.2.1-.2.2-.2.3v.3l1 1.3.3.8c0 .3-.3.7-.9 1-.6.4-1 .5-1.3.5-.4 0-.7-.2-1-.5l-1.6-1.6c-.3-.3-.4-.6-.4-.8 0-.3.3-.7 1-1.1z" id="path10085" fill="#6c6c6c"/>
   <path d="M110.5 96.1l-.5.4.2.3.9.8c.1.2.2.2.3.2l.4-.2c.2 0 .3-.2.3-.3l-.1-.2-.9-1.3c-.3-.4-.3-.6-.3-.9 0-.3.3-.6.8-1 .6-.4 1-.4 1.3-.4.4 0 .7.1 1 .4l1.5 1.5c.3.3.4.6.4.8 0 .4-.3.7-1 1.2l-1-1 .4-.4-.2-.3-.7-.7-.3-.2-.4.2c-.2 0-.3.2-.3.3l.1.2 1 1.3.3.9c0 .3-.3.6-1 1-.5.4-1 .5-1.2.5-.4 0-.7-.2-1-.5l-1.6-1.6c-.3-.3-.5-.6-.5-.9 0-.3.3-.6 1.1-1z" id="path10087" fill="#6c6c6c"/>
-  <path d="M170.1 8.9a.7.7 0 1 1-1.4 0 .7.7 0 0 1 1.4 0" id="path10095"/>
-  <path d="M155.7 8.9a.7.7 0 1 1-1.4 0c0-.4.3-.8.7-.8a.7.7 0 0 1 .7.8" id="path10097"/>
-  <path d="M148.5 8.9a.7.7 0 1 1-1.4 0 .7.7 0 0 1 1.4 0" id="path10099"/>
-  <path d="M122.6 9a.7.7 0 1 1-1.4 0 .7.7 0 0 1 1.4 0" id="path10101"/>
-  <path d="M163 8.9a.7.7 0 1 1-1.5 0 .7.7 0 0 1 1.4 0" id="path10103"/>
-  <path d="M129.8 9a.7.7 0 1 1-1.4 0 .7.7 0 0 1 1.4 0" id="path10105"/>
-  <path d="M115.4 10.3a.7.7 0 1 1-1.4 0 .7.7 0 0 1 1.4 0" id="path10107"/>
-  <path d="M108.2 10.3a.7.7 0 1 1-1.4 0 .7.7 0 0 1 1.4 0" id="path10109"/>
-  <path d="M101 10.3a.7.7 0 1 1-1.4 0 .7.7 0 0 1 1.4 0" id="path10111"/>
-  <path d="M93.8 10.3a.7.7 0 1 1-1.4 0 .7.7 0 0 1 1.4 0" id="path10113"/>
 </svg>
