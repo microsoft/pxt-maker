@@ -1,0 +1,5 @@
+{
+  "keyboard.type|block": "keyboard type %text",
+  "keyboard|block": "keyboard",
+  "{id:category}Keyboard": "Keyboard"
+}
