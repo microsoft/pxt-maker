@@ -13,14 +13,17 @@ declare namespace mouse {
      * Moves the mouse
      **/
     //% help=mouse/move
-    //% blockId=mouseMove block="mouse move x %x|y %y" shim=mouse::move
+    //% blockId=mouseMove block="mouse move x %x|y %y"
+    //% x.min=-128 x.max=127
+    //% y.min=-128 y.max=127 shim=mouse::move
     function move(x: int32, y: int32): void;
 
     /**
      * Moves the mouse
      **/
     //% help=mouse/wheel
-    //% blockId=mouseMove block="mouse wheel %w" shim=mouse::wheel
+    //% blockId=mouseMove block="mouse wheel %w"
+    //% w.min=-128 w.max=127 shim=mouse::wheel
     function wheel(w: int32): void;
 }
 
