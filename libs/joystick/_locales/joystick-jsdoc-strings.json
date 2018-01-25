@@ -1,0 +1,5 @@
+{
+  "joystick.move": "Sets the current move on the gamepad",
+  "joystick.setButton": "Sets the button state to down",
+  "joystick.setThrottle": "Sets the throttle state"
+}
