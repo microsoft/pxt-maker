@@ -79,7 +79,7 @@
         
         "LED": "~D13"
     },
-    "groundPins": ["GND0", "GND1", "GND2"],
+    "groundPins": ["GND1", "GND0", "GND2"],
     "threeVoltPins": ["3.3V"],
     "onboardComponents": ["pixel"],
     "marginWhenBreadboarding": [
