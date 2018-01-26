@@ -41,6 +41,7 @@ namespace pxsim {
             pinIds = {}
 
             for (let block of (boardDefinition.visual as BoardImageDefinition).pinBlocks) {
+                // scan labels
                 for (let lbl of block.labels) {
                     for (let sublbl of lbl.split(/[\/,]/)) {
                         sublbl = sublbl.replace(/[~\s]+/g, "")
@@ -63,8 +64,11 @@ namespace pxsim {
             for (let k of getAllConfigKeys()) {
                 if (/^PIN_/.test(k)) {
                     let id = getConfig(getConfigKey(k))
-                    if (id != null && pinList.indexOf(id) < 0)
-                        pinList.push(id)
+                    if (id != null) {
+                        if (pinList.indexOf(id) < 0)
+                            pinList.push(id);
+                        pinIds[k.replace(/^PIN_/, "")] = id;
+                    }
                 }
             }
 
@@ -200,18 +204,8 @@ namespace pxsim {
         pxsim.initCurrentRuntime = initRuntimeWithDalBoard;
     }
 
-    const pinRegex = /pins\.(.+)/;
-    const pinNameRegex = /(A|D)(\d+)/
-
     export function parsePinString(pinString: string): Pin {
-        if (pinString) {
-            const match = pinRegex.exec(pinString);
-            if (match) {
-                const pinName = match[1];
-                return pxtcore.getPin(pinIds[pinName])
-            }
-        }
-
-        return undefined;
+        const pinName = pxsim.readPin(pinString);
+        return pinName ? pxtcore.getPin(pinIds[pinName]) : undefined;
     }
 }
