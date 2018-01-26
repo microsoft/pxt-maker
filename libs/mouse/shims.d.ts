@@ -6,7 +6,7 @@ declare namespace mouse {
      */
     //% help=mouse/set-button
     //% blockId=mouseSetButton block="mouse button %index=joystickStandardButton|%down"
-    //% down.fieldEditor=toggleupdown down.fieldOptions.inverted=true shim=mouse::setButton
+    //% down.fieldEditor=toggledownup down.fieldOptions.inverted=true shim=mouse::setButton
     function setButton(button: MouseButton, down: boolean): void;
 
     /**
