@@ -8,6 +8,7 @@
         ]
     },
     "galleries": {
-        "Boards": "boards"
+        "Boards": "boards",
+        "Blinky": "blinky"
     }
 }
