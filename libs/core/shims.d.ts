@@ -72,7 +72,8 @@ declare interface DigitalPin {
     //% blockNamespace=pins
     //% name.fieldEditor="gridpicker"
     //% name.fieldOptions.width=220
-    //% name.fieldOptions.columns=4 shim=DigitalPinMethods::digitalWrite
+    //% name.fieldOptions.columns=4
+    //% value.fieldEditor=togglehighlow shim=DigitalPinMethods::digitalWrite
     digitalWrite(value: boolean): void;
 
     /**
