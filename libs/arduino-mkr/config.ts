@@ -45,6 +45,10 @@ namespace config {
     export const PIN_RX = DAL.PB23; // RX
     export const PIN_TX = DAL.PB22; // TX
 
+    export const PIN_ACCELEROMETER_INT = DAL.PA23; // D1
+    export const PIN_ACCELEROMETER_SCL = DAL.PA09; // SCL
+    export const PIN_ACCELEROMETER_SDA = DAL.PA08; // SDA
+    
     // SD card of WINC
     export const PIN_FLASH_MISO = DAL.PA15;
     export const PIN_FLASH_MOSI = DAL.PA13;
