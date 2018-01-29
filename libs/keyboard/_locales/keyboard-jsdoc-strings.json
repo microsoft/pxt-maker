@@ -1,0 +1,4 @@
+{
+  "keyboard": "Keyboard emulation",
+  "keyboard.type": "Sends a sequence of keystrokes to the keyboard"
+}

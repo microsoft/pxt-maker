@@ -21,7 +21,9 @@
         "libs/tests",
         "libs/automation",
         "libs/dsp",
-        "libs/gamepad"
+        "libs/gamepad",
+        "libs/mouse",
+        "libs/keyboard"
     ],
     "serial": {
         "useHF2": true,
