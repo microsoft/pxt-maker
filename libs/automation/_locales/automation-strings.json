@@ -1,5 +1,5 @@
 {
-  "automation.PIDController.compute|block": "%pid|compute for timestep %timestep|(s) at state %y",
+  "automation.PIDController.compute|block": "%pid|compute for timestep %timestep|(ms) at state %y",
   "automation.PIDController.setControlSaturation|block": "set %pid|control saturation from %low|to %high",
   "automation.PIDController.setDerivativeFilter|block": "set %pid|derivative filter %N",
   "automation.PIDController.setGains|block": "set %pid|gains kp %kp|ki %ki|kd %kd",
