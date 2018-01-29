@@ -99,6 +99,7 @@ namespace pxsim {
             this.builtinParts["microservo"] = this.edgeConnectorState;
 
             this.builtinVisuals["buttons"] = () => new visuals.ButtonView();
+            this.builtinVisuals["touch"] = () => new visuals.TouchView();
             this.builtinVisuals["microservo"] = () => new visuals.MicroServoView();
             this.builtinVisuals["neopixel"] = () => new visuals.NeoPixelView();
 

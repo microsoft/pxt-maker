@@ -13,7 +13,7 @@
   "GamepadButton.Up|block": "up",
   "gamepad.button|block": "%button",
   "gamepad.move|block": "gamepad %index move by x %x|y %y",
-  "gamepad.setButton|block": "gamepad button %index=joystickStandardButton|%down",
+  "gamepad.setButton|block": "gamepad button %index=joystickStandardButton|%down=toggleDownUp",
   "gamepad.setThrottle|block": "gamepad set throttle %index|to %value",
   "gamepad|block": "gamepad",
   "{id:category}Gamepad": "Gamepad"
