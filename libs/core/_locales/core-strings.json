@@ -2,7 +2,7 @@
   "AnalogPin.analogRead|block": "analog read|pin %name",
   "AnalogPin.analogWrite|block": "analog write|pin %name|to %value",
   "DigitalPin.digitalRead|block": "digital read|pin %name",
-  "DigitalPin.digitalWrite|block": "digital write|pin %name|to %value",
+  "DigitalPin.digitalWrite|block": "digital write|pin %name|to %value=toggleHighLow",
   "DigitalPin.onPulsed|block": "on|pin %pin|pulsed %pulse",
   "DigitalPin.pulseIn|block": "pulse in (µs)|pin %name|pulsed %value",
   "DigitalPin.setPull|block": "set pull|pin %pin|to %pull",

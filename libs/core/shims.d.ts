@@ -67,13 +67,12 @@ declare interface DigitalPin {
      * @param value value to set on the pin
      */
     //% help=pins/digital-write weight=60
-    //% blockId=device_set_digital_pin block="digital write|pin %name|to %value"
+    //% blockId=device_set_digital_pin block="digital write|pin %name|to %value=toggleHighLow"
     //% parts="led" trackArgs=0
     //% blockNamespace=pins
     //% name.fieldEditor="gridpicker"
     //% name.fieldOptions.width=220
-    //% name.fieldOptions.columns=4
-    //% value.fieldEditor=togglehighlow shim=DigitalPinMethods::digitalWrite
+    //% name.fieldOptions.columns=4 shim=DigitalPinMethods::digitalWrite
     digitalWrite(value: boolean): void;
 
     /**
