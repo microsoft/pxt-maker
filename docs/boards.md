@@ -17,6 +17,12 @@
         "imageUrl": "/static/boards/adafruit-trinket-m0/gallery.jpg"  
     },
     {
+        "name": "Adafruit Feather M0 Express",
+        "url": "/boards/adafruit-feather-m0-express",
+        "cardType": "template",
+        "imageUrl": "/static/boards/adafruit-feather-m0-express/gallery.jpg"  
+    },
+    {
         "name": "Arduino Zero",
         "url": "/boards/arduino-zero",
         "cardType": "template",
