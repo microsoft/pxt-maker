@@ -22,6 +22,7 @@ declare const enum DAL {
     DEVICE_ID_SYSTEM_DAC = 19,
     DEVICE_ID_SYSTEM_MICROPHONE = 20,
     DEVICE_ID_SYSTEM_LEVEL_DETECTOR = 21,
+    DEVICE_ID_MSC = 22,
     DEVICE_ID_IO_P0 = 100,
     DEVICE_ID_MESSAGE_BUS_LISTENER = 1021,
     DEVICE_ID_NOTIFY_ONE = 1022,
@@ -64,14 +65,17 @@ declare const enum DAL {
     DEVICE_SERIAL_IN_USE = -1011,
     DEVICE_NO_DATA = -1012,
     DEVICE_NOT_IMPLEMENTED = -1013,
+    DEVICE_SPI_ERROR = -1014,
     DEVICE_OOM = 20,
     DEVICE_HEAP_ERROR = 30,
     DEVICE_NULL_DEREFERENCE = 40,
     DEVICE_USB_ERROR = 50,
+    DEVICE_FLASH_ERROR = 60,
     // built/codal/libraries/codal-core/inc/core/NotifyEvents.h
     DISPLAY_EVT_FREE = 1,
     CODAL_SERIAL_EVT_TX_EMPTY = 2,
     BLE_EVT_SERIAL_TX_EMPTY = 3,
+    SNORFS_UNLOCKED = 4,
     DEVICE_NOTIFY_USER_EVENT_BASE = 1024,
     // built/codal/libraries/codal-core/inc/driver-models/AbstractButton.h
     DEVICE_BUTTON_EVT_DOWN = 1,
@@ -121,21 +125,6 @@ declare const enum DAL {
     ACCELEROMETER_SHAKE_DAMPING = 10,
     ACCELEROMETER_SHAKE_RTX = 30,
     ACCELEROMETER_SHAKE_COUNT_THRESHOLD = 4,
-    // built/codal/libraries/codal-core/inc/driver-models/CodalUSB.h
-    GET_STATUS = 0,
-    CLEAR_FEATURE = 1,
-    SET_FEATURE = 3,
-    SET_ADDRESS = 5,
-    GET_DESCRIPTOR = 6,
-    SET_DESCRIPTOR = 7,
-    GET_CONFIGURATION = 8,
-    SET_CONFIGURATION = 9,
-    GET_INTERFACE = 10,
-    SET_INTERFACE = 11,
-    SYNCH_FRAME = 12,
-    DIRECTION_OUT = 0,
-    DIRECTION_IN = 1,
-    DEVICE_REMOTE_WAKEUP = 1,
     // built/codal/libraries/codal-core/inc/driver-models/Compass.h
     COMPASS_STATUS_RUNNING = 1,
     COMPASS_STATUS_CALIBRATED = 2,
@@ -172,6 +161,10 @@ declare const enum DAL {
     None = 0,
     Down = 1,
     Up = 2,
+    // built/codal/libraries/codal-core/inc/driver-models/SPIFlash.h
+    SPIFLASH_PAGE_SIZE = 256,
+    SPIFLASH_SMALL_ROW_PAGES = 16,
+    SPIFLASH_BIG_ROW_PAGES = 256,
     // built/codal/libraries/codal-core/inc/driver-models/Serial.h
     CODAL_SERIAL_DEFAULT_BAUD_RATE = 115200,
     CODAL_SERIAL_DEFAULT_BUFFER_SIZE = 20,
@@ -214,6 +207,9 @@ declare const enum DAL {
     ANIMATION_MODE_ANIMATE_IMAGE = 5,
     ANIMATION_MODE_ANIMATE_IMAGE_WITH_CLEAR = 6,
     ANIMATION_MODE_PRINT_CHARACTER = 7,
+    // built/codal/libraries/codal-core/inc/drivers/FAT.h
+    FAT_RESERVED_SECTORS = 1,
+    FAT_ROOT_DIR_SECTORS = 4,
     // built/codal/libraries/codal-core/inc/drivers/HID.h
     HID_REQUEST_GET_REPORT = 1,
     HID_REQUEST_GET_IDLE = 2,
@@ -254,6 +250,10 @@ declare const enum DAL {
     TOUCH_SENSOR_SAMPLE_PERIOD = 50,
     TOUCH_SENSE_SAMPLE_MAX = 1000,
     TOUCH_SENSOR_UPDATE_NEEDED = 1,
+    // built/codal/libraries/codal-core/inc/drivers/uf2format.h
+    UF2FORMAT_H = 1,
+    APP_START_ADDRESS = 8192,
+    UF2_FLAG_NOFLASH = 1,
     // built/codal/libraries/codal-core/inc/streams/DataStream.h
     DATASTREAM_MAXIMUM_BUFFERS = 1,
     // built/codal/libraries/codal-core/inc/streams/LevelDetector.h
@@ -361,21 +361,23 @@ declare const enum DAL {
     CFG_NUM_DOTSTARS = 201,
     CFG_DEFAULT_BUTTON_MODE = 202,
     CFG_SWD_ENABLED = 203,
+    CFG_FLASH_BYTES = 204,
     BUTTON_ACTIVE_HIGH_PULL_DOWN = 17,
     BUTTON_ACTIVE_HIGH_PULL_UP = 33,
     BUTTON_ACTIVE_HIGH_PULL_NONE = 49,
     BUTTON_ACTIVE_LOW_PULL_DOWN = 16,
     BUTTON_ACTIVE_LOW_PULL_UP = 32,
     BUTTON_ACTIVE_LOW_PULL_NONE = 48,
+    // built/codal/pxtapp/platform.h
     DEV_NUM_PINS = 64,
-    Click = 3,
-    LongClick = 4,
-    // built/codal/pxtapp/pxt.h
     PAGE_SIZE = 256,
-    DEVICE_ID_BUTTON_SLIDE = 3000,
-    DEVICE_ID_MICROPHONE = 3001,
-    DEVICE_ID_FIRST_BUTTON = 4000,
-    DEVICE_ID_FIRST_TOUCHBUTTON = 4100,
+    TEMPERATURE_NOMINAL_VALUE = 25,
+    TEMPERATURE_NOMINAL_READING = 10000,
+    TEMPERATURE_BETA = 3380,
+    TEMPERATURE_SERIES_RESISTOR = 10000,
+    LIGHTSENSOR_SENSITIVITY = 868,
+    LIGHTSENSOR_LOW_THRESHOLD = 128,
+    LIGHTSENSOR_HIGH_THRESHOLD = 896,
     PA00 = 0,
     PA01 = 1,
     PA02 = 2,
@@ -440,7 +442,13 @@ declare const enum DAL {
     PB29 = 61,
     PB30 = 62,
     PB31 = 63,
+    // built/codal/pxtapp/pxt.h
+    DEVICE_ID_BUTTON_SLIDE = 3000,
+    DEVICE_ID_MICROPHONE = 3001,
+    DEVICE_ID_FIRST_BUTTON = 4000,
+    DEVICE_ID_FIRST_TOUCHBUTTON = 4100,
     // built/codal/pxtapp/pxtbase.h
+    MEMDBG_ENABLED = 0,
     Int8LE = 1,
     UInt8LE = 2,
     Int16LE = 3,
@@ -465,10 +473,6 @@ declare const enum DAL {
     Function = 5,
     // built/codal/pxtapp/pxtconfig.h
     PXT_VM = 0,
-    // built/codal/pxtapp/uf2format.h
-    UF2FORMAT_H = 1,
-    APP_START_ADDRESS = 8192,
-    UF2_FLAG_NOFLASH = 1,
     // built/codal/pxtapp/uf2hid.h
     UF2_HID_H = 1,
 }
