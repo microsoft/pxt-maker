@@ -1,5 +1,6 @@
 namespace config {
     export const NUM_NEOPIXELS = 10;
+    export const FLASH_BYTES = 2097152;
     export const DEFAULT_BUTTON_MODE = DAL.BUTTON_ACTIVE_HIGH_PULL_DOWN;
 
     export const PIN_FLASH_MISO = DAL.PA16;
