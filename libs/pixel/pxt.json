@@ -4,8 +4,7 @@
     "files": [
         "neopixel.cpp",
         "neopixel.ts",
-        "shims.d.ts",
-        "enums.d.ts"
+        "shims.d.ts"
     ],
     "testFiles": [
     ],
