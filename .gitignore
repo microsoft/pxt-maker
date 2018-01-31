@@ -16,6 +16,9 @@ clients/win10/*.opendb
 clients/**/bin/**
 clients/**/obj/**
 clients/electron/projects
+shims.d.ts
+enums.d.ts
+_locales
 
 videos/**
 
