@@ -75,9 +75,9 @@ namespace pxsim.visuals {
             let btnSvgs = [this.btn];
 
             btnSvgs.forEach((btn, index) => {
-                btn.addEventListener(pointerEvents.down, ev => {
+                pointerEvents.down.forEach(evid => btn.addEventListener(evid, ev => {
                     this.button.setPressed(true);
-                })
+                }));
                 btn.addEventListener(pointerEvents.leave, ev => {
                     this.button.setPressed(false);
                 })
