@@ -1,0 +1,6 @@
+{
+  "AnalogPin.touchButton": "Get the cap-touch sensor for given pin (if available)",
+  "TouchButton.setThreshold": "Manually define the threshold use to detect a touch event. Any sensed value equal to or greater than this value will be interpreted as a touch.",
+  "TouchButton.setThreshold|param|threshold": "minimum value to consider a touch eg:200",
+  "TouchButton.value": "Reads the current value registered with the button."
+}

@@ -1,0 +1,7 @@
+{
+  "gamepad.button": "Maps to a standard layout button to the button index",
+  "gamepad.button|param|button": "the name of the button",
+  "gamepad.move": "Sets the current move on the gamepad",
+  "gamepad.setButton": "Sets the button state to down",
+  "gamepad.setThrottle": "Sets the throttle state"
+}

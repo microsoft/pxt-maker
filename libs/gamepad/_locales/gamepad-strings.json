@@ -1,0 +1,20 @@
+{
+  "GamepadButton.Down|block": "down",
+  "GamepadButton.LeftBumper|block": "left bumper",
+  "GamepadButton.LeftStick|block": "left stick",
+  "GamepadButton.LeftTrigger|block": "left trigger",
+  "GamepadButton.Left|block": "light",
+  "GamepadButton.RightBumer|block": "right bumper",
+  "GamepadButton.RightStick|block": "right stick",
+  "GamepadButton.RightTrigger|block": "right trigger",
+  "GamepadButton.Right|block": "right",
+  "GamepadButton.Select|block": "select",
+  "GamepadButton.Start|block": "start",
+  "GamepadButton.Up|block": "up",
+  "gamepad.button|block": "%button",
+  "gamepad.move|block": "gamepad %index move by x %x|y %y",
+  "gamepad.setButton|block": "gamepad button %index=joystickStandardButton|%down=toggleDownUp",
+  "gamepad.setThrottle|block": "gamepad set throttle %index|to %value",
+  "gamepad|block": "gamepad",
+  "{id:category}Gamepad": "Gamepad"
+}
