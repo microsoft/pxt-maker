@@ -1,5 +1,5 @@
 {
-    "name": "circuit-playground",
+    "name": "circuit-playground-express",
     "description": "The Adafruit Circuit Playground Express library",
     "files": [
         "README.md",
@@ -7,6 +7,7 @@
         "config.ts",
         "ns.ts"
     ],
+    "core": true,
     "dependencies": {
         "core": "file:../core",
         "buttons": "file:../buttons",
