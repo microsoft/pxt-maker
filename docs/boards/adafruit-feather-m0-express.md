@@ -1,4 +1,4 @@
-# Adafruit Metro M0 Express
+# Adafruit Feather M0 Express
 
 ```blocks
 loops.forever(function() {
@@ -7,5 +7,5 @@ loops.forever(function() {
 ```
 
 ```package
-adafruit-metro-m0-express
+adafruit-feather-m0-express
 ```

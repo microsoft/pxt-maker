@@ -4,26 +4,26 @@
         "outlineImage": "pkg://boardwireframe.svg",
         "width": 175,
         "height": 170,
-        "pinDist": 6.25,
+        "pinDist": 8.4,
         "pinBlocks": [{
-                "x": 80,
-                "y": 67,
+                "x": 55,
+                "y": 45,
                 "labels": ["BAT", "En", "USB", "D13", "D12", "~D11", "~D10", "~D9", "D6", "~D5", "SCL", "SDA"]
             },
             {
-                "x": 63,
-                "y": 110,
+                "x": 22,
+                "y": 117,
                 "labels": ["RST", "3.3V", "ARf", "GND0", "A0", "A1", "A2", "A3", "A4", "A5", "SCK", "MOSI", "MISO", "RX", "TX", "GND1"]
             }
         ],
         "leds": [{
-            "x": 12,
-            "y": 46,
+            "x": 15,
+            "y": 112,
             "color": "#ff4545",
             "label": "LED"
         },{
-            "x": 143,
-            "y": 62,
+            "x": 209,
+            "y": 119,
             "w": 8.8,
             "color": "neopixel",
             "label": "NEOPIXEL"
