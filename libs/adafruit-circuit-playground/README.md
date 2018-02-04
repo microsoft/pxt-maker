@@ -1,4 +1,0 @@
-# adafruit
-
-The adafruit library.
-
