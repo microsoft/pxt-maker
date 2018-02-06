@@ -1,5 +1,5 @@
 {
-    "name": "circuit-playground",
+    "name": "adafruit-circuit-playground-express",
     "description": "The Adafruit Circuit Playground Express library",
     "files": [
         "README.md",
@@ -14,5 +14,6 @@
         "music": "file:../music",
         "pixel": "file:../pixel"
     },
+    "core": true,
     "public": true
 }
