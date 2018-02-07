@@ -51,7 +51,7 @@
     },
     "gpioPinBlocks": [
         ["SCL", "SDA", "~D13", "~D12", "~D11", "~D10", "~D9", "~D8"],
-        ["D7", "~D6", "~D5", "~D4", "~D3", "~D2", "~TX", "~RX"],
+        ["D7", "~D6", "~D5", "~D4", "~D3", "D2", "~TX", "~RX"],
         ["A0", "A1", "A2", "A3", "A4", "A5"]
     ],
     "gpioPinMap": {
@@ -64,7 +64,7 @@
 
         "D0": "RX/D0",
         "D1": "TX/D1",
-        "D2": "~D2",
+        "D2": "D2",
         "D3": "~D3",
         "D4": "~D4",
         "D5": "~D5",
@@ -76,27 +76,10 @@
         "D11": "~D11",
         "D12": "~D12",
         "D13": "~D13",
-
-        "P0": "A0",
-        "P1": "A1",
-        "P2": "A2",
-        "P3": "A3",
-        "P4": "A4",
-        "P5": "A5",
-        "P6": "~SDA/D0",
-        "P7": "~SCL/D1",
-        "P8": "~D2",
-        "P9": "~D3",
-        "P10": "D4",
-        "P11": "D5",
-        "P12": "D6",
-        "P13": "D7",
-        "P14": "SS/A2",
-        "P15": "SCK/A3",
-        "P16": "~MISO/A4",
-        "P19": "~MOSI/A5"
+        
+        "LED": "~D13"
     },
-    "groundPins": ["GND0", "GND1", "GND2"],
+    "groundPins": ["GND1", "GND0", "GND2"],
     "threeVoltPins": ["3.3V"],
     "onboardComponents": ["pixel"],
     "marginWhenBreadboarding": [

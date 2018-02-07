@@ -17,6 +17,7 @@
         "libs/adafruit-trinket-m0",
         "libs/adafruit-metro-m0-express",
         "libs/adafruit-feather-m0-express",
+        "libs/adafruit-circuit-playground-express",
         "libs/arduino-zero",
         "libs/arduino-mkr",
         "libs/tests",
@@ -88,7 +89,7 @@
         "codalTarget": {
             "name": "codal-circuit-playground",
             "url": "https://github.com/lancaster-university/codal-circuit-playground",
-            "branch": "v1.3.4",
+            "branch": "v1.3.6",
             "type": "git"
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
@@ -113,7 +114,7 @@
         "organization": "Microsoft MakeCode",
         "organizationUrl": "https://makecode.com/",
         "organizationLogo": "./static/Microsoft-logo_rgb_c-gray-square.png",
-        "organizationWideLogo": "./static/Microsoft-logo_rgb_c-white.png",
+        "organizationWideLogo": "./static/Microsoft-logo_rgb_c-gray.png",
         "homeUrl": "https://maker.makecode.com/",
         "embedUrl": "https://maker.makecode.com/",
         "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",

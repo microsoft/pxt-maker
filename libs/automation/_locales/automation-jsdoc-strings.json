@@ -8,6 +8,7 @@
   "automation.BehaviorManager.add|param|behavior": "the behavior to add",
   "automation.BehaviorManager.start": "Starts the behavior control loop",
   "automation.BehaviorManager.stop": "Stops the execution loop",
+  "automation.PIDController": "A PID controller.\n* Reference: Feedback System, Karl Johan Astrom & Rickard M. Murry",
   "automation.PIDController.compute": "Computes the output based on the system state",
   "automation.PIDController.setControlSaturation": "Sets the control saturation values",
   "automation.PIDController.setControlSaturation|param|high": "highest control value, eg: 100",

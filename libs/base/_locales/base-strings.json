@@ -32,6 +32,7 @@
   "control.waitForEvent|block": "wait for event|from %src|with value %value",
   "control.waitMicros|block": "wait (µs)%micros",
   "control|block": "control",
+  "fieldeditors|block": "fieldeditors",
   "loops.forever|block": "forever",
   "loops.pause|block": "pause %pause=timePicker|ms",
   "loops|block": "loops",
