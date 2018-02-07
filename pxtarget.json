@@ -16,6 +16,7 @@
         "libs/light",
         "libs/adafruit-trinket-m0",
         "libs/adafruit-metro-m0-express",
+        "libs/adafruit-feather-m0-express",
         "libs/adafruit-circuit-playground-express",
         "libs/arduino-zero",
         "libs/arduino-mkr",
