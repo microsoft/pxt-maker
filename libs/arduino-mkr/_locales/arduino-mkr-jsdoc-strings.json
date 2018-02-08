@@ -22,11 +22,11 @@
   "input.buttonD7": "Button connecting D7 to GND.",
   "input.buttonD8": "Button connecting D8 to GND.",
   "input.buttonD9": "Button connecting D9 to GND.",
-  "input.pinA0": "Capacitive pin A0",
-  "input.pinA1": "Capacitive pin A1",
-  "input.pinA2": "Capacitive pin A2",
-  "input.pinA3": "Capacitive pin A3",
-  "input.pinA4": "Capacitive pin A4",
-  "input.pinA5": "Capacitive pin A5",
-  "input.pinA6": "Capacitive pin A6"
+  "input.touchA0": "Capacitive pin A0",
+  "input.touchA1": "Capacitive pin A1",
+  "input.touchA2": "Capacitive pin A2",
+  "input.touchA3": "Capacitive pin A3",
+  "input.touchA4": "Capacitive pin A4",
+  "input.touchA5": "Capacitive pin A5",
+  "input.touchA6": "Capacitive pin A6"
 }
