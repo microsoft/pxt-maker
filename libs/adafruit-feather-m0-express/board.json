@@ -1,0 +1,74 @@
+{
+    "visual": {
+        "image": "pkg://board.svg",
+        "outlineImage": "pkg://boardwireframe.svg",
+        "width": 175,
+        "height": 170,
+        "pinDist": 8.4,
+        "pinBlocks": [{
+                "x": 55,
+                "y": 45,
+                "labels": ["BAT", "En", "USB", "D13", "D12", "~D11", "~D10", "~D9", "D6", "~D5", "SCL", "SDA"]
+            },
+            {
+                "x": 22,
+                "y": 117,
+                "labels": ["RST", "3.3V", "ARf", "GND0", "A0", "A1", "A2", "A3", "A4", "A5", "SCK", "MOSI", "MISO", "RX", "TX", "GND1"]
+            }
+        ],
+        "leds": [{
+            "x": 15,
+            "y": 112,
+            "color": "#ff4545",
+            "label": "LED"
+        },{
+            "x": 209,
+            "y": 119,
+            "w": 8.8,
+            "color": "neopixel",
+            "label": "NEOPIXEL"
+        }]
+    },
+    "gpioPinBlocks": [
+        ["D13", "D12", "~D11", "~D10", "~D9", "D6", "~D5", "SCL", "SDA"],
+        ["A0", "A1", "A2", "A3", "A4", "A5", "SCK", "MOSI", "MISO", "RX", "TX"]
+    ],
+    "gpioPinMap": {
+        "A0": "A0",
+        "A1": "A1",
+        "A2": "A2",
+        "A3": "A3",
+        "A4": "A4",
+        "A5": "A5",
+
+        "D0": "RX",
+        "D1": "TX",
+        "D5": "~D5",
+        "D6": "D6",
+        "D9": "~D9",
+        "D10": "~D10",
+        "D11": "~D11",
+        "D12": "D12",
+        "D13": "D13",
+
+        "P0": "A0",
+        "P1": "A1",
+        "P2": "A2",
+        "P3": "A3",
+        "P4": "A4",
+        "P5": "A5",
+        "P6": "SDA",
+        "P7": "SCL",
+        "P11": "D5",
+        "P12": "D6"
+    },
+    "groundPins": ["GND0", "GND1"],
+    "threeVoltPins": ["3.3V"],
+    "onboardComponents": ["pixel"],
+    "marginWhenBreadboarding": [
+        0,
+        0,
+        80,
+        0
+    ]
+}
