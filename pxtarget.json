@@ -18,6 +18,7 @@
         "libs/adafruit-metro-m0-express",
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-circuit-playground-express",
+        "libs/adafruit-gemma-m0",
         "libs/arduino-zero",
         "libs/arduino-mkr",
         "libs/tests",
