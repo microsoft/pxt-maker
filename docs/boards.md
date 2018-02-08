@@ -23,6 +23,12 @@
         "imageUrl": "/static/boards/adafruit-feather-m0-express/gallery.jpg"  
     },
     {
+        "name": "Adafruit Gemma M0",
+        "url": "/boards/adafruit-gemma-m0",
+        "cardType": "template",
+        "imageUrl": "/static/boards/adafruit-gemma-m0/gallery.jpg"  
+    },
+    {
         "name": "Arduino MKR",
         "url": "/boards/arduino-mkr",
         "cardType": "template",

@@ -2,55 +2,79 @@
     "visual": {
         "image": "pkg://board.svg",
         "outlineImage": "pkg://boardwireframe.svg",
-        "width": 175,
-        "height": 170,
+        "width": 80,
+        "height": 80,
         "pinDist": 16,
-        "pinBlocks": [{
+        "pinBlocks": [
+            {
                 "x": 42,
                 "y": 33,
-                "labels": ["RST", "D3", "D4", "GND", "BAT"]
+                "labels": [
+                    "D2"
+                ]
             },
             {
                 "x": 42,
                 "y": 118,
-                "labels": ["3V", "D2", "D1", "D0", "USB"]
+                "labels": [
+                    "D0"
+                ]
+            },
+            {
+                "x": 42,
+                "y": 118,
+                "labels": [
+                    "3V"
+                ]
+            }, {
+                "x": 42,
+                "y": 118,
+                "labels": [
+                    "D1"
+                ]
+            }, {
+                "x": 42,
+                "y": 118,
+                "labels": [
+                    "GND"
+                ]
             }
         ],
-        "leds": [{
-            "x": 139.5,
-            "y": 107.7,
-            "w": 9.5,
-            "h": 5,
-            "color": "#ff4545",
-            "label": "LED"
-        }, {
-            "x": 73,
-            "y": 68,
-            "w": 5,
-            "color": "neopixel",
-            "label": "NEOPIXEL"
-        }]
+        "leds": [
+            {
+                "x": 139.5,
+                "y": 107.7,
+                "w": 9.5,
+                "h": 5,
+                "color": "#ff4545",
+                "label": "LED"
+            },
+            {
+                "x": 73,
+                "y": 68,
+                "w": 5,
+                "color": "neopixel",
+                "label": "NEOPIXEL"
+            }
+        ]
     },
     "gpioPinMap": {
         "D0": "D0",
         "D1": "D1",
         "D2": "D2",
-        "D3": "D3",
-        "D4": "D4",
-        "P0": "D0",
-        "P1": "D1",
-        "P2": "D2",
-        "P3": "D3",
-        "P4": "D4",
-        "A0": "D0",
-        "A1": "D1",
-        "A2": "D2",
-        "A3": "D3",
-        "A4": "D4"
+        "A0": "D1",
+        "A1": "D2",
+        "A2": "D0"
     },
-    "groundPins": ["GND"],
-    "threeVoltPins": ["3V"],
-    "onboardComponents": [],
+    "groundPins": [
+        "GND"
+    ],
+    "threeVoltPins": [
+        "3V"
+    ],
+    "onboardComponents": [
+        "pixel"
+    ],
     "marginWhenBreadboarding": [
         0,
         0,
