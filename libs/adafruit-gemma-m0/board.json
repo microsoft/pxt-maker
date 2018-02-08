@@ -2,39 +2,49 @@
     "visual": {
         "image": "pkg://board.svg",
         "outlineImage": "pkg://boardwireframe.svg",
-        "width": 80,
-        "height": 80,
+        "useCrocClips": true,
+        "width": 200,
+        "height": 200,
         "pinDist": 16,
         "pinBlocks": [
             {
-                "x": 42,
-                "y": 33,
+                "x": 40,
+                "y": 30,
                 "labels": [
                     "D2"
                 ]
             },
             {
-                "x": 42,
-                "y": 118,
+                "x": 20,
+                "y": 90,
                 "labels": [
                     "D0"
                 ]
             },
             {
-                "x": 42,
-                "y": 118,
+                "x": 40,
+                "y": 150,
                 "labels": [
                     "3V"
                 ]
-            }, {
-                "x": 42,
-                "y": 118,
+            },
+            {
+                "x": 160,
+                "y": 150,
+                "labels": [
+                    "VOUT"
+                ]
+            },
+            {
+                "x": 180,
+                "y": 90,
                 "labels": [
                     "D1"
                 ]
-            }, {
-                "x": 42,
-                "y": 118,
+            },
+            {
+                "x": 160,
+                "y": 40,
                 "labels": [
                     "GND"
                 ]
@@ -42,9 +52,9 @@
         ],
         "leds": [
             {
-                "x": 73,
-                "y": 68,
-                "w": 5,
+                "x": 29,
+                "y": 40,
+                "w": 3,
                 "color": "neopixel",
                 "label": "NEOPIXEL"
             }
@@ -62,8 +72,13 @@
         "GND"
     ],
     "threeVoltPins": [
-        "3V"
+        "3V",
+        "VOUT"
     ],
+    "i2cPins": {
+        "SDA": "D2",
+        "SCL": "D0"
+    },
     "onboardComponents": [
         "pixel"
     ],
