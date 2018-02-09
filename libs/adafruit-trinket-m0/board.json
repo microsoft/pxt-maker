@@ -1,4 +1,5 @@
 {
+    "driveDisplayName": "TRINKETBOOT",
     "visual": {
         "image": "pkg://board.svg",
         "outlineImage": "pkg://boardwireframe.svg",
