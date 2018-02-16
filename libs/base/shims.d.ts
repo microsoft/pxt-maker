@@ -70,17 +70,17 @@ declare namespace loops {
      * Repeats the code forever in the background. On each iteration, allows other codes to run.
      * @param body code to execute
      */
-    //% help=loops/forever weight=100 afterOnStart=true
-    //% blockId=forever block="forever" blockAllowMultiple=1 shim=loops::forever
+    //% help=loops/forever weight=100 afterOnStart=true deprecated=true
+    //% blockId=forever_deprecated block="forever" blockAllowMultiple=1 shim=loops::forever
     function forever(a: () => void): void;
 
     /**
      * Pause for the specified time in milliseconds
      * @param ms how long to pause for, eg: 100, 200, 500, 1000, 2000
      */
-    //% help=loops/pause weight=99
+    //% help=loops/pause weight=99 deprecated=true
     //% async block="pause %pause=timePicker|ms"
-    //% blockId=device_pause shim=loops::pause
+    //% blockId=device_pause_deprecated shim=loops::pause
     function pause(ms: int32): void;
 }
 declare namespace control {
