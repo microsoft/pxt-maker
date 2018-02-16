@@ -1,4 +1,4 @@
-# Boards
+# Adafruit
 
 ## Supported boards
 
@@ -27,24 +27,6 @@
         "url": "/boards/adafruit-gemma-m0",
         "cardType": "template",
         "imageUrl": "/static/libs/adafruit-gemma-m0.jpg"  
-    },
-    {
-        "name": "Arduino MKR",
-        "url": "/boards/arduino-mkr",
-        "cardType": "template",
-        "imageUrl": "/static/libs/arduino-mkr.jpg"  
-    },
-    {
-        "name": "Arduino Zero",
-        "url": "/boards/arduino-zero",
-        "cardType": "template",
-        "imageUrl": "/static/libs/arduino-zero.jpg"  
-    },
-    {
-        "name": "Sparkfun SAMD21 Dev Breakout",
-        "url": "/boards/sparkfun-samd21-dev-breakout",
-        "cardType": "template",
-        "imageUrl": "/static/libs/sparkfun-samd21-dev-breakout.jpg"  
     },
     {
         "name": "Add a new board",
