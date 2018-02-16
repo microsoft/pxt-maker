@@ -1,0 +1,25 @@
+{
+    "name": "sparkfun-samd21-dev-breakout",
+    "description": "The SparkFun SAMD21 Dev Breakout board",
+    "core": true,
+    "files": [
+        "README.md",
+        "board.json",
+        "board.svg",
+        "pxtparts.json",
+        "parts/speaker.svg",
+        "parts/headphone.svg",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "dependencies": {
+        "core": "file:../core",
+        "buttons": "file:../buttons",
+        "music": "file:../music"
+    },
+    "public": true
+}
