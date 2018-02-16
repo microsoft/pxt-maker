@@ -6,9 +6,7 @@
         "README.md",
         "board.json",
         "board.svg",
-        "pxtparts.json",
-        "parts/speaker.svg",
-        "parts/headphone.svg",
+        "board-outline.svg",
         "device.d.ts",
         "config.ts",
         "ns.ts"

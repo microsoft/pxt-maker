@@ -1,4 +1,1 @@
-# sparkfun
-
-The sparkfun library.
-
+# SparkFun SAM21 Dev Breakout board
