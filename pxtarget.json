@@ -114,7 +114,7 @@
         "gittag": "v0.3.0",
         "serviceId": "codal2cp",
         "variants": {
-            "nrf52": {
+            "nrf52832": {
                 "codalTarget": {
                     "name": "codal-ble-nano",
                     "url": "https://github.com/lancaster-university/codal-ble-nano",
@@ -122,10 +122,11 @@
                     "type": "git"
                 },
                 "codalBinary": "BLE_NANO",
+                "serviceId": "codal2ble",
                 "yottaConfig": {
                     "pxt": {
                         "board": {
-                            "id": "BOARD_ID_CPLAY"
+                            "id": "BOARD_ID_NRF52832"
                         }
                     }
                 }

@@ -1,6 +1,6 @@
 {
-    "name": "adafruit-trinket-m0",
-    "description": "Support for Adafruit Trinket M0",
+    "name": "redbear-ble-nano",
+    "description": "Support for RedBear BLE Nano v2",
     "files": [
         "README.md",
         "device.d.ts",
@@ -11,9 +11,8 @@
         "boardwireframe.svg"
     ],
     "core": true,
-    "compileServiceVariant": "nrf52",
     "dependencies": {
-        "core": "file:../core",
+        "core---nrf52832": "file:../core---nrf52832",
         "buttons": "file:../buttons"
     },
     "public": true
