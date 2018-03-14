@@ -15,8 +15,31 @@ static void initRandomSeed() {
     seedRandom(seed);
 }
 
+static void disableNFConPins() {
+    // Ensure NFC pins are configured as GPIO. If not, update the non-volatile UICR.
+    if (NRF_UICR->NFCPINS)
+    {
+        DMESG("RESET UICR\n");
+        // Enable Flash Writes
+        NRF_NVMC->CONFIG = (NVMC_CONFIG_WEN_Wen << NVMC_CONFIG_WEN_Pos);
+        while (NRF_NVMC->READY == NVMC_READY_READY_Busy);
+
+        // Configure PINS for GPIO use.
+        NRF_UICR->NFCPINS = 0;
+
+        // Disable Flash Writes
+        NRF_NVMC->CONFIG = (NVMC_CONFIG_WEN_Ren << NVMC_CONFIG_WEN_Pos);
+        while (NRF_NVMC->READY == NVMC_READY_READY_Busy);
+
+        // Reset, so the changes can take effect.
+        NVIC_SystemReset();
+    }
+}
+
 void platform_init() {
     initRandomSeed();
+
+    disableNFConPins(); // this is needed when P0_9 and P0_10 are to be used as regular pins
 
 /*
     if (*HF2_DBG_MAGIC_PTR == HF2_DBG_MAGIC_START) {
