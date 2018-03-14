@@ -2,14 +2,17 @@
 #define __PXT_PLATFORM_H
 
 #include "Image.h"
-#include "MbedTimer.h"
+#include "NRF52Timer.h"
+#include "NRF52Microphone.h"
+#include "NRF52Pin.h"
+#include "NRF52PWM.h"
 #include "MbedI2C.h"
 #include "MbedPin.h"
 #include "MultiButton.h"
 
 #define PAGE_SIZE 4096 // doesn't really apply
 
-#define DEV_NUM_PINS 48
+#define DEV_NUM_PINS 32
 
 // Table 8 in STM32F401xE Product Spec.
 #define DEV_PWM_PINS 0x0000ffffffffULL // all pins are PWM pins it seems
@@ -19,6 +22,8 @@
 #define DEV_ANALOG_PINS (DEV_PWM_PINS | DEV_AIN_PINS)
 
 #define CODAL_MBED codal::_mbed
+#define CODAL_PIN NRF52Pin
+#define CODAL_TIMER NRF52Timer
 
 #define IMAGE_BITS 1
 
