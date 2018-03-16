@@ -112,13 +112,24 @@
         },
         "githubCorePackage": "lancaster-university/codal",
         "gittag": "v0.3.0",
-        "serviceId": "codal2cp",
-        "variants": {
-            "nrf52832": {
+        "serviceId": "codal2cp"
+    },
+    "variants": {
+        "nrf52832": {
+            "serial": {
+                "useHF2": false
+            },
+            "compile": {
+                "openocdScript": "source [find interface/cmsis-dap.cfg]; source [find target/nrf52.cfg]",
+                "flashChecksumAddr": 0,
+                "deployFileMarker": "MBED.HTM",
+                "useUF2": false
+            },
+            "compileService": {
                 "codalTarget": {
                     "name": "codal-ble-nano",
                     "url": "https://github.com/lancaster-university/codal-ble-nano",
-                    "branch": "v0.0.2",
+                    "branch": "v0.0.3",
                     "type": "git"
                 },
                 "codalBinary": "BLE_NANO",
