@@ -10,11 +10,10 @@
 #include "MultiButton.h"
 #include "MbedTimer.h"
 
-#define PAGE_SIZE 4096 // doesn't really apply
+#define PAGE_SIZE 4096
 
 #define DEV_NUM_PINS 32
 
-// Table 8 in STM32F401xE Product Spec.
 #define DEV_PWM_PINS 0x0000ffffffffULL // all pins are PWM pins it seems
 #define DEV_AIN_PINS 0x0000f000001fULL
 
