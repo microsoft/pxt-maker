@@ -1,5 +1,4 @@
 {
     "name": "core---nrf52832",
-    "compileServiceVariant": "nrf52832",
     "additionalFilePath": "../../node_modules/pxt-common-packages/libs/core"
 }

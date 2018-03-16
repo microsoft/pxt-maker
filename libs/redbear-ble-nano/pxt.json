@@ -11,6 +11,7 @@
         "boardwireframe.svg"
     ],
     "core": true,
+    "compileServiceVariant": "nrf52832",
     "dependencies": {
         "core---nrf52832": "file:../core---nrf52832",
         "buttons": "file:../buttons"

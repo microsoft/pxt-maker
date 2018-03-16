@@ -9,6 +9,7 @@
     "bundleddirs": [
         "libs/base",
         "libs/core",
+        "libs/core---nrf52832",
         "libs/music",
         "libs/pixel",
         "libs/buttons",
@@ -22,6 +23,7 @@
         "libs/arduino-zero",
         "libs/arduino-mkr",
         "libs/sparkfun-samd21-dev-breakout",
+        "libs/redbear-ble-nano",
         "libs/tests",
         "libs/automation",
         "libs/dsp",

@@ -5,52 +5,37 @@
         "outlineImage": "pkg://boardwireframe.svg",
         "width": 175,
         "height": 170,
-        "pinDist": 16,
+        "pinDist": 20,
         "pinBlocks": [{
-                "x": 42,
-                "y": 33,
-                "labels": ["RST", "D3", "D4", "GND", "BAT"]
+                "x": 36,
+                "y": 12,
+                "labels": ["DCLK", "DIO", "P05", "P04", "GND", "VIN"]
             },
             {
-                "x": 42,
-                "y": 118,
-                "labels": ["3V", "D2", "D1", "D0", "USB"]
+                "x": 36,
+                "y": 137,
+                "labels": ["VDD", "P28", "P29", "P30", "P02", "GND"]
             }
         ],
         "leds": [{
-            "x": 139.5,
-            "y": 107.7,
-            "w": 9.5,
+            "x": 121,
+            "y": 25,
+            "w": 3,
             "h": 5,
-            "color": "#ff4545",
+            "color": "#ffff45",
             "label": "LED"
-        }, {
-            "x": 73,
-            "y": 68,
-            "w": 5,
-            "color": "neopixel",
-            "label": "NEOPIXEL"
         }]
     },
     "gpioPinMap": {
-        "D0": "D0",
-        "D1": "D1",
-        "D2": "D2",
-        "D3": "D3",
-        "D4": "D4",
-        "P0": "D0",
-        "P1": "D1",
-        "P2": "D2",
-        "P3": "D3",
-        "P4": "D4",
-        "A0": "D0",
-        "A1": "D1",
-        "A2": "D2",
-        "A3": "D3",
-        "A4": "D4"
+        "P02": "P02",
+        "P04": "P04",
+        "P05": "P05",
+        "P28": "P28",
+        "P29": "P29",
+        "P30": "P30"
     },
     "groundPins": ["GND"],
-    "threeVoltPins": ["3V"],
+    "threeVoltPins": ["VDD"],
     "onboardComponents": [],
     "marginWhenBreadboarding": [
         0,
