@@ -2,13 +2,13 @@
 #define __PXT_PLATFORM_H
 
 #include "Image.h"
-#include "NRF52Timer.h"
 #include "NRF52Microphone.h"
 #include "NRF52Pin.h"
 #include "NRF52PWM.h"
 #include "MbedI2C.h"
 #include "MbedPin.h"
 #include "MultiButton.h"
+#include "MbedTimer.h"
 
 #define PAGE_SIZE 4096 // doesn't really apply
 
@@ -23,7 +23,7 @@
 
 #define CODAL_MBED codal::_mbed
 #define CODAL_PIN NRF52Pin
-#define CODAL_TIMER NRF52Timer
+// #define CODAL_TIMER NRF52Timer
 
 #define IMAGE_BITS 1
 
