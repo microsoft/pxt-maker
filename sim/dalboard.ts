@@ -35,6 +35,10 @@ namespace pxsim {
                 let key = getConfigKey("PIN_" + name)
                 if (key != null)
                     return getConfig(key)
+                // this is for P03 format used by NRF - these are direct names of CPU pins
+                let m = /^P(\d+)$/.exec(name)
+                if (m)
+                    return parseInt(m[1])
                 return null
             }
 
@@ -77,7 +81,7 @@ namespace pxsim {
                 getConfig(DAL.CFG_PIN_DOTSTAR_DATA) ||
                 DAL.PA30
             );
-            
+
             this._neopixelState = {};
             this.bus.setNotify(DAL.DEVICE_ID_NOTIFY, DAL.DEVICE_ID_NOTIFY_ONE);
 
@@ -86,7 +90,7 @@ namespace pxsim {
             this.builtinParts["pinbuttons"] = this.builtinParts["buttons"]
                 = this.buttonState = new CommonButtonState();
             this.builtinParts["touch"] = this.touchButtonState = new TouchButtonState(pinList);
-            
+
             // components
             this.builtinParts["slideswitch"] = (pin: Pin) => new ToggleState(pin);
 

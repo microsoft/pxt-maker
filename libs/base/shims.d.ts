@@ -64,6 +64,15 @@ declare interface Buffer {
     //% shim=BufferMethods::write
     write(dstOffset: int32, src: Buffer): void;
 }
+declare namespace control {
+
+    /**
+     * Create a new zero-initialized buffer.
+     * @param size number of bytes in the buffer
+     */
+    //% shim=control::createBuffer
+    function createBuffer(size: int32): Buffer;
+}
 declare namespace loops {
 
     /**

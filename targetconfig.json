@@ -10,7 +10,8 @@
     "galleries": {
         "Adafruit": "boards/adafruit",
         "Arduino": "boards/arduino",
-        "SparkFun": "boards/sparkfun"
+        "SparkFun": "boards/sparkfun",
+        "Miscellaneous": "boards/misc"
     },
     "firmwareUrls": {
         "adafruit-circuit-playground-express": "https://learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-uf2-bootloader-details#updating-the-bootloader",
