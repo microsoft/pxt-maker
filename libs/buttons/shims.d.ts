@@ -61,6 +61,12 @@ declare interface Button {
     //% group="More" weight=46 blockGap=8
     //% trackArgs=0 shim=ButtonMethods::wasPressed
     wasPressed(): boolean;
+
+    /**
+     * Gets the component identifier for the buton
+     */
+    //% shim=ButtonMethods::id
+    id(): int32;
 }
 
 // Auto-generated. Do not edit. Really.
