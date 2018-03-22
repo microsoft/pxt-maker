@@ -17,6 +17,7 @@ namespace pxsim {
 
     export class DalBoard extends CoreBoard implements MusicBoard, LightBoard, CapTouchBoard, AccelerometerBoard {
         // state & update logic for component services
+        view: SVGElement;
         edgeConnectorState: EdgeConnectorState;
         lightSensorState: LightSensorState;
         buttonState: CommonButtonState;
@@ -172,7 +173,9 @@ namespace pxsim {
             }), opts);
 
             document.body.innerHTML = ""; // clear children
-            document.body.appendChild(viewHost.getView());
+            document.body.appendChild(this.view = viewHost.getView());
+
+            this.accelerometerState.attachEvents(this.view);
 
             return Promise.resolve();
         }
