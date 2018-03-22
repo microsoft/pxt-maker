@@ -5,15 +5,14 @@ declare namespace gamepad {
      * Sets the button state to down
      */
     //% help=gamepad/set-button
-    //% blockId=joystickSetButton block="gamepad button %index=joystickStandardButton|%down"
-    //% down.fieldEditor=toggledownup
+    //% blockId=joystickSetButton block="gamepad button %index=joystickStandardButton|%down=toggleDownUp"
     //% weight=100 shim=gamepad::setButton
     function setButton(index: int32, down: boolean): void;
 
     /**
      * Sets the current move on the gamepad
      **/
-    //% blockId=gamepadMove block="gamepad %index move by x %x|y %y"
+    //% blockId=gamepadMove block="gamepad %index|move by x %x|y %y"
     //% help=gamepad/move
     //% index.min=0 index.max=1
     //% blockGap=8 shim=gamepad::move

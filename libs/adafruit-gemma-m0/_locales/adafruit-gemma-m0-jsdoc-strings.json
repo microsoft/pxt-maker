@@ -1,0 +1,9 @@
+{
+  "input": "Respond to and read data from buttons and sensors.\n\nEvents and data from sensors.",
+  "input.buttonD0": "Button connecting D0 to GND.",
+  "input.buttonD1": "Button connecting D1 to GND.",
+  "input.buttonD2": "Button connecting D2 to GND.",
+  "input.touchD0": "Capacitive pin D0",
+  "input.touchD1": "Capacitive pin D1",
+  "input.touchD2": "Capacitive pin D4"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "redbear-ble-nano",
+    "description": "Support for RedBear BLE Nano v2",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts",
+        "board.json",
+        "board.svg",
+        "boardwireframe.svg"
+    ],
+    "core": true,
+    "compileServiceVariant": "nrf52832",
+    "dependencies": {
+        "core---nrf52832": "file:../core---nrf52832",
+        "buttons": "file:../buttons"
+    },
+    "public": true
+}

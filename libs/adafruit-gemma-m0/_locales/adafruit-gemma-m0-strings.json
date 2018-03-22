@@ -1,0 +1,12 @@
+{
+  "input.buttonD0|block": "button D0",
+  "input.buttonD1|block": "button D1",
+  "input.buttonD2|block": "button D2",
+  "input.touchD0|block": "touch D0",
+  "input.touchD1|block": "touch D1",
+  "input.touchD2|block": "touch D2",
+  "input|block": "input",
+  "{id:category}Config": "Config",
+  "{id:category}Input": "Input",
+  "{id:category}Pins": "Pins"
+}
