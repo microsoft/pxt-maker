@@ -15,8 +15,9 @@ namespace pxsim {
         return p
     }
 
-    export class DalBoard extends CoreBoard implements MusicBoard, LightBoard, CapTouchBoard {
+    export class DalBoard extends CoreBoard implements MusicBoard, LightBoard, CapTouchBoard, AccelerometerBoard {
         // state & update logic for component services
+        view: SVGElement;
         edgeConnectorState: EdgeConnectorState;
         lightSensorState: LightSensorState;
         buttonState: CommonButtonState;
@@ -24,6 +25,7 @@ namespace pxsim {
         audioState: AudioState;
         neopixelPin: Pin;
         touchButtonState: TouchButtonState;
+        accelerometerState: AccelerometerState;
 
         constructor(public boardDefinition: BoardDefinition) {
             super();
@@ -102,6 +104,8 @@ namespace pxsim {
             });
             this.builtinParts["microservo"] = this.edgeConnectorState;
 
+            this.builtinParts["accelerometer"] = this.accelerometerState = new AccelerometerState(runtime);;
+
             this.builtinVisuals["buttons"] = () => new visuals.ButtonView();
             this.builtinVisuals["microservo"] = () => new visuals.MicroServoView();
             this.builtinVisuals["neopixel"] = () => new visuals.NeoPixelView();
@@ -169,9 +173,15 @@ namespace pxsim {
             }), opts);
 
             document.body.innerHTML = ""; // clear children
-            document.body.appendChild(viewHost.getView());
+            document.body.appendChild(this.view = viewHost.getView());
+
+            this.accelerometerState.attachEvents(this.view);
 
             return Promise.resolve();
+        }
+
+        accelerometer(): Accelerometer {
+            return this.accelerometerState.accelerometer;
         }
 
         getDefaultPitchPin() {

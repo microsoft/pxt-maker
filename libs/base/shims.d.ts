@@ -102,14 +102,10 @@ declare namespace control {
     function millis(): int32;
 
     /**
-     * Run code when a registered event happens.
-     * @param id the event compoent id
-     * @param value the event value to match
+     * Used internally
      */
-    //% weight=20 blockGap=8 blockId="control_on_event" block="on event|from %src|with value %value"
-    //% blockExternalInputs=1
-    //% help="control/on-event" flags.defl=16 shim=control::onEvent
-    function onEvent(src: int32, value: int32, handler: () => void, flags?: int32): void;
+    //% flags.defl=16 shim=control::internalOnEvent
+    function internalOnEvent(src: int32, value: int32, handler: () => void, flags?: int32): void;
 
     /**
      * Reset the device.
