@@ -1,7 +1,7 @@
 # Arduino MKR
 
 ```blocks
-loops.forever(function() {
+forever(function() {
 
 })
 ```

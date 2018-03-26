@@ -1,7 +1,7 @@
 # SparkFun SAM21 Dev Breakout
 
 ```blocks
-loops.forever(function() {
+forever(function() {
 
 })
 ```

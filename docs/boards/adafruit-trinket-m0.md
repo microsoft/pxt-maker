@@ -1,7 +1,7 @@
 # Adafruit Trinket M0
 
 ```blocks
-loops.forever(function() {
+forever(function() {
 
 })
 ```

@@ -1,7 +1,7 @@
 # Adafruit Gemma M0
 
 ```blocks
-loops.forever(function() {
+forever(function() {
 
 })
 ```

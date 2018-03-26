@@ -1,7 +1,7 @@
 # Adafruit Feather M0 Express
 
 ```blocks
-loops.forever(function() {
+forever(function() {
 
 })
 ```

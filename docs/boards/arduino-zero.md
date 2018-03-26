@@ -1,7 +1,7 @@
 # Arduino Zero
 
 ```blocks
-loops.forever(function() {
+forever(function() {
 
 })
 ```
