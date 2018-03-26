@@ -40,6 +40,7 @@ declare interface AnalogPin {
     //% help=pins/analog-write weight=52
     //% blockId=device_set_analog_pin block="analog write|pin %name|to %value" blockGap=8
     //% blockNamespace=pins
+    //% parts="analogled" trackArgs=0
     //% name.fieldEditor="gridpicker"
     //% name.fieldOptions.width=220
     //% name.fieldOptions.columns=4 shim=AnalogPinMethods::analogWrite
