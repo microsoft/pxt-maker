@@ -94,8 +94,6 @@ namespace pxsim {
             this.builtinParts["touch"] = this.touchButtonState = new TouchButtonState(pinList);
 
             // components
-            this.builtinParts["slideswitch"] = (pin: Pin) => new ToggleState(pin);
-
             this.builtinParts["neopixel"] = (pin: Pin) => { return this.neopixelState(pin.id); } //this.neopixelState(this.neopixelPin.id);
             this.builtinParts["audio"] = this.audioState = new AudioState();
             this.builtinParts["edgeconnector"] = this.edgeConnectorState = new EdgeConnectorState({
@@ -122,6 +120,9 @@ namespace pxsim {
             this.builtinParts["led"] = (pin: Pin) => new ToggleState(pin);
             this.builtinVisuals["led"] = () => new visuals.LedView(parsePinString);
             this.builtinPartVisuals["led"] = (xy: visuals.Coord) => visuals.mkLedPart(xy);
+
+            this.builtinVisuals["photocell"] = () => new visuals.PhotoCellView(parsePinString);
+            this.builtinPartVisuals["photocell"] = (xy: visuals.Coord) => visuals.mkPhotoCellPart(xy);
         }
 
         receiveMessage(msg: SimulatorMessage) {
