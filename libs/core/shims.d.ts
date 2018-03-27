@@ -27,6 +27,7 @@ declare interface AnalogPin {
     //% help=pins/analog-read weight=53
     //% blockId=device_get_analog_pin block="analog read|pin %name" blockGap="8"
     //% blockNamespace=pins
+    //% parts="photocell" trackArgs=0
     //% name.fieldEditor="gridpicker"
     //% name.fieldOptions.width=220
     //% name.fieldOptions.columns=4 shim=AnalogPinMethods::analogRead
