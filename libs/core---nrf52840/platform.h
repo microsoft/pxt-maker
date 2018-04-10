@@ -25,7 +25,7 @@
 #define CODAL_PIN NRF52Pin
 // #define CODAL_TIMER NRF52Timer
 
-#define IMAGE_BITS 1
+#define IMAGE_BITS 4
 
 // The parameters below needs tuning!
 

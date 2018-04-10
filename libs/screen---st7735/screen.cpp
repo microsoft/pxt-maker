@@ -31,9 +31,12 @@ static Image_ lastImg;
 //%
 void setPalette(Buffer buf) {
     auto display = getWDisplay();
-    if (sizeof(display->currPalette) != buf->length)
+    if (48 != buf->length)
         target_panic(907);
-    memcpy(display->currPalette, buf->data, sizeof(display->currPalette));
+    for (int i = 0; i < 16; ++i) {
+        display->currPalette[i] =
+            (buf->data[i * 3] << 16) | (buf->data[i * 3 + 1] << 8) | (buf->data[i * 3 + 2] << 0);
+    }
     display->newPalette = true;
 }
 
@@ -56,7 +59,6 @@ void updateScreen(Image_ img) {
         if (lastImg->length() > (int)sizeof(display->screenBuf) - 10)
             target_panic(908);
 
-
         if (display->newPalette) {
             display->newPalette = false;
             display->lcd.expandPalette(display->currPalette, display->expPalette);
@@ -72,7 +74,8 @@ void updateScreen(Image_ img) {
             *dst++ = *src++;
         }
 
-        display->lcd.sendIndexedImage(display->screenBuf + off, LCD_WIDTH * LCD_HEIGHT / 2, display->expPalette);
+        display->lcd.sendIndexedImage(display->screenBuf + off, LCD_WIDTH * LCD_HEIGHT / 2,
+                                      display->expPalette);
     }
 }
 
