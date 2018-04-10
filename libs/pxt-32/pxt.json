@@ -16,6 +16,7 @@
         "core---nrf52832": "file:../core---nrf52840",
         "screen---st7735": "file:../screen---st7735",
         "game": "file:../game",
+        "keys": "file:../keys",
         "buttons": "file:../buttons"
     },
     "palette": [
