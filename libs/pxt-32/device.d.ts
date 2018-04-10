@@ -9,6 +9,10 @@ declare namespace pins {
     const P29: PwmPin;
     //% fixedInstance shim=pxt::getPin(P0_30)
     const P30: PwmPin;
+    //% fixedInstance shim=pxt::getPin(P0_11)
+    const P11: PwmPin;
+    //% fixedInstance shim=pxt::getPin(P0_12)
+    const P12: PwmPin;
     
     
     //% fixedInstance shim=pxt::getPin(P0_13)
@@ -54,5 +58,12 @@ declare namespace input {
     //% block="button 4" fixedInstance
     //% shim=pxt::getButtonByPin(P0_25,BUTTON_ACTIVE_LOW_PULL_UP)
     const button4: Button;
+
+    //% block="button E0" fixedInstance
+    //% shim=pxt::getButtonByPin(P0_30,BUTTON_ACTIVE_LOW_PULL_UP)
+    const buttonE0: Button;
+    //% block="button E1" fixedInstance
+    //% shim=pxt::getButtonByPin(P0_31,BUTTON_ACTIVE_LOW_PULL_UP)
+    const buttonE1: Button;
 }
 

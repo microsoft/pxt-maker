@@ -10,3 +10,6 @@ namespace config {
     export const PIN_RX = DAL.P0_30;
     export const PIN_TX = DAL.P0_29;
 }
+
+
+game.setWaitAnyKey(keys.pauseUntilAnyKey)
