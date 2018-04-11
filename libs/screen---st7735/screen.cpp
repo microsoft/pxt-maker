@@ -20,7 +20,7 @@ class WDisplay {
         : spi(*lookupPin(P0_3), *(Pin *)NULL, *lookupPin(P0_4)),
           lcd(spi, *lookupPin(P0_28), *lookupPin(P0_29)) {
         lcd.init();
-        lcd.setAddrWindow(0, 0, 128, 128);
+        lcd.setAddrWindow(0, 0, LCD_WIDTH, LCD_HEIGHT);
     }
 };
 
@@ -58,12 +58,16 @@ void updateScreen(Image_ img) {
 
         if (lastImg->length() > (int)sizeof(display->screenBuf) - 10)
             target_panic(908);
+        
+        auto palette = display->currPalette;
 
         if (display->newPalette) {
             display->newPalette = false;
-            display->lcd.expandPalette(display->currPalette, display->expPalette);
+        //    display->lcd.expandPalette(display->currPalette, display->expPalette);
+        } else {
+            palette = NULL;
         }
-
+        
         int off = ((uint32_t)lastImg->pix()) & 3;
         uint32_t *src = (uint32_t *)(lastImg->pix() - off);
         uint32_t *dst = (uint32_t *)display->screenBuf;
@@ -74,8 +78,8 @@ void updateScreen(Image_ img) {
             *dst++ = *src++;
         }
 
-        display->lcd.sendIndexedImage(display->screenBuf + off, LCD_WIDTH * LCD_HEIGHT / 2,
-                                      display->expPalette);
+        display->lcd.sendIndexedImage(display->screenBuf + off, LCD_WIDTH, LCD_HEIGHT,
+                                      palette);
     }
 }
 
