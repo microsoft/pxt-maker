@@ -19,7 +19,7 @@ declare namespace pins {
 }
 
 
-declare interface AnalogPin {
+declare interface AnalogInPin {
     /**
      * Read the connector value as analog, that is, as a value comprised between 0 and 1023.
      * @param name pin to write to
@@ -30,9 +30,12 @@ declare interface AnalogPin {
     //% parts="photocell" trackArgs=0
     //% name.fieldEditor="gridpicker"
     //% name.fieldOptions.width=220
-    //% name.fieldOptions.columns=4 shim=AnalogPinMethods::analogRead
+    //% name.fieldOptions.columns=4 shim=AnalogInPinMethods::analogRead
     analogRead(): int32;
+}
 
+
+declare interface AnalogOutPin {
     /**
      * Set the connector value as analog. Value must be comprised between 0 and 1023.
      * @param name pin name to write to
@@ -44,7 +47,7 @@ declare interface AnalogPin {
     //% parts="analogled" trackArgs=0
     //% name.fieldEditor="gridpicker"
     //% name.fieldOptions.width=220
-    //% name.fieldOptions.columns=4 shim=AnalogPinMethods::analogWrite
+    //% name.fieldOptions.columns=4 shim=AnalogOutPinMethods::analogWrite
     analogWrite(value: int32): void;
 }
 
@@ -194,6 +197,14 @@ declare namespace control {
      */
     //% help=control/allocate-notify-event shim=control::allocateNotifyEvent
     function allocateNotifyEvent(): int32;
+
+    /** Write a message to DMESG debugging buffer. */
+    //% shim=control::dmesg
+    function dmesg(s: string): void;
+
+    /** Write a message and value (pointer) to DMESG debugging buffer. */
+    //% shim=control::dmesgPtr
+    function dmesgPtr(str: string, ptr: Object): void;
 }
 declare namespace pins {
 
