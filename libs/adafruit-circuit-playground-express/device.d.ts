@@ -63,42 +63,42 @@ declare namespace input {
     /**
      * Capacitive pin A1
      */
-    //% block="pin A1" fixedInstance shim=pxt::getTouchButton(PIN_A1)
-    const pinA1: TouchButton;
+    //% block="touch A1" fixedInstance shim=pxt::getTouchButton(PIN_A1)
+    const touchA1: TouchButton;
 
     /**
      * Capacitive pin A2
      */
-    //% block="pin A2" fixedInstance shim=pxt::getTouchButton(PIN_A2)
-    const pinA2: TouchButton;
+    //% block="touch A2" fixedInstance shim=pxt::getTouchButton(PIN_A2)
+    const touchA2: TouchButton;
 
     /**
      * Capacitive pin A3
      */
-    //% block="pin A3" fixedInstance shim=pxt::getTouchButton(PIN_A3)
-    const pinA3: TouchButton;
+    //% block="touch A3" fixedInstance shim=pxt::getTouchButton(PIN_A3)
+    const touchA3: TouchButton;
 
     /**
      * Capacitive pin A4
      */
-    //% block="pin A4" fixedInstance shim=pxt::getTouchButton(PIN_A4)
-    const pinA4: TouchButton;
+    //% block="touch A4" fixedInstance shim=pxt::getTouchButton(PIN_A4)
+    const touchA4: TouchButton;
 
     /**
      * Capacitive pin A5
      */
-    //% block="pin A5" fixedInstance shim=pxt::getTouchButton(PIN_A5)
-    const pinA5: TouchButton;
+    //% block="touch A5" fixedInstance shim=pxt::getTouchButton(PIN_A5)
+    const touchA5: TouchButton;
 
     /**
      * Capacitive pin A6
      */
-    //% block="pin A6" fixedInstance shim=pxt::getTouchButton(PIN_A6)
-    const pinA6: TouchButton;
+    //% block="touch A6" fixedInstance shim=pxt::getTouchButton(PIN_A6)
+    const touchA6: TouchButton;
 
     /**
      * Capacitive pin A7
      */
-    //% block="pin A7" fixedInstance shim=pxt::getTouchButton(PIN_A7)
-    const pinA7: TouchButton;
+    //% block="touch A7" fixedInstance shim=pxt::getTouchButton(PIN_A7)
+    const touchA7: TouchButton;
 }
