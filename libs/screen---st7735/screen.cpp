@@ -59,13 +59,11 @@ void updateScreen(Image_ img) {
         if (lastImg->length() > (int)sizeof(display->screenBuf) - 10)
             target_panic(908);
         
-        auto palette = display->currPalette;
-
         if (display->newPalette) {
             display->newPalette = false;
-        //    display->lcd.expandPalette(display->currPalette, display->expPalette);
+            display->lcd.expandPalette(display->currPalette, display->expPalette);
         } else {
-            palette = NULL;
+          //  palette = NULL;
         }
         
         int off = ((uint32_t)lastImg->pix()) & 3;
@@ -79,7 +77,7 @@ void updateScreen(Image_ img) {
         }
 
         display->lcd.sendIndexedImage(display->screenBuf + off, LCD_WIDTH, LCD_HEIGHT,
-                                      palette);
+                                      display->expPalette);
     }
 }
 
