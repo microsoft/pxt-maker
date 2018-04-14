@@ -1,4 +1,5 @@
 #include "pxt.h"
+#include "MbedSerial.h"
 
 void early_init();
 
@@ -31,6 +32,17 @@ void platform_init() {
 */
 
 }
+
+static codal::_mbed::Serial *serial;
+
+void sendSerial(const char *data, int len) {
+    if (!serial) {
+        serial = new codal::_mbed::Serial(USBTX, NC);
+        serial->baud(9600);
+    }
+    serial->send((uint8_t*)data, len);
+}
+
 
 }
 
