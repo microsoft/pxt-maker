@@ -5,7 +5,9 @@
 //% groups=["0.","1#","2T","3t","4N","5n","6G","7g","8","9","aAR","bBP","cCp","dDO","eEY","fFW"]
 function img(lits: any, ...args: any[]): Image { return null }
 
-let screen = image.create(128, 128)
+let screen = image.create(
+    control.getConfigValue(DAL.CFG_DISPLAY_WIDTH, 160), 
+    control.getConfigValue(DAL.CFG_DISPLAY_HEIGHT, 128))
 
 namespace image {
     //% shim=pxt::setPalette

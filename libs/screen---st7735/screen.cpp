@@ -1,9 +1,6 @@
 #include "pxt.h"
 #include "ST7735.h"
 
-#define LCD_WIDTH 128
-#define LCD_HEIGHT 128
-
 namespace pxt {
 class WDisplay {
   public:
@@ -13,20 +10,23 @@ class WDisplay {
     uint32_t currPalette[16];
     bool newPalette;
 
-    uint32_t expPalette[256];
-    uint8_t screenBuf[LCD_WIDTH * LCD_HEIGHT / 2 + 20];
+    uint8_t *screenBuf;
+    Image_ lastImg;
+
+    int width, height;
 
     WDisplay()
-        : spi(*lookupPin(P0_3), *(Pin *)NULL, *lookupPin(P0_4)),
-          lcd(spi, *lookupPin(P0_28), *lookupPin(P0_29)) {
+        : spi(*LOOKUP_PIN(DISPLAY_MOSI), *LOOKUP_PIN(DISPLAY_MISO), *LOOKUP_PIN(DISPLAY_SCK)),
+          lcd(spi, *LOOKUP_PIN(DISPLAY_CS), *LOOKUP_PIN(DISPLAY_DC)) {
         lcd.init();
-        lcd.setAddrWindow(0, 0, LCD_WIDTH, LCD_HEIGHT);
+        width = getConfig(CFG_DISPLAY_WIDTH, 160);
+        height = getConfig(CFG_DISPLAY_HEIGHT, 128);
+        lcd.setAddrWindow(0, 0, width, height);
+        screenBuf = new uint8_t[width * height / 2 + 20];
     }
 };
 
 SINGLETON(WDisplay);
-
-static Image_ lastImg;
 
 //%
 void setPalette(Buffer buf) {
@@ -42,42 +42,33 @@ void setPalette(Buffer buf) {
 
 //%
 void updateScreen(Image_ img) {
-    if (img && img != lastImg) {
-        decrRC(lastImg);
+    auto display = getWDisplay();
+    
+    if (img && img != display->lastImg) {
+        decrRC(display->lastImg);
         incrRC(img);
-        lastImg = img;
+        display->lastImg = img;
     }
+    img = display->lastImg;
 
-    if (lastImg && lastImg->isDirty()) {
-        if (lastImg->bpp() != 4 || lastImg->width() != LCD_WIDTH || lastImg->height() != LCD_HEIGHT)
+    if (img && img->isDirty()) {
+        if (img->bpp() != 4 || img->width() != display->width || img->height() != display->height)
             target_panic(906);
 
-        lastImg->clearDirty();
-        auto display = getWDisplay();
+        img->clearDirty();
         display->lcd.waitForSendDone();
-
-        if (lastImg->length() > (int)sizeof(display->screenBuf) - 10)
-            target_panic(908);
         
+        auto palette = display->currPalette;
+
         if (display->newPalette) {
             display->newPalette = false;
-            display->lcd.expandPalette(display->currPalette, display->expPalette);
         } else {
-          //  palette = NULL;
-        }
-        
-        int off = ((uint32_t)lastImg->pix()) & 3;
-        uint32_t *src = (uint32_t *)(lastImg->pix() - off);
-        uint32_t *dst = (uint32_t *)display->screenBuf;
-        unsigned len = (lastImg->length() + off + 7) >> 3;
-
-        while (len--) {
-            *dst++ = *src++;
-            *dst++ = *src++;
+            palette = NULL;
         }
 
-        display->lcd.sendIndexedImage(display->screenBuf + off, LCD_WIDTH, LCD_HEIGHT,
-                                      display->expPalette);
+        memcpy(display->screenBuf, img->pix(), img->pixLength());
+
+        display->lcd.sendIndexedImage(display->screenBuf, display->width, display->height, palette);
     }
 }
 

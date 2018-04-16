@@ -523,6 +523,8 @@ declare const enum DAL {
     CFG_PIN_TXLED = 29,
     CFG_PIN_IR_OUT = 30,
     CFG_PIN_IR_IN = 31,
+    CFG_DISPLAY_WIDTH = 37,
+    CFG_DISPLAY_HEIGHT = 38,
     CFG_PIN_A0 = 100,
     CFG_PIN_A1 = 101,
     CFG_PIN_A2 = 102,
