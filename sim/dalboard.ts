@@ -15,7 +15,12 @@ namespace pxsim {
         return p
     }
 
-    export class DalBoard extends CoreBoard implements MusicBoard, LightBoard, CapTouchBoard, AccelerometerBoard {
+    export class DalBoard extends CoreBoard
+        implements MusicBoard,
+        LightBoard,
+        CapTouchBoard,
+        AccelerometerBoard,
+        PixelBoard {
         // state & update logic for component services
         view: SVGElement;
         edgeConnectorState: EdgeConnectorState;
@@ -24,6 +29,7 @@ namespace pxsim {
         _neopixelState: pxt.Map<CommonNeoPixelState>;
         audioState: AudioState;
         neopixelPin: Pin;
+        pixelPin: Pin;
         touchButtonState: TouchButtonState;
         accelerometerState: AccelerometerState;
 
@@ -83,6 +89,8 @@ namespace pxsim {
                 getConfig(DAL.CFG_PIN_DOTSTAR_DATA) ||
                 DAL.PA30
             );
+            // todo fix this
+            this.pixelPin = this.neopixelPin;
 
             this._neopixelState = {};
             this.bus.setNotify(DAL.DEVICE_ID_NOTIFY, DAL.DEVICE_ID_NOTIFY_ONE);
