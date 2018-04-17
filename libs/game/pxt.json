@@ -1,0 +1,6 @@
+{
+    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/game",
+    "dependencies": {
+        "screen": "file:../screen---st7735"
+    }
+}
