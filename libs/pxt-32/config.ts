@@ -16,7 +16,9 @@ namespace config {
     export const PIN_DISPLAY_CS = DAL.P0_28;
     export const PIN_DISPLAY_DC = DAL.P0_29;
 
-    export const DISPLAY_WIDTH = 128;
+    // use 0x010248 for 128x128 screen
+    export const DISPLAY_CFG0 = 0x40;
+    export const DISPLAY_WIDTH = 160;
     export const DISPLAY_HEIGHT = 128;
 }
 
