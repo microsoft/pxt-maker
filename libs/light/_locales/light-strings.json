@@ -29,7 +29,7 @@
   "PhotonMode.PenUp|block": "pen up",
   "light.NeoPixelStrip.brightness|block": "%strip|brightness",
   "light.NeoPixelStrip.clear|block": "%strip|clear",
-  "light.NeoPixelStrip.graph|block": "%strip|graph %value |up to %high",
+  "light.NeoPixelStrip.graph|block": "%strip|graph %value||up to %high",
   "light.NeoPixelStrip.length|block": "%strip|length",
   "light.NeoPixelStrip.move|block": "%strip|%kind=MoveKind|by %offset",
   "light.NeoPixelStrip.photonFlip|block": "%strip|photon flip",

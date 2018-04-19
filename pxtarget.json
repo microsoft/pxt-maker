@@ -59,7 +59,8 @@
         "parts": true,
         "partsAspectRatio": 0.69,
         "instructions": true,
-        "dynamicBoardDefinition": true
+        "dynamicBoardDefinition": true,
+        "debugger": true
     },
     "cloud": {
         "workspace": false,

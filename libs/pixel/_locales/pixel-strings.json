@@ -15,7 +15,7 @@
   "pixel.hsv|block": "hue %hue|sat %sat|val %val",
   "pixel.rgb|block": "red %red|green %green|blue %blue",
   "pixel.setBrightness|block": "set brightness %brightness",
-  "pixel.setColor|block": "set pixel color %rgb=pixel_colors",
+  "pixel.setColor|block": "set pixel color %rgb=colorNumberPicker",
   "pixel|block": "pixel",
   "{id:category}Pixel": "Pixel"
 }

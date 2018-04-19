@@ -6,6 +6,7 @@
   "ButtonEvent.Down|block": "down",
   "ButtonEvent.LongClick|block": "long click",
   "ButtonEvent.Up|block": "up",
+  "{id:category}Button": "Button",
   "{id:category}DigitalPin": "DigitalPin",
   "{id:category}Input": "Input",
   "{id:group}More": "More"
