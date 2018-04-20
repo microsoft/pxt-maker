@@ -8,6 +8,7 @@
         ]
     },
     "galleries": {
+        "Examples": "examples",
         "Adafruit": "boards/adafruit",
         "Arduino": "boards/arduino",
         "SparkFun": "boards/sparkfun",

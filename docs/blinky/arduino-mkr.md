@@ -36,11 +36,11 @@ to get your code on the board.
 
 ## Rinse and repeat
 
-Place a ``loops.forever`` block on the canvas and drag
+Place a ``forever`` block on the canvas and drag
 your blocks over from ``on start``.
 
 ```blocks
-loops.forever(function() {
+forever(function() {
     pins.D13.digitalWrite(true)
     loops.pause(100)
     pins.D13.digitalWrite(false)
@@ -57,7 +57,7 @@ to get your code on the board.
 Add a pause to keep the LED off.
 
 ```blocks
-loops.forever(function() {
+forever(function() {
     pins.D13.digitalWrite(true)
     loops.pause(100)
     pins.D13.digitalWrite(false)
