@@ -31,7 +31,7 @@ Open the ``Loops`` drawer and drag a ``||pause||`` block between the two ``||set
 ```blocks
 forever(() => {
     pixel.setColor(PixelColors.Red)
-    loops.pause(1000)
+    pause(1000)
     pixel.setColor(PixelColors.Blue)
 })
 ```
@@ -43,9 +43,9 @@ Open the ``Loops`` drawer and drag another ``||pause||`` below the two ``||set p
 ```blocks
 forever(() => {
     pixel.setColor(PixelColors.Red)
-    loops.pause(1000)
+    pause(1000)
     pixel.setColor(PixelColors.Blue)
-    loops.pause(1000)
+    pause(1000)
 })
 ```
 
