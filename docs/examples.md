@@ -32,8 +32,8 @@
         "cardType": "example"
     },
     {
-        "name": "Magic Glow",
-        "url": "/examples/magic-glow",
+        "name": "Glow Light",
+        "url": "/examples/glow-light",
         "cardType": "example"
     }
 ]
