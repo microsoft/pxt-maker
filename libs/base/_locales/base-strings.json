@@ -10,7 +10,7 @@
   "Array.unshift|block": "%list| insert %value| at beginning",
   "Array|block": "Array",
   "Math.constrain|block": "constrain %value|between %low|and %high",
-  "Math.map|block": "map %value|from low %fromLow|from high %fromHigh|to low %toLow|to high %toHigh",
+  "Math.map|block": "map %value|from low %fromLow|high %fromHigh|to low %toLow|high %toHigh",
   "Math.randomRange|block": "pick random %min|to %limit",
   "Math|block": "Math",
   "String.charAt|block": "char from %this=text|at %pos",
