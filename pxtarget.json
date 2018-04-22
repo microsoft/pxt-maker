@@ -2,8 +2,8 @@
     "id": "maker",
     "platformid": "codal",
     "nickname": "maker",
-    "name": "MakeCode Maker Boards (Cortex class)",
-    "title": "MakeCode Maker Boards - Blocks / Javascript editor",
+    "name": "MakeCode Maker (Cortex class)",
+    "title": "MakeCode Maker - Blocks / Javascript editor",
     "description": "A Blocks / JavaScript code editor for MakeCode Maker Boards",
     "corepkg": "core",
     "bundleddirs": [
