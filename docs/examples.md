@@ -50,3 +50,25 @@
     }
 ]
 ```
+
+## Keyboard and mouse
+
+```codecard
+[
+    {
+        "name": "Keyboard button",
+        "url": "/examples/keyboard-button",
+        "cardType": "example"
+    }
+]
+```
+
+## See Also
+
+[Blinky](/examples/blinky),
+[Switchy](/examples/switchy),
+[Button](/examples/button),
+[Glowy](/examples/glowy),
+[Glow light](/examples/glow-light),
+[Servo](/examples/servo),
+[Keyboard button](/examples/keyboard-button)
