@@ -43,6 +43,7 @@
   "KeyboardMediaKey.WebSearch|block": "web search",
   "KeyboardMediaKey.WebStop|block": "web stop",
   "keyboard.functionKey|block": "keyboard function key %key|%event",
+  "keyboard.key|block": "keyboard key %key|%event",
   "keyboard.mediaKey|block": "keyboard media key %key|%event",
   "keyboard.type|block": "keyboard type %text",
   "keyboard|block": "keyboard",
