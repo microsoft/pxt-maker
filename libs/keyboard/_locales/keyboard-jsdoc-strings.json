@@ -1,5 +1,6 @@
 {
   "keyboard": "Keyboard emulation",
+  "keyboard.key": "Sends a media key command",
   "keyboard.mediaKey": "Sends a media key command",
   "keyboard.type": "Sends a sequence of keystrokes to the keyboard"
 }

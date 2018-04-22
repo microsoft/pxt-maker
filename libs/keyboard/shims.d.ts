@@ -11,6 +11,13 @@ declare namespace keyboard {
     /**
      * Sends a media key command
      */
+    //% blockId=keyboardStandardKey block="keyboard key %key|%event"
+    //% blockGap=8 weight=99 shim=keyboard::key
+    function key(key: string, event: KeyboardKeyEvent): void;
+
+    /**
+     * Sends a media key command
+     */
     //% blockId=keyboardMediaKey block="keyboard media key %key|%event"
     //% blockGap=8 shim=keyboard::mediaKey
     function mediaKey(key: KeyboardMediaKey, event: KeyboardKeyEvent): void;
