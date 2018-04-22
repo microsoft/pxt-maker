@@ -12,3 +12,7 @@ input.buttonD1.onEvent(ButtonEvent.Up, function () {
     pins.LED.digitalWrite(false)
 })
 ```
+
+```package
+keyboard
+```
