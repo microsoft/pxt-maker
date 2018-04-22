@@ -20,14 +20,16 @@ class WDisplay {
           lcd(spi, *LOOKUP_PIN(DISPLAY_CS), *LOOKUP_PIN(DISPLAY_DC)) {
         lcd.init();
         uint32_t cfg0 = getConfig(CFG_DISPLAY_CFG0, 0x40);
+        uint32_t frmctr1 = getConfig(CFG_DISPLAY_CFG1, 0x000603);
         auto madctl = cfg0 & 0xff;
         auto offX = (cfg0 >> 8) & 0xff;
         auto offY = (cfg0 >> 16) & 0xff;
-        lcd.configure(madctl);
+        lcd.configure(madctl, frmctr1);
         width = getConfig(CFG_DISPLAY_WIDTH, 160);
         height = getConfig(CFG_DISPLAY_HEIGHT, 128);
         lcd.setAddrWindow(offX, offY, width, height);
         screenBuf = new uint8_t[width * height / 2 + 20];
+        lastImg = NULL;
     }
 };
 
