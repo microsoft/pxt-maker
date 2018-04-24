@@ -57,6 +57,8 @@
   "info.setLife": "Sets the number of lives",
   "info.setLife|param|value": "the number of lives, eg: 3",
   "info.setScore": "Sets the score",
+  "info.startCountdown": "Starts a countdown of the given duration in seconds",
+  "info.startCountdown|param|duration": "the duration of the countdown, eg: 10",
   "info.updateHighScore": "Sends the current score and the new high score",
   "scene": "Control the background, tiles and camera\n\nControl the background, tiles and camera",
   "scene.addBackgroundLayer": "Adds a moving background layer",
