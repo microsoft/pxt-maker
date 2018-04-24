@@ -64,6 +64,7 @@
   "info.score|block": "score",
   "info.setLife|block": "set life to %value",
   "info.setScore|block": "set score to %value",
+  "info.startCountdown|block": "start countdown %duration (s)",
   "info|block": "info",
   "scene.addBackgroundLayer|block": "add background layer %image=screen_image_picker||distance %distance|aligned %alignment",
   "scene.backgroundImage|block": "background image",

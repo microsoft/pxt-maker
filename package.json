@@ -29,8 +29,6 @@
     "docs/*/*.md",
     "docs/*/*/*.md"
   ],
-  "main": "built/pxtrequire.js",
-  "typings": "built/pxtrequire.d.ts",
   "devDependencies": {
     "typescript": "2.6.1",
     "less": "2.7.3",
@@ -41,8 +39,8 @@
     "@types/node": "8.0.53"
   },
   "dependencies": {
-    "pxt-common-packages": "0.21.7",
-    "pxt-core": "3.11.1"
+    "pxt-common-packages": "0.21.8",
+    "pxt-core": "3.12.1"
   },
   "scripts": {
     "test": "node node_modules/pxt-core/built/pxt.js travis"
