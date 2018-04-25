@@ -183,6 +183,7 @@
     },
     "appTheme": {
         "accentColor": "#ecf0f1",
+        "backgroundColor": "#ffffff",
         "logoUrl": "https://github.com/Microsoft/pxt-maker",
         "logo": "./static/logo.svg",
         "docsLogo": "./static/logo.svg",
