@@ -4,7 +4,7 @@
 	"design": {
 		"ios": {
 			"pictureAspect": "backgroundAndMargin",
-			"backgroundColor": "#000000",
+			"backgroundColor": "#ffffff",
 			"margin": "14%",
 			"assets": {
 				"ios6AndPriorIcons": true,
@@ -16,7 +16,7 @@
 		"desktopBrowser": {},
 		"windows": {
 			"pictureAspect": "noChange",
-			"backgroundColor": "#000000",
+			"backgroundColor": "#ffffff",
 			"onConflict": "override",
 			"assets": {
 				"windows80Ie10Tile": true,
@@ -30,7 +30,7 @@
 		},
 		"androidChrome": {
 			"pictureAspect": "noChange",
-			"themeColor": "#ffffff",
+			"themeColor": "#000000",
 			"manifest": {
 				"display": "standalone",
 				"orientation": "notSet",
