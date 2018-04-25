@@ -260,6 +260,14 @@ declare const enum DAL {
     MULTI_BUTTON_SUPRESSED_1 = 16,
     MULTI_BUTTON_SUPRESSED_2 = 32,
     MULTI_BUTTON_ATTACHED = 64,
+    // built/codal/libraries/codal-core/inc/drivers/ST7735.h
+    MADCTL_MY = 128,
+    MADCTL_MX = 64,
+    MADCTL_MV = 32,
+    MADCTL_ML = 16,
+    MADCTL_RGB = 0,
+    MADCTL_BGR = 8,
+    MADCTL_MH = 4,
     // built/codal/libraries/codal-core/inc/drivers/TouchButton.h
     TOUCH_BUTTON_CALIBRATION_PERIOD = 10,
     TOUCH_BUTTON_CALIBRATION_LINEAR_OFFSET = 2,
@@ -531,6 +539,8 @@ declare const enum DAL {
     CFG_PIN_DISPLAY_DC = 36,
     CFG_DISPLAY_WIDTH = 37,
     CFG_DISPLAY_HEIGHT = 38,
+    CFG_DISPLAY_CFG0 = 39,
+    CFG_DISPLAY_CFG1 = 40,
     CFG_PIN_A0 = 100,
     CFG_PIN_A1 = 101,
     CFG_PIN_A2 = 102,
