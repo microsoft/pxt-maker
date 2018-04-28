@@ -14,6 +14,7 @@ class WDisplay {
     Image_ lastImg;
 
     int width, height;
+    uint32_t palXOR;
 
     WDisplay()
         : spi(*LOOKUP_PIN(DISPLAY_MOSI), *LOOKUP_PIN(DISPLAY_MISO), *LOOKUP_PIN(DISPLAY_SCK)),
@@ -21,6 +22,7 @@ class WDisplay {
         lcd.init();
         uint32_t cfg0 = getConfig(CFG_DISPLAY_CFG0, 0x40);
         uint32_t frmctr1 = getConfig(CFG_DISPLAY_CFG1, 0x000603);
+        palXOR = (cfg0 & 0x1000000) ? 0xffffff : 0x000000;
         auto madctl = cfg0 & 0xff;
         auto offX = (cfg0 >> 8) & 0xff;
         auto offY = (cfg0 >> 16) & 0xff;
@@ -43,6 +45,7 @@ void setPalette(Buffer buf) {
     for (int i = 0; i < 16; ++i) {
         display->currPalette[i] =
             (buf->data[i * 3] << 16) | (buf->data[i * 3 + 1] << 8) | (buf->data[i * 3 + 2] << 0);
+        display->currPalette[i] ^= display->palXOR;
     }
     display->newPalette = true;
 }
