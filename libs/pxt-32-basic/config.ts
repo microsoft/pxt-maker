@@ -1,6 +1,5 @@
 
 namespace config {
-    export const PIN_D13 = DAL.PA_5;
     export const PIN_LED = DAL.PA_5;
     export const PIN_SCK = DAL.PA_5;
     export const PIN_MISO = DAL.PA_6;
@@ -21,15 +20,29 @@ namespace config {
     export const PIN_D10 = DAL.PA_4;
     export const PIN_D11 = DAL.PA_7;
     export const PIN_D12 = DAL.PA_6;
+    export const PIN_D13 = DAL.PA_5;
+    export const PIN_D14 = DAL.PB_8;
 
+    export const PIN_D15 = DAL.PC_0;
+
+
+    export const PIN_DISPLAY_MOSI = PIN_D11;
+    export const PIN_DISPLAY_MISO = PIN_D12; // NC
+    export const PIN_DISPLAY_SCK = PIN_D13; // 13
+    export const PIN_DISPLAY_CS = PIN_D9;
+    export const PIN_DISPLAY_DC = PIN_D10;
+    export const PIN_DISPLAY_RST = PIN_D14;
+
+    /*
     export const PIN_DISPLAY_MOSI = DAL.PB_15; // 34
     export const PIN_DISPLAY_MISO = DAL.PB_14; // NC / 33
     export const PIN_DISPLAY_SCK = DAL.PB_13; // 32
     export const PIN_DISPLAY_CS = DAL.PB_12; // 31
     export const PIN_DISPLAY_DC = DAL.PC_6; // 35
+    */
 
     // it's really piezo speaker, not an amp
-    export const PIN_SPEAKER_AMP = DAL.PC_7; // 36
+    export const PIN_SPEAKER_AMP = DAL.PB_11; // SDA/RX3
 
     // 128x128
     //export const DISPLAY_CFG0 = 0x00010248;
@@ -40,12 +53,12 @@ namespace config {
     //export const DISPLAY_CFG1 = 0x000603;
 
     // ST7735 from ALI
-    //export const DISPLAY_CFG0 = 0x01000090;
-    //export const DISPLAY_CFG1 = 0x000603;
+    export const DISPLAY_CFG0 = 0x01000090;
+    export const DISPLAY_CFG1 = 0x000603;
 
     // ILI9163 from ALI
-    export const DISPLAY_CFG0 = 0x00000090;
-    export const DISPLAY_CFG1 = 0x000e14ff;
+    //export const DISPLAY_CFG0 = 0x00000090;
+    //export const DISPLAY_CFG1 = 0x000e14ff;
 
     export const DISPLAY_WIDTH = 160;
     export const DISPLAY_HEIGHT = 128;
