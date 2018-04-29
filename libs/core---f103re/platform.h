@@ -7,7 +7,7 @@
 #include "MbedPin.h"
 #include "MultiButton.h"
 #include "F103REPin.h"
-#include "MbedSPI.h"
+#include "STM32SPI.h"
 
 #define PAGE_SIZE 1024
 
@@ -21,7 +21,7 @@
 
 #define CODAL_MBED codal::_mbed
 #define CODAL_PIN F103REPin
-#define CODAL_SPI MbedSPI
+#define CODAL_SPI STM32SPI
 // #define CODAL_TIMER NRF52Timer
 
 #define IMAGE_BITS 4

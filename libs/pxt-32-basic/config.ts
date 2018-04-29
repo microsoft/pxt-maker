@@ -60,6 +60,7 @@ namespace config {
     //export const DISPLAY_CFG0 = 0x00000090;
     //export const DISPLAY_CFG1 = 0x000e14ff;
 
+    export const DISPLAY_CFG2 = 18; // MHz
     export const DISPLAY_WIDTH = 160;
     export const DISPLAY_HEIGHT = 128;
 }
