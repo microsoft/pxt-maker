@@ -180,6 +180,35 @@
                     }
                 }
             }
+        },
+        "f103re": {
+            "serial": {
+                "useHF2": false
+            },
+            "compile": {
+                "openocdScript": "source [find board/st_nucleo_f103rb.cfg]",
+                "flashChecksumAddr": 0,
+                "deployFileMarker": "MBED.HTM",
+                "vtableShift": 4,
+                "useUF2": false
+            },
+            "compileService": {
+                "codalTarget": {
+                    "name": "codal-generic-f103re",
+                    "url": "https://github.com/mmoskal/codal-generic-f103re",
+                    "branch": "v0.0.1",
+                    "type": "git"
+                },
+                "codalBinary": "GENERIC_F103RE",
+                "serviceId": "codal2f103re",
+                "yottaConfig": {
+                    "pxt": {
+                        "board": {
+                            "id": "BOARD_ID_F103RE"
+                        }
+                    }
+                }
+            }
         }
     },
     "appTheme": {
@@ -203,8 +232,7 @@
         "betaUrl": "https://github.com/Microsoft/pxt-maker",
         "boardName": "board",
         "homeScreenHero": "./static/hero.jpg",
-        "docMenu": [
-            {
+        "docMenu": [{
                 "name": "About",
                 "path": "/about"
             },
