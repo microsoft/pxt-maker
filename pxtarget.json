@@ -196,7 +196,7 @@
                 "codalTarget": {
                     "name": "codal-generic-f103re",
                     "url": "https://github.com/mmoskal/codal-generic-f103re",
-                    "branch": "v0.0.1",
+                    "branch": "v0.0.2",
                     "type": "git"
                 },
                 "codalBinary": "GENERIC_F103RE",
