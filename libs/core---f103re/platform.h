@@ -2,18 +2,16 @@
 #define __PXT_PLATFORM_H
 
 #include "Image.h"
-#include "NRF52Microphone.h"
-#include "NRF52Pin.h"
-#include "NRF52PWM.h"
+#include "MbedTimer.h"
 #include "MbedI2C.h"
 #include "MbedPin.h"
 #include "MultiButton.h"
-#include "MbedTimer.h"
-#include "NRF52SPI.h"
+#include "F103REPin.h"
+#include "MbedSPI.h"
 
 #define PAGE_SIZE 1024
 
-#define DEV_NUM_PINS 32
+#define DEV_NUM_PINS 48
 
 #define DEV_PWM_PINS 0x0000E0030FCEULL
 #define DEV_AIN_PINS 0x003f000300ffULL
@@ -23,6 +21,7 @@
 
 #define CODAL_MBED codal::_mbed
 #define CODAL_PIN F103REPin
+#define CODAL_SPI MbedSPI
 // #define CODAL_TIMER NRF52Timer
 
 #define IMAGE_BITS 4

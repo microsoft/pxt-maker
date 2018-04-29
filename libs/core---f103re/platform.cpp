@@ -1,8 +1,6 @@
 #include "pxt.h"
 #include "MbedSerial.h"
 
-void early_init();
-
 namespace pxt {
 
 static void initRandomSeed() {
@@ -20,8 +18,6 @@ static void initRandomSeed() {
 
 void platform_init() {
     initRandomSeed();
-
-    early_init();
 
 /*
     if (*HF2_DBG_MAGIC_PTR == HF2_DBG_MAGIC_START) {

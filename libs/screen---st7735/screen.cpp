@@ -4,7 +4,7 @@
 namespace pxt {
 class WDisplay {
   public:
-    NRF52SPI spi;
+    CODAL_SPI spi;
     ST7735 lcd;
 
     uint32_t currPalette[16];
