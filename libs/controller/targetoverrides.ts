@@ -1,4 +1,4 @@
-namespace keys {
+namespace controller {
     //% fixedInstance block="left"
     export const left = new Button(1, input.button3.id(), DAL.DEVICE_BUTTON_EVT_UP, DAL.DEVICE_BUTTON_EVT_DOWN);
     //% fixedInstance block="up"
