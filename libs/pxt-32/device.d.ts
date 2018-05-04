@@ -1,20 +1,24 @@
 declare namespace pins {
-    //% fixedInstance shim=pxt::getPin(P0_2)
-    const P02: PwmPin;
-    //% fixedInstance shim=pxt::getPin(P0_4)
-    const P04: PwmPin;
-    //% fixedInstance shim=pxt::getPin(P0_28)
-    const P28: PwmPin;
-    //% fixedInstance shim=pxt::getPin(P0_29)
-    const P29: PwmPin;
-    //% fixedInstance shim=pxt::getPin(P0_30)
-    const P30: PwmPin;
-    //% fixedInstance shim=pxt::getPin(P0_11)
-    const P11: PwmPin;
-    //% fixedInstance shim=pxt::getPin(P0_12)
-    const P12: PwmPin;
+    //% fixedInstance shim=pxt::getPin(PIN_A0)
+    const A0: PwmPin;
+    //% fixedInstance shim=pxt::getPin(PIN_A1)
+    const A1: PwmPin;
+    //% fixedInstance shim=pxt::getPin(PIN_A2)
+    const A2: PwmPin;
+
+    //% fixedInstance shim=pxt::getPin(PIN_D0)
+    const D0: PwmOnlyPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D1)
+    const D1: PwmOnlyPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D2)
+    const D2: PwmOnlyPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D3)
+    const D3: PwmOnlyPin;
     
+    //% fixedInstance shim=pxt::getPin(P0_9)
+    const MENU: PwmOnlyPin;
     
+    /*
     //% fixedInstance shim=pxt::getPin(P0_13)
     const LED1: DigitalPin;
 
@@ -26,6 +30,7 @@ declare namespace pins {
 
     //% fixedInstance shim=pxt::getPin(P0_16)
     const LED4: DigitalPin;
+    */
 
     //% fixedInstance shim=pxt::getPin(PIN_SDA)
     const SDA: DigitalPin;
@@ -63,7 +68,7 @@ declare namespace input {
     //% shim=pxt::getButtonByPin(P0_29,BUTTON_ACTIVE_LOW_PULL_UP)
     const buttonE0: Button;
     //% block="button E1" fixedInstance
-    //% shim=pxt::getButtonByPin(P0_16,BUTTON_ACTIVE_LOW_PULL_UP)
+    //% shim=pxt::getButtonByPin(P0_10,BUTTON_ACTIVE_LOW_PULL_UP)
     const buttonE1: Button;
 }
 
