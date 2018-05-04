@@ -7,7 +7,6 @@
   "DigitalPin.digitalWrite|param|value": "value to set on the pin",
   "DigitalPin.onPulsed": "Make this pin a digital input, and create events where the timestamp is the duration\nthat this pin was either ``high`` or ``low``.",
   "DigitalPin.pulseIn": "Return the duration of a pulse in microseconds",
-  "DigitalPin.pulseIn|param|value": "the value of the pulse (default high)",
   "DigitalPin.setPull": "Set the pull direction of this pin.",
   "DigitalPin.setPull|param|pull": "one of the mbed pull configurations: PullUp, PullDown, PullNone",
   "PwmOnlyPin.analogSetPeriod": "Set the Pulse-width modulation (PWM) period of the analog output. The period is in\n**microseconds** or `1/1000` milliseconds.\nIf this pin is not configured as an analog output (using `analog write pin`), the operation has\nno effect.",

@@ -84,13 +84,14 @@ declare interface DigitalPin {
      * Make this pin a digital input, and create events where the timestamp is the duration
      * that this pin was either ``high`` or ``low``.
      */
-    //% help=pins/on-pulsed weight=16 blockGap=8
-    //% blockId=pins_on_pulsed block="on|pin %pin|pulsed %pulse"
-    //% blockNamespace=pins
+    //% help=pins/on-pulsed weight=100 blockGap=8
+    //% blockId=pins_on_pulsed block="on|pin %pin|pulsed %high=toggleHighLow"
+    //% blockNamespace=pins 
+    //% parts="slideswitch" trackArgs=0
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.width=220
     //% pin.fieldOptions.columns=4 shim=DigitalPinMethods::onPulsed
-    onPulsed(pulse: PulseValue, body: () => void): void;
+    onPulsed(high: boolean, body: () => void): void;
 
     /**
      * Return the duration of a pulse in microseconds
@@ -98,14 +99,14 @@ declare interface DigitalPin {
      * @param value the value of the pulse (default high)
      * @param maximum duration in micro-seconds
      */
-    //% blockId="pins_pulse_in" block="pulse in (µs)|pin %name|pulsed %value"
+    //% blockId="pins_pulse_in" block="pulse in (µs)|pin %name|pulsed %high=toggleHighLow||timeout %maxDuration (us)"
     //% weight=18 blockGap=8
     //% help="pins/pulse-in"
     //% blockNamespace=pins
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.width=220
     //% pin.fieldOptions.columns=4 maxDuration.defl=2000000 shim=DigitalPinMethods::pulseIn
-    pulseIn(value: PulseValue, maxDuration?: int32): int32;
+    pulseIn(high: boolean, maxDuration?: int32): int32;
 
     /**
      * Set the pull direction of this pin.
