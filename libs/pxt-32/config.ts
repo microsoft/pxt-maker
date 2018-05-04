@@ -70,5 +70,5 @@ namespace config {
 }
 
 
-game.setWaitAnyKey(keys.pauseUntilAnyKey)
+game.setWaitAnyButton(controller.pauseUntilAnyButtonIsPressed)
 game.gameOverSound = () => music.playSound(music.sounds(Sounds.Wawawawaa));
