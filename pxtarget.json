@@ -30,8 +30,6 @@
         "libs/redbear-ble-nano",
         "libs/pxt-32",
         "libs/tests",
-        "libs/automation",
-        "libs/dsp",
         "libs/gamepad",
         "libs/mouse",
         "libs/keyboard",
