@@ -26,12 +26,12 @@ namespace config {
     export const PIN_D15 = DAL.PC_0;
 
 
-    export const PIN_DISPLAY_MOSI = PIN_D11;
-    export const PIN_DISPLAY_MISO = PIN_D12; // NC
-    export const PIN_DISPLAY_SCK = PIN_D13; // 13
     export const PIN_DISPLAY_CS = PIN_D9;
+    export const PIN_DISPLAY_SCK = PIN_D13;
+    export const PIN_DISPLAY_MOSI = PIN_D11;
     export const PIN_DISPLAY_DC = PIN_D10;
     export const PIN_DISPLAY_RST = PIN_D14;
+    export const PIN_DISPLAY_MISO = PIN_D12; // NC
 
     /*
     export const PIN_DISPLAY_MOSI = DAL.PB_15; // 34
@@ -66,5 +66,5 @@ namespace config {
 }
 
 
-game.setWaitAnyKey(keys.pauseUntilAnyKey)
+// game.setWaitAnyKey(controller.pauseUntilAnyKey)
 game.gameOverSound = () => music.playSound(music.sounds(Sounds.Wawawawaa));
