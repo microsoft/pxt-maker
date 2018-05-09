@@ -22,8 +22,9 @@ declare const enum DAL {
     DEVICE_ID_SYSTEM_DAC = 19,
     DEVICE_ID_SYSTEM_MICROPHONE = 20,
     DEVICE_ID_SYSTEM_LEVEL_DETECTOR = 21,
-    DEVICE_ID_MSC = 22,
-    DEVICE_ID_SPI = 23,
+    DEVICE_ID_SYSTEM_LEVEL_DETECTOR_SPL = 22,
+    DEVICE_ID_MSC = 23,
+    DEVICE_ID_SPI = 24,
     DEVICE_ID_IO_P0 = 100,
     DEVICE_ID_MESSAGE_BUS_LISTENER = 1021,
     DEVICE_ID_NOTIFY_ONE = 1022,
@@ -470,6 +471,11 @@ declare const enum DAL {
     LEVEL_DETECTOR_HIGH_THRESHOLD_PASSED = 2,
     LEVEL_DETECTOR_LOW_THRESHOLD_PASSED = 4,
     LEVEL_DETECTOR_DEFAULT_WINDOW_SIZE = 128,
+    // built/codal/libraries/codal-core/inc/streams/LevelDetectorSPL.h
+    LEVEL_DETECTOR_SPL_INITIALISED = 1,
+    LEVEL_DETECTOR_SPL_HIGH_THRESHOLD_PASSED = 2,
+    LEVEL_DETECTOR_SPL_LOW_THRESHOLD_PASSED = 4,
+    LEVEL_DETECTOR_SPL_DEFAULT_WINDOW_SIZE = 128,
     // built/codal/libraries/codal-core/inc/streams/Synthesizer.h
     SYNTHESIZER_SAMPLE_RATE = 44100,
     TONE_WIDTH = 1024,
@@ -498,9 +504,9 @@ declare const enum DAL {
     REF_TAG_BUFFER = 2,
     REF_TAG_IMAGE = 3,
     REF_TAG_USER = 32,
-    // built/codal/pxtapp/core---nrf52840/hf2dbg.h
+    // built/codal/pxtapp/core---nrf52832/hf2dbg.h
     HF2DBG_H = 1,
-    // built/codal/pxtapp/core---nrf52840/pins.h
+    // built/codal/pxtapp/core---nrf52832/pins.h
     CFG_PIN_ACCELEROMETER_INT = 1,
     CFG_PIN_ACCELEROMETER_SCL = 2,
     CFG_PIN_ACCELEROMETER_SDA = 3,
@@ -588,10 +594,10 @@ declare const enum DAL {
     BUTTON_ACTIVE_LOW_PULL_DOWN = 16,
     BUTTON_ACTIVE_LOW_PULL_UP = 32,
     BUTTON_ACTIVE_LOW_PULL_NONE = 48,
-    // built/codal/pxtapp/core---nrf52840/platform.h
+    // built/codal/pxtapp/core---nrf52832/platform.h
     PAGE_SIZE = 4096,
     DEV_NUM_PINS = 32,
-    IMAGE_BITS = 4,
+    IMAGE_BITS = 1,
     TEMPERATURE_NOMINAL_VALUE = 25,
     TEMPERATURE_NOMINAL_READING = 10000,
     TEMPERATURE_BETA = 3380,
@@ -663,12 +669,12 @@ declare const enum DAL {
     P1_29 = 61,
     P1_30 = 62,
     P1_31 = 63,
-    // built/codal/pxtapp/core---nrf52840/pxt.h
+    // built/codal/pxtapp/core---nrf52832/pxt.h
     DEVICE_ID_BUTTON_SLIDE = 3000,
     DEVICE_ID_MICROPHONE = 3001,
     DEVICE_ID_FIRST_BUTTON = 4000,
     DEVICE_ID_FIRST_TOUCHBUTTON = 4100,
-    // built/codal/pxtapp/core---nrf52840/uf2hid.h
+    // built/codal/pxtapp/core---nrf52832/uf2hid.h
     UF2_HID_H = 1,
     // built/codal/pxtapp/pxtbase.h
     MEMDBG_ENABLED = 0,

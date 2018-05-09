@@ -33,7 +33,8 @@
         "libs/gamepad",
         "libs/mouse",
         "libs/keyboard",
-        "libs/accelerometer"
+        "libs/accelerometer",
+        "libs/display"
     ],
     "serial": {
         "useHF2": true,
@@ -136,7 +137,7 @@
                 "codalTarget": {
                     "name": "codal-ble-nano",
                     "url": "https://github.com/lancaster-university/codal-ble-nano",
-                    "branch": "v0.0.3",
+                    "branch": "v0.0.3-spi.0",
                     "type": "git"
                 },
                 "codalBinary": "BLE_NANO",
@@ -165,7 +166,7 @@
                 "codalTarget": {
                     "name": "codal-nrf52840-dk",
                     "url": "https://github.com/mmoskal/codal-nrf52840-dk",
-                    "branch": "v0.0.11",
+                    "branch": "v0.0.12",
                     "type": "git"
                 },
                 "codalBinary": "NRF52840_DK",
@@ -174,6 +175,34 @@
                     "pxt": {
                         "board": {
                             "id": "BOARD_ID_NRF52840"
+                        }
+                    }
+                }
+            }
+        },
+        "f103re": {
+            "serial": {
+                "useHF2": false
+            },
+            "compile": {
+                "openocdScript": "source [find board/st_nucleo_f103rb.cfg]",
+                "flashChecksumAddr": 0,
+                "deployFileMarker": "INFO_UF2.TXT",
+                "vtableShift": 4
+            },
+            "compileService": {
+                "codalTarget": {
+                    "name": "codal-generic-f103re",
+                    "url": "https://github.com/mmoskal/codal-generic-f103re",
+                    "branch": "v0.0.3",
+                    "type": "git"
+                },
+                "codalBinary": "GENERIC_F103RE",
+                "serviceId": "codal2f103re",
+                "yottaConfig": {
+                    "pxt": {
+                        "board": {
+                            "id": "BOARD_ID_F103RE"
                         }
                     }
                 }
@@ -201,8 +230,7 @@
         "betaUrl": "https://github.com/Microsoft/pxt-maker",
         "boardName": "board",
         "homeScreenHero": "./static/hero.jpg",
-        "docMenu": [
-            {
+        "docMenu": [{
                 "name": "About",
                 "path": "/about"
             },
