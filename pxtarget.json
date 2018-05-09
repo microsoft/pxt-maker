@@ -136,7 +136,7 @@
                 "codalTarget": {
                     "name": "codal-ble-nano",
                     "url": "https://github.com/lancaster-university/codal-ble-nano",
-                    "branch": "v0.0.3",
+                    "branch": "v0.0.3-spi.0",
                     "type": "git"
                 },
                 "codalBinary": "BLE_NANO",

@@ -3,6 +3,7 @@
 
 #include "Image.h"
 #include "NRF52Microphone.h"
+#include "NRF52SPI.h"
 #include "NRF52Pin.h"
 #include "NRF52PWM.h"
 #include "MbedI2C.h"
@@ -22,6 +23,7 @@
 
 #define CODAL_MBED codal::_mbed
 #define CODAL_PIN NRF52Pin
+#define CODAL_SPI NRF52SPI
 // #define CODAL_TIMER NRF52Timer
 
 #define IMAGE_BITS 1
