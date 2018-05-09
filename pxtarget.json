@@ -33,7 +33,8 @@
         "libs/gamepad",
         "libs/mouse",
         "libs/keyboard",
-        "libs/accelerometer"
+        "libs/accelerometer",
+        "libs/display"
     ],
     "serial": {
         "useHF2": true,
