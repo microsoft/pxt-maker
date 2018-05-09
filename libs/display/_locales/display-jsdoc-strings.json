@@ -1,0 +1,16 @@
+{
+  "display": "Basic screen display functionalities\n\nBasic screen display functionalities",
+  "display.clear": "Clear the screen",
+  "display.lineCount": "Number of lines",
+  "display.lineHeight": "Gets the text line height",
+  "display.showConsole": "Sends the log messages to the brick screen and uses the brick up and down buttons to scroll.",
+  "display.showNumber": "Shows a number on the screen",
+  "display.showNumber|param|line": "the line number to print the text at (starting at 1), eg: 1",
+  "display.showNumber|param|value": "the numeric value",
+  "display.showString": "Show text on the screen at a specific line.",
+  "display.showString|param|line": "the line number to print the text at (starting at 1), eg: 1",
+  "display.showString|param|text": "the text to print on the screen, eg: \"Hello world\"",
+  "display.showValue": "Shows a name, value pair on the screen",
+  "display.showValue|param|line": "the line number to print the text at (starting at 1), eg: 1",
+  "display.showValue|param|value": "the numeric value"
+}
