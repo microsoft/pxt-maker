@@ -42,5 +42,12 @@
   "pins.i2cWriteBuffer": "Write bytes to a 7-bit I2C `address`.",
   "pins.i2cWriteNumber": "Write one number to an I2C address.",
   "pins.pulseDuration": "Get the duration of the last pulse in microseconds. This function should be called from a\n``onPulsed`` handler.",
-  "pins.sizeOf": "Get the size in bytes of specified number format."
+  "pins.sizeOf": "Get the size in bytes of specified number format.",
+  "pins.spiFrequency": "Sets the SPI frequency",
+  "pins.spiFrequency|param|frequency": "the clock frequency, eg: 1000000",
+  "pins.spiMode": "Sets the SPI mode and bits",
+  "pins.spiMode|param|mode": "the mode, eg: 3",
+  "pins.spiTransfer": "Writes a given command to SPI bus, and afterwards reads the response.",
+  "pins.spiWrite": "Write to the SPI slave and return the response",
+  "pins.spiWrite|param|value": "Data to be sent to the SPI slave"
 }
