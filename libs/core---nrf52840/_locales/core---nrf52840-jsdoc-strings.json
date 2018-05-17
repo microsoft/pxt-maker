@@ -5,7 +5,7 @@
   "DigitalPin.digitalRead": "Read a pin or connector as either 0 or 1",
   "DigitalPin.digitalWrite": "Set a pin or connector value to either 0 or 1.",
   "DigitalPin.digitalWrite|param|value": "value to set on the pin",
-  "DigitalPin.onPulsed": "Make this pin a digital input, and create events where the timestamp is the duration\nthat this pin was either ``high`` or ``low``.",
+  "DigitalPin.onEvent": "Register code to run when a pin event occurs.",
   "DigitalPin.pulseIn": "Return the duration of a pulse in microseconds",
   "DigitalPin.pulseIn|param|value": "the value of the pulse (default high)",
   "DigitalPin.setPull": "Set the pull direction of this pin.",

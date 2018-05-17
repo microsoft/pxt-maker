@@ -89,8 +89,22 @@ declare interface DigitalPin {
     //% blockNamespace=pins
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.width=220
-    //% pin.fieldOptions.columns=4 shim=DigitalPinMethods::onPulsed
+    //% pin.fieldOptions.columns=4
+    //% parts="slideswitch" trackArgs=0
+    //% deprecated=1 hidden=1 shim=DigitalPinMethods::onPulsed
     onPulsed(pulse: PulseValue, body: () => void): void;
+
+    /**
+     * Register code to run when a pin event occurs. 
+     */
+    //% help=pins/on-event weight=16 blockGap=8
+    //% blockId=pinsonevent block="on|pin %pin|%event"
+    //% blockNamespace=pins
+    //% pin.fieldEditor="gridpicker"
+    //% pin.fieldOptions.width=220
+    //% pin.fieldOptions.columns=4
+    //% parts="slideswitch" trackArgs=0 shim=DigitalPinMethods::onEvent
+    onEvent(event: PinEvent, body: () => void): void;
 
     /**
      * Return the duration of a pulse in microseconds
@@ -98,7 +112,7 @@ declare interface DigitalPin {
      * @param value the value of the pulse (default high)
      * @param maximum duration in micro-seconds
      */
-    //% blockId="pins_pulse_in" block="pulse in (µs)|pin %name|pulsed %value"
+    //% blockId="pins_pulse_in" block="pulse in (µs)|pin %name|pulsed %high||timeout %maxDuration (us)"
     //% weight=18 blockGap=8
     //% help="pins/pulse-in"
     //% blockNamespace=pins

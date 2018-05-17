@@ -9,6 +9,18 @@
     }
 
 
+    declare const enum PinEvent {
+    //% block="pulse high"
+    PulseHigh = 4,  // DEVICE_PIN_EVT_PULSE_HI
+    //% block="pulse low"
+    PulseLow = 5,  // DEVICE_PIN_EVT_PULSE_LO
+    //% block="rise"
+    Rise = 2,  // DEVICE_PIN_EVT_RISE
+    //% block="fall"
+    Fall = 3,  // DEVICE_PIN_EVT_FALL
+    }
+
+
     declare const enum PinPullMode {
     //% block="down"
     PullDown = 0,
