@@ -256,6 +256,7 @@
         "invertedMonaco": false,
         "monacoToolbox": true,
         "highContrast": true,
+        "greenScreen": true,
         "simAnimationEnter": "fly right in",
         "simAnimationExit": "fly right out",
         "hasAudio": true,
