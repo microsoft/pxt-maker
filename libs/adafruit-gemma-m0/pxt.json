@@ -14,7 +14,8 @@
     "dependencies": {
         "core": "file:../core",
         "buttons": "file:../buttons",
-        "touch": "file:../touch"
+        "touch": "file:../touch",
+        "music": "file:../music---pwm"
     },
     "public": true
 }
