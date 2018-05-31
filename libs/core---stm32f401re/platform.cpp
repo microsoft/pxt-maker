@@ -25,7 +25,6 @@ void platform_init() {
         globals[0] = (TValue)1;
     }
 */
-
 }
 
 void sendSerial(const char *data, int len) {
