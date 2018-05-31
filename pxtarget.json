@@ -34,7 +34,8 @@
         "libs/mouse",
         "libs/keyboard",
         "libs/accelerometer",
-        "libs/display"
+        "libs/display",
+        "libs/servo"
     ],
     "serial": {
         "useHF2": true,
