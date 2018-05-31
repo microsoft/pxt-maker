@@ -1,0 +1,4 @@
+{
+    "name": "core---stm32f401re",
+    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/core"
+}

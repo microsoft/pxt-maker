@@ -118,7 +118,7 @@
             }
         },
         "githubCorePackage": "lancaster-university/codal",
-        "gittag": "v0.3.0",
+        "gittag": "v0.4.0",
         "serviceId": "codal2cp"
     },
     "variants": {
@@ -203,6 +203,34 @@
                     "pxt": {
                         "board": {
                             "id": "BOARD_ID_F103RE"
+                        }
+                    }
+                }
+            }
+        },
+        "stm32f401re": {
+            "serial": {
+                "useHF2": false
+            },
+            "compile": {
+                "openocdScript": "source [find interface/stlink-v2.cfg]; source [find target/stm32f4x.cfg]",
+                "flashChecksumAddr": 0,
+                "deployFileMarker": "INFO_UF2.TXT",
+                "vtableShift": 4
+            },
+            "compileService": {
+                "codalTarget": {
+                    "name": "codal-stm32f401re",
+                    "url": "https://github.com/mmoskal/codal-stm32f401re",
+                    "branch": "v0.0.0",
+                    "type": "git"
+                },
+                "codalBinary": "STM32",
+                "serviceId": "codal2stm32",
+                "yottaConfig": {
+                    "pxt": {
+                        "board": {
+                            "id": "BOARD_ID_STM32F401RE"
                         }
                     }
                 }
