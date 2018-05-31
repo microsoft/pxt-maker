@@ -89,8 +89,22 @@ declare interface DigitalPin {
     //% blockNamespace=pins
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.width=220
-    //% pin.fieldOptions.columns=4 shim=DigitalPinMethods::onPulsed
+    //% pin.fieldOptions.columns=4
+    //% parts="slideswitch" trackArgs=0
+    //% deprecated=1 hidden=1 shim=DigitalPinMethods::onPulsed
     onPulsed(pulse: PulseValue, body: () => void): void;
+
+    /**
+     * Register code to run when a pin event occurs. 
+     */
+    //% help=pins/on-event weight=20 blockGap=8
+    //% blockId=pinsonevent block="on|pin %pin|%event"
+    //% blockNamespace=pins
+    //% pin.fieldEditor="gridpicker"
+    //% pin.fieldOptions.width=220
+    //% pin.fieldOptions.columns=4
+    //% parts="slideswitch" trackArgs=0 shim=DigitalPinMethods::onEvent
+    onEvent(event: PinEvent, body: () => void): void;
 
     /**
      * Return the duration of a pulse in microseconds
@@ -98,7 +112,7 @@ declare interface DigitalPin {
      * @param value the value of the pulse (default high)
      * @param maximum duration in micro-seconds
      */
-    //% blockId="pins_pulse_in" block="pulse in (µs)|pin %name|pulsed %value"
+    //% blockId="pins_pulse_in" block="pulse in (µs)|pin %name|pulsed %high||timeout %maxDuration (us)"
     //% weight=18 blockGap=8
     //% help="pins/pulse-in"
     //% blockNamespace=pins
@@ -209,16 +223,35 @@ declare namespace control {
 declare namespace pins {
 
     /**
-     * Read `size` bytes from a 7-bit I2C `address`.
+     * Write to the SPI slave and return the response
+     * @param value Data to be sent to the SPI slave
      */
-    //% repeat.defl=0 shim=pins::i2cReadBuffer
-    function i2cReadBuffer(address: int32, size: int32, repeat?: boolean): Buffer;
+    //% help=pins/spi-write weight=5 advanced=true
+    //% blockId=spi_write block="spi write %value" shim=pins::spiWrite
+    function spiWrite(value: int32): int32;
 
     /**
-     * Write bytes to a 7-bit I2C `address`.
+     * Writes a given command to SPI bus, and afterwards reads the response.
      */
-    //% repeat.defl=0 shim=pins::i2cWriteBuffer
-    function i2cWriteBuffer(address: int32, buf: Buffer, repeat?: boolean): int32;
+    //% help=pins/spi-transfer weight=4 advanced=true
+    //% blockId=spi_transfer block="spi transfer %command into %response" shim=pins::spiTransfer
+    function spiTransfer(command: Buffer, response: Buffer): void;
+
+    /**
+     * Sets the SPI frequency
+     * @param frequency the clock frequency, eg: 1000000
+     */
+    //% help=pins/spi-frequency weight=4 advanced=true
+    //% blockId=spi_frequency block="spi frequency %frequency" shim=pins::spiFrequency
+    function spiFrequency(frequency: int32): void;
+
+    /**
+     * Sets the SPI mode and bits
+     * @param mode the mode, eg: 3
+     */
+    //% help=pins/spi-mode weight=3 advanced=true
+    //% blockId=spi_mode block="spi mode %mode" shim=pins::spiMode
+    function spiMode(mode: int32): void;
 }
 
 // Auto-generated. Do not edit. Really.
