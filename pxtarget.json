@@ -222,7 +222,7 @@
                 "codalTarget": {
                     "name": "codal-stm32f401re",
                     "url": "https://github.com/mmoskal/codal-stm32f401re",
-                    "branch": "v0.0.1",
+                    "branch": "v0.0.2",
                     "type": "git"
                 },
                 "codalBinary": "STM32",
