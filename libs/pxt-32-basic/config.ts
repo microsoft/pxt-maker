@@ -32,7 +32,7 @@ namespace config {
     export const PIN_DISPLAY_MOSI = PIN_D11;
     export const PIN_DISPLAY_DC = PIN_D10;
     export const PIN_DISPLAY_RST = PIN_D14;
-    export const PIN_DISPLAY_MISO = -1; // NC
+    export const PIN_DISPLAY_MISO = PIN_D12; // NC
 
 
     /*
@@ -44,7 +44,7 @@ namespace config {
     */
 
     // it's really piezo speaker, not an amp
-    export const PIN_SPEAKER_AMP = PIN_D12;
+    export const PIN_SPEAKER_AMP = PIN_D8;
 
     // 128x128
     //export const DISPLAY_CFG0 = 0x00010248;
