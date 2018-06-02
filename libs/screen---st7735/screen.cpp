@@ -28,6 +28,11 @@ class WDisplay {
             fiber_sleep(20);
         }
 
+        auto bl = LOOKUP_PIN(DISPLAY_BL);
+        if (bl) {
+            bl->setDigitalValue(1);
+        }
+
         uint32_t cfg0 = getConfig(CFG_DISPLAY_CFG0, 0x40);
         uint32_t cfg2 = getConfig(CFG_DISPLAY_CFG2, 0x0);
         uint32_t frmctr1 = getConfig(CFG_DISPLAY_CFG1, 0x000603);
