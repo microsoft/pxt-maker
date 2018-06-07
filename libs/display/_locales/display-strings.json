@@ -1,9 +1,12 @@
 {
   "display.clear|block": "clear display",
+  "display.graphClear|block": "graph clear",
+  "display.graph|block": "graph %value",
   "display.showConsole|block": "show console",
   "display.showNumber|block": "show number %name|at line %line",
   "display.showString|block": "show string %text|at line %line",
   "display.showValue|block": "show value %name|: %text|at line %line",
   "display|block": "display",
-  "{id:category}Display": "Display"
+  "{id:category}Display": "Display",
+  "{id:group}Charts": "Charts"
 }
