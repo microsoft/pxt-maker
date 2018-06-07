@@ -35,6 +35,7 @@
         "libs/keyboard",
         "libs/accelerometer",
         "libs/display",
+        "libs/servo",
         "libs/storage"
     ],
     "serial": {
