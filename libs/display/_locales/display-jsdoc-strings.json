@@ -1,6 +1,8 @@
 {
   "display": "Basic screen display functionalities\n\nBasic screen display functionalities",
   "display.clear": "Clear the screen",
+  "display.graph": "Adds a new point to the trend chart and renders it to the screen.",
+  "display.graphClear": "Clears the trend chart and the screen",
   "display.lineCount": "Number of lines",
   "display.lineHeight": "Gets the text line height",
   "display.showConsole": "Sends the log messages to the brick screen and uses the brick up and down buttons to scroll.",
