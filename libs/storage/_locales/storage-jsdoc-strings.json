@@ -1,0 +1,12 @@
+{
+  "storage": "File storage operations",
+  "storage.append": "Append string data to a new or existing file.",
+  "storage.appendBuffer": "Append a buffer to a new or existing file.",
+  "storage.exists": "Return true if the file already exists.",
+  "storage.overwrite": "Overwrite file with string data.",
+  "storage.overwriteWithBuffer": "Overwrite file with a buffer.",
+  "storage.read": "Read contents of file as a string.",
+  "storage.readAsBuffer": "Read contents of file as a buffer.",
+  "storage.remove": "Delete a file, or do nothing if it doesn't exist.",
+  "storage.size": "Return the size of the file, or -1 if it doesn't exists."
+}

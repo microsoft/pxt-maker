@@ -5,6 +5,10 @@
             "Adafruit"
         ],
         "approvedRepos": [
+        ],
+        "preferredRepos": [
+            "Adafruit/pxt-crickit",
+            "Adafruit/pxt-seesaw"
         ]
     },
     "galleries": {
