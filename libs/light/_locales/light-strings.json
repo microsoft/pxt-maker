@@ -43,7 +43,7 @@
   "light.NeoPixelStrip.setMode|block": "%strip|set mode %mode",
   "light.NeoPixelStrip.setPhotonMode|block": "%strip|photon %mode",
   "light.NeoPixelStrip.setPhotonPenColor|block": "%strip=variables_get|photon set pen color %color=colorNumberPicker",
-  "light.NeoPixelStrip.setPhotonPenHue|block": "%strip=variables_get|photon set pen hue %hue=colorWheelPicker",
+  "light.NeoPixelStrip.setPhotonPenHue|block": "%strip=variables_get|photon set pen hue %hue=colorWheelHsvPicker",
   "light.NeoPixelStrip.setPhotonPosition|block": "%strip|photon set position %index",
   "light.NeoPixelStrip.setPixelColor|block": "%strip|set pixel color at %pixeloffset|to %rgb=colorNumberPicker",
   "light.NeoPixelStrip.setPixelWhiteLED|block": "%strip|set pixel white LED at %pixeloffset|to %white",
