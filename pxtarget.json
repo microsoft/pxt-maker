@@ -109,7 +109,7 @@
         "codalTarget": {
             "name": "codal-circuit-playground",
             "url": "https://github.com/lancaster-university/codal-circuit-playground",
-            "branch": "v1.4.1",
+            "branch": "v1.4.3",
             "type": "git"
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
@@ -121,7 +121,7 @@
             }
         },
         "githubCorePackage": "lancaster-university/codal",
-        "gittag": "v0.3.0",
+        "gittag": "v0.4.0",
         "serviceId": "codal2cp"
     },
     "variants": {
