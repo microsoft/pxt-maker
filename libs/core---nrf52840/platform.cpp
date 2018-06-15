@@ -18,6 +18,16 @@ static void initRandomSeed() {
     seedRandom(seed);
 }
 
+
+static codal::_mbed::Serial *serial;
+void platformSendSerial(const char *data, int len) {
+    if (!serial) {
+        serial = new codal::_mbed::Serial(USBTX, NC);
+        serial->baud(9600);
+    }
+    serial->send((uint8_t*)data, len);
+}
+
 void platform_init() {
     initRandomSeed();
     setSendToUART(platformSendSerial);
@@ -32,17 +42,6 @@ void platform_init() {
 */
 
 }
-
-static codal::_mbed::Serial *serial;
-
-void platformSendSerial(const char *data, int len) {
-    if (!serial) {
-        serial = new codal::_mbed::Serial(USBTX, NC);
-        serial->baud(9600);
-    }
-    serial->send((uint8_t*)data, len);
-}
-
 
 }
 
