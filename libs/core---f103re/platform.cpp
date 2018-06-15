@@ -18,6 +18,7 @@ static void initRandomSeed() {
 
 void platform_init() {
     initRandomSeed();
+    setSendToUART(platformSendSerial);
 
 /*
     if (*HF2_DBG_MAGIC_PTR == HF2_DBG_MAGIC_START) {
@@ -31,7 +32,7 @@ void platform_init() {
 
 static codal::_mbed::Serial *serial;
 
-void sendSerial(const char *data, int len) {
+void platformSendSerial(const char *data, int len) {
     if (!serial) {
         serial = new codal::_mbed::Serial(USBTX, NC);
         serial->baud(9600);
