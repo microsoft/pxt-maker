@@ -1,7 +1,7 @@
 {
-  "motors.Servo.run|block": "continuous %servo run at %speed=speedPicker \\%",
-  "motors.Servo.setAngle|block": "set %servo angle to %degrees °",
-  "motors.Servo.setPulse|block": "set %servo pulse to %micros μs",
-  "{id:category}Motors": "Motors",
+  "servos.Servo.run|block": "continuous %servo run at %speed=speedPicker \\%",
+  "servos.Servo.setAngle|block": "set %servo angle to %degrees=protractorPicker °",
+  "servos.Servo.setPulse|block": "set %servo pulse to %micros μs",
+  "{id:category}Servos": "Servos",
   "{id:group}Servos": "Servos"
 }

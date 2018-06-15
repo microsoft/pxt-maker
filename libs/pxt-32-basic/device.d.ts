@@ -1,60 +1,44 @@
 declare namespace pins {
-    //% fixedInstance shim=pxt::getPin(PIN_D0)
-    const D0: PwmOnlyPin;
-    //% fixedInstance shim=pxt::getPin(PIN_D1)
-    const D1: PwmOnlyPin;
-    //% fixedInstance shim=pxt::getPin(PIN_D2)
-    const D2: AnalogInPin;
-    //% fixedInstance shim=pxt::getPin(PIN_D3)
-    const D3: PwmPin;
-    //% fixedInstance shim=pxt::getPin(PIN_D4)
-    const D4: PwmOnlyPin;
-    //% fixedInstance shim=pxt::getPin(PIN_D5)
-    const D5: DigitalPin;
-    //% fixedInstance shim=pxt::getPin(PIN_D6)
-    const D6: PwmOnlyPin;
-    
-    
-    //% fixedInstance shim=pxt::getPin(PIN_LED)
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_LED)
     const LED: DigitalPin;
 
-    //% fixedInstance shim=pxt::getPin(PIN_SDA)
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_SDA)
     const SDA: DigitalPin;
-    //% fixedInstance shim=pxt::getPin(PIN_SCL)
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_SCL)
     const SCL: DigitalPin;
 
-    //% fixedInstance shim=pxt::getPin(PIN_SCK)
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_SCK)
     const SCK: DigitalPin;
-    //% fixedInstance shim=pxt::getPin(PIN_MISO)
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_MISO)
     const MISO: DigitalPin;
-    //% fixedInstance shim=pxt::getPin(PIN_MOSI)
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_MOSI)
     const MOSI: DigitalPin;
 
-    //% fixedInstance shim=pxt::getPin(PIN_RX)
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_RX)
     const RX: DigitalPin;
-    //% fixedInstance shim=pxt::getPin(PIN_TX)
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_TX)
     const TX: DigitalPin;
 }
 
 declare namespace input {
-        //% block="button 1" fixedInstance
-    //% shim=pxt::getButtonByPin(PIN_D5,BUTTON_ACTIVE_LOW_PULL_UP)
-    const button1: Button;
+    //% block="button 1" fixedInstance
+    //% shim=pxt::getButtonByPinCfg(CFG_PIN_BTN_A,BUTTON_ACTIVE_LOW_PULL_UP)
+    const button1: Button; // A
     //% block="button 2" fixedInstance
-    //% shim=pxt::getButtonByPin(PIN_D4,BUTTON_ACTIVE_LOW_PULL_UP)
-    const button2: Button;
+    //% shim=pxt::getButtonByPinCfg(CFG_PIN_BTN_B,BUTTON_ACTIVE_LOW_PULL_UP)
+    const button2: Button; // B
     //% block="button 3" fixedInstance
-    //% shim=pxt::getButtonByPin(PIN_D1,BUTTON_ACTIVE_LOW_PULL_UP)
-    const button3: Button;
+    //% shim=pxt::getButtonByPinCfg(CFG_PIN_BTN_LEFT,BUTTON_ACTIVE_LOW_PULL_UP)
+    const button3: Button; // L
     //% block="button 4" fixedInstance
-    //% shim=pxt::getButtonByPin(PIN_D3,BUTTON_ACTIVE_LOW_PULL_UP)
-    const button4: Button;
+    //% shim=pxt::getButtonByPinCfg(CFG_PIN_BTN_RIGHT,BUTTON_ACTIVE_LOW_PULL_UP)
+    const button4: Button; // R
 
     //% block="button E0" fixedInstance
-    //% shim=pxt::getButtonByPin(PIN_D2,BUTTON_ACTIVE_LOW_PULL_UP)
-    const buttonE0: Button;
+    //% shim=pxt::getButtonByPinCfg(CFG_PIN_BTN_UP,BUTTON_ACTIVE_LOW_PULL_UP)
+    const buttonE0: Button; // U
     //% block="button E1" fixedInstance
-    //% shim=pxt::getButtonByPin(PIN_D0,BUTTON_ACTIVE_LOW_PULL_UP)
-    const buttonE1: Button;
+    //% shim=pxt::getButtonByPinCfg(CFG_PIN_BTN_DOWN,BUTTON_ACTIVE_LOW_PULL_UP)
+    const buttonE1: Button; // D
 }
 
