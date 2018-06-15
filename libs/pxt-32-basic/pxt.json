@@ -11,9 +11,9 @@
         "boardwireframe.svg"
     ],
     "core": true,
-    "compileServiceVariant": "f103re",
+    "compileServiceVariant": "stm32f401re",
     "dependencies": {
-        "core---nrf52832": "file:../core---f103re",
+        "core---nrf52832": "file:../core---stm32f401re",
         "screen---st7735": "file:../screen---st7735",
         "music---pwm": "file:../music---pwm",
         "game": "file:../game",
