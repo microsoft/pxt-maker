@@ -36,7 +36,8 @@
         "libs/accelerometer",
         "libs/display",
         "libs/servo",
-        "libs/storage"
+        "libs/storage",
+        "libs/serial"
     ],
     "serial": {
         "useHF2": true,

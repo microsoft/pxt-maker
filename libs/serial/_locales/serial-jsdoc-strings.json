@@ -1,0 +1,16 @@
+{
+  "serial": "Reading and writing data over a serial connection.",
+  "serial.attachToConsole": "Sends the console message through the TX, RX pins",
+  "serial.redirect": "Set the serial input and output to use pins instead of the USB connection.",
+  "serial.redirect|param|rate": "the new baud rate. eg: 115200",
+  "serial.redirect|param|rx": "the new reception pin, eg: SerialPin.P1",
+  "serial.redirect|param|tx": "the new transmission pin, eg: SerialPin.P0",
+  "serial.setBaudRate": "Set the baud rate of the serial port",
+  "serial.writeBuffer": "Send a buffer across the serial connection.",
+  "serial.writeLine": "Write a line of text to the serial port.",
+  "serial.writeNumber": "Write a number to the serial port.",
+  "serial.writeString": "Write some text to the serial port.",
+  "serial.writeValue": "Write a name:value pair as a line of text to the serial port.",
+  "serial.writeValue|param|name": "name of the value stream, eg: \"x\"",
+  "serial.writeValue|param|value": "to write"
+}
