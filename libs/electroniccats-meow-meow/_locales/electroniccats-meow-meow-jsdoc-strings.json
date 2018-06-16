@@ -1,0 +1,12 @@
+{
+  "input": "Respond to and read data from buttons and sensors.\n\nEvents and data from sensors.",
+  "input.touchA1": "Capacitive pin A1",
+  "input.touchA2": "Capacitive pin A2",
+  "input.touchA3": "Capacitive pin A3",
+  "input.touchA4": "Capacitive pin A4",
+  "input.touchA5": "Capacitive pin A5",
+  "input.touchA6": "Capacitive pin A6",
+  "input.touchA7": "Capacitive pin A7",
+  "input.touchA8": "Capacitive pin A8",
+  "input.touchA9": "Capacitive pin A9"
+}

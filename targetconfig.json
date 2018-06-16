@@ -16,6 +16,7 @@
         "Adafruit": "boards/adafruit",
         "Arduino": "boards/arduino",
         "SparkFun": "boards/sparkfun",
+        "ElectronicCats": "boards/electroniccats",
         "Miscellaneous": "boards/misc"
     },
     "firmwareUrls": {
