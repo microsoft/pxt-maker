@@ -29,3 +29,5 @@ videos/**
 .pioenvs
 .piolibdeps
 lib/
+
+\.DS_Store
