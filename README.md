@@ -1,61 +1,28 @@
-# MakeCode for Electronic Cats Meow Meow 
+# MakeCode Maker 
 
+[![Build Status](https://travis-ci.org/Microsoft/pxt-maker.svg?branch=master)](https://travis-ci.org/Microsoft/pxt-maker)
+[![Community Discord](https://img.shields.io/discord/448979533891371018.svg)](https://aka.ms/makecodecommunity)
 
-This repo contains the editor hosted at http://makercode.electroniccats.com/.
+This is an experimental code editor for maker boards - try it at https://maker.makecode.com.
 
-## Local Dev setup
+## Who is this for?
 
-These instructions assume familiarity with dev tools and languages.
-
-* install [Node.js 8+](https://nodejs.org/en/download/)
-* (optional) install [Visual Studio Code](https://code.visualstudio.com/)
-
-In a common folder,
-
-* clone https://github.com/Microsoft/pxt to ``pxt`` folder
-* clone https://github.com/Microsoft/pxt-common-packages to ``pxt-common-packages`` folder
-* clone https://github.com/ElectronicCats/pxt-maker to ``pxt-maker`` folder
-* go to ``pxt`` and run
-
-```
-npm install
-npm run build
-```
-
-* go to ``pxt-common-packages`` and run
-
-```
-npm install
-npm link ../pxt
-```
-
-* go to ``pxt-maker`` and run
-
-```
-npm install
-npm link ../pxt
-npm link ../pxt-common-packages
-```
-
-## to run the local server
-
-From root github folder,
-
-```
-cd pxt-maker
-pxt serve --cloud
-```
-
-## to build and deploy a single package via command line
-
-```
-cd libs/core
-pxt deploy
-```
-
-## License
-MIT
+This editor is meant for micro-controllers that are friendly to breadboarding. The editor is based on [Microsoft MakeCode](https://makecode.com).
 
 ## Code of Conduct
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+# Contributing
+
+This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
+the rights to use your contribution. For details, visit https://cla.microsoft.com.
+
+When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
+a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
+provided by the bot. You will only need to do this once across all repos using our CLA.
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
