@@ -18,7 +18,8 @@ namespace config {
     export const PIN_D4 = DAL.PA14;
     export const PIN_D6 = DAL.PA12;
     export const PIN_D8 = DAL.PA15;
-    export const PIN_LED = DAL.PA23;
+    export const PIN_LED = DAL.PB23;
+    export const PIN_D13 = DAL.PB23;
 
     export const PIN_FLASH_MISO = DAL.PA12;
     export const PIN_FLASH_MOSI = DAL.PA14;
