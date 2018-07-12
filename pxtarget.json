@@ -62,7 +62,7 @@
         "packages": true,
         "sharing": true,
         "publishing": true,
-        "importing": false,
+        "importing": true,
         "preferredPackages": [],
         "githubPackages": true
     },
@@ -275,7 +275,7 @@
                 "path": "https://github.com/Microsoft/pxt-maker"
             }
         ],
-        "invertedMenu": true,
+        "invertedMenu": false,
         "invertedToolbox": true,
         "invertedMonaco": true,
         "monacoToolbox": true,
