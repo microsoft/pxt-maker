@@ -5,7 +5,9 @@
         "README.md",
         "device.d.ts",
         "config.ts",
-        "ns.ts"
+        "ns.ts",
+        "board.json",
+        "board.svg"
     ],
     "dependencies": {
         "core": "file:../core",
