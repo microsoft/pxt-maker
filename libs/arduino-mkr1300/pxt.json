@@ -1,0 +1,19 @@
+{
+    "name": "arduino-mkr1300",
+    "description": "Support for Arduino MKR1300",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts",
+        "board.json",
+        "boardwireframe.svg"
+    ],
+    "core": true,
+    "dependencies": {
+        "core": "file:../core",
+        "buttons": "file:../buttons",
+        "touch": "file:../touch"
+    },
+    "public": true
+}
