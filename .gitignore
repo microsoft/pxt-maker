@@ -29,3 +29,4 @@ videos/**
 .pioenvs
 .piolibdeps
 lib/
+_locales
