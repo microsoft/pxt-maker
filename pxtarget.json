@@ -26,6 +26,7 @@
         "libs/adafruit-gemma-m0",
         "libs/arduino-zero",
         "libs/arduino-mkr",
+        "libs/arduino-mkr1300",
         "libs/sparkfun-samd21-dev-breakout",
         "libs/redbear-ble-nano",
         "libs/makefashion",
@@ -109,8 +110,8 @@
         "buildEngine": "codal",
         "codalTarget": {
             "name": "codal-circuit-playground",
-            "url": "https://github.com/lancaster-university/codal-circuit-playground",
-            "branch": "v1.4.4",
+            "url": "https://github.com/ElectronicCats/codal-circuit-playground",
+            "branch": "v1.4.6",
             "type": "git"
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
