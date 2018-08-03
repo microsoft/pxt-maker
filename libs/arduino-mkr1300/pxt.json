@@ -6,7 +6,9 @@
         "device.d.ts",
         "config.ts",
         "ns.ts",
-        "board.json"
+        "board.json",
+        "board.svg",
+        "boardwireframe.svg"
     ],
     "core": true,
     "dependencies": {
