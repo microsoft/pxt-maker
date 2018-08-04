@@ -111,7 +111,7 @@
         "codalTarget": {
             "name": "codal-circuit-playground",
             "url": "https://github.com/ElectronicCats/codal-circuit-playground",
-            "branch": "v1.4.6",
+            "branch": "v1.5.0",
             "type": "git"
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
