@@ -264,13 +264,13 @@ declare namespace input {
      */
     //% block="button D13" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_D13,BUTTON_ACTIVE_LOW_PULL_UP)
-   // const buttonD13: Button;
+    const buttonD13: Button;
 
     /**
      * Button connecting D14 to GND.
      */
     //% block="button D14" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_D14,BUTTON_ACTIVE_LOW_PULL_UP)
-    //const buttonD14: Button;
+    const buttonD14: Button;
 
 }
