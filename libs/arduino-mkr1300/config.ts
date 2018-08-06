@@ -30,12 +30,12 @@ namespace config {
 
     export const PIN_D15 = DAL.PB09; //BOOT LORA
     export const PIN_A7 = DAL.PA27; //RESET LORA
+    export const PIN_A8 = DAL.PA14; // SS = PA14
 
     //Module LORA
     export const PIN_MISO = DAL.PA15; // MOSI
     export const PIN_SCK = DAL.PA13; // SCK
     export const PIN_MOSI = DAL.PA12; // MISO
-    export const PIN_FLASH_CS = DAL.PA14; // SS = PA14
 
     export const PIN_SDA = DAL.PA08; // SDA
     export const PIN_SCL = DAL.PA09; // SCL
