@@ -1,0 +1,23 @@
+{
+    "name": "sparkfun-redbear",
+    "description": "The SparkFun SAMD21 Redbear board",
+    "core": true,
+    "files": [
+        "README.md",
+        "board.json",
+        "board.svg",
+        "board-outline.svg",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "dependencies": {
+        "core": "file:../core",
+        "buttons": "file:../buttons",
+        "music": "file:../music"
+    },
+    "public": true
+}

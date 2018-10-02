@@ -26,6 +26,7 @@
         "libs/adafruit-gemma-m0",
         "libs/arduino-zero",
         "libs/arduino-mkr",
+        "libs/sparkfun-redbear",
         "libs/sparkfun-samd21-dev-breakout",
         "libs/redbear-ble-nano",
         "libs/makefashion",
