@@ -69,27 +69,29 @@
     PrintScreen = 12,
     //% block="scroll lock"
     ScrollLock = 13,
-    //% block="caps lock"
-    CapsLock = 14,
-    //% block="num lock"
-    NumLock = 15,
+    //% block="pause"
+    Pause = 14,
     //% block="insert"
-    Insert = 16,
+    Insert = 15,
     //% block="home"
-    Home = 17,
+    Home = 16,
     //% block="page up"
-    PageUp = 18,
+    PageUp = 17,
+    //% block="delete"
+    DeleteForward = 18,
+    //% block="end"
+    End = 19,
     //% block="page down"
-    PageDown = 19,
+    PageDown = 20,
 
     //% block="right arrow"
-    RightArrow = 20,
+    RightArrow = 21,
     //% block="left arrow"
-    LeftArrow = 21,
+    LeftArrow = 22,
     //% block="down arrow"
-    DownArrow = 22,
+    DownArrow = 23,
     //% block="up arrow"
-    UpArrow = 23,
+    UpArrow = 24,
     }
 
 
