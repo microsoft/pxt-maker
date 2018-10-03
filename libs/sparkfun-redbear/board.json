@@ -151,7 +151,7 @@
     "threeVoltPins": [
         "3.3V"
     ],
-    "onboardComponents": [],
+    "onboardComponents": ["pixel"],
     "marginWhenBreadboarding": [
         0,
         0,
