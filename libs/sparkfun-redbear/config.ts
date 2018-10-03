@@ -1,4 +1,7 @@
 namespace config {
+    export const NUM_NEOPIXELS = 1;
+    export const PIN_NEOPIXEL = DAL.PA30; // check
+
     export const PIN_A0 = DAL.PA02;
     export const PIN_A1 = DAL.PB08;
     export const PIN_A2 = DAL.PB09;
@@ -21,7 +24,7 @@ namespace config {
     export const PIN_D12 = DAL.PA19;
     export const PIN_D13 = DAL.PA17;
 
-    export const PIN_LED = DAL.PA30; // check
+    export const PIN_LED = DAL.PA17; // check
     export const PIN_RX = DAL.PA11; // check
     export const PIN_TX = DAL.PA10; // check
     export const PIN_MISO = DAL.PA12;

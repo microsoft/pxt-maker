@@ -5,6 +5,33 @@
         "width": 175,
         "height": 170,
         "pinDist": 7.05,
+        "leds": [
+            {
+                "x": 15.6,
+                "y": 68.4,
+                "color": "#FFF46E",
+                "label": "LED"
+            },
+            {
+                "x": 15.6,
+                "y": 75.9,
+                "color": "#FFF46E",
+                "label": "TXLED"
+            },
+            {
+                "x": 15.6,
+                "y": 83.7,
+                "color": "#FFF46E",
+                "label": "RXLED"
+            },
+            {
+                "x": 96,
+                "y": 42.5,
+                "w": 10.2,
+                "color": "neopixel",
+                "label": "NEOPIXEL"
+            }
+        ],
         "pinBlocks": [
             {
                 "x": 30,

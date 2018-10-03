@@ -57,6 +57,9 @@ declare namespace pins {
     const SCL: DigitalPin;
     //% fixedInstance shim=pxt::getPin(PIN_SDA)
     const SDA: DigitalPin;
+
+    //% fixedInstance shim=pxt::getPin(PIN_NEOPIXEL)
+    const NEOPIXEL: DigitalPin;
 }
 
 declare namespace input {

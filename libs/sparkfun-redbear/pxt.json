@@ -17,7 +17,8 @@
     "dependencies": {
         "core": "file:../core",
         "buttons": "file:../buttons",
-        "music": "file:../music"
+        "music": "file:../music",
+        "pixel": "file:../pixel"
     },
     "public": true
 }
