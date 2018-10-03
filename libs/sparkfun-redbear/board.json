@@ -4,7 +4,7 @@
         "outlineImage": "pkg://board-outline.svg",
         "width": 173.2,
         "height": 164.6,
-        "pinDist": 7.6,
+        "pinDist": 7.55,
         "leds": [
             {
                 "x": 15.6,
@@ -25,7 +25,7 @@
                 "label": "RXLED"
             },
             {
-                "x": 196,
+                "x": 194,
                 "y": 76,
                 "w": 12,
                 "color": "neopixel",
@@ -50,7 +50,7 @@
                 ]
             },
             {
-                "x": 100,
+                "x": 101,
                 "y": 8,
                 "labels": [
                     "D7",
@@ -128,8 +128,8 @@
         "A3": "A3",
         "A4": "A4",
         "A5": "A5",
-        "D0": "D0",
-        "D1": "D1",
+        "D0": "RX/D0",
+        "D1": "TX/D1",
         "D2": "D2",
         "D3": "~D3",
         "D4": "~D4",
