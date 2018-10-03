@@ -21,6 +21,9 @@
         "libs/arduino-mkr",
         "libs/electroniccats-meow-meow",
         "libs/pxt-32",
+        "libs/sparkfun-samd21-dev-breakout",
+        "libs/redbear-ble-nano",
+        "libs/makefashion",
         "libs/tests",
         "libs/gamepad",
         "libs/mouse",
@@ -54,8 +57,7 @@
         "parts": true,
         "partsAspectRatio": 0.69,
         "instructions": true,
-        "dynamicBoardDefinition": true,
-        "debugger": true
+        "dynamicBoardDefinition": true
     },
     "cloud": {
         "workspace": false,
@@ -101,7 +103,7 @@
         "codalTarget": {
             "name": "codal-circuit-playground",
             "url": "https://github.com/lancaster-university/codal-circuit-playground",
-            "branch": "v1.4.4",
+            "branch": "v1.5.3",
             "type": "git"
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
@@ -113,7 +115,7 @@
             }
         },
         "githubCorePackage": "lancaster-university/codal",
-        "gittag": "v0.4.0",
+        "gittag": "v0.5.0",
         "serviceId": "codal2cp"
     },
     "variants": {
@@ -132,7 +134,7 @@
                 "codalTarget": {
                     "name": "codal-ble-nano",
                     "url": "https://github.com/lancaster-university/codal-ble-nano",
-                    "branch": "v0.0.3-spi.1",
+                    "branch": "v0.0.3-pktserial.2",
                     "type": "git"
                 },
                 "codalBinary": "BLE_NANO",
@@ -217,7 +219,7 @@
                 "codalTarget": {
                     "name": "codal-big-brainpad",
                     "url": "https://github.com/lancaster-university/codal-big-brainpad",
-                    "branch": "v1.0.4",
+                    "branch": "v1.0.8",
                     "type": "git"
                 },
                 "codalBinary": "STM32",
@@ -252,8 +254,9 @@
         "feedbackUrl": "https://github.com/Microsoft/pxt-maker/issues",
         "betaUrl": "https://github.com/Microsoft/pxt-maker",
         "boardName": "board",
-        "showHomeScreen": true,
-        "homeScreenHero": "./static/getting-started.png",
+        "homeScreenHero": "./static/hero.jpg",
+        "debugger": true,
+        "print": true,
         "docMenu": [{
                 "name": "About",
                 "path": "/about"
