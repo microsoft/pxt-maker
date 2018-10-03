@@ -2,9 +2,9 @@
     "visual": {
         "image": "pkg://board.svg",
         "outlineImage": "pkg://board-outline.svg",
-        "width": 175,
-        "height": 170,
-        "pinDist": 7.05,
+        "width": 173.2,
+        "height": 164.6,
+        "pinDist": 7.6,
         "leds": [
             {
                 "x": 15.6,
@@ -25,17 +25,17 @@
                 "label": "RXLED"
             },
             {
-                "x": 96,
-                "y": 42.5,
-                "w": 10.2,
+                "x": 196,
+                "y": 76,
+                "w": 12,
                 "color": "neopixel",
                 "label": "NEOPIXEL"
             }
         ],
         "pinBlocks": [
             {
-                "x": 30,
-                "y": 18,
+                "x": 23.79,
+                "y": 8,
                 "labels": [
                     "SCL",
                     "SDA",
@@ -50,8 +50,8 @@
                 ]
             },
             {
-                "x": 104,
-                "y": 18,
+                "x": 100,
+                "y": 8,
                 "labels": [
                     "D7",
                     "~D6",
@@ -64,8 +64,8 @@
                 ]
             },
             {
-                "x": 54,
-                "y": 152,
+                "x": 49.5,
+                "y": 150,
                 "labels": [
                     " ",
                     " ",
@@ -78,8 +78,8 @@
                 ]
             },
             {
-                "x": 116,
-                "y": 152,
+                "x": 115.5,
+                "y": 150,
                 "labels": [
                     "A0",
                     "A1",
