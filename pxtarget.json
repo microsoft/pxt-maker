@@ -30,7 +30,6 @@
         "libs/sparkfun-samd21-dev-breakout",
         "libs/redbear-ble-nano",
         "libs/makefashion",
-        "libs/pxt-32",
         "libs/tests",
         "libs/gamepad",
         "libs/mouse",
