@@ -1,74 +1,31 @@
 # Examples
 
-## Digital IO
+## All
 
 ```codecard
 [
     {
-        "name": "Blinky",
-        "url": "/examples/blinky",
-        "cardType": "example"
+        "name": "Digital IO",
+        "url": "/examples/digital-io"
     },
     {
-        "name": "Switchy",
-        "url": "/examples/switchy",
-        "cardType": "example"
+        "name": "Analog IO",
+        "url": "/examples/analog-io"
     },
     {
-        "name": "Button",
-        "url": "/examples/button",
-        "cardType": "example"
+        "name": "Actuators",
+        "url": "/examples/actuators"
     }
-]
-```
-
-## Analog IO
-
-```codecard
-[
     {
-        "name": "Glowy",
-        "url": "/examples/glowy",
-        "cardType": "example"
-    },
-    {
-        "name": "Glow Light",
-        "url": "/examples/glow-light",
-        "cardType": "example"
-    }
-]
-```
-
-## Accessories
-
-```codecard
-[
-    {
-        "name": "Servo",
-        "url": "/examples/servo",
-        "cardType": "example"
-    }
-]
-```
-
-## Keyboard and mouse
-
-```codecard
-[
-    {
-        "name": "Keyboard button",
-        "url": "/examples/keyboard-button",
-        "cardType": "example"
+        "name": "HID",
+        "url": "/examples/hid"
     }
 ]
 ```
 
 ## See Also
 
-[Blinky](/examples/blinky),
-[Switchy](/examples/switchy),
-[Button](/examples/button),
-[Glowy](/examples/glowy),
-[Glow light](/examples/glow-light),
-[Servo](/examples/servo),
-[Keyboard button](/examples/keyboard-button)
+[Digital IO](/examples/digital-io),
+[Analog IO](/examples/analog-io),
+[Actuators](/examples/actuators),
+[HID](/examples/hid)
