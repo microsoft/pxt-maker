@@ -15,6 +15,12 @@
         "url": "/boards/arduino-zero",
         "cardType": "template",
         "imageUrl": "/static/libs/arduino-zero.jpg"  
+    },
+    {
+        "name": "Arduino MKR1300",
+        "url": "/boards/arduino-mkr1300",
+        "cardType": "template",
+        "imageUrl": "/static/libs/arduino-mkr.jpg"  
     }
 ]
 ```
