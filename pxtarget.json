@@ -264,9 +264,14 @@
         "debugger": true,
         "print": true,
         "chooseBoardOnNewProject": true,
+        "lightToc": true,
         "docMenu": [{
                 "name": "About",
                 "path": "/about"
+            },
+            {
+                "name": "Boards",
+                "path": "/boards"
             },
             {
                 "name": "Blocks",
