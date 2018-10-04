@@ -262,6 +262,7 @@
         "homeScreenHero": "./static/hero.jpg",
         "debugger": true,
         "print": true,
+        "chooseBoardOnNewProject": true,
         "docMenu": [{
                 "name": "About",
                 "path": "/about"
