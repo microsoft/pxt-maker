@@ -27,6 +27,7 @@
         "libs/arduino-zero",
         "libs/arduino-mkr",
         "libs/arduino-mkr1300", 
+        "libs/electroniccats-meow-meow",
         "libs/sparkfun-samd21-dev-breakout",
         "libs/redbear-ble-nano",
         "libs/makefashion",
