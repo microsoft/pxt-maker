@@ -19,9 +19,9 @@ namespace pins {
 }
 
 //% color="#006E90"
-//namespace serial {
+namespace serial {
 
-//}
+}
 
 //% color="#40bf4a"
 namespace loops {
