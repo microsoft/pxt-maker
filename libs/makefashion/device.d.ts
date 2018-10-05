@@ -1,30 +1,30 @@
 declare namespace pins {
     //% fixedInstance shim=pxt::getPin(PIN_D0)
-    const D0: DigitalPin;
+    const D0: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_D1)
-    const D1: DigitalPin;
+    const D1: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_D2)
-    const D2: DigitalPin;
+    const D2: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_D3)
-    const D3: DigitalPin;
+    const D3: DigitalInOutPin;
 
     //% fixedInstance shim=pxt::getPin(PIN_SDA)
-    const SDA: DigitalPin;
+    const SDA: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_SCL)
-    const SCL: DigitalPin;
+    const SCL: DigitalInOutPin;
 
     //% fixedInstance shim=pxt::getPin(PB10)
-    const SDA2: DigitalPin;
+    const SDA2: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PB11)
-    const SCL2: DigitalPin;
+    const SCL2: DigitalInOutPin;
 
     //% fixedInstance shim=pxt::getPin(PIN_TX)
-    const TX: DigitalPin;
+    const TX: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_RX)
-    const RX: DigitalPin;
+    const RX: DigitalInOutPin;
 
     //% fixedInstance shim=pxt::getPin(PIN_LED)
-    const LED: DigitalPin;
+    const LED: DigitalInOutPin;
 }
 
 // TODO check if touch support on all D* pins

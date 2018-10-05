@@ -12,12 +12,12 @@ file similar to this:
 ```typescript
 declare namespace pins {
     //% shim=pxt::getPin(2)
-    const A0: AnalogPin;
+    const A0: AnalogInOutPin;
     //% shim=pxt::getPin(40)
-    const A1: AnalogPin;
+    const A1: AnalogInOutPin;
     // ...
     //% shim=pxt::getPin(11)
-    const D0: DigitalPin;
+    const D0: DigitalInOutPin;
     // ...
 }
 ```

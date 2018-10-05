@@ -12,7 +12,7 @@ declare namespace light {
      */
     //% parts="neopixel"
     //% help=light/default-pin shim=light::defaultPin
-    function defaultPin(): DigitalPin;
+    function defaultPin(): DigitalInOutPin;
 
     /**
      * Send a neopixel buffer to the specified digital pin
@@ -21,7 +21,7 @@ declare namespace light {
      * @param buf The buffer to send to the pin
      */
     //% parts="neopixel" shim=light::sendBuffer
-    function sendBuffer(pin: DigitalPin, mode: int32, buf: Buffer): void;
+    function sendBuffer(pin: DigitalInOutPin, mode: int32, buf: Buffer): void;
 }
 
 // Auto-generated. Do not edit. Really.
