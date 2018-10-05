@@ -31,11 +31,11 @@ declare interface TouchButton {
 }
 
 
-declare interface AnalogPin {
+declare interface AnalogInOutPin {
     /**
      * Get the cap-touch sensor for given pin (if available)
      */
-    //% shim=AnalogPinMethods::touchButton
+    //% shim=AnalogInOutPinMethods::touchButton
     touchButton(): TouchButton;
 }
 
