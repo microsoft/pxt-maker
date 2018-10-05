@@ -1,0 +1,143 @@
+{
+    "driveDisplayName": "SAMD21",
+    "visual": {
+        "image": "pkg://board.svg",
+        "outlineImage": "pkg://boardwireframe.svg",
+        "useCrocClips": true,
+        "width": 200,
+        "height": 200,
+        "pinDist": 12,
+        "pinBlocks": [
+            {
+                "x": 36,
+                "y": 78,
+                "labels": [
+                    "SCL2"
+                ]
+            },
+            {
+                "x": 36,
+                "y": 100,
+                "labels": [
+                    "SDA2"
+                ]
+            },
+            {
+                "x": 36,
+                "y": 121,
+                "labels": [
+                    "IO2"
+                ]
+            },
+            {
+                "x": 36,
+                "y": 142,
+                "labels": [
+                    "IO3"
+                ]
+            },
+            {
+                "x": 5,
+                "y": 21,
+                "labels": [
+                    "GND"
+                ]
+            },
+            {
+                "x": 5,
+                "y": 33,
+                "labels": [
+                    "3V"
+                ]
+            },
+            {
+                "x": 5,
+                "y": 45,
+                "labels": [
+                    "SDA"
+                ]
+            },
+            {
+                "x": 5,
+                "y": 57,
+                "labels": [
+                    "SCL"
+                ]
+            },
+            {
+                "x": 150,
+                "y": 36,
+                "labels": [
+                    "VDD"
+                ]
+            },
+            {
+                "x": 150,
+                "y": 57,
+                "labels": [
+                    "IO0"
+                ]
+            },
+            {
+                "x": 150,
+                "y": 78,
+                "labels": [
+                    "GND"
+                ]
+            },
+            {
+                "x": 150,
+                "y": 100,
+                "labels": [
+                    "VDD"
+                ]
+            },
+            {
+                "x": 150,
+                "y": 121,
+                "labels": [
+                    "IO1"
+                ]
+            },
+            {
+                "x": 150,
+                "y": 142,
+                "labels": [
+                    "GND"
+                ]
+            }
+        ],
+        "leds": [{
+            "x": 160,
+            "y": 86,
+            "color": "#ff4545",
+            "label": "LED"
+        }]
+    },
+    "gpioPinMap": {
+        "D0": "IO0",
+        "D1": "IO1",
+        "D2": "IO2",
+        "D3": "IO3",
+        "SDA2": "SDA2",
+        "SCL2": "SCL2"
+    },
+    "i2cPins": {
+        "SDA": "SDA",
+        "SCL": "SCL"
+    },
+    "groundPins": [
+        "GND"
+    ],
+    "threeVoltPins": [
+        "VDD",
+        "3V"
+    ],
+    "onboardComponents": [],
+    "marginWhenBreadboarding": [
+        0,
+        0,
+        80,
+        0
+    ]
+}

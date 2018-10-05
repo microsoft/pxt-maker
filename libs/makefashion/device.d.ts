@@ -5,24 +5,29 @@ declare namespace pins {
     const D1: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_D2)
     const D2: DigitalInOutPin;
-
-    //% fixedInstance shim=pxt::getPin(PIN_A0)
-    const A0: PwmOnlyPin;
-    //% fixedInstance shim=pxt::getPin(PIN_A1)
-    const A1: PwmPin;
-    //% fixedInstance shim=pxt::getPin(PIN_A2)
-    const A2: PwmPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D3)
+    const D3: DigitalInOutPin;
 
     //% fixedInstance shim=pxt::getPin(PIN_SDA)
     const SDA: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_SCL)
     const SCL: DigitalInOutPin;
 
+    //% fixedInstance shim=pxt::getPin(PB10)
+    const SDA2: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPin(PB11)
+    const SCL2: DigitalInOutPin;
+
     //% fixedInstance shim=pxt::getPin(PIN_TX)
     const TX: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_RX)
     const RX: DigitalInOutPin;
+
+    //% fixedInstance shim=pxt::getPin(PIN_LED)
+    const LED: DigitalInOutPin;
 }
+
+// TODO check if touch support on all D* pins
 
 declare namespace input {
     /**
@@ -38,10 +43,16 @@ declare namespace input {
     const touchD1: TouchButton;
 
     /**
-     * Capacitive pin D4
+     * Capacitive pin D2
      */
     //% block="touch D2" fixedInstance shim=pxt::getTouchButton(PIN_D2)
     const touchD2: TouchButton;
+
+    /**
+     * Capacitive pin D3
+     */
+    //% block="touch D3" fixedInstance shim=pxt::getTouchButton(PIN_D3)
+    const touchD3: TouchButton;
 
     /**
      * Button connecting D0 to GND.
@@ -63,4 +74,11 @@ declare namespace input {
     //% block="button D2" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_D2,BUTTON_ACTIVE_LOW_PULL_UP)
     const buttonD2: Button;
+
+    /**
+     * Button connecting D2 to GND.
+     */
+    //% block="button D3" fixedInstance
+    //% shim=pxt::getButtonByPin(PIN_D3,BUTTON_ACTIVE_LOW_PULL_UP)
+    const buttonD3: Button;
 }

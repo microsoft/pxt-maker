@@ -47,12 +47,13 @@ declare interface AnalogOutPin {
     //% parts="analogled" trackArgs=0
     //% name.fieldEditor="gridpicker"
     //% name.fieldOptions.width=220
-    //% name.fieldOptions.columns=4 shim=AnalogOutPinMethods::analogWrite
+    //% name.fieldOptions.columns=4
+    //% value.min=0 value.max=1023 shim=AnalogOutPinMethods::analogWrite
     analogWrite(value: int32): void;
 }
 
 
-declare interface DigitalPin {
+declare interface DigitalInOutPin {
     /**
      * Read a pin or connector as either 0 or 1
      * @param name pin to read from
@@ -63,7 +64,7 @@ declare interface DigitalPin {
     //% blockNamespace=pins
     //% name.fieldEditor="gridpicker"
     //% name.fieldOptions.width=220
-    //% name.fieldOptions.columns=4 shim=DigitalPinMethods::digitalRead
+    //% name.fieldOptions.columns=4 shim=DigitalInOutPinMethods::digitalRead
     digitalRead(): boolean;
 
     /**
@@ -77,7 +78,7 @@ declare interface DigitalPin {
     //% blockNamespace=pins
     //% name.fieldEditor="gridpicker"
     //% name.fieldOptions.width=220
-    //% name.fieldOptions.columns=4 shim=DigitalPinMethods::digitalWrite
+    //% name.fieldOptions.columns=4 shim=DigitalInOutPinMethods::digitalWrite
     digitalWrite(value: boolean): void;
 
     /**
@@ -91,7 +92,7 @@ declare interface DigitalPin {
     //% pin.fieldOptions.width=220
     //% pin.fieldOptions.columns=4
     //% parts="slideswitch" trackArgs=0
-    //% deprecated=1 hidden=1 shim=DigitalPinMethods::onPulsed
+    //% deprecated=1 hidden=1 shim=DigitalInOutPinMethods::onPulsed
     onPulsed(pulse: PulseValue, body: () => void): void;
 
     /**
@@ -103,7 +104,7 @@ declare interface DigitalPin {
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.width=220
     //% pin.fieldOptions.columns=4
-    //% parts="slideswitch" trackArgs=0 shim=DigitalPinMethods::onEvent
+    //% parts="slideswitch" trackArgs=0 shim=DigitalInOutPinMethods::onEvent
     onEvent(event: PinEvent, body: () => void): void;
 
     /**
@@ -118,7 +119,7 @@ declare interface DigitalPin {
     //% blockNamespace=pins
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.width=220
-    //% pin.fieldOptions.columns=4 maxDuration.defl=2000000 shim=DigitalPinMethods::pulseIn
+    //% pin.fieldOptions.columns=4 maxDuration.defl=2000000 shim=DigitalInOutPinMethods::pulseIn
     pulseIn(value: PulseValue, maxDuration?: int32): int32;
 
     /**
@@ -131,7 +132,7 @@ declare interface DigitalPin {
     //% blockNamespace=pins
     //% name.fieldEditor="gridpicker"
     //% name.fieldOptions.width=220
-    //% name.fieldOptions.columns=4 shim=DigitalPinMethods::setPull
+    //% name.fieldOptions.columns=4 shim=DigitalInOutPinMethods::setPull
     setPull(pull: PinPullMode): void;
 }
 
@@ -220,20 +221,6 @@ declare namespace control {
     /** Write a message and value (pointer) to DMESG debugging buffer. */
     //% shim=control::dmesgPtr
     function dmesgPtr(str: string, ptr: Object): void;
-}
-declare namespace pins {
-
-    /**
-     * Read `size` bytes from a 7-bit I2C `address`.
-     */
-    //% repeat.defl=0 shim=pins::i2cReadBuffer
-    function i2cReadBuffer(address: int32, size: int32, repeat?: boolean): Buffer;
-
-    /**
-     * Write bytes to a 7-bit I2C `address`.
-     */
-    //% repeat.defl=0 shim=pins::i2cWriteBuffer
-    function i2cWriteBuffer(address: int32, buf: Buffer, repeat?: boolean): int32;
 }
 declare namespace pins {
 

@@ -1,0 +1,22 @@
+{
+    "name": "makefashion",
+    "description": "Support for MakeFashion",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts",
+        "board.json",
+        "board.svg",
+        "boardwireframe.svg"
+    ],
+    "core": true,
+    "dependencies": {
+        "core": "file:../core",
+        "buttons": "file:../buttons",
+        "touch": "file:../touch",
+        "light": "file:../light",
+        "music": "file:../music---pwm"
+    },
+    "public": true
+}
