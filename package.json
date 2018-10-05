@@ -21,13 +21,19 @@
   "files": [
     "README.md",
     "pxtarget.json",
+    "targetconfig.json",
     "built/*.js",
     "built/*.json",
     "built/*.d.ts",
     "sim/public",
     "docs/*.md",
     "docs/*/*.md",
-    "docs/*/*/*.md"
+    "docs/*/*/*.md",
+    "docs/static/*.svg",
+    "docs/static/*.png",
+    "docs/static/libs/*.png",
+    "docs/static/fonts/*",
+    "docs/static/icons/favicon.ico"
   ],
   "devDependencies": {
     "typescript": "2.6.1",
