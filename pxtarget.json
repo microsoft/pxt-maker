@@ -39,7 +39,8 @@
         "libs/display",
         "libs/servo",
         "libs/storage",
-        "libs/serial"
+        "libs/serial",
+        "libs/jacdac"
     ],
     "serial": {
         "useHF2": true,
