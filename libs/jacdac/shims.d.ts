@@ -1,4 +1,12 @@
 // Auto-generated. Do not edit.
+declare namespace jacdac {
+
+    /**
+     * Internal
+     */
+    //% shim=jacdac::__internalSendPacket
+    function __internalSendPacket(buf: Buffer, deviceAddress: int32): int32;
+}
 
 
 declare interface JacDacDriverStatus {
@@ -17,6 +25,10 @@ declare interface JacDacDriverStatus {
     /** Check if device is pairable. */
     //% property shim=JacDacDriverStatusMethods::isPairable
     isPairable: boolean;
+
+    /** Check if driver is virtual. */
+    //% property shim=JacDacDriverStatusMethods::isVirtualDriver
+    isVirtualDriver: boolean;
 
     /** Check if driver is paired. */
     //% property shim=JacDacDriverStatusMethods::isPairedDriver
