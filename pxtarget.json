@@ -27,6 +27,8 @@
         "libs/arduino-zero",
         "libs/arduino-mkr",
         "libs/sparkfun-redbear",
+        "libs/arduino-mkr1300", 
+        "libs/electroniccats-meow-meow",
         "libs/sparkfun-samd21-dev-breakout",
         "libs/redbear-ble-nano",
         "libs/makefashion",
@@ -262,10 +264,16 @@
         "homeScreenHero": "./static/hero.jpg",
         "debugger": true,
         "print": true,
+        "chooseBoardOnNewProject": true,
+        "lightToc": true,
         "instructions": true,
         "docMenu": [{
                 "name": "About",
                 "path": "/about"
+            },
+            {
+                "name": "Boards",
+                "path": "/boards"
             },
             {
                 "name": "Blocks",

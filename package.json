@@ -1,6 +1,6 @@
 {
   "name": "pxt-maker",
-  "version": "0.5.14",
+  "version": "0.5.23",
   "description": "Microsoft MakeCode Maker Boards",
   "public": true,
   "keywords": [
@@ -21,13 +21,19 @@
   "files": [
     "README.md",
     "pxtarget.json",
+    "targetconfig.json",
     "built/*.js",
     "built/*.json",
     "built/*.d.ts",
     "sim/public",
     "docs/*.md",
     "docs/*/*.md",
-    "docs/*/*/*.md"
+    "docs/*/*/*.md",
+    "docs/static/*.svg",
+    "docs/static/*.png",
+    "docs/static/libs/*.png",
+    "docs/static/fonts/*",
+    "docs/static/icons/favicon.ico"
   ],
   "devDependencies": {
     "typescript": "2.6.1",
@@ -38,8 +44,8 @@
     "@types/node": "8.0.53"
   },
   "dependencies": {
-    "pxt-common-packages": "0.23.57",
-    "pxt-core": "4.1.12"
+    "pxt-common-packages": "0.24.3",
+    "pxt-core": "4.1.24"
   },
   "scripts": {
     "test": "node node_modules/pxt-core/built/pxt.js travis"

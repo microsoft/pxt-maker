@@ -44,7 +44,7 @@ declare namespace serial {
     //% rx.fieldEditor="gridpicker" rx.fieldOptions.columns=3
     //% rx.fieldOptions.tooltips="false"
     //% blockGap=8 inlineInputMode=inline shim=serial::redirect
-    function redirect(tx: DigitalPin, rx: DigitalPin, rate: BaudRate): void;
+    function redirect(tx: DigitalInOutPin, rx: DigitalInOutPin, rate: BaudRate): void;
 }
 
 // Auto-generated. Do not edit. Really.

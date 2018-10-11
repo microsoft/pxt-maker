@@ -11,26 +11,26 @@ declare namespace pins {
     const D4: PwmPin;
     
     //% fixedInstance shim=pxt::getPin(PIN_D13)
-    const D13: DigitalPin;
+    const D13: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_D13)
-    const LED: DigitalPin;
+    const LED: DigitalInOutPin;
 
     //% fixedInstance shim=pxt::getPin(PIN_D0)
-    const SDA: DigitalPin;
+    const SDA: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_D2)
-    const SCL: DigitalPin;
+    const SCL: DigitalInOutPin;
 
     //% fixedInstance shim=pxt::getPin(PIN_D3)
-    const SCK: DigitalPin;
+    const SCK: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_D2)
-    const MISO: DigitalPin;
+    const MISO: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_D4)
-    const MOSI: DigitalPin;
+    const MOSI: DigitalInOutPin;
 
     //% fixedInstance shim=pxt::getPin(PIN_D3)
-    const RX: DigitalPin;
+    const RX: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_D4)
-    const TX: DigitalPin;
+    const TX: DigitalInOutPin;
 }
 
 declare namespace input {
