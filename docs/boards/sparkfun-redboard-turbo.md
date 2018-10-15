@@ -1,4 +1,4 @@
-# SparkFun RedBear
+# SparkFun Redboard Turbo
 
 ```blocks
 forever(function() {
@@ -7,5 +7,5 @@ forever(function() {
 ```
 
 ```package
-sparkfun-redbear
+sparkfun-redboard-turbo
 ```

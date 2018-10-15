@@ -1,6 +1,6 @@
 {
-    "name": "sparkfun-redbear",
-    "description": "The SparkFun SAMD21 Redbear board",
+    "name": "sparkfun-redboard-turbo",
+    "description": "The SparkFun SAMD21 Redboard Turbo",
     "core": true,
     "files": [
         "README.md",
