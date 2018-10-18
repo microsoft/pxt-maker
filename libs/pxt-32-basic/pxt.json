@@ -18,8 +18,7 @@
         "music---pwm": "file:../music---pwm",
         "game": "file:../game",
         "controller": "file:../controller",
-        "buttons": "file:../buttons",
-        "storage": "file:../storage"
+        "buttons": "file:../buttons"
     },
     "palette": [
         "#000000",
