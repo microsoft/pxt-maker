@@ -15,12 +15,8 @@
         "core": "file:../core",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
-        "pixel": "file:../pixel"
+        "pixel": "file:../pixel",
+        "storage": "file:../storage"
     },
-    "public": true,
-    "yotta": {
-        "config": {
-            "DEVICE_USB": 1
-        }
-    }
+    "public": true
 }
