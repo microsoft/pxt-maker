@@ -76,7 +76,7 @@
     "compile": {
         "isNative": true,
         "useUF2": true,
-        "webUSB": false,
+        "webUSB": true,
         "hasHex": true,
         "deployDrives": ".*",
         "deployFileMarker": "INFO_UF2.TXT",
