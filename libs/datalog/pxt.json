@@ -1,7 +1,3 @@
 {
-    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/datalog",
-    "dependencies": {
-        "core": "file:../core",
-        "storage": "file:../storage"
-    }
+    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/datalog"
 }
