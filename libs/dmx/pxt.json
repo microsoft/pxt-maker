@@ -1,3 +1,9 @@
 {
-    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/dmx"
+    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/dmx",
+    "testFiles": [
+        "test.ts"
+    ],
+    "testDependencies": {
+        "adafruit-metro-m0-express": "file:../adafruit-metro-m0-express"
+    }
 }
