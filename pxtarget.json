@@ -38,7 +38,8 @@
         "libs/display",
         "libs/servo",
         "libs/storage",
-        "libs/serial"
+        "libs/serial",
+        "libs/dmx"
     ],
     "serial": {
         "useHF2": true,
