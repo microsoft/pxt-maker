@@ -17,5 +17,10 @@
         "touch": "file:../touch",
         "pixel": "file:../pixel"
     },
-    "public": true
+    "public": true,
+    "yotta": {
+        "config": {
+            "DEVICE_USB": 1
+        }
+    }
 }
