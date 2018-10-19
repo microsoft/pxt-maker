@@ -6,12 +6,12 @@
 [
     {
         "name": "Glowy",
-        "url": "/examples/glowy",
+        "url": "/projects/analog-io/glowy",
         "cardType": "example"
     },
     {
         "name": "Glow Light",
-        "url": "/examples/glow-light",
+        "url": "/projects/analog-io/glow-light",
         "cardType": "example"
     }
 ]
@@ -19,5 +19,5 @@
 
 ## See Also
 
-[Glowy](/examples/glowy),
-[Glow Light](/examples/glow-light)
+[Glowy](/projects/analog-io/glowy),
+[Glow Light](/projects/analog-io/glow-light)
