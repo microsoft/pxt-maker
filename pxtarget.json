@@ -22,7 +22,6 @@
         "libs/adafruit-trinket-m0",
         "libs/adafruit-metro-m0-express",
         "libs/adafruit-feather-m0-express",
-        "libs/adafruit-circuit-playground-express",
         "libs/adafruit-gemma-m0",
         "libs/arduino-zero",
         "libs/arduino-mkr",
@@ -40,7 +39,8 @@
         "libs/display",
         "libs/servo",
         "libs/storage",
-        "libs/serial"
+        "libs/serial",
+        "libs/datalogger"
     ],
     "serial": {
         "useHF2": true,
@@ -78,7 +78,7 @@
     "compile": {
         "isNative": true,
         "useUF2": true,
-        "webUSB": false,
+        "webUSB": true,
         "hasHex": true,
         "deployDrives": ".*",
         "deployFileMarker": "INFO_UF2.TXT",
@@ -86,8 +86,6 @@
         "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
         "flashChecksumAddr": 8372,
         "flashCodeAlign": 256,
-        "floatingPoint": true,
-        "taggedInts": true,
         "upgrades": []
     },
     "runtime": {
@@ -135,7 +133,8 @@
                 "flashChecksumAddr": 0,
                 "deployFileMarker": "MBED.HTM",
                 "vtableShift": 3,
-                "useUF2": false
+                "useUF2": false,
+                "webUSB": false
             },
             "compileService": {
                 "codalTarget": {
@@ -164,7 +163,8 @@
                 "flashChecksumAddr": 0,
                 "deployFileMarker": "MBED.HTM",
                 "vtableShift": 4,
-                "useUF2": false
+                "useUF2": false,
+                "webUSB": false
             },
             "compileService": {
                 "codalTarget": {
@@ -192,7 +192,8 @@
                 "openocdScript": "source [find board/st_nucleo_f103rb.cfg]",
                 "flashChecksumAddr": 0,
                 "deployFileMarker": "INFO_UF2.TXT",
-                "vtableShift": 4
+                "vtableShift": 4,
+                "webUSB": false
             },
             "compileService": {
                 "codalTarget": {
@@ -220,7 +221,8 @@
                 "openocdScript": "source [find interface/stlink-v2.cfg]; source [find target/stm32f4x.cfg]",
                 "flashChecksumAddr": 0,
                 "deployFileMarker": "INFO_UF2.TXT",
-                "vtableShift": 4
+                "vtableShift": 4,
+                "webUSB": false
             },
             "compileService": {
                 "codalTarget": {
