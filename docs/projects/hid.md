@@ -6,7 +6,7 @@
 [
     {
         "name": "Keyboard button",
-        "url": "/examples/keyboard-button",
+        "url": "/projects/hid/keyboard-button",
         "cardType": "example"
     }
 ]
@@ -14,4 +14,4 @@
 
 ## See Also
 
-[Keyboard button](/examples/keyboard-button)
+[Keyboard button](/projects/hid/keyboard-button)
