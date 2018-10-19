@@ -5,6 +5,8 @@
 
 This is an experimental code editor for maker boards - try it at https://maker.makecode.com.
 
+* [Read the docs](https://maker.makecode.com/about)
+
 ## Who is this for?
 
 This editor is meant for micro-controllers that are friendly to breadboarding. The editor is based on [Microsoft MakeCode](https://makecode.com).
