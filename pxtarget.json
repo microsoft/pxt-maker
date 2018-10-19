@@ -25,7 +25,7 @@
         "libs/adafruit-gemma-m0",
         "libs/arduino-zero",
         "libs/arduino-mkr",
-        "libs/arduino-mkr1300", 
+        "libs/arduino-mkr1300",
         "libs/electroniccats-meow-meow",
         "libs/sparkfun-samd21-dev-breakout",
         "libs/redbear-ble-nano",
@@ -123,6 +123,44 @@
         "serviceId": "codal2cp"
     },
     "variants": {
+        "mkr1300": {
+            "serial": {
+                "useHF2": false
+            },
+            "compile": {
+                "isNative": true,
+                "useUF2": true,
+                "webUSB": false,
+                "hasHex": true,
+                "deployDrives": ".*",
+                "deployFileMarker": "INFO_UF2.TXT",
+                "driveName": "DRIVE",
+                "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
+                "flashChecksumAddr": 8372,
+                "flashCodeAlign": 256,
+                "upgrades": []
+            },            
+            "compileService": {
+                "buildEngine": "codal",
+                "codalTarget": {
+                    "name": "codal-mkr1300",
+                    "url": "https://github.com/ElectronicCats/codal-mkr1300",
+                    "branch": "v0.0.6",
+                    "type": "git"
+                },
+                "codalBinary": "MKR1300",
+                "yottaConfig": {
+                    "pxt": {
+                        "board": {
+                            "id": "BOARD_ID_MKR1300"
+                        }
+                    }
+                },
+                "githubCorePackage": "lancaster-university/codal",
+                "gittag": "v0.5.0",
+                "serviceId": "codal2mkr1300"
+            }
+        },
         "nrf52832": {
             "serial": {
                 "useHF2": false
@@ -268,7 +306,8 @@
         "chooseBoardOnNewProject": true,
         "lightToc": true,
         "instructions": true,
-        "docMenu": [{
+        "docMenu": [
+            {
                 "name": "About",
                 "path": "/about"
             },

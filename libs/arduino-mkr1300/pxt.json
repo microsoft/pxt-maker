@@ -11,6 +11,7 @@
         "boardwireframe.svg"
     ],
     "core": true,
+    "compileServiceVariant": "mkr1300",
     "dependencies": {
         "core": "file:../core",
         "buttons": "file:../buttons",
