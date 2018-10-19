@@ -1,0 +1,92 @@
+{
+    "driveDisplayName": "ITSYBITSYBOOT",
+    "visual": {
+        "image": "pkg://board.svg",
+        "outlineImage": "pkg://boardwireframe.svg",
+        "useCrocClips": true,
+        "width": 200,
+        "height": 200,
+        "pinDist": 16,
+        "pinBlocks": [
+            {
+                "x": 40,
+                "y": 30,
+                "labels": [
+                    "D2"
+                ]
+            },
+            {
+                "x": 20,
+                "y": 90,
+                "labels": [
+                    "D0"
+                ]
+            },
+            {
+                "x": 40,
+                "y": 150,
+                "labels": [
+                    "3V"
+                ]
+            },
+            {
+                "x": 160,
+                "y": 150,
+                "labels": [
+                    "VOUT"
+                ]
+            },
+            {
+                "x": 180,
+                "y": 90,
+                "labels": [
+                    "D1"
+                ]
+            },
+            {
+                "x": 160,
+                "y": 40,
+                "labels": [
+                    "GND"
+                ]
+            }
+        ],
+        "leds": [
+            {
+                "x": 29,
+                "y": 40,
+                "w": 3,
+                "color": "neopixel",
+                "label": "NEOPIXEL"
+            }
+        ]
+    },
+    "gpioPinMap": {
+        "D0": "D0",
+        "D1": "D1",
+        "D2": "D2",
+        "A0": "D1",
+        "A1": "D2",
+        "A2": "D0"
+    },
+    "groundPins": [
+        "GND"
+    ],
+    "threeVoltPins": [
+        "3V",
+        "VOUT"
+    ],
+    "i2cPins": {
+        "SDA": "D2",
+        "SCL": "D0"
+    },
+    "onboardComponents": [
+        "pixel"
+    ],
+    "marginWhenBreadboarding": [
+        0,
+        0,
+        80,
+        0
+    ]
+}
