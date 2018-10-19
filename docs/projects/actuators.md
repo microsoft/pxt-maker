@@ -6,7 +6,7 @@
 [
     {
         "name": "Servo",
-        "url": "/examples/servo",
+        "url": "/projects/actuators/servo",
         "cardType": "example"
     }
 ]
@@ -14,4 +14,4 @@
 
 ## See Also
 
-[Servo](/examples/servo)
+[Servo](/projects/actuators/servo)
