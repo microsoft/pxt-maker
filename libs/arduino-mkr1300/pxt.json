@@ -1,6 +1,6 @@
 {
     "name": "arduino-mkr1300",
-    "description": "Support for Arduino MKR1300",
+    "description": "Support for Arduino MKR1300 - beta",
     "files": [
         "README.md",
         "device.d.ts",
