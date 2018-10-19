@@ -39,7 +39,7 @@
         "libs/servo",
         "libs/storage",
         "libs/serial",
-        "libs/datalog"
+        "libs/datalogger"
     ],
     "serial": {
         "useHF2": true,
