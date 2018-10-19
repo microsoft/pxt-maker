@@ -12,10 +12,10 @@
         ]
     },
     "galleries": {
-        "Digital IO": "/examples/digital-io",
-        "Analog IO": "/examples/analog-io",
-        "Actuators": "/examples/actuators",
-        "HID": "/examples/hid"
+        "Digital IO": "/projects/digital-io",
+        "Analog IO": "/projects/analog-io",
+        "Actuators": "/projects/actuators",
+        "HID": "/projects/hid"
     },
     "firmwareUrls": {
         "adafruit-circuit-playground-express": "https://learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-uf2-bootloader-details#updating-the-bootloader",
