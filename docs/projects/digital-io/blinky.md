@@ -39,3 +39,6 @@ If you have a @boardname@, press ``|Download|`` and follow the instruction to ge
 ```package
 adafruit-metro-m0-express
 ```
+```config
+feature=pinsled
+```

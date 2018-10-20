@@ -8,8 +8,7 @@
         "name": "Blinky",
         "url": "/projects/digital-io/blinky",
         "cardType": "tutorial",
-        "label": "New? Start Here!",
-        "features": ["pinsled"]
+        "label": "New? Start Here!"
     },
     {
         "name": "Switchy",
