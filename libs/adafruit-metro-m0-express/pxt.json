@@ -19,5 +19,8 @@
         "storage": "file:../storage"
     },
     "public": true,
-    "weight": 100
+    "weight": 100,
+    "features": [
+        "pinsled"
+    ]
 }

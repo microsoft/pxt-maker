@@ -19,5 +19,8 @@
         "pixel": "file:../pixel",
         "storage": "file:../storage"
     },
-    "public": true
+    "public": true,
+    "features": [
+        "pinsled"
+    ]
 }

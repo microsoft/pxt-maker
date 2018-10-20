@@ -17,5 +17,8 @@
         "storage": "file:../storage"
     },
     "core": true,
-    "public": true
+    "public": true,
+    "features": [
+        "pinsled"
+    ]
 }

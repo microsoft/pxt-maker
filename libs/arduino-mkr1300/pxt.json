@@ -18,5 +18,8 @@
         "touch": "file:../touch",
         "storage": "file:../storage"
     },
-    "public": true
+    "public": true,
+    "features": [
+        "pinsled"
+    ]
 }

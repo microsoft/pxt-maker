@@ -20,5 +20,8 @@
         "music": "file:../music",
         "storage": "file:../storage"
     },
-    "public": true
+    "public": true,
+    "features": [
+        "pinsled"
+    ]
 }
