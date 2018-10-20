@@ -6,15 +6,6 @@ Turn on and off the light pin to create a blinking effect.
 
 ## Step 1 @fullscreen
 
-Add a ``||loops:forever||`` to repeat code in a loop... forever.
-
-```blocks
-forever(function() {
-})
-```
-
-## Step 2 @fullscreen
-
 Add a ``||pins:digital write||`` block to turn on the ``LED`` pin.
 
 ```blocks
@@ -23,11 +14,11 @@ forever(function() {
 })
 ```
 
-## Step 3 @fullscreen
+## Step 2 @fullscreen
 
 Take a peek at the simulator and make sure the LED is turned on. It usually sits near pin ``D13``.
 
-## Step 4 @fullscreen
+## Step 3 @fullscreen
 
 Add more ``||blocks:pause||`` and ``||pins:digital write||`` blocks to create a blinking effect.
 Play with the duration in your pauses to create different patterns.
@@ -41,7 +32,7 @@ forever(function() {
 })
 ```
 
-## Step 5 @fullscreen
+## Step 4 @fullscreen
 
 If you have a @boardname@, press ``|Download|`` and follow the instruction to get your code on your device.
 
