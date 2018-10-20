@@ -36,9 +36,6 @@ forever(function() {
 
 If you have a @boardname@, press ``|Download|`` and follow the instruction to get your code on your device.
 
-```package
-adafruit-metro-m0-express
-```
 ```config
-feature=pinsled
+feature=pinled
 ```

@@ -19,6 +19,8 @@
     "core": true,
     "public": true,
     "features": [
-        "pinsled"
+        "pinled",
+        "pind1",
+        "buttond1"
     ]
 }
