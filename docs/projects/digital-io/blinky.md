@@ -37,5 +37,6 @@ forever(function() {
 If you have a @boardname@, press ``|Download|`` and follow the instruction to get your code on your device.
 
 ```config
+feature=uf2
 feature=pinled
 ```

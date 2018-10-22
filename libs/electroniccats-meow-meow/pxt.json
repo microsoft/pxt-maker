@@ -19,8 +19,11 @@
     "core": true,
     "public": true,
     "features": [
+        "uf2",
         "pinled",
-        "pind1",
-        "buttond1"
+        "pina0",
+        "pina1",
+        "toucha0",
+        "toucha1"
     ]
 }

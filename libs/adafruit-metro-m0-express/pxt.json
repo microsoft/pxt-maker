@@ -21,8 +21,15 @@
     "public": true,
     "weight": 100,
     "features": [
+        "uf2",
         "pinled",
+        "pind0",
         "pind1",
-        "buttond1"
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
+        "toucha0",
+        "toucha1"
     ]
 }
