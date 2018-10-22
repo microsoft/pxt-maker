@@ -18,14 +18,14 @@ forever(function() {
 
 ## Step 2 @fullscreen
 
-Take a peek at the simulator and make sure the LED is turned on.
+Take a peek at the simulator and make sure the LED is turned off.
 
 ![A breadboard with a LED turned off](/static/projects/digital-io/blinky/off.png)
 
 ## Step 3 @fullscreen
 
-Add more ``||blocks:pause||`` and ``||pins:digital write||`` blocks to create a blinking effect.
-Play with the duration in your pauses to create different patterns.
+Add another ``||blocks:pause||`` and ``||pins:digital write||`` block to create a blinking effect.
+Make sure the digital write is **HIGH**.
 
 ```blocks
 forever(function() {
@@ -35,6 +35,8 @@ forever(function() {
     pause(500)    
 })
 ```
+
+Play with the duration in your pauses to create different patterns.
 
 ## Step 4 @fullscreen
 
