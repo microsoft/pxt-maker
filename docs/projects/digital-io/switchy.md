@@ -11,6 +11,7 @@ forever(function () {
 ```
 
 ```config
+feature=uf2
 feature=pinled
 feature=pind1
 ```

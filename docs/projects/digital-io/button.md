@@ -12,6 +12,7 @@ input.buttonD1.onEvent(ButtonEvent.Up, function () {
 ```
 
 ```config
+feature=uf2
 feature=pinled
 feature=buttond1
 ```
