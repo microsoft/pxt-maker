@@ -2,7 +2,11 @@
 
 ## Introduction @unplugged
 
+### ~ avatar
+
 Turn on and off the light pin to create a blinking effect.
+
+### ~
 
 ## Step 1 @fullscreen
 

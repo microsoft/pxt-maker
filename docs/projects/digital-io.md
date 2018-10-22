@@ -7,13 +7,13 @@
     {
         "name": "Blinky",
         "url": "/projects/digital-io/blinky",
-        "cardType": "tutorial",
-        "label": "New? Start Here!"
+        "label": "New? Start Here!",
+        "cardType": "tutorial"
     },
     {
         "name": "Switchy",
         "url": "/projects/digital-io/switchy",
-        "cardType": "example"
+        "cardType": "tutorial"
     },
     {
         "name": "Button",
