@@ -18,5 +18,16 @@
         "music": "file:../music---pwm",
         "storage": "file:../storage"
     },
-    "public": true
+    "public": true,
+    "features": [
+        "uf2",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
+        "touchd0",
+        "touchd1"
+    ]
 }

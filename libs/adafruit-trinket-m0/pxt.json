@@ -17,5 +17,17 @@
         "touch": "file:../touch",
         "storage": "file:../storage"
     },
-    "public": true
+    "public": true,
+    "features": [
+        "uf2",
+        "pinled",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
+        "touchd0",
+        "touchd1"
+    ]
 }

@@ -19,5 +19,17 @@
         "storage": "file:../storage"
     },
     "public": true,
-    "weight": 100
+    "weight": 100,
+    "features": [
+        "uf2",
+        "pinled",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
+        "toucha0",
+        "toucha1"
+    ]
 }
