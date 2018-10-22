@@ -8,17 +8,20 @@
         "name": "Blinky",
         "url": "/projects/digital-io/blinky",
         "label": "New? Start Here!",
-        "cardType": "tutorial"
+        "cardType": "tutorial",
+        "imageUrl": "/static/projects/digital-io/blinky/gallery.gif"
     },
     {
-        "name": "Button",
-        "url": "/projects/digital-io/button",
-        "cardType": "tutorial"
+        "name": "Button LED",
+        "url": "/projects/digital-io/button-led",
+        "cardType": "tutorial",
+        "imageUrl": "/static/projects/digital-io/button-led/gallery.gif"
     },
     {
-        "name": "Switchy",
-        "url": "/projects/digital-io/switchy",
-        "cardType": "example"
+        "name": "Switch LED",
+        "url": "/projects/digital-io/switch-led",
+        "cardType": "tutorial",
+        "imageUrl": "/static/projects/digital-io/switch-led/gallery.gif"
     }
 ]
 ```
@@ -26,5 +29,5 @@
 ## See Also
 
 [Blinky](/projects/digital-io/blinky),
-[Switchy](/projects/digital-io/switchy),
-[Button](/projects/digital-io/button)
+[Button](/projects/digital-io/button-led),
+[Switch](/projects/digital-io/switch-led)

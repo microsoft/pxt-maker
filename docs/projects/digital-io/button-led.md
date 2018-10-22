@@ -4,6 +4,8 @@
 
 Use a button on a digital pin to control an LED.
 
+![A breadboard with a button that turns on an LED](/static/projects/digital-io/button-led/gallery.gif)
+
 ## Step 1 @fullscreen
 
 Add a ``||input:on event||`` block to handle a "button click" on pin **D0**.
@@ -28,7 +30,7 @@ input.buttonD0.onEvent(ButtonEvent.Click, function () {
 Look at the simulator and notice that a breadboard and a button has been added to the board.
 Try pressing on the button and the LED should light up.
 
-![A simulated boardboard turning on a LED](/static/projects/digital-io/button/led-on.gif)
+![A simulated boardboard turning on a LED](/static/projects/digital-io/button-led/led-on.gif)
 
 ## Step 4 @fullscreen
 
@@ -38,7 +40,7 @@ turn pin **D1** to low.
 ```blocks
 input.buttonD0.onEvent(ButtonEvent.Click, function () {
     pins.D1.digitalWrite(true)
-    pause(500)
+    pause(1000)
     pins.D1.digitalWrite(false)    
 })
 ```
@@ -52,7 +54,7 @@ and follow the instructions to get it on your board.
 
 Click on the **wrench** icon under the simulator to print detailed breadboard wiring instructions.
 
-![Wrench icon](/static/projects/digital-io/button/wrench.png)
+![Wrench icon](/static/projects/digital-io/button-led/wrench.png)
 
 ```config
 feature=uf2

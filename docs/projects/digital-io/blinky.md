@@ -4,6 +4,8 @@
 
 Turn on and off the light pin to create a blinking effect.
 
+![A breadboard with a blinking LED](/static/projects/digital-io/blinky/gallery.gif)
+
 ## Step 1 @fullscreen
 
 Add a ``||pins:digital write||`` block to turn on the ``LED`` pin.
