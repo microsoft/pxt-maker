@@ -1,6 +1,6 @@
 # Digital IO
 
-## Examples
+## Tutorials
 
 ```codecard
 [
@@ -11,13 +11,13 @@
         "cardType": "tutorial"
     },
     {
-        "name": "Switchy",
-        "url": "/projects/digital-io/switchy",
+        "name": "Button",
+        "url": "/projects/digital-io/button",
         "cardType": "tutorial"
     },
     {
-        "name": "Button",
-        "url": "/projects/digital-io/button",
+        "name": "Switchy",
+        "url": "/projects/digital-io/switchy",
         "cardType": "example"
     }
 ]
