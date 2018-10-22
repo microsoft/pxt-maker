@@ -20,6 +20,8 @@ forever(function() {
 
 Take a peek at the simulator and make sure the LED is turned on.
 
+![A breadboard with a LED turned off](/static/projects/digital-io/blinky/off.png)
+
 ## Step 3 @fullscreen
 
 Add more ``||blocks:pause||`` and ``||pins:digital write||`` blocks to create a blinking effect.
@@ -41,6 +43,8 @@ Look at the simulator and make sure your program works as expected.
 If you have a @boardname@, press ``|Download|`` and follow the instruction to get your code on your device.
 
 Click on the **wrench** icon under the simulator to get detailed breadboarding instructions.
+
+![The wrench button](/static/projects/digital-io/blinky/wrench.png)
 
 ```config
 feature=uf2
