@@ -5,6 +5,12 @@
 ```codecard
 [
     {
+        "name": "Blink to Light",
+        "url": "/projects/analog-io/blink-to-light",
+        "cardType": "tutorial",
+        "imageUrl": "/static/projects/analog-io/blink-to-light/gallery.gif"
+    },    
+    {
         "name": "Glowy",
         "url": "/projects/analog-io/glowy",
         "cardType": "example"
@@ -19,5 +25,6 @@
 
 ## See Also
 
+[Blink to light](/projects/analog-io/blink-to-light)
 [Glowy](/projects/analog-io/glowy),
 [Glow Light](/projects/analog-io/glow-light)
