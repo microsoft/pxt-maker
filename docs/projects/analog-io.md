@@ -8,7 +8,8 @@
         "name": "Blink to Light",
         "url": "/projects/analog-io/blink-to-light",
         "cardType": "tutorial",
-        "imageUrl": "/static/projects/analog-io/blink-to-light/gallery.gif"
+        "imageUrl": "/static/projects/analog-io/blink-to-light/gallery.gif",
+        "description": "Learn about analog read"
     },    
     {
         "name": "Glowy",
