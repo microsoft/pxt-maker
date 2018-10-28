@@ -10,24 +10,21 @@
         "label": "New? Start Here!",
         "cardType": "tutorial",
         "imageUrl": "/static/projects/digital-io/blinky/gallery.gif",
-        "description": "Learn about forever, pause, digital write",
-        "tags": ["forever", "pause", "digital write"]
+        "description": "Learn about forever, pause, digital write"
     },
     {
         "name": "Button LED",
         "url": "/projects/digital-io/button-led",
         "cardType": "tutorial",
         "imageUrl": "/static/projects/digital-io/button-led/gallery.gif",
-        "description": "Learn about button events",
-        "tags": ["buttons"]
+        "description": "Learn about button events"
     },
     {
         "name": "Switch LED",
         "url": "/projects/digital-io/switch-led",
         "cardType": "tutorial",
         "imageUrl": "/static/projects/digital-io/switch-led/gallery.gif",
-        "description": "Learn about digital read",
-        "tags": ["digital read"]
+        "description": "Learn about digital read"
     }
 ]
 ```
