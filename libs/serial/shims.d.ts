@@ -33,18 +33,26 @@ declare namespace serial {
      * Set the serial input and output to use pins instead of the USB connection.
      * @param tx the new transmission pin, eg: SerialPin.P0
      * @param rx the new reception pin, eg: SerialPin.P1
-     * @param rate the new baud rate. eg: 115200
      */
     //% weight=10
     //% help=serial/redirect
-    //% blockId=serial_redirect block="serial|redirect to|TX %tx|RX %rx|at baud rate %rate"
-    //% blockExternalInputs=1
+    //% blockId=serial_redirect block="serial|redirect to|TX %tx|RX %rx"
     //% tx.fieldEditor="gridpicker" tx.fieldOptions.columns=3
     //% tx.fieldOptions.tooltips="false"
     //% rx.fieldEditor="gridpicker" rx.fieldOptions.columns=3
     //% rx.fieldOptions.tooltips="false"
     //% blockGap=8 inlineInputMode=inline shim=serial::redirect
-    function redirect(tx: DigitalInOutPin, rx: DigitalInOutPin, rate: BaudRate): void;
+    function redirect(tx: DigitalInOutPin, rx: DigitalInOutPin): void;
+
+    /**
+     * Sets the transfer rate
+     * @param rate the new baud rate. eg: 115200
+     **/
+    //% weight=9
+    //% help=serial/set-baud-rate
+    //% blockId=serial_setbaud block="serial set baud rate $rate"
+    //% blockGap=8 inlineInputMode=inline shim=serial::setBaudRate
+    function setBaudRate(rate: BaudRate): void;
 }
 
 // Auto-generated. Do not edit. Really.
