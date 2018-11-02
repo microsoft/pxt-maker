@@ -1,6 +1,6 @@
 {
     "name": "arduino-zero",
-    "description": "Support for Arduino Zero",
+    "description": "Support for Arduino Zero - beta",
     "files": [
         "README.md",
         "device.d.ts",
