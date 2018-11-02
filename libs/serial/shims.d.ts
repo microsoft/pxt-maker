@@ -26,6 +26,7 @@ declare namespace serial {
     /**
     Set the baud rate of the serial port
      */
+    //% help=serial/set-baud-rate
     //% blockId=serialsetbaudrate block="serial set baud rate to %rate" shim=serial::setBaudRate
     function setBaudRate(rate: BaudRate): void;
 
@@ -43,16 +44,6 @@ declare namespace serial {
     //% rx.fieldOptions.tooltips="false"
     //% blockGap=8 inlineInputMode=inline shim=serial::redirect
     function redirect(tx: DigitalInOutPin, rx: DigitalInOutPin): void;
-
-    /**
-     * Sets the transfer rate
-     * @param rate the new baud rate. eg: 115200
-     **/
-    //% weight=9
-    //% help=serial/set-baud-rate
-    //% blockId=serial_setbaud block="serial set baud rate $rate"
-    //% blockGap=8 inlineInputMode=inline shim=serial::setBaudRate
-    function setBaudRate(rate: BaudRate): void;
 }
 
 // Auto-generated. Do not edit. Really.
