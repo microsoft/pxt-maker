@@ -14,3 +14,8 @@ input.buttonD1.onEvent(ButtonEvent.Up, function () {
 ```package
 gamepad
 ```
+
+```config
+feature=uf2
+feature=pind0
+```

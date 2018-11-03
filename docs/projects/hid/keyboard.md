@@ -16,3 +16,8 @@ input.buttonD1.onEvent(ButtonEvent.Up, function () {
 ```package
 keyboard
 ```
+
+```config
+feature=uf2
+feature=pind0
+```
