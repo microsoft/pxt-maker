@@ -14,8 +14,7 @@
     "dependencies": {
         "core": "file:../core",
         "buttons": "file:../buttons",
-        "touch": "file:../touch",
-        "storage": "file:../storage"
+        "touch": "file:../touch"
     },
     "public": true,
     "features": [
