@@ -120,7 +120,8 @@
         },
         "githubCorePackage": "lancaster-university/codal",
         "gittag": "v0.5.0",
-        "serviceId": "codal2cp"
+        "serviceId": "codal2cp",
+        "dockerImage": "pext/yotta:latest"
     },
     "variants": {
         "mkr1300": {
@@ -145,7 +146,7 @@
                 "codalTarget": {
                     "name": "codal-mkr1300",
                     "url": "https://github.com/ElectronicCats/codal-mkr1300",
-                    "branch": "v0.0.6",
+                    "branch": "v0.0.7",
                     "type": "git"
                 },
                 "codalBinary": "MKR1300",
@@ -158,7 +159,8 @@
                 },
                 "githubCorePackage": "lancaster-university/codal",
                 "gittag": "v0.5.0",
-                "serviceId": "codal2mkr1300"
+                "serviceId": "codal2mkr1300",
+                "dockerImage": "pext/yotta:latest"
             }
         },
         "nrf52832": {
@@ -182,6 +184,7 @@
                 },
                 "codalBinary": "BLE_NANO",
                 "serviceId": "codal2ble",
+                "dockerImage": "pext/yotta:latest",
                 "yottaConfig": {
                     "pxt": {
                         "board": {
@@ -212,6 +215,7 @@
                 },
                 "codalBinary": "NRF52840_DK",
                 "serviceId": "codal2nrf52840",
+                "dockerImage": "pext/yotta:latest",
                 "yottaConfig": {
                     "pxt": {
                         "board": {
@@ -241,6 +245,7 @@
                 },
                 "codalBinary": "GENERIC_F103RE",
                 "serviceId": "codal2f103re",
+                "dockerImage": "pext/yotta:latest",
                 "yottaConfig": {
                     "pxt": {
                         "board": {
@@ -270,6 +275,7 @@
                 },
                 "codalBinary": "STM32",
                 "serviceId": "codal2stm32",
+                "dockerImage": "pext/yotta:latest",
                 "yottaConfig": {
                     "pxt": {
                         "board": {
