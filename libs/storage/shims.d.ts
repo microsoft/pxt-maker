@@ -6,8 +6,7 @@ declare namespace storage {
      * @param filename name of the file, eg: "log.txt"
      */
     //% part="storage" 
-    //% blockId="storage_append" block="append file $filename with $data"
-    //% data.shadowOptions.toString=true shim=storage::append
+    //% blockId="storage_append" block="append file $filename with $data" shim=storage::append
     function append(filename: string, data: string): void;
 
     /** 
@@ -22,8 +21,7 @@ declare namespace storage {
      * @param filename name of the file, eg: "log.txt"
      */
     //% part="storage"
-    //% blockId="storage_overwrite" block="overwrite file $filename with $data"
-    //% data.shadowOptions.toString=true shim=storage::overwrite
+    //% blockId="storage_overwrite" block="overwrite file $filename with $data" shim=storage::overwrite
     function overwrite(filename: string, data: string): void;
 
     /** 
