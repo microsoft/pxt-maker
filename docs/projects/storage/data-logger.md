@@ -17,4 +17,5 @@ data-logger
 ```config
 feature=uf2
 feature=pina0
+feature=storage
 ```
