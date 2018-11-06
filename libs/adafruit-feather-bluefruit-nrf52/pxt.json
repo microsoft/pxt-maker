@@ -1,0 +1,26 @@
+{
+    "name": "adafruit-feather-bluefruit-nrf52",
+    "description": "Support for Adafruit Feather Bluefruit Nrf52 - beta",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts",
+        "board.json",
+        "board.svg",
+        "boardwireframe.svg"
+    ],
+    "core": true,
+    "compileServiceVariant": "nrf52832",
+    "dependencies": {
+        "core---nrf52832": "file:../core---nrf52832",
+        "core": "file:../core",
+        "buttons": "file:../buttons",
+        "music": "file:../music"
+    },
+    "public": true,
+    "features": [
+        "pina0",
+        "pina1"
+    ]
+}
