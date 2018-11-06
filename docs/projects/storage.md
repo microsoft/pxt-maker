@@ -6,12 +6,12 @@
 [
     {
         "name": "write file",
-        "url": "/storage/write-file",
+        "url": "/projects/storage/write-file",
         "cardType": "example"
     },
     {
         "name": "data logging",
-        "url": "/storage/data-logger",
+        "url": "/projects/storage/data-logger",
         "cardType": "example"
     }
 ]

@@ -11,7 +11,7 @@ forever(function () {
 ```
 
 ```package
-data-logger
+datalogger
 ```
 
 ```config
