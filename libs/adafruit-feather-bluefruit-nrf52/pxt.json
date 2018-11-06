@@ -14,9 +14,8 @@
     "compileServiceVariant": "nrf52832",
     "dependencies": {
         "core---nrf52832": "file:../core---nrf52832",
-        "core": "file:../core",
         "buttons": "file:../buttons",
-        "music": "file:../music"
+        "music": "file:../music---pwm"
     },
     "public": true,
     "features": [
