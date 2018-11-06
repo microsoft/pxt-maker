@@ -1,6 +1,6 @@
 {
     "name": "arduino-mkr",
-    "description": "Support for Arduino MKR",
+    "description": "Support for Arduino MKR - beta",
     "files": [
         "README.md",
         "device.d.ts",
@@ -14,8 +14,18 @@
     "dependencies": {
         "core": "file:../core",
         "buttons": "file:../buttons",
-        "touch": "file:../touch",
-        "storage": "file:../storage"
+        "touch": "file:../touch"
     },
-    "public": true
+    "public": true,
+    "features": [
+        "pinled",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
+        "toucha0",
+        "toucha1"
+    ]
 }

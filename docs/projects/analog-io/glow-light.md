@@ -8,7 +8,3 @@ forever(function () {
     pins.A2.analogWrite(brightness);
 })
 ```
-
-```package
-adafruit-metro-m0-express
-```

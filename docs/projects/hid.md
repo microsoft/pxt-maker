@@ -5,8 +5,18 @@
 ```codecard
 [
     {
-        "name": "Keyboard button",
-        "url": "/projects/hid/keyboard-button",
+        "name": "Keyboard",
+        "url": "/projects/hid/keyboard",
+        "cardType": "example"
+    },
+    {
+        "name": "Gamepad",
+        "url": "/projects/hid/gamepad",
+        "cardType": "example"
+    },
+    {
+        "name": "Mouse",
+        "url": "/projects/hid/mouse",
         "cardType": "example"
     }
 ]

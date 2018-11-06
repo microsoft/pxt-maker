@@ -16,8 +16,15 @@
         "buttons": "file:../buttons",
         "touch": "file:../touch",
         "light": "file:../light",
-        "music": "file:../music---pwm",
-        "storage": "file:../storage"
+        "music": "file:../music---pwm"
     },
-    "public": true
+    "public": true,
+    "features": [
+        "uf2",
+        "pinled",
+        "pind0",
+        "pind1",
+        "buttond0",
+        "buttond1"
+    ]
 }
