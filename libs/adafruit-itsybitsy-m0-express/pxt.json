@@ -1,6 +1,6 @@
 {
-    "name": "adafruit-itsybitsy-m0",
-    "description": "Support for Adafruit ItsyBitsy M0 - beta",
+    "name": "adafruit-itsybitsy-m0-express",
+    "description": "Support for Adafruit ItsyBitsy M0 Express - beta",
     "files": [
         "README.md",
         "device.d.ts",
