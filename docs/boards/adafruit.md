@@ -23,6 +23,12 @@
         "imageUrl": "/static/libs/adafruit-feather-m0-express.jpg"  
     },
     {
+        "name": "Adafruit ItsyBitsy M0 Express",
+        "url": "/boards/adafruit-itsybitsy-m0-express",
+        "cardType": "template",
+        "imageUrl": "/static/libs/adafruit-itsybitsy-m0-express.jpg"  
+    },
+    {
         "name": "Adafruit Gemma M0",
         "url": "/boards/adafruit-gemma-m0",
         "cardType": "template",

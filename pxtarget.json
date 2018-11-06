@@ -23,6 +23,7 @@
         "libs/adafruit-metro-m0-express",
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-bluefruit-nrf52",
+        "libs/adafruit-itsybitsy-m0-express",
         "libs/adafruit-gemma-m0",
         "libs/arduino-zero",
         "libs/arduino-mkr",
