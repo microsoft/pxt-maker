@@ -27,6 +27,12 @@
         "url": "/boards/adafruit-gemma-m0",
         "cardType": "template",
         "imageUrl": "/static/libs/adafruit-gemma-m0.jpg"  
+    },
+    {
+        "name": "Adafruit Feather Bluefruit NRF52",
+        "url": "/boards/adafruit-feather-bluefruit-nrf52",
+        "cardType": "template",
+        "imageUrl": "/static/libs/adafruit-feather-bluefruit-nrf52.jpg"  
     }
 ]
 ```
