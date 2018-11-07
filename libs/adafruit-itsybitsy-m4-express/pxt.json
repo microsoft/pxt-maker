@@ -1,0 +1,21 @@
+{
+    "name": "adafruit-itsybitsy-m4-express",
+    "description": "Support for Adafruit ItsyBitsy M4 Express - beta",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts",
+        "board.json",
+        "board.svg",
+        "boardwireframe.svg"
+    ],
+    "core": true,
+    "dependencies": {
+        "core": "file:../core",
+        "buttons": "file:../buttons",
+        "touch": "file:../touch",
+        "storage": "file:../storage"
+    },
+    "public": true
+}
