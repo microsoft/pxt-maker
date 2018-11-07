@@ -253,6 +253,12 @@
         "y": 39.02787780761717,
         "color": "#ff0000",
         "label": "LED"
+      },
+      {
+        "x": 100,
+        "y": 100,
+        "color": "neopixel",
+        "label": "NEOPIXEL"
       }
     ],
     "reset": {
@@ -314,7 +320,7 @@
     "SDA": "SDA",
     "SCL": "SCL"
   },
-  "onboardComponents": [],
+  "onboardComponents": ["pixel"],
   "marginWhenBreadboarding": [
     0,
     0,
