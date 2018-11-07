@@ -10,9 +10,10 @@
         "board.svg",
         "boardwireframe.svg"
     ],
-    "core": true,
+    "core": true,    
+    "compileServiceVariant": "samd51",
     "dependencies": {
-        "core": "file:../core",
+        "core": "file:../core---samd51",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
         "music": "file:../music---pwm",
