@@ -3,6 +3,7 @@ namespace config {
     export const PIN_DOTSTAR_DATA = DAL.PA00;
     export const PIN_DOTSTAR_CLOCK = DAL.PA01;
     export const NUM_DOTSTARS = 1;
+    export const PIN_LED = DAL.PA13;
 
     export const PIN_A0 = DAL.PA02;
     export const PIN_A3 = DAL.PA04;
