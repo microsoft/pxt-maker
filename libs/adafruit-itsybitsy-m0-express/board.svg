@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="100"
+   height="172"
    id="svg6041"
    version="1.2"
-   width="200"
+   width="343"
    y="0in"
    x="0in"
-   viewBox="0 0 200 100"
+   viewBox="0 0 343 172"
    gorn="0"
    sodipodi:docname="board.svg"
    inkscape:version="0.92.1 r15371">
@@ -37,14 +37,16 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="1.4753106"
-     inkscape:cx="298.0592"
-     inkscape:cy="66.968026"
+     inkscape:zoom="2.9506211"
+     inkscape:cx="120.84657"
+     inkscape:cy="67.213068"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg6041"
-     viewbox-width="200" />
+     viewbox-width="200"
+     inkscape:measure-start="107.266,92.3534"
+     inkscape:measure-end="121.5,92.3534" />
   <desc
      id="desc5910">
     <referenceFile>ItsyBitsy M4 rev C_breadboard.svg</referenceFile>
@@ -58,7 +60,7 @@
   <g
      id="g5249"
      gorn="0.4"
-     transform="translate(-1.26148,49.59988)">
+     transform="matrix(1.71,0,0,1.71,-2.1571306,85.852013)">
     <title
        id="title5243">element:JP1</title>
     <g
@@ -71,7 +73,7 @@
   <g
      id="g5257"
      gorn="0.5"
-     transform="translate(-1.26148,49.59988)">
+     transform="matrix(1.71,0,0,1.71,-2.1571306,85.852013)">
     <title
        id="title5251">element:JP2</title>
     <g
@@ -84,7 +86,7 @@
   <g
      id="g5265"
      gorn="0.6"
-     transform="translate(-1.26148,49.59988)">
+     transform="matrix(1.71,0,0,1.71,-2.1571306,85.852013)">
     <title
        id="title5259">element:JP4</title>
     <g
@@ -97,7 +99,7 @@
   <g
      id="g5365"
      gorn="0.7"
-     transform="translate(-1.26148,49.59988)">
+     transform="matrix(1.71,0,0,1.71,-2.1571306,85.852013)">
     <title
        id="title5359">element:SJ1</title>
     <g
@@ -110,7 +112,7 @@
   <g
      id="g5405"
      gorn="0.8"
-     transform="translate(-1.26148,49.59988)">
+     transform="matrix(1.71,0,0,1.71,-2.1571306,85.852013)">
     <title
        id="title5399">element:U$4</title>
     <g
@@ -123,7 +125,7 @@
   <g
      id="g5413"
      gorn="0.9"
-     transform="translate(-1.26148,49.59988)">
+     transform="matrix(1.71,0,0,1.71,-2.1571306,85.852013)">
     <title
        id="title5407">element:U$5</title>
     <g
@@ -136,7 +138,7 @@
   <g
      id="g5437"
      gorn="0.10"
-     transform="translate(-1.26148,49.59988)">
+     transform="matrix(1.71,0,0,1.71,-2.1571306,85.852013)">
     <title
        id="title5431">element:U$34</title>
     <g
@@ -149,7 +151,7 @@
   <g
      id="g5445"
      gorn="0.11"
-     transform="translate(-1.26148,49.59988)">
+     transform="matrix(1.71,0,0,1.71,-2.1571306,85.852013)">
     <title
        id="title5439">element:U$35</title>
     <g
@@ -161,7 +163,7 @@
   </g>
   <g
      id="g10101"
-     transform="matrix(0.69489446,0,0,0.69489446,29.7371,-2.4780917)">
+     transform="matrix(1.1882695,0,0,1.1882695,51.350445,-3.69392)">
     <g
        transform="matrix(2.8538113,0,0,2.8538113,-46.393719,3.5670454)"
        gorn="0.12"
@@ -6528,7 +6530,7 @@
                         <polygon
                            gorn="0.12.199.0.0.0.0.0.0.0.0.0"
                            style="fill:#dcdcdc"
-                           points="1.417,1.275 0,1.275 0,2.692 1.417,2.692 1.417,5.811 0,5.811 0,7.22801 1.417,7.22801 1.417,8.50399 11.339,8.50399 11.339,7.22801 12.756,7.22801 12.756,5.811 11.339,5.811 11.339,2.692 12.756,2.692 12.756,1.275 11.339,1.275 11.339,0 1.417,0 "
+                           points="12.756,7.22801 12.756,5.811 11.339,5.811 11.339,2.692 12.756,2.692 12.756,1.275 11.339,1.275 11.339,0 1.417,0 1.417,1.275 0,1.275 0,2.692 1.417,2.692 1.417,5.811 0,5.811 0,7.22801 1.417,7.22801 1.417,8.50399 11.339,8.50399 11.339,7.22801 "
                            id="polygon5975" />
                         <circle
                            gorn="0.12.199.0.0.0.0.0.0.0.0.1"
@@ -6751,30 +6753,30 @@
                         <polygon
                            gorn="0.12.202.0.0.0.0.0.0.0.0.8"
                            style="fill:#dcdcdc"
-                           points="0.567,14.953 22.11,14.953 22.11,1.347 17.008,1.347 17.008,3.473 14.74,3.473 14.74,4.182 13.323,4.182 13.323,1.63 9.35402,1.63 9.35402,4.182 7.93699,4.182 7.93699,3.473 5.669,3.473 5.669,1.347 0.567,1.347 "
+                           points="7.93699,4.182 7.93699,3.473 5.669,3.473 5.669,1.347 0.567,1.347 0.567,14.953 22.11,14.953 22.11,1.347 17.008,1.347 17.008,3.473 14.74,3.473 14.74,4.182 13.323,4.182 13.323,1.63 9.35402,1.63 9.35402,4.182 "
                            id="polygon6023" />
                         <polygon
                            gorn="0.12.202.0.0.0.0.0.0.0.0.9"
-                           points="3.827,12.119 4.11,7.86701 5.527,7.86701 5.811,12.119 "
+                           points="5.811,12.119 3.827,12.119 4.11,7.86701 5.527,7.86701 "
                            id="polygon6025" />
                         <polygon
                            gorn="0.12.202.0.0.0.0.0.0.0.0.10"
-                           points="16.866,12.119 17.149,7.86701 18.567,7.86701 18.85,12.119 "
+                           points="18.85,12.119 16.866,12.119 17.149,7.86701 18.567,7.86701 "
                            id="polygon6027" />
                         <polygon
                            gorn="0.12.202.0.0.0.0.0.0.0.0.11"
                            style="fill:#f0f0f0"
-                           points="1.701,16.653 1.134,14.953 21.543,14.953 20.976,16.654 "
+                           points="20.976,16.654 1.701,16.653 1.134,14.953 21.543,14.953 "
                            id="polygon6029" />
                         <polygon
                            gorn="0.12.202.0.0.0.0.0.0.0.0.12"
                            style="fill:#b4b4b4"
-                           points="0,16.653 0.567,14.953 1.134,14.953 0.567,16.653 "
+                           points="0.567,16.653 0,16.653 0.567,14.953 1.134,14.953 "
                            id="polygon6031" />
                         <polygon
                            gorn="0.12.202.0.0.0.0.0.0.0.0.13"
                            style="fill:#b4b4b4"
-                           points="22.11,16.654 21.543,14.953 22.11,14.953 22.677,16.654 "
+                           points="22.677,16.654 22.11,16.654 21.543,14.953 22.11,14.953 "
                            id="polygon6033" />
                       </g>
                     </g>
