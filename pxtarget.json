@@ -22,6 +22,7 @@
         "libs/light",
         "libs/adafruit-trinket-m0",
         "libs/adafruit-metro-m0-express",
+        "libs/adafruit-metro-m4-express",
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-bluefruit-nrf52",
         "libs/adafruit-itsybitsy-m0-express",
