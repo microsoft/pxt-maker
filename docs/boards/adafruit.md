@@ -49,16 +49,22 @@
 ```codecard
 [
     {
-        "name": "Adafruit ItsyBitsy M4 Express",
-        "url": "/boards/adafruit-itsybitsy-m4-express",
-        "cardType": "template",
-        "imageUrl": "/static/libs/adafruit-itsybitsy-m4-express.jpg"  
-    },
-    {
         "name": "Adafruit Metro M4 Express",
         "url": "/boards/adafruit-metro-m4-express",
         "cardType": "template",
         "imageUrl": "/static/libs/adafruit-metro-m4-express.jpg"  
+    },
+    {
+        "name": "Adafruit Feather M4 Express",
+        "url": "/boards/adafruit-feather-m4-express",
+        "cardType": "template",
+        "imageUrl": "/static/libs/adafruit-feather-m4-express.jpg"  
+    },
+    {
+        "name": "Adafruit ItsyBitsy M4 Express",
+        "url": "/boards/adafruit-itsybitsy-m4-express",
+        "cardType": "template",
+        "imageUrl": "/static/libs/adafruit-itsybitsy-m4-express.jpg"  
     }
 ]
 ```
