@@ -1,6 +1,6 @@
 {
-    "name": "adafruit-itsybitsy-m4-express",
-    "description": "Support for Adafruit ItsyBitsy M4 Express - beta",
+    "name": "adafruit-feather-m4-express",
+    "description": "Support for Adafruit Feather M4 Express - beta",
     "files": [
         "README.md",
         "device.d.ts",
@@ -10,11 +10,14 @@
         "board.svg",
         "boardwireframe.svg"
     ],
-    "core": true,    
+    "core": true,
     "compileServiceVariant": "samd51",
     "dependencies": {
         "core---samd51": "file:../core---samd51",
         "buttons": "file:../buttons"
     },
-    "public": true
+    "public": true,
+    "features": [
+        "uf2"
+    ]
 }

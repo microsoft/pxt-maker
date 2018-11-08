@@ -13,7 +13,7 @@
     "core": true,
     "compileServiceVariant": "samd51",
     "dependencies": {
-        "core": "file:../core---samd51",
+        "core---samd51": "file:../core---samd51",
         "buttons": "file:../buttons"
     },
     "public": true,
