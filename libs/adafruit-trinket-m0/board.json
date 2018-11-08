@@ -1,157 +1,157 @@
 {
-    "driveDisplayName": "TRINKETBOOT",
-    "visual": {
-      "image": "pkg://board.svg",
-      "outlineImage": "pkg://boardwireframe.svg",
-      "useCrocClips": false,
-      "width": 208.2989959716797,
-      "height": 118.42015838623047,
-      "pinDist": 15,
-      "pinBlocks": [
-        {
-          "x": 143.84781305204493,
-          "y": 4.373155593872053,
-          "labels": [
-            "VBAT"
-          ]
-        },
-        {
-          "x": 124.11163242354131,
-          "y": 4.373155593872053,
-          "labels": [
-            "GND"
-          ]
-        },
-        {
-          "x": 104.3754746826167,
-          "y": 4.373155593872053,
-          "labels": [
-            "D4_A2_PA06_TXD_MOSI"
-          ]
-        },
-        {
-          "x": 84.63930168330609,
-          "y": 4.373155593872053,
-          "labels": [
-            "D3_A3_PA07_RXD_SCK"
-          ]
-        },
-        {
-          "x": 64.90312105480247,
-          "y": 102.8592529296875,
-          "labels": [
-            "3.3V"
-          ]
-        },
-        {
-          "x": 84.63930168330609,
-          "y": 102.8592529296875,
-          "labels": [
-            "D2_A1_PA09_SCL_MISO"
-          ]
-        },
-        {
-          "x": 104.3754746826167,
-          "y": 102.8592529296875,
-          "labels": [
-            "D1_A0_PA02"
-          ]
-        },
-        {
-          "x": 124.11163242354131,
-          "y": 102.8592529296875,
-          "labels": [
-            "D0_A4_PA08_SDA"
-          ]
-        },
-        {
-          "x": 143.84781305204493,
-          "y": 102.8592529296875,
-          "labels": [
-            "VBUS"
-          ]
-        },
-        {
-          "x": 36.28797498500858,
-          "y": 34.81881713867188,
-          "labels": [
-            "RESET"
-          ]
-        }
-      ],
-      "leds": [
-        {
-          "x": 191.59119606203353,
-          "y": 105.24565038893815,
-          "w": 6.216893765753879,
-          "h": 6.217057986772091,
-          "color": "#ff0000",
-          "label": "LED"
-        }
-      ],
-      "reset": {
+  "driveDisplayName": "TRINKETBOOT",
+  "visual": {
+    "image": "pkg://board.svg",
+    "outlineImage": "pkg://boardwireframe.svg",
+    "useCrocClips": false,
+    "width": 208.2989959716797,
+    "height": 118.42015838623047,
+    "pinDist": 15,
+    "pinBlocks": [
+      {
+        "x": 143.84781305204493,
+        "y": 4.373155593872066,
+        "labels": [
+          "VBAT"
+        ]
+      },
+      {
+        "x": 124.11163242354131,
+        "y": 4.373155593872066,
+        "labels": [
+          "GND"
+        ]
+      },
+      {
+        "x": 104.3754746826167,
+        "y": 4.373155593872066,
+        "labels": [
+          "D4_A2_PA06_TXD_MOSI"
+        ]
+      },
+      {
+        "x": 84.63930168330609,
+        "y": 4.373155593872066,
+        "labels": [
+          "D3_A3_PA07_RXD_SCK"
+        ]
+      },
+      {
         "x": 64.90312105480247,
-        "y": 4.373155593872078,
-        "w": 11.384810122102932,
-        "h": 11.385110855102539
+        "y": 102.8592529296875,
+        "labels": [
+          "3.3V"
+        ]
+      },
+      {
+        "x": 84.63930168330609,
+        "y": 102.8592529296875,
+        "labels": [
+          "D2_A1_PA09_SCL_MISO"
+        ]
+      },
+      {
+        "x": 104.3754746826167,
+        "y": 102.85925292968749,
+        "labels": [
+          "D1_A0_PA02"
+        ]
+      },
+      {
+        "x": 124.11163242354131,
+        "y": 102.85925292968749,
+        "labels": [
+          "D0_A4_PA08_SDA"
+        ]
+      },
+      {
+        "x": 143.84781305204493,
+        "y": 102.85925292968749,
+        "labels": [
+          "VBUS"
+        ]
+      },
+      {
+        "x": 36.28797498500858,
+        "y": 34.81881713867188,
+        "labels": [
+          "RESET"
+        ]
       }
-    },
-    "gpioPinMap": {
-      "VBAT": "VBAT",
-      "GND": "GND",
-      "D4_A2_PA06_TXD_MOSI": "D4_A2_PA06_TXD_MOSI",
-      "D4": "D4_A2_PA06_TXD_MOSI",
-      "A2": "D4_A2_PA06_TXD_MOSI",
-      "PA06": "D4_A2_PA06_TXD_MOSI",
-      "TXD": "D4_A2_PA06_TXD_MOSI",
-      "MOSI": "D4_A2_PA06_TXD_MOSI",
-      "D3_A3_PA07_RXD_SCK": "D3_A3_PA07_RXD_SCK",
-      "D3": "D3_A3_PA07_RXD_SCK",
-      "A3": "D3_A3_PA07_RXD_SCK",
-      "PA07": "D3_A3_PA07_RXD_SCK",
-      "RXD": "D3_A3_PA07_RXD_SCK",
-      "SCK": "D3_A3_PA07_RXD_SCK",
-      "!RESET": "!RESET",
-      "3.3V": "3.3V",
-      "D2_A1_PA09_SCL_MISO": "D2_A1_PA09_SCL_MISO",
-      "D2": "D2_A1_PA09_SCL_MISO",
-      "A1": "D2_A1_PA09_SCL_MISO",
-      "PA09": "D2_A1_PA09_SCL_MISO",
-      "SCL": "D2_A1_PA09_SCL_MISO",
-      "MISO": "D2_A1_PA09_SCL_MISO",
-      "D1_A0_PA02": "D1_A0_PA02",
-      "D1": "D1_A0_PA02",
-      "A0": "D1_A0_PA02",
-      "PA02": "D1_A0_PA02",
-      "D0_A4_PA08_SDA": "D0_A4_PA08_SDA",
-      "D0": "D0_A4_PA08_SDA",
-      "A4": "D0_A4_PA08_SDA",
-      "PA08": "D0_A4_PA08_SDA",
-      "SDA": "D0_A4_PA08_SDA",
-      "VBUS": "VBUS",
-      "LED": "LED",
-      "RESET": "RESET"
-    },
-    "groundPins": [
-      "GND"
     ],
-    "threeVoltPins": [
-      "3.3V"
+    "leds": [
+      {
+        "x": 191.59119606203353,
+        "y": 105.24565038893815,
+        "w": 6.216893765753879,
+        "h": 6.217057986772091,
+        "color": "#ff0000",
+        "label": "LED"
+      }
     ],
-    "spiPins": {
-      "MOSI": "MOSI",
-      "MISO": "MISO",
-      "SCK": "SCK"
-    },
-    "i2cPins": {
-      "SDA": "SDA",
-      "SCL": "SCL"
-    },
-    "onboardComponents": [],
-    "marginWhenBreadboarding": [
-      0,
-      0,
-      80,
-      0
-    ]
-  }
+    "reset": {
+      "x": 64.90312105480247,
+      "y": 4.373155593872066,
+      "w": 11.384810122102932,
+      "h": 11.385110855102539
+    }
+  },
+  "gpioPinMap": {
+    "VBAT": "VBAT",
+    "GND": "GND",
+    "D4_A2_PA06_TXD_MOSI": "D4_A2_PA06_TXD_MOSI",
+    "D4": "D4_A2_PA06_TXD_MOSI",
+    "A2": "D4_A2_PA06_TXD_MOSI",
+    "PA06": "D4_A2_PA06_TXD_MOSI",
+    "TXD": "D4_A2_PA06_TXD_MOSI",
+    "MOSI": "D4_A2_PA06_TXD_MOSI",
+    "D3_A3_PA07_RXD_SCK": "D3_A3_PA07_RXD_SCK",
+    "D3": "D3_A3_PA07_RXD_SCK",
+    "A3": "D3_A3_PA07_RXD_SCK",
+    "PA07": "D3_A3_PA07_RXD_SCK",
+    "RXD": "D3_A3_PA07_RXD_SCK",
+    "SCK": "D3_A3_PA07_RXD_SCK",
+    "!RESET": "!RESET",
+    "3.3V": "3.3V",
+    "D2_A1_PA09_SCL_MISO": "D2_A1_PA09_SCL_MISO",
+    "D2": "D2_A1_PA09_SCL_MISO",
+    "A1": "D2_A1_PA09_SCL_MISO",
+    "PA09": "D2_A1_PA09_SCL_MISO",
+    "SCL": "D2_A1_PA09_SCL_MISO",
+    "MISO": "D2_A1_PA09_SCL_MISO",
+    "D1_A0_PA02": "D1_A0_PA02",
+    "D1": "D1_A0_PA02",
+    "A0": "D1_A0_PA02",
+    "PA02": "D1_A0_PA02",
+    "D0_A4_PA08_SDA": "D0_A4_PA08_SDA",
+    "D0": "D0_A4_PA08_SDA",
+    "A4": "D0_A4_PA08_SDA",
+    "PA08": "D0_A4_PA08_SDA",
+    "SDA": "D0_A4_PA08_SDA",
+    "VBUS": "VBUS",
+    "LED": "LED",
+    "RESET": "RESET"
+  },
+  "groundPins": [
+    "GND"
+  ],
+  "threeVoltPins": [
+    "3.3V"
+  ],
+  "spiPins": {
+    "MOSI": "MOSI",
+    "MISO": "MISO",
+    "SCK": "SCK"
+  },
+  "i2cPins": {
+    "SDA": "SDA",
+    "SCL": "SCL"
+  },
+  "onboardComponents": [],
+  "marginWhenBreadboarding": [
+    0,
+    0,
+    80,
+    0
+  ]
+}
