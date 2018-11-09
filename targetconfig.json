@@ -5,10 +5,12 @@
             "Adafruit"
         ],
         "approvedRepos": [
+            "ElectronicCats/pxt-bme280"
         ],
         "preferredRepos": [
             "Adafruit/pxt-crickit",
-            "Adafruit/pxt-seesaw"
+            "Adafruit/pxt-seesaw",
+            "ElectronicCats/pxt-bme280"
         ]
     },
     "galleries": {
