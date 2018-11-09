@@ -89,6 +89,7 @@
                     label: "NEOPIXEL"
                 })
                 visuals = true;
+                boardjson.onboardComponents.push("pixel");
             }
             else if (/RST|RESET/.test(id) && !boardjson.visual.reset) {
                 boardjson.visual.reset = {
