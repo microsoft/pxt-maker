@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>MakeCode Maker - Board Designer</title>
+    <title>MakeCode Maker - Part Designer</title>
     <!-- @include head.html -->
     <style>
         #svg, #svg svg {
@@ -132,7 +132,7 @@
         console.log(`known cfgs:`)
         console.log(cfgs);
 
-        let boardjson = {}
+        let partjson = {}
 
         function log(text) {
             $('#log').append(text + '\r\n');
@@ -167,63 +167,23 @@
                 elt.getAttribute("inkscape:label"),
                 elt.getAttribute("id")]
                 .filter(n => !!n && !/^#/.test(n))[0];
-            if (!id || boardjson.gpioPinMap[id]) return;
-            boardjson.gpioPinMap[id] = id;
-
-            // split subpins RX_TX_A0
-            id.split('_').forEach(iid => boardjson.gpioPinMap[iid] = id);
+            if (!id)
+                return;
 
             const rect = convertCoords(elt);
+            partjson.visual.pinLocations.push({
+                x: rect.x,
+                y: rect.y
+            })
+            let targetid = id;
+            if (/GND/.test(targetid))
+                targetid = "ground";
+            else if (/^\+?(3V)/.test(targetid))
+                targetid = "threeVolt";
+            partjson.pinDefinitions.push({ "target": targetid, "style": "male", "orientation": "+Y" })
+            partjson.assembly[0].pinIndices.push(partjson.numberOfPins);
+            partjson.numberOfPins++;
 
-            // handle leds
-            let visuals = false;
-            if (/(RX|TX)?LED/.test(id)) {
-                boardjson.visual.leds.push({
-                    x: rect.x,
-                    y: rect.y,
-                    w: rect.w,
-                    h: rect.h,
-                    color: '#ff0000',
-                    label: id
-                })
-                visuals = true;
-            }
-            else if (/^NEOPIXEL$/.test(id)) {
-                boardjson.visual.leds.push({
-                    x: rect.x,
-                    y: rect.y,
-                    w: rect.w,
-                    h: rect.h,
-                    color: 'neopixel',
-                    label: "NEOPIXEL"
-                })
-                visuals = true;
-                boardjson.onboardComponents.push("pixel");
-            }
-            else if (/RST|RESET/.test(id) && !boardjson.visual.reset) {
-                boardjson.visual.reset = {
-                    x: rect.x,
-                    y: rect.y,
-                    w: rect.w,
-                    h: rect.h
-                }
-                visuals = true;
-            }
-            else if (/GND/.test(id) && boardjson.groundPins.indexOf(id) < 0)
-                boardjson.groundPins.push(id);
-            else if (/(\+3V3|3V|VCC|VOUT)/.test(id) && boardjson.threeVoltPins.indexOf(id) < 0)
-                boardjson.threeVoltPins.push(id);
-
-            if (!visuals) {
-                if (Math.abs(rect.w - 15) > 2 || Math.abs(rect.h - 15) > 2) {
-                    log(`pin ${id}: ${rect.x >> 0}, ${rect.y >> 0} - ${rect.w >> 0}x${rect.h >> 0}`)
-                }
-                boardjson.visual.pinBlocks.push({
-                    x: rect.x,
-                    y: rect.y,
-                    labels: [id]
-                });
-            }
             elt.classList.add("selected")
             updateJSON();
         }
@@ -231,41 +191,30 @@
         function updateSvg() {
             $('#svg').html($('#svginput').val());
             $('#log').text("");
-            boardjson = {
-                driveDisplayName: "",
-                visual: {
-                    image: "pkg://board.svg",
-                    outlineImage: "pkg://boardwireframe.svg",
-                    useCrocClips: false,
-                    width: 200,
-                    height: 200,
-                    pinDist: 15,
-                    pinBlocks: [],
-                    leds: []
+            partjson = {
+                "visual": {
+                    "image": "part.svg",
+                    "width": 0,
+                    "height": 0,
+                    "pinDistance": 15,
+                    "pinLocations": [
+                    ]
                 },
-                gpioPinMap: {},
-                groundPins: [],
-                threeVoltPins: [],
-                spiPins: {
-                    "MOSI": "MOSI",
-                    "MISO": "MISO",
-                    "SCK": "SCK"
+                "numberOfPins": 0,
+                "instantiation": {
+                    "kind": "function",
+                    "fullyQualifiedName": "TODO",
+                    "argumentRoles": []
                 },
-                i2cPins: {
-                    "SDA": "SDA",
-                    "SCL": "SCL"
-                },
-                onboardComponents: [],
-                marginWhenBreadboarding: [
-                    0,
-                    0,
-                    80,
-                    0
+                "pinDefinitions": [
+                ],
+                "assembly": [
+                    { "pinIndices": [] }
                 ]
             }
             const svg = getSvg();
-            boardjson.visual.width = svg.viewBox.baseVal.width;
-            boardjson.visual.height = svg.viewBox.baseVal.height;
+            partjson.visual.width = svg.viewBox.baseVal.width;
+            partjson.visual.height = svg.viewBox.baseVal.height;
             const elts = svg.querySelectorAll("*")
             for (let i = 0; i < elts.length; ++i) {
                 const elt = elts[i];
@@ -290,32 +239,7 @@
         }
 
         function updateJSON() {
-            $('#json').val(JSON.stringify(boardjson, null, 2));
-            let configts = `namespace config {`;
-            Object.keys(boardjson.gpioPinMap)
-                .filter(pinid => !/^(RESET|GND\d*|3V3?|5V|VIN|USHIELD)$/.test(pinid))
-                .forEach(pinid => {
-                let found = false;
-                ['', 'PIN_'].forEach(prefix => {
-                    const pid = prefix + pinid;
-                    if (cfgs[pid]) {
-                        found = true;
-                        configts += `
-    export const ${pid} = DAL.?;`
-                        if (pid == "PIN_NEOPIXEL") {
-                            configts += `
-    export const NUM_NEOPIXEL = 1;`
-                        }
-                    }
-                })
-                if (!found)
-                    configts += `
-    // unknown pin id ${pinid}`;
-            })
-            configts += `
-    // additional pins to look for: SPI, I2C, Flash
-}`;
-            $(`#configts`).val(configts);
+            $('#json').val(JSON.stringify(partjson, null, 2));
         }
 
         $(function () {
@@ -326,12 +250,12 @@
 
 <body id='root' class='root'>
     <div class="ui container">
-        <h1>MakeCode Maker Board designer</h1>
-        <p>A handy helper to integrate a new board in maker.makecode.com</p>
-        <h2>preparing board.svg</h2>
+        <h1>MakeCode Maker Part designer</h1>
+        <p>A handy helper to integrate a new part in MakeCode</p>
+        <h2>preparing part.svg</h2>
         <ul class="ui small">
             <li>
-                grab the "breadboard" svg of Fritzing board image
+                grab the "breadboard" svg of Fritzing part image
             </li>
             <li>
                 resize your image (in Inkscape or other) so that a header is precisely 15px
@@ -340,30 +264,20 @@
                 (optional) remove extra components to simplify image
             </li>
             <li>
-                LEDs: set the id of the svg element to LED...
-            </li>
-            <li>
-                Reset button: set the id of the svg to RESET
-            </li>
-            <li>
                 Pins: set the id of the svg for headers to the pin names (should be done already)
             </li>
         </ul>
         <div class="ui segment">
-            <h2>board.svg</h2>
+            <h2>part.svg</h2>
             <textarea class="ui fluid" id="svginput"></textarea>
         </div>
-        <div class="ui segment" id="svg">
+        <div id="svg" class="ui segment">
         </div>
         <div class="ui smaller" id="pos"></div>
         <pre class="ui smaller" id="log"></pre>
         <div class="ui segment">
-            <h2>board.json</h2>
+            <h2>pxtparts.json</h2>
             <textarea class="ui fluid" readonly id="json"></textarea>
-        </div>
-        <div class="ui segment">
-            <h2>config.ts</h2>
-            <textarea class="ui fluid" readonly id="configts"></textarea>
         </div>
     </div>
     <!-- @include footer.html -->
