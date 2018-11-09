@@ -32,8 +32,12 @@
             $('#log').append(text + '\r\n');
         }
 
+        function getSvg() {
+            return document.getElementById("svg").querySelector("svg");
+        }
+
         function convertCoords(elt) {
-            const svg = document.querySelector('svg');
+            const svg = getSvg();
             const vb = svg.viewBox.baseVal;
             const offset = svg.getBoundingClientRect();
             const eoffset = elt.getBoundingClientRect();
@@ -153,10 +157,10 @@
                     0
                 ]
             }
-            const svg = document.querySelector('svg');
+            const svg = getSvg();
             boardjson.visual.width = svg.viewBox.baseVal.width;
             boardjson.visual.height = svg.viewBox.baseVal.height;
-            const elts = document.querySelectorAll("svg *")
+            const elts = svg.querySelectorAll("*")
             for (let i = 0; i < elts.length; ++i) {
                 const elt = elts[i];
                 const id = elt.getAttribute("connectorname") || elt.getAttribute("id");
