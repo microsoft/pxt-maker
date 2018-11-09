@@ -1,12 +1,11 @@
-<!doctype html>
-<html lang="en" data-manifest="" data-framework="typescript">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
+    <meta charset="UTF-8">
+    <!-- @include meta.html -->
+    <!-- @include head.html -->
     <style>
-        @import "/blb/semantic.css";
         #svg, #svg svg {
             width:100%;
             height:100%;
@@ -190,9 +189,11 @@
     </script>
 </head>
 
-<body>
+<body id='root' class='root'>
+    <!-- @include pageheader.html -->
     <div class="ui container">
-        <h1>Board designer</h1>
+        <h1>MakeCode Maker Board designer</h1>
+        <p>A handy helper to integrate a new board in maker.makecode.com</p>
         <h2>preparing board.svg</h2>
         <ul class="ui small">
             <li>
@@ -227,7 +228,7 @@
             <textarea class="ui fluid" readonly id="json"></textarea>
         </div>
     </div>
-
+    <!-- @include footer.html -->
 </body>
 
 </html>
