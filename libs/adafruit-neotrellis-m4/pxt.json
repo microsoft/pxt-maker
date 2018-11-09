@@ -1,0 +1,22 @@
+{
+    "name": "adafruit-neotrellis-m4",
+    "description": "Support for Adafruit Neotrellis M4 - beta",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts",
+        "board.json",
+        "board.svg",
+        "boardwireframe.svg"
+    ],
+    "core": true,
+    "compileServiceVariant": "samd51",
+    "dependencies": {
+        "core---samd51": "file:../core---samd51"
+    },
+    "public": true,
+    "features": [
+        "uf2"
+    ]
+}

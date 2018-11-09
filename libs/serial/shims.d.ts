@@ -2,6 +2,14 @@
 declare namespace serial {
 
     /**
+     * Read the buffered received data as a string
+     */
+    //% help=serial/read-string
+    //% blockId=serial_read_buffer block="serial|read string"
+    //% weight=18 shim=serial::readString
+    function readString(): string;
+
+    /**
      * Write some text to the serial port.
      */
     //% help=serial/write-string
