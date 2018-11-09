@@ -14,7 +14,8 @@
     "compileServiceVariant": "samd51",
     "dependencies": {
         "core---samd51": "file:../core---samd51",
-        "buttons": "file:../buttons"
+        "buttons": "file:../buttons",
+        "storage": "file:../storage"
     },
     "public": true,
     "features": [
