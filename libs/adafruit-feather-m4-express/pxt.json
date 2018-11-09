@@ -15,7 +15,6 @@
     "dependencies": {
         "core---samd51": "file:../core---samd51",
         "buttons": "file:../buttons",
-        "pixel": "file:../pixel",
         "storage": "file:../storage"
     },
     "public": true,
