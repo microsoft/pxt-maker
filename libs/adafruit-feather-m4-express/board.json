@@ -1,5 +1,5 @@
 {
-    "driveDisplayName": "",
+    "driveDisplayName": "FEATHERBOOT",
     "visual": {
       "image": "pkg://board.svg",
       "outlineImage": "pkg://boardwireframe.svg",
@@ -287,7 +287,7 @@
       "SDA": "SDA",
       "SCL": "SCL"
     },
-    "onboardComponents": [],
+    "onboardComponents": ["pixel"],
     "marginWhenBreadboarding": [
       0,
       0,
