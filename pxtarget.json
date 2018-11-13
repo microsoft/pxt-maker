@@ -139,7 +139,7 @@
                 "isNative": true,
                 "useUF2": true,
                 "webUSB": false,
-                "gc": true,
+                "gc": false,
                 "hasHex": true,
                 "deployDrives": ".*",
                 "deployFileMarker": "INFO_UF2.TXT",
@@ -202,7 +202,7 @@
                 "vtableShift": 3,
                 "useUF2": false,
                 "webUSB": false,
-                "gc": true
+                "gc": false
             },
             "compileService": {
                 "codalTarget": {
@@ -233,8 +233,7 @@
                 "deployFileMarker": "MBED.HTM",
                 "vtableShift": 4,
                 "useUF2": false,
-                "webUSB": false,
-                "gc": true
+                "webUSB": false
             },
             "compileService": {
                 "codalTarget": {
