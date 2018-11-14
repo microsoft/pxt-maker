@@ -239,7 +239,7 @@
         }
 
         function updateJSON() {
-            $('#json').val(JSON.stringify(partjson, null, 2));
+            $('#json').val(JSON.stringify({ "PARTID": partjson }, null, 2));
         }
 
         $(function () {
@@ -277,6 +277,10 @@
         <pre class="ui smaller" id="log"></pre>
         <div class="ui segment">
             <h2>pxtparts.json</h2>
+            <ul>
+                <li>Save this file to your project and add it to the ``files`` list in ``pxt.json``</li>
+                <li>Update ``PARTID`` with the part identifier used in the ``part=PARTID`` notataion</li>
+            </ul>
             <textarea class="ui fluid" readonly id="json"></textarea>
         </div>
     </div>
