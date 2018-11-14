@@ -203,7 +203,7 @@
                 "numberOfPins": 0,
                 "instantiation": {
                     "kind": "function",
-                    "fullyQualifiedName": "TODO",
+                    "fullyQualifiedName": "FUNCTION_NAMES",
                     "argumentRoles": []
                 },
                 "pinDefinitions": [
@@ -239,7 +239,7 @@
         }
 
         function updateJSON() {
-            $('#json').val(JSON.stringify({ "PARTID": partjson }, null, 2));
+            $('#json').val(JSON.stringify({ "PART_ID": partjson }, null, 2));
         }
 
         $(function () {
@@ -269,6 +269,9 @@
         </ul>
         <div class="ui segment">
             <h2>part.svg</h2>
+            <ul>
+                <li>Save this file as <code>part.svg</code> in your project and it to the <code>files</code> list in <code>pxt.json</code></li>
+            </ul>
             <textarea class="ui fluid" id="svginput"></textarea>
         </div>
         <div id="svg" class="ui segment">
@@ -278,8 +281,10 @@
         <div class="ui segment">
             <h2>pxtparts.json</h2>
             <ul>
-                <li>Save this file to your project and add it to the ``files`` list in ``pxt.json``</li>
-                <li>Update ``PARTID`` with the part identifier used in the ``part=PARTID`` notataion</li>
+                <li>Save this file to your project and add it to the <code>files</code> list in <code>pxt.json</code>code></li>
+                <li>Update <code>PART_ID</code> with the part identifier used in the <code>part=PART_ID</code> notataion</li>
+                <li>Update the <code>FUNCTION_NAMES</code> field with a column separate list of fully qualified function names</li>
+                <li>More work may be required to fully specify your part, see the docs.</li>
             </ul>
             <textarea class="ui fluid" readonly id="json"></textarea>
         </div>
