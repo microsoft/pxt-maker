@@ -139,7 +139,7 @@
                 "isNative": true,
                 "useUF2": true,
                 "webUSB": false,
-                "gc": false,
+                "gc": true,
                 "hasHex": true,
                 "deployDrives": ".*",
                 "deployFileMarker": "INFO_UF2.TXT",
@@ -154,7 +154,7 @@
                 "codalTarget": {
                     "name": "codal-mkr1300",
                     "url": "https://github.com/ElectronicCats/codal-mkr1300",
-                    "branch": "v0.0.7",
+                    "branch": "v0.0.8",
                     "type": "git"
                 },
                 "codalBinary": "MKR1300",
