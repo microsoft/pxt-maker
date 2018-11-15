@@ -34,14 +34,14 @@ declare namespace serial {
     /**
     Set the baud rate of the serial port
      */
-    //% help=serial/set-baud-rate
-    //% blockId=serialsetbaudrate block="serial set baud rate to %rate" shim=serial::setBaudRate
+    //% help=serial/set-baud-rate shim=serial::setBaudRate
     function setBaudRate(rate: BaudRate): void;
 
     /**
      * Set the serial input and output to use pins instead of the USB connection.
-     * @param tx the new transmission pin, eg: SerialPin.P0
-     * @param rx the new reception pin, eg: SerialPin.P1
+     * @param tx the new transmission pin
+     * @param rx the new reception pin
+     * @param rate the new baud rate
      */
     //% weight=10
     //% help=serial/redirect
@@ -51,7 +51,7 @@ declare namespace serial {
     //% rx.fieldEditor="gridpicker" rx.fieldOptions.columns=3
     //% rx.fieldOptions.tooltips="false"
     //% blockGap=8 inlineInputMode=inline shim=serial::redirect
-    function redirect(tx: DigitalInOutPin, rx: DigitalInOutPin): void;
+    function redirect(tx: DigitalInOutPin, rx: DigitalInOutPin, rate: BaudRate): void;
 }
 
 // Auto-generated. Do not edit. Really.
