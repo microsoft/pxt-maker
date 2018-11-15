@@ -1,4 +1,4 @@
-# MakeFashion
+# StitchKit
 
 ```blocks
 forever(function() {
@@ -7,5 +7,5 @@ forever(function() {
 ```
 
 ```package
-makefashion
+stitchkit
 ```

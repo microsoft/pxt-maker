@@ -1,0 +1,4 @@
+# StitchKit
+
+The StitchKit library.
+
