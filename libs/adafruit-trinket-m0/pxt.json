@@ -14,11 +14,13 @@
     "dependencies": {
         "core": "file:../core",
         "buttons": "file:../buttons",
-        "touch": "file:../touch"
+        "touch": "file:../touch",
+        "pixel": "file:../pixel"
     },
     "public": true,
     "features": [
         "uf2",
+        "pixel",
         "pinled",
         "pind0",
         "pind1",
