@@ -17,5 +17,16 @@
         "touch": "file:../touch",
         "music": "file:../music---pwm"
     },
-    "public": true
+    "public": true,
+    "features": [
+        "uf2",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
+        "touchd0",
+        "touchd1"
+    ]
 }

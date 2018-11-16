@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MakeCode Maker - Board Designer</title>
+    <!-- @include head.html -->
+    <style>
+        #svg, #svg svg {
+            width:100%;
+            height:100%;
+        }
+        #svg svg circle:hover,
+        #svg svg rect:hover {
+            stroke: grey !important;
+        }
+        #svg svg .selected {
+            stroke: yellow !important;
+        }
+        textarea {
+            width:100%;
+            height:18rem;
+            font-family: monospace;
+            font-size: small;
+        }
+    </style>
+    <script type="text/javascript" src="/blb/jquery.js"></script>
+    <script>
+        const cfgs = {};
+        `
+// these define keys for getConfig() function
+#define CFG_PIN_ACCELEROMETER_INT 1
+#define CFG_PIN_ACCELEROMETER_SCL 2
+#define CFG_PIN_ACCELEROMETER_SDA 3
+#define CFG_PIN_BTN_A 4
+#define CFG_PIN_BTN_B 5
+#define CFG_PIN_BTN_SLIDE 6
+#define CFG_PIN_DOTSTAR_CLOCK 7
+#define CFG_PIN_DOTSTAR_DATA 8
+#define CFG_PIN_FLASH_CS 9
+#define CFG_PIN_FLASH_MISO 10
+#define CFG_PIN_FLASH_MOSI 11
+#define CFG_PIN_FLASH_SCK 12
+#define CFG_PIN_LED 13
+#define CFG_PIN_LIGHT 14
+#define CFG_PIN_MICROPHONE 15
+#define CFG_PIN_MIC_CLOCK 16
+#define CFG_PIN_MIC_DATA 17
+#define CFG_PIN_MISO 18
+#define CFG_PIN_MOSI 19
+#define CFG_PIN_NEOPIXEL 20
+#define CFG_PIN_RX 21
+#define CFG_PIN_RXLED 22
+#define CFG_PIN_SCK 23
+#define CFG_PIN_SCL 24
+#define CFG_PIN_SDA 25
+#define CFG_PIN_SPEAKER_AMP 26
+#define CFG_PIN_TEMPERATURE 27
+#define CFG_PIN_TX 28
+#define CFG_PIN_TXLED 29
+#define CFG_PIN_IR_OUT 30
+#define CFG_PIN_IR_IN 31
+#define CFG_PIN_DISPLAY_SCK 32
+#define CFG_PIN_DISPLAY_MISO 33
+#define CFG_PIN_DISPLAY_MOSI 34
+#define CFG_PIN_DISPLAY_CS 35
+#define CFG_PIN_DISPLAY_DC 36
+#define CFG_DISPLAY_WIDTH 37
+#define CFG_DISPLAY_HEIGHT 38
+#define CFG_DISPLAY_CFG0 39
+#define CFG_DISPLAY_CFG1 40
+#define CFG_DISPLAY_CFG2 41
+#define CFG_DISPLAY_CFG3 42
+#define CFG_PIN_DISPLAY_RST 43
+#define CFG_PIN_DISPLAY_BL 44
+#define CFG_PIN_SERVO_1 45
+#define CFG_PIN_SERVO_2 46
+#define CFG_PIN_BTN_LEFT 47
+#define CFG_PIN_BTN_RIGHT 48
+#define CFG_PIN_BTN_UP 49
+#define CFG_PIN_BTN_DOWN 50
+#define CFG_PIN_BTN_MENU 51
+#define CFG_PIN_LED_R 52
+#define CFG_PIN_LED_G 53
+#define CFG_PIN_LED_B 54
+#define CFG_PIN_LED1 55
+#define CFG_PIN_LED2 56
+#define CFG_PIN_LED3 57
+#define CFG_PIN_LED4 58
+#define CFG_SPEAKER_VOLUME 59
+
+#define CFG_PIN_A0 100
+#define CFG_PIN_A1 101
+#define CFG_PIN_A2 102
+#define CFG_PIN_A3 103
+#define CFG_PIN_A4 104
+#define CFG_PIN_A5 105
+#define CFG_PIN_A6 106
+#define CFG_PIN_A7 107
+#define CFG_PIN_A8 108
+#define CFG_PIN_A9 109
+#define CFG_PIN_A10 110
+#define CFG_PIN_A11 111
+#define CFG_PIN_A12 112
+#define CFG_PIN_A13 113
+#define CFG_PIN_A14 114
+#define CFG_PIN_A15 115
+
+#define CFG_PIN_D0 150
+#define CFG_PIN_D1 151
+#define CFG_PIN_D2 152
+#define CFG_PIN_D3 153
+#define CFG_PIN_D4 154
+#define CFG_PIN_D5 155
+#define CFG_PIN_D6 156
+#define CFG_PIN_D7 157
+#define CFG_PIN_D8 158
+#define CFG_PIN_D9 159
+#define CFG_PIN_D10 160
+#define CFG_PIN_D11 161
+#define CFG_PIN_D12 162
+#define CFG_PIN_D13 163
+#define CFG_PIN_D14 164
+#define CFG_PIN_D15 165
+
+#define CFG_NUM_NEOPIXELS 200
+#define CFG_NUM_DOTSTARS 201
+#define CFG_DEFAULT_BUTTON_MODE 202
+#define CFG_SWD_ENABLED 203
+#define CFG_FLASH_BYTES 204
+`.replace(/#define CFG_(\w+) /g, function (m, id) { cfgs[id] = id });
+        console.log(`known cfgs:`)
+        console.log(cfgs);
+
+        let boardjson = {}
+
+        function log(text) {
+            $('#log').append(text + '\r\n');
+        }
+
+        function getSvg() {
+            return document.getElementById("svg").querySelector("svg");
+        }
+
+        function convertCoords(elt) {
+            const svg = getSvg();
+            const vb = svg.viewBox.baseVal;
+            const offset = svg.getBoundingClientRect();
+            const eoffset = elt.getBoundingClientRect();
+            const r = {
+                x: eoffset.x - offset.left,
+                y: eoffset.y - offset.top,
+                w: eoffset.width,
+                h: eoffset.height
+            }
+            // rescale for viewbox
+            r.x *= vb.width / offset.width;
+            r.y *= vb.height / offset.height;
+            r.w *= vb.width / offset.width;
+            r.h *= vb.height / offset.height;
+            return r;
+        }
+
+        function addElement(elt) {
+            const id = [
+                elt.getAttribute("connectorname"),
+                elt.getAttribute("inkscape:label"),
+                elt.getAttribute("id")]
+                .filter(n => !!n && !/^#/.test(n))[0];
+            if (!id || boardjson.gpioPinMap[id]) return;
+            boardjson.gpioPinMap[id] = id;
+
+            // split subpins RX_TX_A0
+            id.split('_').forEach(iid => boardjson.gpioPinMap[iid] = id);
+
+            const rect = convertCoords(elt);
+
+            // handle leds
+            let visuals = false;
+            if (/(RX|TX)?LED/.test(id)) {
+                boardjson.visual.leds.push({
+                    x: rect.x,
+                    y: rect.y,
+                    w: rect.w,
+                    h: rect.h,
+                    color: '#ff0000',
+                    label: id
+                })
+                visuals = true;
+            }
+            else if (/^NEOPIXEL$/.test(id)) {
+                boardjson.visual.leds.push({
+                    x: rect.x,
+                    y: rect.y,
+                    w: rect.w,
+                    h: rect.h,
+                    color: 'neopixel',
+                    label: "NEOPIXEL"
+                })
+                visuals = true;
+                boardjson.onboardComponents.push("pixel");
+            }
+            else if (/RST|RESET/.test(id) && !boardjson.visual.reset) {
+                boardjson.visual.reset = {
+                    x: rect.x,
+                    y: rect.y,
+                    w: rect.w,
+                    h: rect.h
+                }
+                visuals = true;
+            }
+            else if (/GND/.test(id) && boardjson.groundPins.indexOf(id) < 0)
+                boardjson.groundPins.push(id);
+            else if (/(\+3V3|3V|VCC|VOUT)/.test(id) && boardjson.threeVoltPins.indexOf(id) < 0)
+                boardjson.threeVoltPins.push(id);
+
+            if (!visuals) {
+                if (Math.abs(rect.w - 15) > 2 || Math.abs(rect.h - 15) > 2) {
+                    log(`pin ${id}: ${rect.x >> 0}, ${rect.y >> 0} - ${rect.w >> 0}x${rect.h >> 0}`)
+                }
+                boardjson.visual.pinBlocks.push({
+                    x: rect.x,
+                    y: rect.y,
+                    labels: [id]
+                });
+            }
+            elt.classList.add("selected")
+            updateJSON();
+        }
+
+        function updateSvg() {
+            $('#svg').html($('#svginput').val());
+            $('#log').text("");
+            boardjson = {
+                driveDisplayName: "",
+                visual: {
+                    image: "pkg://board.svg",
+                    outlineImage: "pkg://boardwireframe.svg",
+                    useCrocClips: false,
+                    width: 200,
+                    height: 200,
+                    pinDist: 15,
+                    pinBlocks: [],
+                    leds: []
+                },
+                gpioPinMap: {},
+                groundPins: [],
+                threeVoltPins: [],
+                spiPins: {
+                    "MOSI": "MOSI",
+                    "MISO": "MISO",
+                    "SCK": "SCK"
+                },
+                i2cPins: {
+                    "SDA": "SDA",
+                    "SCL": "SCL"
+                },
+                onboardComponents: [],
+                marginWhenBreadboarding: [
+                    0,
+                    0,
+                    80,
+                    0
+                ]
+            }
+            const svg = getSvg();
+            boardjson.visual.width = svg.viewBox.baseVal.width;
+            boardjson.visual.height = svg.viewBox.baseVal.height;
+            const elts = svg.querySelectorAll("*")
+            for (let i = 0; i < elts.length; ++i) {
+                const elt = elts[i];
+                const id = elt.getAttribute("connectorname") || elt.getAttribute("id");
+                if (/^[!+\.A-Z0-9_]+$/.test(id))
+                    addElement(elt);
+            }
+
+            // Get point in global SVG space
+            const pt = svg.createSVGPoint();
+            function cursorPoint(evt) {
+                pt.x = evt.clientX;
+                pt.y = evt.clientY;
+                return pt.matrixTransform(svg.getScreenCTM().inverse());
+            }
+            svg.addEventListener('mousemove', function (evt) {
+                const loc = cursorPoint(evt);
+                $('#pos').text(`${loc.x >> 0}, ${loc.y >> 0}`);
+            }, false);
+
+            updateJSON();
+        }
+
+        function updateJSON() {
+            $('#json').val(JSON.stringify(boardjson, null, 2));
+            let configts = `namespace config {`;
+            Object.keys(boardjson.gpioPinMap)
+                .filter(pinid => !/^(RESET|GND\d*|3V3?|5V|VIN|USHIELD)$/.test(pinid))
+                .forEach(pinid => {
+                let found = false;
+                ['', 'PIN_'].forEach(prefix => {
+                    const pid = prefix + pinid;
+                    if (cfgs[pid]) {
+                        found = true;
+                        configts += `
+    export const ${pid} = DAL.?;`
+                        if (pid == "PIN_NEOPIXEL") {
+                            configts += `
+    export const NUM_NEOPIXEL = 1;`
+                        }
+                    }
+                })
+                if (!found)
+                    configts += `
+    // unknown pin id ${pinid}`;
+            })
+            configts += `
+    // additional pins to look for: SPI, I2C, Flash
+}`;
+            $(`#configts`).val(configts);
+        }
+
+        $(function () {
+            $('#svginput').change(updateSvg);
+        })
+    </script>
+</head>
+
+<body id='root' class='root'>
+    <div class="ui container">
+        <h1>MakeCode Maker Board designer</h1>
+        <p>A handy helper to integrate a new board in maker.makecode.com</p>
+        <h2>preparing board.svg</h2>
+        <ul class="ui small">
+            <li>
+                grab the "breadboard" svg of Fritzing board image
+            </li>
+            <li>
+                resize your image (in Inkscape or other) so that a header is precisely 15px
+            </li>
+            <li>
+                (optional) remove extra components to simplify image
+            </li>
+            <li>
+                LEDs: set the id of the svg element to LED...
+            </li>
+            <li>
+                Reset button: set the id of the svg to RESET
+            </li>
+            <li>
+                Pins: set the id of the svg for headers to the pin names (should be done already)
+            </li>
+        </ul>
+        <div class="ui segment">
+            <h2>board.svg</h2>
+            <textarea class="ui fluid" id="svginput"></textarea>
+        </div>
+        <div class="ui segment" id="svg">
+        </div>
+        <div class="ui smaller" id="pos"></div>
+        <pre class="ui smaller" id="log"></pre>
+        <div class="ui segment">
+            <h2>board.json</h2>
+            <textarea class="ui fluid" readonly id="json"></textarea>
+        </div>
+        <div class="ui segment">
+            <h2>config.ts</h2>
+            <textarea class="ui fluid" readonly id="configts"></textarea>
+        </div>
+    </div>
+    <!-- @include footer.html -->
+    <!-- @include tracking.html -->
+</body>
+
+</html>

@@ -2,6 +2,14 @@
 declare namespace serial {
 
     /**
+     * Read the buffered received data as a string
+     */
+    //% help=serial/read-string
+    //% blockId=serial_read_buffer block="serial|read string"
+    //% weight=18 shim=serial::readString
+    function readString(): string;
+
+    /**
      * Write some text to the serial port.
      */
     //% help=serial/write-string
@@ -26,19 +34,18 @@ declare namespace serial {
     /**
     Set the baud rate of the serial port
      */
-    //% blockId=serialsetbaudrate block="serial set baud rate to %rate" shim=serial::setBaudRate
+    //% help=serial/set-baud-rate shim=serial::setBaudRate
     function setBaudRate(rate: BaudRate): void;
 
     /**
      * Set the serial input and output to use pins instead of the USB connection.
-     * @param tx the new transmission pin, eg: SerialPin.P0
-     * @param rx the new reception pin, eg: SerialPin.P1
-     * @param rate the new baud rate. eg: 115200
+     * @param tx the new transmission pin
+     * @param rx the new reception pin
+     * @param rate the new baud rate
      */
     //% weight=10
     //% help=serial/redirect
-    //% blockId=serial_redirect block="serial|redirect to|TX %tx|RX %rx|at baud rate %rate"
-    //% blockExternalInputs=1
+    //% blockId=serial_redirect block="serial|redirect to|TX %tx|RX %rx"
     //% tx.fieldEditor="gridpicker" tx.fieldOptions.columns=3
     //% tx.fieldOptions.tooltips="false"
     //% rx.fieldEditor="gridpicker" rx.fieldOptions.columns=3

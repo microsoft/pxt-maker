@@ -1,61 +1,157 @@
 {
-    "driveDisplayName": "TRINKETBOOT",
-    "visual": {
-        "image": "pkg://board.svg",
-        "outlineImage": "pkg://boardwireframe.svg",
-        "width": 175,
-        "height": 170,
-        "pinDist": 16,
-        "pinBlocks": [{
-                "x": 42,
-                "y": 33,
-                "labels": ["RST", "D3", "D4", "GND", "BAT"]
-            },
-            {
-                "x": 42,
-                "y": 118,
-                "labels": ["3V", "D2", "D1", "D0", "USB"]
-            }
-        ],
-        "leds": [{
-            "x": 139.5,
-            "y": 107.7,
-            "w": 9.5,
-            "h": 5,
-            "color": "#ff4545",
-            "label": "LED"
-        }, {
-            "x": 73,
-            "y": 68,
-            "w": 5,
-            "color": "neopixel",
-            "label": "NEOPIXEL"
-        }]
-    },
-    "gpioPinMap": {
-        "D0": "D0",
-        "D1": "D1",
-        "D2": "D2",
-        "D3": "D3",
-        "D4": "D4",
-        "P0": "D0",
-        "P1": "D1",
-        "P2": "D2",
-        "P3": "D3",
-        "P4": "D4",
-        "A0": "D0",
-        "A1": "D1",
-        "A2": "D2",
-        "A3": "D3",
-        "A4": "D4"
-    },
-    "groundPins": ["GND"],
-    "threeVoltPins": ["3V"],
-    "onboardComponents": [],
-    "marginWhenBreadboarding": [
-        0,
-        0,
-        80,
-        0
-    ]
+  "driveDisplayName": "",
+  "visual": {
+    "image": "pkg://board.svg",
+    "outlineImage": "pkg://boardwireframe.svg",
+    "useCrocClips": false,
+    "width": 208.2989959716797,
+    "height": 118.42015838623047,
+    "pinDist": 15,
+    "pinBlocks": [
+      {
+        "x": 132.4629952080452,
+        "y": 4.373158339884885,
+        "labels": [
+          "VBAT"
+        ]
+      },
+      {
+        "x": 112.72683256462672,
+        "y": 4.373158339884885,
+        "labels": [
+          "GND"
+        ]
+      },
+      {
+        "x": 92.99066310793826,
+        "y": 4.373158339884885,
+        "labels": [
+          "D4_A2_PA06_TXD_MOSI"
+        ]
+      },
+      {
+        "x": 73.2544936512498,
+        "y": 4.373158339884885,
+        "labels": [
+          "D3_A3_PA07_RXD_SCK"
+        ]
+      },
+      {
+        "x": 53.51831738129138,
+        "y": 102.85924710142397,
+        "labels": [
+          "3.3V"
+        ]
+      },
+      {
+        "x": 73.2544936512498,
+        "y": 102.85924710142397,
+        "labels": [
+          "D2_A1_PA09_SCL_MISO"
+        ]
+      },
+      {
+        "x": 92.99066310793826,
+        "y": 102.85924710142397,
+        "labels": [
+          "D1_A0_PA02"
+        ]
+      },
+      {
+        "x": 112.72683256462672,
+        "y": 102.85924710142397,
+        "labels": [
+          "D0_A4_PA08_SDA"
+        ]
+      },
+      {
+        "x": 132.4629952080452,
+        "y": 102.85924710142397,
+        "labels": [
+          "VBUS"
+        ]
+      },
+      {
+        "x": 12.977390315618376,
+        "y": 34.81881413691183,
+        "labels": [
+          "RESET"
+        ]
+      }
+    ],
+    "leds": [
+      {
+        "x": 185.374304741082,
+        "y": 99.02858927309538,
+        "w": 6.2168908238806235,
+        "h": 6.217055044821126,
+        "color": "#ff0000",
+        "label": "LED"
+      }
+    ],
+    "reset": {
+      "x": 53.51831738129138,
+      "y": 4.373158339884885,
+      "w": 11.38480378975912,
+      "h": 11.385111336041401
+    }
+  },
+  "gpioPinMap": {
+    "VBAT": "VBAT",
+    "GND": "GND",
+    "D4_A2_PA06_TXD_MOSI": "D4_A2_PA06_TXD_MOSI",
+    "D4": "D4_A2_PA06_TXD_MOSI",
+    "A2": "D4_A2_PA06_TXD_MOSI",
+    "PA06": "D4_A2_PA06_TXD_MOSI",
+    "TXD": "D4_A2_PA06_TXD_MOSI",
+    "MOSI": "D4_A2_PA06_TXD_MOSI",
+    "D3_A3_PA07_RXD_SCK": "D3_A3_PA07_RXD_SCK",
+    "D3": "D3_A3_PA07_RXD_SCK",
+    "A3": "D3_A3_PA07_RXD_SCK",
+    "PA07": "D3_A3_PA07_RXD_SCK",
+    "RXD": "D3_A3_PA07_RXD_SCK",
+    "SCK": "D3_A3_PA07_RXD_SCK",
+    "!RESET": "!RESET",
+    "3.3V": "3.3V",
+    "D2_A1_PA09_SCL_MISO": "D2_A1_PA09_SCL_MISO",
+    "D2": "D2_A1_PA09_SCL_MISO",
+    "A1": "D2_A1_PA09_SCL_MISO",
+    "PA09": "D2_A1_PA09_SCL_MISO",
+    "SCL": "D2_A1_PA09_SCL_MISO",
+    "MISO": "D2_A1_PA09_SCL_MISO",
+    "D1_A0_PA02": "D1_A0_PA02",
+    "D1": "D1_A0_PA02",
+    "A0": "D1_A0_PA02",
+    "PA02": "D1_A0_PA02",
+    "D0_A4_PA08_SDA": "D0_A4_PA08_SDA",
+    "D0": "D0_A4_PA08_SDA",
+    "A4": "D0_A4_PA08_SDA",
+    "PA08": "D0_A4_PA08_SDA",
+    "SDA": "D0_A4_PA08_SDA",
+    "VBUS": "VBUS",
+    "LED": "LED",
+    "RESET": "RESET"
+  },
+  "groundPins": [
+    "GND"
+  ],
+  "threeVoltPins": [
+    "3.3V"
+  ],
+  "spiPins": {
+    "MOSI": "MOSI",
+    "MISO": "MISO",
+    "SCK": "SCK"
+  },
+  "i2cPins": {
+    "SDA": "SDA",
+    "SCL": "SCL"
+  },
+  "onboardComponents": [],
+  "marginWhenBreadboarding": [
+    0,
+    0,
+    80,
+    0
+  ]
 }

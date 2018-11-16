@@ -16,5 +16,13 @@
         "music": "file:../music"
     },
     "core": true,
-    "public": true
+    "public": true,
+    "features": [
+        "uf2",
+        "pinled",
+        "pina0",
+        "pina1",
+        "toucha0",
+        "toucha1"
+    ]
 }

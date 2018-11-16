@@ -21,18 +21,13 @@ namespace config {
     export const PIN_D12 = DAL.PA19;
     export const PIN_D13 = DAL.PA17;
     export const PIN_LED = DAL.PA17;
-    export const PIN_RX = DAL.PB03;
-    export const PIN_TX = DAL.PA27;
-    export const PIN_MISO = DAL.PA12;
-    export const PIN_MOSI = DAL.PB10;
-    export const PIN_SCK = DAL.PB11;
+    export const PIN_RX = DAL.PA11;
+    export const PIN_TX = DAL.PA10;
+    export const PIN_MISO = DAL.PA19;
+    export const PIN_MOSI = DAL.PA16;
+    export const PIN_SCK = DAL.PA17;
     export const PIN_SCL = DAL.PA23;
     export const PIN_SDA = DAL.PA22;
-    export const PIN_RXLED = DAL.PA31;
+    export const PIN_RXLED = DAL.PB03;
     export const PIN_TXLED = DAL.PA27;
-
-    export const PIN_FLASH_MISO = DAL.PB03;
-    export const PIN_FLASH_MOSI = DAL.PB22;
-    export const PIN_FLASH_SCK = DAL.PB23;
-    export const PIN_FLASH_CS = DAL.PA13;
 }

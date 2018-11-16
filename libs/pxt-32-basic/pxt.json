@@ -1,6 +1,6 @@
 {
     "name": "pxt-32-basic",
-    "description": "Support for PXT-32 game console (F103RE)",
+    "description": "Support for PXT-32 game console (F103RE) - beta",
     "files": [
         "README.md",
         "device.d.ts",

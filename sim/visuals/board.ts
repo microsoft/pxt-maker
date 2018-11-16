@@ -95,6 +95,7 @@ namespace pxsim.visuals {
         public board: pxsim.DalBoard;
         private onBoardLeds: BoardLed[];
         private onBoardNeopixel: BoardNeopixel;
+        private onBoardReset: BoardButton;
 
         constructor(public props: MetroBoardProps) {
             super(props);
@@ -116,6 +117,10 @@ namespace pxsim.visuals {
                 }
             }
 
+            if (props.visualDef.reset) {
+                this.onBoardReset = new BoardButton(props.visualDef.reset.x, props.visualDef.reset.y)
+            }
+
             if (props && props.theme)
                 this.updateTheme();
 
@@ -123,7 +128,6 @@ namespace pxsim.visuals {
                 this.board = this.props.runtime.board as pxsim.DalBoard;
                 this.board.updateSubscribers.push(() => this.updateState());
                 this.updateState();
-                //this.attachEvents();
             }
 
 
@@ -154,6 +158,14 @@ namespace pxsim.visuals {
 
             const style = svg.child(el, "style", {});
             style.textContent = STYLE;
+        }
+    }
+
+    class BoardButton {
+        private element: SVGElement;
+        constructor(x: number, y: number, r = 15) {
+            this.element = svg.elt("circle", { cx: x, cy: y, r, class: "sim-reset-btn" }) as SVGCircleElement
+            this.element.addEventListener("click", () => pxsim.control.reset(), false);
         }
     }
 
