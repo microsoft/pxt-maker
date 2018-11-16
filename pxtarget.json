@@ -20,6 +20,7 @@
         "libs/buttons",
         "libs/touch",
         "libs/light",
+        "libs/adafruit-circuit-playground-express",
         "libs/adafruit-trinket-m0",
         "libs/adafruit-metro-m0-express",
         "libs/adafruit-metro-m4-express",
