@@ -11,7 +11,7 @@
         "core---samd51": "file:../core---samd51",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
-        "pixel": "file:../pixel"
+        "light": "file:../light"
     },
     "compileServiceVariant": "samd21",
     "core": true,
