@@ -22,6 +22,7 @@
     "public": true,
     "features": [
         "uf2",
+        "pixel",
         "pinled",
         "pind0",
         "pind1",

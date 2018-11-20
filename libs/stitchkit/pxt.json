@@ -1,6 +1,6 @@
 {
-    "name": "makefashion",
-    "description": "Support for MakeFashion",
+    "name": "stitchkit",
+    "description": "Support for StitchKit - beta",
     "files": [
         "README.md",
         "device.d.ts",

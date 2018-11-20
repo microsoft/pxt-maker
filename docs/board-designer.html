@@ -188,17 +188,20 @@
                 })
                 visuals = true;
             }
-            else if (/^NEOPIXEL$/.test(id)) {
+            else if (/^NEOPIXEL/.test(id)) {
                 boardjson.visual.leds.push({
                     x: rect.x,
                     y: rect.y,
                     w: rect.w,
                     h: rect.h,
                     color: 'neopixel',
-                    label: "NEOPIXEL"
+                    label: id
                 })
                 visuals = true;
-                boardjson.onboardComponents.push("pixel");
+                if (id.toLowerCase() == "neopixel" && boardjson.onboardComponents.indexOf("pixel") < 0)
+                    boardjson.onboardComponents.push("pixel");
+                else if (id.toLowerCase() != "neopixel" && boardjson.onboardComponents.indexOf("neopixel") < 0)
+                    boardjson.onboardComponents.push("neopixel");
             }
             else if (/RST|RESET/.test(id) && !boardjson.visual.reset) {
                 boardjson.visual.reset = {
