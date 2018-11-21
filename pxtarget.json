@@ -417,7 +417,8 @@
         },
         "allowPackageExtensions": true,
         "extendEditor": true,
-        "crowdinProject": "kindscript"
+        "crowdinProject": "kindscript",
+        "scriptManager": true
     },
     "ignoreDocsErrors": true
 }
