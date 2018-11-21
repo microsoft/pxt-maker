@@ -159,7 +159,7 @@
                 "codalTarget": {
                     "name": "codal-mkr1300",
                     "url": "https://github.com/ElectronicCats/codal-mkr1300",
-                    "branch": "v0.0.8",
+                    "branch": "v0.0.7",
                     "type": "git",
                     "branches": {
                         "https://github.com/lancaster-university/codal-core": "9d644e64331972ddec22c30971dcbcb5816f1b36"
