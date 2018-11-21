@@ -46,6 +46,7 @@
         "libs/servo",
         "libs/storage",
         "libs/serial",
+        "libs/jacdac",
         "libs/datalogger"
     ],
     "serial": {
@@ -115,8 +116,11 @@
         "codalTarget": {
             "name": "codal-circuit-playground",
             "url": "https://github.com/lancaster-university/codal-circuit-playground",
-            "branch": "v1.5.4",
-            "type": "git"
+            "branch": "v1.5.6",
+            "type": "git",
+            "branches": {
+                "https://github.com/lancaster-university/codal-core": "9d644e64331972ddec22c30971dcbcb5816f1b36"
+            }
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
         "yottaConfig": {
@@ -127,7 +131,7 @@
             }
         },
         "githubCorePackage": "lancaster-university/codal",
-        "gittag": "v0.5.0",
+        "gittag": "v0.6.0",
         "serviceId": "codal2cp",
         "dockerImage": "pext/yotta:latest"
     },
@@ -149,14 +153,17 @@
                 "flashChecksumAddr": 8372,
                 "flashCodeAlign": 256,
                 "upgrades": []
-            },            
+            },
             "compileService": {
                 "buildEngine": "codal",
                 "codalTarget": {
                     "name": "codal-mkr1300",
                     "url": "https://github.com/ElectronicCats/codal-mkr1300",
                     "branch": "v0.0.7",
-                    "type": "git"
+                    "type": "git",
+                    "branches": {
+                        "https://github.com/lancaster-university/codal-core": "9d644e64331972ddec22c30971dcbcb5816f1b36"
+                    }        
                 },
                 "codalBinary": "MKR1300",
                 "yottaConfig": {
@@ -167,7 +174,7 @@
                     }
                 },
                 "githubCorePackage": "lancaster-university/codal",
-                "gittag": "v0.5.0",
+                "gittag": "v0.6.0",
                 "serviceId": "codal2mkr1300",
                 "dockerImage": "pext/yotta:latest"
             }
@@ -184,9 +191,12 @@
             "compileService": {
                 "codalTarget": {
                     "name": "codal-itsybitsy-m4",
-                    "url": "https://github.com/lancaster-university/codal-itsybitsy-m4",
-                    "branch": "v0.0.8",
-                    "type": "git"
+                    "url": "https://github.com/lancaster-university/codal-itsybitsy-m4", 
+                    "branch": "v0.0.11",
+                    "type": "git",
+                    "branches": {
+                        "https://github.com/lancaster-university/codal-core": "9d644e64331972ddec22c30971dcbcb5816f1b36"
+                    }
                 },
                 "codalBinary": "ITSYBITSY_M4",
                 "serviceId": "codal2samd51"
@@ -272,7 +282,10 @@
                     "name": "codal-generic-f103re",
                     "url": "https://github.com/mmoskal/codal-generic-f103re",
                     "branch": "v0.0.3",
-                    "type": "git"
+                    "type": "git",
+                    "branches": {
+                        "https://github.com/lancaster-university/codal-core": "9d644e64331972ddec22c30971dcbcb5816f1b36"
+                    }
                 },
                 "codalBinary": "GENERIC_F103RE",
                 "serviceId": "codal2f103re",
@@ -302,8 +315,11 @@
                 "codalTarget": {
                     "name": "codal-big-brainpad",
                     "url": "https://github.com/lancaster-university/codal-big-brainpad",
-                    "branch": "v1.0.8",
-                    "type": "git"
+                    "branch": "v1.0.13",
+                    "type": "git",
+                    "branches": {
+                        "https://github.com/lancaster-university/codal-core": "9d644e64331972ddec22c30971dcbcb5816f1b36"
+                    }
                 },
                 "codalBinary": "STM32",
                 "serviceId": "codal2stm32",
@@ -401,7 +417,8 @@
         },
         "allowPackageExtensions": true,
         "extendEditor": true,
-        "crowdinProject": "kindscript"
+        "crowdinProject": "kindscript",
+        "scriptManager": true
     },
     "ignoreDocsErrors": true
 }
