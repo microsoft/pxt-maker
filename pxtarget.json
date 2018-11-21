@@ -131,7 +131,7 @@
             }
         },
         "githubCorePackage": "lancaster-university/codal",
-        "gittag": "v0.5.0",
+        "gittag": "v0.6.0",
         "serviceId": "codal2cp",
         "dockerImage": "pext/yotta:latest"
     },
@@ -191,7 +191,7 @@
             "compileService": {
                 "codalTarget": {
                     "name": "codal-itsybitsy-m4",
-                    "url": "https://github.com/lancaster-university/codal-itsybitsy-m4",
+                    "url": "https://github.com/lancaster-university/codal-itsybitsy-m4", 
                     "branch": "v0.0.11",
                     "type": "git",
                     "branches": {
