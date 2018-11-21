@@ -174,7 +174,7 @@
                     }
                 },
                 "githubCorePackage": "lancaster-university/codal",
-                "gittag": "v0.5.0",
+                "gittag": "v0.6.0",
                 "serviceId": "codal2mkr1300",
                 "dockerImage": "pext/yotta:latest"
             }
