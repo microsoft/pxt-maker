@@ -119,7 +119,7 @@
             "branch": "v1.5.6",
             "type": "git",
             "branches": {
-                "https://github.com/lancaster-university/codal-core": "d1dc4ad04860a0b02fd6c9437d77a05e9d26b898"
+                "https://github.com/lancaster-university/codal-core": "b0a3cfb6204042a2238c09647a52119e298685df"
             }
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
@@ -337,7 +337,10 @@
                     "type": "git"
                 },
                 "dockerImage": "pext/yotta:latest",
-                "codalBinary": "CIRCUIT_PLAYGROUND"
+                "codalBinary": "CIRCUIT_PLAYGROUND",
+                "branches": {
+                    "https://github.com/lancaster-university/codal-core": "b0a3cfb6204042a2238c09647a52119e298685df"
+                }    
             }
         }
     },
