@@ -163,7 +163,7 @@
                     "type": "git",
                     "branches": {
                         "https://github.com/lancaster-university/codal-core": "9d644e64331972ddec22c30971dcbcb5816f1b36"
-                    }        
+                    }
                 },
                 "codalBinary": "MKR1300",
                 "yottaConfig": {
@@ -191,7 +191,7 @@
             "compileService": {
                 "codalTarget": {
                     "name": "codal-itsybitsy-m4",
-                    "url": "https://github.com/lancaster-university/codal-itsybitsy-m4", 
+                    "url": "https://github.com/lancaster-university/codal-itsybitsy-m4",
                     "branch": "v0.0.11",
                     "type": "git",
                     "branches": {
@@ -349,7 +349,10 @@
                     "type": "git"
                 },
                 "dockerImage": "pext/yotta:latest",
-                "codalBinary": "CIRCUIT_PLAYGROUND"
+                "codalBinary": "CIRCUIT_PLAYGROUND",
+                "branches": {
+                    "https://github.com/lancaster-university/codal-core": "d1dc4ad04860a0b02fd6c9437d77a05e9d26b898"
+                }
             }
         }
     },
@@ -379,7 +382,8 @@
         "chooseBoardOnNewProject": true,
         "lightToc": true,
         "instructions": true,
-        "docMenu": [{
+        "docMenu": [
+            {
                 "name": "About",
                 "path": "/about"
             },
