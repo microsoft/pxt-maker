@@ -15,7 +15,8 @@
         "buttons": "file:../buttons",
         "light": "file:../light",
         "switch": "file:../switch",
-        "touch": "file:../touch"
+        "touch": "file:../touch",
+        "accelerometer": "file:../accelerometer"
     },
     "compileServiceVariant": "samd21",
     "core": true,
