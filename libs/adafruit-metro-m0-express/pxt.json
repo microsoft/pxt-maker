@@ -12,13 +12,14 @@
     ],
     "core": true,
     "dependencies": {
-        "core": "file:../core",
+        "core---samd51": "file:../core---samd51",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
         "pixel": "file:../pixel",
         "storage": "file:../storage"
     },
     "public": true,
+    "compileServiceVariant": "samd21",
     "weight": 100,
     "features": [
         "uf2",

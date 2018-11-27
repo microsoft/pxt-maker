@@ -12,11 +12,12 @@
     ],
     "core": true,
     "dependencies": {
-        "core": "file:../core",
+        "core---samd51": "file:../core---samd51",
         "buttons": "file:../buttons",
         "touch": "file:../touch"
     },
     "public": true,
+    "compileServiceVariant": "samd21",
     "features": [
         "pinled",
         "pind0",
