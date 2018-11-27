@@ -13,8 +13,9 @@
     "dependencies": {
         "core---samd51": "file:../core---samd51",
         "buttons": "file:../buttons",
-        "touch": "file:../touch",
-        "light": "file:../light"
+        "light": "file:../light",
+        "switch": "file:../switch",
+        "touch": "file:../touch"
     },
     "compileServiceVariant": "samd21",
     "core": true,
