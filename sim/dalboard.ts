@@ -21,7 +21,8 @@ namespace pxsim {
         CapTouchBoard,
         AccelerometerBoard,
         PixelBoard,
-        StorageBoard {
+        StorageBoard,
+        JacDacBoard {
         // state & update logic for component services
         view: SVGElement;
         edgeConnectorState: EdgeConnectorState;
@@ -34,6 +35,7 @@ namespace pxsim {
         touchButtonState: TouchButtonState;
         accelerometerState: AccelerometerState;
         storageState: StorageState;
+        jacdacState: JacDacState;
 
         constructor(public boardDefinition: BoardDefinition) {
             super();
@@ -96,6 +98,7 @@ namespace pxsim {
 
             this._neopixelState = {};
             this.storageState = new StorageState();
+            this.jacdacState = new JacDacState();
             this.bus.setNotify(DAL.DEVICE_ID_NOTIFY, DAL.DEVICE_ID_NOTIFY_ONE);
 
             // TODO we need this.buttonState set for pxtcore.getButtonByPin(), but
