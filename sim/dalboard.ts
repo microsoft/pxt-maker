@@ -21,11 +21,14 @@ namespace pxsim {
         CapTouchBoard,
         AccelerometerBoard,
         PixelBoard,
-        StorageBoard {
+        StorageBoard,
+        JacDacBoard,
+        LightSensorBoard,
+        TemperatureBoard {
         // state & update logic for component services
         view: SVGElement;
         edgeConnectorState: EdgeConnectorState;
-        lightSensorState: LightSensorState;
+        lightSensorState: AnalogSensorState;
         buttonState: CommonButtonState;
         _neopixelState: pxt.Map<CommonNeoPixelState>;
         audioState: AudioState;
@@ -34,6 +37,9 @@ namespace pxsim {
         touchButtonState: TouchButtonState;
         accelerometerState: AccelerometerState;
         storageState: StorageState;
+        jacdacState: JacDacState;
+        thermometerState: AnalogSensorState;
+        thermometerUnitState: TemperatureUnit;
 
         constructor(public boardDefinition: BoardDefinition) {
             super();
@@ -96,6 +102,10 @@ namespace pxsim {
 
             this._neopixelState = {};
             this.storageState = new StorageState();
+            this.jacdacState = new JacDacState();
+            this.lightSensorState = new AnalogSensorState(DAL.DEVICE_ID_LIGHT_SENSOR, 0, 255, DAL.LIGHTSENSOR_LOW_THRESHOLD / 4, DAL.LIGHTSENSOR_HIGH_THRESHOLD / 4);
+            this.thermometerState = new AnalogSensorState(DAL.DEVICE_ID_THERMOMETER, -20, 50, 10, 30);
+            this.thermometerUnitState = TemperatureUnit.Celsius;
             this.bus.setNotify(DAL.DEVICE_ID_NOTIFY, DAL.DEVICE_ID_NOTIFY_ONE);
 
             // TODO we need this.buttonState set for pxtcore.getButtonByPin(), but

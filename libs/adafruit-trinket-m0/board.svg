@@ -1386,7 +1386,7 @@
                     <dc:format>image/svg+xml</dc:format>
                     <dc:type
                        rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-                    <dc:title></dc:title>
+                    <dc:title />
                   </cc:Work>
                 </rdf:RDF>
               </metadata>
@@ -2274,4 +2274,12 @@
       </g>
     </g>
   </g>
+  <rect
+     style="fill:#c5c5c5;fill-opacity:1;stroke:none;stroke-width:3.82488179;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3.82488189, 11.47464567;stroke-dashoffset:0;stroke-opacity:1"
+     id="NEOPIXEL"
+     width="11.120984"
+     height="10.030691"
+     x="92.020691"
+     y="38.392681"
+     inkscape:label="NEOPIXEL" />
 </svg>

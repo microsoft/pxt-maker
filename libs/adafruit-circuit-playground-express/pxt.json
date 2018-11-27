@@ -16,7 +16,9 @@
         "light": "file:../light",
         "switch": "file:../switch",
         "touch": "file:../touch",
-        "accelerometer": "file:../accelerometer"
+        "accelerometer": "file:../accelerometer",
+        "lightsensor": "file:../lightsensor",
+        "thermometer": "file:../thermometer"
     },
     "compileServiceVariant": "samd21",
     "core": true,
