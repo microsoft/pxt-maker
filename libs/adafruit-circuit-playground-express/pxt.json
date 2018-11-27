@@ -34,7 +34,8 @@
     ],
     "yotta": {
         "config": {
-            "CODAL_JACDAC_NOPIN_CTOR": 1
+            "CODAL_JACDAC_NOPIN_CTOR": 1,
+            "STORAGE_DRIVE_NAME": "CPLAY"
         }
     }
 }
