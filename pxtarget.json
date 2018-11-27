@@ -20,6 +20,19 @@
         "libs/buttons",
         "libs/touch",
         "libs/light",
+        "libs/tests",
+        "libs/gamepad",
+        "libs/mouse",
+        "libs/keyboard",
+        "libs/display",
+        "libs/servo",
+        "libs/storage",
+        "libs/serial",
+        "libs/jacdac",
+        "libs/datalogger",
+        "libs/lightsensor",
+        "libs/switch",
+        "libs/accelerometer",
         "libs/adafruit-circuit-playground-express",
         "libs/adafruit-trinket-m0",
         "libs/adafruit-metro-m0-express",
@@ -36,18 +49,7 @@
         "libs/electroniccats-meow-meow",
         "libs/sparkfun-samd21-dev-breakout",
         "libs/redbear-ble-nano",
-        "libs/stitchkit",
-        "libs/tests",
-        "libs/gamepad",
-        "libs/mouse",
-        "libs/keyboard",
-        "libs/accelerometer",
-        "libs/display",
-        "libs/servo",
-        "libs/storage",
-        "libs/serial",
-        "libs/jacdac",
-        "libs/datalogger"
+        "libs/stitchkit"
     ],
     "serial": {
         "useHF2": true,
@@ -131,7 +133,7 @@
             }
         },
         "githubCorePackage": "lancaster-university/codal",
-        "gittag": "v0.6.0",
+        "gittag": "v0.6.1",
         "serviceId": "codal2cp",
         "dockerImage": "pext/yotta:latest"
     },
@@ -160,10 +162,7 @@
                     "name": "codal-mkr1300",
                     "url": "https://github.com/ElectronicCats/codal-mkr1300",
                     "branch": "v0.0.9",
-                    "type": "git",
-                    "branches": {
-                        "https://github.com/lancaster-university/codal-core": "b0a3cfb6204042a2238c09647a52119e298685df"
-                    }        
+                    "type": "git"
                 },
                 "codalBinary": "MKR1300",
                 "yottaConfig": {
@@ -191,12 +190,9 @@
             "compileService": {
                 "codalTarget": {
                     "name": "codal-itsybitsy-m4",
-                    "url": "https://github.com/lancaster-university/codal-itsybitsy-m4", 
+                    "url": "https://github.com/lancaster-university/codal-itsybitsy-m4",
                     "branch": "v0.0.11",
-                    "type": "git",
-                    "branches": {
-                        "https://github.com/lancaster-university/codal-core": "b0a3cfb6204042a2238c09647a52119e298685df"
-                    }
+                    "type": "git"
                 },
                 "codalBinary": "ITSYBITSY_M4",
                 "serviceId": "codal2samd51"
@@ -282,10 +278,7 @@
                     "name": "codal-generic-f103re",
                     "url": "https://github.com/mmoskal/codal-generic-f103re",
                     "branch": "v0.0.3",
-                    "type": "git",
-                    "branches": {
-                        "https://github.com/lancaster-university/codal-core": "b0a3cfb6204042a2238c09647a52119e298685df"
-                    }
+                    "type": "git"
                 },
                 "codalBinary": "GENERIC_F103RE",
                 "serviceId": "codal2f103re",
@@ -316,10 +309,7 @@
                     "name": "codal-big-brainpad",
                     "url": "https://github.com/lancaster-university/codal-big-brainpad",
                     "branch": "v1.0.13",
-                    "type": "git",
-                    "branches": {
-                        "https://github.com/lancaster-university/codal-core": "b0a3cfb6204042a2238c09647a52119e298685df"
-                    }
+                    "type": "git"
                 },
                 "codalBinary": "STM32",
                 "serviceId": "codal2stm32",
@@ -331,6 +321,28 @@
                         }
                     }
                 }
+            }
+        },
+        "samd21": {
+            "compile": {
+                "hasHex": true,
+                "openocdScriptAlt": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd51g19; source [find target/at91samdXX.cfg]",
+                "openocdScript": "source [find interface/stlink-v2.cfg]; set CPUTAPID 0x0bc11477; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
+                "vtableShift": 4,
+                "gc": true
+            },
+            "compileService": {
+                "codalTarget": {
+                    "name": "codal-circuit-playground",
+                    "url": "https://github.com/lancaster-university/codal-circuit-playground",
+                    "branch": "v1.5.4-samd-peripherals.3",
+                    "type": "git",
+                    "branches": {
+                        "https://github.com/lancaster-university/codal-core": "d1dc4ad04860a0b02fd6c9437d77a05e9d26b898"
+                    }
+                },
+                "dockerImage": "pext/yotta:latest",
+                "codalBinary": "CIRCUIT_PLAYGROUND"
             }
         }
     },
