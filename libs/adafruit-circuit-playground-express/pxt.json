@@ -18,7 +18,9 @@
         "touch": "file:../touch",
         "accelerometer": "file:../accelerometer",
         "lightsensor": "file:../lightsensor",
-        "thermometer": "file:../thermometer"
+        "thermometer": "file:../thermometer",
+        "pulse": "file:../pulse",
+        "infrared": "file:../infrared"
     },
     "compileServiceVariant": "samd21",
     "core": true,
