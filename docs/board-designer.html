@@ -216,6 +216,10 @@
                 boardjson.groundPins.push(id);
             else if (/(\+3V3|3V|VCC|VOUT)/.test(id) && boardjson.threeVoltPins.indexOf(id) < 0)
                 boardjson.threeVoltPins.push(id);
+            else if (/(BUTTON|BTN_)/.test(id)) {
+                if (boardjson.onboardComponents.indexOf("buttons") < 0)
+                    boardjson.onboardComponents.push("buttons");
+            }
 
             if (!visuals) {
                 if (Math.abs(rect.w - 15) > 2 || Math.abs(rect.h - 15) > 2) {
