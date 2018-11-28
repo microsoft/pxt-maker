@@ -19,6 +19,8 @@ namespace config {
     export const PIN_TX = DAL.PB08;
     export const PIN_RXLED = DAL.PA27;
 
+    export const PIN_JACK_TX = DAL.PB08; // TX
+
     export const PIN_MOSI = DAL.PB10;
     export const PIN_SCK = DAL.PB11;
 

@@ -12,19 +12,22 @@
     ],
     "core": true,
     "dependencies": {
-        "core": "file:../core",
+        "core---samd51": "file:../core---samd51",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
         "light": "file:../light",
-        "music": "file:../music---pwm"
+        "music": "file:../music---pwm",
+        "jacdac": "file:../jacdac"
     },
     "public": true,
     "features": [
         "uf2",
+        "i2c",
         "pinled",
         "pind0",
         "pind1",
         "buttond0",
-        "buttond1"
+        "buttond1",
+        "jacdac"
     ]
 }
