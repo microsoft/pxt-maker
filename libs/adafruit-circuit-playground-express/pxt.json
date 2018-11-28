@@ -18,23 +18,21 @@
         "touch": "file:../touch",
         "accelerometer": "file:../accelerometer",
         "lightsensor": "file:../lightsensor",
-        "thermometer": "file:../thermometer"
+        "thermometer": "file:../thermometer",
+        "jacdac": "file:../jacdac"
     },
     "compileServiceVariant": "samd21",
     "core": true,
     "public": true,
     "features": [
         "uf2",
+        "i2c",
         "pinled",
         "pina0",
         "pina1",
         "toucha0",
         "toucha1",
-        "storage"
-    ],
-    "yotta": {
-        "config": {
-            "CODAL_JACDAC_NOPIN_CTOR": 1
-        }
-    }
+        "storage",
+        "jacdac"
+    ]
 }

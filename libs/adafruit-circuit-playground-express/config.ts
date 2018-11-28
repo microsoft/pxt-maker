@@ -22,6 +22,8 @@ namespace config {
     export const PIN_BTN_A = DAL.PA28;
     export const PIN_BTN_B = DAL.PA14;
 
+    export const PIN_JACK_TX = DAL.PB08;
+    
     export const PIN_A0 = DAL.PA02;
     export const PIN_A1 = DAL.PA05;
     export const PIN_A2 = DAL.PA06;
