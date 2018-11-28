@@ -31,10 +31,5 @@
         "toucha0",
         "toucha1",
         "storage"
-    ],
-    "yotta": {
-        "config": {
-            "CODAL_JACDAC_NOPIN_CTOR": 1
-        }
-    }
+    ]
 }

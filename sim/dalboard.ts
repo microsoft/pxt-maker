@@ -102,7 +102,7 @@ namespace pxsim {
 
             this._neopixelState = {};
             this.storageState = new StorageState();
-            this.jacdacState = new JacDacState();
+            this.jacdacState = new JacDacState(this);
             this.lightSensorState = new AnalogSensorState(DAL.DEVICE_ID_LIGHT_SENSOR, 0, 255, DAL.LIGHTSENSOR_LOW_THRESHOLD / 4, DAL.LIGHTSENSOR_HIGH_THRESHOLD / 4);
             this.thermometerState = new AnalogSensorState(DAL.DEVICE_ID_THERMOMETER, -20, 50, 10, 30);
             this.thermometerUnitState = TemperatureUnit.Celsius;
