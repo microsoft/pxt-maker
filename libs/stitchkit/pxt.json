@@ -20,6 +20,7 @@
         "jacdac": "file:../jacdac"
     },
     "public": true,
+    "compileServiceVariant": "samd21",
     "features": [
         "uf2",
         "i2c",
