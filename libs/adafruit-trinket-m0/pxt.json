@@ -15,12 +15,14 @@
         "core---samd51": "file:../core---samd51",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
-        "pixel": "file:../pixel"
+        "pixel": "file:../pixel",
+        "jacdac": "file:../jacdac"
     },
     "public": true,
     "compileServiceVariant": "samd21",
     "features": [
         "uf2",
+        "i2c",
         "pixel",
         "pinled",
         "pind0",
@@ -30,6 +32,7 @@
         "buttond0",
         "buttond1",
         "touchd0",
-        "touchd1"
+        "touchd1",
+        "jacdac"
     ]
 }

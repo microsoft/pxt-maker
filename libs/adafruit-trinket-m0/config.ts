@@ -26,6 +26,8 @@ namespace config {
     export const PIN_RX = DAL.PA07;
     export const PIN_TX = DAL.PA06;
 
+    export const PIN_JACK_TX = DAL.PA06; // TX
+
     export const PIN_ACCELEROMETER_INT = DAL.PA02; // D1
     export const PIN_ACCELEROMETER_SCL = DAL.PA09; // SCL
     export const PIN_ACCELEROMETER_SDA = DAL.PA08; // SDA    
