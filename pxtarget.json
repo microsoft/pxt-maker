@@ -175,7 +175,7 @@
                     }
                 },
                 "githubCorePackage": "lancaster-university/codal",
-                "serviceId": "codal2mkr1300",
+                "serviceId": "codal2mkr1300"
             }
         },
         "samd51": {
