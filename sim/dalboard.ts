@@ -147,6 +147,7 @@ namespace pxsim {
         }
 
         receiveMessage(msg: SimulatorMessage) {
+            super.receiveMessage(msg);
             if (!runtime || runtime.dead) return;
 
             switch (msg.type || "") {
