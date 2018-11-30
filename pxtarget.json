@@ -29,6 +29,7 @@
         "libs/storage",
         "libs/serial",
         "libs/jacdac",
+        "libs/jacdac-drivers",
         "libs/datalogger",
         "libs/lightsensor",
         "libs/thermometer",
