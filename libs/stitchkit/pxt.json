@@ -16,7 +16,6 @@
         "buttons": "file:../buttons",
         "touch": "file:../touch",
         "light": "file:../light",
-        "music": "file:../music---pwm",
         "jacdac": "file:../jacdac"
     },
     "public": true,
