@@ -269,5 +269,64 @@ declare namespace pins {
     //% blockId=spi_mode block="spi mode %mode" shim=pins::spiMode
     function spiMode(mode: int32): void;
 }
+declare namespace jacdac {
+
+    /**
+     * Starts the JacDac protocol
+     */
+    //% parts=jacdac shim=jacdac::start
+    function start(): void;
+
+    /**
+     * Starts the JacDac protocol
+     */
+    //% parts=jacdac shim=jacdac::stop
+    function stop(): void;
+
+    /**
+     * Clears any existing bridge
+     */
+    //% parts=jacdac shim=jacdac::clearBridge
+    function clearBridge(): void;
+
+    /**
+    Internal
+     */
+    //% parts=jacdac shim=jacdac::__internalAddDriver
+    function __internalAddDriver(driverType: int32, driverClass: int32, methods: MethodCollection, controlData: Buffer): JacDacDriverStatus;
+
+    /**
+     * Internal
+     */
+    //% parts=jacdac shim=jacdac::__internalSendPacket
+    function __internalSendPacket(buf: Buffer, deviceAddress: int32): int32;
+}
+
+
+declare interface JacDacDriverStatus {
+    /**
+     * Returns the JDDevice instnace
+     */
+    //% property shim=JacDacDriverStatusMethods::device
+    device: Buffer;
+
+    /** Check if driver is connected. */
+    //% property shim=JacDacDriverStatusMethods::isConnected
+    isConnected: boolean;
+
+    /** Get device id for events. */
+    //% property shim=JacDacDriverStatusMethods::id
+    id: uint32;
+
+    /** If paired, paired instance address */
+    //% property shim=JacDacDriverStatusMethods::isPairedInstanceAddress
+    isPairedInstanceAddress(address: uint8): boolean;
+
+    /**
+     * Set driver as bridge
+     */
+    //% shim=JacDacDriverStatusMethods::setBridge
+    setBridge(): void;
+}
 
 // Auto-generated. Do not edit. Really.
