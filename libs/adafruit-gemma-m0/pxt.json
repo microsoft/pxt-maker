@@ -12,12 +12,13 @@
     ],
     "core": true,
     "dependencies": {
-        "core": "file:../core",
+        "core---samd51": "file:../core---samd51",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
-        "music": "file:../music---pwm"
+        "music---pwm": "file:../music---pwm"
     },
     "public": true,
+    "compileServiceVariant": "samd21",
     "features": [
         "uf2",
         "pind0",

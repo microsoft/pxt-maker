@@ -16,7 +16,7 @@
         "buttons": "file:../buttons",
         "touch": "file:../touch",
         "light": "file:../light",
-        "music": "file:../music---pwm",
+        "music---pwm": "file:../music---pwm",
         "jacdac": "file:../jacdac"
     },
     "public": true,
@@ -29,6 +29,7 @@
         "pind1",
         "buttond0",
         "buttond1",
-        "jacdac"
+        "jacdac",
+        "light"
     ]
 }

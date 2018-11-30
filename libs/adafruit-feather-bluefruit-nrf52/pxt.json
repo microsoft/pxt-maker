@@ -15,7 +15,7 @@
     "dependencies": {
         "core---nrf52832": "file:../core---nrf52832",
         "buttons": "file:../buttons",
-        "music": "file:../music---pwm"
+        "music---pwm": "file:../music---pwm"
     },
     "public": true,
     "features": [
