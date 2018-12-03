@@ -1,6 +1,7 @@
 // Auto-generated. Do not edit.
 declare const enum DAL {
     // /libraries/codal-core/inc/JACDAC/JACDAC.h
+    JD_VERSION = 2,
     JD_SERIAL_MAX_BUFFERS = 10,
     JD_SERIAL_RECEIVING = 2,
     JD_SERIAL_TRANSMITTING = 4,
@@ -10,6 +11,8 @@ declare const enum DAL {
     JD_SERIAL_EVT_BUS_ERROR = 2,
     JD_SERIAL_EVT_DRAIN = 3,
     JD_SERIAL_EVT_RX_TIMEOUT = 4,
+    JD_SERIAL_EVT_BUS_CONNECTED = 5,
+    JD_SERIAL_EVT_BUS_DISCONNECTED = 6,
     JD_SERIAL_HEADER_SIZE = 4,
     JD_SERIAL_DATA_SIZE = 32,
     JD_SERIAL_PACKET_SIZE = 36,
@@ -77,6 +80,7 @@ declare const enum DAL {
     JD_LOGIC_DRIVER_TIMEOUT = 254,
     JD_LOGIC_ADDRESS_ALLOC_TIME = 254,
     JD_LOGIC_DRIVER_CTRLPACKET_TIME = 112,
+    JD_LOGIC_DRIVER_EVT_CHANGED = 2,
     CONTROL_JD_FLAGS_RESERVED = 32768,
     CONTROL_JD_FLAGS_PAIRING_MODE = 16384,
     CONTROL_JD_FLAGS_PAIRABLE = 8192,
@@ -691,6 +695,9 @@ declare const enum DAL {
     REF_TAG_BUFFER = 2,
     REF_TAG_IMAGE = 3,
     REF_TAG_USER = 32,
+    // /pxtapp/accelerometer/axis.h
+    ACC_SYSTEM = 3,
+    ACC_ROTATION = 0,
     // /pxtapp/hf2dbg.h
     HF2DBG_H = 1,
     // /pxtapp/pins.h
@@ -759,6 +766,16 @@ declare const enum DAL {
     CFG_PIN_JACK_BZEN = 63,
     CFG_PIN_JACK_PWREN = 64,
     CFG_PIN_JACK_SND = 65,
+    CFG_PIN_BTNMX_LATCH = 66,
+    CFG_PIN_BTNMX_CLOCK = 67,
+    CFG_PIN_BTNMX_DATA = 68,
+    CFG_PIN_BTN_SOFT_RESET = 69,
+    CFG_ACCELEROMETER_TYPE = 70,
+    ACCELEROMETER_TYPE_LIS3DH = 50,
+    ACCELEROMETER_TYPE_MMA8453 = 56,
+    ACCELEROMETER_TYPE_FXOS8700 = 60,
+    ACCELEROMETER_TYPE_MMA8653 = 58,
+    ACCELEROMETER_TYPE_MSA300 = 76,
     CFG_PIN_A0 = 100,
     CFG_PIN_A1 = 101,
     CFG_PIN_A2 = 102,
@@ -803,9 +820,11 @@ declare const enum DAL {
     BUTTON_ACTIVE_LOW_PULL_UP = 32,
     BUTTON_ACTIVE_LOW_PULL_NONE = 48,
     // /pxtapp/platform.h
+    PAGE_SIZE = 512,
     DEV_NUM_PINS = 64,
-    PAGE_SIZE = 256,
-    IMAGE_BITS = 1,
+    PXT_BOOTLOADER_CFG_MAGIC = 3191854542,
+    PXT_74HC165 = 1,
+    IMAGE_BITS = 4,
     PA00 = 0,
     PA01 = 1,
     PA02 = 2,
@@ -876,7 +895,6 @@ declare const enum DAL {
     DEVICE_ID_FIRST_BUTTON = 4000,
     DEVICE_ID_FIRST_TOUCHBUTTON = 4100,
     // /pxtapp/pxtbase.h
-    PXT_VTABLE_SHIFT = 2,
     PXT_REFCNT_FLASH = 65534,
     VTABLE_MAGIC = 249,
     Undefined = 0,
@@ -913,6 +931,11 @@ declare const enum DAL {
     GC = 0,
     // /pxtapp/pxtconfig.h
     PXT_GC = 1,
+    // /pxtapp/thermometer/target_temperature.h
+    TEMPERATURE_NOMINAL_VALUE = 25,
+    TEMPERATURE_NOMINAL_READING = 10000,
+    TEMPERATURE_BETA = 3380,
+    TEMPERATURE_SERIES_RESISTOR = 10000,
     // /pxtapp/uf2hid.h
     UF2_HID_H = 1,
 }
