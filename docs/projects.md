@@ -15,7 +15,7 @@
     {
         "name": "Actuators",
         "url": "/projects/actuators"
-    }
+    },
     {
         "name": "HID",
         "url": "/projects/hid"
