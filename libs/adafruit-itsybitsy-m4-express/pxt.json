@@ -16,5 +16,8 @@
         "core---samd51": "file:../core---samd51",
         "buttons": "file:../buttons"
     },
-    "public": true
+    "public": true,
+    "dalDTS": {
+        "corePackage": "../core---samd51"
+    }
 }
