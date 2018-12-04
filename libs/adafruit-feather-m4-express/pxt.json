@@ -17,6 +17,9 @@
         "buttons": "file:../buttons"
         },
     "public": true,
+    "dalDTS": {
+        "corePackage": "../core---samd51"
+    },
     "features": [
         "uf2"
     ]

@@ -20,6 +20,9 @@
         "controller": "file:../controller",
         "buttons": "file:../buttons"
     },
+    "dalDTS": {
+        "corePackage": "../core---stm32f401re"
+    },
     "palette": [
         "#000000",
         "#ffffff",
