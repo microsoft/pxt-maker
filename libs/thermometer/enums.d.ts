@@ -3,9 +3,9 @@
 
     declare const enum TemperatureCondition {
     //% block="hot"
-    Hot = 2,  // ANALOG_THRESHOLD_HIGH
+    Hot = 2,  // SENSOR_THRESHOLD_HIGH
     //% block="cold"
-    Cold = 1,  // ANALOG_THRESHOLD_LOW
+    Cold = 1,  // SENSOR_THRESHOLD_LOW
     }
 
 
