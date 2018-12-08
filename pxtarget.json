@@ -124,7 +124,7 @@
             "branch": "v1.5.6",
             "type": "git",
             "branches": {
-                "https://github.com/lancaster-university/codal-core": "ec620ab3ad9971c5b57259fa91376331c682f1ca"
+                "https://github.com/lancaster-university/codal-core": "5bfe583b1982a55d59e09dd0217155e6b7b5898c"
             }
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
