@@ -217,7 +217,7 @@
                 "vtableShift": 3,
                 "useUF2": false,
                 "webUSB": false,
-                "gc": false
+                "gc": true
             },
             "compileService": {
                 "codalTarget": {
