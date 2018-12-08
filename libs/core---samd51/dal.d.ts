@@ -1,7 +1,7 @@
 // Auto-generated. Do not edit.
 declare const enum DAL {
     // /libraries/codal-core/inc/JACDAC/JACDAC.h
-    JD_VERSION = 2,
+    JD_VERSION = 3,
     JD_SERIAL_MAX_BUFFERS = 10,
     JD_SERIAL_RECEIVING = 2,
     JD_SERIAL_TRANSMITTING = 4,
@@ -695,9 +695,7 @@ declare const enum DAL {
     REF_TAG_BUFFER = 2,
     REF_TAG_IMAGE = 3,
     REF_TAG_USER = 32,
-    // /pxtapp/hf2dbg.h
-    HF2DBG_H = 1,
-    // /pxtapp/pins.h
+    // /pxtapp/configkeys.h
     CFG_PIN_ACCELEROMETER_INT = 1,
     CFG_PIN_ACCELEROMETER_SCL = 2,
     CFG_PIN_ACCELEROMETER_SDA = 3,
@@ -763,6 +761,8 @@ declare const enum DAL {
     CFG_PIN_JACK_BZEN = 63,
     CFG_PIN_JACK_PWREN = 64,
     CFG_PIN_JACK_SND = 65,
+    CFG_PIN_JACK_BUSLED = 66,
+    CFG_PIN_JACK_COMMLED = 67,
     CFG_PIN_BTNMX_LATCH = 66,
     CFG_PIN_BTNMX_CLOCK = 67,
     CFG_PIN_BTNMX_DATA = 68,
@@ -810,6 +810,12 @@ declare const enum DAL {
     CFG_DEFAULT_BUTTON_MODE = 202,
     CFG_SWD_ENABLED = 203,
     CFG_FLASH_BYTES = 204,
+    CFG_RAM_BYTES = 205,
+    CFG_SYSTEM_HEAP_BYTES = 206,
+    CFG_LOW_MEM_SIMULATION_KB = 207,
+    // /pxtapp/hf2dbg.h
+    HF2DBG_H = 1,
+    // /pxtapp/pins.h
     BUTTON_ACTIVE_HIGH_PULL_DOWN = 17,
     BUTTON_ACTIVE_HIGH_PULL_UP = 33,
     BUTTON_ACTIVE_HIGH_PULL_NONE = 49,

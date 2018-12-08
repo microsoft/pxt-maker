@@ -24,7 +24,8 @@ declare namespace music {
     //% parts="speaker"
     //% volume.min=0 volume.max=256
     //% help=music/set-volume
-    //% weight=70 shim=music::setVolume
+    //% weight=70
+    //% group="Volume" shim=music::setVolume
     function setVolume(volume: int32): void;
 
     /**
@@ -36,7 +37,8 @@ declare namespace music {
     //% blockId=music_play_note block="play tone|at %note=device_note|for %duration=device_beat"
     //% parts="headphone" async
     //% blockNamespace=music
-    //% weight=76 blockGap=8 shim=music::playTone
+    //% weight=76 blockGap=8
+    //% group="Tone" shim=music::playTone
     function playTone(frequency: int32, ms: int32): void;
 }
 
