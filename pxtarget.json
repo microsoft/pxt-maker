@@ -298,7 +298,7 @@
                 "codalTarget": {
                     "name": "codal-circuit-playground",
                     "url": "https://github.com/lancaster-university/codal-circuit-playground",
-                    "branch": "v1.5.4-samd-peripherals.4",
+                    "branch": "v1.5.4-samd-peripherals.5",
                     "type": "git"
                 },
                 "dockerImage": "pext/yotta:latest",
