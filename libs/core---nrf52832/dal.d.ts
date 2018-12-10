@@ -274,6 +274,13 @@ declare const enum DAL {
     // /libraries/codal-core/inc/driver-models/Gyroscope.h
     GYROSCOPE_IMU_DATA_VALID = 2,
     GYROSCOPE_EVT_DATA_UPDATE = 1,
+    // /libraries/codal-core/inc/driver-models/LowLevelTimer.h
+    TimerModeTimer = 0,
+    TimerModeCounter = 1,
+    BitMode8 = 0,
+    BitMode16 = 1,
+    BitMode24 = 2,
+    BitMode32 = 3,
     // /libraries/codal-core/inc/driver-models/Pin.h
     IO_STATUS_DIGITAL_IN = 1,
     IO_STATUS_DIGITAL_OUT = 2,
