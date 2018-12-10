@@ -19,6 +19,7 @@
         "accelerometer": "file:../accelerometer",
         "lightsensor": "file:../lightsensor",
         "thermometer": "file:../thermometer",
+        "microphone": "file:../microphone",
         "jacdac": "file:../jacdac"
     },
     "compileServiceVariant": "samd21",
@@ -33,6 +34,8 @@
         "toucha0",
         "toucha1",
         "storage",
+        "serial",
+        "microphone",
         "jacdac"
     ]
 }
