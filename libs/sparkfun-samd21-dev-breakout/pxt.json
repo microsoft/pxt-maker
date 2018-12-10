@@ -20,6 +20,7 @@
         "music": "file:../music"
     },
     "public": true,
+    "compileServiceVariant": "samd21",
     "features": [
         "pinled",
         "pind0",

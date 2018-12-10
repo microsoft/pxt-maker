@@ -17,6 +17,7 @@
     },
     "core": true,
     "public": true,
+    "compileServiceVariant": "samd21",
     "features": [
         "uf2",
         "pinled",

@@ -19,6 +19,7 @@
         "storage": "file:../storage"
     },
     "public": true,
+    "compileServiceVariant": "samd21",
     "weight": 100,
     "features": [
         "uf2",

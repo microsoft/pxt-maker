@@ -17,6 +17,7 @@
         "touch": "file:../touch"
     },
     "public": true,
+    "compileServiceVariant": "samd21",
     "features": [
         "pinled",
         "pind0",

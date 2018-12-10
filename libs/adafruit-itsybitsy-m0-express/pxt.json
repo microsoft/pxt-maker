@@ -20,6 +20,7 @@
         "storage": "file:../storage"
     },
     "public": true,
+    "compileServiceVariant": "samd21",
     "features": [
         "uf2",
         "pixel",
