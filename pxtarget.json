@@ -346,7 +346,7 @@
                     "branch": "v1.5.4-samd-peripherals.3",
                     "type": "git",
                     "branches": {
-                        "https://github.com/lancaster-university/codal-samd": "bbaae942d3c4770c1fd46da9f6987212d94f0eca"
+                        "https://github.com/lancaster-university/codal-samd": "04b5dc475fbecb31bde53534a9143c2ee8f2dcd1"
                     }
                 },
                 "dockerImage": "pext/yotta:latest",
