@@ -141,51 +141,6 @@
         "dockerImage": "pext/yotta:latest"
     },
     "variants": {
-        "mkr1300": {
-            "serial": {
-                "useHF2": false
-            },
-            "compile": {
-                "isNative": true,
-                "useUF2": true,
-                "webUSB": false,
-                "gc": true,
-                "hasHex": true,
-                "deployDrives": ".*",
-                "deployFileMarker": "INFO_UF2.TXT",
-                "driveName": "DRIVE",
-                "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
-                "flashChecksumAddr": 8372,
-                "flashCodeAlign": 256,
-                "upgrades": [
-                    {
-                        "type": "missingPackage",
-                        "map": {
-                            "serial\\s*\\.": "serial"
-                        }
-                    }
-                ]
-            },
-            "compileService": {
-                "buildEngine": "codal",
-                "codalTarget": {
-                    "name": "codal-mkr1300",
-                    "url": "https://github.com/ElectronicCats/codal-mkr1300",
-                    "branch": "v0.0.9",
-                    "type": "git"
-                },
-                "codalBinary": "MKR1300",
-                "yottaConfig": {
-                    "pxt": {
-                        "board": {
-                            "id": "BOARD_ID_MKR1300"
-                        }
-                    }
-                },
-                "githubCorePackage": "lancaster-university/codal",
-                "serviceId": "codal2mkr1300"
-            }
-        },
         "samd51": {
             "compile": {
                 "hasHex": true,

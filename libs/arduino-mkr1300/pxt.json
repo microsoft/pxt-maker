@@ -11,11 +11,12 @@
         "boardwireframe.svg"
     ],
     "core": true,
-    "compileServiceVariant": "mkr1300",
+    "compileServiceVariant": "samd21",
     "dependencies": {
-        "core": "file:../core",
+        "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
-        "touch": "file:../touch"
+        "touch": "file:../touch",
+        "serial": "file:../serial"
     },
     "public": true,
     "features": [
