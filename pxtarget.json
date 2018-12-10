@@ -124,7 +124,7 @@
             "branch": "v1.5.6",
             "type": "git",
             "branches": {
-                "https://github.com/lancaster-university/codal-core": "abe358a6c1fe951babc418e5f52415e3810d8586"
+                "https://github.com/lancaster-university/codal-core": "f205e66c9894d70ce8d49137b5715d8f928a1701"
             }
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
@@ -298,11 +298,8 @@
                 "codalTarget": {
                     "name": "codal-circuit-playground",
                     "url": "https://github.com/lancaster-university/codal-circuit-playground",
-                    "branch": "v1.5.4-samd-peripherals.3",
-                    "type": "git",
-                    "branches": {
-                        "https://github.com/lancaster-university/codal-samd": "04b5dc475fbecb31bde53534a9143c2ee8f2dcd1"
-                    }
+                    "branch": "v1.5.4-samd-peripherals.4",
+                    "type": "git"
                 },
                 "dockerImage": "pext/yotta:latest",
                 "codalBinary": "CIRCUIT_PLAYGROUND"
