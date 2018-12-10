@@ -10,7 +10,7 @@
         "board.svg"
     ],
     "dependencies": {
-        "core---samd51": "file:../core---samd51",
+        "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
         "music": "file:../music"

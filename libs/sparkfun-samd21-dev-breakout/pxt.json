@@ -15,7 +15,7 @@
         "test.ts"
     ],
     "dependencies": {
-        "core---samd51": "file:../core---samd51",
+        "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "music": "file:../music",
         "serial": "file:../serial",
