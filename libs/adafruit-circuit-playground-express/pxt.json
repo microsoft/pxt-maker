@@ -20,6 +20,7 @@
         "lightsensor": "file:../lightsensor",
         "thermometer": "file:../thermometer",
         "microphone": "file:../microphone",
+        "serial": "file:../serial",
         "jacdac": "file:../jacdac"
     },
     "compileServiceVariant": "samd21",

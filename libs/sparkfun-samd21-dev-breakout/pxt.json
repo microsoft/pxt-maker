@@ -17,7 +17,9 @@
     "dependencies": {
         "core---samd51": "file:../core---samd51",
         "buttons": "file:../buttons",
-        "music": "file:../music"
+        "music": "file:../music",
+        "serial": "file:../serial",
+        "jacdac": "file:../jacdac"
     },
     "public": true,
     "compileServiceVariant": "samd21",
