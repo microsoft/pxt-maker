@@ -11,7 +11,7 @@
         "boardwireframe.svg"
     ],
     "dependencies": {
-        "core---samd51": "file:../core---samd51",
+        "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "light": "file:../light",
         "switch": "file:../switch",
@@ -19,6 +19,8 @@
         "accelerometer": "file:../accelerometer",
         "lightsensor": "file:../lightsensor",
         "thermometer": "file:../thermometer",
+        "microphone": "file:../microphone",
+        "serial": "file:../serial",
         "jacdac": "file:../jacdac"
     },
     "compileServiceVariant": "samd21",
@@ -33,6 +35,8 @@
         "toucha0",
         "toucha1",
         "storage",
+        "serial",
+        "microphone",
         "jacdac"
     ]
 }

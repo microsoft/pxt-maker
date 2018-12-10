@@ -15,11 +15,14 @@
         "test.ts"
     ],
     "dependencies": {
-        "core": "file:../core",
+        "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
-        "music": "file:../music"
+        "music": "file:../music",
+        "serial": "file:../serial",
+        "jacdac": "file:../jacdac"
     },
     "public": true,
+    "compileServiceVariant": "samd21",
     "features": [
         "pinled",
         "pind0",

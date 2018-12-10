@@ -12,14 +12,17 @@
     ],
     "core": true,
     "dependencies": {
-        "core": "file:../core",
+        "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
         "music": "file:../music---pwm",
         "pixel": "file:../pixel",
-        "storage": "file:../storage"
+        "storage": "file:../storage",
+        "serial": "file:../serial",
+        "jacdac": "file:../jacdac"
     },
     "public": true,
+    "compileServiceVariant": "samd21",
     "features": [
         "uf2",
         "pixel",
