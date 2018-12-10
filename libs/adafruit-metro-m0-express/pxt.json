@@ -12,7 +12,7 @@
     ],
     "core": true,
     "dependencies": {
-        "core": "file:../core",
+        "core---samd51": "file:../core---samd51",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
         "pixel": "file:../pixel",
