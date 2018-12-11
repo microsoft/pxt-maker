@@ -15,8 +15,7 @@
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
-        "pixel": "file:../pixel",
-        "jacdac": "file:../jacdac"
+        "pixel": "file:../pixel"
     },
     "public": true,
     "compileServiceVariant": "samd21",
@@ -32,7 +31,6 @@
         "buttond0",
         "buttond1",
         "touchd0",
-        "touchd1",
-        "jacdac"
+        "touchd1"
     ]
 }
