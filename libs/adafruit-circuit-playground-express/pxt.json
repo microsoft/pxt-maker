@@ -14,6 +14,7 @@
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "light": "file:../light",
+        "music": "file:../music",
         "switch": "file:../switch",
         "touch": "file:../touch",
         "accelerometer": "file:../accelerometer",
