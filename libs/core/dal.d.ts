@@ -21,6 +21,7 @@ declare const enum DAL {
     JD_SERIAL_MAX_BAUD = 1000000,
     JD_SERIAL_TX_MAX_BACKOFF = 4000,
     JD_SERIAL_TX_MIN_BACKOFF = 1000,
+    JD_DEVICE_ERROR_MSK = 15,
     Receiving = 0,
     Transmitting = 1,
     High = 2,
