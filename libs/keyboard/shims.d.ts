@@ -10,7 +10,7 @@ declare namespace keyboard {
     function type(text: string): void;
 
     /**
-     * Sends a media key command
+     * Sends a key command
      */
     //% blockId=keyboardStandardKey block="keyboard key %key|%event"
     //% blockGap=8 weight=99 shim=keyboard::key
