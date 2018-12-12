@@ -8,42 +8,74 @@ declare namespace pins {
     const A2: PwmPin;
     //% fixedInstance shim=pxt::getPin(PIN_A3)
     const A3: AnalogInPin;
-
     //% fixedInstance shim=pxt::getPin(PIN_A4)
     const A4: AnalogInPin;
     //% fixedInstance shim=pxt::getPin(PIN_A5)
     const A5: AnalogInPin;
-    
     //% fixedInstance shim=pxt::getPin(PIN_A6)
     const A6: AnalogInPin; // could be PwmPin when mbed fixed
     //% fixedInstance shim=pxt::getPin(PIN_A7)
     const A7: AnalogInPin; // could be PwmPin when mbed fixed
-
     //% fixedInstance shim=pxt::getPin(PIN_A8)
     const A8: AnalogInPin; // could be PwmPin when mbed fixed
     //% fixedInstance shim=pxt::getPin(PIN_A9)
     const A9: AnalogInPin; // could be PwmPin when mbed fixed
+    //% fixedInstance shim=pxt::getPin(PIN_A10)
+    const A10: AnalogInPin; // could be PwmPin when mbed fixed
 
-    // Define aliases, as Digital Pins
+    //% fixedInstance shim=pxt::getPin(PIN_D0)
+    const D0: PwmPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D1)
+    const D1: PwmPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D2)
+    const D2: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D3)
+    const D3: PwmPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D4)
+    const D4: PwmPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D5)
+    const D5: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D6)
+    const D6: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D7)
+    const D7: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D8)
+    const D8: PwmPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D9)
+    const D9: PwmPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D10)
+    const D10: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D11)
+    const D11: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D12)
+    const D12: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPin(PIN_D13)
+    const D13: DigitalInOutPin;
 
-    //% fixedInstance shim=pxt::getPin(SCL)
-    const SCL: DigitalPin;
-    //% fixedInstance shim=pxt::getPin(SDA)
-    const SDA: DigitalPin;
-    //% fixedInstance shim=pxt::getPin(RX)
-    const RX: DigitalPin;
-    //% fixedInstance shim=pxt::getPin(TX)
-    const TX: DigitalPin;
+    //% fixedInstance shim=pxt::getPin(PIN_SCL)
+    const SCL: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPin(PIN_SDA)
+    const SDA: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPin(PIN_RX)
+    const RX: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPin(PIN_TX)
+    const TX: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_MISO)
-    const MISO: DigitalPin;
+    const MISO: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_MOSI)
-    const MOSI: DigitalPin;
+    const MOSI: DigitalInOutPin;
 
     //% fixedInstance shim=pxt::getPin(PIN_D13)
-    const LED: DigitalPin;
+    const LED: DigitalInOutPin;
 }
 
 declare namespace input {
+    /**
+     * Capacitive pin A0
+     */
+    //% block="touch A0" fixedInstance shim=pxt::getTouchButton(PIN_A0)
+    const touchA0: TouchButton;
+    
     /**
      * Capacitive pin A1
      */
