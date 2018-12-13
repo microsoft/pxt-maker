@@ -12,6 +12,7 @@
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
+        "light": "file:../light",
         "touch": "file:../touch",
         "music": "file:../music"
     },
