@@ -20,6 +20,7 @@
     "galleries": {
         "Digital IO": "/projects/digital-io",
         "Analog IO": "/projects/analog-io",
+        "Light": "/projects/light", 
         "Actuators": "/projects/actuators",
         "HID": "/projects/hid",
         "Storage": "/projects/storage"

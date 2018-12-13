@@ -38,6 +38,7 @@
         "storage",
         "serial",
         "microphone",
-        "jacdac"
+        "jacdac",
+        "light"
     ]
 }
