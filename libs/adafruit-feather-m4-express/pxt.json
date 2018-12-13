@@ -14,8 +14,7 @@
     "compileServiceVariant": "samd51",
     "dependencies": {
         "core---samd": "file:../core---samd",
-        "buttons": "file:../buttons",
-        "light": "file:../light"
+        "buttons": "file:../buttons"
     },
     "public": true,
     "dalDTS": {
