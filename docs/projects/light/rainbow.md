@@ -8,3 +8,7 @@ forever(function () {
     strip.showAnimation(light.rainbowAnimation, 2000)
 })
 ```
+
+```package
+light
+```

@@ -8,6 +8,11 @@
         "name": "Rainbow",
         "url": "/projects/light/rainbow",
         "cardType": "example"
+    },
+    {
+        "name": "Range",
+        "url": "/projects/light/range",
+        "cardType": "example"
     }
 ]
 ```
