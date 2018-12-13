@@ -9,6 +9,7 @@
         "url": "/projects/light/rainbow",
         "cardType": "example"
     }
+]
 ```
 
 ```package
