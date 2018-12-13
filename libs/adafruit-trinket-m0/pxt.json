@@ -32,6 +32,8 @@
         "buttond0",
         "buttond1",
         "touchd0",
-        "touchd1"
+        "touchd1",
+        "light",
+        "light"
     ]
 }
