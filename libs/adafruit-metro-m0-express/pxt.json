@@ -14,6 +14,7 @@
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
+        "light": "file:../light",
         "touch": "file:../touch",
         "pixel": "file:../pixel",
         "storage": "file:../storage",
@@ -35,6 +36,7 @@
         "buttond1",
         "toucha0",
         "toucha1",
-        "storage"
+        "storage",
+        "light"
     ]
 }

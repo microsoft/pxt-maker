@@ -15,7 +15,7 @@
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons"
-        },
+    },
     "public": true,
     "dalDTS": {
         "corePackage": "../core---samd"
