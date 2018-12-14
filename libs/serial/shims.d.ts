@@ -5,9 +5,19 @@ declare namespace serial {
      * Read the buffered received data as a string
      */
     //% help=serial/read-string
-    //% blockId=serial_read_buffer block="serial|read string"
-    //% weight=18 shim=serial::readString
+    //% blockId=serial_read_string block="serial|read string"
+    //% weight=18
+    //% group="Read" shim=serial::readString
     function readString(): string;
+
+    /**
+     * Read the buffered received data as a buffer
+     */
+    //% help=serial/read-buffer
+    //% blockId=serial_read_buffer block="serial|read buffer"
+    //% weight=17
+    //% group="Read" shim=serial::readBuffer
+    function readBuffer(): Buffer;
 
     /**
      * Write some text to the serial port.
@@ -15,26 +25,29 @@ declare namespace serial {
     //% help=serial/write-string
     //% weight=87
     //% blockId=serial_writestring block="serial|write string %text"
-    //% blockHidden=1 shim=serial::writeString
+    //% group="Write" shim=serial::writeString
     function writeString(text: string): void;
 
     /**
      * Send a buffer across the serial connection.
      */
     //% help=serial/write-buffer weight=6
-    //% blockId=serial_writebuffer block="serial|write buffer %buffer" shim=serial::writeBuffer
+    //% blockId=serial_writebuffer block="serial|write buffer %buffer"
+    //% group="Write" shim=serial::writeBuffer
     function writeBuffer(buffer: Buffer): void;
 
     /**
     Sends the console message through the TX, RX pins
      **/
-    //% blockId=serialsendtoconsole block="serial attach to console" shim=serial::attachToConsole
+    //% blockId=serialsendtoconsole block="serial attach to console"
+    //% group="Configuration" shim=serial::attachToConsole
     function attachToConsole(): void;
 
     /**
     Set the baud rate of the serial port
      */
-    //% help=serial/set-baud-rate shim=serial::setBaudRate
+    //% help=serial/set-baud-rate
+    //% group="Configuration" shim=serial::setBaudRate
     function setBaudRate(rate: BaudRate): void;
 
     /**
@@ -50,8 +63,19 @@ declare namespace serial {
     //% tx.fieldOptions.tooltips="false"
     //% rx.fieldEditor="gridpicker" rx.fieldOptions.columns=3
     //% rx.fieldOptions.tooltips="false"
-    //% blockGap=8 inlineInputMode=inline shim=serial::redirect
+    //% blockGap=8 inlineInputMode=inline
+    //% group="Configuration" shim=serial::redirect
     function redirect(tx: DigitalInOutPin, rx: DigitalInOutPin, rate: BaudRate): void;
+
+    /**
+     * Registers code when serial events happen
+     **/
+    //% weight=9
+    //% help=serial/on-event
+    //% blockId=serial_onevent block="serial on %event"
+    //% blockGap=8
+    //% group="Events" shim=serial::onEvent
+    function onEvent(event: SerialEvent, handler: () => void): void;
 }
 
 // Auto-generated. Do not edit. Really.

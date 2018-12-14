@@ -28,4 +28,10 @@
     BaudRate300 = 300,
     }
 
+
+    declare const enum SerialEvent {
+    //% block="data received"
+    DataReceived = 3,  // CODAL_SERIAL_EVT_RX_FULL
+    }
+
 // Auto-generated. Do not edit. Really.
