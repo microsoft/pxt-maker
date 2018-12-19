@@ -23,6 +23,7 @@
     "compileServiceVariant": "samd21",
     "features": [
         "uf2",
+        "pinled",
         "pind0",
         "pind1",
         "pina0",
@@ -31,6 +32,7 @@
         "buttond1",
         "touchd0",
         "touchd1",
-        "light"
+        "light",
+        "jacdac"
     ]
 }
