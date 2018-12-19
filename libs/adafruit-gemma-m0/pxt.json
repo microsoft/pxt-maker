@@ -23,7 +23,6 @@
     "compileServiceVariant": "samd21",
     "features": [
         "uf2",
-        "pinled",
         "pind0",
         "pind1",
         "pina0",
