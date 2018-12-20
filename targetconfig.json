@@ -23,7 +23,8 @@
         "Light": "/projects/light", 
         "Actuators": "/projects/actuators",
         "HID": "/projects/hid",
-        "Storage": "/projects/storage"
+        "Storage": "/projects/storage",
+        "JacDac (beta)": "/projects/jacdac"
     },
     "firmwareUrls": {
         "adafruit-circuit-playground-express": "https://learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-uf2-bootloader-details#updating-the-bootloader",
