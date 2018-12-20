@@ -178,7 +178,7 @@
         "SCL": "SCL"
     },
     "groundPins": ["GND"],
-    "threeVoltPins": ["3.3V"],
+    "threeVoltPins": ["3V"],
     "onboardComponents": [],
     "marginWhenBreadboarding": [
         0,
