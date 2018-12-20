@@ -14,7 +14,8 @@
         "buttons": "file:../buttons",
         "light": "file:../light",
         "touch": "file:../touch",
-        "music": "file:../music"
+        "music": "file:../music",
+        "jacdac": "file:../jacdac"
     },
     "core": true,
     "public": true,
@@ -26,6 +27,7 @@
         "pina1",
         "toucha0",
         "toucha1",
-        "light"
+        "light",
+        "jacdac"
     ]
 }

@@ -72,7 +72,8 @@
         "P14": "SS/A2",
         "P15": "SCK/A3",
         "P16": "~MISO/A4",
-        "P19": "~MOSI/A5"
+        "P19": "~MOSI/A5",
+        "JACK_TX": "A3"
     },
     "groundPins": ["GND"],
     "threeVoltPins": ["VCC"],

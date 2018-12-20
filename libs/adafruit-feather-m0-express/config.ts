@@ -38,6 +38,9 @@ namespace config {
     export const PIN_FLASH_MOSI = DAL.PA08;
     export const PIN_FLASH_SCK = DAL.PA09;
     export const PIN_FLASH_CS = DAL.PA13;
+
+    export const PIN_JACK_TX = DAL.PA04; // A3
+    export const PIN_JACK_COMMLED = DAL.PA27; // TXLEX
 }
 
 /*

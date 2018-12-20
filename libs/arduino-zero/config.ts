@@ -35,6 +35,9 @@ namespace config {
     export const PIN_ACCELEROMETER_INT = DAL.PA10; // D1
     export const PIN_ACCELEROMETER_SCL = DAL.PA23; // SCL
     export const PIN_ACCELEROMETER_SDA = DAL.PA22; // SDA
+
+    export const PIN_JACK_TX = DAL.PA04; // A3
+    export const PIN_JACK_COMMLED = DAL.PA27; // TXLED
 }
 
 /*

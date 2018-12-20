@@ -121,7 +121,8 @@
         "D2": "IO2",
         "D3": "IO3",
         "SDA2": "SDA2",
-        "SCL2": "SCL2"
+        "SCL2": "SCL2",
+        "JACK_TX": "IO1"
     },
     "i2cPins": {
         "SDA": "SDA",
