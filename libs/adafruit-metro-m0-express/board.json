@@ -262,6 +262,7 @@
     "D2": "D2",
     "D1": "D1",
     "D0": "D0",
+    "JACK_TX": "A3",
     "LED": "LED",
     "NEOPIXEL": "NEOPIXEL",
     "3V3": "3V3",

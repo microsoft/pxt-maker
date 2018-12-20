@@ -42,7 +42,7 @@ namespace config {
     export const PIN_FLASH_SCK = DAL.PB23;
     export const PIN_FLASH_CS = DAL.PA13;
 
-    export const PIN_JACK_TX = DAL.PA11; // D0
+    export const PIN_JACK_TX = DAL.PA04; // A3
     export const PIN_JACK_COMMLED = DAL.PA27; // TXLED
 }
 
