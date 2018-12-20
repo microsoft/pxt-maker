@@ -1,4 +1,5 @@
 namespace config {
+    // https://github.com/ElectronicCats/MeowMeow/blob/master/hardware/Meow_Meow_schematic.pdf
     export const PIN_A0 = DAL.PA02;
     export const PIN_A1 = DAL.PA03;
     export const PIN_A2 = DAL.PA04;
@@ -35,4 +36,6 @@ namespace config {
     export const PIN_MISO = DAL.PA12;
     export const PIN_MOSI = DAL.PA14;
     export const PIN_SCK = DAL.PA15;
+
+    export const PIN_JACK_TX = DAL.PB02; // A6
 }

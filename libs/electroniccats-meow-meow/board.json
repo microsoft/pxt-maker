@@ -164,7 +164,9 @@
         "P6": "SDA",
         "P7": "SCL",
         "P11": "D5",
-        "P12": "D6"
+        "P12": "D6",
+
+        "JACK_TX": "A6"
     },
     "spiPins": {
         "MOSI": "MOSI",

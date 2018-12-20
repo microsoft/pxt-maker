@@ -30,4 +30,7 @@ namespace config {
     export const PIN_SDA = DAL.PA22;
     export const PIN_RXLED = DAL.PB03;
     export const PIN_TXLED = DAL.PA27;
+
+    export const PIN_JACK_TX = DAL.PA04; // A3
+    export const PIN_JACK_COMMLED = DAL.PA27; // TXLED
 }
