@@ -1,7 +1,7 @@
 // Auto-generated. Do not edit.
 declare const enum DAL {
     // /libraries/codal-core/inc/JACDAC/JACDAC.h
-    JD_VERSION = 2,
+    JD_VERSION = 5,
     JD_SERIAL_MAX_BUFFERS = 10,
     JD_SERIAL_RECEIVING = 2,
     JD_SERIAL_TRANSMITTING = 4,
@@ -21,7 +21,6 @@ declare const enum DAL {
     JD_SERIAL_MAX_BAUD = 1000000,
     JD_SERIAL_TX_MAX_BACKOFF = 4000,
     JD_SERIAL_TX_MIN_BACKOFF = 1000,
-    JD_DEVICE_ERROR_MSK = 15,
     Receiving = 0,
     Transmitting = 1,
     High = 2,
@@ -65,6 +64,7 @@ declare const enum DAL {
     JD_DRIVER_EVT_UNPAIRED = 65523,
     JD_DRIVER_EVT_PAIR_REJECTED = 65524,
     JD_DRIVER_EVT_PAIRING_RESPONSE = 65525,
+    JD_DRIVER_EVT_ERROR = 65526,
     JD_DEVICE_FLAGS_LOCAL = 32768,
     JD_DEVICE_FLAGS_REMOTE = 16384,
     JD_DEVICE_FLAGS_BROADCAST = 8192,
@@ -76,7 +76,7 @@ declare const enum DAL {
     JD_DEVICE_FLAGS_INITIALISED = 128,
     JD_DEVICE_FLAGS_INITIALISING = 64,
     JD_DEVICE_FLAGS_CP_SEEN = 32,
-    JD_DEVICE_FLAGS_BROADCAST_MAP = 16,
+    JD_DEVICE_ERROR_MSK = 15,
     JD_LOGIC_DRIVER_MAX_FILTERS = 20,
     JD_LOGIC_DRIVER_TIMEOUT = 254,
     JD_LOGIC_ADDRESS_ALLOC_TIME = 254,
@@ -92,14 +92,25 @@ declare const enum DAL {
     CONTROL_JD_FLAGS_ACK = 256,
     CONTROL_JD_TYPE_HELLO = 1,
     CONTROL_JD_TYPE_PAIRING_REQUEST = 2,
+    CONTROL_JD_TYPE_ERROR = 3,
+    CONTROL_JD_TYPE_PANIC = 255,
     JD_PROTOCOL_EVT_SEND_CONTROL = 1,
     JD_PROTOCOL_DRIVER_ARRAY_SIZE = 20,
+    CONTROL_PACKET_ERROR_NAME_LENGTH = 6,
     VirtualDriver = 16384,
     PairedDriver = 12288,
     HostDriver = 32768,
     PairableHostDriver = 34816,
     BroadcastDriver = 40960,
     SnifferDriver = 24576,
+    DRIVER_OK = 0,
+    DRIVER_CALIBRATION_IN_PROGRESS = 1,
+    DRIVER_CALIBRATION_REQUIRED = 2,
+    DRIVER_NO_RESOURCES = 3,
+    DRIVER_BUSY = 4,
+    DRIVER_COMMS_ERROR = 5,
+    DRIVER_INVALID_STATE = 6,
+    DRIVER_PERIPHERAL_MALFUNCTION = 7,
     // /libraries/codal-core/inc/JACDAC/JDReliabilityTester.h
     RELIABILITY_TEST_FINISHED = 7,
     RELIABILITY_STATUS_TEST_IN_PROGRESS = 2,
@@ -262,6 +273,13 @@ declare const enum DAL {
     // /libraries/codal-core/inc/driver-models/Gyroscope.h
     GYROSCOPE_IMU_DATA_VALID = 2,
     GYROSCOPE_EVT_DATA_UPDATE = 1,
+    // /libraries/codal-core/inc/driver-models/LowLevelTimer.h
+    TimerModeTimer = 0,
+    TimerModeCounter = 1,
+    BitMode8 = 0,
+    BitMode16 = 1,
+    BitMode24 = 2,
+    BitMode32 = 3,
     // /libraries/codal-core/inc/driver-models/Pin.h
     IO_STATUS_DIGITAL_IN = 1,
     IO_STATUS_DIGITAL_OUT = 2,
@@ -696,12 +714,7 @@ declare const enum DAL {
     REF_TAG_BUFFER = 2,
     REF_TAG_IMAGE = 3,
     REF_TAG_USER = 32,
-    // /pxtapp/accelerometer/axis.h
-    ACC_SYSTEM = 3,
-    ACC_ROTATION = 0,
-    // /pxtapp/hf2dbg.h
-    HF2DBG_H = 1,
-    // /pxtapp/pins.h
+    // /pxtapp/configkeys.h
     CFG_PIN_ACCELEROMETER_INT = 1,
     CFG_PIN_ACCELEROMETER_SCL = 2,
     CFG_PIN_ACCELEROMETER_SDA = 3,
@@ -767,6 +780,8 @@ declare const enum DAL {
     CFG_PIN_JACK_BZEN = 63,
     CFG_PIN_JACK_PWREN = 64,
     CFG_PIN_JACK_SND = 65,
+    CFG_PIN_JACK_BUSLED = 66,
+    CFG_PIN_JACK_COMMLED = 67,
     CFG_PIN_BTNMX_LATCH = 66,
     CFG_PIN_BTNMX_CLOCK = 67,
     CFG_PIN_BTNMX_DATA = 68,
@@ -814,6 +829,12 @@ declare const enum DAL {
     CFG_DEFAULT_BUTTON_MODE = 202,
     CFG_SWD_ENABLED = 203,
     CFG_FLASH_BYTES = 204,
+    CFG_RAM_BYTES = 205,
+    CFG_SYSTEM_HEAP_BYTES = 206,
+    CFG_LOW_MEM_SIMULATION_KB = 207,
+    // /pxtapp/hf2dbg.h
+    HF2DBG_H = 1,
+    // /pxtapp/pins.h
     BUTTON_ACTIVE_HIGH_PULL_DOWN = 17,
     BUTTON_ACTIVE_HIGH_PULL_UP = 33,
     BUTTON_ACTIVE_HIGH_PULL_NONE = 49,
@@ -932,11 +953,6 @@ declare const enum DAL {
     GC = 0,
     // /pxtapp/pxtconfig.h
     PXT_GC = 1,
-    // /pxtapp/thermometer/target_temperature.h
-    TEMPERATURE_NOMINAL_VALUE = 25,
-    TEMPERATURE_NOMINAL_READING = 10000,
-    TEMPERATURE_BETA = 3380,
-    TEMPERATURE_SERIES_RESISTOR = 10000,
     // /pxtapp/uf2hid.h
     UF2_HID_H = 1,
 }
