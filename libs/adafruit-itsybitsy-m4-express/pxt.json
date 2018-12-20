@@ -20,5 +20,9 @@
     "public": true,
     "dalDTS": {
         "corePackage": "../core---samd"
-    }
+    },
+    "features": [
+        "uf2",
+        "jacdac"
+    ]
 }
