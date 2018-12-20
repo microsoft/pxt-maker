@@ -36,4 +36,7 @@ namespace config {
     export const PIN_FLASH_MOSI = DAL.PA08; // QSPI_DATA[0]
     export const PIN_FLASH_SCK = DAL.PB10; // QSPI_SCK
     export const PIN_FLASH_CS = DAL.PB11; // QSPI_CS
+
+    export const PIN_JACK_TX = DAL.PA04; // A3
+    export const PIN_JACK_COMMLED = DAL.PA23; // LED
 }

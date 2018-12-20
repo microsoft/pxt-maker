@@ -1,5 +1,11 @@
 # JACDAC Examples
 
+## ~ hint
+
+CONSTRUCTION ZONE: JACDAC is still under development and subject to change. Your feedback is welcome at [![Community Discord](https://img.shields.io/discord/448979533891371018.svg)](https://aka.ms/makecodecommunity).
+
+## ~
+
 ## Examples
 
 ```codecard
