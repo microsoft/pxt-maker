@@ -39,6 +39,6 @@ namespace config {
     export const PIN_FLASH_SCK = DAL.PB10;
     export const PIN_FLASH_CS = DAL.PB11;
 
-    export const PIN_JACK_TX = DAL.PB08; // A4
+    export const PIN_JACK_TX = DAL.PA04; // A3
     export const PIN_JACK_COMMLED = DAL.PA27; // TXLED  
 }
