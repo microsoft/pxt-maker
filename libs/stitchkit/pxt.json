@@ -1,6 +1,6 @@
 {
     "name": "stitchkit",
-    "description": "Support for StitchKit - beta",
+    "description": "Support for StitchKit",
     "files": [
         "README.md",
         "device.d.ts",
