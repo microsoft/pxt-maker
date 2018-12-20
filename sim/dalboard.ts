@@ -25,7 +25,8 @@ namespace pxsim {
         JacDacBoard,
         LightSensorBoard,
         TemperatureBoard,
-        MicrophoneBoard {
+        MicrophoneBoard,
+        ScreenBoard {
         // state & update logic for component services
         view: SVGElement;
         edgeConnectorState: EdgeConnectorState;
@@ -42,6 +43,7 @@ namespace pxsim {
         thermometerState: AnalogSensorState;
         thermometerUnitState: TemperatureUnit;
         microphoneState: AnalogSensorState;
+        screenState: ScreenState;
 
         constructor(public boardDefinition: BoardDefinition) {
             super();
@@ -125,8 +127,8 @@ namespace pxsim {
                 servos
             });
             this.builtinParts["microservo"] = this.edgeConnectorState;
-
             this.builtinParts["accelerometer"] = this.accelerometerState = new AccelerometerState(runtime);;
+            this.builtinParts["screen"] = this.screenState = new ScreenState([], 160, 120);
 
             this.builtinVisuals["buttons"] = () => new visuals.ButtonView();
             this.builtinVisuals["microservo"] = () => new visuals.MicroServoView();
@@ -147,6 +149,8 @@ namespace pxsim {
 
             this.builtinVisuals["photocell"] = () => new visuals.PhotoCellView(parsePinString);
             this.builtinPartVisuals["photocell"] = (xy: visuals.Coord) => visuals.mkPhotoCellPart(xy);
+
+            this.builtinVisuals["screen"] = () => new visuals.ScreenView();
         }
 
         receiveMessage(msg: SimulatorMessage) {
