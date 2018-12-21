@@ -12,4 +12,12 @@ namespace controller {
     export const A = new Button(5, input.button1.id(), DAL.DEVICE_BUTTON_EVT_UP, DAL.DEVICE_BUTTON_EVT_DOWN);
     //% fixedInstance block="B"
     export const B = new Button(6, input.button2.id(), DAL.DEVICE_BUTTON_EVT_UP, DAL.DEVICE_BUTTON_EVT_DOWN);
+
+
+    //% fixedInstance whenUsed block="player 2"
+    export const player2 = new Controller(2, undefined);
+    //% fixedInstance whenUsed block="player 3"
+    export const player3 = new Controller(3, undefined);
+    //% fixedInstance whenUsed block="player 4"
+    export const player4 = new Controller(4, undefined);
 }
