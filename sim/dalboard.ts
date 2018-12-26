@@ -22,7 +22,7 @@ namespace pxsim {
         AccelerometerBoard,
         PixelBoard,
         StorageBoard,
-        JacDacBoard,
+        //JacDacBoard,
         LightSensorBoard,
         TemperatureBoard,
         MicrophoneBoard {
@@ -38,7 +38,7 @@ namespace pxsim {
         touchButtonState: TouchButtonState;
         accelerometerState: AccelerometerState;
         storageState: StorageState;
-        jacdacState: JacDacState;
+        //jacdacState: JacDacState;
         thermometerState: AnalogSensorState;
         thermometerUnitState: TemperatureUnit;
         microphoneState: AnalogSensorState;
@@ -105,7 +105,7 @@ namespace pxsim {
             this._neopixelState = {};
             this.microphoneState = new AnalogSensorState(DAL.DEVICE_ID_MICROPHONE, 52, 120, 75, 96);
             this.storageState = new StorageState();
-            this.jacdacState = new JacDacState(this);
+            //this.jacdacState = new JacDacState(this);
             this.lightSensorState = new AnalogSensorState(DAL.DEVICE_ID_LIGHT_SENSOR, 0, 255, 128 / 4, 896 / 4);
             this.thermometerState = new AnalogSensorState(DAL.DEVICE_ID_THERMOMETER, -20, 50, 10, 30);
             this.thermometerUnitState = TemperatureUnit.Celsius;
