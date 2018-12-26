@@ -5,7 +5,7 @@ declare namespace mouse {
      * Sets the mouse button state to down
      */
     //% help=mouse/set-button
-    //% blockId=mouseSetButton block="mouse button %index=joystickStandardButton|%down=toggleDownUp" shim=mouse::setButton
+    //% blockId=mouseSetButton block="mouse button %index|%down=toggleDownUp" shim=mouse::setButton
     function setButton(button: MouseButton, down: boolean): void;
 
     /**
