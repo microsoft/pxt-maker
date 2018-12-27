@@ -38,7 +38,6 @@
         "libs/switch",
         "libs/accelerometer",
         "libs/microphone",
-        "libs/controller",
         "libs/adafruit-circuit-playground-express",
         "libs/adafruit-trinket-m0",
         "libs/adafruit-metro-m0-express",
