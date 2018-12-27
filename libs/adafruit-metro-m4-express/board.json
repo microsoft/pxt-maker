@@ -294,7 +294,8 @@
     "LED": "LED",
     "NEOPIXEL": "NEOPIXEL",
     "RESET": "RESET",
-    "RXLED": "RXLED"
+    "RXLED": "RXLED",
+    "JACK_TX": "A3"
   },
   "groundPins": [
     "GND"

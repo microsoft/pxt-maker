@@ -262,7 +262,8 @@
     "A7_TX": "A7_TX",
     "A7": "A7_TX",
     "TX": "A7_TX",
-    "VOUT": "VOUT"
+    "VOUT": "VOUT",
+    "JACK_TX": "A7_TX"
   },
   "groundPins": [
     "GND3",

@@ -299,7 +299,8 @@
     "AREF": "AREF",
     "+3V3": "+3V3",
     "!RESET": "!RESET",
-    "LED": "LED"
+    "LED": "LED",
+    "JACK_TX": "A4"
   },
   "groundPins": [
     "GND"

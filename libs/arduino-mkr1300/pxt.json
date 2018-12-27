@@ -17,7 +17,8 @@
         "buttons": "file:../buttons",
         "light": "file:../light",
         "touch": "file:../touch",
-        "serial": "file:../serial"
+        "serial": "file:../serial",
+        "jacdac": "file:../jacdac"
     },
     "public": true,
     "features": [
@@ -31,6 +32,7 @@
         "toucha0",
         "toucha1",
         "lora",
-        "light"
+        "light",
+        "jacdac"
     ]
 }
