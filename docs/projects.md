@@ -1,16 +1,21 @@
 # Projects
 
-## All
-
 ```codecard
 [
     {
         "name": "Digital IO",
-        "url": "/projects/digital-io"
+        "url": "/projects/digital-io",
+        "imageUrl": "/static/projects/digital-io/blinky/gallery.gif"
     },
     {
         "name": "Analog IO",
-        "url": "/projects/analog-io"
+        "url": "/projects/analog-io",
+        "imageUrl": "/static/projects/analog-io/blink-to-light/gallery.gif"
+    },
+    {
+        "name": "Light",
+        "url": "/projects/light",
+        "imageUrl": "/static/projects/light/rainbow/gallery.gif"
     },
     {
         "name": "Actuators",
@@ -35,7 +40,9 @@
 
 [Digital IO](/projects/digital-io),
 [Analog IO](/projects/analog-io),
+[Light](/projects/light),
 [Actuators](/projects/actuators),
 [HID](/projects/hid),
 [Storage](/projects/storage),
-[JACDAC (beta)](/projects/jacdac)
+[JacDac (beta)](/projects/jacdac)
+
