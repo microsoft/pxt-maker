@@ -149,8 +149,9 @@ namespace pxsim {
 
             this.builtinVisuals["photocell"] = () => new visuals.PhotoCellView(parsePinString);
             this.builtinPartVisuals["photocell"] = (xy: visuals.Coord) => visuals.mkPhotoCellPart(xy);
-
+            
             this.builtinVisuals["screen"] = () => new visuals.ScreenView();
+            this.builtinPartVisuals["screen"] = (xy: visuals.Coord) => visuals.mkScreenPart(xy);
         }
 
         receiveMessage(msg: SimulatorMessage) {
