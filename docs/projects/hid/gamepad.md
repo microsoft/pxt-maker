@@ -17,5 +17,5 @@ gamepad
 
 ```config
 feature=uf2
-feature=pind0
+feature=buttonD1
 ```

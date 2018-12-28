@@ -23,6 +23,8 @@
     },
     "features": [
         "uf2",
+        "buttond0",
+        "buttond1",
         "screen",
         "jacdac"
     ]
