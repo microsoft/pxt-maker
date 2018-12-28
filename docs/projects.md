@@ -26,7 +26,11 @@
         "url": "/projects/hid"
     },
     {
-        "name": "Storage",
+        "name": "Screen",
+        "url": "/projects/screen"
+    },
+    {
+        "name": "Storage (beta)",
         "url": "/projects/storage"
     },
     {
@@ -43,6 +47,7 @@
 [Light](/projects/light),
 [Actuators](/projects/actuators),
 [HID](/projects/hid),
-[Storage](/projects/storage),
+[Screen](/projects/screen),
+[Storage (beta)](/projects/storage),
 [JacDac (beta)](/projects/jacdac)
 

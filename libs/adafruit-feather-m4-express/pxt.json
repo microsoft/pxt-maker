@@ -24,6 +24,7 @@
     "features": [
         "uf2",
         "screen",
+        "buttond0",
         "jacdac"
     ]
 }
