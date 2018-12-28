@@ -43,9 +43,9 @@ namespace config {
     export const PIN_DISPLAY_SCK = PIN_SCK;
     export const PIN_DISPLAY_MOSI = PIN_MOSI;
     export const PIN_DISPLAY_DC = PIN_A3;
-    export const PIN_DISPLAY_RST = PIN_A4; // A4
+    export const PIN_DISPLAY_RST = PIN_A5; // A5
     export const PIN_DISPLAY_MISO = PIN_MISO;
-    export const PIN_DISPLAY_BL = PIN_A5;
+    // export const PIN_DISPLAY_BL = PIN_D4; plugged to power
     export const DISPLAY_CFG0 = 0x00000090;
     export const DISPLAY_CFG1 = 0x000e14ff;
     export const DISPLAY_CFG2 = 24;

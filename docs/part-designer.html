@@ -180,7 +180,7 @@
                 targetid = "ground";
             else if (/^(\+?(3V))|VCC/.test(targetid))
                 targetid = "threeVolt";
-            partjson.pinDefinitions.push({ "target": targetid, "style": "male", "orientation": "+Y" })
+            partjson.pinDefinitions.push({ "target": targetid, "style": "male", "orientation": "-Z" })
             partjson.assembly[0].pinIndices.push(partjson.numberOfPins);
             partjson.numberOfPins++;
 
