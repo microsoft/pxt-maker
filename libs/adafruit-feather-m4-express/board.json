@@ -233,7 +233,10 @@
     "gpioPinMap": {
       "D4": "D4",
       "TX_D1": "TX_D1",
+      "TX": "TX_D1",
+      "D1": "TX_D1",
       "RX_D0": "RX_D0",
+      "D0": "RX_D0",
       "MISO": "MISO",
       "MOSI": "MOSI",
       "SCK": "SCK",
