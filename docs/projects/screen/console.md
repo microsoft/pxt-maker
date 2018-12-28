@@ -12,7 +12,7 @@ display.showConsole()
 ```config
 feature=uf2
 feature=screen
-feature=buttond0
+feature=buttond1
 ```
 ```package
 screen---st7735
