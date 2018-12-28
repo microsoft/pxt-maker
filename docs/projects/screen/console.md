@@ -7,6 +7,8 @@ input.buttonD0.onEvent(ButtonEvent.Click, function () {
     console.log("hello")
 })
 display.showConsole()
+console.log("press button to")
+console.log("say hello")
 ```
 
 ```config
