@@ -262,7 +262,14 @@
       "SDA": "SDA",
       "LED": "LED",
       "NEOPIXEL": "NEOPIXEL",
-      "RESET": "RESET"
+      "RESET": "RESET",
+      "DISPLAY_CS": "A2",
+      "DISPLAY_SCK": "SCK",
+      "DISPLAY_MOSI": "MOSI",
+      "DISPLAY_DC": "A3",
+      "DISPLAY_RST": "A4",
+      "DISPLAY_MISO": "MISO",
+      "DISPLAY_BL": "A5"
     },
     "groundPins": [
       "GND"
