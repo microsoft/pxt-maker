@@ -25,6 +25,12 @@ CONSTRUCTION ZONE: JACDAC is still under development and subject to change. Your
     {
         "name": "console",
         "url": "/projects/jacdac/console",
+        "description": "Console logging over JACDAC",
+        "cardType": "example"
+    },
+    {
+        "name": "console screen",
+        "url": "/projects/jacdac/console-screen",
         "description": "Display JACDAC console on a screen",
         "cardType": "example"
     }
