@@ -19,7 +19,13 @@ CONSTRUCTION ZONE: JACDAC is still under development and subject to change. Your
     {
         "name": "broadcast",
         "url": "/projects/jacdac/broadcast",
-        "description": "Braodcast a message and blink",
+        "description": "Broadcast a message and blink",
+        "cardType": "example"
+    },
+    {
+        "name": "console",
+        "url": "/projects/jacdac/console",
+        "description": "Display JACDAC console on a screen",
         "cardType": "example"
     }
 ]
