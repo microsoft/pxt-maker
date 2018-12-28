@@ -300,7 +300,13 @@
     "AREF": "AREF",
     "+3V3": "+3V3",
     "!RESET": "!RESET",
-    "LED": "LED"
+    "LED": "LED",
+    "DISPLAY_CS": "A2",
+    "DISPLAY_SCK": "SCK",
+    "DISPLAY_MOSI": "MOSI",
+    "DISPLAY_DC": "A5",
+    "DISPLAY_RST": "A4",
+    "DISPLAY_MISO": "MISO"
   },
   "groundPins": [
     "GND"
@@ -317,7 +323,9 @@
     "SDA": "SDA",
     "SCL": "SCL"
   },
-  "onboardComponents": ["pixel"],
+  "onboardComponents": [
+    "pixel"
+  ],
   "marginWhenBreadboarding": [
     0,
     0,
