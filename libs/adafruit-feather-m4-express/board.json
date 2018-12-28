@@ -207,14 +207,6 @@
       ],
       "leds": [
         {
-          "x": 27.282228178160295,
-          "y": 148.9976806640625,
-          "w": 11.186988115068395,
-          "h": 11.18702030181885,
-          "color": "#ff0000",
-          "label": "RXLED"
-        },
-        {
           "x": 18.16860503122264,
           "y": 54.829639434814446,
           "w": 11.186988115068395,
@@ -241,7 +233,10 @@
     "gpioPinMap": {
       "D4": "D4",
       "TX_D1": "TX_D1",
+      "TX": "TX_D1",
+      "D1": "TX_D1",
       "RX_D0": "RX_D0",
+      "D0": "RX_D0",
       "MISO": "MISO",
       "MOSI": "MOSI",
       "SCK": "SCK",
@@ -268,10 +263,16 @@
       "D5": "D5",
       "SCL": "SCL",
       "SDA": "SDA",
-      "RXLED": "RXLED",
       "LED": "LED",
       "NEOPIXEL": "NEOPIXEL",
-      "RESET": "RESET"
+      "RESET": "RESET",
+      "DISPLAY_CS": "A2",
+      "DISPLAY_SCK": "SCK",
+      "DISPLAY_MOSI": "MOSI",
+      "DISPLAY_DC": "A3",
+      "DISPLAY_RST": "A4",
+      "DISPLAY_MISO": "MISO",
+      "DISPLAY_BL": "A5"
     },
     "groundPins": [
       "GND"
