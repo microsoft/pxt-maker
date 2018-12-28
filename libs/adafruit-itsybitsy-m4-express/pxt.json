@@ -23,6 +23,7 @@
     },
     "features": [
         "uf2",
+        "screen",
         "jacdac"
     ]
 }
