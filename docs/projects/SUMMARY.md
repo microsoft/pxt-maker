@@ -19,6 +19,7 @@
   * [Mouse](/projects/hid/mouse)
 * [Screen](/projects/screen)
   * [Console](/projects/screen/console)
+  * [Graph](/projects/screen/graph)
 * [Storage (beta)](/projects/storage)
   * [write file](/projects/storage/write-file)
   * [data logging](/projects/storage/data-logger)
