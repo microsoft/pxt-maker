@@ -26,3 +26,5 @@
 * [JacDac (beta)](/projects/jacdac)
   * [pixel blink](/projects/jacdac/pixel-blink)
   * [broadcast](/projects/jacdac/broadcast)
+  * [console](/projects/jacdac/console)
+  * [console screen](/projects/jacdac/console-screen)
