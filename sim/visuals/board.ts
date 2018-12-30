@@ -16,6 +16,11 @@ namespace pxsim.visuals {
     stroke: #404040;
     fill: #000000;
 }
+.sim-reset-button:hover {
+    stroke-width: 3px;
+    stroke: grey;
+    cursor: pointer;
+}
     `
 
     export interface IBoardTheme {
@@ -125,7 +130,8 @@ namespace pxsim.visuals {
             })
 
             if (props.visualDef.reset) {
-                this.onBoardReset = new BoardResetButton(props.visualDef.reset.x, props.visualDef.reset.y)
+                this.onBoardReset = new BoardResetButton(props.visualDef.reset)
+                el.appendChild(this.onBoardReset.getElement())
             }
 
             if (props && props.theme)
@@ -171,14 +177,25 @@ namespace pxsim.visuals {
 
     class BoardResetButton {
         private element: SVGElement;
-        constructor(x: number, y: number, r = 15) {
-            this.element = svg.elt("circle", { cx: x, cy: y, r, class: "sim-reset-btn" }) as SVGCircleElement
+        constructor(p: BoxDefinition) {
+            p.w = p.w || 15;
+            p.h = p.h || 15;
+            this.element = svg.elt("circle", { 
+                cx: p.x + p.w / 2, 
+                cy: p.y + p.h / 2, 
+                r: Math.max(p.w, p.h) / 2, 
+                class: "sim-reset-button" }) as SVGCircleElement
+            svg.title(this.element, "RESET");
             this.element.addEventListener("click", () => {
                 pxsim.Runtime.postMessage(<pxsim.SimulatorCommandMessage>{
                     type: "simulator",
                     command: "restart"
                 })                        
             }, false);
+        }
+
+        getElement() {
+            return this.element;
         }
     }
 

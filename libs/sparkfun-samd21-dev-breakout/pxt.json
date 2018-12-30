@@ -33,6 +33,10 @@
         "buttond0",
         "buttond1",
         "light",
+        "screen",
+        "spi",
+        "i2c",
+        "serial",
         "jacdac"
     ]
 }
