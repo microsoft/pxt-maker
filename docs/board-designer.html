@@ -25,6 +25,7 @@
         }
     </style>
     <script type="text/javascript" src="/blb/jquery.js"></script>
+    <script type="text/javascript" src="/blb/semantic.js"></script>
     <script>
         const cfgs = {};
         `
@@ -164,15 +165,14 @@
         function addElement(elt) {
             const id = [
                 elt.getAttribute("connectorname"),
-                elt.getAttribute("inkscape:label"),
                 elt.getAttribute("id")]
                 .filter(n => !!n && !/^#/.test(n))[0];
             if (!id || boardjson.gpioPinMap[id]) return;
             boardjson.gpioPinMap[id] = id;
-
             // split subpins RX_TX_A0
             id.split('_').forEach(iid => boardjson.gpioPinMap[iid] = id);
 
+            const label = elt.getAttribute("inkscape:label") || "";
             const rect = convertCoords(elt);
 
             // handle leds
@@ -203,14 +203,16 @@
                 else if (id.toLowerCase() != "neopixel" && boardjson.onboardComponents.indexOf("neopixel") < 0)
                     boardjson.onboardComponents.push("neopixel");
             }
-            else if (/RST|RESET/.test(id) && !boardjson.visual.reset) {
-                boardjson.visual.reset = {
-                    x: rect.x,
-                    y: rect.y,
-                    w: rect.w,
-                    h: rect.h
+            else if (/RST|RESET/.test(id)) {
+                if (!boardjson.visual.reset) {
+                    boardjson.visual.reset = {
+                        x: rect.x,
+                        y: rect.y,
+                        w: rect.w,
+                        h: rect.h
+                    }
+                    visuals = true;
                 }
-                visuals = true;
             }
             else if (/GND/.test(id) && boardjson.groundPins.indexOf(id) < 0)
                 boardjson.groundPins.push(id);
@@ -219,6 +221,29 @@
             else if (/(BUTTON|BTN_)/.test(id)) {
                 if (boardjson.onboardComponents.indexOf("buttons") < 0)
                     boardjson.onboardComponents.push("buttons");
+            } else if (/^(MISO|MOSI|SCK)$/.test(id) && !boardjson.spiPins) {
+                boardjson.spiPins = {
+                    "MOSI": "MOSI",
+                    "MISO": "MISO",
+                    "SCK": "SCK"
+                }
+            } else if (/^(SDA|SCL)$/.test(id) && !boardjson.i2cPins) {
+                boardjson.i2cPins = {
+                    "SDA": "SDA",
+                    "SCL": "SCL"
+                };
+            }
+
+            // meta information
+            if (/touch/i.test(label)) { // touch buttons
+                boardjson.visual.touchPads.push({
+                    x: rect.x,
+                    y: rect.y,
+                    w: rect.w,
+                    h: rect.h,
+                    label: id
+                })
+                visuals = true;
             }
 
             if (!visuals) {
@@ -248,16 +273,12 @@
                     height: 200,
                     pinDist: 15,
                     pinBlocks: [],
-                    leds: []
+                    leds: [],
+                    touchPads: []
                 },
                 gpioPinMap: {},
                 groundPins: [],
                 threeVoltPins: [],
-                spiPins: {
-                    "MOSI": "MOSI",
-                    "MISO": "MISO",
-                    "SCK": "SCK"
-                },
                 i2cPins: {
                     "SDA": "SDA",
                     "SCL": "SCL"
@@ -302,23 +323,23 @@
             Object.keys(boardjson.gpioPinMap)
                 .filter(pinid => !/^(RESET|GND\d*|3V3?|5V|VIN|USHIELD)$/.test(pinid))
                 .forEach(pinid => {
-                let found = false;
-                ['', 'PIN_'].forEach(prefix => {
-                    const pid = prefix + pinid;
-                    if (cfgs[pid]) {
-                        found = true;
-                        configts += `
-    export const ${pid} = DAL.?;`
-                        if (pid == "PIN_NEOPIXEL") {
+                    let found = false;
+                    ['', 'PIN_'].forEach(prefix => {
+                        const pid = prefix + pinid;
+                        if (cfgs[pid]) {
+                            found = true;
                             configts += `
+    export const ${pid} = DAL.?;`
+                            if (pid == "PIN_NEOPIXEL") {
+                                configts += `
     export const NUM_NEOPIXEL = 1;`
+                            }
                         }
-                    }
-                })
-                if (!found)
-                    configts += `
+                    })
+                    if (!found)
+                        configts += `
     // unknown pin id ${pinid}`;
-            })
+                })
             configts += `
     // additional pins to look for: SPI, I2C, Flash
 }`;
@@ -355,12 +376,19 @@
             <li>
                 Pins: set the id of the svg for headers to the pin names (should be done already)
             </li>
+            <li>
+                Touch pins: add "touch" in the inkscape label
+            </li>
         </ul>
         <div class="ui segment">
             <h2>board.svg</h2>
             <ul>
-                <li>Save this file as <code>board.svg</code> in your project and it to the <code>files</code> list in <code>pxt.json</code></li>
-                <li><emph>Keep it small!</emph>: remove extra graphical elements and run <a href="https://github.com/svg/svgo" target="_blank">SVGO</a> to shrink the size.</li>
+                <li>Save this file as <code>board.svg</code> in your project and it to the <code>files</code> list in
+                    <code>pxt.json</code></li>
+                <li>
+                    <emph>Keep it small!</emph>: remove extra graphical elements and run <a href="https://github.com/svg/svgo"
+                        target="_blank">SVGO</a> to shrink the size.
+                </li>
             </ul>
             <textarea class="ui fluid" id="svginput"></textarea>
         </div>
