@@ -33,6 +33,12 @@ CONSTRUCTION ZONE: JACDAC is still under development and subject to change. Your
         "url": "/projects/jacdac/console-screen",
         "description": "Display JACDAC console on a screen",
         "cardType": "example"
+    },
+    {
+        "name": "controller button",
+        "url": "/projects/jacdac/controller-button",
+        "description": "Bind a push button to a JACDAC controller button",
+        "cardType": "example"
     }
 ]
 ```
