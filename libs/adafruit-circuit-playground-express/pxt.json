@@ -1,6 +1,6 @@
 {
     "name": "adafruit-circuit-playground-express",
-    "description": "The Adafruit Circuit Playground Express library",
+    "description": "The Adafruit Circuit Playground Express library - beta",
     "files": [
         "README.md",
         "device.d.ts",
