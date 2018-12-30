@@ -94,8 +94,8 @@ namespace pxsim.visuals {
 
         public board: pxsim.DalBoard;
         private onBoardLeds: BoardLed[];
-        private onBoardNeopixel: BoardNeopixel;
-        private onBoardReset: BoardButton;
+        private onBoardNeopixels: BoardNeopixel[];
+        private onBoardReset: BoardResetButton;
 
         constructor(public props: MetroBoardProps) {
             super(props);
@@ -104,11 +104,13 @@ namespace pxsim.visuals {
             this.addDefs(el);
 
             this.onBoardLeds = []
+            this.onBoardNeopixels = [];
 
-            for (let l of props.visualDef.leds || []) {
+            for (const l of props.visualDef.leds || []) {
                 if (l.color == "neopixel") {
-                    this.onBoardNeopixel = new BoardNeopixel(l.x, l.y, l.w || 9);
-                    el.appendChild(this.onBoardNeopixel.getElement());
+                    const onBoardNeopixel = new BoardNeopixel(l.label, l.x, l.y, l.w || 0);
+                    this.onBoardNeopixels.push(onBoardNeopixel);
+                    el.appendChild(onBoardNeopixel.getElement());
                 } else {
                     let bl = new BoardLed(l.x, l.y, l.color, pinByName(l.label),
                         l.w || 9, l.h || 8)
@@ -116,9 +118,14 @@ namespace pxsim.visuals {
                     el.appendChild(bl.getElement())
                 }
             }
+            this.onBoardNeopixels.sort((l,r) => {
+                const li = parseInt(l.name.replace(/^[^\d]*/, '')) || 0;
+                const ri = parseInt(r.name.replace(/^[^\d]*/, '')) || 0;
+                return li  < ri ? -1 : li > ri ? 1 : 0;
+            })
 
             if (props.visualDef.reset) {
-                this.onBoardReset = new BoardButton(props.visualDef.reset.x, props.visualDef.reset.y)
+                this.onBoardReset = new BoardResetButton(props.visualDef.reset.x, props.visualDef.reset.y)
             }
 
             if (props && props.theme)
@@ -140,9 +147,10 @@ namespace pxsim.visuals {
             this.onBoardLeds.forEach(l => l.updateState());
             const state = this.board.neopixelState(this.board.defaultNeopixelPin().id)
             if (state.buffer) {
-                const rgb = state.pixelColor(0)
-                if (rgb) {
-                    this.onBoardNeopixel.setColor(rgb as any);
+                for(let i = 0; i < this.onBoardNeopixels.length; ++i) {
+                    const rgb = state.pixelColor(i)
+                    if (rgb !== null)
+                        this.onBoardNeopixels[i].setColor(rgb as any);
                 }
             }
         }
@@ -161,11 +169,16 @@ namespace pxsim.visuals {
         }
     }
 
-    class BoardButton {
+    class BoardResetButton {
         private element: SVGElement;
         constructor(x: number, y: number, r = 15) {
             this.element = svg.elt("circle", { cx: x, cy: y, r, class: "sim-reset-btn" }) as SVGCircleElement
-            this.element.addEventListener("click", () => pxsim.control.reset(), false);
+            this.element.addEventListener("click", () => {
+                pxsim.Runtime.postMessage(<pxsim.SimulatorCommandMessage>{
+                    type: "simulator",
+                    command: "restart"
+                })                        
+            }, false);
         }
     }
 
@@ -203,10 +216,13 @@ namespace pxsim.visuals {
     }
 
     class BoardNeopixel {
+        name: string;
         private element: SVGCircleElement;
-
-        constructor(x: number, y: number, r: number) {
-            this.element = svg.elt("circle", { cx: x, cy: y, r }) as SVGCircleElement
+        
+        constructor(name: string, x: number, y: number, r: number) {
+            this.name = name;
+            this.element = svg.elt("circle", { cx: x + r / 2, cy: y + r / 2, r: 10 }) as SVGCircleElement
+            svg.title(this.element, name);
         }
 
         getElement() {
