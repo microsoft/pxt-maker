@@ -186,7 +186,7 @@
 
             // handle leds
             let visuals = false;
-            if (/(RX|TX)?LED/.test(id)) {
+            if (/(RX|TX)?(IR)?LED/.test(id)) {
                 boardjson.visual.leds.push({
                     x: rect.x,
                     y: rect.y,
@@ -244,6 +244,15 @@
                     "SDA": "SDA",
                     "SCL": "SCL"
                 };
+            } else if (/^(THERMOMETER|ACCELEROMETER|MICROPHONE|SPEAKER|LIGHTSENSOR)$/.test(id)) {
+                if (boardjson.onboardComponents.indexOf(id.toLowerCase()) < 0)
+                    boardjson.onboardComponents.push(id.toLowerCase());
+                visuals = true;
+            }
+
+            if (id == "RXIRLED" || id == "TXIRLED") {
+                if (boardjson.onboardComponents.indexOf("infrared") < 0)
+                    boardjson.onboardComponents.push("infrared");
             }
 
             // meta information

@@ -119,16 +119,19 @@ namespace pxsim.visuals {
                     this.onBoardNeopixels.push(onBoardNeopixel);
                     el.appendChild(onBoardNeopixel.element);
                 } else {
-                    let bl = new BoardLed(l.x, l.y, l.color, pinByName(l.label),
-                        l.w || 9, l.h || 8)
-                    this.onBoardLeds.push(bl)
-                    el.appendChild(bl.element)
+                    const pin = pinByName(l.label);
+                    if (pin) {
+                        let bl = new BoardLed(l.x, l.y, l.color, pinByName(l.label),
+                            l.w || 9, l.h || 8)
+                        this.onBoardLeds.push(bl)
+                        el.appendChild(bl.element)
+                    }
                 }
             }
-            this.onBoardNeopixels.sort((l,r) => {
+            this.onBoardNeopixels.sort((l, r) => {
                 const li = parseInt(l.name.replace(/^[^\d]*/, '')) || 0;
                 const ri = parseInt(r.name.replace(/^[^\d]*/, '')) || 0;
-                return li  < ri ? -1 : li > ri ? 1 : 0;
+                return li < ri ? -1 : li > ri ? 1 : 0;
             })
 
             // reset button
@@ -138,7 +141,7 @@ namespace pxsim.visuals {
             }
 
             // touch pads
-            for(const l of props.visualDef.touchPads || []) {
+            for (const l of props.visualDef.touchPads || []) {
                 const pin = pxsim.pinIds[l.label];
                 if (!pin) {
                     console.error(`touch pin ${pin} not found`)
@@ -168,7 +171,7 @@ namespace pxsim.visuals {
             this.onBoardLeds.forEach(l => l.updateState());
             const state = this.board.neopixelState(this.board.defaultNeopixelPin().id)
             if (state.buffer) {
-                for(let i = 0; i < this.onBoardNeopixels.length; ++i) {
+                for (let i = 0; i < this.onBoardNeopixels.length; ++i) {
                     const rgb = state.pixelColor(i)
                     if (rgb !== null)
                         this.onBoardNeopixels[i].setColor(rgb as any);
@@ -195,17 +198,18 @@ namespace pxsim.visuals {
         constructor(p: BoxDefinition) {
             p.w = p.w || 15;
             p.h = p.h || 15;
-            this.element = svg.elt("circle", { 
-                cx: p.x + p.w / 2, 
-                cy: p.y + p.h / 2, 
-                r: Math.max(p.w, p.h) / 2, 
-                class: "sim-board-pin" }) as SVGCircleElement
+            this.element = svg.elt("circle", {
+                cx: p.x + p.w / 2,
+                cy: p.y + p.h / 2,
+                r: Math.max(p.w, p.h) / 2,
+                class: "sim-board-pin"
+            }) as SVGCircleElement
             svg.title(this.element, "RESET");
             this.element.addEventListener("click", () => {
                 pxsim.Runtime.postMessage(<pxsim.SimulatorCommandMessage>{
                     type: "simulator",
                     command: "restart"
-                })                        
+                })
             }, false);
         }
     }
@@ -242,7 +246,7 @@ namespace pxsim.visuals {
     class BoardNeopixel {
         name: string;
         element: SVGCircleElement;
-        
+
         constructor(name: string, x: number, y: number, r: number) {
             this.name = name;
             this.element = svg.elt("circle", { cx: x + r / 2, cy: y + r / 2, r: 10 }) as SVGCircleElement
@@ -271,11 +275,12 @@ namespace pxsim.visuals {
             this.def = def;
             def.w = def.w || 15;
             def.h = def.h || 15;
-            this.element = svg.elt("circle", { 
-                cx: def.x + def.w / 2, 
-                cy: def.y + def.h / 2, 
-                r: Math.max(def.w, def.h) / 2, 
-                class: "sim-board-pin" }) as SVGCircleElement
+            this.element = svg.elt("circle", {
+                cx: def.x + def.w / 2,
+                cy: def.y + def.h / 2,
+                r: Math.max(def.w, def.h) / 2,
+                class: "sim-board-pin"
+            }) as SVGCircleElement
             svg.title(this.element, def.label);
             // resolve button
             this.button = pxsim.pxtcore.getTouchButton(pinId);
@@ -288,7 +293,7 @@ namespace pxsim.visuals {
             })
             this.element.addEventListener(pointerEvents.up, ev => {
                 this.button.setPressed(false);
-            })            
+            })
         }
     }
 }
