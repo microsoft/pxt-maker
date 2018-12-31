@@ -90,6 +90,15 @@
 #define CFG_PIN_LED4 58
 #define CFG_SPEAKER_VOLUME 59
 
+#define CFG_PIN_JACK_TX 60
+#define CFG_PIN_JACK_SENSE 61
+#define CFG_PIN_JACK_HPEN 62
+#define CFG_PIN_JACK_BZEN 63
+#define CFG_PIN_JACK_PWREN 64
+#define CFG_PIN_JACK_SND 65
+#define CFG_PIN_JACK_BUSLED 66
+#define CFG_PIN_JACK_COMMLED 67
+
 #define CFG_PIN_A0 100
 #define CFG_PIN_A1 101
 #define CFG_PIN_A2 102
@@ -218,9 +227,12 @@
                 boardjson.groundPins.push(id);
             else if (/(\+3V3|3V|VCC|VOUT)/.test(id) && boardjson.threeVoltPins.indexOf(id) < 0)
                 boardjson.threeVoltPins.push(id);
-            else if (/(BUTTON|BTN_)/.test(id)) {
+            else if (/(BUTTON|BTN_[AB])/.test(id)) {
                 if (boardjson.onboardComponents.indexOf("buttons") < 0)
                     boardjson.onboardComponents.push("buttons");
+            } else if (/BTN_SLIDE/.test(id)) {
+                if (boardjson.onboardComponents.indexOf("switch") < 0)
+                    boardjson.onboardComponents.push("switch");
             } else if (/^(MISO|MOSI|SCK)$/.test(id) && !boardjson.spiPins) {
                 boardjson.spiPins = {
                     "MOSI": "MOSI",
@@ -243,8 +255,14 @@
                     h: rect.h,
                     label: id
                 })
-                visuals = true;
             }
+            // secondary labels
+            label.replace(/\b[A-Z][A-Z0-9_]+\b/g, (m) => {
+                const pid = "PIN_" + m;
+                if (cfgs[pid] && !boardjson.gpioPinMap[m])
+                    boardjson.gpioPinMap[m] = id;
+                return "";
+            });
 
             if (!visuals) {
                 if (Math.abs(rect.w - 15) > 2 || Math.abs(rect.h - 15) > 2) {
@@ -378,6 +396,9 @@
             </li>
             <li>
                 Touch pins: add "touch" in the inkscape label
+            </li>
+            <li>
+                Additional pin mapping like "JACK_TX", just add the pin name in the label.
             </li>
         </ul>
         <div class="ui segment">
