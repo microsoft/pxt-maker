@@ -199,7 +199,7 @@ namespace pxsim.visuals {
                 cx: p.x + p.w / 2, 
                 cy: p.y + p.h / 2, 
                 r: Math.max(p.w, p.h) / 2, 
-                class: "sim-reset-button" }) as SVGCircleElement
+                class: "sim-board-pin" }) as SVGCircleElement
             svg.title(this.element, "RESET");
             this.element.addEventListener("click", () => {
                 pxsim.Runtime.postMessage(<pxsim.SimulatorCommandMessage>{
@@ -275,7 +275,7 @@ namespace pxsim.visuals {
                 cx: def.x + def.w / 2, 
                 cy: def.y + def.h / 2, 
                 r: Math.max(def.w, def.h) / 2, 
-                class: "sim-touch-button" }) as SVGCircleElement
+                class: "sim-board-pin" }) as SVGCircleElement
             svg.title(this.element, def.label);
             // resolve button
             this.button = pxsim.pxtcore.getTouchButton(pinId);
