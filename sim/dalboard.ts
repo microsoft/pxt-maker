@@ -11,7 +11,8 @@ namespace pxsim {
             v = getConfig(getConfigKey("PIN_" + name))
         }
         let p = pxtcore.getPin(v)
-        U.assert(!!p, "missing pin: " + name + "(" + v + ")")
+        if (!p)
+            console.error("missing pin: " + name + "(" + v + ")")
         return p
     }
 

@@ -1,6 +1,6 @@
 {
   "name": "pxt-maker",
-  "version": "0.5.80",
+  "version": "0.5.81",
   "description": "Microsoft MakeCode Maker Boards",
   "public": true,
   "keywords": [
@@ -45,8 +45,8 @@
     "@types/web-bluetooth": "0.0.4"
   },
   "dependencies": {
-    "pxt-common-packages": "5.2.13",
-    "pxt-core": "5.2.35"
+    "pxt-common-packages": "5.2.14",
+    "pxt-core": "5.2.37"
   },
   "scripts": {
     "test": "node node_modules/pxt-core/built/pxt.js travis"
