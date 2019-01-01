@@ -28,14 +28,14 @@ namespace config {
     export const PIN_LED = DAL.PB23;
     export const PIN_D13 = DAL.PB23;
 
-    export const PIN_SCL = DAL.PA00;
-    export const PIN_SDA = DAL.PA01;
-    export const PIN_RX = DAL.PA11;
-    export const PIN_TX = DAL.PA10;
+    export const PIN_SCL = DAL.PA00; // D11
+    export const PIN_SDA = DAL.PA01; // D12
+    export const PIN_RX = DAL.PA11; // A10
+    export const PIN_TX = DAL.PA10; // D1
 
-    export const PIN_MISO = DAL.PA12;
-    export const PIN_MOSI = DAL.PA14;
-    export const PIN_SCK = DAL.PA15;
+    export const PIN_MISO = DAL.PA12; // D8
+    export const PIN_MOSI = DAL.PA14; // D10
+    export const PIN_SCK = DAL.PA15; // D9
 
     export const PIN_JACK_TX = DAL.PB02; // A6
 }
