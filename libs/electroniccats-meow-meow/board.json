@@ -177,7 +177,9 @@
         "SDA": "SDA",
         "SCL": "SCL"
     },
-    "onboardComponents": [],
+    "onboardComponents": [
+        "buttons"
+    ],
     "marginWhenBreadboarding": [
         0,
         0,

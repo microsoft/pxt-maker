@@ -265,6 +265,9 @@
                     label: id.split('_')[0]
                 })
             }
+            if (/croc/i.test(label)) { // croc clips
+                boardjson.visual.useCrocClips = true;
+            }
             // secondary labels
             label.replace(/\b[A-Z][A-Z0-9_]+\b/g, (m) => {
                 const pid = "PIN_" + m;
