@@ -16,9 +16,14 @@ namespace pxsim.visuals {
     stroke: #404040;
     fill: #000000;
 }
-.sim-reset-button:hover {
+.sim-board-button {
+    stroke: #aaa;
     stroke-width: 3px;
-    stroke: grey;
+    fill: #666;
+}
+.sim-board-button:hover {
+    stroke-width: 4px;
+    stroke: #ee0;
     cursor: pointer;
 }
     `
@@ -202,7 +207,7 @@ namespace pxsim.visuals {
                 cx: p.x + p.w / 2,
                 cy: p.y + p.h / 2,
                 r: Math.max(p.w, p.h) / 2,
-                class: "sim-board-pin"
+                class: "sim-board-button"
             }) as SVGCircleElement
             svg.title(this.element, "RESET");
             this.element.addEventListener("click", () => {
@@ -279,7 +284,7 @@ namespace pxsim.visuals {
                 cx: def.x + def.w / 2,
                 cy: def.y + def.h / 2,
                 r: Math.max(def.w, def.h) / 2,
-                class: "sim-board-pin"
+                class: "sim-board-button"
             }) as SVGCircleElement
             svg.title(this.element, def.label);
             // resolve button

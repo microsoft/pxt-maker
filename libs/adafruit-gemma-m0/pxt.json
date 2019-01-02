@@ -7,14 +7,14 @@
         "config.ts",
         "ns.ts",
         "board.json",
-        "board.svg",
-        "boardwireframe.svg"
+        "board.svg"
     ],
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "light": "file:../light",
+        "pixel": "file:../pixel",
         "touch": "file:../touch",
         "serial": "file:../serial",
         "jacdac": "file:../jacdac"
@@ -32,6 +32,7 @@
         "touchd0",
         "touchd1",
         "light",
+        "pixel",
         "jacdac"
     ]
 }
