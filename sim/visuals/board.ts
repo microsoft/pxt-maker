@@ -21,6 +21,9 @@ namespace pxsim.visuals {
     stroke-width: 3px;
     fill: #666;
 }
+.sim-board-button.pressed {
+    fill: #ee0;
+}
 .sim-board-button:hover {
     stroke-width: 4px;
     stroke: #ee0;
@@ -210,12 +213,20 @@ namespace pxsim.visuals {
                 class: "sim-board-button"
             }) as SVGCircleElement
             svg.title(this.element, "RESET");
-            this.element.addEventListener("click", () => {
+            // hooking up events
+            pointerEvents.down.forEach(evid => this.element.addEventListener(evid, ev => {
+                svg.addClass(this.element, "pressed");
                 pxsim.Runtime.postMessage(<pxsim.SimulatorCommandMessage>{
                     type: "simulator",
                     command: "restart"
                 })
-            }, false);
+            }));
+            this.element.addEventListener(pointerEvents.leave, ev => {
+                svg.removeClass(this.element, "pressed");
+            })
+            this.element.addEventListener(pointerEvents.up, ev => {
+                svg.removeClass(this.element, "pressed");
+            })
         }
     }
 
@@ -292,11 +303,14 @@ namespace pxsim.visuals {
             // hooking up events
             pointerEvents.down.forEach(evid => this.element.addEventListener(evid, ev => {
                 this.button.setPressed(true);
+                svg.addClass(this.element, "pressed");
             }));
             this.element.addEventListener(pointerEvents.leave, ev => {
+                svg.removeClass(this.element, "pressed");
                 this.button.setPressed(false);
             })
             this.element.addEventListener(pointerEvents.up, ev => {
+                svg.removeClass(this.element, "pressed");
                 this.button.setPressed(false);
             })
         }
