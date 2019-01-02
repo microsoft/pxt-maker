@@ -16,9 +16,17 @@ namespace pxsim.visuals {
     stroke: #404040;
     fill: #000000;
 }
-.sim-reset-button:hover {
+.sim-board-button {
+    stroke: #aaa;
     stroke-width: 3px;
-    stroke: grey;
+    fill: #666;
+}
+.sim-board-button.pressed {
+    fill: #ee0;
+}
+.sim-board-button:hover {
+    stroke-width: 4px;
+    stroke: #ee0;
     cursor: pointer;
 }
     `
@@ -100,7 +108,8 @@ namespace pxsim.visuals {
         private onBoardLeds: BoardLed[];
         private onBoardNeopixels: BoardNeopixel[];
         private onBoardReset: BoardResetButton;
-        private onBoardTouchPads: BoardTouchPad[];
+        private onBoardButtons: BoardButton[];
+        private onBoardTouchPads: BoardTouchButton[];
 
         constructor(public props: MetroBoardProps) {
             super(props);
@@ -111,6 +120,7 @@ namespace pxsim.visuals {
             this.onBoardLeds = []
             this.onBoardNeopixels = [];
             this.onBoardTouchPads = [];
+            this.onBoardButtons = [];
 
             // neopixels/leds
             for (const l of props.visualDef.leds || []) {
@@ -147,8 +157,15 @@ namespace pxsim.visuals {
                     console.error(`touch pin ${pin} not found`)
                     continue;
                 }
-                const tp = new BoardTouchPad(l, pin);
+                const tp = new BoardTouchButton(l, pin);
                 this.onBoardTouchPads.push(tp);
+                el.appendChild(tp.element);
+            }
+
+            // regular buttons
+            for (const l of props.visualDef.buttons || []) {
+                const tp = new BoardButton(l);
+                this.onBoardButtons.push(tp);
                 el.appendChild(tp.element);
             }
 
@@ -202,15 +219,23 @@ namespace pxsim.visuals {
                 cx: p.x + p.w / 2,
                 cy: p.y + p.h / 2,
                 r: Math.max(p.w, p.h) / 2,
-                class: "sim-board-pin"
+                class: "sim-board-button"
             }) as SVGCircleElement
             svg.title(this.element, "RESET");
-            this.element.addEventListener("click", () => {
+            // hooking up events
+            pointerEvents.down.forEach(evid => this.element.addEventListener(evid, ev => {
+                svg.addClass(this.element, "pressed");
                 pxsim.Runtime.postMessage(<pxsim.SimulatorCommandMessage>{
                     type: "simulator",
                     command: "restart"
                 })
-            }, false);
+            }));
+            this.element.addEventListener(pointerEvents.leave, ev => {
+                svg.removeClass(this.element, "pressed");
+            })
+            this.element.addEventListener(pointerEvents.up, ev => {
+                svg.removeClass(this.element, "pressed");
+            })
         }
     }
 
@@ -267,7 +292,42 @@ namespace pxsim.visuals {
         }
     }
 
-    class BoardTouchPad {
+    class BoardButton {
+        element: SVGElement;
+        def: ButtonDefinition;
+        button: CommonButton;
+        constructor(def: ButtonDefinition) {
+            this.def = def;
+            def.w = def.w || 15;
+            def.h = def.h || 15;
+            this.element = svg.elt("circle", {
+                cx: def.x + def.w / 2,
+                cy: def.y + def.h / 2,
+                r: Math.max(def.w, def.h) / 2,
+                class: "sim-board-button"
+            }) as SVGCircleElement
+            svg.title(this.element, def.label);
+            // resolve button
+            this.button = def.index !== undefined 
+                ? pxsim.pxtcore.getButton(def.index) 
+                : pxsim.pxtcore.getButtonByPin(pxsim.pinIds[def.label]);
+            // hooking up events
+            pointerEvents.down.forEach(evid => this.element.addEventListener(evid, ev => {
+                this.button.setPressed(true);
+                svg.addClass(this.element, "pressed");
+            }));
+            this.element.addEventListener(pointerEvents.leave, ev => {
+                svg.removeClass(this.element, "pressed");
+                this.button.setPressed(false);
+            })
+            this.element.addEventListener(pointerEvents.up, ev => {
+                svg.removeClass(this.element, "pressed");
+                this.button.setPressed(false);
+            })
+        }
+    }
+
+    class BoardTouchButton {
         element: SVGElement;
         def: TouchPadDefinition;
         button: TouchButton;
@@ -279,7 +339,7 @@ namespace pxsim.visuals {
                 cx: def.x + def.w / 2,
                 cy: def.y + def.h / 2,
                 r: Math.max(def.w, def.h) / 2,
-                class: "sim-board-pin"
+                class: "sim-board-button"
             }) as SVGCircleElement
             svg.title(this.element, def.label);
             // resolve button
@@ -287,11 +347,14 @@ namespace pxsim.visuals {
             // hooking up events
             pointerEvents.down.forEach(evid => this.element.addEventListener(evid, ev => {
                 this.button.setPressed(true);
+                svg.addClass(this.element, "pressed");
             }));
             this.element.addEventListener(pointerEvents.leave, ev => {
+                svg.removeClass(this.element, "pressed");
                 this.button.setPressed(false);
             })
             this.element.addEventListener(pointerEvents.up, ev => {
+                svg.removeClass(this.element, "pressed");
                 this.button.setPressed(false);
             })
         }

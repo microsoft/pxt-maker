@@ -33,8 +33,8 @@
      id="namedview813"
      showgrid="false"
      inkscape:zoom="6.0642267"
-     inkscape:cx="70.506944"
-     inkscape:cy="152.13218"
+     inkscape:cx="136.46754"
+     inkscape:cy="112.55582"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -3289,7 +3289,7 @@
            d="m 124.92023,131.96914 c -2.37743,0 -4.30053,1.92484 -4.30053,4.30054 0,2.37569 1.9231,4.30053 4.30053,4.30053 2.37396,0 4.30053,-1.92484 4.30053,-4.30053 0,-2.3757 -1.92657,-4.30054 -4.30053,-4.30054"
            style="fill:#1e1e1e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.73408532"
            id="RESET"
-           inkscape:label="RESET" />
+           inkscape:label="" />
         <path
            inkscape:connector-curvature="0"
            gorn="0.3.0.0.0.53.0.574"
@@ -3340,7 +3340,7 @@
            gorn="0.3.0.0.0.53.0.581"
            d="m 73.298245,113.18553 h 24.577191 l 6.145594,-6.14386 V 82.462743 L 97.875436,76.318878 H 73.298245 l -6.143865,6.143865 v 24.578927 z"
            style="fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.73408532"
-           id="SPEAKER"
+           id="HEADPHONE"
            inkscape:label="" />
         <path
            inkscape:connector-curvature="0"
@@ -3397,7 +3397,7 @@
            d="m 173.61335,122.65364 c -4.07337,0 -7.37507,3.3017 -7.37507,7.37333 0,4.07337 3.3017,7.37333 7.37507,7.37333 4.07163,0 7.37333,-3.29996 7.37333,-7.37333 0,-4.07163 -3.3017,-7.37333 -7.37333,-7.37333"
            style="fill:#1e1e1e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.73408532"
            id="BTN_B"
-           inkscape:label="BTN_B" />
+           inkscape:label="" />
         <path
            inkscape:connector-curvature="0"
            gorn="0.3.0.0.0.53.0.591"
@@ -3575,7 +3575,7 @@
            cx="232.09723"
            cy="-86.169266"
            r="7.8399763"
-           inkscape:label=""
+           inkscape:label="touch croc"
            transform="scale(1,-1)" />
         <circle
            style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:14.49110413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -3591,7 +3591,7 @@
            cx="232.09723"
            cy="-164.11812"
            r="7.8399763"
-           inkscape:label=""
+           inkscape:label="touch croc"
            transform="scale(1,-1)" />
         <circle
            style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:14.49110413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -3599,7 +3599,7 @@
            cx="212.33308"
            cy="-198.45758"
            r="7.8399763"
-           inkscape:label=""
+           inkscape:label="touch croc"
            transform="scale(1,-1)" />
         <circle
            style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:14.49110413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -3609,6 +3609,25 @@
            r="7.8399763"
            inkscape:label=""
            transform="scale(1,-1)" />
+        <path
+           inkscape:connector-curvature="0"
+           gorn="0.3.0.0.0.53.0.586"
+           d="m 154.51197,94.535421 c -4.07163,0 -7.37333,3.301698 -7.37333,7.373329 0,4.07337 3.3017,7.37333 7.37333,7.37333 4.07337,0 7.37333,-3.29996 7.37333,-7.37333 0,-4.071631 -3.29996,-7.373329 -7.37333,-7.373329"
+           style="fill:#1e1e1e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.73408532"
+           id="BTN_AB"
+           inkscape:label="" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:39.99988174px;line-height:1.25;font-family:consolas;-inkscape-font-specification:consolas;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999702"
+           x="165.56032"
+           y="-97.126617"
+           id="text5093"
+           transform="scale(1,-1)"><tspan
+             sodipodi:role="line"
+             id="tspan5091"
+             x="165.56032"
+             y="-97.126617"
+             style="font-size:13.33329296px;fill:#ffffff;stroke-width:0.99999702">AB</tspan></text>
       </g>
     </g>
   </g>

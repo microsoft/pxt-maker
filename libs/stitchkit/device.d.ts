@@ -51,6 +51,7 @@ declare namespace input {
      */
     //% block="button A0" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_A0,BUTTON_ACTIVE_LOW_PULL_UP)
+    //% parts="buttons"
     const buttonA0: Button;
 
     /**
@@ -58,6 +59,7 @@ declare namespace input {
      */
     //% block="button A1" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_A1,BUTTON_ACTIVE_LOW_PULL_UP)
+    //% parts="buttons"
     const buttonA1: Button;
 
     /**
@@ -65,6 +67,7 @@ declare namespace input {
      */
     //% block="button A2" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_A2,BUTTON_ACTIVE_LOW_PULL_UP)
+    //% parts="buttons"
     const buttonA2: Button;
 
     /**
@@ -72,6 +75,7 @@ declare namespace input {
      */
     //% block="button A3" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_A3,BUTTON_ACTIVE_LOW_PULL_UP)
+    //% parts="buttons"
     const buttonA3: Button;
 
 
