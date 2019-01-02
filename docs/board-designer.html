@@ -230,6 +230,15 @@
             else if (/(BUTTON|BTN_[AB])/.test(id)) {
                 if (boardjson.onboardComponents.indexOf("buttons") < 0)
                     boardjson.onboardComponents.push("buttons");
+                boardjson.visual.buttons.push({
+                    x: rect.x,
+                    y: rect.y,
+                    w: rect.w,
+                    h: rect.h,
+                    index: id == "BTN_A" ? 0 : id == "BTN_B" ? 1 : id == "BTN_AB" ? 2 : undefined,
+                    label: /^BTN_(A|B|AB)$/.test(id) ? undefined : id
+                })
+                visuals = true;
             } else if (/BTN_SLIDE/.test(id)) {
                 if (boardjson.onboardComponents.indexOf("switch") < 0)
                     boardjson.onboardComponents.push("switch");
@@ -244,7 +253,7 @@
                     "SDA": "SDA",
                     "SCL": "SCL"
                 };
-            } else if (/^(THERMOMETER|ACCELEROMETER|MICROPHONE|SPEAKER|LIGHTSENSOR)$/.test(id)) {
+            } else if (/^(THERMOMETER|ACCELEROMETER|MICROPHONE|HEADPHONE|LIGHTSENSOR)$/.test(id)) {
                 if (boardjson.onboardComponents.indexOf(id.toLowerCase()) < 0)
                     boardjson.onboardComponents.push(id.toLowerCase());
                 visuals = true;
@@ -303,7 +312,8 @@
                     pinDist: 15,
                     pinBlocks: [],
                     leds: [],
-                    touchPads: []
+                    touchPads: [],
+                    buttons: []
                 },
                 gpioPinMap: {},
                 groundPins: [],

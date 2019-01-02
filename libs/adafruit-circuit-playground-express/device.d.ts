@@ -42,7 +42,6 @@ declare namespace input {
     //% indexedInstanceNS=input indexedInstanceShim=pxt::getButton
     //% block="button A" weight=95 fixedInstance
     //% shim=pxt::getButton(0)
-    //% parts="buttons"
     const buttonA: Button;
 
     /**
@@ -50,7 +49,6 @@ declare namespace input {
      */
     //% block="button B" weight=94 fixedInstance
     //% shim=pxt::getButton(1)
-    //% parts="buttons"
     const buttonB: Button;
 
     /**
@@ -58,7 +56,6 @@ declare namespace input {
      */
     //% block="buttons A+B" weight=93 fixedInstance
     //% shim=pxt::getButton(2)
-    //% parts="buttons"
     const buttonsAB: Button;
 }
 
