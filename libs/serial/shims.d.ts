@@ -2,6 +2,34 @@
 declare namespace serial {
 
     /**
+     * Read a line of text from the serial port and return the buffer when the delimiter is met.
+     * @param delimiter text delimiter that separates each text chunk
+     */
+    //% help=serial/read-until
+    //% blockId=serial_read_until block="serial|read until %delimiter=serial_delimiter_conv"
+    //% weight=19
+    //% group="Read" shim=serial::readUntil
+    function readUntil(delimiter: string): string;
+
+    /**
+     * Sets the size of the RX buffer in bytes
+     */
+    //% help=serial/set-rx-buffer-size
+    //% blockId=serialsetrxbuffersize block="%serial set rx buffer size to $size"
+    //% weight=10
+    //% group="Configuration" shim=serial::setRxBufferSize
+    function setRxBufferSize(size: uint8): void;
+
+    /**
+     * Sets the size of the TX buffer in bytes
+     */
+    //% help=serial/set-tx-buffer-size
+    //% blockId=serialsetrxbuffersize block="%serial set tx buffer size to $size"
+    //% weight=9
+    //% group="Configuration" shim=serial::setTxBufferSize
+    function setTxBufferSize(size: uint8): void;
+
+    /**
      * Read the buffered received data as a string
      */
     //% help=serial/read-string
