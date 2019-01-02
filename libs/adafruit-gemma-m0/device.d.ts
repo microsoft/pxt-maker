@@ -29,21 +29,18 @@ declare namespace input {
      * Capacitive pin D0
      */
     //% block="touch D0" fixedInstance shim=pxt::getTouchButton(PIN_D0)
-    //% parts="touch"
     const touchD0: TouchButton;
 
     /**
      * Capacitive pin D1
      */
     //% block="touch D1" fixedInstance shim=pxt::getTouchButton(PIN_D1)
-    //% parts="touch"
     const touchD1: TouchButton;
 
     /**
      * Capacitive pin D4
      */
     //% block="touch D2" fixedInstance shim=pxt::getTouchButton(PIN_D2)
-    //% parts="touch"
     const touchD2: TouchButton;
 
     /**
