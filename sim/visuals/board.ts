@@ -295,7 +295,7 @@ namespace pxsim.visuals {
     class BoardButton {
         element: SVGElement;
         def: ButtonDefinition;
-        button: Button;
+        button: CommonButton;
         constructor(def: ButtonDefinition) {
             this.def = def;
             def.w = def.w || 15;
@@ -313,16 +313,16 @@ namespace pxsim.visuals {
                 : pxsim.pxtcore.getButtonByPin(pxsim.pinIds[def.label]);
             // hooking up events
             pointerEvents.down.forEach(evid => this.element.addEventListener(evid, ev => {
-                this.button.pressed = true;
+                this.button.setPressed(true);
                 svg.addClass(this.element, "pressed");
             }));
             this.element.addEventListener(pointerEvents.leave, ev => {
                 svg.removeClass(this.element, "pressed");
-                this.button.pressed = false;
+                this.button.setPressed(false);
             })
             this.element.addEventListener(pointerEvents.up, ev => {
                 svg.removeClass(this.element, "pressed");
-                this.button.pressed = false;
+                this.button.setPressed(false);
             })
         }
     }
