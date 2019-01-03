@@ -1,3 +1,4 @@
+
 declare namespace pins {
     //% fixedInstance shim=pxt::getPin(PIN_A0)
     const A0: AnalogInOutPin;
@@ -56,6 +57,61 @@ declare namespace pins {
 }
 
 declare namespace input {
+    /**
+     * Capacitive pin A0
+     */
+    //% block="touch A0" fixedInstance shim=pxt::getTouchButton(PIN_A0)
+    const touchA0: TouchButton;
+
+    /**
+     * Capacitive pin A1
+     */
+    //% block="touch A1" fixedInstance shim=pxt::getTouchButton(PIN_A1)
+    const touchA1: TouchButton;
+
+    /**
+     * Capacitive pin A2
+     */
+    //% block="touch A2" fixedInstance shim=pxt::getTouchButton(PIN_A2)
+    const touchA2: TouchButton;
+
+    /**
+     * Capacitive pin A3
+     */
+    //% block="touch A3" fixedInstance shim=pxt::getTouchButton(PIN_A3)
+    const touchA3: TouchButton;
+
+    /**
+     * Button connecting A0 to GND.
+     */
+    //% block="button A0" fixedInstance
+    //% shim=pxt::getButtonByPin(PIN_A0,BUTTON_ACTIVE_LOW_PULL_UP)
+    //% parts="buttons"
+    const buttonA0: Button;
+
+    /**
+     * Button connecting A1 to GND.
+     */
+    //% block="button A1" fixedInstance
+    //% shim=pxt::getButtonByPin(PIN_A1,BUTTON_ACTIVE_LOW_PULL_UP)
+    //% parts="buttons"
+    const buttonA1: Button;
+
+    /**
+     * Button connecting A2 to GND.
+     */
+    //% block="button A2" fixedInstance
+    //% shim=pxt::getButtonByPin(PIN_A2,BUTTON_ACTIVE_LOW_PULL_UP)
+    //% parts="buttons"
+    const buttonA2: Button;
+
+    /**
+     * Button connecting A3 to GND.
+     */
+    //% block="button A3" fixedInstance
+    //% shim=pxt::getButtonByPin(PIN_A3,BUTTON_ACTIVE_LOW_PULL_UP)
+    //% parts="buttons"
+    const buttonA3: Button;
 
     /**
      * Button connecting A0 to GND.

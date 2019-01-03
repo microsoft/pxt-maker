@@ -1,5 +1,5 @@
 {
-    "name": "sparkfun-samd21-mini-breakout",
+    "name": "sparkfun-samd21-mini-breakout - beta",
     "description": "The SparkFun SAMD21 Mini Breakout board",
     "core": true,
     "files": [
@@ -16,6 +16,7 @@
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
+        "touch": "file:../touch",
         "light": "file:../light",
         "music": "file:../music",
         "serial": "file:../serial",
@@ -31,6 +32,8 @@
         "pina1",
         "buttond0",
         "buttond1",
+        "touchA0",
+        "touchA1",
         "light",
         "screen",
         "spi",
