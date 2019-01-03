@@ -2,7 +2,6 @@
   "driveDisplayName": "",
   "visual": {
     "image": "pkg://board.svg",
-    "outlineImage": "pkg://boardwireframe.svg",
     "useCrocClips": false,
     "width": 208.2989959716797,
     "height": 118.42015838623047,
@@ -26,65 +25,51 @@
         "x": 92.99050356023021,
         "y": 4.373153466575434,
         "labels": [
-          "D4_A2_PA06_TXD_MOSI"
+          "A4_D4_TX_MOSI"
         ]
       },
       {
         "x": 73.25403076030607,
         "y": 4.373153466575434,
         "labels": [
-          "D3_A3_PA07_RXD_SCK"
+          "A3_D3_RX_SCK"
         ]
       },
       {
         "x": 53.51753469677395,
-        "y": 102.85923650363782,
+        "y": 102.85924813557162,
         "labels": [
-          "3.3V"
+          "3V3"
         ]
       },
       {
         "x": 73.25403076030607,
-        "y": 102.85923650363782,
+        "y": 102.85924813557162,
         "labels": [
-          "D2_A1_PA09_SCL_MISO"
+          "A2_D0_SDA"
         ]
       },
       {
         "x": 92.99050356023021,
-        "y": 102.85923650363782,
+        "y": 102.85924813557162,
         "labels": [
-          "D1_A0_PA02"
+          "A0_D1"
         ]
       },
       {
         "x": 112.72695309654635,
-        "y": 102.85923650363782,
+        "y": 102.85924813557162,
         "labels": [
-          "D0_A4_PA08_SDA"
-        ]
-      },
-      {
-        "x": 132.46342589647048,
-        "y": 102.85923650363782,
-        "labels": [
-          "VBUS"
-        ]
-      },
-      {
-        "x": 12.975998527570631,
-        "y": 34.818821287539144,
-        "labels": [
-          "RESET"
+          "A2_D0"
         ]
       }
     ],
     "leds": [
       {
         "x": 185.3755484589453,
-        "y": 99.02860806182437,
+        "y": 99.02859642989057,
         "w": 6.216966598912433,
-        "h": 6.217035981964187,
+        "h": 6.217059245831805,
         "color": "#ff0000",
         "label": "LED"
       },
@@ -97,47 +82,59 @@
         "label": "NEOPIXEL"
       }
     ],
+    "touchPads": [
+      {
+        "x": 92.99050356023021,
+        "y": 4.373153466575434,
+        "w": 11.384977113612317,
+        "h": 11.385115805012141,
+        "label": "A4"
+      },
+      {
+        "x": 73.25403076030607,
+        "y": 4.373153466575434,
+        "w": 11.384977113612317,
+        "h": 11.385115805012141,
+        "label": "A3"
+      },
+      {
+        "x": 92.99050356023021,
+        "y": 102.85924813557162,
+        "w": 11.384977113612317,
+        "h": 11.385115805012141,
+        "label": "A0"
+      }
+    ],
+    "buttons": [],
     "reset": {
-      "x": 53.51753469677395,
-      "y": 4.373153466575434,
-      "w": 11.384988745416312,
-      "h": 11.385115805012141
+      "x": 17.833341005286808,
+      "y": 45.50404363529417,
+      "w": 13.596235396060582,
+      "h": 13.596392949742196
     }
   },
   "gpioPinMap": {
     "VBAT": "VBAT",
     "GND": "GND",
-    "D4_A2_PA06_TXD_MOSI": "D4_A2_PA06_TXD_MOSI",
-    "D4": "D4_A2_PA06_TXD_MOSI",
-    "A2": "D4_A2_PA06_TXD_MOSI",
-    "PA06": "D4_A2_PA06_TXD_MOSI",
-    "TXD": "D4_A2_PA06_TXD_MOSI",
-    "TX": "D4_A2_PA06_TXD_MOSI",
-    "MOSI": "D4_A2_PA06_TXD_MOSI",
-    "D3_A3_PA07_RXD_SCK": "D3_A3_PA07_RXD_SCK",
-    "D3": "D3_A3_PA07_RXD_SCK",
-    "A3": "D3_A3_PA07_RXD_SCK",
-    "PA07": "D3_A3_PA07_RXD_SCK",
-    "RXD": "D3_A3_PA07_RXD_SCK",
-    "SCK": "D3_A3_PA07_RXD_SCK",
-    "!RESET": "!RESET",
-    "3.3V": "3.3V",
-    "D2_A1_PA09_SCL_MISO": "D2_A1_PA09_SCL_MISO",
-    "D2": "D2_A1_PA09_SCL_MISO",
-    "A1": "D2_A1_PA09_SCL_MISO",
-    "PA09": "D2_A1_PA09_SCL_MISO",
-    "SCL": "D2_A1_PA09_SCL_MISO",
-    "MISO": "D2_A1_PA09_SCL_MISO",
-    "D1_A0_PA02": "D1_A0_PA02",
-    "D1": "D1_A0_PA02",
-    "A0": "D1_A0_PA02",
-    "PA02": "D1_A0_PA02",
-    "D0_A4_PA08_SDA": "D0_A4_PA08_SDA",
-    "D0": "D0_A4_PA08_SDA",
-    "A4": "D0_A4_PA08_SDA",
-    "PA08": "D0_A4_PA08_SDA",
-    "SDA": "D0_A4_PA08_SDA",
-    "VBUS": "VBUS",
+    "A4_D4_TX_MOSI": "A4_D4_TX_MOSI",
+    "A4": "A4_D4_TX_MOSI",
+    "D4": "A4_D4_TX_MOSI",
+    "TX": "A4_D4_TX_MOSI",
+    "MOSI": "A4_D4_TX_MOSI",
+    "A3_D3_RX_SCK": "A3_D3_RX_SCK",
+    "A3": "A3_D3_RX_SCK",
+    "D3": "A3_D3_RX_SCK",
+    "RX": "A3_D3_RX_SCK",
+    "SCK": "A3_D3_RX_SCK",
+    "3V3": "3V3",
+    "A2_D0_SDA": "A2_D0_SDA",
+    "A2": "A2_D0",
+    "D0": "A2_D0",
+    "SDA": "A2_D0_SDA",
+    "A0_D1": "A0_D1",
+    "A0": "A0_D1",
+    "D1": "A0_D1",
+    "A2_D0": "A2_D0",
     "LED": "LED",
     "RESET": "RESET",
     "NEOPIXEL": "NEOPIXEL"
@@ -146,13 +143,8 @@
     "GND"
   ],
   "threeVoltPins": [
-    "3.3V"
+    "3V3"
   ],
-  "spiPins": {
-    "MOSI": "MOSI",
-    "MISO": "MISO",
-    "SCK": "SCK"
-  },
   "i2cPins": {
     "SDA": "SDA",
     "SCL": "SCL"
@@ -165,5 +157,10 @@
     0,
     80,
     0
-  ]
+  ],
+  "spiPins": {
+    "MOSI": "MOSI",
+    "MISO": "MISO",
+    "SCK": "SCK"
+  }
 }

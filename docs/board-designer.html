@@ -240,7 +240,7 @@
             } else if (/BTN_SLIDE/.test(id)) {
                 if (boardjson.onboardComponents.indexOf("switch") < 0)
                     boardjson.onboardComponents.push("switch");
-            } else if (/^(MISO|MOSI|SCK)$/.test(id) && !boardjson.spiPins) {
+            } else if (/(MISO|MOSI|SCK)/.test(id) && !boardjson.spiPins) {
                 boardjson.spiPins = {
                     "MOSI": "MOSI",
                     "MISO": "MISO",
