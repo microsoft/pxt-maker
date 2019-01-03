@@ -24,7 +24,7 @@ declare namespace serial {
      * Sets the size of the TX buffer in bytes
      */
     //% help=serial/set-tx-buffer-size
-    //% blockId=serialsetrxbuffersize block="serial set tx buffer size to $size"
+    //% blockId=serialsettxbuffersize block="serial set tx buffer size to $size"
     //% weight=9
     //% group="Configuration" shim=serial::setTxBufferSize
     function setTxBufferSize(size: uint8): void;
