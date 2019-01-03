@@ -1,1 +1,1 @@
-# SparkFun SAM21 Dev Breakout board
+# SparkFun SAM21 Mini Breakout board
