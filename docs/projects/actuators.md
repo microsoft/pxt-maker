@@ -7,6 +7,7 @@
     {
         "name": "Servo",
         "url": "/projects/actuators/servo",
+        "imageUrl": "/static/projects/actuators/servo/gallery.gif",
         "cardType": "example"
     }
 ]

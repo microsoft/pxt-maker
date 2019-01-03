@@ -19,7 +19,8 @@
     },
     {
         "name": "Actuators",
-        "url": "/projects/actuators"
+        "url": "/projects/actuators",
+        "imageUrl": "/static/projects/actuators/servo/gallery.gif"
     },
     {
         "name": "HID",

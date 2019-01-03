@@ -14,11 +14,13 @@
     {
         "name": "Glowy",
         "url": "/projects/analog-io/glowy",
+        "imageUrl": "/static/projects/analog-io/glowy/gallery.gif",
         "cardType": "example"
     },
     {
         "name": "Glow Light",
         "url": "/projects/analog-io/glow-light",
+        "imageUrl": "/static/projects/analog-io/glowy/gallery.gif",
         "cardType": "example"
     }
 ]
