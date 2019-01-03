@@ -2,16 +2,6 @@
 declare namespace serial {
 
     /**
-     * Read a line of text from the serial port and return the buffer when the delimiter is met.
-     * @param delimiter text delimiter that separates each text chunk
-     */
-    //% help=serial/read-until
-    //% blockId=serial_read_until block="serial|read until %delimiter=serial_delimiter_conv"
-    //% weight=19
-    //% group="Read" shim=serial::readUntil
-    function readUntil(delimiter: string): string;
-
-    /**
      * Sets the size of the RX buffer in bytes
      */
     //% help=serial/set-rx-buffer-size
@@ -30,13 +20,10 @@ declare namespace serial {
     function setTxBufferSize(size: uint8): void;
 
     /**
-     * Read the buffered received data as a string
+     * Reads a single byte from the serial receive buffer. Negative if error.
      */
-    //% help=serial/read-string
-    //% blockId=serial_read_string block="serial|read string"
-    //% weight=18
-    //% group="Read" shim=serial::readString
-    function readString(): string;
+    //% Group="Read" shim=serial::read
+    function read(): int32;
 
     /**
      * Read the buffered received data as a buffer
@@ -46,15 +33,6 @@ declare namespace serial {
     //% weight=17
     //% group="Read" shim=serial::readBuffer
     function readBuffer(): Buffer;
-
-    /**
-     * Write some text to the serial port.
-     */
-    //% help=serial/write-string
-    //% weight=87
-    //% blockId=serial_writestring block="serial|write string %text"
-    //% group="Write" shim=serial::writeString
-    function writeString(text: string): void;
 
     /**
      * Send a buffer across the serial connection.
@@ -94,6 +72,16 @@ declare namespace serial {
     //% blockGap=8 inlineInputMode=inline
     //% group="Configuration" shim=serial::redirect
     function redirect(tx: DigitalInOutPin, rx: DigitalInOutPin, rate: BaudRate): void;
+
+    /**
+     * Registers code when a delimiter is received
+     **/
+    //% weight=10
+    //% help=serial/on-delimiter-received
+    //% blockId=serial_ondelimiter block="serial on delimiter $delimiter received"
+    //% blockGap=8
+    //% group="Events" shim=serial::onDelimiterReceived
+    function onDelimiterReceived(delimiter: Delimiters, handler: () => void): void;
 
     /**
      * Registers code when serial events happen
