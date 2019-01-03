@@ -172,11 +172,11 @@
         }
 
         function addElement(elt) {
-            const id = [
-                elt.getAttribute("connectorname"),
-                elt.getAttribute("id")]
-                .filter(n => !!n && !/^#/.test(n))[0];
+            const id = [elt.getAttribute("id")]
+                .filter(n => !!n && !/^#/.test(n) && !/[a-z]/.test(n))[0];
             if (!id || boardjson.gpioPinMap[id]) return;
+
+            log(id)
             boardjson.gpioPinMap[id] = id;
             // split subpins RX_TX_A0
             id.split('_').forEach(iid => boardjson.gpioPinMap[iid] = id);
@@ -240,7 +240,7 @@
             } else if (/BTN_SLIDE/.test(id)) {
                 if (boardjson.onboardComponents.indexOf("switch") < 0)
                     boardjson.onboardComponents.push("switch");
-            } else if (/^(MISO|MOSI|SCK)$/.test(id) && !boardjson.spiPins) {
+            } else if (/(MISO|MOSI|SCK)/.test(id) && !boardjson.spiPins) {
                 boardjson.spiPins = {
                     "MOSI": "MOSI",
                     "MISO": "MISO",
@@ -334,7 +334,7 @@
             const elts = svg.querySelectorAll("*")
             for (let i = 0; i < elts.length; ++i) {
                 const elt = elts[i];
-                const id = elt.getAttribute("connectorname") || elt.getAttribute("id");
+                const id = elt.getAttribute("id");
                 if (/^[!+\.A-Z0-9_]+$/.test(id) && !/^SVGID_/.test(id))
                     addElement(elt);
             }
