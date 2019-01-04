@@ -48,6 +48,10 @@
     Fullstop = 46,
     //% block="#"
     Hash = 35,
+    //% block=";"
+    SemiColumn = 59,
+    //% block="space",
+    Space = 32,
     //% block="tab"
     Tab = 9,
     //% block="pipe"

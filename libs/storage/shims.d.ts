@@ -2,11 +2,27 @@
 declare namespace storage {
 
     /** 
+     * Append string data to a new or existing file. 
+     * @param filename name of the file, eg: "log.txt"
+     */
+    //% parts="storage" 
+    //% blockId="storage_append" block="append file $filename with $data" shim=storage::append
+    function append(filename: string, data: string): void;
+
+    /** 
      * Append a buffer to a new or existing file. 
      * @param filename name of the file, eg: "log.txt"
      */
     //% parts="storage" shim=storage::appendBuffer
     function appendBuffer(filename: string, data: Buffer): void;
+
+    /** 
+     * Overwrite file with string data. 
+     * @param filename name of the file, eg: "log.txt"
+     */
+    //% parts="storage"
+    //% blockId="storage_overwrite" block="overwrite file $filename with $data" shim=storage::overwrite
+    function overwrite(filename: string, data: string): void;
 
     /** 
      * Overwrite file with a buffer. 
