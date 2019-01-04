@@ -1,10 +1,11 @@
 {
     "packages": {
         "approvedOrgs": [
-            "Microsoft",
-            "Adafruit"
+            "Microsoft"
         ],
         "approvedRepos": [
+            "Adafruit/pxt-crickit",
+            "Adafruit/pxt-seesaw",
             "ElectronicCats/pxt-bme280",
             "ElectronicCats/pxt-airQuality",
             "ElectronicCats/pxt-lora"
