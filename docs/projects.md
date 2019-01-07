@@ -28,7 +28,8 @@
     },
     {
         "name": "Screen",
-        "url": "/projects/screen"
+        "url": "/projects/screen",
+        "imageUrl": "/static/projects/screen/console/gallery.gif"
     },
     {
         "name": "Storage (beta)",
