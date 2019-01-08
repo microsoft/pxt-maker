@@ -89,20 +89,6 @@
         "preferredPackages": [],
         "githubPackages": true
     },
-    "compile": {
-        "isNative": true,
-        "useUF2": true,
-        "webUSB": true,
-        "gc": true,
-        "hasHex": true,
-        "deployDrives": ".*",
-        "deployFileMarker": "INFO_UF2.TXT",
-        "driveName": "DRIVE",
-        "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
-        "flashChecksumAddr": 8372,
-        "flashCodeAlign": 256,
-        "upgrades": []
-    },
     "runtime": {
         "mathBlocks": true,
         "loopsBlocks": true,
@@ -117,6 +103,21 @@
         "pauseUntilBlock": {
             "category": "loops"
         }
+    },
+    "compile": {
+        "isNative": true,
+        "useUF2": true,
+        "webUSB": true,
+        "gc": true,
+        "hasHex": true,
+        "uf2Family": "0x68ed2b88",
+        "deployDrives": ".*",
+        "deployFileMarker": "INFO_UF2.TXT",
+        "driveName": "DRIVE",
+        "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
+        "flashChecksumAddr": 8372,
+        "flashCodeAlign": 256,
+        "upgrades": []
     },
     "compileService": {
         "buildEngine": "codal",
@@ -150,7 +151,8 @@
                 "openocdScript": "source [find interface/stlink-v2.cfg]; set CPUTAPID 0x2ba01477; set CHIPNAME at91samd51g19; source [find target/at91samdXX.cfg]",
                 "ramSize": 196608,
                 "vtableShift": 4,
-                "gc": true
+                "gc": true,
+                "uf2Family": "0x55114460"
             },
             "compileService": {
                 "codalTarget": {
@@ -205,7 +207,8 @@
                 "deployFileMarker": "MBED.HTM",
                 "vtableShift": 4,
                 "useUF2": false,
-                "webUSB": false
+                "webUSB": false,
+                "uf2Family": "0x1b57745f"
             },
             "compileService": {
                 "codalTarget": {
@@ -236,7 +239,8 @@
                 "deployFileMarker": "INFO_UF2.TXT",
                 "vtableShift": 4,
                 "webUSB": false,
-                "gc": true
+                "gc": true,
+                "uf2Family": "0x5ee21072"
             },
             "compileService": {
                 "codalTarget": {
@@ -267,7 +271,8 @@
                 "deployFileMarker": "INFO_UF2.TXT",
                 "vtableShift": 4,
                 "webUSB": false,
-                "gc": true
+                "gc": true,
+                "uf2Family": "0x57755a57"
             },
             "compileService": {
                 "codalTarget": {
@@ -294,7 +299,8 @@
                 "openocdScriptAlt": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd51g19; source [find target/at91samdXX.cfg]",
                 "openocdScript": "source [find interface/stlink-v2.cfg]; set CPUTAPID 0x0bc11477; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
                 "vtableShift": 4,
-                "gc": true
+                "gc": true,
+                "uf2Family": "0x68ed2b88"
             },
             "compileService": {
                 "codalTarget": {
