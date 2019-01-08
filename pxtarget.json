@@ -110,7 +110,6 @@
         "webUSB": true,
         "gc": true,
         "hasHex": true,
-        "uf2Family": "0x68ed2b88",
         "deployDrives": ".*",
         "deployFileMarker": "INFO_UF2.TXT",
         "driveName": "DRIVE",
