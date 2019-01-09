@@ -304,7 +304,7 @@
                     "type": "git",
                     "branches": {
                         "https://github.com/lancaster-university/codal-core": "f2b9522ed0260bf1c5706d9652d7a23d76086263",
-                        "https://github.com/lancaster-university/codal-samd": "18ac859e3930326cc31d662506fd6e7130c8ae1c"
+                        "https://github.com/lancaster-university/codal-samd": "17434918701de160121e51dc85f68dda0a76ac4d"
                     }
                 },
                 "dockerImage": "pext/yotta:latest",
