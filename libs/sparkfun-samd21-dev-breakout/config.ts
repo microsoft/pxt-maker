@@ -20,9 +20,6 @@ namespace config {
     export const PIN_D11 = DAL.PA16;
     export const PIN_D12 = DAL.PA19;
     export const PIN_D13 = DAL.PA17;
-    export const PIN_LED = DAL.PA17;
-    export const PIN_RX = DAL.PA11;
-    export const PIN_TX = DAL.PA10;
     export const PIN_MISO = DAL.PA19;
     export const PIN_MOSI = DAL.PA16;
     export const PIN_SCK = DAL.PA17;
@@ -31,8 +28,11 @@ namespace config {
     export const PIN_RXLED = DAL.PB03;
     export const PIN_TXLED = DAL.PA27;
 
-    export const PIN_JACK_TX = DAL.PA04; // A3
-    export const PIN_JACK_COMMLED = DAL.PA27; // TXLED
+    export const PIN_LED = PIN_D13;
+    export const PIN_RX = PIN_D0;
+    export const PIN_TX = PIN_D1;
+    export const PIN_JACK_TX = PIN_A3; // A3
+    export const PIN_JACK_COMMLED = PIN_TXLED; // TXLED
 
     export const PIN_DISPLAY_CS = PIN_A2;
     export const PIN_DISPLAY_SCK = PIN_SCK;
