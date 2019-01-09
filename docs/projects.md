@@ -32,6 +32,10 @@
         "imageUrl": "/static/projects/screen/console/gallery.gif"
     },
     {
+        "name": "Serial",
+        "url": "/projects/serial"
+    },
+    {
         "name": "Storage (beta)",
         "url": "/projects/storage"
     },
@@ -50,6 +54,7 @@
 [Actuators](/projects/actuators),
 [HID](/projects/hid),
 [Screen](/projects/screen),
+[Serial](/projects/serial),
 [Storage (beta)](/projects/storage),
 [JacDac (beta)](/projects/jacdac)
 

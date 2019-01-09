@@ -25,7 +25,8 @@
         "Actuators": "/projects/actuators",
         "HID": "/projects/hid",
         "Screen": "/projects/screen",
-        "Storage (beta)": "/projects/storage",        
+        "Serial": "/projects/serial",
+        "Storage (beta)": "/projects/storage",
         "JacDac (beta)": "/projects/jacdac"
     },
     "firmwareUrls": {
