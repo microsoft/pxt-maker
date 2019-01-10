@@ -37,13 +37,14 @@
         "libs/switch",
         "libs/accelerometer",
         "libs/microphone",
+        "libs/adafruit-feather-m0-express",
+        "libs/adafruit-feather-m4-express",
+        "libs/adafruit-feather-bluefruit-nrf52",
+        "libs/redbear-ble-nano",
         "libs/adafruit-circuit-playground-express",
         "libs/adafruit-trinket-m0",
         "libs/adafruit-metro-m0-express",
         "libs/adafruit-metro-m4-express",
-        "libs/adafruit-feather-m0-express",
-        "libs/adafruit-feather-m4-express",
-        "libs/adafruit-feather-bluefruit-nrf52",
         "libs/adafruit-itsybitsy-m0-express",
         "libs/adafruit-itsybitsy-m4-express",
         "libs/adafruit-gemma-m0",
@@ -53,7 +54,6 @@
         "libs/electroniccats-meow-meow",
         "libs/sparkfun-samd21-dev-breakout",
         "libs/sparkfun-samd21-mini-breakout",
-        "libs/redbear-ble-nano",
         "libs/stitchkit"
     ],
     "serial": {
@@ -126,7 +126,7 @@
             "branch": "v1.5.6",
             "type": "git",
             "branches": {
-                "https://github.com/lancaster-university/codal-core": "5ac59869975aa8869770e2ccc9ed51a5f834b9c2"
+                "https://github.com/lancaster-university/codal-core": "871c7f19755d05596eaad45eadcd442051e083dc"
             }
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
@@ -157,7 +157,7 @@
                 "codalTarget": {
                     "name": "codal-itsybitsy-m4",
                     "url": "https://github.com/lancaster-university/codal-itsybitsy-m4",
-                    "branch": "v0.0.14",
+                    "branch": "v0.0.17",
                     "type": "git"
                 },
                 "codalBinary": "ITSYBITSY_M4",
@@ -277,7 +277,7 @@
                 "codalTarget": {
                     "name": "codal-big-brainpad",
                     "url": "https://github.com/lancaster-university/codal-big-brainpad",
-                    "branch": "v1.0.15",
+                    "branch": "v1.0.18",
                     "type": "git"
                 },
                 "codalBinary": "STM32",
@@ -305,12 +305,8 @@
                 "codalTarget": {
                     "name": "codal-circuit-playground",
                     "url": "https://github.com/lancaster-university/codal-circuit-playground",
-                    "branch": "v1.5.4-samd-peripherals.5.panic",
-                    "type": "git",
-                    "branches": {
-                        "https://github.com/lancaster-university/codal-core": "f2b9522ed0260bf1c5706d9652d7a23d76086263",
-                        "https://github.com/lancaster-university/codal-samd": "18ac859e3930326cc31d662506fd6e7130c8ae1c"
-                    }
+                    "branch": "v1.5.4-samd-peripherals.6",
+                    "type": "git"
                 },
                 "dockerImage": "pext/yotta:latest",
                 "codalBinary": "CIRCUIT_PLAYGROUND"
