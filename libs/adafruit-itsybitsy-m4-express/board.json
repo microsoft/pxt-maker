@@ -300,7 +300,7 @@
     "+3V3": "+3V3",
     "!RESET": "!RESET",
     "LED": "LED",
-    "JACK_TX": "A4",
+    "JACK_TX": "TX_D1",
     "DISPLAY_CS": "A2",
     "DISPLAY_SCK": "SCK",
     "DISPLAY_MOSI": "MOSI",
