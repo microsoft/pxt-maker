@@ -19,5 +19,5 @@ namespace config {
     export const PIN_RX = DAL.PA05;
     export const PIN_TX = DAL.PA04;    
 
-    export const PIN_JACK_TX = DAL.PA04; // TX
+    export const PIN_JACK_TX = PIN_TX; // TX
 }

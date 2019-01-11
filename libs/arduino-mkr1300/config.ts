@@ -44,6 +44,6 @@ namespace config {
     export const PIN_RX = DAL.PB23; // RX
     export const PIN_TX = DAL.PB22; // TX
     
-    export const PIN_JACK_TX = DAL.PA04; // A3
-    export const PIN_JACK_COMMLED = DAL.PA20; // LED
+    export const PIN_JACK_TX = PIN_TX;
+    export const PIN_JACK_COMMLED = PIN_LED;
 }

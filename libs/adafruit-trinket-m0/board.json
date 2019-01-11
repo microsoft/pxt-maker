@@ -135,6 +135,7 @@
     "A0": "A0_D1",
     "D1": "A0_D1",
     "A2_D0": "A2_D0",
+    "JACK_TX": "A4_D4_TX_MOSI",
     "LED": "LED",
     "RESET": "RESET",
     "NEOPIXEL": "NEOPIXEL"

@@ -15,7 +15,8 @@
         "buttons": "file:../buttons",
         "light": "file:../light",
         "touch": "file:../touch",
-        "pixel": "file:../pixel"
+        "pixel": "file:../pixel",
+        "jacdac": "file:../jacdac"
     },
     "public": true,
     "compileServiceVariant": "samd21",
@@ -32,6 +33,7 @@
         "buttond1",
         "touchd0",
         "touchd1",
-        "light"
+        "light",
+        "jacdac"
     ]
 }

@@ -233,6 +233,7 @@
     "D0": "D0_RX",
     "RX": "D0_RX",
     "D1": "D1",
+    "TX": "D1",
     "GND2": "GND2",
     "VCC": "VCC",
     "A3": "A3",
@@ -252,7 +253,8 @@
     "RESET": "RESET",
     "LED": "LED",
     "TXLED": "TXLED",
-    "RXLED": "RXLED"
+    "RXLED": "RXLED",
+    "JACK_TX": "D1"
   },
   "groundPins": [
     "GND",

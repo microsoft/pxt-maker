@@ -31,8 +31,8 @@ namespace config {
     export const PIN_LED = PIN_D13;
     export const PIN_RX = PIN_D0;
     export const PIN_TX = PIN_D1;
-    export const PIN_JACK_TX = PIN_A3; // A3
-    export const PIN_JACK_COMMLED = PIN_TXLED; // TXLED
+    export const PIN_JACK_TX = PIN_TX;
+    export const PIN_JACK_COMMLED = PIN_TXLED;
 
     export const PIN_DISPLAY_CS = PIN_A2;
     export const PIN_DISPLAY_SCK = PIN_SCK;

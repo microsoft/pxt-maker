@@ -354,7 +354,7 @@
       "RXLED": "RXLED",
       "OSHWA": "OSHWA",
       "PWR": "PWR",
-      "JACK_TX": "A3",
+      "JACK_TX": "TX_D1",
       "DISPLAY_CS": "A2",
       "DISPLAY_SCK": "SCK",
       "DISPLAY_MOSI": "MOSI",
