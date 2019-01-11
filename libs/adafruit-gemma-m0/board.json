@@ -107,7 +107,10 @@
       "D1_A0": "D1_A0",
       "D1": "D1_A0",
       "A0": "D1_A0",
-      "GND": "GND"
+      "GND": "GND",
+      "RX": "D2_A1_SDA",
+      "TX": "D0_A2_SCL",
+      "JACK_TX": "D0_A2_SCL"
     },
     "groundPins": [
       "GND"
