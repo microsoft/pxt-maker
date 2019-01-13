@@ -76,6 +76,15 @@
     },
     "groundPins": ["GND1", "GND0", "GND2"],
     "threeVoltPins": ["3.3V"],
+    "spiPins": {
+      "MOSI": "D8",
+      "MISO": "D10",
+      "SCK": "D9"
+    },
+    "i2cPins": {
+      "SDA": "SDA",
+      "SCL": "SCL"
+    },
     "onboardComponents": [],
     "marginWhenBreadboarding": [
         0,

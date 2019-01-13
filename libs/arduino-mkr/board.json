@@ -77,8 +77,21 @@
         "RX": "D0",
         "JACK_TX": "D1"
     },
-    "groundPins": ["GND"],
-    "threeVoltPins": ["VCC"],
+    "groundPins": [
+      "GND"
+    ],
+    "threeVoltPins": [
+      "VCC"
+    ],
+    "spiPins": {
+      "MOSI": "D8/MOSI",
+      "MISO": "D10/MISO",
+      "SCK": "D9/SCK"
+    },
+    "i2cPins": {
+      "SDA": "D11/SDA",
+      "SCL": "D12/SCL"
+    },
     "onboardComponents": [],
     "marginWhenBreadboarding": [
         0,
