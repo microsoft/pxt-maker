@@ -47,6 +47,7 @@
         "libs/adafruit-itsybitsy-m0-express",
         "libs/adafruit-itsybitsy-m4-express",
         "libs/adafruit-gemma-m0",
+        "libs/bluebird",
         "libs/arduino-zero",
         "libs/arduino-mkr",
         "libs/arduino-mkr1300",
