@@ -11,7 +11,11 @@
 
 #define PAGE_SIZE 4096
 
+#ifdef NRF52840
+#define DEV_NUM_PINS 48
+#else
 #define DEV_NUM_PINS 32
+#endif
 
 #define DEV_PWM_PINS 0x0000ffffffffULL // all pins are PWM pins it seems
 #define DEV_AIN_PINS 0x0000f000001fULL
@@ -26,6 +30,9 @@
 #define IMAGE_BITS 1
 
 typedef uint8_t PinName;
+
+#define neopixel_send_buffer(pin, ptr, len) target_panic(50)
+#define DEFAULT_NEOPIXEL_PIN P0_0
 
 // The parameters below needs tuning!
 
@@ -49,7 +56,6 @@ typedef uint8_t PinName;
 #define LIGHTSENSOR_HIGH_THRESHOLD 896
 
 
-#ifdef JUST_FOR_DAL_D_TS_CPP_WILL_IGNORE
 #define P0_0 0
 #define P0_1 1
 #define P0_2 2
@@ -114,6 +120,5 @@ typedef uint8_t PinName;
 #define P1_29 61
 #define P1_30 62
 #define P1_31 63
-#endif
 
 #endif
