@@ -1,5 +1,5 @@
 {
-    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/core---samd",
+    "additionalFilePath": "../core---samd",
     "cppDependencies": {
         "accelerometer": "file:../accelerometer",
         "music": "file:../music",
@@ -11,10 +11,8 @@
         "lightsensor": "file:../lightsensor",
         "microphone": "file:../microphone",
         "screen---st7735": "file:../screen---st7735",
-        "serial": "file:../serial",
         "switch": "file:../switch",
         "storage": "file:../storage",
-        "touch": "file:../touch",
         "thermometer": "file:../thermometer"
     }
 }
