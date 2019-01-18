@@ -1,4 +1,10 @@
 {
     "name": "core---nrf52832",
-    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/core"
+    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/core",
+    "cppDependencies": {
+        "music---pwm": "file:../music---pwm",
+        "buttons": "file:../buttons",
+        "jacdac": "file:../jacdac",
+        "switch": "file:../switch"
+    }
 }
