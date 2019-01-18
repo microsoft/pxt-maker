@@ -200,23 +200,18 @@
                 "useHF2": false
             },
             "compile": {
-                "openocdScript": "source [find board/nrf52-dk.cfg]",
+                "openocdScript": "source [find interface/cmsis-dap.cfg]; source [find target/nrf52.cfg]",
                 "flashChecksumAddr": 0,
-                "deployFileMarker": "MBED.HTM",
                 "vtableShift": 4,
-                "useUF2": false,
                 "webUSB": false,
-                "uf2Family": "0x1b57745f"
+                "uf2Family": "0xada52840"
             },
             "compileService": {
                 "codalTarget": {
                     "name": "codal-nrf52840-dk",
                     "url": "https://github.com/mmoskal/codal-nrf52840-dk",
-                    "branch": "v0.0.12",
-                    "type": "git",
-                    "branches": {
-                        "https://github.com/lancaster-university/codal-nrf52": "72432b46c8b6033e8a384eb5d9408f5c22b835e2"
-                    }
+                    "branch": "v1.0.1",
+                    "type": "git"
                 },
                 "codalBinary": "NRF52840_DK",
                 "serviceId": "codal2nrf52840",
