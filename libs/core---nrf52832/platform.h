@@ -4,6 +4,7 @@
 #include "Image.h"
 #include "NRF52Microphone.h"
 #include "NRF52SPI.h"
+#include "NRF52I2C.h"
 #include "NRF52Pin.h"
 #include "NRF52PWM.h"
 #include "Timer.h"
@@ -25,6 +26,7 @@
 
 #define CODAL_PIN NRF52Pin
 #define CODAL_SPI NRF52SPI
+#define CODAL_I2C NRF52I2C
 #define CODAL_TIMER Timer
 
 #define IMAGE_BITS 1
