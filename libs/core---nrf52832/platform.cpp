@@ -20,18 +20,17 @@ static void initRandomSeed() {
     seedRandom(seed);
 }
 
-static void disableNFConPins() {
-    // Ensure NFC pins are configured as GPIO. If not, update the non-volatile UICR.
-    if (NRF_UICR->NFCPINS || (NRF_UICR->REGOUT0 & 7) != 5) {
+static void setupUICR() {
+    // NFC pins are already handled in codal
+
+    #ifdef NRF52840
+    // If not set to 3.3V, update the non-volatile UICR.
+    if ((NRF_UICR->REGOUT0 & 7) != 5) {
         DMESG("RESET UICR\n");
         // Enable Flash Writes
         NRF_NVMC->CONFIG = (NVMC_CONFIG_WEN_Wen << NVMC_CONFIG_WEN_Pos);
         while (NRF_NVMC->READY == NVMC_READY_READY_Busy)
             ;
-
-        // Configure PINS for GPIO use.
-        if (NRF_UICR->NFCPINS)
-            NRF_UICR->NFCPINS = 0;
 
         // Set VDD to 3.3V
         if ((NRF_UICR->REGOUT0 & 7) != 5)
@@ -45,12 +44,13 @@ static void disableNFConPins() {
         // Reset, so the changes can take effect.
         NVIC_SystemReset();
     }
+    #endif
 }
 
 void platform_init() {
     initRandomSeed();
 
-    disableNFConPins(); // this is needed when P0_9 and P0_10 are to be used as regular pins
+    setupUICR();
 
     /*
         if (*HF2_DBG_MAGIC_PTR == HF2_DBG_MAGIC_START) {
