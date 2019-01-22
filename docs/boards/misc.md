@@ -17,6 +17,12 @@
         "imageUrl": "/static/libs/makefashion.jpg"  
     },
     {
+        "name": "Motion Bead",
+        "url": "/boards/bead-motion",
+        "cardType": "template",
+        "imageUrl": "/static/libs/bead-motion.jpg"  
+    },
+    {
         "name": "Add a new board",
         "url": "/boards/add-a-new-board",
         "cardType": "url"

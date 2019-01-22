@@ -54,7 +54,8 @@
         "libs/electroniccats-meow-meow",
         "libs/sparkfun-samd21-dev-breakout",
         "libs/sparkfun-samd21-mini-breakout",
-        "libs/stitchkit"
+        "libs/stitchkit",
+        "libs/bead-motion"       
     ],
     "serial": {
         "useHF2": true,
