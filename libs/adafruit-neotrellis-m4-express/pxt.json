@@ -9,6 +9,9 @@
         "board.json",
         "board.svg"
     ],
+    "testFiles": [
+        "test.ts"
+    ],
     "core": true,
     "compileServiceVariant": "samd51",
     "dependencies": {
