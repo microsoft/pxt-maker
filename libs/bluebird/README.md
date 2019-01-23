@@ -1,4 +1,4 @@
-# adafruit
+# Bluebird
 
-The adafruit library.
+The Teknikio Bluebird library.
 
