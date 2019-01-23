@@ -35,6 +35,8 @@ namespace config {
     export const PIN_RXLED = DAL.PA31;
     export const PIN_TXLED = DAL.PA27;
 
+    export const PIN_JACK_TX = PIN_TX;
+
     export const PIN_FLASH_MISO = DAL.PB03;
     export const PIN_FLASH_MOSI = DAL.PB22;
     export const PIN_FLASH_SCK = DAL.PB23;
