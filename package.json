@@ -46,8 +46,7 @@
   },
   "dependencies": {
     "pxt-common-packages": "6.0.2",
-    "pxt-core": "5.3.1",
-    "serialport": "^6.2.2"
+    "pxt-core": "5.3.1"
   },
   "scripts": {
     "test": "node node_modules/pxt-core/built/pxt.js travis"
