@@ -12,7 +12,9 @@
     "core": true,
     "compileServiceVariant": "samd51",
     "dependencies": {
-        "core---samd51": "file:../core---samd51"
+        "core---samd51": "file:../core---samd51",
+        "pixel": "file:../pixel",
+        "light": "file:../light"
     },
     "public": true,
     "features": [
