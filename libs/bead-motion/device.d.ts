@@ -9,11 +9,8 @@ declare namespace pins {
     //% fixedInstance shim=pxt::getPin(PIN_D8)
     const D8: DigitalInOutPin;
 
-
-    //% fixedInstance shim=pxt::getPin(PIN_SDA)
-    const SDA: DigitalInOutPin;
-    //% fixedInstance shim=pxt::getPin(PIN_SCL)
-    const SCL: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPin(PIN_TX)
+    const TX: DigitalInOutPin;
 
 }
 
