@@ -9,14 +9,6 @@ declare namespace pins {
     //% fixedInstance shim=pxt::getPin(PIN_D8)
     const D8: DigitalInOutPin;
 
-    //% fixedInstance shim=pxt::getPin(PIN_A5)
-    const A5: PwmPin;
-    //% fixedInstance shim=pxt::getPin(PIN_A5)
-    const A6: PwmPin;
-    //% fixedInstance shim=pxt::getPin(PIN_A5)
-    const A7: PwmPin;
-    //% fixedInstance shim=pxt::getPin(PIN_A5)
-    const A8: PwmPin;
 
     //% fixedInstance shim=pxt::getPin(PIN_SDA)
     const SDA: DigitalInOutPin;
@@ -26,30 +18,6 @@ declare namespace pins {
 }
 
 declare namespace input {
-
-    /**
-     * Capacitive pin A5
-     */
-    //% block="touch A5" fixedInstance shim=pxt::getTouchButton(PIN_A5)
-    const touchA5: TouchButton;
-
-    /**
-     * Capacitive pin A6
-     */
-    //% block="touch A6" fixedInstance shim=pxt::getTouchButton(PIN_A6)
-    const touchA6: TouchButton;
-
-    /**
-     * Capacitive pin A7
-     */
-    //% block="touch A7" fixedInstance shim=pxt::getTouchButton(PIN_A7)
-    const touchA7: TouchButton;
-
-    /**
-     * Capacitive pin A8
-     */
-    //% block="touch A8" fixedInstance shim=pxt::getTouchButton(PIN_A8)
-    const touchA8: TouchButton;
 
     /**
      * Button connecting D5 to GND.
