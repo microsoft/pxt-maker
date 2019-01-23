@@ -9,13 +9,13 @@ namespace config {
     export const PIN_SDA = DAL.PA08;
     export const PIN_SCL = DAL.PA09;
 
-    export const PIN_NUM_MATRIX_KEYPAD_ROWS = 4;
+    export const NUM_MATRIX_KEYPAD_ROWS = 4;
     export const PIN_MATRIX_KEYPAD_ROW0 = DAL.PA18;
     export const PIN_MATRIX_KEYPAD_ROW1 = DAL.PA19;
     export const PIN_MATRIX_KEYPAD_ROW2 = DAL.PB22;
     export const PIN_MATRIX_KEYPAD_ROW3 = DAL.PB23;
 
-    export const PIN_NUM_MATRIX_KEYPAD_COLS = 8;
+    export const NUM_MATRIX_KEYPAD_COLS = 8;
     export const PIN_MATRIX_KEYPAD_COL0 = DAL.PA14;
     export const PIN_MATRIX_KEYPAD_COL1 = DAL.PA15;
     export const PIN_MATRIX_KEYPAD_COL2 = DAL.PA16;
