@@ -276,6 +276,7 @@ declare const enum DAL {
     // /libraries/codal-core/inc/driver-models/LowLevelTimer.h
     TimerModeTimer = 0,
     TimerModeCounter = 1,
+    TimerModeAlternateFunction = 2,
     BitMode8 = 0,
     BitMode16 = 1,
     BitMode24 = 2,
@@ -447,6 +448,9 @@ declare const enum DAL {
     MAG_CTRL_REG2 = 17,
     MAG3110_SAMPLE_RATES = 11,
     MAG3110_WHOAMI_VAL = 196,
+    // /libraries/codal-core/inc/drivers/MMA8453.h
+    MMA8453_DEFAULT_ADDR = 56,
+    MMA8453_WHOAMI_VAL = 58,
     // /libraries/codal-core/inc/drivers/MMA8653.h
     MICROBIT_ACCEL_PITCH_ROLL_VALID = 2,
     MICROBIT_ACCEL_ADDED_TO_IDLE = 4,
@@ -714,7 +718,12 @@ declare const enum DAL {
     REF_TAG_BUFFER = 2,
     REF_TAG_IMAGE = 3,
     REF_TAG_USER = 32,
+    // /pxtapp/accelerometer/axis.h
+    ACC_SYSTEM = 3,
+    ACC_ROTATION = 0,
     // /pxtapp/configkeys.h
+    CFG_MAGIC0 = 513675505,
+    CFG_MAGIC1 = 539130489,
     CFG_PIN_ACCELEROMETER_INT = 1,
     CFG_PIN_ACCELEROMETER_SCL = 2,
     CFG_PIN_ACCELEROMETER_SDA = 3,
@@ -782,11 +791,11 @@ declare const enum DAL {
     CFG_PIN_JACK_SND = 65,
     CFG_PIN_JACK_BUSLED = 66,
     CFG_PIN_JACK_COMMLED = 67,
-    CFG_PIN_BTNMX_LATCH = 66,
-    CFG_PIN_BTNMX_CLOCK = 67,
-    CFG_PIN_BTNMX_DATA = 68,
     CFG_PIN_BTN_SOFT_RESET = 69,
     CFG_ACCELEROMETER_TYPE = 70,
+    CFG_PIN_BTNMX_LATCH = 71,
+    CFG_PIN_BTNMX_CLOCK = 72,
+    CFG_PIN_BTNMX_DATA = 73,
     ACCELEROMETER_TYPE_LIS3DH = 50,
     ACCELEROMETER_TYPE_MMA8453 = 56,
     ACCELEROMETER_TYPE_FXOS8700 = 60,
@@ -832,6 +841,26 @@ declare const enum DAL {
     CFG_RAM_BYTES = 205,
     CFG_SYSTEM_HEAP_BYTES = 206,
     CFG_LOW_MEM_SIMULATION_KB = 207,
+    CFG_BOOTLOADER_BOARD_ID = 208,
+    CFG_MATRIX_KEYPAD_MESSAGE_ID = 220,
+    CFG_NUM_MATRIX_KEYPAD_ROWS = 220,
+    CFG_PIN_MATRIX_KEYPAD_ROW0 = 221,
+    CFG_PIN_MATRIX_KEYPAD_ROW1 = 222,
+    CFG_PIN_MATRIX_KEYPAD_ROW2 = 223,
+    CFG_PIN_MATRIX_KEYPAD_ROW3 = 224,
+    CFG_PIN_MATRIX_KEYPAD_ROW4 = 225,
+    CFG_PIN_MATRIX_KEYPAD_ROW5 = 226,
+    CFG_PIN_MATRIX_KEYPAD_ROW6 = 227,
+    CFG_PIN_MATRIX_KEYPAD_ROW7 = 228,
+    CFG_NUM_MATRIX_KEYPAD_COLS = 240,
+    CFG_PIN_MATRIX_KEYPAD_COL0 = 241,
+    CFG_PIN_MATRIX_KEYPAD_COL1 = 232,
+    CFG_PIN_MATRIX_KEYPAD_COL2 = 233,
+    CFG_PIN_MATRIX_KEYPAD_COL3 = 234,
+    CFG_PIN_MATRIX_KEYPAD_COL4 = 235,
+    CFG_PIN_MATRIX_KEYPAD_COL5 = 236,
+    CFG_PIN_MATRIX_KEYPAD_COL6 = 237,
+    CFG_PIN_MATRIX_KEYPAD_COL7 = 238,
     // /pxtapp/hf2dbg.h
     HF2DBG_H = 1,
     // /pxtapp/pins.h
@@ -844,7 +873,6 @@ declare const enum DAL {
     // /pxtapp/platform.h
     PAGE_SIZE = 512,
     DEV_NUM_PINS = 64,
-    PXT_BOOTLOADER_CFG_MAGIC = 3191854542,
     PXT_74HC165 = 1,
     IMAGE_BITS = 4,
     PA00 = 0,
@@ -912,6 +940,7 @@ declare const enum DAL {
     PB30 = 62,
     PB31 = 63,
     // /pxtapp/pxt.h
+    NEOPIXEL_SPI = 1,
     DEVICE_ID_BUTTON_SLIDE = 3000,
     DEVICE_ID_MICROPHONE = 3001,
     DEVICE_ID_FIRST_BUTTON = 4000,
@@ -953,6 +982,16 @@ declare const enum DAL {
     GC = 0,
     // /pxtapp/pxtconfig.h
     PXT_GC = 1,
+    PXT_UF2_FAMILY = 1427194976,
+    // /pxtapp/storage/SNORFS.h
+    DEVICE_FLASH_ERROR = 950,
+    // /pxtapp/thermometer/target_temperature.h
+    TEMPERATURE_NOMINAL_VALUE = 25,
+    TEMPERATURE_NOMINAL_READING = 10000,
+    TEMPERATURE_BETA = 3380,
+    TEMPERATURE_SERIES_RESISTOR = 10000,
+    // /pxtapp/uf2format.h
+    BOOTLOADER_START = 0,
     // /pxtapp/uf2hid.h
     UF2_HID_H = 1,
 }
