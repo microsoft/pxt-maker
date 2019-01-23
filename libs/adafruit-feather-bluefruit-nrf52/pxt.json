@@ -1,6 +1,6 @@
 {
     "name": "adafruit-feather-bluefruit-nrf52",
-    "description": "Support for Something Else New Feather Bluefruit Nrf52 - beta",
+    "description": "Support for Adafruit Feather Bluefruit Nrf52 - beta",
     "files": [
         "README.md",
         "device.d.ts",
