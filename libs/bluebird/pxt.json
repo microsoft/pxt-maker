@@ -1,6 +1,6 @@
 {
     "name": "bluebird",
-    "description": "Support for Teknikio Bluebird - beta",
+    "description": "Support for Teknikio Test Bluebird - beta",
     "files": [
         "README.md",
         "device.d.ts",
@@ -15,8 +15,7 @@
     "dependencies": {
         "core---nrf52832": "file:../core---nrf52832",
         "buttons": "file:../buttons",
-        "music": "file:../music---pwm",
-        "light": "file:../light"
+        "music": "file:../music---pwm"
     },
     "public": true,
     "dalDTS": {
@@ -24,7 +23,6 @@
     },
     "features": [
         "pina0",
-        "pina1",
-        "pinled"
+        "pina1"
     ]
 }

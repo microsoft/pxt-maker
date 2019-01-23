@@ -3,18 +3,43 @@
     "visual": {
         "image": "pkg://board.svg",
         "outlineImage": "pkg://boardwireframe.svg",
-        "width": 175,
-        "height": 170,
+        "width": 400,
+        "height": 300,
         "pinDist": 8.4,
         "pinBlocks": [{
-                "x": 55,
-                "y": 45,
-                "labels": ["BAT", "En", "USB", "D13", "D12", "~D11", "~D10", "~D9", "D6", "~D5", "SCL", "SDA"]
+                "x": 33,
+                "y": 75,
+                "labels": ["3.3IN"]
             },
             {
-                "x": 22,
-                "y": 117,
-                "labels": ["RST", "3.3V", "ARf", "GND0", "A0", "A1", "A2", "A3", "A4", "A5", "SCK", "MOSI", "MISO", "RX", "TX", "GND1"]
+                "x": 157,
+                "y": 14,
+                "labels": ["GPIO2"]
+            },
+            {
+                "x": 274,
+                "y": 51,
+                "labels": ["GPIO1"]
+            },
+            {
+                "x": 381,
+                "y": 147,
+                "labels": ["3.3VOUT"]
+            },
+            {
+                "x": 271,
+                "y": 237,
+                "labels": ["GPIO4"]
+            },
+            {
+                "x": 155,
+                "y": 277,
+                "labels": ["GPIO3"]
+            },
+            {
+                "x": 32,
+                "y": 215,
+                "labels": ["GND"]
             }
         ],
         "leds": [{
@@ -23,9 +48,9 @@
             "color": "#ff4545",
             "label": "LED"
         },{
-            "x": 209,
-            "y": 119,
-            "w": 8.8,
+            "x": 530,
+            "y": 260,
+            "w": 15,
             "color": "neopixel",
             "label": "NEOPIXEL"
         }]
@@ -35,12 +60,10 @@
         ["A0", "A1", "A2", "A3", "A4", "A5", "SCK", "MOSI", "MISO", "RX", "TX"]
     ],
     "gpioPinMap": {
-        "A0": "A0",
-        "A1": "A1",
-        "A2": "A2",
-        "A3": "A3",
-        "A4": "A4",
-        "A5": "A5",
+        "A0": "GPIO1",
+        "A1": "GPIO4",
+        "A2": "GPIO3",
+        "A3": "GPIO2",
 
         "D0": "RX",
         "D1": "TX",
@@ -63,8 +86,8 @@
         "P11": "D5",
         "P12": "D6"
     },
-    "groundPins": ["GND0", "GND1"],
-    "threeVoltPins": ["3.3V"],
+    "groundPins": ["GND", "GND1"],
+    "threeVoltPins": ["3.3IN"],
     "onboardComponents": [""],
     "marginWhenBreadboarding": [
         0,
