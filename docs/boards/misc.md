@@ -20,7 +20,7 @@
         "name": "Bluebird",
         "url": "/boards/bluebird",
         "cardType": "template",
-        "imageUrl": "/static/libs/redbear-ble-nano.jpg"  
+        "imageUrl": "/static/libs/bluebird.jpg"  
     },
     {
         "name": "Add a new board",
