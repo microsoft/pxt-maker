@@ -1,4 +1,3 @@
-# adafruit
+# Adafruit Neotrellis M4 Express
 
-The adafruit library.
 
