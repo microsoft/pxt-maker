@@ -17,10 +17,14 @@
     "dependencies": {
         "core---samd51": "file:../core---samd51",
         "pixel": "file:../pixel",
-        "light": "file:../light"
+        "light": "file:../light",
+        "jacdac": "file:../jacdac"
     },
     "public": true,
     "features": [
-        "uf2"
+        "uf2",
+        "pixel",
+        "light",
+        "jacdac"
     ]
 }
