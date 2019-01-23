@@ -5,11 +5,12 @@ declare namespace keyboard {
      * Sends a sequence of keystrokes to the keyboard
      */
     //% blockId=keyboardType block="keyboard type %text"
-    //% blockGap=8 weight=100 shim=keyboard::type
+    //% blockGap=8 weight=100
+    //% text.shadowOptions.toString=true shim=keyboard::type
     function type(text: string): void;
 
     /**
-     * Sends a media key command
+     * Sends a key command
      */
     //% blockId=keyboardStandardKey block="keyboard key %key|%event"
     //% blockGap=8 weight=99 shim=keyboard::key

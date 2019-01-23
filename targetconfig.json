@@ -1,21 +1,33 @@
 {
     "packages": {
         "approvedOrgs": [
-            "Microsoft",
-            "Adafruit"
+            "Microsoft"
         ],
         "approvedRepos": [
+            "Adafruit/pxt-crickit",
+            "Adafruit/pxt-seesaw",
+            "ElectronicCats/pxt-bme280",
+            "ElectronicCats/pxt-airQuality",
+            "ElectronicCats/pxt-lora"
         ],
         "preferredRepos": [
             "Adafruit/pxt-crickit",
-            "Adafruit/pxt-seesaw"
+            "Adafruit/pxt-seesaw",
+            "ElectronicCats/pxt-bme280",
+            "ElectronicCats/pxt-airQuality",
+            "ElectronicCats/pxt-lora"
         ]
     },
     "galleries": {
-        "Digital IO": "/examples/digital-io",
-        "Analog IO": "/examples/analog-io",
-        "Actuators": "/examples/actuators",
-        "HID": "/examples/hid"
+        "Digital IO": "/projects/digital-io",
+        "Analog IO": "/projects/analog-io",
+        "Light": "/projects/light", 
+        "Actuators": "/projects/actuators",
+        "HID": "/projects/hid",
+        "Screen": "/projects/screen",
+        "Serial": "/projects/serial",
+        "Storage (beta)": "/projects/storage",
+        "JacDac (beta)": "/projects/jacdac"
     },
     "firmwareUrls": {
         "adafruit-circuit-playground-express": "https://learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-uf2-bootloader-details#updating-the-bootloader",

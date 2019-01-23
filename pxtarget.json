@@ -11,6 +11,7 @@
         "libs/core",
         "libs/core---nrf52832",
         "libs/core---nrf52840",
+        "libs/core---samd",
         "libs/screen---st7735",
         "libs/game",
         "libs/music",
@@ -19,28 +20,41 @@
         "libs/buttons",
         "libs/touch",
         "libs/light",
-        "libs/adafruit-trinket-m0",
-        "libs/adafruit-metro-m0-express",
-        "libs/adafruit-feather-m0-express",
-        "libs/adafruit-gemma-m0",
-        "libs/arduino-zero",
-        "libs/arduino-mkr",
-        "libs/arduino-mkr1300", 
-        "libs/electroniccats-meow-meow",
-        "libs/sparkfun-samd21-dev-breakout",
-        "libs/sparkfun-redboard-turbo",
-        "libs/redbear-ble-nano",
-        "libs/makefashion",
         "libs/tests",
         "libs/gamepad",
         "libs/mouse",
         "libs/keyboard",
-        "libs/accelerometer",
         "libs/display",
         "libs/servo",
         "libs/storage",
         "libs/serial",
-        "libs/datalogger"
+        "libs/jacdac",
+        "libs/jacdac-drivers",
+        "libs/jacdac-game",
+        "libs/datalogger",
+        "libs/lightsensor",
+        "libs/thermometer",
+        "libs/switch",
+        "libs/accelerometer",
+        "libs/microphone",
+        "libs/adafruit-feather-m0-express",
+        "libs/adafruit-feather-m4-express",
+        "libs/adafruit-feather-bluefruit-nrf52",
+        "libs/redbear-ble-nano",
+        "libs/adafruit-circuit-playground-express",
+        "libs/adafruit-trinket-m0",
+        "libs/adafruit-metro-m0-express",
+        "libs/adafruit-metro-m4-express",
+        "libs/adafruit-itsybitsy-m0-express",
+        "libs/adafruit-itsybitsy-m4-express",
+        "libs/adafruit-gemma-m0",
+        "libs/arduino-zero",
+        "libs/arduino-mkr",
+        "libs/arduino-mkr1300",
+        "libs/electroniccats-meow-meow",
+        "libs/sparkfun-samd21-dev-breakout",
+        "libs/sparkfun-samd21-mini-breakout",
+        "libs/stitchkit"
     ],
     "serial": {
         "useHF2": true,
@@ -75,19 +89,6 @@
         "preferredPackages": [],
         "githubPackages": true
     },
-    "compile": {
-        "isNative": true,
-        "useUF2": true,
-        "webUSB": true,
-        "hasHex": true,
-        "deployDrives": ".*",
-        "deployFileMarker": "INFO_UF2.TXT",
-        "driveName": "DRIVE",
-        "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
-        "flashChecksumAddr": 8372,
-        "flashCodeAlign": 256,
-        "upgrades": []
-    },
     "runtime": {
         "mathBlocks": true,
         "loopsBlocks": true,
@@ -103,13 +104,29 @@
             "category": "loops"
         }
     },
+    "compile": {
+        "isNative": true,
+        "useUF2": true,
+        "webUSB": true,
+        "gc": true,
+        "hasHex": true,
+        "deployDrives": ".*",
+        "deployFileMarker": "INFO_UF2.TXT",
+        "driveName": "DRIVE",
+        "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
+        "flashChecksumAddr": 8372,
+        "flashCodeAlign": 256,
+        "upgrades": []
+    },
     "compileService": {
         "buildEngine": "codal",
         "codalTarget": {
             "name": "codal-circuit-playground",
             "url": "https://github.com/lancaster-university/codal-circuit-playground",
-            "branch": "v1.5.3",
-            "type": "git"
+            "branch": "v1.5.6",
+            "type": "git",
+            "branches": {
+                "https://github.com/lancaster-university/codal-core": "871c7f19755d05596eaad45eadcd442051e083dc"            }
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
         "yottaConfig": {
@@ -120,10 +137,32 @@
             }
         },
         "githubCorePackage": "lancaster-university/codal",
-        "gittag": "v0.5.0",
-        "serviceId": "codal2cp"
+        "gittag": "v0.6.1",
+        "serviceId": "codal2cp",
+        "dockerImage": "pext/yotta:latest"
     },
     "variants": {
+        "samd51": {
+            "compile": {
+                "hasHex": true,
+                "openocdScriptAlt": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd51g19; source [find target/at91samdXX.cfg]",
+                "openocdScript": "source [find interface/stlink-v2.cfg]; set CPUTAPID 0x2ba01477; set CHIPNAME at91samd51g19; source [find target/at91samdXX.cfg]",
+                "ramSize": 196608,
+                "vtableShift": 4,
+                "gc": true,
+                "uf2Family": "0x55114460"
+            },
+            "compileService": {
+                "codalTarget": {
+                    "name": "codal-itsybitsy-m4",
+                    "url": "https://github.com/lancaster-university/codal-itsybitsy-m4",
+                    "branch": "v0.0.17",
+                    "type": "git"
+                },
+                "codalBinary": "ITSYBITSY_M4",
+                "serviceId": "codal2samd51"
+            }
+        },
         "nrf52832": {
             "serial": {
                 "useHF2": false
@@ -134,17 +173,19 @@
                 "deployFileMarker": "MBED.HTM",
                 "vtableShift": 3,
                 "useUF2": false,
-                "webUSB": false
+                "webUSB": false,
+                "gc": true
             },
             "compileService": {
                 "codalTarget": {
                     "name": "codal-ble-nano",
                     "url": "https://github.com/lancaster-university/codal-ble-nano",
-                    "branch": "v0.0.3-pktserial.2",
+                    "branch": "v0.0.3-pktserial.4",
                     "type": "git"
                 },
                 "codalBinary": "BLE_NANO",
                 "serviceId": "codal2ble",
+                "dockerImage": "pext/yotta:latest",
                 "yottaConfig": {
                     "pxt": {
                         "board": {
@@ -164,17 +205,22 @@
                 "deployFileMarker": "MBED.HTM",
                 "vtableShift": 4,
                 "useUF2": false,
-                "webUSB": false
+                "webUSB": false,
+                "uf2Family": "0x1b57745f"
             },
             "compileService": {
                 "codalTarget": {
                     "name": "codal-nrf52840-dk",
                     "url": "https://github.com/mmoskal/codal-nrf52840-dk",
                     "branch": "v0.0.12",
-                    "type": "git"
+                    "type": "git",
+                    "branches": {
+                        "https://github.com/lancaster-university/codal-nrf52": "72432b46c8b6033e8a384eb5d9408f5c22b835e2"
+                    }
                 },
                 "codalBinary": "NRF52840_DK",
                 "serviceId": "codal2nrf52840",
+                "dockerImage": "pext/yotta:latest",
                 "yottaConfig": {
                     "pxt": {
                         "board": {
@@ -193,7 +239,9 @@
                 "flashChecksumAddr": 0,
                 "deployFileMarker": "INFO_UF2.TXT",
                 "vtableShift": 4,
-                "webUSB": false
+                "webUSB": false,
+                "gc": true,
+                "uf2Family": "0x5ee21072"
             },
             "compileService": {
                 "codalTarget": {
@@ -204,6 +252,7 @@
                 },
                 "codalBinary": "GENERIC_F103RE",
                 "serviceId": "codal2f103re",
+                "dockerImage": "pext/yotta:latest",
                 "yottaConfig": {
                     "pxt": {
                         "board": {
@@ -222,17 +271,20 @@
                 "flashChecksumAddr": 0,
                 "deployFileMarker": "INFO_UF2.TXT",
                 "vtableShift": 4,
-                "webUSB": false
+                "webUSB": false,
+                "gc": true,
+                "uf2Family": "0x57755a57"
             },
             "compileService": {
                 "codalTarget": {
                     "name": "codal-big-brainpad",
                     "url": "https://github.com/lancaster-university/codal-big-brainpad",
-                    "branch": "v1.0.8",
+                    "branch": "v1.0.18",
                     "type": "git"
                 },
                 "codalBinary": "STM32",
                 "serviceId": "codal2stm32",
+                "dockerImage": "pext/yotta:latest",
                 "yottaConfig": {
                     "pxt": {
                         "board": {
@@ -240,6 +292,26 @@
                         }
                     }
                 }
+            }
+        },
+        "samd21": {
+            "compile": {
+                "hasHex": true,
+                "openocdScriptAlt": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd51g19; source [find target/at91samdXX.cfg]",
+                "openocdScript": "source [find interface/stlink-v2.cfg]; set CPUTAPID 0x0bc11477; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
+                "vtableShift": 4,
+                "gc": true,
+                "uf2Family": "0x68ed2b88"
+            },
+            "compileService": {
+                "codalTarget": {
+                    "name": "codal-circuit-playground",
+                    "url": "https://github.com/lancaster-university/codal-circuit-playground",
+                    "branch": "v1.5.4-samd-peripherals.6",
+                    "type": "git"
+                },
+                "dockerImage": "pext/yotta:latest",
+                "codalBinary": "CIRCUIT_PLAYGROUND"
             }
         }
     },
@@ -269,7 +341,8 @@
         "chooseBoardOnNewProject": true,
         "lightToc": true,
         "instructions": true,
-        "docMenu": [{
+        "docMenu": [
+            {
                 "name": "About",
                 "path": "/about"
             },
@@ -325,7 +398,8 @@
         },
         "allowPackageExtensions": true,
         "extendEditor": true,
-        "crowdinProject": "kindscript"
+        "crowdinProject": "kindscript",
+        "scriptManager": true
     },
     "ignoreDocsErrors": true
 }

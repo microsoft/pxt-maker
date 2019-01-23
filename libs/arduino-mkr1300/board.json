@@ -6,21 +6,21 @@
         "height": 170,
         "pinDist": 6.8,
         "pinBlocks": [{
-                "x": 60,
-                "y": 53,
+                "x": 55,
+                "y": 55,
                 "labels": ["5V", "VIN", "VCC", "GND", "RESET", "D14/TX", "D13/RX", "D12/SCL", "D11/SDA",
                     "D10/MISO", "D9/SCK", "D8/MOSI", "D7", "D6"
                 ]
             },
             {
-                "x": 60,
-                "y": 110,
+                "x": 55,
+                "y": 107,
                 "labels": ["AREF", "A0", "A1", "A2", "A3", "A4", "A5", "A6", "D0", "D1", "D2", "D3", "D4", "D5"]
             }
         ],
         "leds": [{
-            "x": 115,
-            "y": 129,
+            "x": 110,
+            "y": 125,
             "w": 4,
             "h": 6,
             "color": "#FFA44A",
@@ -36,6 +36,7 @@
         "A1": "A1",
         "A2": "A2",
         "A3": "A3",
+        "JACK_TX": "D14/TX",
         "A4": "A4",
         "A5": "A5",
 
@@ -54,6 +55,8 @@
         "D12": "D12/SCL",
         "D13": "D13/RX",
         "D14": "D14/TX",
+        "TX": "D14/TX",
+        "RX": "D13/RX",
 
         "P0": "A0",
         "P1": "A1",
@@ -74,8 +77,21 @@
         "P16": "~MISO/A4",
         "P19": "~MOSI/A5"
     },
-    "groundPins": ["GND"],
-    "threeVoltPins": ["VCC"],
+    "groundPins": [
+      "GND"
+    ],
+    "threeVoltPins": [
+      "VCC"
+    ],
+    "spiPins": {
+      "MOSI": "D8/MOSI",
+      "MISO": "D10/MISO",
+      "SCK": "D9/SCK"
+    },
+    "i2cPins": {
+      "SDA": "D11/SDA",
+      "SCL": "D12/SCL"
+    },
     "onboardComponents": [],
     "marginWhenBreadboarding": [
         0,

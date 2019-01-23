@@ -1,61 +1,167 @@
 {
-    "driveDisplayName": "TRINKETBOOT",
-    "visual": {
-        "image": "pkg://board.svg",
-        "outlineImage": "pkg://boardwireframe.svg",
-        "width": 175,
-        "height": 170,
-        "pinDist": 16,
-        "pinBlocks": [{
-                "x": 42,
-                "y": 33,
-                "labels": ["RST", "D3", "D4", "GND", "BAT"]
-            },
-            {
-                "x": 42,
-                "y": 118,
-                "labels": ["3V", "D2", "D1", "D0", "USB"]
-            }
-        ],
-        "leds": [{
-            "x": 139.5,
-            "y": 107.7,
-            "w": 9.5,
-            "h": 5,
-            "color": "#ff4545",
-            "label": "LED"
-        }, {
-            "x": 73,
-            "y": 68,
-            "w": 5,
-            "color": "neopixel",
-            "label": "NEOPIXEL"
-        }]
-    },
-    "gpioPinMap": {
-        "D0": "D0",
-        "D1": "D1",
-        "D2": "D2",
-        "D3": "D3",
-        "D4": "D4",
-        "P0": "D0",
-        "P1": "D1",
-        "P2": "D2",
-        "P3": "D3",
-        "P4": "D4",
-        "A0": "D0",
-        "A1": "D1",
-        "A2": "D2",
-        "A3": "D3",
-        "A4": "D4"
-    },
-    "groundPins": ["GND"],
-    "threeVoltPins": ["3V"],
-    "onboardComponents": [],
-    "marginWhenBreadboarding": [
-        0,
-        0,
-        80,
-        0
-    ]
+  "driveDisplayName": "",
+  "visual": {
+    "image": "pkg://board.svg",
+    "useCrocClips": false,
+    "width": 208.2989959716797,
+    "height": 118.42015838623047,
+    "pinDist": 15,
+    "pinBlocks": [
+      {
+        "x": 132.46342589647048,
+        "y": 4.373153466575434,
+        "labels": [
+          "VBAT"
+        ]
+      },
+      {
+        "x": 112.72695309654635,
+        "y": 4.373153466575434,
+        "labels": [
+          "GND"
+        ]
+      },
+      {
+        "x": 92.99050356023021,
+        "y": 4.373153466575434,
+        "labels": [
+          "A4_D4_TX_MOSI"
+        ]
+      },
+      {
+        "x": 73.25403076030607,
+        "y": 4.373153466575434,
+        "labels": [
+          "A3_D3_RX_SCK"
+        ]
+      },
+      {
+        "x": 53.51753469677395,
+        "y": 102.85924813557162,
+        "labels": [
+          "3V3"
+        ]
+      },
+      {
+        "x": 73.25403076030607,
+        "y": 102.85924813557162,
+        "labels": [
+          "A2_D0_SDA"
+        ]
+      },
+      {
+        "x": 92.99050356023021,
+        "y": 102.85924813557162,
+        "labels": [
+          "A0_D1"
+        ]
+      },
+      {
+        "x": 112.72695309654635,
+        "y": 102.85924813557162,
+        "labels": [
+          "A2_D0"
+        ]
+      }
+    ],
+    "leds": [
+      {
+        "x": 185.3755484589453,
+        "y": 99.02859642989057,
+        "w": 6.216966598912433,
+        "h": 6.217059245831805,
+        "color": "#ff0000",
+        "label": "LED"
+      },
+      {
+        "x": 92.0208298520433,
+        "y": 38.392686422463875,
+        "w": 11.120853740312091,
+        "h": 10.030681800417224,
+        "color": "neopixel",
+        "label": "NEOPIXEL"
+      }
+    ],
+    "touchPads": [
+      {
+        "x": 92.99050356023021,
+        "y": 4.373153466575434,
+        "w": 11.384977113612317,
+        "h": 11.385115805012141,
+        "label": "A4"
+      },
+      {
+        "x": 73.25403076030607,
+        "y": 4.373153466575434,
+        "w": 11.384977113612317,
+        "h": 11.385115805012141,
+        "label": "A3"
+      },
+      {
+        "x": 92.99050356023021,
+        "y": 102.85924813557162,
+        "w": 11.384977113612317,
+        "h": 11.385115805012141,
+        "label": "A0"
+      }
+    ],
+    "buttons": [],
+    "reset": {
+      "x": 17.833341005286808,
+      "y": 45.50404363529417,
+      "w": 13.596235396060582,
+      "h": 13.596392949742196
+    }
+  },
+  "gpioPinMap": {
+    "VBAT": "VBAT",
+    "GND": "GND",
+    "A4_D4_TX_MOSI": "A4_D4_TX_MOSI",
+    "A4": "A4_D4_TX_MOSI",
+    "D4": "A4_D4_TX_MOSI",
+    "TX": "A4_D4_TX_MOSI",
+    "MOSI": "A4_D4_TX_MOSI",
+    "A3_D3_RX_SCK": "A3_D3_RX_SCK",
+    "A3": "A3_D3_RX_SCK",
+    "D3": "A3_D3_RX_SCK",
+    "RX": "A3_D3_RX_SCK",
+    "SCK": "A3_D3_RX_SCK",
+    "3V3": "3V3",
+    "A2_D0_SDA": "A2_D0_SDA",
+    "A2": "A2_D0",
+    "D0": "A2_D0",
+    "SDA": "A2_D0_SDA",
+    "A0_D1": "A0_D1",
+    "A0": "A0_D1",
+    "D1": "A0_D1",
+    "A2_D0": "A2_D0",
+    "JACK_TX": "A4_D4_TX_MOSI",
+    "LED": "LED",
+    "RESET": "RESET",
+    "NEOPIXEL": "NEOPIXEL"
+  },
+  "groundPins": [
+    "GND"
+  ],
+  "threeVoltPins": [
+    "3V3"
+  ],
+  "i2cPins": {
+    "SDA": "SDA",
+    "SCL": "SCL"
+  },
+  "onboardComponents": [
+    "pixel"
+  ],
+  "marginWhenBreadboarding": [
+    0,
+    0,
+    80,
+    0
+  ],
+  "spiPins": {
+    "MOSI": "MOSI",
+    "MISO": "MISO",
+    "SCK": "SCK"
+  }
 }

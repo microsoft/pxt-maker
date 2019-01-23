@@ -1,6 +1,11 @@
 #include "pxt.h"
 
+#include "NRFLowLevelTimer.h"
+
 namespace pxt {
+
+NRFLowLevelTimer lowTimer(NRF_TIMER1, TIMER1_IRQn);
+CODAL_TIMER devTimer(lowTimer);
 
 static void initRandomSeed() {
     int seed = 0xC0DA1;

@@ -40,6 +40,7 @@ declare namespace input {
      */
     //% block="button P02" fixedInstance
     //% shim=pxt::getButtonByPin(P0_2,BUTTON_ACTIVE_LOW_PULL_UP)
+    //% parts="buttons"
     const buttonP02: Button;
 }
 

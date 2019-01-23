@@ -1,0 +1,43 @@
+{
+    "name": "adafruit-itsybitsy-m0-express",
+    "description": "Support for Adafruit ItsyBitsy M0 Express",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "core": true,
+    "dependencies": {
+        "core---samd": "file:../core---samd",
+        "buttons": "file:../buttons",
+        "light": "file:../light",
+        "touch": "file:../touch",
+        "music": "file:../music",
+        "pixel": "file:../pixel",
+        "storage": "file:../storage",
+        "serial": "file:../serial",
+        "jacdac": "file:../jacdac"
+    },
+    "public": true,
+    "compileServiceVariant": "samd21",
+    "features": [
+        "uf2",
+        "pixel",
+        "pinled",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
+        "toucha0",
+        "toucha1",
+        "storage",
+        "light",
+        "screen",
+        "jacdac"
+    ]
+}

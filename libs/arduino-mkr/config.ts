@@ -55,4 +55,7 @@ namespace config {
     export const PIN_FLASH_SCK = DAL.PA12;
     // CD = PA27
     // SS = PA14
+
+    export const PIN_JACK_TX = PIN_TX;
+    export const PIN_JACK_COMMLED = PIN_LED;
 }
