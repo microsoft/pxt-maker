@@ -14,7 +14,8 @@
     "compileServiceVariant": "samd51",
     "dependencies": {
         "core---samd51": "file:../core---samd51",
-        "buttons": "file:../buttons"
+        "buttons": "file:../buttons",
+        "jacdac": "file:../jacdac"
     },
     "public": true,
     "features": [
@@ -25,6 +26,8 @@
         "pina0",
         "pina1",
         "buttond0",
-        "buttond1"
+        "buttond1",
+        "screen",
+        "jacdac"
     ]
 }

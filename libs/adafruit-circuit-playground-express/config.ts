@@ -21,7 +21,7 @@ namespace config {
     export const PIN_IR_IN = DAL.PA12;
     export const PIN_BTN_A = DAL.PA28;
     export const PIN_BTN_B = DAL.PA14;
-
+    
     export const PIN_A0 = DAL.PA02;
     export const PIN_A1 = DAL.PA05;
     export const PIN_A2 = DAL.PA06;
@@ -32,8 +32,8 @@ namespace config {
     export const PIN_A7 = DAL.PB08;
     export const PIN_SCL = DAL.PB03;
     export const PIN_SDA = DAL.PB02;
-    export const PIN_RX = DAL.PB09;
-    export const PIN_TX = DAL.PB08;
+    export const PIN_RX = PIN_A6;
+    export const PIN_TX = PIN_A7;
     export const PIN_A8 = DAL.PA11;
     export const PIN_A9 = DAL.PA09;
     export const PIN_D4 = DAL.PA28;
@@ -41,6 +41,9 @@ namespace config {
     export const PIN_D7 = DAL.PA15;
     export const PIN_D8 = DAL.PB23;
     export const PIN_D13 = DAL.PA17;
-    export const PIN_LED = DAL.PA17;
+    export const PIN_LED = PIN_D13;
     export const PIN_A10 = DAL.PA08;
+
+    export const PIN_JACK_TX = PIN_TX; // TX
+    export const PIN_JACK_COMMLED = PIN_LED; // LED
 }

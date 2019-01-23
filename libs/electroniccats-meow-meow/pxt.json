@@ -10,19 +10,24 @@
         "board.svg"
     ],
     "dependencies": {
-        "core": "file:../core",
+        "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
+        "light": "file:../light",
         "touch": "file:../touch",
-        "music": "file:../music"
+        "music": "file:../music",
+        "jacdac": "file:../jacdac"
     },
     "core": true,
     "public": true,
+    "compileServiceVariant": "samd21",
     "features": [
         "uf2",
         "pinled",
         "pina0",
         "pina1",
         "toucha0",
-        "toucha1"
+        "toucha1",
+        "light",
+        "jacdac"
     ]
 }

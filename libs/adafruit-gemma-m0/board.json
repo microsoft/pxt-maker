@@ -1,92 +1,135 @@
 {
-    "driveDisplayName": "GEMMABOOT",
+    "driveDisplayName": "",
     "visual": {
-        "image": "pkg://board.svg",
-        "outlineImage": "pkg://boardwireframe.svg",
-        "useCrocClips": true,
-        "width": 200,
-        "height": 200,
-        "pinDist": 16,
-        "pinBlocks": [
-            {
-                "x": 40,
-                "y": 30,
-                "labels": [
-                    "D2"
-                ]
-            },
-            {
-                "x": 20,
-                "y": 90,
-                "labels": [
-                    "D0"
-                ]
-            },
-            {
-                "x": 40,
-                "y": 150,
-                "labels": [
-                    "3V"
-                ]
-            },
-            {
-                "x": 160,
-                "y": 150,
-                "labels": [
-                    "VOUT"
-                ]
-            },
-            {
-                "x": 180,
-                "y": 90,
-                "labels": [
-                    "D1"
-                ]
-            },
-            {
-                "x": 160,
-                "y": 40,
-                "labels": [
-                    "GND"
-                ]
-            }
-        ],
-        "leds": [
-            {
-                "x": 29,
-                "y": 40,
-                "w": 3,
-                "color": "neopixel",
-                "label": "NEOPIXEL"
-            }
-        ]
+      "image": "pkg://board.svg",
+      "useCrocClips": true,
+      "width": 187.4998779296875,
+      "height": 184.8762969970703,
+      "pinDist": 15,
+      "pinBlocks": [
+        {
+          "x": 26.32334148018107,
+          "y": 23.720797498863615,
+          "labels": [
+            "D2_A1_SDA"
+          ]
+        },
+        {
+          "x": 3.1024305382939454,
+          "y": 79.39214753575048,
+          "labels": [
+            "D0_A2_SCL"
+          ]
+        },
+        {
+          "x": 26.13582811645025,
+          "y": 135.6961593892263,
+          "labels": [
+            "3V"
+          ]
+        },
+        {
+          "x": 138.13418149334623,
+          "y": 135.4524091063885,
+          "labels": [
+            "VOUT"
+          ]
+        },
+        {
+          "x": 161.77692682881585,
+          "y": 79.14839725291269,
+          "labels": [
+            "D1_A0"
+          ]
+        },
+        {
+          "x": 138.25605627998013,
+          "y": 23.575604836831324,
+          "labels": [
+            "GND"
+          ]
+        }
+      ],
+      "leds": [
+        {
+          "x": 44.156852865382035,
+          "y": 56.332156216030285,
+          "w": 13.398871114128163,
+          "h": 13.39891535425076,
+          "color": "neopixel",
+          "label": "NEOPIXEL"
+        }
+      ],
+      "touchPads": [
+        {
+          "x": 26.32334148018107,
+          "y": 23.720797498863615,
+          "w": 23.044438554316567,
+          "h": 23.04449516771848,
+          "label": "D2"
+        },
+        {
+          "x": 3.1024305382939454,
+          "y": 79.39214753575048,
+          "w": 23.044438554316567,
+          "h": 23.04449516771848,
+          "label": "D0"
+        },
+        {
+          "x": 161.77692682881585,
+          "y": 79.14839725291269,
+          "w": 23.044449024659063,
+          "h": 23.04449516771848,
+          "label": "D1"
+        }
+      ],
+      "reset": {
+        "x": 38.1109368230292,
+        "y": 87.37630950642888,
+        "w": 11.723118973768095,
+        "h": 11.723174041232832
+      }
     },
     "gpioPinMap": {
-        "D0": "D0",
-        "D1": "D1",
-        "D2": "D2",
-        "A0": "D1",
-        "A1": "D2",
-        "A2": "D0"
+      "NEOPIXEL": "NEOPIXEL",
+      "LED": "LED",
+      "RESET": "RESET",
+      "D2_A1_SDA": "D2_A1_SDA",
+      "D2": "D2_A1_SDA",
+      "A1": "D2_A1_SDA",
+      "SDA": "D2_A1_SDA",
+      "D0_A2_SCL": "D0_A2_SCL",
+      "D0": "D0_A2_SCL",
+      "A2": "D0_A2_SCL",
+      "SCL": "D0_A2_SCL",
+      "3V": "3V",
+      "VOUT": "VOUT",
+      "D1_A0": "D1_A0",
+      "D1": "D1_A0",
+      "A0": "D1_A0",
+      "GND": "GND",
+      "RX": "D2_A1_SDA",
+      "TX": "D0_A2_SCL",
+      "JACK_TX": "D0_A2_SCL"
     },
     "groundPins": [
-        "GND"
+      "GND"
     ],
     "threeVoltPins": [
-        "3V",
-        "VOUT"
+      "3V",
+      "VOUT"
     ],
     "i2cPins": {
-        "SDA": "D2",
-        "SCL": "D0"
+      "SDA": "SDA",
+      "SCL": "SCL"
     },
     "onboardComponents": [
-        "pixel"
+      "pixel"
     ],
     "marginWhenBreadboarding": [
-        0,
-        0,
-        80,
-        0
+      0,
+      0,
+      80,
+      0
     ]
-}
+  }

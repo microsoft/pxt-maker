@@ -31,7 +31,7 @@ The board that gets rendered in the simulator must be stored as a SVG in the pro
 * scale the SVG so that a pin header is exactly ``15px`` wide.
 * try to reduce the complexity of the SVG to reduce the file size
 * use a pin id (e.g. ``D11``) or ``connectedname`` (from Fritzing) as names for the pin SVG element
-* run http://localhost:3232/boarddesigner.html to generate the ``board.json`` file. This is a good start but you'll probably need to update it by hand as well.
+* use https://maker.makecode.com/board-designer to generate the ``board.json`` file. This is a good start but you'll probably need to update it by hand as well.
 * create a printer friendly version of ``board.svg``, as ``boardwireframe.svg``.
 
 ## Step 4: Send us a Pull Request!!!

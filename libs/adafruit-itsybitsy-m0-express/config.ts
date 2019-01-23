@@ -42,4 +42,22 @@ namespace config {
     export const PIN_FLASH_SCK = DAL.PB23;
 
     export const PIN_LED = DAL.PA13;
+
+    export const PIN_RX = PIN_D0;
+    export const PIN_TX = PIN_D1;
+    export const PIN_JACK_TX = PIN_TX;
+    export const PIN_JACK_COMMLED = PIN_LED;
+
+    export const PIN_DISPLAY_CS = PIN_A2;
+    export const PIN_DISPLAY_SCK = PIN_SCK;
+    export const PIN_DISPLAY_MOSI = PIN_MOSI;
+    export const PIN_DISPLAY_DC = PIN_A4;
+    export const PIN_DISPLAY_RST = PIN_A5;
+    export const PIN_DISPLAY_MISO = PIN_MISO;
+    // export const PIN_DISPLAY_BL = PIN_D4; plugged to power
+    export const DISPLAY_CFG0 = 0x00000090;
+    export const DISPLAY_CFG1 = 0x000e14ff;
+    export const DISPLAY_CFG2 = 24;
+    export const DISPLAY_WIDTH = 160;
+    export const DISPLAY_HEIGHT = 128;
 }

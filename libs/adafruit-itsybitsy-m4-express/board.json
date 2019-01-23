@@ -299,7 +299,14 @@
     "AREF": "AREF",
     "+3V3": "+3V3",
     "!RESET": "!RESET",
-    "LED": "LED"
+    "LED": "LED",
+    "JACK_TX": "TX_D1",
+    "DISPLAY_CS": "A2",
+    "DISPLAY_SCK": "SCK",
+    "DISPLAY_MOSI": "MOSI",
+    "DISPLAY_DC": "A3",
+    "DISPLAY_RST": "A5",
+    "DISPLAY_MISO": "MISO"
   },
   "groundPins": [
     "GND"

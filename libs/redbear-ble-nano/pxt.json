@@ -15,6 +15,6 @@
     "dependencies": {
         "core---nrf52832": "file:../core---nrf52832",
         "buttons": "file:../buttons"
-    },
+    },    
     "public": true
 }

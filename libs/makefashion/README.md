@@ -1,4 +1,0 @@
-# MakeFashion
-
-The MakeFashion library.
-

@@ -14,10 +14,18 @@
     "compileServiceVariant": "samd51",
     "dependencies": {
         "core---samd51": "file:../core---samd51",
-        "buttons": "file:../buttons"
+        "buttons": "file:../buttons",
+        "jacdac": "file:../jacdac"
     },
     "public": true,
+    "dalDTS": {
+        "corePackage": "../core---samd51"
+    },
     "features": [
-        "uf2"
+        "uf2",
+        "screen",
+        "buttond0",
+        "buttond1",
+        "jacdac"
     ]
 }
