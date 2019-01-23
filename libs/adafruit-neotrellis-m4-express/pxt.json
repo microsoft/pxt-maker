@@ -1,14 +1,13 @@
 {
-    "name": "adafruit-neotrellis-m4",
-    "description": "Support for Adafruit Neotrellis M4 - beta",
+    "name": "adafruit-neotrellis-m4-express",
+    "description": "Support for Adafruit Neotrellis M4 Express - beta",
     "files": [
         "README.md",
         "device.d.ts",
         "config.ts",
         "ns.ts",
         "board.json",
-        "board.svg",
-        "boardwireframe.svg"
+        "board.svg"
     ],
     "core": true,
     "compileServiceVariant": "samd51",
