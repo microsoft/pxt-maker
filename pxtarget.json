@@ -44,6 +44,7 @@
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-m4-express",
         "libs/adafruit-feather-bluefruit-nrf52",
+        "libs/redbear-ble-nano",
         "libs/adafruit-itsybitsy-m0-express",
         "libs/adafruit-itsybitsy-m4-express",
         "libs/adafruit-gemma-m0",
@@ -53,7 +54,6 @@
         "libs/electroniccats-meow-meow",
         "libs/sparkfun-samd21-dev-breakout",
         "libs/sparkfun-samd21-mini-breakout",
-        "libs/redbear-ble-nano",
         "libs/bluebird",
         "libs/stitchkit"
     ],
