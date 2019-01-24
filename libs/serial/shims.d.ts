@@ -20,7 +20,7 @@ declare namespace serial {
     function setTxBufferSize(size: uint8): void;
 
     /**
-     * Reads a single byte from the serial receive buffer. Negative if error, 0 if no data.
+     * Reads a single byte from the serial receive buffer. Negative if error.
      */
     //% Group="Read" shim=serial::read
     function read(): int32;
@@ -52,9 +52,6 @@ declare namespace serial {
     /**
     Set the baud rate of the serial port
      */
-    //% weight=10
-    //% blockId=serial_setbaudrate block="serial|set baud rate %rate"
-    //% blockGap=8 inlineInputMode=inline
     //% help=serial/set-baud-rate
     //% group="Configuration" shim=serial::setBaudRate
     function setBaudRate(rate: BaudRate): void;
