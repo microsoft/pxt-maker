@@ -5,10 +5,10 @@
 ```codecard
 [
     {
-        "name": "Sparkfun Turbo",
-        "url": "/boards/sparkfun-turbo",
+        "name": "Sparkfun RedBoard Turbo",
+        "url": "/boards/sparkfun-redboard-turbo",
         "cardType": "template",
-        "imageUrl": "/static/libs/sparkfun-turbo.jpg"  
+        "imageUrl": "/static/libs/sparkfun-redboard-turbo.jpg"  
     },
     {
         "name": "Sparkfun SAMD21 Dev Breakout",

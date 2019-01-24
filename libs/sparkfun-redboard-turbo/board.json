@@ -1,7 +1,6 @@
 {
     "visual": {
         "image": "pkg://board.svg",
-        "outlineImage": "pkg://board-outline.svg",
         "width": 173.2,
         "height": 164.6,
         "pinDist": 7.55,

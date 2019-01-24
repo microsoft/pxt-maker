@@ -1,12 +1,11 @@
 {
-    "name": "sparkfun-turbo",
-    "description": "The SparkFun SAMD21 Turbo - beta",
+    "name": "sparkfun-redboard-turbo",
+    "description": "The SparkFun RedBoard Turbo - beta",
     "core": true,
     "files": [
         "README.md",
         "board.json",
         "board.svg",
-        "board-outline.svg",
         "device.d.ts",
         "config.ts",
         "ns.ts"
