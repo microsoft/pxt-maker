@@ -15,7 +15,7 @@
         "buttons": "file:../buttons",
         "light": "file:../light",
         "touch": "file:../touch",
-        "music---pwm": "file:../music---pwm",
+        "music": "file:../music",
         "pixel": "file:../pixel",
         "storage": "file:../storage",
         "serial": "file:../serial",

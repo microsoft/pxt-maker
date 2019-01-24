@@ -75,7 +75,8 @@
         "P19": "~MOSI/A5",
         "TX": "D1",
         "RX": "D0",
-        "JACK_TX": "D1"
+        "JACK_TX": "D1",
+        "LED": "D13/RX"
     },
     "groundPins": [
       "GND"
