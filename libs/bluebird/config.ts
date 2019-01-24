@@ -1,7 +1,7 @@
 namespace config {
     //export const PIN_A0 = DAL.P0_2;
     export const PIN_A0 = DAL.P0_2;
-    export const PIN_A1 = DAL.P0_4;
+    export const PIN_A1 = DAL.P0_3;
     export const PIN_A2 = DAL.P0_5;
     //export const PIN_A4 = DAL.P0_28;
     export const PIN_A3 = DAL.P0_29;
