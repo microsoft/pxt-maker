@@ -37,6 +37,7 @@
         "libs/switch",
         "libs/accelerometer",
         "libs/microphone",
+        "libs/mqtt",
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-m4-express",
         "libs/adafruit-feather-bluefruit-nrf52",
