@@ -1,6 +1,6 @@
 {
     "name": "bluebird",
-    "description": "Support for Teknikio Test Bluebird - beta",
+    "description": "Support for Teknikio Bluebird - beta",
     "files": [
         "README.md",
         "device.d.ts",
