@@ -13,29 +13,22 @@
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
-        "light": "file:../light",
         "touch": "file:../touch",
-        "pixel": "file:../pixel",
-        "accelerometer": "file:../accelerometer",
-        "storage": "file:../storage",
-        "jacdac": "file:../jacdac"
+        "light": "file:../light",
+        "jacdac": "file:../jacdac",
+        "pixel": "file:../pixel"
     },
     "public": true,
     "compileServiceVariant": "samd21",
     "features": [
         "uf2",
-        "pixel",
+        "i2c",
         "pinled",
         "pind0",
         "pind1",
-        "pina0",
-        "pina1",
         "buttond0",
         "buttond1",
-        "toucha0",
-        "toucha1",
-        "storage",
-        "light",
-        "jacdac"
+        "jacdac",
+        "light"
     ]
 }
