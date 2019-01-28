@@ -49,12 +49,13 @@
         "libs/adafruit-itsybitsy-m4-express",
         "libs/adafruit-gemma-m0",
         "libs/arduino-zero",
-        "libs/arduino-mkr",
+        "libs/arduino-mkr1000",
         "libs/arduino-mkr1300",
         "libs/electroniccats-meow-meow",
         "libs/sparkfun-samd21-dev-breakout",
         "libs/sparkfun-samd21-mini-breakout",
-        "libs/stitchkit"
+        "libs/stitchkit",
+        "libs/teknikio-bluebird"
     ],
     "serial": {
         "useHF2": true,
@@ -117,7 +118,16 @@
         "flashChecksumAddr": 8372,
         "flashCodeAlign": 256,
         "upgrades": [],
-        "saveAsPNG": true
+        "patches": {
+            "0.0.0 - 0.6.8": [
+                {
+                    "type": "package",
+                    "map": {
+                        "arduino-mkr": "arduino-mkr1000"
+                    }
+                }
+            ]
+        }
     },
     "compileService": {
         "buildEngine": "codal",
@@ -401,7 +411,9 @@
         "extendEditor": true,
         "crowdinProject": "kindscript",
         "scriptManager": true,
-        "simScreenshot": true
+        "experiments": [
+            "simScreenshot"
+        ]
     },
     "ignoreDocsErrors": true
 }
