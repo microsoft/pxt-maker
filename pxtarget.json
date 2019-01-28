@@ -49,7 +49,7 @@
         "libs/adafruit-itsybitsy-m4-express",
         "libs/adafruit-gemma-m0",
         "libs/arduino-zero",
-        "libs/arduino-mkr",
+        "libs/arduino-mkr1000",
         "libs/arduino-mkr1300",
         "libs/electroniccats-meow-meow",
         "libs/sparkfun-samd21-dev-breakout",
@@ -117,7 +117,17 @@
         "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
         "flashChecksumAddr": 8372,
         "flashCodeAlign": 256,
-        "upgrades": []
+        "upgrades": [],
+        "patches": {
+            "0.0.0 - 0.6.8": [
+                {
+                    "type": "package",
+                    "map": {
+                        "arduino-mkr": "arduino-mkr1000"
+                    }
+                }
+            ]
+        }
     },
     "compileService": {
         "buildEngine": "codal",
