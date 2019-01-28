@@ -7,5 +7,5 @@ forever(function() {
 ```
 
 ```package
-arduino-mkr
+arduino-mkr1000
 ```

@@ -6,7 +6,7 @@
 [
     {
         "name": "Arduino MKR",
-        "url": "/boards/arduino-mkr",
+        "url": "/boards/arduino-mkr1000",
         "cardType": "template",
         "imageUrl": "/static/libs/arduino-mkr.jpg"  
     },
