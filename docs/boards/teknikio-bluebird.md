@@ -7,5 +7,6 @@ forever(function() {
 ```
 
 ```package
-bluebird
+teknikio-bluebird
 ```
+

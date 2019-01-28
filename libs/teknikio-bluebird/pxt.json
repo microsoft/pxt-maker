@@ -1,5 +1,5 @@
 {
-    "name": "bluebird",
+    "name": "teknikio-bluebird",
     "description": "Support for Teknikio Bluebird - beta",
     "files": [
         "README.md",

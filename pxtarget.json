@@ -55,7 +55,7 @@
         "libs/sparkfun-samd21-dev-breakout",
         "libs/sparkfun-samd21-mini-breakout",
         "libs/stitchkit",
-        "libs/bluebird"
+        "libs/teknikio-bluebird"
     ],
     "serial": {
         "useHF2": true,

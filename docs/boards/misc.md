@@ -18,9 +18,9 @@
     },
     {
         "name": "Bluebird",
-        "url": "/boards/bluebird",
+        "url": "/boards/teknikio-bluebird",
         "cardType": "template",
-        "imageUrl": "/static/libs/bluebird.jpg"  
+        "imageUrl": "/static/libs/teknikio-bluebird.jpg"  
     },
     {
         "name": "Add a new board",
