@@ -6,6 +6,7 @@ namespace config {
     export const PIN_NEOPIXEL = DAL.PB23;
     export const PIN_ACCELEROMETER_SDA = DAL.PA00;
     export const PIN_ACCELEROMETER_SCL = DAL.PA01;
+    export const PIN_ACCELEROMETER_INT = DAL.PA08; // D5 test
 
     export const PIN_A5 = DAL.PA08;
     export const PIN_A6 = DAL.PA09;
