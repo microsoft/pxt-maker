@@ -1,4 +1,4 @@
-# Arduino MKR
+# Arduino MKR1000
 
 ```blocks
 forever(function() {

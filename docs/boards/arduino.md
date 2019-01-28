@@ -8,7 +8,7 @@
         "name": "Arduino MKR",
         "url": "/boards/arduino-mkr1000",
         "cardType": "template",
-        "imageUrl": "/static/libs/arduino-mkr.jpg"  
+        "imageUrl": "/static/libs/arduino-mkr1000.jpg"  
     },
     {
         "name": "Arduino Zero",
