@@ -409,7 +409,10 @@
         "allowPackageExtensions": true,
         "extendEditor": true,
         "crowdinProject": "kindscript",
-        "scriptManager": true
+        "scriptManager": true,
+        "experiments": [
+            "simScreenshot"
+        ]
     },
     "ignoreDocsErrors": true
 }

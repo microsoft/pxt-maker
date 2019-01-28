@@ -95,3 +95,10 @@
 
 @blocklyScrollbarColor: #000;
 @blocklyScrollbarOpacity: 0.8;
+
+
+/*-------------------
+   Greenscreen
+--------------------*/
+
+@greenScreenBlockColor: #40bf4a;
