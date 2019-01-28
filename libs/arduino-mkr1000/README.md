@@ -1,4 +1,4 @@
-# Arduino MKR1300
+# Arduino MKR1000
 
 The Arduino MKR library.
 

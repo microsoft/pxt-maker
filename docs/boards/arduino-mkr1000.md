@@ -1,4 +1,4 @@
-# Arduino MKR
+# Arduino MKR1000
 
 ```blocks
 forever(function() {
@@ -7,5 +7,5 @@ forever(function() {
 ```
 
 ```package
-arduino-mkr
+arduino-mkr1000
 ```
