@@ -111,6 +111,7 @@
         "webUSB": true,
         "gc": true,
         "hasHex": true,
+        "saveAsPNG": true,
         "deployDrives": ".*",
         "deployFileMarker": "INFO_UF2.TXT",
         "driveName": "DRIVE",
