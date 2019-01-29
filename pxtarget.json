@@ -55,7 +55,8 @@
         "libs/sparkfun-samd21-dev-breakout",
         "libs/sparkfun-samd21-mini-breakout",
         "libs/sparkfun-redboard-turbo",
-        "libs/stitchkit"
+        "libs/stitchkit",
+        "libs/teknikio-bluebird"
     ],
     "serial": {
         "useHF2": true,
@@ -85,6 +86,7 @@
         "workspace": false,
         "packages": true,
         "sharing": true,
+        "thumbnails": true,
         "publishing": true,
         "importing": true,
         "preferredPackages": [],
@@ -111,6 +113,7 @@
         "webUSB": true,
         "gc": true,
         "hasHex": true,
+        "saveAsPNG": true,
         "deployDrives": ".*",
         "deployFileMarker": "INFO_UF2.TXT",
         "driveName": "DRIVE",
@@ -411,9 +414,7 @@
         "extendEditor": true,
         "crowdinProject": "kindscript",
         "scriptManager": true,
-        "experiments": [
-            "simScreenshot"
-        ]
+        "simScreenshot": true
     },
     "ignoreDocsErrors": true
 }
