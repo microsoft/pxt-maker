@@ -1,6 +1,6 @@
 {
   "name": "pxt-maker",
-  "version": "0.7.6",
+  "version": "0.7.7",
   "description": "Microsoft MakeCode Maker Boards",
   "public": true,
   "keywords": [
@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "pxt-common-packages": "6.1.13",
-    "pxt-core": "5.4.20"
+    "pxt-core": "5.4.21"
   },
   "scripts": {
     "test": "node node_modules/pxt-core/built/pxt.js travis"
