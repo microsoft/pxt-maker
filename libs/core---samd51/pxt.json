@@ -12,7 +12,6 @@
         "microphone": "file:../microphone",
         "screen---st7735": "file:../screen---st7735",
         "switch": "file:../switch",
-        "storage": "file:../storage",
         "thermometer": "file:../thermometer"
     }
 }
