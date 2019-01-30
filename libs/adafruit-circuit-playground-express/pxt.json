@@ -11,6 +11,9 @@
         "board.svg",
         "boardwireframe.svg"
     ],
+    "testFiles": [
+        "test.ts"
+    ],
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
