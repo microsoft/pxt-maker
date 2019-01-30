@@ -54,6 +54,7 @@
         "libs/electroniccats-meow-meow",
         "libs/sparkfun-samd21-dev-breakout",
         "libs/sparkfun-samd21-mini-breakout",
+        "libs/sparkfun-redboard-turbo",
         "libs/stitchkit",
         "libs/teknikio-bluebird"
     ],
