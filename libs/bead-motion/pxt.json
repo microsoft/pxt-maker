@@ -1,6 +1,6 @@
 {
     "name": "bead-motion",
-    "description": "Support for Motion Bead",
+    "description": "Support for Motion Bead - beta",
     "files": [
         "README.md",
         "device.d.ts",
