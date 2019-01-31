@@ -1,6 +1,6 @@
 {
-    "name": "adafruit-feather-m0-express",
-    "description": "Support for Adafruit Feather M0 Express",
+    "name": "arduino-mkr1000",
+    "description": "Support for Arduino MKR1000 - beta",
     "files": [
         "README.md",
         "device.d.ts",
@@ -13,19 +13,15 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
-        "light": "file:../light",
         "buttons": "file:../buttons",
+        "light": "file:../light",
         "touch": "file:../touch",
-        "music": "file:../music",
-        "pixel": "file:../pixel",
         "serial": "file:../serial",
         "jacdac": "file:../jacdac"
     },
     "public": true,
     "compileServiceVariant": "samd21",
     "features": [
-        "uf2",
-        "pixel",
         "pinled",
         "pind0",
         "pind1",
@@ -35,9 +31,7 @@
         "buttond1",
         "toucha0",
         "toucha1",
-        "storage",
         "light",
-        "screen",
         "jacdac"
     ]
 }

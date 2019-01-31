@@ -1,4 +1,4 @@
-# Arduino MKR
+# Teknikio Bluebird
 
 ```blocks
 forever(function() {
@@ -7,5 +7,6 @@ forever(function() {
 ```
 
 ```package
-arduino-mkr
+teknikio-bluebird
 ```
+

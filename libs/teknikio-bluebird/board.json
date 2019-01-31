@@ -1,0 +1,76 @@
+{
+  "driveDisplayName": "",
+  "visual": {
+    "image": "pkg://board.svg",
+    "useCrocClips": false,
+    "width": 400,
+    "height": 300,
+    "pinDist": 10,
+    "pinBlocks": [{
+            "x": 33,
+            "y": 75,
+            "labels": ["3.3IN"]
+        },
+        {
+            "x": 157,
+            "y": 14,
+            "labels": ["GPIO2"]
+        },
+        {
+            "x": 274,
+            "y": 51,
+            "labels": ["GPIO1"]
+        },
+        {
+            "x": 381,
+            "y": 147,
+            "labels": ["3.3VOUT"]
+        },
+        {
+            "x": 271,
+            "y": 237,
+            "labels": ["GPIO4"]
+        },
+        {
+            "x": 155,
+            "y": 277,
+            "labels": ["GPIO3"]
+        },
+        {
+            "x": 32,
+            "y": 215,
+            "labels": ["GND"]
+        }
+    ],
+    "leds": [{
+            "x": 380,
+            "y": 250,
+            "color": "#ff4545",
+            "label": "LED"
+        },{
+            "x": 420,
+            "y": 210,
+            "w": 25,
+            "color": "neopixel",
+            "label": "NEOPIXEL"
+        }
+    ],
+    "touchPads": [],
+    "buttons": []
+  },
+  "gpioPinMap": {
+        "A0": "GPIO1",
+        "A1": "GPIO4",
+        "A2": "GPIO3",
+        "A3": "GPIO2"
+  },
+  "groundPins": ["GND"],
+  "threeVoltPins": ["3.3IN", "3.3VOUT"],
+  "onboardComponents": [],
+  "marginWhenBreadboarding": [
+    0,
+    0,
+    80,
+    0
+  ]
+}
