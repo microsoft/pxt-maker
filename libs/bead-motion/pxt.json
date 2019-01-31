@@ -9,6 +9,9 @@
         "board.json",
         "board.svg"
     ],
+    "testFiles": [
+        "test.ts"
+    ],
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
