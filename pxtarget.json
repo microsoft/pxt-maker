@@ -49,13 +49,15 @@
         "libs/adafruit-itsybitsy-m4-express",
         "libs/adafruit-gemma-m0",
         "libs/arduino-zero",
-        "libs/arduino-mkr",
+        "libs/arduino-mkr1000",
         "libs/arduino-mkr1300",
         "libs/electroniccats-meow-meow",
         "libs/sparkfun-samd21-dev-breakout",
         "libs/sparkfun-samd21-mini-breakout",
+        "libs/sparkfun-redboard-turbo",
         "libs/stitchkit",
-        "libs/bead-motion"       
+        "libs/teknikio-bluebird",
+        "libs/bead-motion"
     ],
     "serial": {
         "useHF2": true,
@@ -85,6 +87,7 @@
         "workspace": false,
         "packages": true,
         "sharing": true,
+        "thumbnails": true,
         "publishing": true,
         "importing": true,
         "preferredPackages": [],
@@ -111,13 +114,24 @@
         "webUSB": true,
         "gc": true,
         "hasHex": true,
+        "saveAsPNG": true,
         "deployDrives": ".*",
         "deployFileMarker": "INFO_UF2.TXT",
         "driveName": "DRIVE",
         "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
         "flashChecksumAddr": 8372,
         "flashCodeAlign": 256,
-        "upgrades": []
+        "upgrades": [],
+        "patches": {
+            "0.0.0 - 0.6.8": [
+                {
+                    "type": "package",
+                    "map": {
+                        "arduino-mkr": "arduino-mkr1000"
+                    }
+                }
+            ]
+        }
     },
     "compileService": {
         "buildEngine": "codal",
@@ -127,7 +141,8 @@
             "branch": "v1.5.6",
             "type": "git",
             "branches": {
-                "https://github.com/lancaster-university/codal-core": "871c7f19755d05596eaad45eadcd442051e083dc"            }
+                "https://github.com/lancaster-university/codal-core": "665159cbc99eff8daa53f2ef258b10424a7a4ef6"
+            }
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
         "yottaConfig": {
@@ -400,7 +415,8 @@
         "allowPackageExtensions": true,
         "extendEditor": true,
         "crowdinProject": "kindscript",
-        "scriptManager": true
+        "scriptManager": true,
+        "simScreenshot": true
     },
     "ignoreDocsErrors": true
 }

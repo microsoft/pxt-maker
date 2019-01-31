@@ -1,27 +1,30 @@
 {
-    "name": "arduino-mkr",
-    "description": "Support for Arduino MKR - beta",
+    "name": "sparkfun-redboard-turbo",
+    "description": "The SparkFun RedBoard Turbo - beta",
+    "core": true,
     "files": [
         "README.md",
-        "device.d.ts",
-        "config.ts",
-        "ns.ts",
         "board.json",
         "board.svg",
-        "boardwireframe.svg"
+        "device.d.ts",
+        "config.ts",
+        "ns.ts"
     ],
-    "core": true,
+    "testFiles": [
+        "test.ts"
+    ],
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
-        "light": "file:../light",
         "touch": "file:../touch",
+        "music": "file:../music",
+        "pixel": "file:../pixel",
         "serial": "file:../serial",
         "jacdac": "file:../jacdac"
     },
-    "public": true,
     "compileServiceVariant": "samd21",
     "features": [
+        "uf2",
         "pinled",
         "pind0",
         "pind1",
@@ -29,9 +32,14 @@
         "pina1",
         "buttond0",
         "buttond1",
-        "toucha0",
-        "toucha1",
+        "touchA0",
+        "touchA1",
         "light",
+        "screen",
+        "spi",
+        "i2c",
+        "serial",
         "jacdac"
-    ]
+    ],
+    "public": true
 }

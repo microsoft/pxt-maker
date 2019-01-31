@@ -28,8 +28,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1600"
-     inkscape:window-height="837"
+     inkscape:window-width="798"
+     inkscape:window-height="828"
      id="namedview5531"
      showgrid="false"
      units="px"
@@ -37,12 +37,12 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="4.5859251"
-     inkscape:cx="99.952894"
-     inkscape:cy="53.309055"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
+     inkscape:zoom="2.2929626"
+     inkscape:cx="96.339484"
+     inkscape:cy="-17.285537"
+     inkscape:window-x="-7"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg2"
      showguides="false" />
   <desc
@@ -1043,7 +1043,7 @@
      id="A4_D4_TX_MOSI"
      cy="-98.682922"
      transform="rotate(90)"
-     inkscape:label="touch" />
+     inkscape:label="touch JACK_TX" />
   <circle
      r="5.6925554"
      cx="10.065711"
@@ -1079,7 +1079,7 @@
      connectorname="D2_A1_PA09_SCL_MISO"
      style="fill:none;stroke:#9a916c;stroke-width:3.61477566"
      gorn="0.4.68"
-     id="A2_D0_SDA"
+     id="A1_D2_SCL_MISO"
      cy="-78.946228"
      transform="rotate(90)"
      inkscape:label="" />
@@ -1099,7 +1099,7 @@
      connectorname="D0_A4_PA08_SDA"
      style="fill:none;stroke:#9a916c;stroke-width:3.61477566"
      gorn="0.4.70"
-     id="A2_D0"
+     id="A2_D0_SDA"
      cy="-118.4196"
      transform="rotate(90)"
      inkscape:label="" />

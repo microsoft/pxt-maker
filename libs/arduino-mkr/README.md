@@ -1,4 +1,0 @@
-# Core
-
-The MKR library.
-
