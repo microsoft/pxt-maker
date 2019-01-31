@@ -18,7 +18,8 @@
         "light": "file:../light",
         "touch": "file:../touch",
         "serial": "file:../serial",
-        "jacdac": "file:../jacdac"
+        "jacdac": "file:../jacdac",
+        "lora": "file:../lora"
     },
     "public": true,
     "features": [
