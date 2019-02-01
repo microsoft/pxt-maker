@@ -18,7 +18,8 @@
         "touch": "file:../touch",
         "pixel": "file:../pixel",
         "serial": "file:../serial",
-        "jacdac": "file:../jacdac"
+        "jacdac": "file:../jacdac",
+        "storage": "file:../storage"
     },
     "public": true,
     "compileServiceVariant": "samd21",
