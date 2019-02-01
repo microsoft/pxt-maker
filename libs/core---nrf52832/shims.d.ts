@@ -225,6 +225,23 @@ declare namespace control {
 declare namespace pins {
 
     /**
+     * Opens a SPI driver
+     */
+    //% parts=spi shim=pins::createSPI
+    function createSPI(mosiPin: DigitalInOutPin, misoPin: DigitalInOutPin, sckPin: DigitalInOutPin): SPIDevice;
+}
+
+
+declare interface SPIDevice {}
+declare namespace pins {
+
+    /**
+     * Gets the default SPI driver
+     */
+    //% shim=pins::spi
+    function spi(): SPIDevice;
+
+    /**
      * Write to the SPI slave and return the response
      * @param value Data to be sent to the SPI slave
      */

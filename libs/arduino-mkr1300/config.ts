@@ -33,14 +33,21 @@ namespace config {
     export const PIN_RX = PIN_D13; // RX
     export const PIN_TX = PIN_D14; // TX
 
+    export const PIN_MISO = DAL.PA15;  // MOSI
+    export const PIN_SCK = DAL.PA13;   // SCK
+    export const PIN_MOSI = DAL.PA12;  // MISO
+
     //Module LORA
     export const PIN_D15 = DAL.PB09;  // BOOT LORA
     export const PIN_A7 = DAL.PA27;   // RESET LORA
     export const PIN_A8 = DAL.PA14;   // SS = PA14
     export const PIN_A9 = DAL.PB08;   // ADC Battery
-    export const PIN_MISO = DAL.PA15;  // MOSI
-    export const PIN_SCK = DAL.PA13;   // SCK
-    export const PIN_MOSI = DAL.PA12;  // MISO
+    export const PIN_LORA_MISO = DAL.PA15;  // MOSI
+    export const PIN_LORA_SCK = DAL.PA13;   // SCK
+    export const PIN_LORA_MOSI = DAL.PA12;  // MISO
+    export const PIN_LORA_CS = PIN_A8;
+    export const PIN_LORA_BOOT = PIN_D15;
+    export const PIN_LORA_RESET = PIN_A7;
     
     export const PIN_JACK_TX = PIN_TX;
     export const PIN_JACK_COMMLED = PIN_LED;
