@@ -35,7 +35,7 @@ namespace config {
 
     export const PIN_MISO = PIN_D10;
     export const PIN_SCK = PIN_D9;  
-    export const PIN_MOSI = PIND_D8;
+    export const PIN_MOSI = PIN_D8;
 
     //Module LORA
     //export const PIN_A9 = DAL.PB08;   // ADC Battery
