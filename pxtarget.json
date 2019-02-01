@@ -12,6 +12,7 @@
         "libs/core---nrf52832",
         "libs/core---nrf52840",
         "libs/core---samd",
+        "libs/core---samd51",
         "libs/screen---st7735",
         "libs/game",
         "libs/music",
@@ -37,6 +38,7 @@
         "libs/switch",
         "libs/accelerometer",
         "libs/microphone",
+        "libs/lora",
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-m4-express",
         "libs/adafruit-feather-bluefruit-nrf52",
@@ -57,7 +59,8 @@
         "libs/sparkfun-samd21-mini-breakout",
         "libs/sparkfun-redboard-turbo",
         "libs/stitchkit",
-        "libs/teknikio-bluebird"
+        "libs/teknikio-bluebird",
+        "libs/bead-motion"
     ],
     "serial": {
         "useHF2": true,
@@ -141,7 +144,8 @@
             "branch": "v1.5.6",
             "type": "git",
             "branches": {
-                "https://github.com/lancaster-university/codal-core": "665159cbc99eff8daa53f2ef258b10424a7a4ef6"            }
+                "https://github.com/lancaster-university/codal-core": "665159cbc99eff8daa53f2ef258b10424a7a4ef6"
+            }
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
         "yottaConfig": {

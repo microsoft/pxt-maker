@@ -7,8 +7,7 @@
         "config.ts",
         "ns.ts",
         "board.json",
-        "board.svg",
-        "boardwireframe.svg"
+        "board.svg"
     ],
     "core": true,
     "compileServiceVariant": "samd21",
@@ -18,7 +17,8 @@
         "light": "file:../light",
         "touch": "file:../touch",
         "serial": "file:../serial",
-        "jacdac": "file:../jacdac"
+        "jacdac": "file:../jacdac",
+        "lora": "file:../lora"
     },
     "public": true,
     "features": [

@@ -1,41 +1,38 @@
 {
-    "name": "sparkfun-samd21-dev-breakout",
-    "description": "The SparkFun SAMD21 Dev Breakout board - beta",
-    "core": true,
+    "name": "bead-motion",
+    "description": "Support for Motion Bead - beta",
     "files": [
         "README.md",
-        "board.json",
-        "board.svg",
         "device.d.ts",
         "config.ts",
-        "ns.ts"
+        "ns.ts",
+        "board.json",
+        "board.svg"
     ],
     "testFiles": [
         "test.ts"
     ],
+    "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "light": "file:../light",
-        "music": "file:../music",
-        "serial": "file:../serial",
-        "jacdac": "file:../jacdac"
+        "touch": "file:../touch",
+        "accelerometer": "file:../accelerometer",
+        "jacdac": "file:../jacdac",
+        "pixel": "file:../pixel"
     },
     "public": true,
     "compileServiceVariant": "samd21",
     "features": [
+        "uf2",
+        "i2c",
         "pinled",
         "pind0",
         "pind1",
-        "pina0",
-        "pina1",
         "buttond0",
         "buttond1",
-        "light",
-        "screen",
-        "spi",
-        "i2c",
-        "serial",
-        "jacdac"
+        "jacdac",
+        "light"
     ]
 }
