@@ -1,7 +1,6 @@
 {
     "visual": {
         "image": "pkg://board.svg",
-        "outlineImage": "pkg://boardwireframe.svg",
         "width": 175,
         "height": 170,
         "pinDist": 6.8,
@@ -92,7 +91,9 @@
       "SDA": "D11/SDA",
       "SCL": "D12/SCL"
     },
-    "onboardComponents": [],
+    "onboardComponents": [
+        "lora"
+    ],
     "marginWhenBreadboarding": [
         0,
         0,

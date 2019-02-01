@@ -42,6 +42,10 @@
     {
         "name": "JacDac (beta)",
         "url": "/projects/jacdac"
+    },
+    {
+        "name": "Lora (beta)",
+        "url": "/projects/jacdac"
     }
 ]
 ```
@@ -56,5 +60,6 @@
 [Screen](/projects/screen),
 [Serial](/projects/serial),
 [Storage (beta)](/projects/storage),
-[JacDac (beta)](/projects/jacdac)
+[JacDac (beta)](/projects/jacdac),
+[Lora (beta)](/projects/jacdac)
 

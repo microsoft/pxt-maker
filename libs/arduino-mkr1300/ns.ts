@@ -27,3 +27,11 @@ namespace serial {
 namespace loops {
 
 }
+
+//% weight=90
+namespace lora {
+
+}
+
+// init lora
+lora.init(pins.A8, pins.D15, pins.A7);
