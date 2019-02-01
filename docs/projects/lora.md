@@ -4,5 +4,10 @@
 
 ```codecard
 [
+    {
+        "name": "Sender",
+        "url": "/projects/lora/sender",
+        "cardType": "example"
+    }
 ]
 ```
