@@ -232,7 +232,31 @@ declare namespace pins {
 }
 
 
-declare interface SPIDevice {}
+declare interface SPIDevice {
+    /**
+     * Write to the SPI bus
+     */
+    //% shim=SPIDeviceMethods::write
+    write(value: int32): int32;
+
+    /**
+     * Transfer buffers over the SPI bus
+     */
+    //% shim=SPIDeviceMethods::transfer
+    transfer(command: Buffer, response: Buffer): void;
+
+    /**
+     * Sets the SPI clock frequency
+     */
+    //% shim=SPIDeviceMethods::setFrequency
+    setFrequency(frequency: int32): void;
+
+    /**
+     * Sets the SPI bus mode
+     */
+    //% shim=SPIDeviceMethods::setMode
+    setMode(mode: int32): void;
+}
 declare namespace pins {
 
     /**
