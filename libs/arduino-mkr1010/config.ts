@@ -33,7 +33,7 @@ namespace config {
     export const PIN_RX = PIN_D13; // RX
     export const PIN_TX = PIN_D14; // TX
 
-    //Module LORA
+    //Module NINA WiFi/BLE
     export const PIN_D15 = DAL.PB09;  // NINA RESETN
     export const PIN_A7 = DAL.PA27;   // NINA GPIO_0
     export const PIN_A8 = DAL.PA14;   // NINA CS
