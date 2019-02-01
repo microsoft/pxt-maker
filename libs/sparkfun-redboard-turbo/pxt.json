@@ -13,6 +13,7 @@
     "testFiles": [
         "test.ts"
     ],
+    "weight": 100,
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
