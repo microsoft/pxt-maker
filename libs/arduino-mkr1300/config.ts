@@ -28,21 +28,19 @@ namespace config {
     export const PIN_D14 = DAL.PB22;
     export const PIN_LED = DAL.PA20;
 
+    export const PIN_SDA = PIN_D11;  // SDA
+    export const PIN_SCL = PIN_D12;  // SCL
+    export const PIN_RX = PIN_D13; // RX
+    export const PIN_TX = PIN_D14; // TX
+
+    //Module LORA
     export const PIN_D15 = DAL.PB09;  // BOOT LORA
     export const PIN_A7 = DAL.PA27;   // RESET LORA
     export const PIN_A8 = DAL.PA14;   // SS = PA14
     export const PIN_A9 = DAL.PB08;   // ADC Battery
-
-    //Module LORA
     export const PIN_MISO = DAL.PA15;  // MOSI
     export const PIN_SCK = DAL.PA13;   // SCK
     export const PIN_MOSI = DAL.PA12;  // MISO
-
-    export const PIN_SDA = DAL.PA08;  // SDA
-    export const PIN_SCL = DAL.PA09;  // SCL
-
-    export const PIN_RX = DAL.PB23; // RX
-    export const PIN_TX = DAL.PB22; // TX
     
     export const PIN_JACK_TX = PIN_TX;
     export const PIN_JACK_COMMLED = PIN_LED;
