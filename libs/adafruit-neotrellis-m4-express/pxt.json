@@ -16,7 +16,6 @@
     "compileServiceVariant": "samd51",
     "dependencies": {
         "core---samd51": "file:../core---samd51",
-        "pixel": "file:../pixel",
         "light": "file:../light",
         "jacdac": "file:../jacdac"
     },

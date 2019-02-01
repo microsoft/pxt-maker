@@ -30,7 +30,7 @@ namespace loops {
 
 namespace light {
     //% whenUsed
-    export const pixels = light.createStrip(defaultPin(), 32);
+    export const pixels = light.createStrip(pins.NEOPIXEL, 32);
 
     /**
      * Get the 32 NeoPixel strip
