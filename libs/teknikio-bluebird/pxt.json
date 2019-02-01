@@ -18,9 +18,6 @@
         "music": "file:../music---pwm"
     },
     "public": true,
-    "dalDTS": {
-        "corePackage": "../core---nrf52832"
-    },
     "features": [
         "pina0",
         "pina1"

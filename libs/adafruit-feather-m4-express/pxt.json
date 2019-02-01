@@ -18,9 +18,6 @@
         "jacdac": "file:../jacdac"
     },
     "public": true,
-    "dalDTS": {
-        "corePackage": "../core---samd51"
-    },
     "features": [
         "uf2",
         "screen",
