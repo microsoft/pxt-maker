@@ -2,6 +2,12 @@
 declare namespace pins {
 
     /**
+     * Get a pin by configuration id (DAL.CFG_PIN...)
+     */
+    //% shim=pins::pinByCfg
+    function pinByCfg(key: int32): DigitalInOutPin;
+
+    /**
      * Create a new zero-initialized buffer.
      * @param size number of bytes in the buffer
      */
