@@ -1,6 +1,6 @@
 {
     "name": "sparkfun-redboard-turbo",
-    "description": "The SparkFun RedBoard Turbo - beta",
+    "description": "The SparkFun RedBoard Turbo",
     "core": true,
     "files": [
         "README.md",
