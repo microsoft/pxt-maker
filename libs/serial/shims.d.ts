@@ -56,6 +56,12 @@ declare interface SerialDevice {
      */
     //% shim=SerialDeviceMethods::onEvent
     onEvent(event: SerialEvent, handler: () => void): void;
+
+    /**
+     * Registers code when a delimiter is received
+     **/
+    //% shim=SerialDeviceMethods::onDelimiterReceived
+    onDelimiterReceived(delimiter: Delimiters, handler: () => void): void;
 }
 declare namespace serial {
 
@@ -64,16 +70,6 @@ declare namespace serial {
      */
     //% shim=serial::device
     function device(): SerialDevice;
-
-    /**
-     * Registers code when a delimiter is received
-     **/
-    //% weight=10
-    //% help=serial/on-delimiter-received
-    //% blockId=serial_ondelimiter block="serial on delimiter $delimiter received"
-    //% blockGap=8
-    //% group="Events" shim=serial::onDelimiterReceived
-    function onDelimiterReceived(delimiter: Delimiters, handler: () => void): void;
 }
 
 // Auto-generated. Do not edit. Really.
