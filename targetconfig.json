@@ -26,7 +26,7 @@
         "HID": "/projects/hid",
         "Screen": "/projects/screen",
         "Serial": "/projects/serial",
-        "Storage (beta)": "/projects/storage",
+        "Storage": "/projects/storage",
         "JacDac (beta)": "/projects/jacdac",
         "LoRa (beta)": "/projects/lora"
     },
