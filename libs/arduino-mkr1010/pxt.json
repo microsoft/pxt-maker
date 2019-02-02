@@ -1,32 +1,26 @@
 {
-    "name": "adafruit-metro-m0-express",
-    "description": "Support for Adafruit Metro M0 Express",
+    "name": "arduino-mkr1010",
+    "description": "Support for Arduino MKR1010 - beta",
     "files": [
         "README.md",
         "device.d.ts",
         "config.ts",
         "ns.ts",
         "board.json",
-        "board.svg",
-        "boardwireframe.svg"
+        "board.svg"
     ],
     "core": true,
+    "compileServiceVariant": "samd21",
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "light": "file:../light",
         "touch": "file:../touch",
-        "pixel": "file:../pixel",
         "serial": "file:../serial",
-        "jacdac": "file:../jacdac",
-        "storage": "file:../storage"
+        "jacdac": "file:../jacdac"
     },
     "public": true,
-    "compileServiceVariant": "samd21",
-    "weight": 100,
     "features": [
-        "uf2",
-        "pixel",
         "pinled",
         "pind0",
         "pind1",
@@ -36,9 +30,7 @@
         "buttond1",
         "toucha0",
         "toucha1",
-        "storage",
         "light",
-        "screen",
         "jacdac"
     ]
 }
