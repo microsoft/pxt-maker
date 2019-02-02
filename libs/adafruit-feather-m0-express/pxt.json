@@ -18,11 +18,14 @@
         "touch": "file:../touch",
         "music": "file:../music",
         "pixel": "file:../pixel",
-        "storage": "file:../storage",
         "serial": "file:../serial",
-        "jacdac": "file:../jacdac"
+        "jacdac": "file:../jacdac",
+        "storage": "file:../storage"
     },
     "public": true,
+    "dalDTS": {
+        "corePackage": "../core---samd"
+    },
     "compileServiceVariant": "samd21",
     "features": [
         "uf2",

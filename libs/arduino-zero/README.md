@@ -1,4 +1,4 @@
-# Core
+# Arduino Zero
 
-The Zero library.
+The Arduino library.
 

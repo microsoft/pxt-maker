@@ -36,12 +36,16 @@
         "url": "/projects/serial"
     },
     {
-        "name": "Storage (beta)",
+        "name": "Storage",
         "url": "/projects/storage"
     },
     {
         "name": "JacDac (beta)",
         "url": "/projects/jacdac"
+    },
+    {
+        "name": "LoRa (beta)",
+        "url": "/projects/lora"
     }
 ]
 ```
@@ -55,6 +59,7 @@
 [HID](/projects/hid),
 [Screen](/projects/screen),
 [Serial](/projects/serial),
-[Storage (beta)](/projects/storage),
-[JacDac (beta)](/projects/jacdac)
+[Storage](/projects/storage),
+[JacDac (beta)](/projects/jacdac),
+[LoRa (beta)](/projects/lora)
 

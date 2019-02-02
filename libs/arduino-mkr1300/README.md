@@ -1,4 +1,4 @@
-# Core
+# Arduino MKR1300
 
-The MKR library.
+The Arduino MKR library.
 

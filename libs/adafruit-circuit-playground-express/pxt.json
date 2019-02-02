@@ -23,7 +23,8 @@
         "thermometer": "file:../thermometer",
         "microphone": "file:../microphone",
         "serial": "file:../serial",
-        "jacdac": "file:../jacdac"
+        "jacdac": "file:../jacdac",
+        "storage": "file:../storage"
     },
     "compileServiceVariant": "samd21",
     "core": true,
@@ -40,6 +41,7 @@
         "serial",
         "microphone",
         "jacdac",
-        "light"
+        "light",
+        "storage"
     ]
 }

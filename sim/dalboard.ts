@@ -29,6 +29,7 @@ namespace pxsim {
         MicrophoneBoard,
         ScreenBoard {
         // state & update logic for component services
+        viewHost: visuals.BoardHost;
         view: SVGElement;
         edgeConnectorState: EdgeConnectorState;
         lightSensorState: AnalogSensorState;
@@ -200,17 +201,21 @@ namespace pxsim {
                 maxWidth: "100%",
                 maxHeight: "100%",
             };
-            const viewHost = new visuals.BoardHost(pxsim.visuals.mkBoardView({
+            this.viewHost = new visuals.BoardHost(pxsim.visuals.mkBoardView({
                 visual: boardDef.visual,
                 boardDef
             }), opts);
 
             document.body.innerHTML = ""; // clear children
-            document.body.appendChild(this.view = viewHost.getView());
+            document.body.appendChild(this.view = this.viewHost.getView());
 
             this.accelerometerState.attachEvents(this.view);
 
             return Promise.resolve();
+        }
+
+        screenshotAsync(): Promise<ImageData> {
+            return this.viewHost.screenshotAsync();
         }
 
         accelerometer(): Accelerometer {

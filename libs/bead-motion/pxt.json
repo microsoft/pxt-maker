@@ -1,0 +1,38 @@
+{
+    "name": "bead-motion",
+    "description": "Support for Motion Bead - beta",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "core": true,
+    "dependencies": {
+        "core---samd": "file:../core---samd",
+        "buttons": "file:../buttons",
+        "light": "file:../light",
+        "touch": "file:../touch",
+        "accelerometer": "file:../accelerometer",
+        "jacdac": "file:../jacdac",
+        "pixel": "file:../pixel"
+    },
+    "public": true,
+    "compileServiceVariant": "samd21",
+    "features": [
+        "uf2",
+        "i2c",
+        "pinled",
+        "pind0",
+        "pind1",
+        "buttond0",
+        "buttond1",
+        "jacdac",
+        "light"
+    ]
+}

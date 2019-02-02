@@ -1,16 +1,16 @@
 {
-    "name": "arduino-mkr",
-    "description": "Support for Arduino MKR - beta",
+    "name": "arduino-mkr1010",
+    "description": "Support for Arduino MKR1010 - beta",
     "files": [
         "README.md",
         "device.d.ts",
         "config.ts",
         "ns.ts",
         "board.json",
-        "board.svg",
-        "boardwireframe.svg"
+        "board.svg"
     ],
     "core": true,
+    "compileServiceVariant": "samd21",
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
@@ -20,7 +20,6 @@
         "jacdac": "file:../jacdac"
     },
     "public": true,
-    "compileServiceVariant": "samd21",
     "features": [
         "pinled",
         "pind0",

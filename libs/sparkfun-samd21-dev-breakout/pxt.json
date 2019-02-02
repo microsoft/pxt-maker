@@ -1,6 +1,6 @@
 {
     "name": "sparkfun-samd21-dev-breakout",
-    "description": "The SparkFun SAMD21 Dev Breakout board",
+    "description": "The SparkFun SAMD21 Dev Breakout board - beta",
     "core": true,
     "files": [
         "README.md",
