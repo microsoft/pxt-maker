@@ -20,6 +20,11 @@ Use serial to communicate to a computer or another device.
         "name": "read-data",
         "url": "/projects/serial/read-data",
         "cardType": "example"
+    },
+    {
+        "name": "custom",
+        "url": "/projects/serial/custom",
+        "cardType": "example"
     }
 ]
 ```
