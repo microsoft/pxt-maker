@@ -859,6 +859,8 @@ declare const enum DAL {
     CFG_PIN_LORA_CS = 1004,
     CFG_PIN_LORA_BOOT = 1005,
     CFG_PIN_LORA_RESET = 1006,
+    CFG_PIN_IRRXLED = 1007,
+    CFG_PIN_IRTXLED = 1008,
     // /pxtapp/hf2dbg.h
     HF2DBG_H = 1,
     // /pxtapp/pins.h
