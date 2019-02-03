@@ -2,8 +2,8 @@
 
 Attach a serial device to different pins.
 
-```blocks
-const ser = serial.createSerial(pins.D3, pins.D2, 0);
+```typescript
+const ser = serial.createSerial(pins.D3, pins.D2);
 forever(function () {
 	ser.writeLine("hello")
     pause(500)
