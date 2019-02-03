@@ -63,13 +63,5 @@ declare interface SerialDevice {
     //% shim=SerialDeviceMethods::onDelimiterReceived
     onDelimiterReceived(delimiter: Delimiters, handler: () => void): void;
 }
-declare namespace serial {
-
-    /**
-     * Gets the default serial interface if any
-     */
-    //% shim=serial::device
-    function device(): SerialDevice;
-}
 
 // Auto-generated. Do not edit. Really.
