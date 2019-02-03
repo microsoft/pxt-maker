@@ -40,12 +40,12 @@
         "url": "/projects/storage"
     },
     {
-        "name": "JacDac (beta)",
-        "url": "/projects/jacdac"
+        "name": "LoRa",
+        "url": "/projects/lora"
     },
     {
-        "name": "LoRa (beta)",
-        "url": "/projects/lora"
+        "name": "JacDac (beta)",
+        "url": "/projects/jacdac"
     }
 ]
 ```
@@ -60,6 +60,6 @@
 [Screen](/projects/screen),
 [Serial](/projects/serial),
 [Storage](/projects/storage),
-[JacDac (beta)](/projects/jacdac),
-[LoRa (beta)](/projects/lora)
+[LoRa](/projects/lora),
+[JacDac (beta)](/projects/jacdac)
 
