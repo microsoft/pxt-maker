@@ -1,4 +1,4 @@
-# LoRa Examples (beta)
+# LoRa Examples
 
 ## Examples
 

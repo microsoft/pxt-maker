@@ -24,6 +24,7 @@
   * [console](/projects/serial/console)
   * [write-data](/projects/serial/write-data)
   * [read-data](/projects/serial/read-data)
+  * [custom](/projects/serial/custom)
 * [Storage](/projects/storage)
   * [write file](/projects/storage/write-file)
   * [data logging](/projects/storage/data-logger)
