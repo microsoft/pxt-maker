@@ -30,12 +30,14 @@ namespace config {
     export const PIN_A5 = DAL.PB02;
     export const PIN_A6 = DAL.PB09;
     export const PIN_A7 = DAL.PB08;
-    export const PIN_SCL = DAL.PB03;
-    export const PIN_SDA = DAL.PB02;
-    export const PIN_RX = PIN_A6;
-    export const PIN_TX = PIN_A7;
     export const PIN_A8 = DAL.PA11;
     export const PIN_A9 = DAL.PA09;
+
+    export const PIN_SCL = PIN_A4;
+    export const PIN_SDA = PIN_A5;
+    export const PIN_RX = PIN_A6;
+    export const PIN_TX = PIN_A7;
+
     export const PIN_D4 = DAL.PA28;
     export const PIN_D5 = DAL.PA14;
     export const PIN_D7 = DAL.PA15;
