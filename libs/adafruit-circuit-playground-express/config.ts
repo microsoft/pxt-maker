@@ -44,6 +44,9 @@ namespace config {
     export const PIN_LED = PIN_D13;
     export const PIN_A10 = DAL.PA08;
 
+    export const PIN_IRRXLED = PIN_IR_IN;
+    export const PIN_IRTXLED = PIN_IR_OUT;
+
     export const PIN_JACK_TX = PIN_TX; // TX
     export const PIN_JACK_COMMLED = PIN_LED; // LED
 }

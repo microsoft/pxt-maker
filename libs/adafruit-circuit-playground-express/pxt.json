@@ -8,8 +8,7 @@
         "ns.ts",
         "jacdac.ts",
         "board.json",
-        "board.svg",
-        "boardwireframe.svg"
+        "board.svg"
     ],
     "dependencies": {
         "core---samd": "file:../core---samd",

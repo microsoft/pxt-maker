@@ -28,13 +28,13 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1600"
+     inkscape:window-width="1440"
      inkscape:window-height="837"
      id="namedview813"
      showgrid="false"
      inkscape:zoom="6.0642267"
      inkscape:cx="136.46754"
-     inkscape:cy="112.55582"
+     inkscape:cy="92.767642"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -2841,13 +2841,7 @@
            gorn="0.3.0.0.0.53.0.470"
            d="m 143.64662,131.43505 h 7.49125 v -10.30741 h -7.49125 z"
            style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.73408532"
-           id="path25969" />
-        <path
-           inkscape:connector-curvature="0"
-           gorn="0.3.0.0.0.53.0.471"
-           d="m 147.3801,123.31779 c -1.64738,0 -2.98262,1.33525 -2.98262,2.98263 0,1.64738 1.33524,2.98263 2.98262,2.98263 1.64565,0 2.98263,-1.33525 2.98263,-2.98263 0,-1.64738 -1.33698,-2.98263 -2.98263,-2.98263"
-           style="fill:#cccccc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.73408532"
-           id="RXIRLED"
+           id="IRRXLED"
            inkscape:label="" />
         <path
            inkscape:connector-curvature="0"
@@ -2860,13 +2854,7 @@
            gorn="0.3.0.0.0.53.0.473"
            d="m 98.699126,131.43505 h 7.491254 v -10.30741 h -7.491254 z"
            style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.73408532"
-           id="path25975" />
-        <path
-           inkscape:connector-curvature="0"
-           gorn="0.3.0.0.0.53.0.474"
-           d="m 102.43261,123.31779 c -1.64738,0 -2.982625,1.33525 -2.982625,2.98263 0,1.64738 1.335245,2.98263 2.982625,2.98263 1.64738,0 2.98263,-1.33525 2.98263,-2.98263 0,-1.64738 -1.33525,-2.98263 -2.98263,-2.98263"
-           style="fill:#cccccc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.73408532"
-           id="TXIRLED"
+           id="IRTXLED"
            inkscape:label="" />
         <path
            inkscape:connector-curvature="0"
@@ -2948,7 +2936,7 @@
            d="m 152.43843,236.72871 h 6.14387 v -6.14387 h -6.14387 z"
            style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.73408532"
            id="LED"
-           inkscape:label="LED" />
+           inkscape:label="" />
         <path
            inkscape:connector-curvature="0"
            gorn="0.3.0.0.0.53.0.495"
