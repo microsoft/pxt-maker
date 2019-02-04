@@ -233,6 +233,7 @@ declare namespace pins {
     /**
      * Opens a SPI driver
      */
+    //% help=pins/create-spi
     //% parts=spi shim=pins::createSPI
     function createSPI(mosiPin: DigitalInOutPin, misoPin: DigitalInOutPin, sckPin: DigitalInOutPin): SPI;
 }

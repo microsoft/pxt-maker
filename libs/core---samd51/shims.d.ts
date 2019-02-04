@@ -248,7 +248,8 @@ declare namespace pins {
     /**
      * Opens a Serial communication driver
      */
-    //% shim=pins::createI2C
+    //% help=pins/create-i2c
+    //% parts=i2c shim=pins::createI2C
     function createI2C(sda: DigitalInOutPin, scl: DigitalInOutPin): I2C;
 
     /**
@@ -262,6 +263,7 @@ declare namespace pins {
     /**
      * Opens a SPI driver
      */
+    //% help=pins/create-spi
     //% parts=spi shim=pins::createSPI
     function createSPI(mosiPin: DigitalInOutPin, misoPin: DigitalInOutPin, sckPin: DigitalInOutPin): SPI;
 }
