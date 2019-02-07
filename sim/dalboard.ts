@@ -153,7 +153,7 @@ namespace pxsim {
             
             const neopixelPinCfg = getConfig(DAL.CFG_PIN_NEOPIXEL) ||
                 getConfig(DAL.CFG_PIN_DOTSTAR_DATA);
-            if (neopixelPinCfg)
+            if (neopixelPinCfg !== null)
                 this.neopixelPin = this.edgeConnectorState.getPin(neopixelPinCfg);
         }
 
