@@ -297,7 +297,7 @@ declare namespace light {
      * @param mode the color encoding mode
      * @param buf The buffer to send to the pin
      */
-    //% parts="neopixel" shim=light::sendBuffer
+    //% shim=light::sendBuffer
     function sendBuffer(data: DigitalInOutPin, clk: DigitalInOutPin, mode: int32, buf: Buffer): void;
 }
 

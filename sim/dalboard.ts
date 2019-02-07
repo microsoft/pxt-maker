@@ -21,7 +21,6 @@ namespace pxsim {
         LightBoard,
         CapTouchBoard,
         AccelerometerBoard,
-        PixelBoard,
         StorageBoard,
         //JacDacBoard,
         LightSensorBoard,
@@ -37,7 +36,6 @@ namespace pxsim {
         _neopixelState: pxt.Map<CommonNeoPixelState>;
         audioState: AudioState;
         neopixelPin: Pin;
-        pixelPin: Pin;
         touchButtonState: TouchButtonState;
         accelerometerState: AccelerometerState;
         storageState: StorageState;
@@ -98,14 +96,6 @@ namespace pxsim {
                 }
             }
 
-            this.neopixelPin = new Pin(
-                getConfig(DAL.CFG_PIN_NEOPIXEL) ||
-                getConfig(DAL.CFG_PIN_DOTSTAR_DATA) ||
-                DAL.PA30
-            );
-            // todo fix this
-            this.pixelPin = this.neopixelPin;
-
             this._neopixelState = {};
             this.microphoneState = new AnalogSensorState(DAL.DEVICE_ID_MICROPHONE, 52, 120, 75, 96);
             this.storageState = new StorageState();
@@ -151,9 +141,15 @@ namespace pxsim {
 
             this.builtinVisuals["photocell"] = () => new visuals.PhotoCellView(parsePinString);
             this.builtinPartVisuals["photocell"] = (xy: visuals.Coord) => visuals.mkPhotoCellPart(xy);
-            
+
             this.builtinVisuals["screen"] = () => new visuals.ScreenView();
             this.builtinPartVisuals["screen"] = (xy: visuals.Coord) => visuals.mkScreenPart(xy);
+
+            
+            const neopixelPinCfg = getConfig(DAL.CFG_PIN_NEOPIXEL) ||
+                getConfig(DAL.CFG_PIN_DOTSTAR_DATA);
+            if (neopixelPinCfg)
+                this.neopixelPin = this.edgeConnectorState.getPin(neopixelPinCfg);
         }
 
         receiveMessage(msg: SimulatorMessage) {
@@ -225,10 +221,6 @@ namespace pxsim {
         getDefaultPitchPin() {
             // amp always on PA02, regardless which name is has
             return pxtcore.getPin(DAL.PA02);
-        }
-
-        defaultNeopixelPin() {
-            return this.neopixelPin;
         }
 
         tryGetNeopixelState(pinId: number): CommonNeoPixelState {
