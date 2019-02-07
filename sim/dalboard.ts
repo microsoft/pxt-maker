@@ -112,7 +112,8 @@ namespace pxsim {
             this.builtinParts["touch"] = this.touchButtonState = new TouchButtonState(pinList);
 
             // components
-            this.builtinParts["neopixel"] = (pin: Pin) => { return this.neopixelState(pin.id); } //this.neopixelState(this.neopixelPin.id);
+            this.builtinParts["dotstar"] = (pin: Pin) => { return this.neopixelState(pin.id); };
+            this.builtinParts["neopixel"] = (pin: Pin) => { return this.neopixelState(pin.id); };
             this.builtinParts["audio"] = this.audioState = new AudioState();
             this.builtinParts["edgeconnector"] = this.edgeConnectorState = new EdgeConnectorState({
                 pins: pinList,
@@ -124,11 +125,13 @@ namespace pxsim {
 
             this.builtinVisuals["buttons"] = () => new visuals.ButtonView();
             this.builtinVisuals["microservo"] = () => new visuals.MicroServoView();
+            this.builtinVisuals["dotstar"] = () => new visuals.NeoPixelView()
             this.builtinVisuals["neopixel"] = () => new visuals.NeoPixelView();
 
             this.builtinPartVisuals["buttons"] = (xy: visuals.Coord) => visuals.mkBtnSvg(xy);
 
             this.builtinPartVisuals["microservo"] = (xy: visuals.Coord) => visuals.mkMicroServoPart(xy);
+            this.builtinPartVisuals["dotstar"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
             this.builtinPartVisuals["neopixel"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
 
             this.builtinParts["slideswitch"] = (pin: Pin) => new ToggleState(pin);

@@ -165,13 +165,6 @@ namespace pxsim.visuals {
         let pinNum = Number(pin[4]) + MICROBIT_ID_IO_P0;
         return pinNum
     }
-    function parseNeoPixelMode(modeStr: string): NeoPixelMode {
-        const modeMap: Map<NeoPixelMode> = {
-            "NeoPixelMode.RGB": NeoPixelMode.RGB,
-            "NeoPixelMode.RGBW": NeoPixelMode.RGBW
-        };
-        return modeMap[modeStr] || NeoPixelMode.RGB;
-    }
 
     export class NeoPixelView implements IBoardPart<CommonNeoPixelStateConstructor> {
         public style: string = `
@@ -200,17 +193,18 @@ namespace pxsim.visuals {
         private stripGroup: SVGGElement;
         private lastLocation: Coord;
         private pin: number;
-        private mode: NeoPixelMode;
 
         public init(bus: EventBus, state: CommonNeoPixelStateConstructor, svgEl: SVGSVGElement, otherParams: Map<string>): void {
-            U.assert(!!otherParams["mode"], "NeoPixels assumes a RGB vs RGBW mode is passed to it");
-            U.assert(!!otherParams["pin"], "NeoPixels assumes a pin is passed to it");
-            let modeStr = otherParams["mode"];
-            this.mode = parseNeoPixelMode(modeStr);
             this.stripGroup = <SVGGElement>svg.elt("g");
             this.element = this.stripGroup;
-            let pinStr = otherParams["pin"];
-            this.pin = digitalPinToPinNumber(pinStr);
+            if (otherParams["dataPin"]) {
+                // dotstar mode
+                const pinStr = otherParams["dataPin"];
+                this.pin = digitalPinToPinNumber(pinStr);    
+            } else {
+                const pinStr = otherParams["pin"];
+                this.pin = digitalPinToPinNumber(pinStr);    
+            }
             this.lastLocation = [0, 0];
             this.state = state(parsePinString(otherParams["pin"]));
             
