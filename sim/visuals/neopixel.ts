@@ -192,7 +192,7 @@ namespace pxsim.visuals {
         private part: SVGElAndSize;
         private stripGroup: SVGGElement;
         private lastLocation: Coord;
-        private pin: number;
+        private pin: Pin;
 
         public init(bus: EventBus, state: CommonNeoPixelStateConstructor, svgEl: SVGSVGElement, otherParams: Map<string>): void {
             this.stripGroup = <SVGGElement>svg.elt("g");
@@ -200,18 +200,18 @@ namespace pxsim.visuals {
             if (otherParams["dataPin"]) {
                 // dotstar mode
                 const pinStr = otherParams["dataPin"];
-                this.pin = digitalPinToPinNumber(pinStr);    
+                this.pin = parsePinString(pinStr);
             } else {
                 const pinStr = otherParams["pin"];
-                this.pin = digitalPinToPinNumber(pinStr);    
+                this.pin = parsePinString(pinStr);    
             }
             this.lastLocation = [0, 0];
-            this.state = state(parsePinString(otherParams["pin"]));
+            this.state = state(this.pin);
             
             let part = mkNeoPixelPart();
             this.part = part;
             this.stripGroup.appendChild(part.el);
-            let canvas = new NeoPixelCanvas(this.pin);
+            let canvas = new NeoPixelCanvas(this.pin.id);
             this.canvas = canvas;
             let canvasG = svg.elt("g", { class: "sim-neopixel-canvas-parent" });
             this.overElement = canvasG;
