@@ -186,12 +186,14 @@ namespace pxsim.visuals {
 
         public updateState() {
             this.onBoardLeds.forEach(l => l.updateState());
-            const state = this.board.neopixelState(this.board.defaultNeopixelPin().id)
-            if (state.buffer) {
-                for (let i = 0; i < this.onBoardNeopixels.length; ++i) {
-                    const rgb = state.pixelColor(i)
-                    if (rgb !== null)
-                        this.onBoardNeopixels[i].setColor(rgb as any);
+            if (this.board.neopixelPin) {
+                const state = this.board.neopixelState(this.board.neopixelPin.id);
+                if (state.buffer) {
+                    for (let i = 0; i < this.onBoardNeopixels.length; ++i) {
+                        const rgb = state.pixelColor(i)
+                        if (rgb !== null)
+                            this.onBoardNeopixels[i].setColor(rgb as any);
+                    }
                 }
             }
         }
@@ -308,8 +310,8 @@ namespace pxsim.visuals {
             }) as SVGCircleElement
             svg.title(this.element, def.label);
             // resolve button
-            this.button = def.index !== undefined 
-                ? pxsim.pxtcore.getButton(def.index) 
+            this.button = def.index !== undefined
+                ? pxsim.pxtcore.getButton(def.index)
                 : pxsim.pxtcore.getButtonByPin(pxsim.pinIds[def.label]);
             // hooking up events
             pointerEvents.down.forEach(evid => this.element.addEventListener(evid, ev => {
