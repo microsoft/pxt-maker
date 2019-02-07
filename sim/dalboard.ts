@@ -33,7 +33,7 @@ namespace pxsim {
         edgeConnectorState: EdgeConnectorState;
         lightSensorState: AnalogSensorState;
         buttonState: CommonButtonState;
-        _neopixelState: pxt.Map<CommonNeoPixelState>;
+        lightState: pxt.Map<CommonNeoPixelState>;
         audioState: AudioState;
         neopixelPin: Pin;
         touchButtonState: TouchButtonState;
@@ -96,7 +96,7 @@ namespace pxsim {
                 }
             }
 
-            this._neopixelState = {};
+            this.lightState = {};
             this.microphoneState = new AnalogSensorState(DAL.DEVICE_ID_MICROPHONE, 52, 120, 75, 96);
             this.storageState = new StorageState();
             //this.jacdacState = new JacDacState(this);
@@ -227,12 +227,12 @@ namespace pxsim {
         }
 
         tryGetNeopixelState(pinId: number): CommonNeoPixelState {
-            return this._neopixelState[pinId];
+            return this.lightState[pinId];
         }
 
         neopixelState(pinId: number): CommonNeoPixelState {
-            let state = this._neopixelState[pinId];
-            if (!state) state = this._neopixelState[pinId] = new CommonNeoPixelState();
+            let state = this.lightState[pinId];
+            if (!state) state = this.lightState[pinId] = new CommonNeoPixelState();
             return state;
         }
     }
