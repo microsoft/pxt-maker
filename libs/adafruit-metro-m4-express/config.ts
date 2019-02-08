@@ -1,4 +1,5 @@
 namespace config {
+    // https://cdn-learn.adafruit.com/assets/assets/000/053/093/original/adafruit_products_schem.png?1524085993
     export const PIN_NEOPIXEL = DAL.PB22;
     export const NUM_NEOPIXELS = 1;
 

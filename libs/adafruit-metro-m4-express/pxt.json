@@ -16,6 +16,7 @@
         "pixel": "file:../pixel",
         "light": "file:../light",
         "buttons": "file:../buttons",
+        "storage": "file:../storage",
         "jacdac": "file:../jacdac"
     },
     "public": true,
@@ -31,6 +32,7 @@
         "screen",
         "jacdac",
         "pixel",
-        "light"
+        "light",
+        "storage"
     ]
 }
