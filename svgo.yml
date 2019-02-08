@@ -51,7 +51,7 @@ plugins:
   - mergePaths
   - removeUnusedNS
   - sortAttrs
-  - removeTitle: false
+  - removeTitle
   - removeDesc
   - removeDimensions
   - removeAttrs

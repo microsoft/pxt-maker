@@ -10,9 +10,6 @@
     <g id="g4502">
       <g id="g4500">
         <g id="g26">
-          <title id="title28">
-            text:USB
-          </title>
           <text font-size="3.341" x="62.85" id="text30" y="10.31" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
             USB
           </text>
@@ -21,73 +18,46 @@
     </g>
   </g>
   <g id="g32" transform="translate(-3.982) scale(3.15657)">
-    <title id="title34">
-      text:RST
-    </title>
     <text font-size="3.341" x="19.65" id="text36" y="57.83" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       RST
     </text>
   </g>
   <g id="g38" transform="translate(-3.982) scale(3.15657)">
-    <title id="title40">
-      text:ARf
-    </title>
     <text font-size="3.341" x="33.69" id="text42" y="57.83" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       ARf
     </text>
   </g>
   <g id="g44" transform="translate(-3.982) scale(3.15657)">
-    <title id="title46">
-      text:3V
-    </title>
     <text font-size="3.341" x="26.85" id="text48" y="57.83" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       3V
     </text>
   </g>
   <g id="g50" transform="translate(-3.982) scale(3.15657)">
-    <title id="title52">
-      text:A5
-    </title>
     <text font-size="3.341" x="84.09" id="text54" y="57.83" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       A5
     </text>
   </g>
   <g id="g56" transform="translate(-3.982) scale(3.15657)">
-    <title id="title58">
-      text:A4
-    </title>
     <text font-size="3.341" x="76.89" id="text60" y="57.83" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       A4
     </text>
   </g>
   <g id="g62" transform="translate(-3.982) scale(3.15657)">
-    <title id="title64">
-      text:A3
-    </title>
     <text font-size="3.341" x="69.69" id="text66" y="57.83" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       A3
     </text>
   </g>
   <g id="g68" transform="translate(-3.982) scale(3.15657)">
-    <title id="title70">
-      text:A2
-    </title>
     <text font-size="3.341" x="62.49" id="text72" y="57.83" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       A2
     </text>
   </g>
   <g id="g74" transform="translate(-3.982) scale(3.15657)">
-    <title id="title76">
-      text:A1
-    </title>
     <text font-size="3.341" x="56.01" id="text78" y="57.83" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       A1
     </text>
   </g>
   <g id="g80" transform="translate(-3.982) scale(3.15657)">
-    <title id="title82">
-      text:A0
-    </title>
     <text font-size="3.341" x="48.81" id="text84" y="57.83" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       A0
     </text>
@@ -96,9 +66,6 @@
     <g id="g4538">
       <g id="g4536">
         <g id="g86">
-          <title id="title88">
-            text:13
-          </title>
           <text font-size="3.341" x="69.69" id="text90" y="10.31" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
             13
           </text>
@@ -107,129 +74,81 @@
     </g>
   </g>
   <g id="g92" transform="translate(-3.982) scale(3.15657)">
-    <title id="title94">
-      text:~5
-    </title>
     <text font-size="3.341" x="112.489" id="text96" y="10.31" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       5
     </text>
   </g>
   <g id="g98" transform="translate(-3.982) scale(3.15657)">
-    <title id="title100">
-      text:11
-    </title>
     <text font-size="3.341" x="84.45" id="text102" y="10.31" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       11
     </text>
   </g>
   <g id="g104" transform="translate(-3.982) scale(3.15657)">
-    <title id="title106">
-      text:10
-    </title>
     <text font-size="3.341" x="91.289" id="text108" y="10.31" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       10
     </text>
   </g>
   <g id="g110" transform="translate(-3.982) scale(3.15657)">
-    <title id="title112">
-      text:9
-    </title>
     <text font-size="3.341" x="98.49" id="text114" y="10.31" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       9
     </text>
   </g>
   <g id="g116" transform="translate(-3.982) scale(3.15657)">
-    <title id="title118">
-      text:SCK
-    </title>
     <text font-size="3.341" x="91.289" id="text120" y="57.83" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       SCK
     </text>
   </g>
   <g id="g122" transform="translate(-3.982) scale(3.15657)">
-    <title id="title124">
-      text:MO
-    </title>
     <text font-size="2.923" x="98.49" id="text126" y="57.622" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       MO
     </text>
   </g>
   <g id="g128" transform="translate(-3.982) scale(3.15657)">
-    <title id="title130">
-      text:MI
-    </title>
     <text font-size="2.923" x="106.05" id="text132" y="57.622" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       MI
     </text>
   </g>
   <g id="g134" transform="translate(-3.982) scale(3.15657)">
-    <title id="title136">
-      text:SCL
-    </title>
     <text font-size="3.341" x="120.45" id="text138" y="9.95" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       SCL
     </text>
   </g>
   <g id="g140" transform="translate(-3.982) scale(3.15657)">
-    <title id="title142">
-      text:SDA
-    </title>
     <text font-size="3.341" x="128.01" id="text144" y="9.95" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       SDA
     </text>
   </g>
   <g id="g146" transform="translate(-3.982) scale(3.15657)">
-    <title id="title148">
-      text:RX
-    </title>
     <text font-size="3.341" x="113.25" id="text150" y="57.83" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       RX
     </text>
   </g>
   <g id="g152" transform="translate(-3.982) scale(3.15657)">
-    <title id="title154">
-      text:TX
-    </title>
     <text font-size="3.341" x="120.45" id="text156" y="57.83" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       TX
     </text>
   </g>
   <g id="g158" transform="translate(-3.982) scale(3.15657)">
-    <title id="title160">
-      text:BAT
-    </title>
     <text font-size="3.341" x="48.81" id="text162" y="9.59" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       BAT
     </text>
   </g>
   <g id="g164" transform="translate(-3.982) scale(3.15657)">
-    <title id="title166">
-      text:12
-    </title>
     <text font-size="3.341" x="76.89" id="text168" y="10.31" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       12
     </text>
   </g>
   <g id="g170" transform="translate(-3.982) scale(3.15657)">
-    <title id="title172">
-      text:6
-    </title>
     <text font-size="3.341" x="105.69" id="text174" y="10.31" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       6
     </text>
   </g>
   <g id="g176" transform="translate(-3.982) scale(3.15657)">
-    <title id="title178">
-      text:GND
-    </title>
     <text font-size="3.341" x="41.61" id="text180" y="57.83" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       GND
     </text>
   </g>
   <g id="g182" transform="translate(-3.982) scale(3.15657)">
-    <title id="title184">
-      text:#13
-    </title>
     <g transform="translate(18.08 13.32)" id="g4601">
       <g id="g4599">
         <g id="g4597">
@@ -251,17 +170,11 @@
     </g>
   </g>
   <g id="g192" transform="translate(-3.982) scale(3.15657)">
-    <title id="title194">
-      text:En
-    </title>
     <text font-size="3.341" x="55.65" id="text196" y="9.59" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       En
     </text>
   </g>
   <g id="g198" transform="translate(-3.982) scale(3.15657)">
-    <title id="title200">
-      text:GND
-    </title>
     <text font-size="3.341" x="128.01" id="text202" y="58.19" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       GND
     </text>
@@ -270,9 +183,6 @@
     <g id="g4615">
       <g id="g4613">
         <g id="g204">
-          <title id="title206">
-            text:~
-          </title>
           <text font-size="3.341" x="94.53" id="text208" y="9.95" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
             ~
           </text>
@@ -284,9 +194,6 @@
     <g id="g4624">
       <g id="g4622">
         <g id="g210">
-          <title id="title212">
-            text:~
-          </title>
           <text font-size="3.341" x="100.65" id="text214" y="10.31" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
             ~
           </text>
@@ -298,9 +205,6 @@
     <g id="g4633">
       <g id="g4631">
         <g id="g216">
-          <title id="title218">
-            text:Reset
-          </title>
           <text font-size="3.341" x="27.93" id="text220" y="41.99" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
             Reset
           </text>
@@ -312,9 +216,6 @@
     <g id="g4642">
       <g id="g4640">
         <g id="g222">
-          <title id="title224">
-            text:CHG
-          </title>
           <text font-size="3.341" x="17.13" id="text226" y="50.99" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
             CHG
           </text>
@@ -326,9 +227,6 @@
     <g id="g4651">
       <g id="g4649">
         <g id="g228">
-          <title id="title230">
-            text:~
-          </title>
           <text font-size="3.341" x="87.329" id="text232" y="9.95" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
             ~
           </text>
@@ -337,9 +235,6 @@
     </g>
   </g>
   <g id="g234" transform="translate(-3.982) scale(3.15657)">
-    <title id="title236">
-      text:Feather M0
-    </title>
     <g transform="translate(86.12 39.96)" id="g4669">
       <g id="g4667">
         <g id="g4665">
@@ -361,9 +256,6 @@
     </g>
   </g>
   <g id="g244" transform="translate(-3.982) scale(3.15657)">
-    <title id="title246">
-      text:Express
-    </title>
     <g transform="translate(89.72 39.96)" id="g4686">
       <g id="g4684">
         <g id="g4682">
@@ -385,89 +277,36 @@
     </g>
   </g>
   <g id="g254" transform="translate(-3.982) scale(3.15657)">
-    <title id="title256">
-      text:adafruit!
-    </title>
     <text font-size="3.341" x="78.689" id="text258" y="14.99" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       adafruit!
     </text>
   </g>
   <g id="g260" transform="translate(-3.982) scale(3.15657)">
-    <title id="title262">
-      text:3V
-    </title>
     <text font-size="3.341" x="137.01" id="text264" y="14.63" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       3V
     </text>
   </g>
   <g id="g266" transform="translate(-3.982) scale(3.15657)">
-    <title id="title268">
-      text:GND
-    </title>
     <text font-size="3.341" x="138.45" id="text270" y="53.51" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
       GND
     </text>
   </g>
   <g id="g362" transform="translate(-3.982) scale(3.15657)">
-    <title id="title364">
-      element:CHG
-    </title>
     <g id="g366">
-      <title id="title368">
-        package:CHIPLED_0805_NOOUTLINE
-      </title>
       <g id="g370">
-        <title id="title372">
-          polygon
-        </title>
         <path id="path374" d="M8.85 48.96l-1.44 1.08v-2.16l1.44 1.08m-1.152-.864v1.728-1.728m.432.324v1.08-1.08" fill="none" stroke="#fff" stroke-width=".432" stroke-linecap="round"/>
       </g>
     </g>
   </g>
-  <g id="g400" transform="translate(-3.982) scale(3.15657)">
-    <title id="title402">
-      element:JP1
-    </title>
-    <g id="g404">
-      <title id="title406">
-        package:1X16_ROUND
-      </title>
-    </g>
-  </g>
-  <g id="g408" transform="translate(-3.982) scale(3.15657)">
-    <title id="title410">
-      element:JP3
-    </title>
-    <g id="g412">
-      <title id="title414">
-        package:1X12_ROUND
-      </title>
-    </g>
-  </g>
   <g id="g416" transform="translate(-3.982) scale(3.15657)">
-    <title id="title418">
-      element:L
-    </title>
     <g id="g420">
-      <title id="title422">
-        package:CHIPLED_0805_NOOUTLINE
-      </title>
       <g id="g424">
-        <title id="title426">
-          polygon
-        </title>
         <path id="path428" d="M8.067 15.593l1.44-1.08v2.16l-1.44-1.08m1.152.864V14.73v1.728m-.432-.324v-1.08 1.08" fill="none" stroke="#fff" stroke-width=".432" stroke-linecap="round"/>
       </g>
     </g>
   </g>
   <g id="g430" transform="translate(-3.982) scale(3.15657)">
-    <title id="title432">
-      element:LED1
-    </title>
     <g id="g434">
-      <title id="title436">
-        package:LED3535
-      </title>
       <path id="line438" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M91.664 12.745v-.851"/>
       <path id="line440" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M91.664 11.894h10.772"/>
       <path id="line442" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M102.436 11.894v.851"/>
@@ -475,212 +314,81 @@
       <path id="line446" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M91.664 22.666h10.772"/>
       <path id="line448" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M102.436 22.666v-.851"/>
       <g id="g450">
-        <title id="title452">
-          polygon
-        </title>
         <path id="path454" d="M91.65 11.88h2.16l-1.08 1.08h-1.08v-1.08m0 1.08h1.08-1.08m0-.36h1.44-1.44" fill="none" stroke="#fff" stroke-width=".36" stroke-linecap="round"/>
       </g>
     </g>
   </g>
   <g id="g486" transform="translate(-3.982) scale(3.15657)">
-    <title id="title488">
-      element:R5
-    </title>
     <g id="g490">
-      <title id="title492">
-        package:0603-NO
-      </title>
       <path id="line494" stroke="#fff" stroke-width=".864" stroke-linecap="round" d="M98.85 26.694v-2.268"/>
     </g>
   </g>
   <g id="g526" transform="translate(-3.982) scale(3.15657)">
-    <title id="title528">
-      element:SW1
-    </title>
-    <g id="g530">
-      <title id="title532">
-        package:KMR2
-      </title>
-      <path id="line534" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M33.883 50.409H21.977"/>
-      <path id="line536" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M21.977 50.409v-7.938"/>
-      <path id="line538" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M21.977 42.471h11.906"/>
-      <path id="line540" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M33.883 42.471v7.938"/>
-      <path id="path542" d="M31.048 45.873a1.7 1.7 0 0 0-1.7-1.7" fill="none" stroke="#fff" stroke-width=".36"/>
-      <path id="line544" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M31.048 45.873v1.134"/>
-      <path id="path546" d="M29.347 48.708a1.7 1.7 0 0 0 1.7-1.701" fill="none" stroke="#fff" stroke-width=".36"/>
-      <path id="line548" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M29.347 48.708h-2.835"/>
-      <path id="path550" d="M24.812 47.007a1.7 1.7 0 0 0 1.7 1.7" fill="none" stroke="#fff" stroke-width=".36"/>
-      <path id="line552" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M24.812 47.007v-1.134"/>
-      <path id="path554" d="M26.512 44.172a1.7 1.7 0 0 0-1.7 1.701" fill="none" stroke="#fff" stroke-width=".36"/>
-      <path id="line556" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M26.512 44.172h2.835"/>
-    </g>
-  </g>
-  <g id="g558" transform="translate(-3.982) scale(3.15657)">
-    <title id="title560">
-      element:TP1
-    </title>
-    <g id="g562">
-      <title id="title564">
-        package:TESTPOINT_ROUND_1.5MM
-      </title>
-    </g>
-  </g>
-  <g id="g566" transform="translate(-3.982) scale(3.15657)">
-    <title id="title568">
-      element:TP2
-    </title>
-    <g id="g570">
-      <title id="title572">
-        package:TESTPOINT_ROUND_1.5MM
-      </title>
+    <g id="g530" stroke="#fff" stroke-width=".36">
+      <path id="line534" stroke-linecap="round" d="M33.883 50.409H21.977"/>
+      <path id="line536" stroke-linecap="round" d="M21.977 50.409v-7.938"/>
+      <path id="line538" stroke-linecap="round" d="M21.977 42.471h11.906"/>
+      <path id="line540" stroke-linecap="round" d="M33.883 42.471v7.938"/>
+      <path id="path542" d="M31.048 45.873a1.7 1.7 0 0 0-1.7-1.7" fill="none"/>
+      <path id="line544" stroke-linecap="round" d="M31.048 45.873v1.134"/>
+      <path id="path546" d="M29.347 48.708a1.7 1.7 0 0 0 1.7-1.701" fill="none"/>
+      <path id="line548" stroke-linecap="round" d="M29.347 48.708h-2.835"/>
+      <path id="path550" d="M24.812 47.007a1.7 1.7 0 0 0 1.7 1.7" fill="none"/>
+      <path id="line552" stroke-linecap="round" d="M24.812 47.007v-1.134"/>
+      <path id="path554" d="M26.512 44.172a1.7 1.7 0 0 0-1.7 1.701" fill="none"/>
+      <path id="line556" stroke-linecap="round" d="M26.512 44.172h2.835"/>
     </g>
   </g>
   <g id="g574" transform="translate(-3.982) scale(3.15657)">
-    <title id="title576">
-      element:U$4
-    </title>
-    <g id="g578">
-      <title id="title580">
-        package:TQFN48_7MM
-      </title>
-      <path id="line582" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M61.044 27.235h-1.559"/>
-      <path id="line584" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M59.485 27.235v1.559"/>
-      <path id="line586" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M78.335 27.235h1.56"/>
-      <path id="line588" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M79.895 27.235v1.559"/>
-      <path id="line590" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M59.485 46.086v1.559"/>
-      <path id="line592" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M59.485 47.645h1.559"/>
-      <path id="line594" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M79.895 46.086v1.559"/>
-      <path id="line596" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M79.895 47.645h-1.56"/>
-      <circle cx="58.697" r=".36" id="circle598" cy="48.586" fill="none" stroke="#fff" stroke-width="1.152"/>
-    </g>
-  </g>
-  <g id="g600" transform="translate(-3.982) scale(3.15657)">
-    <title id="title602">
-      element:U$7
-    </title>
-    <g id="g604">
-      <title id="title606">
-        package:ADAFRUIT_3.5MM
-      </title>
-    </g>
-  </g>
-  <g id="g608" transform="translate(-3.982) scale(3.15657)">
-    <title id="title610">
-      element:U$9
-    </title>
-    <g id="g612">
-      <title id="title614">
-        package:FEATHERLOGO
-      </title>
-    </g>
-  </g>
-  <g id="g616" transform="translate(-3.982) scale(3.15657)">
-    <title id="title618">
-      element:U$12
-    </title>
-    <g id="g620">
-      <title id="title622">
-        package:ADAFRUIT_3.5MM
-      </title>
-    </g>
-  </g>
-  <g id="g624" transform="translate(-3.982) scale(3.15657)">
-    <title id="title626">
-      element:U$13
-    </title>
-    <g id="g628">
-      <title id="title630">
-        package:PCBFEAT-REV-040
-      </title>
+    <g id="g578" stroke="#fff">
+      <path id="line582" stroke-width=".36" stroke-linecap="round" d="M61.044 27.235h-1.559"/>
+      <path id="line584" stroke-width=".36" stroke-linecap="round" d="M59.485 27.235v1.559"/>
+      <path id="line586" stroke-width=".36" stroke-linecap="round" d="M78.335 27.235h1.56"/>
+      <path id="line588" stroke-width=".36" stroke-linecap="round" d="M79.895 27.235v1.559"/>
+      <path id="line590" stroke-width=".36" stroke-linecap="round" d="M59.485 46.086v1.559"/>
+      <path id="line592" stroke-width=".36" stroke-linecap="round" d="M59.485 47.645h1.559"/>
+      <path id="line594" stroke-width=".36" stroke-linecap="round" d="M79.895 46.086v1.559"/>
+      <path id="line596" stroke-width=".36" stroke-linecap="round" d="M79.895 47.645h-1.56"/>
+      <circle cx="58.697" r=".36" id="circle598" cy="48.586" fill="none" stroke-width="1.152"/>
     </g>
   </g>
   <g id="g632" transform="translate(-3.982) scale(3.15657)">
-    <title id="title634">
-      element:U$31
-    </title>
     <g id="g636">
-      <title id="title638">
-        package:MOUNTINGHOLE_2.5_PLATED
-      </title>
       <circle cx="8.49" r="5.669" id="circle640" cy="7.2" fill="none" stroke="#fff" stroke-width=".576"/>
     </g>
   </g>
   <g id="g642" transform="translate(-3.982) scale(3.15657)">
-    <title id="title644">
-      element:U$32
-    </title>
     <g id="g646">
-      <title id="title648">
-        package:MOUNTINGHOLE_2.5_PLATED
-      </title>
       <circle cx="8.49" r="5.669" id="circle650" cy="57.6" fill="none" stroke="#fff" stroke-width=".576"/>
     </g>
   </g>
-  <g id="g652" transform="translate(-3.982) scale(3.15657)">
-    <title id="title654">
-      element:U$34
-    </title>
-    <g id="g656">
-      <title id="title658">
-        package:FIDUCIAL_1MM
-      </title>
-    </g>
-  </g>
-  <g id="g660" transform="translate(-3.982) scale(3.15657)">
-    <title id="title662">
-      element:U$35
-    </title>
-    <g id="g664">
-      <title id="title666">
-        package:FIDUCIAL_1MM
-      </title>
-    </g>
-  </g>
   <g id="g668" transform="translate(-3.982) scale(3.15657)">
-    <title id="title670">
-      element:U1
-    </title>
-    <g id="g672">
-      <title id="title674">
-        package:SOIC8_208MIL
-      </title>
-      <path id="line676" stroke="#fff" stroke-width=".576" stroke-linecap="round" d="M104.213 35.654v10.772"/>
-      <path id="line678" stroke="#fff" stroke-width=".576" stroke-linecap="round" d="M90.607 46.426V35.654"/>
-      <circle cx="102.882" r=".72" id="circle680" cy="38.52" fill="none" stroke="#fff" stroke-width=".576"/>
+    <g id="g672" stroke="#fff" stroke-width=".576">
+      <path id="line676" stroke-linecap="round" d="M104.213 35.654v10.772"/>
+      <path id="line678" stroke-linecap="round" d="M90.607 46.426V35.654"/>
+      <circle cx="102.882" r=".72" id="circle680" cy="38.52" fill="none"/>
     </g>
   </g>
   <g id="g710" transform="translate(-3.982) scale(3.15657)">
-    <title id="title712">
-      element:X1
-    </title>
-    <g id="g714">
-      <title id="title716">
-        package:JSTPH2
-      </title>
-      <path id="line718" stroke="#fff" stroke-width=".576" stroke-linecap="round" d="M25.512 1.576h12.756"/>
-      <path id="line720" stroke="#fff" stroke-width=".576" stroke-linecap="round" d="M43.228 11.497v11.339"/>
-      <path id="line722" stroke="#fff" stroke-width=".576" stroke-linecap="round" d="M43.228 22.836h-2.409"/>
-      <path id="line724" stroke="#fff" stroke-width=".576" stroke-linecap="round" d="M40.819 22.836v-7.087"/>
-      <path id="line726" stroke="#fff" stroke-width=".576" stroke-linecap="round" d="M40.819 15.749H36.85"/>
-      <path id="line728" stroke="#fff" stroke-width=".576" stroke-linecap="round" d="M26.929 15.749h-3.968"/>
-      <path id="line730" stroke="#fff" stroke-width=".576" stroke-linecap="round" d="M22.961 15.749v7.087"/>
-      <path id="line732" stroke="#fff" stroke-width=".576" stroke-linecap="round" d="M22.961 22.836h-2.41"/>
-      <path id="line734" stroke="#fff" stroke-width=".576" stroke-linecap="round" d="M20.551 22.836V11.497"/>
+    <g id="g714" stroke="#fff" stroke-width=".576" stroke-linecap="round">
+      <path id="line718" d="M25.512 1.576h12.756"/>
+      <path id="line720" d="M43.228 11.497v11.339"/>
+      <path id="line722" d="M43.228 22.836h-2.409"/>
+      <path id="line724" d="M40.819 22.836v-7.087"/>
+      <path id="line726" d="M40.819 15.749H36.85"/>
+      <path id="line728" d="M26.929 15.749h-3.968"/>
+      <path id="line730" d="M22.961 15.749v7.087"/>
+      <path id="line732" d="M22.961 22.836h-2.41"/>
+      <path id="line734" d="M20.551 22.836V11.497"/>
     </g>
   </g>
   <g id="g776" transform="translate(-3.982) scale(3.15657)">
-    <title id="title778">
-      element:X3
-    </title>
-    <g id="g780">
-      <title id="title782">
-        package:4UCONN_20329_V2
-      </title>
-      <path id="line784" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M17.008 25.313v2.268"/>
-      <path id="line786" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M17.008 37.219v2.268"/>
-      <path id="line788" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M4.252 21.628H1.701"/>
-      <path id="line790" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M1.701 21.628v21.544"/>
-      <path id="line792" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M1.701 43.172h2.551"/>
+    <g id="g780" stroke="#fff" stroke-width=".36" stroke-linecap="round">
+      <path id="line784" d="M17.008 25.313v2.268"/>
+      <path id="line786" d="M17.008 37.219v2.268"/>
+      <path id="line788" d="M4.252 21.628H1.701"/>
+      <path id="line790" d="M1.701 21.628v21.544"/>
+      <path id="line792" d="M1.701 43.172h2.551"/>
     </g>
   </g>
   <g transform="rotate(90 14.276 152.555) scale(3.15657)" id="g5095">
@@ -1617,9 +1325,6 @@
     <g id="g6474">
       <g id="g6472">
         <g id="g11568">
-          <title id="title11570">
-            text:~
-          </title>
           <text font-size="3.341" x="100.65" id="text11572" y="10.31" font-family="OCRA" text-anchor="middle" fill="#fff" stroke="none" stroke-width="0">
             ~
           </text>

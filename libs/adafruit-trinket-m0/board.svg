@@ -1,80 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="svg2" y="0" width="208.299" viewBox="0 0 208.299 118.42" x="0" height="118.42" version="1.2">
   <path d="M197.366 118.42H17.762l-5.92-5.92V86.84L0 75V19.737L13.816 5.92V0h183.55a9.868 9.868 0 0 1 9.869 9.868V37.5l-2.96 2.96v37.5l2.96 2.96v27.632a9.868 9.868 0 0 1-9.869 9.868m-23.684-46.777a2.72 2.72 0 1 0 0 5.439 2.72 2.72 0 1 0 0-5.44zm0-30.305a2.72 2.72 0 1 0 0 5.44 2.72 2.72 0 1 0 0-5.44zM156.906 3.295a8.547 8.547 0 0 0 0 17.094 8.547 8.547 0 1 0 0-17.094zm0 94.736a8.547 8.547 0 0 0 0 17.095 8.547 8.547 0 1 0 0-17.095zm9.783-16.287a3.108 3.108 0 1 0 0 6.216 3.108 3.108 0 1 0 0-6.216zm0-51.284a3.108 3.108 0 0 0 0 6.216 3.108 3.108 0 1 0 0-6.216zm21.757 53.227a3.497 3.497 0 1 0 0 6.993 3.497 3.497 0 1 0 0-6.993zm0-55.947a3.497 3.497 0 0 0 0 6.994 3.497 3.497 0 1 0 0-6.994zm-50.29-21.56a3.885 3.885 0 0 0 0 7.77 3.885 3.885 0 1 0 0-7.77zm-19.736 0a3.885 3.885 0 0 0 0 7.77 3.885 3.885 0 1 0 0-7.77zm-19.737 0a3.885 3.885 0 0 0 0 7.77 3.885 3.885 0 1 0 0-7.77zm-19.737 0a3.885 3.885 0 0 0 0 7.77 3.885 3.885 0 1 0 0-7.77zm-19.736 0a3.885 3.885 0 0 0 0 7.77 3.885 3.885 0 1 0 0-7.77zm0 98.487a3.885 3.885 0 1 0 0 7.77 3.885 3.885 0 1 0 0-7.77zm19.736 0a3.885 3.885 0 1 0 0 7.77 3.885 3.885 0 1 0 0-7.77zm19.737 0a3.885 3.885 0 1 0 0 7.77 3.885 3.885 0 1 0 0-7.77zm19.737 0a3.885 3.885 0 1 0 0 7.77 3.885 3.885 0 1 0 0-7.77zm19.736 0a3.885 3.885 0 1 0 0 7.77 3.885 3.885 0 1 0 0-7.77zM29.604 6.255a8.547 8.547 0 1 0 0 17.095 8.547 8.547 0 1 0 0-17.095zm0 88.815a8.547 8.547 0 0 0 0 17.095 8.547 8.547 0 1 0 0-17.095z" id="path8" fill="#000" stroke="none" stroke-width="0"/>
-  <g id="g14" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title16">
-      element:BAT
-    </title>
-    <g id="g18">
-      <title id="title20">
-        package:JSTPH2
-      </title>
-    </g>
-  </g>
   <g id="g62" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title64">
-      element:CN1
-    </title>
-    <g id="g66">
-      <title id="title68">
-        package:4UCONN_20329_V2
-      </title>
-      <path id="line70" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M28.687 17.008h-2.268"/>
-      <path id="line72" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M16.781 17.008h-2.268"/>
-      <path id="line74" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M32.372 4.252V1.701"/>
-      <path id="line76" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M32.372 1.701H10.828"/>
-      <path id="line78" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M10.828 1.701v2.551"/>
+    <g id="g66" stroke="#fff" stroke-width=".36" stroke-linecap="round">
+      <path id="line70" d="M28.687 17.008h-2.268"/>
+      <path id="line72" d="M16.781 17.008h-2.268"/>
+      <path id="line74" d="M32.372 4.252V1.701"/>
+      <path id="line76" d="M32.372 1.701H10.828"/>
+      <path id="line78" d="M10.828 1.701v2.551"/>
     </g>
   </g>
   <g id="g124" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title126">
-      element:IC3
-    </title>
-    <g id="g128">
-      <title id="title130">
-        package:QFN32_5MM
-      </title>
-      <path id="line132" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M16.985 35.006v1.701"/>
-      <path id="line134" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M16.985 36.707h1.701"/>
-      <path id="line136" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M16.985 23.1v-1.701"/>
-      <path id="line138" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M16.985 21.399h1.701"/>
-      <path id="line140" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M30.591 36.707h1.701"/>
-      <path id="line142" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M32.292 36.707v-1.701"/>
-      <path id="line144" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M30.591 21.399h1.701"/>
-      <path id="line146" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M32.292 21.399V23.1"/>
-    </g>
-  </g>
-  <g id="g148" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title150">
-      element:JP3
-    </title>
-    <g id="g152">
-      <title id="title154">
-        package:1X05_ROUND_76
-      </title>
-    </g>
-  </g>
-  <g id="g156" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title158">
-      element:JP4
-    </title>
-    <g id="g160">
-      <title id="title162">
-        package:1X05_ROUND_76
-      </title>
+    <g id="g128" stroke="#fff" stroke-width=".36" stroke-linecap="round">
+      <path id="line132" d="M16.985 35.006v1.701"/>
+      <path id="line134" d="M16.985 36.707h1.701"/>
+      <path id="line136" d="M16.985 23.1v-1.701"/>
+      <path id="line138" d="M16.985 21.399h1.701"/>
+      <path id="line140" d="M30.591 36.707h1.701"/>
+      <path id="line142" d="M32.292 36.707v-1.701"/>
+      <path id="line144" d="M30.591 21.399h1.701"/>
+      <path id="line146" d="M32.292 21.399V23.1"/>
     </g>
   </g>
   <g id="g164" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title166">
-      element:L
-    </title>
     <g id="g168">
-      <title id="title170">
-        package:CHIPLED_0603_NOOUTLINE
-      </title>
       <g id="g172">
-        <title id="title174">
-          polygon
-        </title>
         <path id="path176" d="M37.26 8.886l-.72-.9h1.44l-.72.9m.662-.828h-1.324 1.324" fill="none" stroke="#fff" stroke-width=".432" stroke-linecap="round"/>
       </g>
       <g transform="rotate(180 18.63 4.533)" id="g4576">
@@ -87,17 +36,8 @@
     </g>
   </g>
   <g id="g206" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title208">
-      element:PWR
-    </title>
     <g id="g210">
-      <title id="title212">
-        package:CHIPLED_0603_NOOUTLINE
-      </title>
       <g id="g214">
-        <title id="title216">
-          polygon
-        </title>
         <path id="path218" d="M5.94 8.886l-.72-.9h1.44l-.72.9m.662-.828H5.278h1.324" fill="none" stroke="#fff" stroke-width=".432" stroke-linecap="round"/>
       </g>
       <g transform="rotate(180 2.97 4.533)" id="g4601">
@@ -110,97 +50,19 @@
     </g>
   </g>
   <g id="g224" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title226">
-      element:Q2
-    </title>
-    <g id="g228">
-      <title id="title230">
-        package:BTN_KMR2_4.6X2.8
-      </title>
-      <path id="line232" stroke="#fff" stroke-width=".576" stroke-linecap="round" d="M13.127 63.94h11.906"/>
-      <path id="line234" stroke="#fff" stroke-width=".576" stroke-linecap="round" d="M25.033 72.588H13.127"/>
-    </g>
-  </g>
-  <g id="g256" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title258">
-      element:SWC
-    </title>
-    <g id="g260">
-      <title id="title262">
-        package:B1,27
-      </title>
-    </g>
-  </g>
-  <g id="g264" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title266">
-      element:SWD
-    </title>
-    <g id="g268">
-      <title id="title270">
-        package:B1,27
-      </title>
-    </g>
-  </g>
-  <g id="g272" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title274">
-      element:U$1
-    </title>
-    <g id="g276">
-      <title id="title278">
-        package:TRINKET_M0_BOTTOM
-      </title>
-    </g>
-  </g>
-  <g id="g280" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title282">
-      element:U$6
-    </title>
-    <g id="g284">
-      <title id="title286">
-        package:FIDUCIAL_1MM
-      </title>
+    <g id="g228" stroke="#fff" stroke-width=".576" stroke-linecap="round">
+      <path id="line232" d="M13.127 63.94h11.906"/>
+      <path id="line234" d="M25.033 72.588H13.127"/>
     </g>
   </g>
   <g id="g288" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title290">
-      element:U$8
-    </title>
     <g id="g292">
-      <title id="title294">
-        package:MOUNTINGHOLE_2.0_PLATED
-      </title>
       <circle cy="66.45" id="circle296" cx="5.4" r="5.102" fill="none" stroke="#fff" stroke-width=".576"/>
     </g>
   </g>
   <g id="g298" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title300">
-      element:U$9
-    </title>
     <g id="g302">
-      <title id="title304">
-        package:MOUNTINGHOLE_2.0_PLATED
-      </title>
       <circle cy="66.45" id="circle306" cx="37.8" r="5.102" fill="none" stroke="#fff" stroke-width=".576"/>
-    </g>
-  </g>
-  <g id="g308" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title310">
-      element:U$12
-    </title>
-    <g id="g312">
-      <title id="title314">
-        package:PCBFEAT-REV-040
-      </title>
-    </g>
-  </g>
-  <g id="g316" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
-    <title id="title318">
-      element:U$20
-    </title>
-    <g id="g320">
-      <title id="title322">
-        package:TRINKET_M0_TOP
-      </title>
     </g>
   </g>
   <g id="g4779" transform="rotate(-90 60.753 47.129) scale(2.7412)">

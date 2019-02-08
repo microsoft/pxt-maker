@@ -1,93 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" height="172" id="svg6041" version="1.2" width="343" y="0" x="0" viewBox="0 0 343 172">
-  <g id="g5249" transform="matrix(1.71 0 0 1.71 -2.157 85.852)">
-    <title id="title5243">
-      element:JP1
-    </title>
-    <g id="g5247">
-      <title id="title5245">
-        package:1X05_ROUND_70
-      </title>
-    </g>
-  </g>
-  <g id="g5257" transform="matrix(1.71 0 0 1.71 -2.157 85.852)">
-    <title id="title5251">
-      element:JP2
-    </title>
-    <g id="g5255">
-      <title id="title5253">
-        package:1X14_ROUND70
-      </title>
-    </g>
-  </g>
-  <g id="g5265" transform="matrix(1.71 0 0 1.71 -2.157 85.852)">
-    <title id="title5259">
-      element:JP4
-    </title>
-    <g id="g5263">
-      <title id="title5261">
-        package:1X14_ROUND70
-      </title>
-    </g>
-  </g>
-  <g id="g5365" transform="matrix(1.71 0 0 1.71 -2.157 85.852)">
-    <title id="title5359">
-      element:SJ1
-    </title>
-    <g id="g5363">
-      <title id="title5361">
-        package:SOLDERJUMPER_CLOSEDWIRE
-      </title>
-    </g>
-  </g>
-  <g id="g5405" transform="matrix(1.71 0 0 1.71 -2.157 85.852)">
-    <title id="title5399">
-      element:U$4
-    </title>
-    <g id="g5403">
-      <title id="title5401">
-        package:ITSYM4_TOP
-      </title>
-    </g>
-  </g>
-  <g id="g5413" transform="matrix(1.71 0 0 1.71 -2.157 85.852)">
-    <title id="title5407">
-      element:U$5
-    </title>
-    <g id="g5411">
-      <title id="title5409">
-        package:ITSYM4_BOT
-      </title>
-    </g>
-  </g>
-  <g id="g5437" transform="matrix(1.71 0 0 1.71 -2.157 85.852)">
-    <title id="title5431">
-      element:U$34
-    </title>
-    <g id="g5435">
-      <title id="title5433">
-        package:FIDUCIAL_1MM
-      </title>
-    </g>
-  </g>
-  <g id="g5445" transform="matrix(1.71 0 0 1.71 -2.157 85.852)">
-    <title id="title5439">
-      element:U$35
-    </title>
-    <g id="g5443">
-      <title id="title5441">
-        package:FIDUCIAL_1MM
-      </title>
-    </g>
-  </g>
   <path d="M.596 110.416l4.883-4.883V64.026L.596 59.143v-46.39A12.208 12.208 0 0 1 12.804.545H330.21a12.208 12.208 0 0 1 12.21 12.208v146.495a12.208 12.208 0 0 1-12.21 12.208H12.804A12.208 12.208 0 0 1 .596 159.248v-48.832m39.363-43.16a3.364 3.364 0 1 0 6.729 0 3.364 3.364 0 1 0-6.729 0zm0 37.489a3.364 3.364 0 1 0 6.729 0 3.364 3.364 0 1 0-6.729 0zm285.446 30.087a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm0-24.416a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm0-24.416a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm0-24.416a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm0-24.415a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zM7.998 12.753a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm24.415 0a4.806 4.806 0 1 0 9.613 0 4.806 4.806 0 1 0-9.613 0zm24.416 0a4.806 4.806 0 1 0 9.613 0 4.806 4.806 0 1 0-9.613 0zm24.416 0a4.806 4.806 0 1 0 9.613 0 4.806 4.806 0 1 0-9.613 0zm24.416 0a4.806 4.806 0 1 0 9.613 0 4.806 4.806 0 1 0-9.613 0zm24.416 0a4.806 4.806 0 1 0 9.613 0 4.806 4.806 0 1 0-9.613 0zm24.416 0a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm24.416 0a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm24.416 0a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm24.416 0a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm24.416 0a4.806 4.806 0 1 0 9.613 0 4.806 4.806 0 1 0-9.613 0zm24.416 0a4.806 4.806 0 1 0 9.613 0 4.806 4.806 0 1 0-9.613 0zm24.416 0a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm24.416 0a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm0 146.495a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm-24.416 0a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm-24.416 0a4.806 4.806 0 1 0 9.613 0 4.806 4.806 0 1 0-9.613 0zm-24.416 0a4.806 4.806 0 1 0 9.613 0 4.806 4.806 0 1 0-9.613 0zm-24.416 0a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm-24.416 0a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm-24.416 0a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm-24.416 0a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zm-24.416 0a4.806 4.806 0 1 0 9.613 0 4.806 4.806 0 1 0-9.613 0zm-24.416 0a4.806 4.806 0 1 0 9.613 0 4.806 4.806 0 1 0-9.613 0zm-24.416 0a4.806 4.806 0 1 0 9.613 0 4.806 4.806 0 1 0-9.613 0zm-24.416 0a4.806 4.806 0 1 0 9.613 0 4.806 4.806 0 1 0-9.613 0zm-24.416 0a4.806 4.806 0 1 0 9.613 0 4.806 4.806 0 1 0-9.613 0zm-24.415 0a4.806 4.806 0 1 0 9.612 0 4.806 4.806 0 1 0-9.612 0zM48.13 54.279a3.845 3.845 0 1 0 7.69 0 3.845 3.845 0 1 0-7.69 0zm0 63.443a3.845 3.845 0 1 0 7.69 0 3.845 3.845 0 1 0-7.69 0zM20.734 51.395a4.326 4.326 0 1 0 8.652 0 4.326 4.326 0 1 0-8.652 0zm0 69.21a4.326 4.326 0 1 0 8.652 0 4.326 4.326 0 1 0-8.652 0z" id="path5077" fill="#000" stroke="none" stroke-width="0"/>
   <g id="g5241" transform="translate(-3.778 .545) scale(3.3911)">
-    <title id="title5217">
-      element:IC2
-    </title>
     <g id="g5239">
-      <title id="title5219">
-        package:TQFN48_7MM
-      </title>
       <path id="line5221" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M47.004 17.695h-1.559"/>
       <path id="line5223" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M45.445 17.695v1.559"/>
       <path id="line5225" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M64.295 17.695h1.56"/>
@@ -95,25 +9,13 @@
       <path id="line5229" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M65.855 36.546v1.559"/>
       <path id="line5231" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M65.855 38.105h-1.56"/>
       <g id="g5237">
-        <title id="title5233">
-          polygon
-        </title>
         <path d="M47.01 38.484h-1.872v-1.872l1.872 1.872m-1.872-.144h1.728-1.728m0-.36h1.368-1.368m0-.36h1.008-1.008m0-.36h.648-.648" id="path5235" fill="none" stroke="#fff" stroke-width=".36" stroke-linecap="round"/>
       </g>
     </g>
   </g>
   <g id="g5283" transform="translate(-3.778 .545) scale(3.3911)">
-    <title id="title5267">
-      element:L
-    </title>
     <g id="g5281">
-      <title id="title5269">
-        package:CHIPLED_0603_NOOUTLINE
-      </title>
       <g id="g5275">
-        <title id="title5271">
-          polygon
-        </title>
         <path d="M90.683 12.878l-.72-.9h1.44l-.72.9m.663-.828H90.02h1.325" id="path5273" fill="none" stroke="#fff" stroke-width=".432" stroke-linecap="round"/>
       </g>
       <g id="g6040" transform="rotate(180 45.342 6.53)">
@@ -128,55 +30,37 @@
     </g>
   </g>
   <g id="g5397" transform="translate(-3.778 .545) scale(3.3911)">
-    <title id="title5367">
-      element:SW1
-    </title>
-    <g id="g5395">
-      <title id="title5369">
-        package:KMR2
-      </title>
-      <path id="line5371" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M91.658 18.887v11.906"/>
-      <path id="line5373" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M91.658 30.793h-7.936"/>
-      <path id="line5375" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M83.722 30.793V18.887"/>
-      <path id="line5377" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M83.722 18.887h7.936"/>
-      <path d="M87.123 21.722a1.7 1.7 0 0 0-1.7 1.7" id="path5379" fill="none" stroke="#fff" stroke-width=".36"/>
-      <path id="line5381" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M87.123 21.722h1.134"/>
-      <path d="M89.957 23.423a1.7 1.7 0 0 0-1.7-1.701" id="path5383" fill="none" stroke="#fff" stroke-width=".36"/>
-      <path id="line5385" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M89.957 23.423v2.834"/>
-      <path d="M88.257 27.958a1.7 1.7 0 0 0 1.7-1.7" id="path5387" fill="none" stroke="#fff" stroke-width=".36"/>
-      <path id="line5389" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M88.257 27.958h-1.134"/>
-      <path d="M85.422 26.257a1.7 1.7 0 0 0 1.7 1.701" id="path5391" fill="none" stroke="#fff" stroke-width=".36"/>
-      <path id="line5393" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M85.422 26.257v-2.834"/>
+    <g id="g5395" stroke="#fff" stroke-width=".36">
+      <path id="line5371" stroke-linecap="round" d="M91.658 18.887v11.906"/>
+      <path id="line5373" stroke-linecap="round" d="M91.658 30.793h-7.936"/>
+      <path id="line5375" stroke-linecap="round" d="M83.722 30.793V18.887"/>
+      <path id="line5377" stroke-linecap="round" d="M83.722 18.887h7.936"/>
+      <path d="M87.123 21.722a1.7 1.7 0 0 0-1.7 1.7" id="path5379" fill="none"/>
+      <path id="line5381" stroke-linecap="round" d="M87.123 21.722h1.134"/>
+      <path d="M89.957 23.423a1.7 1.7 0 0 0-1.7-1.701" id="path5383" fill="none"/>
+      <path id="line5385" stroke-linecap="round" d="M89.957 23.423v2.834"/>
+      <path d="M88.257 27.958a1.7 1.7 0 0 0 1.7-1.7" id="path5387" fill="none"/>
+      <path id="line5389" stroke-linecap="round" d="M88.257 27.958h-1.134"/>
+      <path d="M85.422 26.257a1.7 1.7 0 0 0 1.7 1.701" id="path5391" fill="none"/>
+      <path id="line5393" stroke-linecap="round" d="M85.422 26.257v-2.834"/>
     </g>
   </g>
   <g id="g5463" transform="translate(-3.778 .545) scale(3.3911)">
-    <title id="title5447">
-      element:U1
-    </title>
-    <g id="g5461">
-      <title id="title5449">
-        package:USON8
-      </title>
-      <path id="line5451" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M78.644 31.568v8.504"/>
-      <path id="line5453" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M78.644 40.072h-5.669"/>
-      <path id="line5455" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M72.975 40.072v-8.504"/>
-      <path id="line5457" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M72.975 31.568h5.669"/>
-      <circle r=".634" cx="78.644" cy="31.568" id="circle5459" fill="none" stroke="#fff" stroke-width=".36"/>
+    <g id="g5461" stroke="#fff" stroke-width=".36">
+      <path id="line5451" stroke-linecap="round" d="M78.644 31.568v8.504"/>
+      <path id="line5453" stroke-linecap="round" d="M78.644 40.072h-5.669"/>
+      <path id="line5455" stroke-linecap="round" d="M72.975 40.072v-8.504"/>
+      <path id="line5457" stroke-linecap="round" d="M72.975 31.568h5.669"/>
+      <circle r=".634" cx="78.644" cy="31.568" id="circle5459" fill="none"/>
     </g>
   </g>
   <g id="g5495" transform="translate(-3.778 .545) scale(3.3911)">
-    <title id="title5479">
-      element:X3
-    </title>
-    <g id="g5493">
-      <title id="title5481">
-        package:4UCONN_20329_V2
-      </title>
-      <path id="line5483" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M17.008 18.113v2.268"/>
-      <path id="line5485" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M17.008 30.019v2.268"/>
-      <path id="line5487" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M4.252 14.428H1.701"/>
-      <path id="line5489" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M1.701 14.428v21.544"/>
-      <path id="line5491" stroke="#fff" stroke-width=".36" stroke-linecap="round" d="M1.701 35.972h2.551"/>
+    <g id="g5493" stroke="#fff" stroke-width=".36" stroke-linecap="round">
+      <path id="line5483" d="M17.008 18.113v2.268"/>
+      <path id="line5485" d="M17.008 30.019v2.268"/>
+      <path id="line5487" d="M4.252 14.428H1.701"/>
+      <path id="line5489" d="M1.701 14.428v21.544"/>
+      <path id="line5491" d="M1.701 35.972h2.551"/>
     </g>
   </g>
   <g id="g6284" transform="matrix(0 -3.3911 3.3911 0 30.486 290.84)">
