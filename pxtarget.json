@@ -141,15 +141,6 @@
                         "arduino-mkr": "arduino-mkr1000"
                     }
                 }
-            ],
-            "0.0.0 - 0.7.31": [
-                {
-                    "type": "package",
-                    "map": {
-                        "music": "mixer",
-                        "music---pwm": "mixer---pwm"
-                    }
-                }
             ]
         }
     },
