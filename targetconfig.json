@@ -21,6 +21,7 @@
     "galleries": {
         "Digital IO": "/projects/digital-io",
         "Analog IO": "/projects/analog-io",
+        "Pixel": "/projects/pixel",
         "Light": "/projects/light", 
         "Actuators": "/projects/actuators",
         "HID": "/projects/hid",
