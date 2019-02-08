@@ -9,6 +9,8 @@
   * [Blink to Light](/projects/analog-io/blink-to-light)
   * [Glowy](/projects/analog-io/glowy)
   * [Glow Light](/projects/analog-io/glow-light)
+* [Pixel](/projects/pixel)
+  * [Set Color](/projects/pixel/set-color)
 * [Light](/projects/light)
   * [Rainbow](/projects/light/rainbow)
   * [Range](/projects/light/range)

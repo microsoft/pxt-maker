@@ -13,6 +13,10 @@
         "imageUrl": "/static/projects/analog-io/blink-to-light/gallery.gif"
     },
     {
+        "name": "Pixel",
+        "url": "/projects/pixel"
+    },
+    {
         "name": "Light",
         "url": "/projects/light",
         "imageUrl": "/static/projects/light/rainbow/gallery.gif"
@@ -54,6 +58,7 @@
 
 [Digital IO](/projects/digital-io),
 [Analog IO](/projects/analog-io),
+[Pixel](/projects/pixel),
 [Light](/projects/light),
 [Actuators](/projects/actuators),
 [HID](/projects/hid),
