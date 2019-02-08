@@ -4,6 +4,7 @@
   * [Blinky](/projects/digital-io/blinky)
   * [Button LED](/projects/digital-io/button-led)
   * [Switch LED](/projects/digital-io/switch-led)
+  * [Multi Blinky](/projects/digital-io/multi-blinky)
 * [Analog IO](/projects/analog-io)
   * [Blink to Light](/projects/analog-io/blink-to-light)
   * [Glowy](/projects/analog-io/glowy)
