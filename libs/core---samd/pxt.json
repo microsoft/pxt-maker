@@ -2,7 +2,7 @@
     "additionalFilePath": "../../node_modules/pxt-common-packages/libs/core---samd",
     "cppDependencies": {
         "accelerometer": "file:../accelerometer",
-        "music": "file:../music",
+        "mixer---samd": "file:../mixer---samd",
         "buttons": "file:../buttons",
         "game": "file:../game",
         "jacdac": "file:../jacdac",

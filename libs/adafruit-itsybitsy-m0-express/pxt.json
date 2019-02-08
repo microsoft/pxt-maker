@@ -15,7 +15,7 @@
         "buttons": "file:../buttons",
         "light": "file:../light",
         "touch": "file:../touch",
-        "music": "file:../music",
+        "mixer---samd": "file:../mixer---samd",
         "pixel": "file:../pixel",
         "serial": "file:../serial",
         "jacdac": "file:../jacdac",

@@ -13,8 +13,7 @@
     "compileServiceVariant": "nrf52832",
     "dependencies": {
         "core---nrf52832": "file:../core---nrf52832",
-        "buttons": "file:../buttons",
-        "music": "file:../music---pwm"
+        "buttons": "file:../buttons"
     },
     "public": true,
     "dalDTS": {
