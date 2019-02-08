@@ -7,13 +7,14 @@
         "config.ts",
         "ns.ts",
         "board.json",
-        "board.svg",
-        "boardwireframe.svg"
+        "board.svg"
     ],
     "core": true,
     "compileServiceVariant": "samd51",
     "dependencies": {
         "core---samd51": "file:../core---samd51",
+        "pixel": "file:../pixel",
+        "light": "file:../light",
         "buttons": "file:../buttons",
         "jacdac": "file:../jacdac"
     },
@@ -28,6 +29,8 @@
         "buttond0",
         "buttond1",
         "screen",
-        "jacdac"
+        "jacdac",
+        "pixel",
+        "light"
     ]
 }

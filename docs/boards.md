@@ -21,6 +21,10 @@
         "name": "Misc",
         "url": "/boards/misc",
         "imageUrl": "/static/libs/redbear-ble-nano.jpg"  
+    },
+    {
+        "name": "Add your board",
+        "url": "/boards/add-a-new-board"
     }
 ]
 ```
@@ -30,4 +34,5 @@
 [Adafruit](/boards/adafruit),
 [Sparkfun](/boards/sparkfun),
 [Arduino](/boards/arduino),
-[Misc](/boards/misc)
+[Misc](/boards/misc),
+[Add a new board](/boards/add-a-new-board)

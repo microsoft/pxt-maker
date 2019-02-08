@@ -212,7 +212,7 @@
                 else if (id.toLowerCase() != "neopixel" && boardjson.onboardComponents.indexOf("neopixel") < 0)
                     boardjson.onboardComponents.push("neopixel");
             }
-            else if (/RST|RESET/.test(id)) {
+            else if (/RESETBTN/.test(id)) {
                 if (!boardjson.visual.reset) {
                     boardjson.visual.reset = {
                         x: rect.x,
@@ -408,7 +408,7 @@
                 LEDs: set the id of the svg element to LED...
             </li>
             <li>
-                Reset button: set the id of the svg to RESET
+                Reset button: set the id of the svg to RESETBTN
             </li>
             <li>
                 Pins: set the id of the svg for headers to the pin names (should be done already)

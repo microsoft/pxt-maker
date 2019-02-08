@@ -2,7 +2,6 @@
     "driveDisplayName": "FEATHERBOOT",
     "visual": {
       "image": "pkg://board.svg",
-      "outlineImage": "pkg://boardwireframe.svg",
       "useCrocClips": false,
       "width": 454.7699890136719,
       "height": 204.60595703125,

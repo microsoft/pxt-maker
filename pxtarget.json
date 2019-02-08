@@ -105,6 +105,11 @@
         "textBlocks": true,
         "listsBlocks": true,
         "functionBlocks": true,
+        "functionsOptions": {
+            "useNewFunctions": true,
+            "extraFunctionEditorTypes": [
+            ]
+        },
         "onStartNamespace": "loops",
         "onStartColor": "#40bf4a",
         "onStartWeight": 100,
