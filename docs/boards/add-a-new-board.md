@@ -29,6 +29,8 @@ If your board does not support UF2 yet,
 
 Got any questions? Ping us on the [MakeCode Discord](https://aka.ms/makecodecommunity). More info at [Multi-board](/multiboard).
 
+### ~
+
 ## Step 3: boardhd.svg, config.ts and board.json
 
 The board that gets rendered in the simulator must be stored as a SVG in the project.
