@@ -18,13 +18,15 @@
         "core---samd51": "file:../core---samd51",
         "light": "file:../light",
         "pixel": "file:../pixel",
-        "jacdac": "file:../jacdac"
+        "jacdac": "file:../jacdac",
+        "storage": "file:../storage"
     },
     "public": true,
     "features": [
         "uf2",
         "pixel",
         "light",
+        "storage",
         "jacdac"
     ]
 }
