@@ -32,9 +32,9 @@
      inkscape:window-height="837"
      id="namedview7551"
      showgrid="false"
-     inkscape:zoom="1.3231018"
-     inkscape:cx="333.76116"
-     inkscape:cy="131.4558"
+     inkscape:zoom="1.6982707"
+     inkscape:cx="190.17237"
+     inkscape:cy="155.38464"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -4138,7 +4138,7 @@
   </g>
   <g
      id="TX_D1"
-     inkscape:label="#g6550"
+     inkscape:label="JACK_TX"
      transform="scale(0.6711252)">
     <rect
        style="stroke-width:3.87746906"
@@ -6462,17 +6462,9 @@
      height="7.3748412"
      x="-131.82605"
      y="36.874294"
-     id="LLED"
+     id="LED"
      transform="rotate(-90)"
-     inkscape:label="#rect12905" />
-  <circle
-     cy="40.560673"
-     gorn="0.328.0.0.0.2"
-     style="fill:#a00000;stroke-width:2.08152461"
-     cx="-128.13757"
-     r="1.1802244"
-     id="circle12907"
-     transform="rotate(-90)" />
+     inkscape:label="" />
   <g
      transform="matrix(2.0815245,0,0,2.0815245,75.198283,61.62666)"
      id="NEOPIXEL"
@@ -6540,15 +6532,6 @@
      id="LEDON"
      transform="rotate(90)"
      inkscape:label="#rect12927" />
-  <circle
-     cy="-39.815464"
-     gorn="0.330.0.0.0.2"
-     style="fill:#00b400;stroke-width:2.08152461"
-     cx="169.3541"
-     r="1.1802244"
-     id="dddd"
-     transform="rotate(90)"
-     inkscape:label="#circle12929" />
   <g
      transform="matrix(2.0815245,0,0,2.0815245,110.1221,234.92918)"
      id="g6998">
@@ -6851,15 +6834,7 @@
      y="-43.501842"
      id="RXLED"
      transform="rotate(90)"
-     inkscape:label="#rect13184" />
-  <circle
-     cy="-39.815464"
-     gorn="0.342.0.0.0.2"
-     style="fill:#b4b400;stroke-width:2.08152461"
-     cx="140.8786"
-     r="1.1802244"
-     id="circle13186"
-     transform="rotate(90)" />
+     inkscape:label="" />
   <g
      transform="matrix(2.0815245,0,0,2.0815245,9.0840916,189.36648)"
      id="g7180">
@@ -7011,14 +6986,6 @@
      id="TXLED"
      transform="rotate(90)"
      inkscape:label="#rect13250" />
-  <circle
-     cy="-39.815464"
-     gorn="0.346.0.0.0.2"
-     style="fill:#b4b400;stroke-width:2.08152461"
-     cx="155.86581"
-     r="1.1802244"
-     id="circle13252"
-     transform="rotate(90)" />
   <g
      transform="matrix(2.0815245,0,0,2.0815245,218.2729,122.30661)"
      id="g7227">
