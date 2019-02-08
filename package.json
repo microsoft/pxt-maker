@@ -49,6 +49,7 @@
     "pxt-core": "5.5.8"
   },
   "scripts": {
-    "test": "node node_modules/pxt-core/built/pxt.js travis"
+    "test": "node node_modules/pxt-core/built/pxt.js travis",
+    "svgo": "glob-exec --foreach \"**/board.svg\" -- \"svgo --config=svgo.yml {{file}}\""
   }
 }
