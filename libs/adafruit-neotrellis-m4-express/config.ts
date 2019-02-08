@@ -1,4 +1,5 @@
 namespace config {
+    // https://cdn-learn.adafruit.com/assets/assets/000/064/889/original/adafruit_products_mainschem.png?1541024554
     export const PIN_DOTSTAR_DATA = DAL.PB03;
     export const PIN_DOTSTAR_CLOCK = DAL.PB02;
     export const NUM_DOTSTARS = 1;
