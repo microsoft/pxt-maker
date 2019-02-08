@@ -2,7 +2,6 @@
     "driveDisplayName": "SAMD21",
     "visual": {
         "image": "pkg://board.svg",
-        "outlineImage": "pkg://boardwireframe.svg",
         "useCrocClips": true,
         "width": 200,
         "height": 200,
