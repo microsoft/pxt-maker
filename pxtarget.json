@@ -17,7 +17,6 @@
         "libs/game",
         "libs/mixer",
         "libs/mixer---none",
-        "libs/mixer---pwm",
         "libs/mixer---samd",
         "libs/mixer---stm32",
         "libs/pixel",
