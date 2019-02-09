@@ -15,6 +15,7 @@
         "core---samd51": "file:../core---samd51",
         "pixel": "file:../pixel",
         "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
         "buttons": "file:../buttons",
         "jacdac": "file:../jacdac"
     },
@@ -31,6 +32,7 @@
         "screen",
         "jacdac",
         "pixel",
-        "light"
+        "light",
+        "accelerometer"
     ]
 }

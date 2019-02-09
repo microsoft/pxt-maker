@@ -42,6 +42,7 @@
         "jacdac",
         "light",
         "storage",
-        "music"
+        "music",
+        "accelerometer"
     ]
 }

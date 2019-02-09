@@ -18,6 +18,8 @@
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
+        "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
         "mixer---samd": "file:../mixer---samd",
         "pixel": "file:../pixel",
         "serial": "file:../serial",
@@ -44,7 +46,9 @@
         "serial",
         "jacdac",
         "storage",
-        "music"
+        "music",
+        "light",
+        "accelerometer"
     ],
     "public": true
 }

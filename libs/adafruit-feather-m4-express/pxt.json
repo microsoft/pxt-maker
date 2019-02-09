@@ -13,6 +13,7 @@
     "compileServiceVariant": "samd51",
     "dependencies": {
         "core---samd51": "file:../core---samd51",
+        "accelerometer": "file:../accelerometer",
         "buttons": "file:../buttons",
         "jacdac": "file:../jacdac"
     },
@@ -22,6 +23,8 @@
         "screen",
         "buttond0",
         "buttond1",
-        "jacdac"
+        "accelerometer",
+        "jacdac",
+        "accelerometer"
     ]
 }

@@ -30,7 +30,7 @@
     {
         "name": "Actuators",
         "url": "/projects/actuators",
-        "imageUrl": "/static/projects/actuators/servo/gallery.gif"
+        "imageUrl": "/static/projects/actuators/servo-sweep/gallery.gif"
     },
     {
         "name": "HID",

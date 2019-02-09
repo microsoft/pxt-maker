@@ -33,6 +33,7 @@
         "buttond0",
         "buttond1",
         "jacdac",
-        "light"
+        "light",
+        "accelerometer"
     ]
 }
