@@ -43,7 +43,8 @@
         "i2c",
         "serial",
         "jacdac",
-        "storage"
+        "storage",
+        "music"
     ],
     "public": true
 }

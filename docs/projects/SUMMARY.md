@@ -14,6 +14,8 @@
 * [Light](/projects/light)
   * [Rainbow](/projects/light/rainbow)
   * [Range](/projects/light/range)
+* [Music](/projects/music)
+  * [Play Sound](/projects/music/play-sound)
 * [Actuators](/projects/actuators)
   * [Servo](/projects/actuators/servo)
 * [HID](/projects/hid)

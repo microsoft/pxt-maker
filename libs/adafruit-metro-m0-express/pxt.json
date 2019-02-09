@@ -14,6 +14,7 @@
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "light": "file:../light",
+        "mixer---samd": "file:../mixer---samd",
         "touch": "file:../touch",
         "pixel": "file:../pixel",
         "serial": "file:../serial",
@@ -38,6 +39,7 @@
         "storage",
         "light",
         "screen",
-        "jacdac"
+        "jacdac",
+        "music"
     ]
 }

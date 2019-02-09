@@ -41,6 +41,7 @@
         "microphone",
         "jacdac",
         "light",
-        "storage"
+        "storage",
+        "music"
     ]
 }

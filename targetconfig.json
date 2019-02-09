@@ -23,6 +23,7 @@
         "Analog IO": "/projects/analog-io",
         "Pixel": "/projects/pixel",
         "Light": "/projects/light", 
+        "Music": "/projects/music",
         "Actuators": "/projects/actuators",
         "HID": "/projects/hid",
         "Screen": "/projects/screen",

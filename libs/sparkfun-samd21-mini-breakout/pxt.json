@@ -39,6 +39,7 @@
         "spi",
         "i2c",
         "serial",
-        "jacdac"
+        "jacdac",
+        "music"
     ]
 }
