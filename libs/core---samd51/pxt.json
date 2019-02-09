@@ -2,7 +2,6 @@
     "additionalFilePath": "../core---samd",
     "cppDependencies": {
         "accelerometer": "file:../accelerometer",
-        "mixer---samd": "file:../mixer---samd",
         "buttons": "file:../buttons",
         "game": "file:../game",
         "jacdac": "file:../jacdac",
