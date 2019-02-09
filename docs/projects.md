@@ -22,6 +22,10 @@
         "imageUrl": "/static/projects/light/rainbow/gallery.gif"
     },
     {
+        "name": "Music",
+        "url": "/projects/music"
+    },
+    {
         "name": "Actuators",
         "url": "/projects/actuators",
         "imageUrl": "/static/projects/actuators/servo/gallery.gif"
@@ -60,6 +64,7 @@
 [Analog IO](/projects/analog-io),
 [Pixel](/projects/pixel),
 [Light](/projects/light),
+[Music](/projects/music),
 [Actuators](/projects/actuators),
 [HID](/projects/hid),
 [Screen](/projects/screen),

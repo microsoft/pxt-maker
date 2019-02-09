@@ -14,7 +14,7 @@
         "buttons": "file:../buttons",
         "light": "file:../light",
         "touch": "file:../touch",
-        "music": "file:../music",
+        "mixer---samd": "file:../mixer---samd",
         "jacdac": "file:../jacdac"
     },
     "core": true,
@@ -28,6 +28,7 @@
         "toucha0",
         "toucha1",
         "light",
-        "jacdac"
+        "jacdac",
+        "music"
     ]
 }

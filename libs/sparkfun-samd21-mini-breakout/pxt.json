@@ -18,7 +18,7 @@
         "buttons": "file:../buttons",
         "touch": "file:../touch",
         "light": "file:../light",
-        "music": "file:../music",
+        "mixer---samd": "file:../mixer---samd",
         "serial": "file:../serial",
         "jacdac": "file:../jacdac"
     },
@@ -39,6 +39,7 @@
         "spi",
         "i2c",
         "serial",
-        "jacdac"
+        "jacdac",
+        "music"
     ]
 }

@@ -2,7 +2,6 @@
     "additionalFilePath": "../core---samd",
     "cppDependencies": {
         "accelerometer": "file:../accelerometer",
-        "music": "file:../music",
         "buttons": "file:../buttons",
         "game": "file:../game",
         "jacdac": "file:../jacdac",

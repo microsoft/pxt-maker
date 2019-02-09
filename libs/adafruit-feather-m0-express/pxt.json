@@ -15,7 +15,7 @@
         "light": "file:../light",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
-        "music": "file:../music",
+        "mixer---samd": "file:../mixer---samd",
         "pixel": "file:../pixel",
         "serial": "file:../serial",
         "jacdac": "file:../jacdac",
@@ -41,6 +41,7 @@
         "storage",
         "light",
         "screen",
-        "jacdac"
+        "jacdac",
+        "music"
     ]
 }
