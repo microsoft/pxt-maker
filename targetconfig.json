@@ -30,7 +30,8 @@
         "Serial": "/projects/serial",
         "Storage": "/projects/storage",
         "LoRa": "/projects/lora",
-        "JacDac (beta)": "/projects/jacdac"
+        "JacDac (beta)": "/projects/jacdac",
+        "Boards": "/boards"
     },
     "firmwareUrls": {
         "adafruit-circuit-playground-express": "https://learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-uf2-bootloader-details#updating-the-bootloader",

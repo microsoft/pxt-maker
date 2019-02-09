@@ -29,6 +29,7 @@
     {
         "name": "Multi Blinky",
         "url": "/projects/digital-io/multi-blinky",
+        "imageUrl": "/static/projects/digital-io/multi-blinky/gallery.gif",
         "cardType": "example"
     }
 ]

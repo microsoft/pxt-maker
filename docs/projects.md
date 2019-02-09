@@ -14,7 +14,8 @@
     },
     {
         "name": "Pixel",
-        "url": "/projects/pixel"
+        "url": "/projects/pixel",
+        "imageUrl": "/static/projects/pixel/blinky/gallery.gif"
     },
     {
         "name": "Light",
@@ -23,7 +24,8 @@
     },
     {
         "name": "Music",
-        "url": "/projects/music"
+        "url": "/projects/music",
+        "imageUrl": "/static/projects/music/play-sound/gallery.gif"
     },
     {
         "name": "Actuators",
@@ -54,6 +56,11 @@
     {
         "name": "JacDac (beta)",
         "url": "/projects/jacdac"
+    },
+    {
+        "name": "Boards",
+        "url": "/boards",
+        "imageUrl": "/static/libs/adafruit-circuit-playground-express.jpg"
     }
 ]
 ```
@@ -71,5 +78,6 @@
 [Serial](/projects/serial),
 [Storage](/projects/storage),
 [LoRa](/projects/lora),
-[JacDac (beta)](/projects/jacdac)
+[JacDac (beta)](/projects/jacdac),
+[Boards](/boards)
 

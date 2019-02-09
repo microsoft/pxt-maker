@@ -5,14 +5,15 @@
 ```codecard
 [
     {
-        "name": "Set Color",
-        "url": "/projects/pixel/set-color",
+        "name": "Blinky",
+        "url": "/projects/pixel/blinky",
+        "imageUrl": "/static/projects/pixel/blinky/gallery.gif",
         "cardType": "example",
-        "description": "Set the color of the on-board pixel"
+        "description": "Blinks between two colors"
     }
 ]
 ```
 
 ## See Also
 
-[set-color](/projects/pixel/set-color)
+[blinky](/projects/pixel/blinky)
