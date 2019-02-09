@@ -1,4 +1,4 @@
-# Servo
+# Servo Buttons
 
 Control the angle of a servo using a light sensor.
 
