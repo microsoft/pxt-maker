@@ -43,7 +43,8 @@
     },
     {
         "name": "Accelerometer",
-        "url": "/projects/accelerometer"
+        "url": "/projects/accelerometer",
+        "imageUrl": "/static/projects/accelerometer/shake/gallery.gif"
     },
     {
         "name": "Serial",
