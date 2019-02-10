@@ -15,6 +15,7 @@
         "buttons": "file:../buttons",
         "touch": "file:../touch",
         "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
         "jacdac": "file:../jacdac"
     },
     "public": true,
@@ -28,6 +29,7 @@
         "buttond0",
         "buttond1",
         "jacdac",
-        "light"
+        "light",
+        "accelerometer"
     ]
 }

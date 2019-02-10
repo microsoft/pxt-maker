@@ -15,6 +15,7 @@
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
         "touch": "file:../touch",
         "mixer---samd": "file:../mixer---samd",
         "serial": "file:../serial",
@@ -33,6 +34,7 @@
         "toucha1",
         "light",
         "jacdac",
-        "music"
+        "music",
+        "accelerometer"
     ]
 }

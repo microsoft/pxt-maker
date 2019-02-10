@@ -28,9 +28,9 @@
         "imageUrl": "/static/projects/music/play-sound/gallery.gif"
     },
     {
-        "name": "Actuators",
-        "url": "/projects/actuators",
-        "imageUrl": "/static/projects/actuators/servo/gallery.gif"
+        "name": "Servos",
+        "url": "/projects/servos",
+        "imageUrl": "/static/projects/servos/sweep/gallery.gif"
     },
     {
         "name": "HID",
@@ -40,6 +40,11 @@
         "name": "Screen",
         "url": "/projects/screen",
         "imageUrl": "/static/projects/screen/console/gallery.gif"
+    },
+    {
+        "name": "Accelerometer",
+        "url": "/projects/accelerometer",
+        "imageUrl": "/static/projects/accelerometer/shake/gallery.gif"
     },
     {
         "name": "Serial",
@@ -72,9 +77,10 @@
 [Pixel](/projects/pixel),
 [Light](/projects/light),
 [Music](/projects/music),
-[Actuators](/projects/actuators),
+[Servos](/projects/servos),
 [HID](/projects/hid),
 [Screen](/projects/screen),
+[Accelerometer](/projects/accelerometer),
 [Serial](/projects/serial),
 [Storage](/projects/storage),
 [LoRa](/projects/lora),

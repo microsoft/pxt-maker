@@ -12,6 +12,7 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
+        "accelerometer": "file:../accelerometer",
         "light": "file:../light",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
@@ -42,6 +43,7 @@
         "light",
         "screen",
         "jacdac",
-        "music"
+        "music",
+        "accelerometer"
     ]
 }
