@@ -242,11 +242,18 @@ namespace pxsim.visuals {
     }
 
     class BoardLed {
-        element: SVGElement;
         private colorOff = "#aaa"
+        private backElement: SVGElement;
+        private ledElement: SVGElement;
+        element: SVGElement;
 
         constructor(x: number, y: number, private colorOn: string, private pin: Pin, w: number, h: number) {
-            this.element = svg.elt("rect", { x, y, width: w, height: h, fill: this.colorOff });
+            this.backElement = svg.elt("rect", { x, y, width: w, height: h, fill: this.colorOff });
+            this.ledElement = svg.elt("rect", { x, y, width: w, height: h, fill: this.colorOn, opacity: 0 });
+            svg.filter(this.ledElement, `url(#neopixelglow)`);
+            this.element = svg.elt("g", { class: "sim-led" });
+            this.element.appendChild(this.backElement);
+            this.element.appendChild(this.ledElement);
         }
 
         updateTheme(colorOff: string, colorOn: string) {
@@ -259,14 +266,11 @@ namespace pxsim.visuals {
         }
 
         updateState() {
-            if (this.pin.value > 0) {
-                this.element.setAttribute("fill", this.colorOn)
-                svg.filter(this.element, `url(#neopixelglow)`);
-            }
-            else {
-                this.element.setAttribute("fill", this.colorOff)
-                svg.filter(this.element, null);
-            }
+            const opacity = this.pin.mode & PinFlags.Digital ? (this.pin.value > 0 ? 1 : 0)
+                : 0.1 + Math.max(0, Math.min(1023, this.pin.value)) / 1023 * 0.8;
+            const opacityText = this.pin.mode & PinFlags.Digital ? (this.pin.value > 0 ? "ON" : "OFF")
+                : `${opacity * 100 | 0}%`;
+            this.ledElement.setAttribute("opacity", opacity.toString())
         }
     }
 
