@@ -25,6 +25,12 @@ declare namespace pins {
     const TX: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_RX)
     const RX: DigitalInOutPin;
+
+    //% fixedInstance shim=pxt::getPin(PIN_MOSI)
+    const MOSI: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPin(PIN_SCK)
+    const SCK: DigitalInOutPin;
+
 }
 
 declare namespace input {

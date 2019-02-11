@@ -37,7 +37,7 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1600"
+     inkscape:window-width="1440"
      inkscape:window-height="837"
      id="namedview5072"
      showgrid="false"
@@ -46,8 +46,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="4.4571412"
-     inkscape:cx="59.193305"
-     inkscape:cy="46.662714"
+     inkscape:cx="95.090754"
+     inkscape:cy="127.43197"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -1876,14 +1876,14 @@
   </g>
   <circle
      style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:25.21305656;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     id="D2_A1_SDA"
+     id="D2_A1_SDA_MOSI"
      cx="37.845402"
      cy="35.24305"
      r="11.522253"
      inkscape:label="touch croc" />
   <circle
      style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.53638053;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     id="D0_A2_SCL"
+     id="D0_A2_SCL_SCK"
      cx="14.62442"
      cy="90.914391"
      r="11.522253"
