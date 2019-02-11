@@ -268,8 +268,6 @@ namespace pxsim.visuals {
         updateState() {
             const opacity = this.pin.mode & PinFlags.Digital ? (this.pin.value > 0 ? 1 : 0)
                 : 0.1 + Math.max(0, Math.min(1023, this.pin.value)) / 1023 * 0.8;
-            const opacityText = this.pin.mode & PinFlags.Digital ? (this.pin.value > 0 ? "ON" : "OFF")
-                : `${opacity * 100 | 0}%`;
             this.ledElement.setAttribute("opacity", opacity.toString())
         }
     }
