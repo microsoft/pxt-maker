@@ -132,6 +132,10 @@ namespace pxsim {
             this.builtinVisuals["dotstar"] = () => new visuals.NeoPixelView();
             this.builtinPartVisuals["dotstar"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
 
+            this.builtinParts["pixels"] = (pin: Pin) => { return this.neopixelState(undefined); };
+            this.builtinVisuals["pixels"] = () => new visuals.NeoPixelView();
+            this.builtinPartVisuals["pixels"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
+
             this.builtinPartVisuals["buttons"] = (xy: visuals.Coord) => visuals.mkBtnSvg(xy);
 
             this.builtinPartVisuals["microservo"] = (xy: visuals.Coord) => visuals.mkMicroServoPart(xy);
@@ -233,6 +237,9 @@ namespace pxsim {
         }
 
         neopixelState(pinId: number): CommonNeoPixelState {
+            if (pinId === undefined) {
+                pinId = pxtcore.getConfig(DAL.CFG_PIN_MOSI, -1);
+            }
             let state = this.lightState[pinId];
             if (!state) state = this.lightState[pinId] = new CommonNeoPixelState();
             return state;
