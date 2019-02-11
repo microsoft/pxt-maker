@@ -1,7 +1,7 @@
 
 declare namespace pins {
     //% fixedInstance shim=pxt::getPin(PIN_LED)
-    const LED: DigitalInOutPin;
+    const LED: PwmOnlyPin;
 
     //% fixedInstance shim=pxt::getPin(PIN_A0)
     const A0: PwmPin;
