@@ -66,6 +66,8 @@ declare namespace pins {
     const MISO: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_MOSI)
     const MOSI: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPin(PIN_SCK)
+    const SCK: DigitalInOutPin;
 }
 
 declare namespace input {
