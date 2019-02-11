@@ -8,13 +8,6 @@
     "pinDist": 15,
     "pinBlocks": [
       {
-        "x": 38.1109368230292,
-        "y": 87.37630950642888,
-        "labels": [
-          "RESET"
-        ]
-      },
-      {
         "x": 26.32334148018107,
         "y": 23.720797498863615,
         "labels": [
@@ -98,12 +91,18 @@
         "label": "D1"
       }
     ],
-    "buttons": []
+    "buttons": [],
+    "reset": {
+      "x": 38.1109368230292,
+      "y": 87.37630950642888,
+      "w": 11.723124208939343,
+      "h": 11.723174041232832
+    }
   },
   "gpioPinMap": {
     "NEOPIXEL": "NEOPIXEL",
     "LED": "LED",
-    "RESET": "RESET",
+    "RESETBTN": "RESETBTN",
     "D2_A1_SDA_MOSI": "D2_A1_SDA_MOSI",
     "D2": "D2_A1_SDA_MOSI",
     "A1": "D2_A1_SDA_MOSI",
