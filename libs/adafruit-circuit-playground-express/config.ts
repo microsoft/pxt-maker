@@ -1,4 +1,5 @@
 namespace config {
+    export const PIN_NEOPIXEL = DAL.PB23;
     export const NUM_NEOPIXELS = 10;
     export const DEFAULT_BUTTON_MODE = DAL.BUTTON_ACTIVE_HIGH_PULL_DOWN;
 
@@ -9,7 +10,6 @@ namespace config {
     export const PIN_MIC_DATA = DAL.PA08;
     export const PIN_MIC_CLOCK = DAL.PA10;
     export const PIN_BTN_SLIDE = DAL.PA15;
-    export const PIN_NEOPIXEL = DAL.PB23;
     export const PIN_SPEAKER_AMP = DAL.PA30;
     export const PIN_MICROPHONE = DAL.PA08;
     export const PIN_LIGHT = DAL.PA11;
