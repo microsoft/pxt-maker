@@ -8,13 +8,6 @@
     "pinDist": 15,
     "pinBlocks": [
       {
-        "x": 120.62033168383603,
-        "y": 108.7413573209539,
-        "labels": [
-          "RESET"
-        ]
-      },
-      {
         "x": 124.92086316385772,
         "y": 159.93345053018618,
         "labels": [
@@ -299,7 +292,13 @@
         "h": 14.746694435684478,
         "index": 2
       }
-    ]
+    ],
+    "reset": {
+      "x": 120.62033168383603,
+      "y": 108.7413573209539,
+      "w": 8.601062960043372,
+      "h": 8.601085091298456
+    }
   },
   "gpioPinMap": {
     "THERMOMETER": "THERMOMETER",
@@ -319,7 +318,7 @@
     "NEOPIXEL2": "NEOPIXEL2",
     "NEOPIXEL3": "NEOPIXEL3",
     "NEOPIXEL4": "NEOPIXEL4",
-    "RESET": "RESET",
+    "RESETBTN": "RESETBTN",
     "HEADPHONE": "HEADPHONE",
     "BTN_A": "BTN_A",
     "BTN": "BTN_AB",

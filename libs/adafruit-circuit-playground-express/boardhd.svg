@@ -18,7 +18,7 @@
    gorn="0"
    version="1.2"
    inkscape:version="0.92.1 r15371"
-   sodipodi:docname="board.svg">
+   sodipodi:docname="boardhd.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -3276,7 +3276,7 @@
            gorn="0.3.0.0.0.53.0.573"
            d="m 124.92023,131.96914 c -2.37743,0 -4.30053,1.92484 -4.30053,4.30054 0,2.37569 1.9231,4.30053 4.30053,4.30053 2.37396,0 4.30053,-1.92484 4.30053,-4.30053 0,-2.3757 -1.92657,-4.30054 -4.30053,-4.30054"
            style="fill:#1e1e1e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.73408532"
-           id="RESET"
+           id="RESETBTN"
            inkscape:label="" />
         <path
            inkscape:connector-curvature="0"
