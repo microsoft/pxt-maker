@@ -6,7 +6,7 @@ This example uses the ``data-logger`` library to sample the ``A0`` reading and w
 datalogger.setSampleInterval(100)
 forever(function () {
     datalogger.addRow()
-    datalogger.addValue("a0", pins.A0.analogRead())
+    datalogger.addValue("a1", pins.A1.analogRead())
 })
 ```
 
@@ -16,6 +16,6 @@ datalogger
 
 ```config
 feature=uf2
-feature=pina0
+feature=pina1
 feature=storage
 ```
