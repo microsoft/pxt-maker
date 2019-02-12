@@ -59,7 +59,7 @@
         "url": "/projects/lora"
     },
     {
-        "name": "JacDac (beta)",
+        "name": "JacDac (PROTOTYPE)",
         "url": "/projects/jacdac"
     },
     {
@@ -84,6 +84,6 @@
 [Serial](/projects/serial),
 [Storage](/projects/storage),
 [LoRa](/projects/lora),
-[JacDac (beta)](/projects/jacdac),
+[JacDac (PROTOTYPE)](/projects/jacdac),
 [Boards](/boards)
 

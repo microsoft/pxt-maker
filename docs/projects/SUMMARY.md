@@ -42,7 +42,7 @@
 * [LoRa](/projects/lora)
   * [Sender](/projects/lora/sender)
   * [Receiver](/projects/lora/receiver)
-* [JacDac (beta)](/projects/jacdac)
+* [JacDac (PROTOTYPE)](/projects/jacdac)
   * [pixel blink](/projects/jacdac/pixel-blink)
   * [broadcast](/projects/jacdac/broadcast)
   * [console](/projects/jacdac/console)
