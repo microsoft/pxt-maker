@@ -7,7 +7,6 @@
         "game": "file:../game",
         "jacdac": "file:../jacdac",
         "light": "file:../light",
-        "pixel": "file:../pixel",
         "lightsensor": "file:../lightsensor",
         "microphone": "file:../microphone",
         "screen---st7735": "file:../screen---st7735",

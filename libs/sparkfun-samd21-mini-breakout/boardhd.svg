@@ -17,7 +17,7 @@
    viewBox="0 0 273.29999 141.89027"
    id="svg2"
    inkscape:version="0.92.1 r15371"
-   sodipodi:docname="board.svg">
+   sodipodi:docname="boardhd.svg">
   <metadata
      id="metadata973">
     <rdf:RDF>
@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,7 +41,7 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1600"
+     inkscape:window-width="1440"
      inkscape:window-height="837"
      id="namedview969"
      showgrid="false"
@@ -1552,7 +1552,7 @@
      id="D1_TX"
      style="fill:none;stroke:#9a916c;stroke-width:3.44590664"
      transform="rotate(-90)"
-     inkscape:label="" />
+     inkscape:label="JACK_TX" />
   <circle
      cx="-10.135023"
      cy="39.359169"
@@ -2359,7 +2359,7 @@
      transform="matrix(0,1.3629638,-1.3630097,0,271.76725,59.254847)" />
   <g
      style="stroke-width:0"
-     id="RESET"
+     id="RESETBTN"
      transform="matrix(0,1.3629638,-1.3630097,0,271.76725,59.254847)"
      inkscape:label="">
     <path

@@ -46,8 +46,8 @@
   },
   "dependencies": {
     "glob-exec": "^0.1.1",
-    "pxt-common-packages": "6.3.8",
-    "pxt-core": "5.5.10",
+    "pxt-common-packages": "6.4.2",
+    "pxt-core": "5.5.11",
     "svgo": "^1.1.1"
   },
   "scripts": {

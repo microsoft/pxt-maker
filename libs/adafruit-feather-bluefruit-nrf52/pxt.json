@@ -13,6 +13,7 @@
     "compileServiceVariant": "nrf52832",
     "dependencies": {
         "core---nrf52832": "file:../core---nrf52832",
+        "light": "file:../light",
         "buttons": "file:../buttons"
     },
     "public": true,
@@ -21,6 +22,7 @@
     },
     "features": [
         "pina0",
-        "pina1"
+        "pina1",
+        "light"
     ]
 }

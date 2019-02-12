@@ -197,17 +197,11 @@ namespace pxsim.visuals {
         public init(bus: EventBus, state: CommonNeoPixelStateConstructor, svgEl: SVGSVGElement, otherParams: Map<string>): void {
             this.stripGroup = <SVGGElement>svg.elt("g");
             this.element = this.stripGroup;
-            if (otherParams["dataPin"]) {
-                // dotstar mode
-                const pinStr = otherParams["dataPin"];
-                this.pin = parsePinString(pinStr);
-            } else {
-                const pinStr = otherParams["pin"];
-                this.pin = parsePinString(pinStr);    
-            }
+            const pinStr = otherParams["dataPin"] || otherParams["pin"] || "pins.MOSI";
+            this.pin = parsePinString(pinStr);
             this.lastLocation = [0, 0];
             this.state = state(this.pin);
-            
+
             let part = mkNeoPixelPart();
             this.part = part;
             this.stripGroup.appendChild(part.el);
@@ -232,7 +226,7 @@ namespace pxsim.visuals {
         }
         public updateState(): void {
             let colors: number[][] = [];
-            for (let i=0; i < this.state.length; i++) {
+            for (let i = 0; i < this.state.length; i++) {
                 colors.push(this.state.pixelColor(i));
             }
             this.canvas.update(colors);
