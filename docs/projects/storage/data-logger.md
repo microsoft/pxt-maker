@@ -1,6 +1,6 @@
 # Data logger
 
-This example uses the ``data-logger`` library to sample the ``A0`` reading and write it to ``log.csv``.
+This example uses the ``data-logger`` library to sample the ``A1`` reading and write it to ``log.csv``.
 
 ```blocks
 datalogger.setSampleInterval(100)

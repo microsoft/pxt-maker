@@ -1,6 +1,6 @@
 # Write File
 
-This example takes the reading of analog pin ``A0`` and stores it into ``log.txt``.
+This example takes the reading of analog pin ``A1`` and stores it into ``log.txt``.
 
 ```blocks
 forever(function () {
