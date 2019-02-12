@@ -11,8 +11,8 @@
         "imageUrl": "/static/libs/redbear-ble-nano.jpg"  
     },
     {
-        "name": "MakeFashion",
-        "url": "/boards/makefashion",
+        "name": "StichKit",
+        "url": "/boards/stichkit",
         "cardType": "template",
         "imageUrl": "/static/libs/makefashion.jpg"  
     },
