@@ -182,26 +182,6 @@
       </text>
     </g>
   </g>
-  <g id="g10198" transform="translate(-.001 -2.981) scale(2.36354)">
-    <g id="g10202">
-      <path id="line10206" d="M29.612 54.03v-2.88" stroke="#fff" stroke-width=".864" stroke-linecap="round"/>
-    </g>
-  </g>
-  <g id="g10208" transform="translate(-.001 -2.981) scale(2.36354)">
-    <g id="g10212">
-      <path id="line10216" d="M22.843 56.992l1.604-1.604" stroke="#fff" stroke-width=".864" stroke-linecap="round"/>
-    </g>
-  </g>
-  <g id="g10218" transform="translate(-.001 -2.981) scale(2.36354)">
-    <g id="g10222">
-      <path id="line10226" d="M20.594 51.27V49" stroke="#fff" stroke-width=".864" stroke-linecap="round"/>
-    </g>
-  </g>
-  <g id="g10228" transform="translate(-.001 -2.981) scale(2.36354)">
-    <g id="g10232">
-      <path id="line10236" d="M29.765 45.21h-2.88" stroke="#fff" stroke-width=".864" stroke-linecap="round"/>
-    </g>
-  </g>
   <g id="g10238" transform="translate(-.001 -2.981) scale(2.36354)">
     <g id="g10242" stroke="#fff" stroke-width=".576" stroke-linecap="round">
       <path id="line10246" d="M46.043 76.753H33.287"/>
@@ -213,28 +193,6 @@
       <path id="line10258" d="M48.594 62.58v-7.086"/>
       <path id="line10260" d="M48.594 55.494h2.41"/>
       <path id="line10262" d="M51.004 55.494v11.338"/>
-    </g>
-  </g>
-  <g id="g10264" transform="translate(-.001 -2.981) scale(2.36354)">
-    <g id="g10268" stroke="#fff" stroke-linecap="round">
-      <path id="line10272" d="M52.755 52.563l-2.834 1.134" stroke-width=".432"/>
-      <path id="line10274" d="M49.92 53.697v-2.268" stroke-width=".432"/>
-      <path id="line10276" d="M49.92 51.429l2.835 1.134" stroke-width=".432"/>
-      <path id="line10278" d="M55.165 54.901H47.51" stroke-width=".36"/>
-      <path id="line10280" d="M47.511 54.901v-4.677" stroke-width=".36"/>
-      <path id="line10282" d="M47.511 50.224h7.654" stroke-width=".36"/>
-      <path id="line10284" d="M55.165 50.224v4.677" stroke-width=".36"/>
-    </g>
-  </g>
-  <g id="g10286" transform="translate(-.001 -2.981) scale(2.36354)">
-    <g id="g10290" stroke="#fff" stroke-linecap="round">
-      <path id="line10294" d="M51.342 21.81l-2.834 1.134" stroke-width=".432"/>
-      <path id="line10296" d="M48.508 22.944v-2.268" stroke-width=".432"/>
-      <path id="line10298" d="M48.508 20.676l2.834 1.134" stroke-width=".432"/>
-      <path id="line10300" d="M53.752 24.148h-7.654" stroke-width=".36"/>
-      <path id="line10302" d="M46.098 24.148v-4.677" stroke-width=".36"/>
-      <path id="line10304" d="M46.098 19.471h7.654" stroke-width=".36"/>
-      <path id="line10306" d="M53.752 19.471v4.677" stroke-width=".36"/>
     </g>
   </g>
   <g id="g10316" transform="translate(-.001 -2.981) scale(2.36354)">
@@ -279,24 +237,12 @@
       <path id="line10392" d="M14.281 46.663V34.757"/>
     </g>
   </g>
-  <g id="g10394" transform="translate(-.001 -2.981) scale(2.36354)">
-    <g id="g10398">
-      <path id="line10402" d="M48.823 28.08v-2.268" stroke="#fff" stroke-width=".864" stroke-linecap="round"/>
-    </g>
-  </g>
   <g id="g10404" transform="translate(-.001 -2.981) scale(2.36354)">
     <g id="g10408" stroke="#fff" stroke-width=".36" stroke-linecap="round">
       <path id="line10412" d="M49.824 49.654V29.245"/>
       <path id="line10414" d="M49.824 29.245h9.922"/>
       <path id="line10416" d="M59.746 29.245v20.41"/>
       <path id="line10418" d="M59.746 49.654h-9.922"/>
-    </g>
-  </g>
-  <g id="g16438" transform="translate(-.001 -2.981) scale(2.36354)">
-    <g id="g16442" stroke="#fff" stroke-width=".576" stroke-linecap="round">
-      <path id="line16446" d="M40.853 40.713h-4.536"/>
-      <path id="line16448" d="M40.853 50.067h-4.536"/>
-      <path id="line16450" d="M41.561 44.256v2.268"/>
     </g>
   </g>
   <g id="g16460" transform="translate(-.001 -2.981) scale(2.36354)">
@@ -306,46 +252,6 @@
       <path id="line16472" d="M50.437 4.252V1.701"/>
       <path id="line16474" d="M50.437 1.7H28.893"/>
       <path id="line16476" d="M28.893 1.7v2.552"/>
-    </g>
-  </g>
-  <g transform="translate(152.707 245.616) scale(2.36354)" id="g4724">
-    <g id="g16482">
-      <path id="connector4pin" d="M30.547 50.464h3.515v4.252h-3.515z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="translate(127.247 245.616) scale(2.36354)" id="g4728">
-    <g id="g16485">
-      <path id="connector5pin" d="M25.162 50.464h3.515v4.252h-3.515z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="rotate(-135 59.294 135.342) scale(2.36354)" id="g4732">
-    <g id="g16488">
-      <path id="connector6pin" d="M23.825 56.476h3.047v2.835h-3.047z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="rotate(-135 51.24 127.29) scale(2.36354)" id="g4736">
-    <g id="g16491">
-      <path id="connector7pin" d="M20.418 53.069h3.047v2.834h-3.047z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="translate(108.738 234.013) scale(2.36354)" id="g4740">
-    <g id="g16494">
-      <path id="connector8pin" d="M21.48 48.718h3.047v2.834H21.48z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="translate(85.959 234.013) scale(2.36354)" id="g4744">
-    <g id="g16497">
-      <path id="connector9pin" d="M16.661 48.718h3.047v2.834h-3.047z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="rotate(90 68.437 98.999) scale(2.36354)" id="g4748">
-    <g id="g16500">
-      <path id="connector10pin" d="M26.567 40.39h3.515v4.253h-3.515z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="rotate(90 68.437 111.729) scale(2.36354)" id="g4752">
-    <g id="g16503">
-      <path id="connector11pin" d="M26.567 45.777h3.515v4.252h-3.515z" fill="#9a916c" stroke-width="0"/>
     </g>
   </g>
   <g transform="translate(200.899 270.062) scale(2.36354)" id="g4756">
@@ -366,26 +272,6 @@
   <g transform="rotate(90 72.46 169.87) scale(2.36354)" id="g4768">
     <g id="g16515">
       <path id="connector15pin" d="M25.208 70.234h9.638v4.535h-9.638z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="translate(220.736 245.488) scale(2.36354)" id="g4772">
-    <g id="g16518">
-      <path id="connector16pin" d="M45.407 50.834h2.58v3.458h-2.58z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="translate(264.618 245.488) scale(2.36354)" id="g4776">
-    <g id="g16521">
-      <path id="connector17pin" d="M54.69 50.834h2.58v3.458h-2.58z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="translate(214.057 100.115) scale(2.36354)" id="g4780">
-    <g id="g16524">
-      <path id="connector18pin" d="M43.993 20.08h2.58v3.459h-2.58z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="translate(257.939 100.115) scale(2.36354)" id="g4784">
-    <g id="g16527">
-      <path id="connector19pin" d="M53.277 20.08h2.58v3.459h-2.58z" fill="#9a916c" stroke-width="0"/>
     </g>
   </g>
   <g transform="rotate(-90 63.64 61.13) scale(2.36354)" id="g4788">
@@ -577,16 +463,6 @@
       <path id="connector65pin" d="M15.062 33.623h2.55v2.551h-2.55z" fill="#9a916c" stroke-width="0"/>
     </g>
   </g>
-  <g transform="translate(242.179 124.396) scale(2.36354)" id="g4941">
-    <g id="g16648">
-      <path id="connector66pin" d="M49.709 25.529h3.047v2.834H49.71z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="translate(219.4 124.396) scale(2.36354)" id="g4945">
-    <g id="g16651">
-      <path id="connector67pin" d="M44.89 25.529h3.047v2.834H44.89z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
   <g transform="rotate(-90 109.236 108.5) scale(2.36354)" id="g4949">
     <g id="g16654">
       <path id="connector68pin" d="M45.43 44.41h2.835v4.252h-2.834z" fill="#9a916c" stroke-width="0"/>
@@ -617,37 +493,7 @@
       <path id="connector73pin" d="M61.305 30.237h2.834v4.252h-2.834z" fill="#9a916c" stroke-width="0"/>
     </g>
   </g>
-  <g transform="rotate(-90 26.815 67.937) scale(2.36354)" id="g4973">
-    <g id="g16672">
-      <rect rx="1.417" height="2.835" id="connector74pin" ry="1.417" x="10.559" y="27.957" width="2.835" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
   <rect rx="3.35" height="6.7" id="connector75pin" ry="3.35" x="89.548" y="166.487" width="6.7" fill="#9a916c" stroke-width="0"/>
-  <g transform="rotate(90 83.977 99.425) scale(2.36354)" id="g4978">
-    <g id="g16676">
-      <path id="connector76pin" d="M34.12 40.996h1.56v3.402h-1.56z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="rotate(90 83.977 105.79) scale(2.36354)" id="g4982">
-    <g id="g16679">
-      <path id="connector77pin" d="M34.12 43.689h1.56v3.402h-1.56z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="rotate(90 83.977 112.154) scale(2.36354)" id="g4986">
-    <g id="g16682">
-      <path id="connector78pin" d="M34.12 46.382h1.56v3.402h-1.56z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="rotate(90 101.397 112.154) scale(2.36354)" id="g4990">
-    <g id="g16685">
-      <path id="connector79pin" d="M41.49 46.382h1.56v3.402h-1.56z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
-  <g transform="rotate(90 101.398 99.425) scale(2.36354)" id="g4994">
-    <g id="g16688">
-      <path id="connector80pin" d="M41.49 40.996h1.56v3.402h-1.56z" fill="#9a916c" stroke-width="0"/>
-    </g>
-  </g>
   <g transform="rotate(90 100.265 17.938) scale(2.36354)" id="g4998">
     <g id="g16692">
       <path id="connector82pin" d="M38.956 6.803h5.67v2.835h-5.67z" fill="#9a916c" stroke-width="0"/>
@@ -691,38 +537,6 @@
       <path id="connector92pin" d="M42.783 14.173h1.134V18h-1.134z" fill="#9a916c" stroke-width="0"/>
     </g>
   </g>
-  <g transform="translate(63.288 117.13) scale(2.36354)" id="g5036">
-    <g transform="rotate(180 2.834 1.772)" id="0805-cap">
-      <g id="g16749">
-        <path id="path16751" d="M5.386 3.543H.283A.283.283 0 0 1 0 3.26V.283C0 .127.127 0 .283 0h5.102c.157 0 .283.127.283.283V3.26a.282.282 0 0 1-.282.283z" fill="#dcdcdc"/>
-        <path id="rect16753" d="M1.063 0h3.543v3.543H1.063z" fill="#6e554b"/>
-      </g>
-    </g>
-  </g>
-  <g transform="translate(50.525 127.145) scale(2.36354)" id="g5042">
-    <g transform="rotate(-135 2.268 1.134)" id="0603-cap">
-      <g id="g16756">
-        <path id="path16758" d="M4.245 2.268H.29A.29.29 0 0 1 0 1.977V.29C0 .13.13 0 .29 0h3.955c.16 0 .29.13.29.29v1.687a.29.29 0 0 1-.29.291z" fill="#dcdcdc"/>
-        <path id="rect16760" d="M1.134 0h2.268v2.268H1.134z" fill="#6e554b"/>
-      </g>
-    </g>
-  </g>
-  <g transform="translate(43.314 112.835) scale(2.36354)" id="g5048">
-    <g transform="rotate(180 2.268 1.134)" id="g16762">
-      <g id="g16764">
-        <path id="path16766" d="M4.245 2.268H.29A.29.29 0 0 1 0 1.977V.29C0 .13.13 0 .29 0h3.955c.16 0 .29.13.29.29v1.687a.29.29 0 0 1-.29.291z" fill="#dcdcdc"/>
-        <path id="rect16768" d="M1.134 0h2.268v2.268H1.134z" fill="#6e554b"/>
-      </g>
-    </g>
-  </g>
-  <g transform="translate(60.247 99.687) scale(2.36354)" id="g5054">
-    <g transform="rotate(90 2.834 1.772)" id="g16770">
-      <g id="g16772">
-        <path id="path16774" d="M5.386 3.543H.283A.283.283 0 0 1 0 3.26V.283C0 .127.127 0 .283 0h5.102c.157 0 .283.127.283.283V3.26a.282.282 0 0 1-.282.283z" fill="#dcdcdc"/>
-        <path id="rect16776" d="M1.063 0h3.543v3.543H1.063z" fill="#6e554b"/>
-      </g>
-    </g>
-  </g>
   <g transform="translate(66.95 118.8) scale(2.36354)" id="g5068">
     <g transform="rotate(180 11.338 12.756)" id="jstph2">
       <g id="g16779">
@@ -737,24 +551,6 @@
           <path id="rect16797" d="M7.512 17.008h1.984v7.087H7.512z" fill="#dcdcdc"/>
           <path id="rect16799" d="M13.181 17.008h1.984v7.087h-1.984z" fill="#dcdcdc"/>
         </g>
-      </g>
-    </g>
-  </g>
-  <g transform="translate(109.278 115.726) scale(2.36354)" id="g5075">
-    <g transform="rotate(180 5.103 2.338)" id="sod-123fl">
-      <g id="g16802">
-        <path id="rect3" d="M0 1.134h10.205v2.409H0z" fill="#dcdcdc"/>
-        <path id="rect5" d="M1.276 0H8.93v4.677H1.276z" fill="#303030"/>
-        <path id="rect3341" d="M2.055.007h1.352v4.667H2.055z" fill="#4d4d4d"/>
-      </g>
-    </g>
-  </g>
-  <g transform="translate(105.938 43.04) scale(2.36354)" id="g5082">
-    <g transform="rotate(180 5.103 2.338)" id="g16810">
-      <g id="g16812">
-        <path id="rect16820" d="M0 1.134h10.205v2.409H0z" fill="#dcdcdc"/>
-        <path id="rect16822" d="M1.276 0H8.93v4.677H1.276z" fill="#303030"/>
-        <path id="rect16824" d="M2.055.007h1.352v4.667H2.055z" fill="#4d4d4d"/>
       </g>
     </g>
   </g>
@@ -783,19 +579,10 @@
   <g id="LED" transform="translate(131.06 55.119) scale(2.36354)">
     <path d="M0 1.134h2.268v2.268H0z" id="rect16856" fill="red"/>
   </g>
-  <circle cy="-133.738" cx="60.479" id="circle16858" r=".837" transform="rotate(90)" fill="#a00000" stroke-width="2.364"/>
   <path id="polygon16865" d="M51.009 104.963h3.013v-23.45H51.01v-3.35h-3.35v3.35h-7.371v-3.35h-3.35v3.35h-3.015v23.45h3.015v3.35h3.35v-3.35h7.371v3.35h3.35z" fill="#dcdcdc" stroke-width="2.364"/>
-  <circle r="5.862" id="RESET" cx="93.238" cy="-43.972" transform="rotate(90)" fill="#1e1e1e" stroke-width="2.364"/>
+  <circle r="5.862" id="RESETBTN" cx="93.238" cy="-43.972" transform="rotate(90)" fill="#1e1e1e" stroke-width="2.364"/>
   <path id="rect16869" d="M54.022 80.508v1.34h-20.1v-1.34z" fill="#b4b4b4" stroke-width="2.364"/>
   <path id="rect16871" d="M54.022 104.628v1.34h-20.1v-1.34z" fill="#b4b4b4" stroke-width="2.364"/>
-  <g transform="translate(110.035 58.027) scale(2.36354)" id="g5120">
-    <g transform="rotate(180 2.268 1.134)" id="0603-res">
-      <g id="g16874">
-        <path id="path16876" d="M4.245 2.268H.29A.29.29 0 0 1 0 1.977V.29C0 .13.13 0 .29 0h3.955c.16 0 .29.13.29.29v1.687a.29.29 0 0 1-.29.291z" fill="#dcdcdc"/>
-        <path id="rect16878" d="M1.134 0h2.268v2.268H1.134z" fill="#333"/>
-      </g>
-    </g>
-  </g>
   <g id="eg1390" transform="rotate(90 41.357 108.218) scale(2.36354)">
     <g id="g16881">
       <style id="style16883">
@@ -813,18 +600,6 @@
         <path d="M9.9 3.5h4.3v2.8H9.9z" id="rect16903" fill="#333"/>
         <circle cy="8.5" cx="7.8" class="st1" id="circle16905" r="1.4" fill="#b4b4b4"/>
         <circle cy="8.5" cx="12" class="st1" id="circle16907" r="1.4" fill="#b4b4b4"/>
-      </g>
-    </g>
-  </g>
-  <g transform="translate(81.482 95.254) scale(2.36354)" id="g5146">
-    <g transform="rotate(90 4.11 3.827)" id="sot23-5">
-      <g id="g16910">
-        <g id="g16912">
-          <path id="rect16914" d="M.85 0h1.134v7.654H.85z" fill="#dcdcdc"/>
-          <path id="rect16916" d="M6.236 0H7.37v7.654H6.236z" fill="#dcdcdc"/>
-          <path id="rect16918" d="M3.543 4.535h1.134v3.118H3.543z" fill="#dcdcdc"/>
-          <path id="rect16920" d="M0 1.559h8.22v4.535H0z" fill="#303030"/>
-        </g>
       </g>
     </g>
   </g>
@@ -902,8 +677,8 @@
       <path id="path27053" d="M0 0l-.526.283.298.438.794-.397.302-.303-2.593-2.591-.422.423z" fill="#fff"/>
     </g>
   </g>
-  <circle id="D2_A1_SDA" cx="37.845" cy="35.243" r="11.522" fill="#fff" fill-opacity="1" fill-rule="nonzero" stroke="none" stroke-width="25.213" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-dashoffset="0" stroke-opacity="1"/>
-  <circle id="D0_A2_SCL" cx="14.624" cy="90.914" r="11.522" fill="#fff" fill-opacity="1" fill-rule="nonzero" stroke="none" stroke-width="1.536" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-dashoffset="0" stroke-opacity="1"/>
+  <circle id="D2_A1_SDA_MOSI" cx="37.845" cy="35.243" r="11.522" fill="#fff" fill-opacity="1" fill-rule="nonzero" stroke="none" stroke-width="25.213" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-dashoffset="0" stroke-opacity="1"/>
+  <circle id="D0_A2_SCL_SCK" cx="14.624" cy="90.914" r="11.522" fill="#fff" fill-opacity="1" fill-rule="nonzero" stroke="none" stroke-width="1.536" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-dashoffset="0" stroke-opacity="1"/>
   <circle id="3V" cx="37.658" cy="147.218" r="11.522" fill="#fff" fill-opacity="1" fill-rule="nonzero" stroke="none" stroke-width="25.213" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-dashoffset="0" stroke-opacity="1"/>
   <circle id="VOUT" cx="149.657" cy="146.975" r="11.522" fill="#fff" fill-opacity="1" fill-rule="nonzero" stroke="none" stroke-width="25.213" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-dashoffset="0" stroke-opacity="1"/>
   <circle id="D1_A0" cx="173.299" cy="90.671" r="11.522" fill="#fff" fill-opacity="1" fill-rule="nonzero" stroke="none" stroke-width="25.213" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-dashoffset="0" stroke-opacity="1"/>
