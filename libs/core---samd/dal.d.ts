@@ -853,6 +853,7 @@ declare const enum DAL {
     CFG_UF2_FAMILY = 209,
     CFG_PINS_PORT_SIZE = 210,
     CFG_BOOTLOADER_PROTECTION = 211,
+    CFG_POWER_DEEPSLEEP_TIMEOUT = 212,
     CFG_PIN_LORA_MISO = 1001,
     CFG_PIN_LORA_MOSI = 1002,
     CFG_PIN_LORA_SCK = 1003,
@@ -863,6 +864,14 @@ declare const enum DAL {
     CFG_PIN_IRTXLED = 1008,
     // /pxtapp/hf2dbg.h
     HF2DBG_H = 1,
+    // /pxtapp/mixer---samd/melody.h
+    SW_TRIANGLE = 1,
+    SW_SAWTOOTH = 2,
+    SW_SINE = 3,
+    SW_NOISE = 4,
+    SW_REAL_NOISE = 5,
+    SW_SQUARE_10 = 11,
+    SW_SQUARE_50 = 15,
     // /pxtapp/pins.h
     BUTTON_ACTIVE_HIGH_PULL_DOWN = 17,
     BUTTON_ACTIVE_HIGH_PULL_UP = 33,
@@ -940,7 +949,6 @@ declare const enum DAL {
     PB30 = 62,
     PB31 = 63,
     // /pxtapp/pxt.h
-    NEOPIXEL_SPI = 1,
     DEVICE_ID_BUTTON_SLIDE = 3000,
     DEVICE_ID_MICROPHONE = 3001,
     DEVICE_ID_FIRST_BUTTON = 4000,
@@ -962,6 +970,7 @@ declare const enum DAL {
     RefCollection = 6,
     RefRefLocal = 7,
     RefMap = 8,
+    RefMImage = 9,
     User0 = 16,
     Int8LE = 1,
     UInt8LE = 2,
