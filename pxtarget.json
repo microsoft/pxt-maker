@@ -109,8 +109,7 @@
         "functionBlocks": true,
         "functionsOptions": {
             "useNewFunctions": true,
-            "extraFunctionEditorTypes": [
-            ]
+            "extraFunctionEditorTypes": []
         },
         "onStartNamespace": "loops",
         "onStartColor": "#40bf4a",
@@ -134,14 +133,12 @@
         "flashCodeAlign": 256,
         "upgrades": [],
         "patches": {
-            "0.0.0 - 0.6.8": [
-                {
-                    "type": "package",
-                    "map": {
-                        "arduino-mkr": "arduino-mkr1000"
-                    }
+            "0.0.0 - 0.6.8": [{
+                "type": "package",
+                "map": {
+                    "arduino-mkr": "arduino-mkr1000"
                 }
-            ]
+            }]
         }
     },
     "compileService": {
@@ -257,68 +254,43 @@
                 }
             }
         },
-        "f103re": {
-            "serial": {
-                "useHF2": false
-            },
+        "stm32f103": {
             "compile": {
-                "openocdScript": "source [find board/st_nucleo_f103rb.cfg]",
-                "flashChecksumAddr": 0,
-                "deployFileMarker": "INFO_UF2.TXT",
-                "vtableShift": 4,
+                "hasHex": true,
+                "openocdScript": "source [find interface/stlink-v2.cfg]; source [find target/stm32f1x.cfg]",
+                "uf2Family": "0x5ee21072",
                 "webUSB": false,
-                "gc": true,
-                "uf2Family": "0x5ee21072"
+                "vtableShift": 4
             },
             "compileService": {
                 "codalTarget": {
-                    "name": "codal-generic-f103re",
-                    "url": "https://github.com/mmoskal/codal-generic-f103re",
-                    "branch": "v0.0.3",
+                    "name": "codal-stm32f103",
+                    "url": "https://github.com/mmoskal/codal-stm32f103",
+                    "branch": "v1.0.15",
                     "type": "git"
                 },
-                "codalBinary": "GENERIC_F103RE",
-                "serviceId": "codal2f103re",
-                "dockerImage": "pext/yotta:latest",
-                "yottaConfig": {
-                    "pxt": {
-                        "board": {
-                            "id": "BOARD_ID_F103RE"
-                        }
-                    }
-                }
+                "codalBinary": "STM32",
+                "serviceId": "codal2stm32",
+                "dockerImage": "pext/yotta:latest"
             }
         },
-        "stm32f401re": {
-            "serial": {
-                "useHF2": false
-            },
+        "stm32f401": {
             "compile": {
+                "hasHex": true,
                 "openocdScript": "source [find interface/stlink-v2.cfg]; source [find target/stm32f4x.cfg]",
-                "flashChecksumAddr": 0,
-                "deployFileMarker": "INFO_UF2.TXT",
-                "vtableShift": 4,
-                "webUSB": false,
-                "gc": true,
-                "uf2Family": "0x57755a57"
+                "uf2Family": "0x57755a57",
+                "vtableShift": 4
             },
             "compileService": {
                 "codalTarget": {
                     "name": "codal-big-brainpad",
                     "url": "https://github.com/lancaster-university/codal-big-brainpad",
-                    "branch": "v1.0.18",
+                    "branch": "v1.0.21",
                     "type": "git"
                 },
                 "codalBinary": "STM32",
                 "serviceId": "codal2stm32",
-                "dockerImage": "pext/yotta:latest",
-                "yottaConfig": {
-                    "pxt": {
-                        "board": {
-                            "id": "BOARD_ID_STM32F401RE"
-                        }
-                    }
-                }
+                "dockerImage": "pext/yotta:latest"
             }
         },
         "samd21": {
@@ -368,8 +340,7 @@
         "chooseBoardOnNewProject": true,
         "lightToc": true,
         "instructions": true,
-        "docMenu": [
-            {
+        "docMenu": [{
                 "name": "About",
                 "path": "/about"
             },
