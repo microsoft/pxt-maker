@@ -1,0 +1,30 @@
+{
+    "name": "bluepill",
+    "description": "Blue Pill STM32F103 board",
+    "files": [
+        "README.md",
+        "config.ts",
+        "device.d.ts",
+        "ns.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "compileServiceVariant": "stm32f103",
+    "dependencies": {
+        "base---light": "file:../base---light",
+        "core---stm32": "file:../core---stm32",
+        "jacdac": "file:../jacdac"
+    },
+    "core": true,
+    "public": true,
+    "features": [
+        "uf2",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
+        "jacdac"
+    ]
+}

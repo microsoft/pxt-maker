@@ -260,7 +260,9 @@
                 "openocdScript": "source [find interface/stlink-v2.cfg]; source [find target/stm32f1x.cfg]",
                 "uf2Family": "0x5ee21072",
                 "webUSB": false,
-                "vtableShift": 4
+                "flashChecksumAddr": 0,
+                "vtableShift": 4,
+                "utf8": true
             },
             "compileService": {
                 "codalTarget": {
