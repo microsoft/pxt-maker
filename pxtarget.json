@@ -268,7 +268,7 @@
                 "codalTarget": {
                     "name": "codal-stm32f103",
                     "url": "https://github.com/mmoskal/codal-stm32f103",
-                    "branch": "v1.0.15",
+                    "branch": "v1.0.16",
                     "type": "git"
                 },
                 "codalBinary": "STM32",
