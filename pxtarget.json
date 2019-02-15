@@ -266,9 +266,9 @@
             },
             "compileService": {
                 "codalTarget": {
-                    "name": "codal-stm32f103",
-                    "url": "https://github.com/mmoskal/codal-stm32f103",
-                    "branch": "v1.0.16",
+                    "name": "codal-bluepill",
+                    "url": "https://github.com/mmoskal/codal-bluepill",
+                    "branch": "v1.1.0",
                     "type": "git"
                 },
                 "codalBinary": "STM32",
