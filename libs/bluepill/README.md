@@ -9,7 +9,6 @@ Current size info:
 * basic application is around 80k, this includes:
 * 15k JACDAC
 * 2.5k UTF8
-* 18k+ of STM32 HAL
-* 4.5k of asserts in HAL (this can be dropped)
+* 18k+ of STM32 HAL (including 4.5k of asserts, which can be dropped)
 * adding trig and other advanced math functions adds 17k
 * USB is disabled (not working anyway)
