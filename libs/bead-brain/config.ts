@@ -1,12 +1,9 @@
 
 namespace config {
 
-    export const NUM_NEOPIXELS = 1;
-
-    export const PIN_NEOPIXEL = DAL.PB23;
     export const PIN_ACCELEROMETER_SDA = DAL.PA00;
     export const PIN_ACCELEROMETER_SCL = DAL.PA01;
-    export const PIN_ACCELEROMETER_INT = DAL.PA13;
+    export const PIN_ACCELEROMETER_INT = DAL.PA13; 
 
     export const PIN_A1 = DAL.PA04;
     export const PIN_A2 = DAL.PA05;
@@ -23,8 +20,12 @@ namespace config {
     export const PIN_D5 = DAL.PB03;
     export const PIN_D6 = DAL.PB08;
     export const PIN_D7 = DAL.PB09;
-
+    export const PIN_D13 = DAL.PA18;
+    
+    export const PIN_LED = PIN_D13;
     export const PIN_TX = DAL.PB08;  
+
     export const PIN_JACK_TX = PIN_TX;
+    export const PIN_JACK_COMMLED = PIN_LED;
 
 }
