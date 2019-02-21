@@ -63,33 +63,29 @@ declare namespace input {
     /**
      * Capacitive pin D5
      */
-    //% block="button D5" fixedInstance
-    //% shim=pxt::getButtonByPin(PIN_D5,BUTTON_ACTIVE_LOW_PULL_UP)
-    //% parts="buttons"
+    //% block="touch D5" fixedInstance
+    //% shim=pxt::getTouchButton(PIN_A5)
     const touchD5: TouchButton;
 
     /**
      * Capacitive pin D6
      */
-    //% block="button D6" fixedInstance
-    //% shim=pxt::getButtonByPin(PIN_D6,BUTTON_ACTIVE_LOW_PULL_UP)
-    //% parts="buttons"
+    //% block="touch D6" fixedInstance
+    //% shim=pxt::getTouchButton(PIN_A6)
     const touchD6: TouchButton;
 
     /**
       * Capacitive pin D7
      */
-    //% block="button D7" fixedInstance
-    //% shim=pxt::getButtonByPin(PIN_D7,BUTTON_ACTIVE_LOW_PULL_UP)
-    //% parts="buttons"
+    //% block="touch D7" fixedInstance
+    //% shim=pxt::getTouchButton(PIN_A7)
     const touchD7: TouchButton;
 
     /**
      * Capacitive pin D8
      */
-    //% block="button D8" fixedInstance
-    //% shim=pxt::getButtonByPin(PIN_D8,BUTTON_ACTIVE_LOW_PULL_UP)
-    //% parts="buttons"
+    //% block="touch D8" fixedInstance
+    //% shim=pxt::getTouchButton(PIN_A8)
     const touchD8: TouchButton;
  
 }
