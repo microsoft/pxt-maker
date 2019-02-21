@@ -21,13 +21,18 @@
     "galleries": {
         "Digital IO": "/projects/digital-io",
         "Analog IO": "/projects/analog-io",
+        "Pixel": "/projects/pixel",
         "Light": "/projects/light", 
-        "Actuators": "/projects/actuators",
+        "Music": "/projects/music",
+        "Servos": "/projects/servos",
         "HID": "/projects/hid",
         "Screen": "/projects/screen",
+        "Accelerometer": "/projects/accelerometer",
         "Serial": "/projects/serial",
-        "Storage (beta)": "/projects/storage",
-        "JacDac (beta)": "/projects/jacdac"
+        "Storage": "/projects/storage",
+        "LoRa": "/projects/lora",
+        "JacDac (PROTOTYPE)": "/projects/jacdac",
+        "Boards": "/boards"
     },
     "firmwareUrls": {
         "adafruit-circuit-playground-express": "https://learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-uf2-bootloader-details#updating-the-bootloader",

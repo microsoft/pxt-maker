@@ -21,7 +21,6 @@ namespace pxsim {
         LightBoard,
         CapTouchBoard,
         AccelerometerBoard,
-        PixelBoard,
         StorageBoard,
         //JacDacBoard,
         LightSensorBoard,
@@ -34,10 +33,9 @@ namespace pxsim {
         edgeConnectorState: EdgeConnectorState;
         lightSensorState: AnalogSensorState;
         buttonState: CommonButtonState;
-        _neopixelState: pxt.Map<CommonNeoPixelState>;
+        lightState: pxt.Map<CommonNeoPixelState>;
         audioState: AudioState;
         neopixelPin: Pin;
-        pixelPin: Pin;
         touchButtonState: TouchButtonState;
         accelerometerState: AccelerometerState;
         storageState: StorageState;
@@ -98,15 +96,7 @@ namespace pxsim {
                 }
             }
 
-            this.neopixelPin = new Pin(
-                getConfig(DAL.CFG_PIN_NEOPIXEL) ||
-                getConfig(DAL.CFG_PIN_DOTSTAR_DATA) ||
-                DAL.PA30
-            );
-            // todo fix this
-            this.pixelPin = this.neopixelPin;
-
-            this._neopixelState = {};
+            this.lightState = {};
             this.microphoneState = new AnalogSensorState(DAL.DEVICE_ID_MICROPHONE, 52, 120, 75, 96);
             this.storageState = new StorageState();
             //this.jacdacState = new JacDacState(this);
@@ -122,7 +112,6 @@ namespace pxsim {
             this.builtinParts["touch"] = this.touchButtonState = new TouchButtonState(pinList);
 
             // components
-            this.builtinParts["neopixel"] = (pin: Pin) => { return this.neopixelState(pin.id); } //this.neopixelState(this.neopixelPin.id);
             this.builtinParts["audio"] = this.audioState = new AudioState();
             this.builtinParts["edgeconnector"] = this.edgeConnectorState = new EdgeConnectorState({
                 pins: pinList,
@@ -134,12 +123,22 @@ namespace pxsim {
 
             this.builtinVisuals["buttons"] = () => new visuals.ButtonView();
             this.builtinVisuals["microservo"] = () => new visuals.MicroServoView();
+
+            this.builtinParts["neopixel"] = (pin: Pin) => { return this.neopixelState(pin.id); };
             this.builtinVisuals["neopixel"] = () => new visuals.NeoPixelView();
+            this.builtinPartVisuals["neopixel"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
+
+            this.builtinParts["dotstar"] = (pin: Pin) => { return this.neopixelState(pin.id); };
+            this.builtinVisuals["dotstar"] = () => new visuals.NeoPixelView();
+            this.builtinPartVisuals["dotstar"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
+
+            this.builtinParts["pixels"] = (pin: Pin) => { return this.neopixelState(undefined); };
+            this.builtinVisuals["pixels"] = () => new visuals.NeoPixelView();
+            this.builtinPartVisuals["pixels"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
 
             this.builtinPartVisuals["buttons"] = (xy: visuals.Coord) => visuals.mkBtnSvg(xy);
 
             this.builtinPartVisuals["microservo"] = (xy: visuals.Coord) => visuals.mkMicroServoPart(xy);
-            this.builtinPartVisuals["neopixel"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
 
             this.builtinParts["slideswitch"] = (pin: Pin) => new ToggleState(pin);
             this.builtinVisuals["slideswitch"] = () => new visuals.ToggleComponentVisual(parsePinString);
@@ -151,9 +150,15 @@ namespace pxsim {
 
             this.builtinVisuals["photocell"] = () => new visuals.PhotoCellView(parsePinString);
             this.builtinPartVisuals["photocell"] = (xy: visuals.Coord) => visuals.mkPhotoCellPart(xy);
-            
+
             this.builtinVisuals["screen"] = () => new visuals.ScreenView();
             this.builtinPartVisuals["screen"] = (xy: visuals.Coord) => visuals.mkScreenPart(xy);
+
+            
+            const neopixelPinCfg = getConfig(DAL.CFG_PIN_NEOPIXEL) ||
+                getConfig(DAL.CFG_PIN_DOTSTAR_DATA);
+            if (neopixelPinCfg !== null)
+                this.neopixelPin = this.edgeConnectorState.getPin(neopixelPinCfg);
         }
 
         receiveMessage(msg: SimulatorMessage) {
@@ -227,17 +232,16 @@ namespace pxsim {
             return pxtcore.getPin(DAL.PA02);
         }
 
-        defaultNeopixelPin() {
-            return this.neopixelPin;
-        }
-
         tryGetNeopixelState(pinId: number): CommonNeoPixelState {
-            return this._neopixelState[pinId];
+            return this.lightState[pinId];
         }
 
         neopixelState(pinId: number): CommonNeoPixelState {
-            let state = this._neopixelState[pinId];
-            if (!state) state = this._neopixelState[pinId] = new CommonNeoPixelState();
+            if (pinId === undefined) {
+                pinId = pxtcore.getConfig(DAL.CFG_PIN_MOSI, -1);
+            }
+            let state = this.lightState[pinId];
+            if (!state) state = this.lightState[pinId] = new CommonNeoPixelState();
             return state;
         }
     }

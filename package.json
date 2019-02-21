@@ -1,6 +1,6 @@
 {
   "name": "pxt-maker",
-  "version": "0.7.10",
+  "version": "0.9.4",
   "description": "Microsoft MakeCode Maker Boards",
   "public": true,
   "keywords": [
@@ -45,10 +45,13 @@
     "@types/web-bluetooth": "0.0.4"
   },
   "dependencies": {
-    "pxt-common-packages": "6.1.13",
-    "pxt-core": "5.4.21"
+    "glob-exec": "^0.1.1",
+    "pxt-common-packages": "6.4.5",
+    "pxt-core": "5.5.12",
+    "svgo": "^1.1.1"
   },
   "scripts": {
-    "test": "node node_modules/pxt-core/built/pxt.js travis"
+    "test": "node node_modules/pxt-core/built/pxt.js travis",
+    "svgo": "glob-exec --foreach \"**/boardhd.svg\" -- \"svgo --config=svgo.yml {{file}} -o {{file.dir}}/board.svg \""
   }
 }

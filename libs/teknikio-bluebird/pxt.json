@@ -7,20 +7,15 @@
         "config.ts",
         "ns.ts",
         "board.json",
-        "board.svg",
-        "boardwireframe.svg"
+        "board.svg"
     ],
     "core": true,
     "compileServiceVariant": "nrf52832",
     "dependencies": {
         "core---nrf52832": "file:../core---nrf52832",
-        "buttons": "file:../buttons",
-        "music": "file:../music---pwm"
+        "buttons": "file:../buttons"
     },
     "public": true,
-    "dalDTS": {
-        "corePackage": "../core---nrf52832"
-    },
     "features": [
         "pina0",
         "pina1"

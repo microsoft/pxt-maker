@@ -2,10 +2,9 @@
 
 
 ```blocks
-let strip: light.NeoPixelStrip = null
-strip = light.createStrip(pins.D0, 30)
+light.setLength(30)
 forever(function () {
-    strip.showAnimation(light.rainbowAnimation, 2000)
+    light.showAnimation(light.rainbowAnimation, 2000)
 })
 ```
 

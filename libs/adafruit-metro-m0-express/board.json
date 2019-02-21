@@ -2,7 +2,6 @@
   "driveDisplayName": "METROBOOT",
   "visual": {
     "image": "pkg://board.svg",
-    "outlineImage": "pkg://boardwireframe.svg",
     "useCrocClips": false,
     "width": 427.0899963378906,
     "height": 317.6678161621094,

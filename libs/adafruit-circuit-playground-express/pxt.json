@@ -8,14 +8,13 @@
         "ns.ts",
         "jacdac.ts",
         "board.json",
-        "board.svg",
-        "boardwireframe.svg"
+        "board.svg"
     ],
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "light": "file:../light",
-        "music": "file:../music",
+        "mixer---samd": "file:../mixer---samd",
         "switch": "file:../switch",
         "touch": "file:../touch",
         "accelerometer": "file:../accelerometer",
@@ -23,7 +22,8 @@
         "thermometer": "file:../thermometer",
         "microphone": "file:../microphone",
         "serial": "file:../serial",
-        "jacdac": "file:../jacdac"
+        "jacdac": "file:../jacdac",
+        "storage": "file:../storage"
     },
     "compileServiceVariant": "samd21",
     "core": true,
@@ -40,6 +40,9 @@
         "serial",
         "microphone",
         "jacdac",
-        "light"
+        "light",
+        "storage",
+        "music",
+        "accelerometer"
     ]
 }

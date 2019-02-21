@@ -13,14 +13,24 @@
         "imageUrl": "/static/projects/analog-io/blink-to-light/gallery.gif"
     },
     {
+        "name": "Pixel",
+        "url": "/projects/pixel",
+        "imageUrl": "/static/projects/pixel/blinky/gallery.gif"
+    },
+    {
         "name": "Light",
         "url": "/projects/light",
         "imageUrl": "/static/projects/light/rainbow/gallery.gif"
     },
     {
-        "name": "Actuators",
-        "url": "/projects/actuators",
-        "imageUrl": "/static/projects/actuators/servo/gallery.gif"
+        "name": "Music",
+        "url": "/projects/music",
+        "imageUrl": "/static/projects/music/play-sound/gallery.gif"
+    },
+    {
+        "name": "Servos",
+        "url": "/projects/servos",
+        "imageUrl": "/static/projects/servos/sweep/gallery.gif"
     },
     {
         "name": "HID",
@@ -32,16 +42,30 @@
         "imageUrl": "/static/projects/screen/console/gallery.gif"
     },
     {
+        "name": "Accelerometer",
+        "url": "/projects/accelerometer",
+        "imageUrl": "/static/projects/accelerometer/shake/gallery.gif"
+    },
+    {
         "name": "Serial",
         "url": "/projects/serial"
     },
     {
-        "name": "Storage (beta)",
+        "name": "Storage",
         "url": "/projects/storage"
     },
     {
-        "name": "JacDac (beta)",
+        "name": "LoRa",
+        "url": "/projects/lora"
+    },
+    {
+        "name": "JacDac (PROTOTYPE)",
         "url": "/projects/jacdac"
+    },
+    {
+        "name": "Boards",
+        "url": "/boards",
+        "imageUrl": "/static/libs/adafruit-circuit-playground-express.jpg"
     }
 ]
 ```
@@ -50,11 +74,16 @@
 
 [Digital IO](/projects/digital-io),
 [Analog IO](/projects/analog-io),
+[Pixel](/projects/pixel),
 [Light](/projects/light),
-[Actuators](/projects/actuators),
+[Music](/projects/music),
+[Servos](/projects/servos),
 [HID](/projects/hid),
 [Screen](/projects/screen),
+[Accelerometer](/projects/accelerometer),
 [Serial](/projects/serial),
-[Storage (beta)](/projects/storage),
-[JacDac (beta)](/projects/jacdac)
+[Storage](/projects/storage),
+[LoRa](/projects/lora),
+[JacDac (PROTOTYPE)](/projects/jacdac),
+[Boards](/boards)
 

@@ -25,6 +25,12 @@
         "cardType": "tutorial",
         "imageUrl": "/static/projects/digital-io/switch-led/gallery.gif",
         "description": "Learn about digital read"
+    },
+    {
+        "name": "Multi Blinky",
+        "url": "/projects/digital-io/multi-blinky",
+        "imageUrl": "/static/projects/digital-io/multi-blinky/gallery.gif",
+        "cardType": "example"
     }
 ]
 ```
@@ -33,4 +39,5 @@
 
 [Blinky](/projects/digital-io/blinky),
 [Button](/projects/digital-io/button-led),
-[Switch](/projects/digital-io/switch-led)
+[Switch](/projects/digital-io/switch-led),
+[Switch](/projects/digital-io/multi-blinky)

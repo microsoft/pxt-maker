@@ -8,3 +8,9 @@ forever(function () {
     pins.A2.analogWrite(brightness);
 })
 ```
+
+```config
+feature=uf2
+feature=pina1
+feature=pina2
+```

@@ -186,12 +186,14 @@ namespace pxsim.visuals {
 
         public updateState() {
             this.onBoardLeds.forEach(l => l.updateState());
-            const state = this.board.neopixelState(this.board.defaultNeopixelPin().id)
-            if (state.buffer) {
-                for (let i = 0; i < this.onBoardNeopixels.length; ++i) {
-                    const rgb = state.pixelColor(i)
-                    if (rgb !== null)
-                        this.onBoardNeopixels[i].setColor(rgb as any);
+            if (this.board.neopixelPin) {
+                const state = this.board.neopixelState(this.board.neopixelPin.id);
+                if (state.buffer) {
+                    for (let i = 0; i < this.onBoardNeopixels.length; ++i) {
+                        const rgb = state.pixelColor(i)
+                        if (rgb !== null)
+                            this.onBoardNeopixels[i].setColor(rgb as any);
+                    }
                 }
             }
         }
@@ -240,11 +242,18 @@ namespace pxsim.visuals {
     }
 
     class BoardLed {
-        element: SVGElement;
         private colorOff = "#aaa"
+        private backElement: SVGElement;
+        private ledElement: SVGElement;
+        element: SVGElement;
 
         constructor(x: number, y: number, private colorOn: string, private pin: Pin, w: number, h: number) {
-            this.element = svg.elt("rect", { x, y, width: w, height: h, fill: this.colorOff });
+            this.backElement = svg.elt("rect", { x, y, width: w, height: h, fill: this.colorOff });
+            this.ledElement = svg.elt("rect", { x, y, width: w, height: h, fill: this.colorOn, opacity: 0 });
+            svg.filter(this.ledElement, `url(#neopixelglow)`);
+            this.element = svg.elt("g", { class: "sim-led" });
+            this.element.appendChild(this.backElement);
+            this.element.appendChild(this.ledElement);
         }
 
         updateTheme(colorOff: string, colorOn: string) {
@@ -257,14 +266,9 @@ namespace pxsim.visuals {
         }
 
         updateState() {
-            if (this.pin.value > 0) {
-                this.element.setAttribute("fill", this.colorOn)
-                svg.filter(this.element, `url(#neopixelglow)`);
-            }
-            else {
-                this.element.setAttribute("fill", this.colorOff)
-                svg.filter(this.element, null);
-            }
+            const opacity = this.pin.mode & PinFlags.Digital ? (this.pin.value > 0 ? 1 : 0)
+                : 0.1 + Math.max(0, Math.min(1023, this.pin.value)) / 1023 * 0.8;
+            this.ledElement.setAttribute("opacity", opacity.toString())
         }
     }
 
@@ -308,8 +312,8 @@ namespace pxsim.visuals {
             }) as SVGCircleElement
             svg.title(this.element, def.label);
             // resolve button
-            this.button = def.index !== undefined 
-                ? pxsim.pxtcore.getButton(def.index) 
+            this.button = def.index !== undefined
+                ? pxsim.pxtcore.getButton(def.index)
                 : pxsim.pxtcore.getButtonByPin(pxsim.pinIds[def.label]);
             // hooking up events
             pointerEvents.down.forEach(evid => this.element.addEventListener(evid, ev => {

@@ -2,7 +2,6 @@
   "driveDisplayName": "",
   "visual": {
     "image": "pkg://board.svg",
-    "outlineImage": "pkg://boardwireframe.svg",
     "useCrocClips": false,
     "width": 343,
     "height": 172,

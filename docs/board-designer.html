@@ -212,7 +212,7 @@
                 else if (id.toLowerCase() != "neopixel" && boardjson.onboardComponents.indexOf("neopixel") < 0)
                     boardjson.onboardComponents.push("neopixel");
             }
-            else if (/RST|RESET/.test(id)) {
+            else if (/RESETBTN/.test(id)) {
                 if (!boardjson.visual.reset) {
                     boardjson.visual.reset = {
                         x: rect.x,
@@ -225,7 +225,7 @@
             }
             else if (/GND/.test(id) && boardjson.groundPins.indexOf(id) < 0)
                 boardjson.groundPins.push(id);
-            else if (/(\+3V3|3V|VCC|VOUT)/.test(id) && boardjson.threeVoltPins.indexOf(id) < 0)
+            else if (/(\+3V3|3V|VCC|VOUT|VDD)/.test(id) && boardjson.threeVoltPins.indexOf(id) < 0)
                 boardjson.threeVoltPins.push(id);
             else if (/(BUTTON|BTN_[AB])/.test(id)) {
                 boardjson.visual.buttons.push({
@@ -408,7 +408,7 @@
                 LEDs: set the id of the svg element to LED...
             </li>
             <li>
-                Reset button: set the id of the svg to RESET
+                Reset button: set the id of the svg to RESETBTN
             </li>
             <li>
                 Pins: set the id of the svg for headers to the pin names (should be done already)
@@ -421,14 +421,14 @@
             </li>
         </ul>
         <div class="ui segment">
-            <h2>board.svg</h2>
+            <h2>boardhd.svg</h2>
             <ul>
-                <li>Save this file as <code>board.svg</code> in your project and it to the <code>files</code> list in
+                <li>Save this file as <code>boardhd.svg</code> in your project and it to the <code>files</code> list in
                     <code>pxt.json</code></li>
                 <li>
-                    <emph>Keep it small!</emph>: remove extra graphical elements and run <a href="https://github.com/svg/svgo"
-                        target="_blank">SVGO</a> to shrink the size.
+                    <emph>Keep it small!</emph>: remove extra graphical elements to shrink the size.
                 </li>
+                <li>Run <code>npm run svgo</code> to compress boardhd.svg into board.svg</li>
             </ul>
             <textarea class="ui fluid" id="svginput"></textarea>
         </div>
