@@ -19,6 +19,7 @@
         "light": "file:../light",
         "accelerometer": "file:../accelerometer",
         "jacdac": "file:../jacdac",
+        "touch": "file:../touch",
         "pixel": "file:../pixel"
     },
     "public": true,
