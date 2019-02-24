@@ -24,7 +24,7 @@ namespace config {
 
     export const PIN_TX = DAL.PB08;  
     export const PIN_SCK = DAL.PA21;
-    export const PIN_CS = DAL.PB22;
+    export const PIN_DISPLAY_CS= DAL.PB22;
     export const PIN_MOSI = DAL.PA20;
     export const PIN_MISO = DAL.PA16;
 
