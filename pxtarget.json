@@ -8,6 +8,7 @@
     "corepkg": "core",
     "bundleddirs": [
         "libs/base",
+        "libs/base---light",
         "libs/core",
         "libs/core---nrf52832",
         "libs/core---nrf52840",
