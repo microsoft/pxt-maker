@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="400.87mm"
+   height="226.85338mm"
+   viewBox="0 0 400.86999 226.85338"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="boardhd.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="563.69947"
+     inkscape:cy="-41.340009"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-28.915178,82.744736)">
+    <rect
+       id="rect3909"
+       width="388.80945"
+       height="226.85338"
+       x="40.975731"
+       y="-82.744736"
+       style="fill:#ff0000;stroke-width:0.80403721" />
+    <circle
+       id="A3"
+       cx="274.14655"
+       cy="-73.842903"
+       r="6.891748"
+       style="stroke-width:0.80403721"
+       inkscape:label="JACK_TX touch" />
+    <circle
+       id="A4"
+       cx="256.91714"
+       cy="-73.842903"
+       r="6.891748"
+       style="stroke-width:0.80403721"
+       inkscape:label="touch" />
+    <circle
+       id="D8"
+       cx="239.68781"
+       cy="-73.842903"
+       r="6.891748"
+       style="stroke-width:0.80403721"
+       inkscape:label="#path3724-2-5" />
+    <circle
+       id="D9"
+       cx="223.03275"
+       cy="-73.842903"
+       r="6.891748"
+       style="stroke-width:0.80403721"
+       inkscape:label="#path3724-2-5-5" />
+    <circle
+       id="GND2"
+       cx="205.22906"
+       cy="-73.842903"
+       r="6.891748"
+       style="stroke-width:0.80403721"
+       inkscape:label="#path3724-2-5-5-6" />
+    <circle
+       id="3V3"
+       cx="188.57399"
+       cy="-73.842903"
+       r="6.891748"
+       style="stroke-width:0.80403721"
+       inkscape:label="#path3724-2-5-5-6-2" />
+    <circle
+       id="RESETBTN"
+       cx="110.46754"
+       cy="124.58204"
+       r="6.891748"
+       style="stroke-width:0.80403721"
+       inkscape:label="#path3724-2-5-5-6-2-6" />
+    <circle
+       id="D6"
+       cx="175.93915"
+       cy="123.43341"
+       r="6.891748"
+       style="stroke-width:0.80403721"
+       inkscape:label="#path3724-2-5-5-6-2-1" />
+    <circle
+       id="LED"
+       cx="198.91165"
+       cy="-7.50985"
+       r="6.891748"
+       style="stroke-width:0.80403721"
+       inkscape:label="#path3724-2-5-5-6-2" />
+    <rect
+       style="fill:#280b0b;stroke-width:0.80403721"
+       id="rect3911"
+       width="61.451424"
+       height="58.00555"
+       x="43.272987"
+       y="-34.502525" />
+    <rect
+       style="fill:#241c1c;stroke-width:0.80403721"
+       id="rect3913"
+       width="82.700974"
+       height="55.708294"
+       x="344.21262"
+       y="-29.333723" />
+    <rect
+       style="fill:#c8beb7;stroke-width:0.80403721"
+       id="rect3917"
+       width="58.00555"
+       height="61.451424"
+       x="28.915178"
+       y="33.84063" />
+    <rect
+       style="fill:#241c1c;stroke-width:0.80403721"
+       id="rect3913-9"
+       width="82.700974"
+       height="55.708294"
+       x="344.21262"
+       y="26.374559" />
+    <circle
+       id="VCC"
+       cx="416.28885"
+       cy="-14.975896"
+       r="6.891748"
+       style="stroke-width:0.80403721"
+       inkscape:label="#path3724-2-5-5-6-2-9" />
+    <circle
+       id="LED_CLK"
+       cx="416.28885"
+       cy="13.16547"
+       r="6.891748"
+       style="stroke-width:0.80403721"
+       inkscape:label="#path3724-2-5-5-6-2-9-5" />
+    <circle
+       id="LED_MOSI"
+       cx="416.28885"
+       cy="45.3269"
+       r="6.891748"
+       style="stroke-width:0.80403721"
+       inkscape:label="#path3724-2-5-5-6-2-9-5-9" />
+    <circle
+       id="GND"
+       cx="416.28885"
+       cy="75.191154"
+       r="6.891748"
+       style="stroke-width:0.80403721"
+       inkscape:label="#path3724-2-5-5-6-2-9-5-8" />
+  </g>
+</svg>
