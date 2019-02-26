@@ -11,8 +11,9 @@ namespace config {
 
     export const PIN_LED = PIN_D13;
 
-    export const PIN_MOSI = DAL.PA18; // LED_MOSI
-    export const PIN_SCK = DAL.PA19;
+    export const PIN_DOTSTAR_DATA = DAL.PA18; // LED_MOSI
+    export const PIN_DOTSTAR_CLOCK = DAL.PA19;
+    export const NUM_DOTSTARS = 30;
 
     export const PIN_JACK_TX = PIN_A3;
 
