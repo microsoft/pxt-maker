@@ -10,6 +10,7 @@
         "libs/base",
         "libs/base---light",
         "libs/core",
+        "libs/core---stm32",
         "libs/core---nrf52832",
         "libs/core---nrf52840",
         "libs/core---samd",
