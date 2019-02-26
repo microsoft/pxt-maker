@@ -61,6 +61,7 @@
         "libs/sparkfun-samd21-dev-breakout",
         "libs/sparkfun-samd21-mini-breakout",
         "libs/sparkfun-redboard-turbo",
+        "libs/sparkfun-lumidrive",
         "libs/stitchkit",
         "libs/teknikio-bluebird",
         "libs/bead-motion"
