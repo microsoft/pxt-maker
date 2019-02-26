@@ -44,6 +44,7 @@
         "adafruit-metro-m4-express": "https://learn.adafruit.com/adafruit-metro-m4-express-featuring-atsamd51/uf2-bootloader-details",
         "adafruit-itsybitsy-m4-express": "https://learn.adafruit.com/introducing-adafruit-itsybitsy-m4#uf2-bootloader-details",
         "adafruit-neotrellis-m4-express": "https://learn.adafruit.com/adafruit-neotrellis-m4/update-bootloader",
-        "sparkfun-redbear-turbo": "https://github.com/sparkfun/RedBoard_Turbo/tree/master/Firmware/UF2%20Bootloader"
+        "sparkfun-redbear-turbo": "https://github.com/sparkfun/RedBoard_Turbo/tree/master/Firmware/UF2%20Bootloader",
+        "bluepill": "https://github.com/mmoskal/uf2-stm32f103"
     }
 }

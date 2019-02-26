@@ -1,6 +1,6 @@
 {
     "name": "bluepill",
-    "description": "Blue Pill STM32F103 board",
+    "description": "Blue Pill STM32F103 board - beta",
     "files": [
         "README.md",
         "config.ts",
