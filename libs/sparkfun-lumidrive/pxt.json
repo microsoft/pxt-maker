@@ -18,13 +18,13 @@
         "buttons": "file:../buttons",
         "touch": "file:../touch",
         "light": "file:../light",
-        "jacdac": "file:../jacdac",
-        "storage": "file:../storage"
+        "jacdac": "file:../jacdac"
     },
     "compileServiceVariant": "samd21",
     "features": [
         "uf2",
-        "light"
+        "light",
+        "jacdac"
     ],
     "public": true
 }
