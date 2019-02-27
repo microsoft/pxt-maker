@@ -13,6 +13,8 @@
     "dependencies": {
         "base---light": "file:../base---light",
         "core---stm32": "file:../core---stm32",
+        "buttons": "file:../buttons",
+        "serial": "file:../serial",
         "jacdac": "file:../jacdac"
     },
     "core": true,
