@@ -1,5 +1,5 @@
-
 namespace config {
+    // https://wiki.stm32duino.com/images/a/ae/Bluepillpinout.gif
     export const PIN_A0 = DAL.PA_0;
     export const PIN_A1 = DAL.PA_1;
     export const PIN_A2 = DAL.PA_2;
@@ -36,10 +36,10 @@ namespace config {
     export const PIN_MISO = PIN_A6;
     export const PIN_MOSI = PIN_A7;
 
-    export const PIN_RX = PIN_10;
+    export const PIN_RX = PIN_A10;
     export const PIN_TX = PIN_A9;
 
-    export const JACK_TX = PIN_TX;
+    export const PIN_JACK_TX = PIN_TX;
 
     export const PIN_SDA = DAL.PB_7;
     export const PIN_SCL = DAL.PB_6;
