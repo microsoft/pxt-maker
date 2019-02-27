@@ -13,20 +13,17 @@
     "dependencies": {
         "base---light": "file:../base---light",
         "core---stm32": "file:../core---stm32",
-        "buttons": "file:../buttons",
-        "serial": "file:../serial",
         "jacdac": "file:../jacdac"
     },
     "core": true,
     "public": true,
+    "dalDTS": {
+        "corePackage": "../core---stm32"
+    },
     "features": [
         "uf2",
-        "pind0",
-        "pind1",
         "pina0",
         "pina1",
-        "buttond0",
-        "buttond1",
         "jacdac"
     ]
 }
