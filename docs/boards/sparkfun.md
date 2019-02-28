@@ -11,6 +11,12 @@
         "imageUrl": "/static/libs/sparkfun-redboard-turbo.jpg"  
     },
     {
+        "name": "Sparkfun LumiDrive",
+        "url": "/boards/sparkfun-lumidrive",
+        "cardType": "template",
+        "imageUrl": "/static/libs/sparkfun-lumidrive.jpg"  
+    },
+    {
         "name": "Sparkfun SAMD21 Dev Breakout",
         "url": "/boards/sparkfun-samd21-dev-breakout",
         "cardType": "template",
