@@ -428,7 +428,8 @@
         "extendEditor": true,
         "crowdinProject": "kindscript",
         "scriptManager": true,
-        "simScreenshot": true
+        "simScreenshot": true,
+        "simGif": true
     },
     "ignoreDocsErrors": true
 }
