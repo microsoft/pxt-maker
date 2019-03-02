@@ -17,7 +17,7 @@
     * [SAMD21 Mini Breakout](/boards/sparkfun-samd21-mini-breakout)
 * [Misc](/boards/misc)
     * [RedBear BLE NANO 2](/boards/redbear-ble-nano)
-    * [StichKit](/boards/stichkit)
+    * [StichKit](/boards/stitchkit)
     * [Teknikio Bluebird](/boards/teknikio-bluebird)
     * [Motion Bead](/boards/bead-motion)
 * [Add a new board](/boards/add-a-new-board)
