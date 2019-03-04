@@ -12,7 +12,7 @@
     },
     {
         "name": "StichKit",
-        "url": "/boards/stichkit",
+        "url": "/boards/stitchkit",
         "cardType": "template",
         "imageUrl": "/static/libs/makefashion.jpg"  
     },
