@@ -31,6 +31,7 @@
         "Serial": "/projects/serial",
         "Storage": "/projects/storage",
         "LoRa": "/projects/lora",
+        "Power": "/projects/power",
         "JacDac (PROTOTYPE)": "/projects/jacdac",
         "Boards": "/boards"
     },

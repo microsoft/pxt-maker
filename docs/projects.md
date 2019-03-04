@@ -59,6 +59,10 @@
         "url": "/projects/lora"
     },
     {
+        "name": "Power",
+        "url": "/projects/power"
+    },
+    {
         "name": "JacDac (PROTOTYPE)",
         "url": "/projects/jacdac"
     },
@@ -84,6 +88,7 @@
 [Serial](/projects/serial),
 [Storage](/projects/storage),
 [LoRa](/projects/lora),
+[Power](/projects/power),
 [JacDac (PROTOTYPE)](/projects/jacdac),
 [Boards](/boards)
 
