@@ -15,7 +15,7 @@ declare namespace pins {
     //% fixedInstance shim=pxt::getPin(PIN_A5)
     const A5: PwmPin;
     //% fixedInstance shim=pxt::getPin(PIN_A6)
-    const A6: AnalogOutPin;
+    const A6: PwmOnlyPin;
     //% fixedInstance shim=pxt::getPin(PIN_A7)
     const A7: PwmPin;
     //% fixedInstance shim=pxt::getPin(PIN_A8)
