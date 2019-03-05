@@ -41,5 +41,5 @@ namespace jacdac {
      * A JACDAC service host for the servo
      */
     //% fixedInstance whenUsed block="servo service"
-    export const servoService = new jacdac.servoService(servos.A6);
+    export const servoService = new jacdac.ServoService("servo", servos.A6);
 }
