@@ -37,5 +37,5 @@ namespace config {
     export const PIN_MOSI = DAL.PA14; // D10
     export const PIN_SCK = DAL.PA15; // D9
 
-    export const PIN_JACK_TX = DAL.PB02; // A6
+    export const PIN_JACK_TX = DAL.PA00; // D12 - Meow Meow Backpack JACDAC
 }
