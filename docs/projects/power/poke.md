@@ -4,7 +4,7 @@ Set a deep sleep time out and poke when the user interacts with the device.
 
 
 ```blocks
-power.setDeepSleep(10000);
+power.setDeepSleepTimeout(10000);
 forever(function() {
     power.checkDeepSleep();
     pause(1000);

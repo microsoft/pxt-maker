@@ -8,7 +8,7 @@ power.deepSleep();
 
 ```package
 power
-````
+```
 
 ```config
 feature=power
