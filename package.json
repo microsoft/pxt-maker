@@ -44,7 +44,6 @@
     "@types/node": "8.0.53",
     "@types/web-bluetooth": "0.0.4",
     "glob-exec": "^0.1.1",
-    "webusb": "^1.1.1",
     "svgo": "^1.1.1"
   },
   "dependencies": {
