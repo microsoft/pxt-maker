@@ -965,7 +965,7 @@ declare const enum DAL {
     CFG_PIN_LCD_DATALINE6 = 1013,
     CFG_PIN_LCD_DATALINE7 = 1014,
     CFG_NUM_LCD_COLUMNS = 1015,
-    CFG_NUM_LCD_ROWS = 1015,
+    CFG_NUM_LCD_ROWS = 1016,
     // /pxtapp/hf2dbg.h
     HF2DBG_H = 1,
     // /pxtapp/pins.h
