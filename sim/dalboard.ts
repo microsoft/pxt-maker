@@ -181,6 +181,10 @@ namespace pxsim {
                     let packet = <SimulatorRadioPacketMessage>msg;
                     //this.radioState.recievePacket(packet);
                     break;
+                case "irpacket":
+                    let irpacket = <SimulatorInfraredPacketMessage>msg;
+                    this.irState.receive(irpacket.packet);
+                    break;
             }
         }
 
