@@ -26,7 +26,8 @@ namespace pxsim {
         LightSensorBoard,
         TemperatureBoard,
         MicrophoneBoard,
-        ScreenBoard {
+        ScreenBoard,
+        InfraredBoard {
         // state & update logic for component services
         viewHost: visuals.BoardHost;
         view: SVGElement;
@@ -44,6 +45,7 @@ namespace pxsim {
         thermometerUnitState: TemperatureUnit;
         microphoneState: AnalogSensorState;
         screenState: ScreenState;
+        irState: InfraredState;
 
         constructor(public boardDefinition: BoardDefinition) {
             super();
@@ -103,6 +105,7 @@ namespace pxsim {
             this.lightSensorState = new AnalogSensorState(DAL.DEVICE_ID_LIGHT_SENSOR, 0, 255, 128 / 4, 896 / 4);
             this.thermometerState = new AnalogSensorState(DAL.DEVICE_ID_THERMOMETER, -20, 50, 10, 30);
             this.thermometerUnitState = TemperatureUnit.Celsius;
+            this.irState = new InfraredState();
             this.bus.setNotify(DAL.DEVICE_ID_NOTIFY, DAL.DEVICE_ID_NOTIFY_ONE);
 
             // TODO we need this.buttonState set for pxtcore.getButtonByPin(), but
@@ -177,6 +180,10 @@ namespace pxsim {
                 case "radiopacket":
                     let packet = <SimulatorRadioPacketMessage>msg;
                     //this.radioState.recievePacket(packet);
+                    break;
+                case "irpacket":
+                    let irpacket = <SimulatorInfraredPacketMessage>msg;
+                    this.irState.receive(irpacket.packet);
                     break;
             }
         }
