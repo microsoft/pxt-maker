@@ -6,10 +6,6 @@ namespace pxt {
 
 NRFLowLevelTimer lowTimer(NRF_TIMER1, TIMER1_IRQn);
 
-LowLevelTimer* getLowLevelTimer() {
-    return &lowTimer;
-}
-
 CODAL_TIMER devTimer(lowTimer);
 
 static void initRandomSeed() {
