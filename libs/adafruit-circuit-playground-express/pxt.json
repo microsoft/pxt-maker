@@ -45,6 +45,7 @@
         "light",
         "storage",
         "music",
-        "accelerometer"
+        "accelerometer",
+        "ir"
     ]
 }
