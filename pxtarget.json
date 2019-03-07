@@ -14,6 +14,8 @@
         "libs/core---samd",
         "libs/core---samd51",
         "libs/screen---st7735",
+        "libs/pulse",
+        "libs/infrared",
         "libs/game",
         "libs/mixer",
         "libs/mixer---none",

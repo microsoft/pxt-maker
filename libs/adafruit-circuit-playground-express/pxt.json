@@ -22,6 +22,8 @@
         "thermometer": "file:../thermometer",
         "microphone": "file:../microphone",
         "serial": "file:../serial",
+        "pulse": "file:../pulse",
+        "infrared": "file:../infrared",
         "jacdac": "file:../jacdac",
         "storage": "file:../storage"
     },
