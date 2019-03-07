@@ -27,7 +27,8 @@ namespace pxsim {
         TemperatureBoard,
         MicrophoneBoard,
         ScreenBoard,
-        InfraredBoard {
+        InfraredBoard,
+        LCDBoard {
         // state & update logic for component services
         viewHost: visuals.BoardHost;
         view: SVGElement;
@@ -46,6 +47,7 @@ namespace pxsim {
         microphoneState: AnalogSensorState;
         screenState: ScreenState;
         irState: InfraredState;
+        lcdState: LCDState;
 
         constructor(public boardDefinition: BoardDefinition) {
             super();
@@ -106,6 +108,7 @@ namespace pxsim {
             this.thermometerState = new AnalogSensorState(DAL.DEVICE_ID_THERMOMETER, -20, 50, 10, 30);
             this.thermometerUnitState = TemperatureUnit.Celsius;
             this.irState = new InfraredState();
+            this.lcdState = new LCDState();
             this.bus.setNotify(DAL.DEVICE_ID_NOTIFY, DAL.DEVICE_ID_NOTIFY_ONE);
 
             // TODO we need this.buttonState set for pxtcore.getButtonByPin(), but
@@ -135,6 +138,10 @@ namespace pxsim {
             this.builtinVisuals["dotstar"] = () => new visuals.NeoPixelView();
             this.builtinPartVisuals["dotstar"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
 
+            this.builtinParts["lcd"] =  this.lcdState;
+            this.builtinVisuals["lcd"] = () => new visuals.LCDView();
+            this.builtinPartVisuals["lcd"] = (xy: visuals.Coord) => visuals.mkLCDPart(xy);
+            
             this.builtinParts["pixels"] = (pin: Pin) => { return this.neopixelState(undefined); };
             this.builtinVisuals["pixels"] = () => new visuals.NeoPixelView();
             this.builtinPartVisuals["pixels"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
