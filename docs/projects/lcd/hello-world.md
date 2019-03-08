@@ -9,7 +9,7 @@ See [this guide](https://learn.adafruit.com/experimenters-guide-for-metro/circ14
 ## ~
 
 ```blocks
-lcd.showString("Hello world")
+lcd.showString("Hello world", 1)
 ```
 
 ```package
