@@ -30,7 +30,9 @@
         "Accelerometer": "/projects/accelerometer",
         "Serial": "/projects/serial",
         "Storage": "/projects/storage",
+        "LCD": "/projects/lcd",
         "LoRa": "/projects/lora",
+        "Power": "/projects/power",
         "JacDac (PROTOTYPE)": "/projects/jacdac",
         "Boards": "/boards"
     },

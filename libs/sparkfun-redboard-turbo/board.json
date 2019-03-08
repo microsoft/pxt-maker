@@ -333,7 +333,13 @@
     "D3": "D3",
     "LED": "LED",
     "TXLED": "TXLED",
-    "RXLED": "RXLED"
+    "RXLED": "RXLED",
+    "LCD_RESET": "D7",
+    "LCD_ENABLE": "D8",
+    "LCD_DATALINE4": "D9",
+    "LCD_DATALINE5": "D10",
+    "LCD_DATALINE6": "D11",
+    "LCD_DATALINE7": "D12"
   },
   "groundPins": [
     "GND2",

@@ -33,6 +33,7 @@
         "jacdac",
         "pixel",
         "light",
-        "accelerometer"
+        "accelerometer",
+        "lcd"
     ]
 }

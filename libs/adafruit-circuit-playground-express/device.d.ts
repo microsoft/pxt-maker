@@ -103,6 +103,56 @@ declare namespace input {
     const touchA7: TouchButton;
 
     /**
+     * Capacitive pin A1
+     */
+    //% block="pin A1" fixedInstance shim=pxt::getTouchButton(PIN_A1)
+    //% blockHidden=1 deprecated=1
+    const pinA1: TouchButton;
+
+    /**
+     * Capacitive pin A2
+     */
+    //% block="pin A2" fixedInstance shim=pxt::getTouchButton(PIN_A2)
+    //% blockHidden=1 deprecated=1
+    const pinA2: TouchButton;
+
+    /**
+     * Capacitive pin A3
+     */
+    //% block="pin A3" fixedInstance shim=pxt::getTouchButton(PIN_A3)
+    //% blockHidden=1 deprecated=1
+    const pinA3: TouchButton;
+
+    /**
+     * Capacitive pin A4
+     */
+    //% block="pin A4" fixedInstance shim=pxt::getTouchButton(PIN_A4)
+    //% blockHidden=1 deprecated=1
+    const pinA4: TouchButton;
+
+    /**
+     * Capacitive pin A5
+     */
+    //% block="pin A5" fixedInstance shim=pxt::getTouchButton(PIN_A5)
+    //% blockHidden=1 deprecated=1
+    const pinA5: TouchButton;
+
+    /**
+     * Capacitive pin A6
+     */
+    //% block="pin A6" fixedInstance shim=pxt::getTouchButton(PIN_A6)
+    //% blockHidden=1 deprecated=1
+    const pinA6: TouchButton;
+
+    /**
+     * Capacitive pin A7
+     */
+    //% block="pin A7" fixedInstance shim=pxt::getTouchButton(PIN_A7)
+    //% blockHidden=1 deprecated=1
+    const pinA7: TouchButton;
+
+
+    /**
      * Button connecting A0 to GND.
      */
     //% block="button A0" fixedInstance

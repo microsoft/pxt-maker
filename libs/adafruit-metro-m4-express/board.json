@@ -364,7 +364,13 @@
     "DISPLAY_MOSI": "MOSI",
     "DISPLAY_DC": "A5",
     "DISPLAY_RST": "A4",
-    "DISPLAY_MISO": "MISO"
+    "DISPLAY_MISO": "MISO",
+    "LCD_RESET": "D7",
+    "LCD_ENABLE": "D8",
+    "LCD_DATALINE4": "D9",
+    "LCD_DATALINE5": "D10",
+    "LCD_DATALINE6": "D11",
+    "LCD_DATALINE7": "D12"
   },
   "groundPins": [
     "GND2",
