@@ -42,6 +42,7 @@
         "serial",
         "jacdac",
         "music",
-        "accelerometer"
+        "accelerometer",
+        "lcd"
     ]
 }

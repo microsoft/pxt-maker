@@ -44,6 +44,13 @@ namespace config {
 
     export const PIN_JACK_TX = PIN_TX;
     export const PIN_JACK_COMMLED = PIN_TXLED;
+
+    export const PIN_LCD_RESET = PIN_D7;
+    export const PIN_LCD_ENABLE = PIN_D8;
+    export const PIN_LCD_DATALINE4 = PIN_D9;
+    export const PIN_LCD_DATALINE5 = PIN_D10;
+    export const PIN_LCD_DATALINE6 = PIN_D11;
+    export const PIN_LCD_DATALINE7 = PIN_D12;
 }
 
 /*

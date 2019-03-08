@@ -42,6 +42,7 @@
         "screen",
         "jacdac",
         "music",
-        "accelerometer"
+        "accelerometer",
+        "lcd"
     ]
 }
