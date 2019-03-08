@@ -378,6 +378,10 @@
                 "path": "/about"
             },
             {
+                "name": "Forum",
+                "path": "https://forum.makecode.com"
+            },
+            {
                 "name": "Boards",
                 "path": "/boards"
             },
