@@ -55,6 +55,10 @@
         "url": "/projects/storage"
     },
     {
+        "name": "LCD",
+        "url": "/projects/lcd"
+    },
+    {
         "name": "LoRa",
         "url": "/projects/lora"
     },
@@ -87,6 +91,7 @@
 [Accelerometer](/projects/accelerometer),
 [Serial](/projects/serial),
 [Storage](/projects/storage),
+[LCD](/projects/lcd),
 [LoRa](/projects/lora),
 [Power](/projects/power),
 [JacDac (PROTOTYPE)](/projects/jacdac),

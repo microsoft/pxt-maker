@@ -39,6 +39,8 @@
 * [Storage](/projects/storage)
   * [write file](/projects/storage/write-file)
   * [data logging](/projects/storage/data-logger)
+* [LCD](/projects/lcd)
+  * [Hello World](/projects/lcd/hello-world)
 * [LoRa](/projects/lora)
   * [Sender](/projects/lora/sender)
   * [Receiver](/projects/lora/receiver)

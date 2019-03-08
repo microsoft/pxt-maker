@@ -44,6 +44,7 @@
         "libs/microphone",
         "libs/lora",
         "libs/power",
+        "libs/lcd",
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-m4-express",
         "libs/adafruit-feather-bluefruit-nrf52",

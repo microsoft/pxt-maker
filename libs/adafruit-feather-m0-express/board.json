@@ -259,7 +259,7 @@
       "DISPLAY_MOSI": "MOSI",
       "DISPLAY_DC": "A5",
       "DISPLAY_RST": "A4",
-      "DISPLAY_MISO": "MISO"  
+      "DISPLAY_MISO": "MISO"
     },
     "groundPins": [
       "GND"
