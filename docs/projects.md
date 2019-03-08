@@ -56,7 +56,8 @@
     },
     {
         "name": "LCD",
-        "url": "/projects/lcd"
+        "url": "/projects/lcd",
+        "imageUrl": "/static/projects/lcd/hello-world/gallery.gif"
     },
     {
         "name": "LoRa",
