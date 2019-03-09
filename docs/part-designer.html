@@ -181,6 +181,8 @@
                 targetid = "ground";
             else if (/^(\+?(3V))|VCC/.test(targetid))
                 targetid = "threeVolt";
+            else if (/^(\+?(5V))/.test(targetid))
+                targetid = "fiveVolt";
             partjson.pinDefinitions.push({ "target": targetid, "style": "male", "orientation": "-Z" })
             partjson.assembly[0].pinIndices.push(partjson.numberOfPins);
             partjson.numberOfPins++;
@@ -203,9 +205,7 @@
                 },
                 "numberOfPins": 0,
                 "instantiation": {
-                    "kind": "function",
-                    "fullyQualifiedName": "FUNCTION_NAMES",
-                    "argumentRoles": []
+                    "kind": "singleton"
                 },
                 "pinDefinitions": [
                 ],

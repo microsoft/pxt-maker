@@ -6,20 +6,24 @@
     <title>MakeCode Maker - Board Designer</title>
     <!-- @include head.html -->
     <style>
-        #svg, #svg svg {
-            width:100%;
-            height:100%;
+        #svg,
+        #svg svg {
+            width: 100%;
+            height: 100%;
         }
+
         #svg svg circle:hover,
         #svg svg rect:hover {
             stroke: grey !important;
         }
+
         #svg svg .selected {
             stroke: yellow !important;
         }
+
         textarea {
-            width:100%;
-            height:18rem;
+            width: 100%;
+            height: 18rem;
             font-family: monospace;
             font-size: small;
         }
@@ -359,8 +363,10 @@
             }
             else if (/GND/.test(id) && boardjson.groundPins.indexOf(id) < 0)
                 boardjson.groundPins.push(id);
-            else if (/(\+3V3|3V|VCC|VOUT|VDD)/.test(id) && boardjson.threeVoltPins.indexOf(id) < 0)
+            else if (/(\+?3V3|3V|VCC|VOUT|VDD)/.test(id) && boardjson.threeVoltPins.indexOf(id) < 0)
                 boardjson.threeVoltPins.push(id);
+            else if (/(\+?5V)/.test(id) && boardjson.fiveVoltPins.indexOf(id) < 0)
+                boardjson.fiveVoltPins.push(id);
             else if (/(BUTTON|BTN_[AB])/.test(id)) {
                 boardjson.visual.buttons.push({
                     x: rect.x,
@@ -450,6 +456,7 @@
                 gpioPinMap: {},
                 groundPins: [],
                 threeVoltPins: [],
+                fiveVoltPins: [],
                 i2cPins: {
                     "SDA": "SDA",
                     "SCL": "SCL"

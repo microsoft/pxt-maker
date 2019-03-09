@@ -37,7 +37,6 @@
         "light",
         "jacdac",
         "music",
-        "accelerometer",
-        "lcd"
+        "accelerometer"
     ]
 }
