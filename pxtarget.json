@@ -47,6 +47,7 @@
         "libs/lora",
         "libs/power",
         "libs/lcd",
+        "libs/bluepill",
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-m4-express",
         "libs/adafruit-feather-bluefruit-nrf52",
@@ -69,8 +70,7 @@
         "libs/sparkfun-lumidrive",
         "libs/stitchkit",
         "libs/teknikio-bluebird",
-        "libs/bead-motion",
-        "libs/bluepill"
+        "libs/bead-motion"
     ],
     "serial": {
         "useHF2": true,
