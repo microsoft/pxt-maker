@@ -17,7 +17,7 @@
    height="317.66779"
    viewBox="0 0 427.08999 317.66782"
    gorn="0"
-   sodipodi:docname="board.svg"
+   sodipodi:docname="boardhd.svg"
    inkscape:version="0.92.1 r15371">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -39,9 +39,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="8.3899062"
-     inkscape:cx="405.30554"
-     inkscape:cy="161.75995"
+     inkscape:zoom="2.9662798"
+     inkscape:cx="136.9078"
+     inkscape:cy="234.01629"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -4380,10 +4380,10 @@
      gorn="0.280.0.0.0.0.0.0.0.0.1"
      style="fill:#1e1e1e;stroke-width:2.10098314"
      r="8.9333801"
-     id="RESET"
+     id="RESETBTN"
      cx="-56.475933"
      transform="scale(-1)"
-     inkscape:label="RESET" />
+     inkscape:label="" />
   <rect
      gorn="0.280.0.0.0.0.0.0.0.0.2"
      style="fill:#b4b4b4;stroke-width:2.10098314"
