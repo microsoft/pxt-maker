@@ -1,7 +1,7 @@
 {
     "additionalFilePath": "../../node_modules/pxt-common-packages/libs/accelerometer",
     "yotta": {
-        "config": {
+        "optionalConfig": {
             "PXT_SUPPORT_LIS3DH": 1
         },
         "userConfigs": [
