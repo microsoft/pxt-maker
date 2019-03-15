@@ -33,6 +33,4 @@ namespace config {
     export const PIN_JACK_TX = PIN_TX;
 
     export const PIN_ACCELEROMETER_INT = PIN_D1;
-    export const PIN_ACCELEROMETER_SCL = PIN_D2;
-    export const PIN_ACCELEROMETER_SDA = PIN_D0;
 }

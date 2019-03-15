@@ -37,6 +37,8 @@ namespace config {
     export const PIN_FLASH_SCK = DAL.PB10; // QSPI_SCK
     export const PIN_FLASH_CS = DAL.PB11; // QSPI_CS
 
+    export const PIN_ACCELEROMETER_INT = PIN_D5;
+
     export const PIN_JACK_TX = PIN_TX; // A4
     export const PIN_JACK_COMMLED = PIN_LED; // LED
 

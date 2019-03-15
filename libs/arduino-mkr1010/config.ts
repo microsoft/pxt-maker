@@ -45,6 +45,8 @@ namespace config {
     export const PIN_JACK_TX = PIN_TX;
     export const PIN_JACK_COMMLED = PIN_LED;
 
+    export const PIN_ACCELEROMETER_INT = PIN_D2;
+
     export const PIN_LCD_RESET = PIN_D7;
     export const PIN_LCD_ENABLE = PIN_D8;
     export const PIN_LCD_DATALINE4 = PIN_D9;

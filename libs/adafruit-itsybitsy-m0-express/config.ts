@@ -24,7 +24,6 @@ namespace config {
     export const PIN_D6 = DAL.PA20;
     export const PIN_D7 = DAL.PA21;
 
-
     export const PIN_A5 = DAL.PB02;
     export const PIN_A1 = DAL.PB08;
     export const PIN_A2 = DAL.PB09;
@@ -35,6 +34,8 @@ namespace config {
 
     export const PIN_SDA = DAL.PA22;
     export const PIN_SCL = DAL.PA23;
+
+    export const PIN_ACCELEROMETER_INT = PIN_D2;
 
     export const PIN_FLASH_CS = DAL.PA27;
     export const PIN_FLASH_MISO = DAL.PB03;

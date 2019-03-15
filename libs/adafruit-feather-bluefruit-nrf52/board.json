@@ -263,7 +263,8 @@
       "SDA": "SDA",
       "LED": "LED",
       "NEOPIXEL": "NEOPIXEL",
-      "RESETBTN": "RESETBTN"
+      "RESETBTN": "RESETBTN",
+      "ACCELEROMETER_INT": "D5"
     },
     "groundPins": [
       "GND2",
