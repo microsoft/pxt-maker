@@ -77,7 +77,8 @@
         "LCD_DATALINE4": "D9",
         "LCD_DATALINE5": "D10",
         "LCD_DATALINE6": "D11",
-        "LCD_DATALINE7": "D12"    
+        "LCD_DATALINE7": "D12",
+        "ACCELEROMETER_INT": "D2"
     },
     "groundPins": ["GND1", "GND0", "GND2"],
     "threeVoltPins": ["3.3V"],

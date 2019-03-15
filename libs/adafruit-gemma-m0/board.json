@@ -118,7 +118,8 @@
     "D1_A0": "D1_A0",
     "D1": "D1_A0",
     "A0": "D1_A0",
-    "GND": "GND"
+    "GND": "GND",
+    "ACCELEROMETER_INT": "D1"
   },
   "groundPins": [
     "GND"

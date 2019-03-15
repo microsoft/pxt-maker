@@ -142,7 +142,8 @@
     "SDA": "A2_D0_SDA",
     "LED": "LED",
     "RESET": "RESET",
-    "NEOPIXEL": "NEOPIXEL"
+    "NEOPIXEL": "NEOPIXEL",
+    "ACCELEROMETER_INT": "D1"
   },
   "groundPins": [
     "GND"
