@@ -14,7 +14,8 @@
     "dependencies": {
         "core---nrf52832": "file:../core---nrf52832",
         "light": "file:../light",
-        "buttons": "file:../buttons"
+        "buttons": "file:../buttons",
+        "accelerometer": "file:../accelerometer"
     },
     "public": true,
     "dalDTS": {
