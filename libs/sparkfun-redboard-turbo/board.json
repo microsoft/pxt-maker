@@ -346,7 +346,7 @@
     "LCD_DATALINE5": "D10",
     "LCD_DATALINE6": "D11",
     "LCD_DATALINE7": "D12",
-    "ACCELEROMTER_INT": "D2"
+    "ACCELEROMETER_INT": "D2"
   },
   "groundPins": [
     "GND2",
