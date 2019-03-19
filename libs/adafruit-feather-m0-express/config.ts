@@ -39,6 +39,8 @@ namespace config {
     export const PIN_FLASH_SCK = DAL.PA09;
     export const PIN_FLASH_CS = DAL.PA13;
 
+    export const PIN_ACCELEROMETER_INT = PIN_D5;
+
     export const PIN_JACK_TX = PIN_TX;
     export const PIN_JACK_COMMLED = PIN_TXLED;
 

@@ -39,6 +39,12 @@ CONSTRUCTION ZONE: JACDAC is still under development and subject to change. Your
         "url": "/projects/jacdac/controller-button",
         "description": "Bind a push button to a JACDAC controller button",
         "cardType": "example"
+    },
+    {
+        "name": "LCD screen",
+        "url": "/projects/jacdac/lcd-screen",
+        "description": "Display a message on a LCD screen",
+        "cardType": "example"
     }
 ]
 ```

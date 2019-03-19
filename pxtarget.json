@@ -8,12 +8,16 @@
     "corepkg": "core",
     "bundleddirs": [
         "libs/base",
+        "libs/base---light",
         "libs/core",
+        "libs/core---stm32",
         "libs/core---nrf52832",
         "libs/core---nrf52840",
         "libs/core---samd",
         "libs/core---samd51",
         "libs/screen---st7735",
+        "libs/pulse",
+        "libs/infrared",
         "libs/game",
         "libs/mixer",
         "libs/mixer---none",
@@ -42,6 +46,8 @@
         "libs/microphone",
         "libs/lora",
         "libs/power",
+        "libs/lcd",
+        "libs/bluepill",
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-m4-express",
         "libs/adafruit-feather-bluefruit-nrf52",
@@ -61,6 +67,7 @@
         "libs/sparkfun-samd21-dev-breakout",
         "libs/sparkfun-samd21-mini-breakout",
         "libs/sparkfun-redboard-turbo",
+        "libs/sparkfun-lumidrive",
         "libs/stitchkit",
         "libs/teknikio-bluebird",
         "libs/bead-motion",
@@ -110,8 +117,7 @@
         "functionBlocks": true,
         "functionsOptions": {
             "useNewFunctions": true,
-            "extraFunctionEditorTypes": [
-            ]
+            "extraFunctionEditorTypes": []
         },
         "onStartNamespace": "loops",
         "onStartColor": "#40bf4a",
@@ -135,14 +141,12 @@
         "flashCodeAlign": 256,
         "upgrades": [],
         "patches": {
-            "0.0.0 - 0.6.8": [
-                {
-                    "type": "package",
-                    "map": {
-                        "arduino-mkr": "arduino-mkr1000"
-                    }
+            "0.0.0 - 0.6.8": [{
+                "type": "package",
+                "map": {
+                    "arduino-mkr": "arduino-mkr1000"
                 }
-            ]
+            }]
         }
     },
     "compileService": {
@@ -153,7 +157,7 @@
             "branch": "v1.5.6",
             "type": "git",
             "branches": {
-                "https://github.com/lancaster-university/codal-core": "afb5833391bbc0732010b2d61d33539d5b99c575"
+                "https://github.com/lancaster-university/codal-core": "cf86bdc8cbd5b16f065846335cd0a693a8948b23"
             }
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
@@ -258,68 +262,45 @@
                 }
             }
         },
-        "f103re": {
-            "serial": {
-                "useHF2": false
-            },
+        "stm32f103": {
             "compile": {
-                "openocdScript": "source [find board/st_nucleo_f103rb.cfg]",
-                "flashChecksumAddr": 0,
-                "deployFileMarker": "INFO_UF2.TXT",
-                "vtableShift": 4,
+                "hasHex": true,
+                "openocdScript": "source [find interface/stlink-v2.cfg]; source [find target/stm32f1x.cfg]",
+                "uf2Family": "0x5ee21072",
                 "webUSB": false,
-                "gc": true,
-                "uf2Family": "0x5ee21072"
+                "flashChecksumAddr": 0,
+                "vtableShift": 4,
+                "utf8": true
             },
             "compileService": {
                 "codalTarget": {
-                    "name": "codal-generic-f103re",
-                    "url": "https://github.com/mmoskal/codal-generic-f103re",
-                    "branch": "v0.0.3",
+                    "name": "codal-bluepill",
+                    "url": "https://github.com/mmoskal/codal-bluepill",
+                    "branch": "v1.1.0",
                     "type": "git"
                 },
-                "codalBinary": "GENERIC_F103RE",
-                "serviceId": "codal2f103re",
-                "dockerImage": "pext/yotta:latest",
-                "yottaConfig": {
-                    "pxt": {
-                        "board": {
-                            "id": "BOARD_ID_F103RE"
-                        }
-                    }
-                }
+                "codalBinary": "STM32",
+                "serviceId": "codal2stm32",
+                "dockerImage": "pext/yotta:latest"
             }
         },
-        "stm32f401re": {
-            "serial": {
-                "useHF2": false
-            },
+        "stm32f401": {
             "compile": {
+                "hasHex": true,
                 "openocdScript": "source [find interface/stlink-v2.cfg]; source [find target/stm32f4x.cfg]",
-                "flashChecksumAddr": 0,
-                "deployFileMarker": "INFO_UF2.TXT",
-                "vtableShift": 4,
-                "webUSB": false,
-                "gc": true,
-                "uf2Family": "0x57755a57"
+                "uf2Family": "0x57755a57",
+                "vtableShift": 4
             },
             "compileService": {
                 "codalTarget": {
                     "name": "codal-big-brainpad",
                     "url": "https://github.com/lancaster-university/codal-big-brainpad",
-                    "branch": "v1.0.18",
+                    "branch": "v1.0.21",
                     "type": "git"
                 },
                 "codalBinary": "STM32",
                 "serviceId": "codal2stm32",
-                "dockerImage": "pext/yotta:latest",
-                "yottaConfig": {
-                    "pxt": {
-                        "board": {
-                            "id": "BOARD_ID_STM32F401RE"
-                        }
-                    }
-                }
+                "dockerImage": "pext/yotta:latest"
             }
         },
         "samd21": {
@@ -335,7 +316,7 @@
                 "codalTarget": {
                     "name": "codal-circuit-playground",
                     "url": "https://github.com/lancaster-university/codal-circuit-playground",
-                    "branch": "v1.5.4-samd-peripherals.8",
+                    "branch": "v1.5.4-samd-peripherals.10",
                     "type": "git"
                 },
                 "dockerImage": "pext/yotta:latest",
@@ -369,10 +350,13 @@
         "chooseBoardOnNewProject": true,
         "lightToc": true,
         "instructions": true,
-        "docMenu": [
-            {
+        "docMenu": [{
                 "name": "About",
                 "path": "/about"
+            },
+            {
+                "name": "Forum",
+                "path": "https://forum.makecode.com"
             },
             {
                 "name": "Boards",
@@ -428,7 +412,8 @@
         "extendEditor": true,
         "crowdinProject": "kindscript",
         "scriptManager": true,
-        "simScreenshot": true
+        "simScreenshot": true,
+        "simGif": true
     },
     "ignoreDocsErrors": true
 }

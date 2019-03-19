@@ -2,6 +2,12 @@
 declare namespace pins {
 
     /**
+     * Get a pin by configuration id (DAL.CFG_PIN...)
+     */
+    //% shim=pins::pinByCfg
+    function pinByCfg(key: int32): DigitalInOutPin;
+
+    /**
      * Create a new zero-initialized buffer.
      * @param size number of bytes in the buffer
      */
@@ -47,12 +53,13 @@ declare interface AnalogOutPin {
     //% parts="analogled" trackArgs=0
     //% name.fieldEditor="gridpicker"
     //% name.fieldOptions.width=220
-    //% name.fieldOptions.columns=4 shim=AnalogOutPinMethods::analogWrite
+    //% name.fieldOptions.columns=4
+    //% value.min=0 value.max=1023 shim=AnalogOutPinMethods::analogWrite
     analogWrite(value: int32): void;
 }
 
 
-declare interface DigitalPin {
+declare interface DigitalInOutPin {
     /**
      * Read a pin or connector as either 0 or 1
      * @param name pin to read from
@@ -63,7 +70,7 @@ declare interface DigitalPin {
     //% blockNamespace=pins
     //% name.fieldEditor="gridpicker"
     //% name.fieldOptions.width=220
-    //% name.fieldOptions.columns=4 shim=DigitalPinMethods::digitalRead
+    //% name.fieldOptions.columns=4 shim=DigitalInOutPinMethods::digitalRead
     digitalRead(): boolean;
 
     /**
@@ -77,7 +84,7 @@ declare interface DigitalPin {
     //% blockNamespace=pins
     //% name.fieldEditor="gridpicker"
     //% name.fieldOptions.width=220
-    //% name.fieldOptions.columns=4 shim=DigitalPinMethods::digitalWrite
+    //% name.fieldOptions.columns=4 shim=DigitalInOutPinMethods::digitalWrite
     digitalWrite(value: boolean): void;
 
     /**
@@ -91,7 +98,7 @@ declare interface DigitalPin {
     //% pin.fieldOptions.width=220
     //% pin.fieldOptions.columns=4
     //% parts="slideswitch" trackArgs=0
-    //% deprecated=1 hidden=1 shim=DigitalPinMethods::onPulsed
+    //% deprecated=1 hidden=1 shim=DigitalInOutPinMethods::onPulsed
     onPulsed(pulse: PulseValue, body: () => void): void;
 
     /**
@@ -103,7 +110,7 @@ declare interface DigitalPin {
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.width=220
     //% pin.fieldOptions.columns=4
-    //% parts="slideswitch" trackArgs=0 shim=DigitalPinMethods::onEvent
+    //% parts="slideswitch" trackArgs=0 shim=DigitalInOutPinMethods::onEvent
     onEvent(event: PinEvent, body: () => void): void;
 
     /**
@@ -118,7 +125,7 @@ declare interface DigitalPin {
     //% blockNamespace=pins
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.width=220
-    //% pin.fieldOptions.columns=4 maxDuration.defl=2000000 shim=DigitalPinMethods::pulseIn
+    //% pin.fieldOptions.columns=4 maxDuration.defl=2000000 shim=DigitalInOutPinMethods::pulseIn
     pulseIn(value: PulseValue, maxDuration?: int32): int32;
 
     /**
@@ -131,7 +138,7 @@ declare interface DigitalPin {
     //% blockNamespace=pins
     //% name.fieldEditor="gridpicker"
     //% name.fieldOptions.width=220
-    //% name.fieldOptions.columns=4 shim=DigitalPinMethods::setPull
+    //% name.fieldOptions.columns=4 shim=DigitalInOutPinMethods::setPull
     setPull(pull: PinPullMode): void;
 }
 
@@ -162,16 +169,17 @@ declare interface PwmOnlyPin {
      * rotation servo, this will set the speed of the servo (with ``0`` being full-speed in one
      * direction, ``180`` being full speed in the other, and a value near ``90`` being no movement).
      * @param name pin to write to
-     * @param value angle or rotation speed, eg:180,90,0
+     * @param value angle or rotation speed
      */
     //% help=pins/servo-write weight=41 group="Servo"
-    //% blockId=device_set_servo_pin block="servo write|pin %name|to %value" blockGap=8
+    //% blockId=device_set_servo_pin block="servo write|pin %name|to %value=protractorPicker" blockGap=8
     //% parts=microservo trackArgs=0
     //% blockNamespace=pins
     //% name.fieldEditor="gridpicker"
     //% name.fieldOptions.width=220
-    //% name.fieldOptions.columns=4 shim=PwmOnlyPinMethods::servoWrite
-    servoWrite(value: int32): void;
+    //% name.fieldOptions.columns=4
+    //% value.defl=90 shim=PwmOnlyPinMethods::servoWrite
+    servoWrite(value?: int32): void;
 
     /**
      * Set the pin for PWM analog output, make the period be 20 ms, and set the pulse width.
@@ -220,52 +228,77 @@ declare namespace control {
     //% shim=control::dmesgPtr
     function dmesgPtr(str: string, ptr: Object): void;
 }
-declare namespace pins {
 
+
+declare interface I2C {
     /**
      * Read `size` bytes from a 7-bit I2C `address`.
      */
-    //% repeat.defl=0 shim=pins::i2cReadBuffer
-    function i2cReadBuffer(address: int32, size: int32, repeat?: boolean): Buffer;
+    //% repeat.defl=0 shim=I2CMethods::readBuffer
+    readBuffer(address: int32, size: int32, repeat?: boolean): Buffer;
 
     /**
      * Write bytes to a 7-bit I2C `address`.
      */
-    //% repeat.defl=0 shim=pins::i2cWriteBuffer
-    function i2cWriteBuffer(address: int32, buf: Buffer, repeat?: boolean): int32;
+    //% repeat.defl=0 shim=I2CMethods::writeBuffer
+    writeBuffer(address: int32, buf: Buffer, repeat?: boolean): int32;
 }
 declare namespace pins {
 
     /**
-     * Write to the SPI slave and return the response
-     * @param value Data to be sent to the SPI slave
+     * Opens a Serial communication driver
      */
-    //% help=pins/spi-write weight=5 advanced=true
-    //% blockId=spi_write block="spi write %value" shim=pins::spiWrite
-    function spiWrite(value: int32): int32;
+    //% help=pins/create-i2c
+    //% parts=i2c shim=pins::createI2C
+    function createI2C(sda: DigitalInOutPin, scl: DigitalInOutPin): I2C;
+}
+declare namespace pins {
 
     /**
-     * Writes a given command to SPI bus, and afterwards reads the response.
+     * Opens a SPI driver
      */
-    //% help=pins/spi-transfer weight=4 advanced=true
-    //% blockId=spi_transfer block="spi transfer %command into %response" shim=pins::spiTransfer
-    function spiTransfer(command: Buffer, response: Buffer): void;
+    //% help=pins/create-spi
+    //% parts=spi shim=pins::createSPI
+    function createSPI(mosiPin: DigitalInOutPin, misoPin: DigitalInOutPin, sckPin: DigitalInOutPin): SPI;
+}
+
+
+declare interface SPI {
+    /**
+     * Write to the SPI bus
+     */
+    //% shim=SPIMethods::write
+    write(value: int32): int32;
 
     /**
-     * Sets the SPI frequency
-     * @param frequency the clock frequency, eg: 1000000
+     * Transfer buffers over the SPI bus
      */
-    //% help=pins/spi-frequency weight=4 advanced=true
-    //% blockId=spi_frequency block="spi frequency %frequency" shim=pins::spiFrequency
-    function spiFrequency(frequency: int32): void;
+    //% shim=SPIMethods::transfer
+    transfer(command: Buffer, response: Buffer): void;
 
     /**
-     * Sets the SPI mode and bits
-     * @param mode the mode, eg: 3
+     * Sets the SPI clock frequency
      */
-    //% help=pins/spi-mode weight=3 advanced=true
-    //% blockId=spi_mode block="spi mode %mode" shim=pins::spiMode
-    function spiMode(mode: int32): void;
+    //% shim=SPIMethods::setFrequency
+    setFrequency(frequency: int32): void;
+
+    /**
+     * Sets the SPI bus mode
+     */
+    //% shim=SPIMethods::setMode
+    setMode(mode: int32): void;
+}
+declare namespace light {
+
+    /**
+     * Send a programmable light buffer to the specified digital pin
+     * @param data The pin that the light are connected to
+     * @param clk the clock line if nay
+     * @param mode the color encoding mode
+     * @param buf The buffer to send to the pin
+     */
+    //% shim=light::sendBuffer
+    function sendBuffer(data: DigitalInOutPin, clk: DigitalInOutPin, mode: int32, buf: Buffer): void;
 }
 
 // Auto-generated. Do not edit. Really.

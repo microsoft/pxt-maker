@@ -55,8 +55,17 @@
         "url": "/projects/storage"
     },
     {
+        "name": "LCD",
+        "url": "/projects/lcd",
+        "imageUrl": "/static/projects/lcd/hello-world/gallery.gif"
+    },
+    {
         "name": "LoRa",
         "url": "/projects/lora"
+    },
+    {
+        "name": "Power",
+        "url": "/projects/power"
     },
     {
         "name": "JacDac (PROTOTYPE)",
@@ -83,7 +92,9 @@
 [Accelerometer](/projects/accelerometer),
 [Serial](/projects/serial),
 [Storage](/projects/storage),
+[LCD](/projects/lcd),
 [LoRa](/projects/lora),
+[Power](/projects/power),
 [JacDac (PROTOTYPE)](/projects/jacdac),
 [Boards](/boards)
 

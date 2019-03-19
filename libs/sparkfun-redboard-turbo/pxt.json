@@ -48,7 +48,8 @@
         "storage",
         "music",
         "light",
-        "accelerometer"
+        "accelerometer",
+        "lcd"
     ],
     "public": true
 }

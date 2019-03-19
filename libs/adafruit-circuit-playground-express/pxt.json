@@ -22,10 +22,22 @@
         "thermometer": "file:../thermometer",
         "microphone": "file:../microphone",
         "serial": "file:../serial",
+        "pulse": "file:../pulse",
+        "infrared": "file:../infrared",
         "jacdac": "file:../jacdac",
         "storage": "file:../storage"
     },
     "compileServiceVariant": "samd21",
+    "yotta": {
+        "config": {
+            "PXT_SUPPORT_LIS3DH": 1,
+            "PXT_SUPPORT_MMA8653": 0,
+            "PXT_SUPPORT_MMA8453": 0,
+            "PXT_SUPPORT_FXOS8700": 0,
+            "PXT_SUPPORT_MSA300": 0,
+            "PXT_SUPPORT_MPU6050": 0
+        }
+    },
     "core": true,
     "public": true,
     "features": [
@@ -43,6 +55,7 @@
         "light",
         "storage",
         "music",
-        "accelerometer"
+        "accelerometer",
+        "ir"
     ]
 }

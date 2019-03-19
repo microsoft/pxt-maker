@@ -1,0 +1,8 @@
+{
+    "additionalFilePath": "../base",
+    "yotta": {
+        "config": {
+            "PXT_POWI": 1
+        }
+    }
+}
