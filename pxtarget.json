@@ -47,11 +47,11 @@
         "libs/lora",
         "libs/power",
         "libs/lcd",
-        "libs/bluepill",
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-m4-express",
         "libs/adafruit-feather-bluefruit-nrf52",
         "libs/redbear-ble-nano",
+        "libs/bluepill",
         "libs/adafruit-circuit-playground-express",
         "libs/adafruit-trinket-m0",
         "libs/adafruit-metro-m0-express",
@@ -156,7 +156,7 @@
             "branch": "v1.5.6",
             "type": "git",
             "branches": {
-                "https://github.com/lancaster-university/codal-core": "cf86bdc8cbd5b16f065846335cd0a693a8948b23"
+                "https://github.com/lancaster-university/codal-core": "dbf2121bdde4131f2aedd23e93811858c6f05b23"
             }
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
