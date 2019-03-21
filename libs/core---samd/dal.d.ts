@@ -806,6 +806,7 @@ declare const enum DAL {
     CFG_PIN_BATTSENSE = 75,
     CFG_PIN_VIBRATION = 76,
     CFG_PIN_PWREN = 77,
+    CFG_PIN_DMX_OUT = 78,
     ACCELEROMETER_TYPE_LIS3DH = 50,
     ACCELEROMETER_TYPE_MMA8453 = 56,
     ACCELEROMETER_TYPE_FXOS8700 = 60,
@@ -1076,25 +1077,12 @@ declare const enum DAL {
     PB29 = 61,
     PB30 = 62,
     PB31 = 63,
-    // /pxtapp/pulse/pulse.h
-    PULSE_MAX_MSG_SIZE = 34,
-    PULSE_PACKET_END_EVENT = 1,
-    PULSE_PACKET_EVENT = 2,
-    PULSE_PACKET_ERROR_EVENT = 3,
-    PULSE_PULSE_LEN = 250,
-    PULSE_IR_COMPONENT_ID = 8258,
-    PULSE_CABLE_COMPONENT_ID = 8259,
-    PULSE_DEBUG = 0,
-    PULSE_RECV_ERROR = 0,
-    PULSE_WAIT_START_GAP = 1,
-    PULSE_WAIT_DATA = 2,
     // /pxtapp/pxt.h
     DEVICE_ID_BUTTON_SLIDE = 3000,
     DEVICE_ID_MICROPHONE = 3001,
     DEVICE_ID_FIRST_BUTTON = 4000,
     DEVICE_ID_FIRST_TOUCHBUTTON = 4100,
     // /pxtapp/pxtbase.h
-    PXT_VTABLE_SHIFT = 2,
     PXT_REFCNT_FLASH = 65534,
     VTABLE_MAGIC = 249,
     Undefined = 0,
@@ -1133,6 +1121,8 @@ declare const enum DAL {
     // /pxtapp/pxtconfig.h
     PXT_GC = 1,
     PXT_UF2_FAMILY = 1760373640,
+    // /pxtapp/storage/SNORFS.h
+    DEVICE_FLASH_ERROR = 950,
     // /pxtapp/thermometer/target_temperature.h
     TEMPERATURE_NOMINAL_VALUE = 25,
     TEMPERATURE_NOMINAL_READING = 10000,
