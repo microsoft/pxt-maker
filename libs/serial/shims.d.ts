@@ -2,49 +2,66 @@
 declare namespace serial {
 
     /**
-     * Write some text to the serial port.
+     * Opens a Serial communication driver
      */
-    //% help=serial/write-string
-    //% weight=87
-    //% blockId=serial_writestring block="serial|write string %text"
-    //% blockHidden=1 shim=serial::writeString
-    function writeString(text: string): void;
+    //% shim=serial::internalCreateSerialDevice
+    function internalCreateSerialDevice(tx: DigitalInOutPin, rx: DigitalInOutPin, id: int32): SerialDevice;
+}
+
+
+declare interface SerialDevice {
+    /**
+     * Sets the size of the RX buffer in bytes
+     */
+    //% shim=SerialDeviceMethods::setRxBufferSize
+    setRxBufferSize(size: uint8): void;
 
     /**
-     * Send a buffer across the serial connection.
+     * Sets the size of the TX buffer in bytes
      */
-    //% help=serial/write-buffer weight=6
-    //% blockId=serial_writebuffer block="serial|write buffer %buffer" shim=serial::writeBuffer
-    function writeBuffer(buffer: Buffer): void;
-
-    /**
-    Sends the console message through the TX, RX pins
-     **/
-    //% blockId=serialsendtoconsole block="serial attach to console" shim=serial::attachToConsole
-    function attachToConsole(): void;
+    //% shim=SerialDeviceMethods::setTxBufferSize
+    setTxBufferSize(size: uint8): void;
 
     /**
     Set the baud rate of the serial port
      */
-    //% blockId=serialsetbaudrate block="serial set baud rate to %rate" shim=serial::setBaudRate
-    function setBaudRate(rate: BaudRate): void;
+    //% shim=SerialDeviceMethods::setBaudRate
+    setBaudRate(rate: BaudRate): void;
 
     /**
-     * Set the serial input and output to use pins instead of the USB connection.
-     * @param tx the new transmission pin, eg: SerialPin.P0
-     * @param rx the new reception pin, eg: SerialPin.P1
-     * @param rate the new baud rate. eg: 115200
+     * Reads a single byte from the serial receive buffer. Negative if error, 0 if no data.
      */
-    //% weight=10
-    //% help=serial/redirect
-    //% blockId=serial_redirect block="serial|redirect to|TX %tx|RX %rx|at baud rate %rate"
-    //% blockExternalInputs=1
-    //% tx.fieldEditor="gridpicker" tx.fieldOptions.columns=3
-    //% tx.fieldOptions.tooltips="false"
-    //% rx.fieldEditor="gridpicker" rx.fieldOptions.columns=3
-    //% rx.fieldOptions.tooltips="false"
-    //% blockGap=8 inlineInputMode=inline shim=serial::redirect
-    function redirect(tx: DigitalInOutPin, rx: DigitalInOutPin, rate: BaudRate): void;
+    //% shim=SerialDeviceMethods::read
+    read(): int32;
+
+    /**
+     * Read the buffered received data as a buffer
+     */
+    //% shim=SerialDeviceMethods::readBuffer
+    readBuffer(): Buffer;
+
+    /**
+     * Send a buffer across the serial connection.
+     */
+    //% shim=SerialDeviceMethods::writeBuffer
+    writeBuffer(buffer: Buffer): void;
+
+    /**
+     */
+    //% shim=SerialDeviceMethods::redirect
+    redirect(tx: DigitalInOutPin, rx: DigitalInOutPin, rate: BaudRate): void;
+
+    /**
+     * Register code when a serial event occurs
+     */
+    //% shim=SerialDeviceMethods::onEvent
+    onEvent(event: SerialEvent, handler: () => void): void;
+
+    /**
+     * Registers code when a delimiter is received
+     **/
+    //% shim=SerialDeviceMethods::onDelimiterReceived
+    onDelimiterReceived(delimiter: Delimiters, handler: () => void): void;
 }
 
 // Auto-generated. Do not edit. Really.

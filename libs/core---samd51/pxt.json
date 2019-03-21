@@ -1,0 +1,16 @@
+{
+    "additionalFilePath": "../core---samd",
+    "cppDependencies": {
+        "accelerometer": "file:../accelerometer",
+        "buttons": "file:../buttons",
+        "game": "file:../game",
+        "jacdac": "file:../jacdac",
+        "light": "file:../light",
+        "lightsensor": "file:../lightsensor",
+        "microphone": "file:../microphone",
+        "screen---st7735": "file:../screen---st7735",
+        "switch": "file:../switch",
+        "thermometer": "file:../thermometer",
+        "lcd": "file:../lcd"
+    }
+}

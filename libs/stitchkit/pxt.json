@@ -1,0 +1,35 @@
+{
+    "name": "stitchkit",
+    "description": "Support for StitchKit",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "core": true,
+    "dependencies": {
+        "core---samd": "file:../core---samd",
+        "buttons": "file:../buttons",
+        "touch": "file:../touch",
+        "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
+        "jacdac": "file:../jacdac"
+    },
+    "public": true,
+    "compileServiceVariant": "samd21",
+    "features": [
+        "uf2",
+        "i2c",
+        "pinled",
+        "pind0",
+        "pind1",
+        "buttond0",
+        "buttond1",
+        "jacdac",
+        "light",
+        "accelerometer"
+    ]
+}

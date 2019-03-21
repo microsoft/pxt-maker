@@ -27,3 +27,19 @@ namespace serial {
 namespace loops {
 
 }
+
+namespace servos {
+    /**
+     * A micro servo controlled from pin A6
+     */
+    //% fixedInstance whenUsed block="servo A6"
+    export const A6 = new servos.PinServo(pins.A6);
+}
+
+namespace jacdac {
+    /**
+     * A JACDAC service host for the servo
+     */
+    //% fixedInstance whenUsed block="servo service"
+    export const servoService = new jacdac.ServoService("servo", servos.A6);
+}

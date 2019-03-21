@@ -1,5 +1,9 @@
 # Boards
 
+This editor supports various maker boards, based on SAMD21, SAMD51, NRF52.
+
+## Current
+
 ```codecard
 [
     {
@@ -21,6 +25,11 @@
         "name": "Misc",
         "url": "/boards/misc",
         "imageUrl": "/static/libs/redbear-ble-nano.jpg"  
+    },
+    {
+        "name": "Add your board",
+        "url": "/boards/add-a-new-board",
+        "imageUrl": "/static/libs/bead-motion.jpg"
     }
 ]
 ```
@@ -30,4 +39,5 @@
 [Adafruit](/boards/adafruit),
 [Sparkfun](/boards/sparkfun),
 [Arduino](/boards/arduino),
-[Misc](/boards/misc)
+[Misc](/boards/misc),
+[Add a new board](/boards/add-a-new-board)

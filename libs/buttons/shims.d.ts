@@ -13,20 +13,19 @@ declare interface DigitalInOutPin {
 
     //% noRefCounting fixedInstances
 declare interface Button {
-    /**	
-     * Do something when a button (`A`, `B` or both `A` + `B`) is clicked, double clicked, etc...	
-     * @param button the button that needs to be clicked or used	
-     * @param event the kind of button gesture that needs to be detected	
-     * @param body code to run when the event is raised	
+    /**
+     * Do something when a button (`A`, `B` or both `A` + `B`) is clicked, double clicked, etc...
+     * @param button the button that needs to be clicked or used
+     * @param event the kind of button gesture that needs to be detected
+     * @param body code to run when the event is raised
      */
-    //% help=input/button/on-event	
-    //% blockId=buttonEvent block="on %button|%event"	
-    //% parts="buttons"	
-    //% blockNamespace=input	
-    //% button.fieldEditor="gridpicker"	
-    //% button.fieldOptions.width=220	
-    //% button.fieldOptions.columns=3	
-    //% weight=96 blockGap=12	
+    //% help=input/button/on-event
+    //% blockId=buttonEvent block="on %button|%event"
+    //% blockNamespace=input
+    //% button.fieldEditor="gridpicker"
+    //% button.fieldOptions.width=220
+    //% button.fieldOptions.columns=3
+    //% weight=96 blockGap=12
     //% trackArgs=0 shim=ButtonMethods::onEvent
     onEvent(ev: ButtonEvent, body: () => void): void;
 
@@ -37,7 +36,6 @@ declare interface Button {
     //% help=input/button/is-pressed
     //% block="%button|is pressed"
     //% blockId=buttonIsPressed
-    //% parts="buttons"
     //% blockNamespace=input
     //% button.fieldEditor="gridpicker"
     //% button.fieldOptions.width=220
@@ -53,7 +51,6 @@ declare interface Button {
     //% help=input/button/was-pressed
     //% block="%button|was pressed"
     //% blockId=buttonWasPressed
-    //% parts="buttons"
     //% blockNamespace=input
     //% button.fieldEditor="gridpicker"
     //% button.fieldOptions.width=220

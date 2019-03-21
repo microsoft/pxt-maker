@@ -1,3 +1,44 @@
 {
-    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/accelerometer"
+    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/accelerometer",
+    "yotta": {
+        "optionalConfig": {
+            "PXT_SUPPORT_LIS3DH": 1,
+            "PXT_SUPPORT_MMA8653": 1,
+            "PXT_SUPPORT_MMA8453": 1,
+            "PXT_SUPPORT_FXOS8700": 1,
+            "PXT_SUPPORT_MPU6050": 1
+        },
+        "userConfigs": [
+            {
+                "description": "Support for LIS3DH accelerometer.",
+                "config": {
+                    "PXT_SUPPORT_LIS3DH": 1
+                }
+            },
+            {
+                "description": "Support for MMA8653 accelerometer.",
+                "config": {
+                    "PXT_SUPPORT_MMA8653": 1
+                }
+            },
+            {
+                "description": "Support for MMA8453 accelerometer.",
+                "config": {
+                    "PXT_SUPPORT_MMA8453": 1
+                }
+            },
+            {
+                "description": "Support for FXOS8700 accelerometer.",
+                "config": {
+                    "PXT_SUPPORT_FXOS8700": 1
+                }
+            },
+            {
+                "description": "Support for MPU6050 accelerometer.",
+                "config": {
+                    "PXT_SUPPORT_MPU6050": 1
+                }
+            }
+        ]
+    }
 }

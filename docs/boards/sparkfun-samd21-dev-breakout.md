@@ -1,4 +1,4 @@
-# SparkFun SAM21 Dev Breakout
+# SparkFun SAMD21 Dev Breakout
 
 ```blocks
 forever(function() {

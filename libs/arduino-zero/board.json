@@ -1,7 +1,6 @@
 {
     "visual": {
         "image": "pkg://board.svg",
-        "outlineImage": "pkg://boardwireframe.svg",
         "width": 175,
         "height": 170,
         "pinDist": 6.25,
@@ -53,11 +52,14 @@
         "A1": "A1",
         "A2": "A2",
         "A3": "A3",
+        "JACK_TX": "TX/D1",
         "A4": "A4",
         "A5": "A5",
 
         "D0": "RX/D0",
         "D1": "TX/D1",
+        "TX": "TX/D1",
+        "RX": "RX/D0",
         "D2": "D2",
         "D3": "~D3",
         "D4": "~D4",
@@ -69,10 +71,26 @@
         "D10": "~D10",
         "D11": "~D11",
         "D12": "~D12",
-        "D13": "~D13"
+        "D13": "~D13",
+        "LCD_RESET": "D7",
+        "LCD_ENABLE": "D8",
+        "LCD_DATALINE4": "D9",
+        "LCD_DATALINE5": "D10",
+        "LCD_DATALINE6": "D11",
+        "LCD_DATALINE7": "D12",
+        "ACCELEROMETER_INT": "D2"
     },
     "groundPins": ["GND1", "GND0", "GND2"],
     "threeVoltPins": ["3.3V"],
+    "spiPins": {
+      "MOSI": "D8",
+      "MISO": "D10",
+      "SCK": "D9"
+    },
+    "i2cPins": {
+      "SDA": "SDA",
+      "SCL": "SCL"
+    },
     "onboardComponents": [],
     "marginWhenBreadboarding": [
         0,

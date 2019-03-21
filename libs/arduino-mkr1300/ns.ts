@@ -27,3 +27,8 @@ namespace serial {
 namespace loops {
 
 }
+
+//% weight=90
+namespace lora {
+
+}

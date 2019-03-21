@@ -165,13 +165,6 @@ namespace pxsim.visuals {
         let pinNum = Number(pin[4]) + MICROBIT_ID_IO_P0;
         return pinNum
     }
-    function parseNeoPixelMode(modeStr: string): NeoPixelMode {
-        const modeMap: Map<NeoPixelMode> = {
-            "NeoPixelMode.RGB": NeoPixelMode.RGB,
-            "NeoPixelMode.RGBW": NeoPixelMode.RGBW
-        };
-        return modeMap[modeStr] || NeoPixelMode.RGB;
-    }
 
     export class NeoPixelView implements IBoardPart<CommonNeoPixelStateConstructor> {
         public style: string = `
@@ -199,25 +192,20 @@ namespace pxsim.visuals {
         private part: SVGElAndSize;
         private stripGroup: SVGGElement;
         private lastLocation: Coord;
-        private pin: number;
-        private mode: NeoPixelMode;
+        private pin: Pin;
 
         public init(bus: EventBus, state: CommonNeoPixelStateConstructor, svgEl: SVGSVGElement, otherParams: Map<string>): void {
-            U.assert(!!otherParams["mode"], "NeoPixels assumes a RGB vs RGBW mode is passed to it");
-            U.assert(!!otherParams["pin"], "NeoPixels assumes a pin is passed to it");
-            let modeStr = otherParams["mode"];
-            this.mode = parseNeoPixelMode(modeStr);
             this.stripGroup = <SVGGElement>svg.elt("g");
             this.element = this.stripGroup;
-            let pinStr = otherParams["pin"];
-            this.pin = digitalPinToPinNumber(pinStr);
+            const pinStr = otherParams["dataPin"] || otherParams["pin"] || "pins.MOSI";
+            this.pin = parsePinString(pinStr);
             this.lastLocation = [0, 0];
-            this.state = state(parsePinString(otherParams["pin"]));
-            
+            this.state = state(this.pin);
+
             let part = mkNeoPixelPart();
             this.part = part;
             this.stripGroup.appendChild(part.el);
-            let canvas = new NeoPixelCanvas(this.pin);
+            let canvas = new NeoPixelCanvas(this.pin.id);
             this.canvas = canvas;
             let canvasG = svg.elt("g", { class: "sim-neopixel-canvas-parent" });
             this.overElement = canvasG;
@@ -238,7 +226,7 @@ namespace pxsim.visuals {
         }
         public updateState(): void {
             let colors: number[][] = [];
-            for (let i=0; i < this.state.length; i++) {
+            for (let i = 0; i < this.state.length; i++) {
                 colors.push(this.state.pixelColor(i));
             }
             this.canvas.update(colors);

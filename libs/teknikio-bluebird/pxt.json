@@ -1,0 +1,23 @@
+{
+    "name": "teknikio-bluebird",
+    "description": "Support for Teknikio Bluebird - beta",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "core": true,
+    "compileServiceVariant": "nrf52832",
+    "dependencies": {
+        "core---nrf52832": "file:../core---nrf52832",
+        "buttons": "file:../buttons"
+    },
+    "public": true,
+    "features": [
+        "pina0",
+        "pina1"
+    ]
+}

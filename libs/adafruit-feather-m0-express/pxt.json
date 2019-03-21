@@ -7,16 +7,43 @@
         "config.ts",
         "ns.ts",
         "board.json",
-        "board.svg",
-        "boardwireframe.svg"
+        "board.svg"
     ],
     "core": true,
     "dependencies": {
-        "core": "file:../core",
+        "core---samd": "file:../core---samd",
+        "accelerometer": "file:../accelerometer",
+        "light": "file:../light",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
-        "music": "file:../music",
-        "pixel": "file:../pixel"
+        "mixer---samd": "file:../mixer---samd",
+        "pixel": "file:../pixel",
+        "serial": "file:../serial",
+        "jacdac": "file:../jacdac",
+        "storage": "file:../storage"
     },
-    "public": true
+    "public": true,
+    "dalDTS": {
+        "corePackage": "../core---samd"
+    },
+    "compileServiceVariant": "samd21",
+    "features": [
+        "uf2",
+        "pixel",
+        "pinled",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
+        "toucha0",
+        "toucha1",
+        "storage",
+        "light",
+        "screen",
+        "jacdac",
+        "music",
+        "accelerometer"
+    ]
 }

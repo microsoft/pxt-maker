@@ -28,4 +28,36 @@
     BaudRate300 = 300,
     }
 
+
+    declare const enum SerialEvent {
+    //% block="data received"
+    DataReceived = 4,  // CODAL_SERIAL_EVT_DATA_RECEIVED
+    //% block="rx buffer full"
+    RxBufferFull = 3,  // CODAL_SERIAL_EVT_RX_FULL
+    }
+
+
+    declare const enum Delimiters {
+    //% block="new line"
+    NewLine = 10,
+    //% block=","
+    Comma = 44,
+    //% block="$"
+    Dollar = 36,
+    //% block=":"
+    Colon = 58,
+    //% block="."
+    Fullstop = 46,
+    //% block="#"
+    Hash = 35,
+    //% block=";"
+    SemiColumn = 59,
+    //% block="space",
+    Space = 32,
+    //% block="tab"
+    Tab = 9,
+    //% block="pipe"
+    Pipe = 124,
+    }
+
 // Auto-generated. Do not edit. Really.

@@ -1,12 +1,11 @@
 {
     "name": "sparkfun-samd21-dev-breakout",
-    "description": "The SparkFun SAMD21 Dev Breakout board",
+    "description": "The SparkFun SAMD21 Dev Breakout board - beta",
     "core": true,
     "files": [
         "README.md",
         "board.json",
         "board.svg",
-        "board-outline.svg",
         "device.d.ts",
         "config.ts",
         "ns.ts"
@@ -15,9 +14,32 @@
         "test.ts"
     ],
     "dependencies": {
-        "core": "file:../core",
+        "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
-        "music": "file:../music"
+        "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
+        "mixer---samd": "file:../mixer---samd",
+        "serial": "file:../serial",
+        "jacdac": "file:../jacdac"
     },
-    "public": true
+    "public": true,
+    "compileServiceVariant": "samd21",
+    "features": [
+        "pinled",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
+        "light",
+        "screen",
+        "spi",
+        "i2c",
+        "serial",
+        "jacdac",
+        "music",
+        "light",
+        "accelerometer"
+    ]
 }

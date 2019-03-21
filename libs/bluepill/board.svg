@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="456.72mm" height="755.075" viewBox="0 0 456.72001 199.78032" id="svg5436">
+  <g id="layer1" transform="translate(-38.62 56.995)">
+    <rect id="rect5449" width="447.841" height="199.78" x="47.5" y="-56.995" rx="1" ry="1" fill="#009aff" stroke-width="1.099"/>
+    <circle id="GND" cx="67.755" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="GND2" cx="89.208" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="VCC" cx="110.661" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="path5451-2" cx="132.114" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="SDA2_RX3_PB11" cx="153.567" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="SCL2_TX2_PB11" cx="175.02" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PB1" cx="196.473" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PB0" cx="217.926" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PA7_MOSI" cx="239.379" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PA6_MISO" cx="260.832" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PA5_SCK" cx="282.285" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PA4_SS" cx="303.738" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PA3_RX2" cx="325.191" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PA2_TX2" cx="346.644" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PA1" cx="368.097" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PA0" cx="389.55" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PC15" cx="411.003" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PC14" cx="432.456" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PC13_LED" cx="453.909" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="VBATT" cx="475.363" cy="-24.808" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PB12_SS2" cx="66.368" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PB13_SCK2" cx="87.865" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PB14_MISO2" cx="109.361" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PB15_MOSI2" cx="130.858" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PA8" cx="152.355" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PA9_TX" cx="173.852" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PA10_RX" cx="195.349" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PA11" cx="216.846" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PA12" cx="238.342" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PA15" cx="259.839" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PB3_SWO" cx="281.336" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PB4" cx="302.833" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PB5" cx="324.33" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PB6_SCL" cx="345.826" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PB7_SDA" cx="367.323" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PB8" cx="388.82" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="PB9" cx="410.317" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="5V" cx="431.814" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <circle id="path5451-60" cx="453.311" cy="110.876" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+    <rect id="rect5690" width="51.61" height="67.148" x="38.62" y="7.379" rx=".831" fill="#c8b7b7" stroke-width="1.099"/>
+    <rect id="rect5694" width="59.379" height="59.379" x="188.199" y="-200.907" rx=".831" transform="rotate(47.24)" fill="#2b1100" stroke-width="1.099"/>
+    <circle id="RESETBTN" cx="169.033" cy="65.648" r="8.879" fill="#241c1c" stroke-width="1.099"/>
+    <rect id="LED" width="11.099" height="14.429" x="420.423" y="68.423" rx=".831" fill="#241c1c" stroke-width="1.099"/>
+    <rect id="rect5700" width="76.028" height="45.506" x="131.296" y="-4.275" rx=".831" fill="#fc0" stroke-width="1.099"/>
+    <rect id="rect5702" width="431.193" height="25.527" x="55.824" y="-37.572" rx=".831" fill="none" stroke="#fff" stroke-width="1.931"/>
+    <rect id="rect5702-1" width="431.193" height="25.527" x="55.824" y="98.39" rx=".831" fill="none" stroke="#fff" stroke-width="1.931"/>
+    <circle id="VCC2" cx="474.807" cy="111.154" r="7.492" fill="#ac9393" stroke-width="1.099"/>
+  </g>
+</svg>

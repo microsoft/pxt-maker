@@ -1,0 +1,47 @@
+{
+    "name": "sparkfun-samd21-mini-breakout",
+    "description": "The SparkFun SAMD21 Mini Breakout board - beta",
+    "core": true,
+    "files": [
+        "README.md",
+        "board.json",
+        "board.svg",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "dependencies": {
+        "core---samd": "file:../core---samd",
+        "buttons": "file:../buttons",
+        "touch": "file:../touch",
+        "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
+        "mixer---samd": "file:../mixer---samd",
+        "serial": "file:../serial",
+        "jacdac": "file:../jacdac"
+    },
+    "public": true,
+    "compileServiceVariant": "samd21",
+    "features": [
+        "pinled",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
+        "touchA0",
+        "touchA1",
+        "light",
+        "screen",
+        "spi",
+        "i2c",
+        "serial",
+        "jacdac",
+        "music",
+        "accelerometer"
+    ]
+}

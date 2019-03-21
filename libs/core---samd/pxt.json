@@ -1,0 +1,20 @@
+{
+    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/core---samd",
+    "cppDependencies": {
+        "accelerometer": "file:../accelerometer",
+        "mixer---samd": "file:../mixer---samd",
+        "buttons": "file:../buttons",
+        "game": "file:../game",
+        "jacdac": "file:../jacdac",
+        "light": "file:../light",
+        "lightsensor": "file:../lightsensor",
+        "microphone": "file:../microphone",
+        "screen---st7735": "file:../screen---st7735",
+        "serial": "file:../serial",
+        "switch": "file:../switch",
+        "storage": "file:../storage",
+        "touch": "file:../touch",
+        "thermometer": "file:../thermometer",
+        "lcd": "file:../lcd"
+    }
+}

@@ -16,25 +16,39 @@ namespace config {
     export const PIN_D5 = DAL.PA15;
     export const PIN_D6 = DAL.PA20;
     export const PIN_D7 = DAL.PA21;
+
     export const PIN_D8 = DAL.PA06;
     export const PIN_D9 = DAL.PA07;
     export const PIN_D10 = DAL.PA18;
     export const PIN_D11 = DAL.PA16;
     export const PIN_D12 = DAL.PA19;
     export const PIN_D13 = DAL.PA17;
-    export const PIN_LED = DAL.PA17;
-    export const PIN_RX = DAL.PB03;
-    export const PIN_TX = DAL.PA27;
+
+    export const PIN_LED = PIN_D13;
+    export const PIN_RX = PIN_D0;
+    export const PIN_TX = PIN_D1;
+
     export const PIN_MISO = DAL.PA12;
     export const PIN_MOSI = DAL.PB10;
     export const PIN_SCK = DAL.PB11;
+
     export const PIN_SCL = DAL.PA23;
     export const PIN_SDA = DAL.PA22;
+
     export const PIN_RXLED = DAL.PB03;
     export const PIN_TXLED = DAL.PA27;
-    export const PIN_ACCELEROMETER_INT = DAL.PA10; // D1
-    export const PIN_ACCELEROMETER_SCL = DAL.PA23; // SCL
-    export const PIN_ACCELEROMETER_SDA = DAL.PA22; // SDA
+
+    export const PIN_ACCELEROMETER_INT = PIN_D2;
+
+    export const PIN_JACK_TX = PIN_TX;
+    export const PIN_JACK_COMMLED = PIN_TXLED;
+
+    export const PIN_LCD_RESET = PIN_D7;
+    export const PIN_LCD_ENABLE = PIN_D8;
+    export const PIN_LCD_DATALINE4 = PIN_D9;
+    export const PIN_LCD_DATALINE5 = PIN_D10;
+    export const PIN_LCD_DATALINE6 = PIN_D11;
+    export const PIN_LCD_DATALINE7 = PIN_D12;
 }
 
 /*

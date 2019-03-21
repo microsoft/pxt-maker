@@ -6,7 +6,7 @@
 #include "NRF52SPI.h"
 #include "NRF52Pin.h"
 #include "NRF52PWM.h"
-#include "NRF52Timer.h"
+#include "Timer.h"
 #include "MultiButton.h"
 
 #define PAGE_SIZE 4096
@@ -21,7 +21,7 @@
 
 #define CODAL_PIN NRF52Pin
 #define CODAL_SPI NRF52SPI
-#define CODAL_TIMER NRF52Timer
+#define CODAL_TIMER Timer
 
 #define IMAGE_BITS 1
 

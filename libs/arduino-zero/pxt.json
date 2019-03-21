@@ -1,20 +1,40 @@
 {
     "name": "arduino-zero",
-    "description": "Support for Arduino Zero",
+    "description": "Support for Arduino Zero - beta",
     "files": [
         "README.md",
         "device.d.ts",
         "config.ts",
         "ns.ts",
         "board.json",
-        "board.svg",
-        "boardwireframe.svg"
+        "board.svg"
     ],
     "core": true,
     "dependencies": {
-        "core": "file:../core",
+        "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
-        "touch": "file:../touch"
+        "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
+        "touch": "file:../touch",
+        "mixer---samd": "file:../mixer---samd",
+        "serial": "file:../serial",
+        "jacdac": "file:../jacdac"
     },
-    "public": true
+    "public": true,
+    "compileServiceVariant": "samd21",
+    "features": [
+        "pinled",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
+        "toucha0",
+        "toucha1",
+        "light",
+        "jacdac",
+        "music",
+        "accelerometer"
+    ]
 }
