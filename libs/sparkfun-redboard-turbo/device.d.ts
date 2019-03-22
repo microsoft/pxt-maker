@@ -16,11 +16,11 @@ declare namespace pins {
     const A5: AnalogInPin;
 
     //% fixedInstance shim=pxt::getPin(PIN_D0)
-    const D0: DigitalPin;
+    const D0: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_D1)
-    const D1: DigitalPin;
+    const D1: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_D2)
-    const D2: DigitalPin;
+    const D2: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_D3)
     const D3: PwmPin;
     //% fixedInstance shim=pxt::getPin(PIN_D4)
@@ -30,7 +30,7 @@ declare namespace pins {
     //% fixedInstance shim=pxt::getPin(PIN_D6)
     const D6: PwmPin;
     //% fixedInstance shim=pxt::getPin(PIN_D7)
-    const D7: DigitalPin;
+    const D7: DigitalInOutPin;
     
     //% fixedInstance shim=pxt::getPin(PIN_D8)
     const D8: PwmPin;
@@ -45,22 +45,22 @@ declare namespace pins {
     //% fixedInstance shim=pxt::getPin(PIN_D13)
     const D13: PwmPin;    
     //% fixedInstance shim=pxt::getPin(PIN_RX)
-    const RX: DigitalPin;
+    const RX: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_TX)
-    const TX: DigitalPin;
+    const TX: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_MISO)
-    const MISO: DigitalPin;
+    const MISO: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_MOSI)
-    const MOSI: DigitalPin;
+    const MOSI: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_SCK)
-    const SCK: DigitalPin;
+    const SCK: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_SCL)
-    const SCL: DigitalPin;
+    const SCL: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_SDA)
-    const SDA: DigitalPin;
+    const SDA: DigitalInOutPin;
 
     //% fixedInstance shim=pxt::getPin(PIN_NEOPIXEL)
-    const NEOPIXEL: DigitalPin;
+    const NEOPIXEL: DigitalInOutPin;
 }
 
 declare namespace input {
