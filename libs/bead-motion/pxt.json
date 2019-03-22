@@ -19,11 +19,20 @@
         "light": "file:../light",
         "accelerometer": "file:../accelerometer",
         "jacdac": "file:../jacdac",
-        "touch": "file:../touch",
-        "pixel": "file:../pixel"
+        "touch": "file:../touch"
     },
     "public": true,
     "compileServiceVariant": "samd21",
+    "yotta": {
+        "config": {
+            "PXT_SUPPORT_LIS3DH": 1,
+            "PXT_SUPPORT_MMA8653": 0,
+            "PXT_SUPPORT_MMA8453": 0,
+            "PXT_SUPPORT_FXOS8700": 0,
+            "PXT_SUPPORT_MSA300": 0,
+            "PXT_SUPPORT_MPU6050": 0
+        }
+    },
     "features": [
         "uf2",
         "i2c",
