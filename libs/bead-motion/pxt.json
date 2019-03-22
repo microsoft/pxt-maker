@@ -43,10 +43,8 @@
         "pind1",
         "toucha0",
         "toucha1",
-        "buttond0",
-        "buttond1",
+        "storage",
         "jacdac",
-        "light",
         "accelerometer"
     ]
 }
