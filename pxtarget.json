@@ -412,7 +412,10 @@
         "crowdinProject": "kindscript",
         "scriptManager": true,
         "simScreenshot": true,
-        "simGif": true
+        "simGif": true,
+        "experiments": [
+            "python"
+        ]
     },
     "ignoreDocsErrors": true
 }
