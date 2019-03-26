@@ -47,7 +47,7 @@
     "svgo": "^1.1.1"
   },
   "dependencies": {
-    "pxt-common-packages": "6.5.15",
+    "pxt-common-packages": "6.5.16",
     "pxt-core": "5.7.3"
   },
   "scripts": {
