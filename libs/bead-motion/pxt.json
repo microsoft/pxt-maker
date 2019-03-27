@@ -6,6 +6,7 @@
         "device.d.ts",
         "config.ts",
         "ns.ts",
+        "startup.ts",
         "board.json",
         "board.svg"
     ],
@@ -16,7 +17,6 @@
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
-        "light": "file:../light",
         "accelerometer": "file:../accelerometer",
         "jacdac": "file:../jacdac",
         "touch": "file:../touch"

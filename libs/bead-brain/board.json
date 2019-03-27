@@ -106,7 +106,7 @@
         "w": 6.304708440698622,
         "h": 6.304755989462239,
         "color": "#ff0000",
-        "label": "LED1"
+        "label": "LED"
       },
       {
         "x": 103.87573041156793,
@@ -141,8 +141,9 @@
     "SWDIO": "SWDIO",
     "MISO": "MISO",
     "MOSI": "MOSI",
-    "LED1": "LED1",
-    "LED2": "LED2"
+    "LED": "LED",
+    "LED2": "LED2",
+    "NEOPIXEL": "A5"
   },
   "groundPins": [
     "GND"
