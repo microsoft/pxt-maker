@@ -1,4 +1,4 @@
-# Motion-Bead
+# Bead Motion
 
 ```blocks
 forever(function() {

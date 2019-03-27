@@ -1,4 +1,4 @@
-# Brain-Hub
+# Bead Brain
 
 ```blocks
 forever(function() {
