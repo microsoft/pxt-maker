@@ -2,7 +2,7 @@
 declare namespace gamepad {
 
     /** 
-     * Sets the button state to down
+     * Set the button state to down
      */
     //% help=gamepad/set-button
     //% blockId=joystickSetButton block="gamepad button %index=joystickStandardButton|%down=toggleDownUp"
@@ -10,7 +10,7 @@ declare namespace gamepad {
     function setButton(index: int32, down: boolean): void;
 
     /**
-     * Sets the current move on the gamepad
+     * Set the current move on the gamepad
      **/
     //% blockId=gamepadMove block="gamepad %index|move by x %x|y %y"
     //% help=gamepad/move
@@ -19,12 +19,13 @@ declare namespace gamepad {
     function move(index: int32, x: int32, y: int32): void;
 
     /** 
-     * Sets the throttle state
+     * Set the throttle state
      */
     //% blockId=gamepadSetThrottle block="gamepad set throttle %index|to %value"
     //% gamepad/set-throttle blockHidden=1
     //% index.min=0 index.max=1
-    //% value.min=0 value.max=31 shim=gamepad::setThrottle
+    //% value.min=0 value.max=31
+    //%help=gamepad/set-throttle shim=gamepad::setThrottle
     function setThrottle(index: int32, value: int32): void;
 }
 

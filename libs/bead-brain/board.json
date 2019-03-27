@@ -1,186 +1,168 @@
 {
-  "PART_ID": {
-    "visual": {
-      "image": "part.svg",
-      "width": 249.8000030517578,
-      "height": 249.3000030517578,
-      "pinDistance": 15,
-      "pinLocations": [
-        {
-          "x": 44.01456727857181,
-          "y": 181.06761470325415
-        },
-        {
-          "x": 183.42450256787126,
-          "y": 183.30282584974486
-        },
-        {
-          "x": 181.4252334464229,
-          "y": 43.926203842440465
-        },
-        {
-          "x": 44.31760181845588,
-          "y": 44.2354920269932
-        },
-        {
-          "x": 22.458438795159612,
-          "y": 114.25698669869708
-        },
-        {
-          "x": 215.96268982029872,
-          "y": 114.26398934476624
-        },
-        {
-          "x": 114.50014458853097,
-          "y": 22.29999615471893
-        },
-        {
-          "x": 160.09949156127647,
-          "y": 44.299994487996806
-        },
-        {
-          "x": 149.29966641539897,
-          "y": 55.999993221162924
-        },
-        {
-          "x": 78.4006598247786,
-          "y": 44.299994487996806
-        },
-        {
-          "x": 105.60028351487358,
-          "y": 160.0999905338938
-        },
-        {
-          "x": 56.500960142814364,
-          "y": 95.79999248855557
-        },
-        {
-          "x": 41.00118422554678,
-          "y": 88.4999990018427
-        },
-        {
-          "x": 58.80093427145665,
-          "y": 155.8999931347307
-        },
-        {
-          "x": 42.10117003281515,
-          "y": 160.00000055974286
-        },
-        {
-          "x": 133.49988295581474,
-          "y": 69.69998673026552
-        }
-      ]
-    },
-    "numberOfPins": 16,
-    "instantiation": {
-      "kind": "function",
-      "fullyQualifiedName": "FUNCTION_NAMES",
-      "argumentRoles": []
-    },
-    "pinDefinitions": [
+  "driveDisplayName": "",
+  "visual": {
+    "image": "pkg://board.svg",
+    "useCrocClips": false,
+    "width": 243,
+    "height": 254,
+    "pinDist": 15,
+    "pinBlocks": [
       {
-        "target": "A5",
-        "style": "male",
-        "orientation": "-Z"
+        "x": 30.000696906450138,
+        "y": 188.0000044876091,
+        "labels": [
+          "A5"
+        ]
       },
       {
-        "target": "A4",
-        "style": "male",
-        "orientation": "-Z"
+        "x": 184.39952887337031,
+        "y": 189.30000649634837,
+        "labels": [
+          "A4"
+        ]
       },
       {
-        "target": "A2",
-        "style": "male",
-        "orientation": "-Z"
+        "x": 182.39953669123113,
+        "y": 35.90000014958697,
+        "labels": [
+          "A2"
+        ]
       },
       {
-        "target": "A7",
-        "style": "male",
-        "orientation": "-Z"
+        "x": 31.300675541353357,
+        "y": 37.20000215832627,
+        "labels": [
+          "A7"
+        ]
       },
       {
-        "target": "A1",
-        "style": "male",
-        "orientation": "-Z"
+        "x": 6.500870183751001,
+        "y": 113.30000179504364,
+        "labels": [
+          "A1"
+        ]
       },
       {
-        "target": "A3",
-        "style": "male",
-        "orientation": "-Z"
+        "x": 218.9992796399674,
+        "y": 113.30000179504364,
+        "labels": [
+          "A3"
+        ]
       },
       {
-        "target": "A6",
-        "style": "male",
-        "orientation": "-Z"
+        "x": 49.30053733274245,
+        "y": 162.6999967090867,
+        "labels": [
+          "CS"
+        ]
       },
       {
-        "target": "SWDIO",
-        "style": "male",
-        "orientation": "-Z"
+        "x": 37.60063463160453,
+        "y": 175.20000141039142,
+        "labels": [
+          "SCK"
+        ]
       },
       {
-        "target": "SWCLK",
-        "style": "male",
-        "orientation": "-Z"
+        "x": 68.90040101158651,
+        "y": 34.29999976493477,
+        "labels": [
+          "GND"
+        ]
       },
       {
-        "target": "ground",
-        "style": "male",
-        "orientation": "-Z"
+        "x": 145.09982090397702,
+        "y": 44.4000038892612,
+        "labels": [
+          "SWCLK"
+        ]
       },
       {
-        "target": "BTN_B",
-        "style": "male",
-        "orientation": "-Z"
+        "x": 159.7997118783237,
+        "y": 35.50000683826144,
+        "labels": [
+          "SWDIO"
+        ]
       },
       {
-        "target": "MISO",
-        "style": "male",
-        "orientation": "-Z"
+        "x": 35.800644381593806,
+        "y": 108.90000752208759,
+        "labels": [
+          "MISO"
+        ]
       },
       {
-        "target": "MOSI",
-        "style": "male",
-        "orientation": "-Z"
-      },
-      {
-        "target": "CS",
-        "style": "male",
-        "orientation": "-Z"
-      },
-      {
-        "target": "SCK",
-        "style": "male",
-        "orientation": "-Z"
-      },
-      {
-        "target": "LED",
-        "style": "male",
-        "orientation": "-Z"
-      }
-    ],
-    "assembly": [
-      {
-        "pinIndices": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15
+        "x": 19.10077479468064,
+        "y": 105.0000014958697,
+        "labels": [
+          "MOSI"
         ]
       }
-    ]
+    ],
+    "leds": [
+      {
+        "x": 127.7239966222374,
+        "y": 62.02771739687902,
+        "w": 6.304708440698622,
+        "h": 6.304755989462239,
+        "color": "#ff0000",
+        "label": "LED1"
+      },
+      {
+        "x": 103.87573041156793,
+        "y": 62.02771739687902,
+        "w": 6.304708440698622,
+        "h": 6.304755989462239,
+        "color": "#ff0000",
+        "label": "LED2"
+      }
+    ],
+    "touchPads": [],
+    "buttons": [],
+    "reset": {
+      "x": 84.14677938756219,
+      "y": 173.36128330233322,
+      "w": 29.17576187287354,
+      "h": 17.633711303988076
+    }
+  },
+  "gpioPinMap": {
+    "A5": "A5",
+    "A4": "A4",
+    "A2": "A2",
+    "A7": "A7",
+    "A1": "A1",
+    "A3": "A3",
+    "RESETBTN": "RESETBTN",
+    "CS": "CS",
+    "SCK": "SCK",
+    "GND": "GND",
+    "SWCLK": "SWCLK",
+    "SWDIO": "SWDIO",
+    "MISO": "MISO",
+    "MOSI": "MOSI",
+    "LED1": "LED1",
+    "LED2": "LED2"
+  },
+  "groundPins": [
+    "GND"
+  ],
+  "threeVoltPins": [],
+  "fiveVoltPins": [],
+  "i2cPins": {
+    "SDA": "SDA",
+    "SCL": "SCL"
+  },
+  "onboardComponents": [],
+  "marginWhenBreadboarding": [
+    0,
+    0,
+    80,
+    0
+  ],
+  "spiPins": {
+    "MOSI": "MOSI",
+    "MISO": "MISO",
+    "SCK": "SCK"
   }
 }
