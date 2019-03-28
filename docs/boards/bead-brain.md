@@ -1,4 +1,4 @@
-# Bead Motion
+# Bead Brain
 
 ```blocks
 forever(function() {
@@ -7,5 +7,5 @@ forever(function() {
 ```
 
 ```package
-bead-motion
+bead-brain
 ```

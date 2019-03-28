@@ -70,7 +70,8 @@
         "libs/sparkfun-lumidrive",
         "libs/stitchkit",
         "libs/teknikio-bluebird",
-        "libs/bead-motion"
+        "libs/bead-motion",
+        "libs/bead-brain"
     ],
     "serial": {
         "useHF2": true,
