@@ -1,11 +1,12 @@
 {
-    "name": "bead-brain",
-    "description": "Support for Project Brookdale's Brain Hub - beta",
+    "name": "bead-tattoo",
+    "description": "Support for Project Brookdale's Tattoo Bead - beta",
     "files": [
         "README.md",
         "device.d.ts",
         "config.ts",
         "ns.ts",
+        "startup.ts",
         "board.json",
         "board.svg"
     ],
@@ -16,13 +17,22 @@
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
-        "touch": "file:../touch",
-        "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
         "jacdac": "file:../jacdac",
-        "jacdac-drivers": "file:../jacdac-drivers"
+        "touch": "file:../touch"
     },
     "public": true,
     "compileServiceVariant": "samd21",
+    "yotta": {
+        "config": {
+            "PXT_SUPPORT_LIS3DH": 1,
+            "PXT_SUPPORT_MMA8653": 0,
+            "PXT_SUPPORT_MMA8453": 0,
+            "PXT_SUPPORT_FXOS8700": 0,
+            "PXT_SUPPORT_MSA300": 0,
+            "PXT_SUPPORT_MPU6050": 0
+        }
+    },
     "features": [
         "uf2",
         "i2c",
@@ -33,11 +43,7 @@
         "pind1",
         "toucha0",
         "toucha1",
-        "buttond0",
-        "buttond1",
-        "storage",
-        "serial",
         "jacdac",
-        "light"
+        "accelerometer"
     ]
 }

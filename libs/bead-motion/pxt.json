@@ -1,6 +1,6 @@
 {
     "name": "bead-motion",
-    "description": "Support for Project Brookdales Motion Bead - beta",
+    "description": "Support for Project Brookdale's Motion Bead - beta",
     "files": [
         "README.md",
         "device.d.ts",
