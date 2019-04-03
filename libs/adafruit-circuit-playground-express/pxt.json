@@ -24,7 +24,7 @@
         "serial": "file:../serial",
         "pulse": "file:../pulse",
         "infrared": "file:../infrared",
-        "jacdac": "file:../jacdac",
+        "jacdac-ts": "file:../jacdac-ts",
         "storage": "file:../storage"
     },
     "compileServiceVariant": "samd21",
