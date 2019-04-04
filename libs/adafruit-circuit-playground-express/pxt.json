@@ -12,20 +12,7 @@
     ],
     "dependencies": {
         "core---samd": "file:../core---samd",
-        "buttons": "file:../buttons",
-        "light": "file:../light",
-        "mixer---samd": "file:../mixer---samd",
-        "switch": "file:../switch",
-        "touch": "file:../touch",
-        "accelerometer": "file:../accelerometer",
-        "lightsensor": "file:../lightsensor",
-        "thermometer": "file:../thermometer",
-        "microphone": "file:../microphone",
-        "serial": "file:../serial",
-        "pulse": "file:../pulse",
-        "infrared": "file:../infrared",
-        "jacdac-ts": "file:../jacdac-ts",
-        "storage": "file:../storage"
+        "jacdac-ts": "file:../jacdac-ts"
     },
     "compileServiceVariant": "samd21",
     "yotta": {
