@@ -42,12 +42,6 @@ declare namespace jacdac {
      **/
     //% shim=jacdac::__physStop
     function __physStop(): void;
-
-    /**
-     * Gets the bus state
-     */
-    //% shim=jacdac::__physState
-    function __physState(): int32;
 }
 
 // Auto-generated. Do not edit. Really.
