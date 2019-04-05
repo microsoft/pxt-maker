@@ -24,6 +24,30 @@ declare namespace jacdac {
      **/
     //% shim=jacdac::__physIsConnected
     function __physIsConnected(): boolean;
+
+    /**
+     * Indicates if the bus is running
+     **/
+    //% shim=jacdac::__physIsRunning
+    function __physIsRunning(): boolean;
+
+    /**
+     * Starts the JACDAC physical layer.
+     **/
+    //% parts=jacdac shim=jacdac::__physStart
+    function __physStart(): void;
+
+    /**
+     * Stops the JACDAC physical layer.
+     **/
+    //% parts=jacdac shim=jacdac::__physStop
+    function __physStop(): void;
+
+    /**
+     * Gets the bus state
+     */
+    //% parts=jacdac shim=jacdac::__physState
+    function __physState(): int32;
 }
 
 // Auto-generated. Do not edit. Really.
