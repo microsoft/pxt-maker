@@ -1,5 +1,4 @@
 namespace jacdac {
-    /*
     //% fixedInstance whenUsed block="button A service"
     export const buttonAService = new ButtonService("buttonA", input.buttonA);
     //% fixedInstance whenUsed block="button B service"
@@ -20,5 +19,4 @@ namespace jacdac {
     export const touchA6 = new TouchButtonService("touchA6", input.touchA6);
     //% fixedInstance whenUsed block="touch A7"
     export const touchA7 = new TouchButtonService("touchA7", input.touchA7);
-    */
 }

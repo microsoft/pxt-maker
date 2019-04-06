@@ -12,6 +12,8 @@
     ],
     "dependencies": {
         "core---samd": "file:../core---samd",
+        "buttons": "file:../buttons",
+        "touch": "file:../touch",        
         "jacdac": "file:../jacdac"
     },
     "compileServiceVariant": "samd21",
