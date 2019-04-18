@@ -415,6 +415,7 @@
         "scriptManager": true,
         "simScreenshot": true,
         "simGif": true,
+        "qrCode": true,
         "experiments": [
             "python"
         ]
