@@ -13,6 +13,7 @@ namespace config {
     export const PIN_SPEAKER_AMP = DAL.PA30;
     export const PIN_MICROPHONE = DAL.PA08;
     export const PIN_LIGHT = DAL.PA11;
+    export const ACCELEROMETER_TYPE = DAL.ACCELEROMETER_TYPE_LIS3DH;
     export const PIN_ACCELEROMETER_SDA = DAL.PA00;
     export const PIN_ACCELEROMETER_SCL = DAL.PA01;
     export const PIN_ACCELEROMETER_INT = DAL.PA13;

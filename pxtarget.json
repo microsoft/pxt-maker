@@ -47,6 +47,7 @@
         "libs/lora",
         "libs/power",
         "libs/lcd",
+        "libs/color-sensor",
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-m4-express",
         "libs/adafruit-feather-bluefruit-nrf52",
@@ -419,6 +420,7 @@
         "scriptManager": true,
         "simScreenshot": true,
         "simGif": true,
+        "qrCode": true,
         "experiments": [
             "python"
         ]
