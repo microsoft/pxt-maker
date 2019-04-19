@@ -6,7 +6,7 @@
 	 style="enable-background:new 0 0 241.8 85;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#7A7A7A;}
-	.st1{fill:#005911;}
+	.st1{fill:#7907A3;}
 	.st2{fill:none;stroke:#FFFFFF;stroke-width:0.36;stroke-linecap:round;}
 	.st3{fill:#9A916C;}
 	.st4{fill:#333333;}
@@ -455,7 +455,7 @@
 <text id="tA5" transform="matrix(1 0 0 1 180.1922 63.0644)" class="st12 st13 st14">A5</text>
 <text id="tA4" transform="matrix(1 0 0 1 198.1922 63.0642)" class="st12 st13 st14">A4</text>
 <text id="tA0" transform="matrix(1 0 0 1 216.2083 63.0642)" class="st12 st13 st14">A0</text>
-<text transform="matrix(1 0 0 1 9.3969 11.8671)" class="st12 st13 st15">motion</text>
+<text transform="matrix(1 0 0 1 9.3969 11.8671)" class="st12 st13 st15">tattoo</text>
 <g>
 	<g>
 		<g>
@@ -584,21 +584,21 @@
 	</g>
 </g>
 <g>
-	<path id="path4625" inkscape:connector-curvature="0" class="st25" d="M82.9,80.9H64.5 M64.5,80.9V68.5 M64.5,68.5h18.5 M82.9,68.5
+	<path id="path4625" inkscape:connector-curvature="0" class="st25" d="M82.9,80.9H64.5 M64.5,80.9V68.5 M64.5,68.5H83 M82.9,68.5
 		v12.3"/>
-	<path id="path4627" inkscape:connector-curvature="0" class="st26" d="M78.5,73.8c0-1.5-1.2-2.6-2.6-2.6h0"/>
+	<path id="path4627" inkscape:connector-curvature="0" class="st26" d="M78.5,73.8c0-1.5-1.2-2.6-2.6-2.6l0,0"/>
 	<path id="path4629" inkscape:connector-curvature="0" class="st25" d="M78.5,73.8v1.8"/>
-	<path id="path4631" inkscape:connector-curvature="0" class="st26" d="M75.9,78.2c1.5,0,2.6-1.2,2.6-2.6c0,0,0,0,0,0"/>
+	<path id="path4631" inkscape:connector-curvature="0" class="st26" d="M75.9,78.2c1.5,0,2.6-1.2,2.6-2.6l0,0"/>
 	<path id="path4633" inkscape:connector-curvature="0" class="st25" d="M75.9,78.2h-4.4"/>
-	<path id="path4635" inkscape:connector-curvature="0" class="st26" d="M68.9,75.6c0,1.5,1.2,2.6,2.6,2.6h0"/>
+	<path id="path4635" inkscape:connector-curvature="0" class="st26" d="M68.9,75.6c0,1.5,1.2,2.6,2.6,2.6l0,0"/>
 	<path id="path4637" inkscape:connector-curvature="0" class="st25" d="M68.9,75.6v-1.8"/>
-	<path id="path4639" inkscape:connector-curvature="0" class="st26" d="M71.5,71.2c-1.5,0-2.6,1.2-2.6,2.6c0,0,0,0,0,0"/>
+	<path id="path4639" inkscape:connector-curvature="0" class="st26" d="M71.5,71.2c-1.5,0-2.6,1.2-2.6,2.6l0,0"/>
 	<path id="path4641" inkscape:connector-curvature="0" class="st25" d="M71.5,71.2h4.4"/>
 	<g id="g4795" transform="matrix(3.1559974,0,0,3.1559974,-3.9828687,0)">
 		<path id="path4793" inkscape:connector-curvature="0" class="st3" d="M22.5,25.5h-1.4v-1.4h1.4V25.5z"/>
 	</g>
 	<g id="g4799" transform="matrix(3.1559974,0,0,3.1559974,-3.9828687,0)">
-		<path id="path4797" inkscape:connector-curvature="0" class="st3" d="M22.5,23.3h-1.4v-1.4h1.4L22.5,23.3z"/>
+		<path id="path4797" inkscape:connector-curvature="0" class="st3" d="M22.5,23.3h-1.4v-1.4h1.4V23.3z"/>
 	</g>
 	<g id="g4803" transform="matrix(3.1559974,0,0,3.1559974,-3.9828687,0)">
 		<path id="path4801" inkscape:connector-curvature="0" class="st3" d="M28.1,25.5h-1.4v-1.4h1.4V25.5z"/>
