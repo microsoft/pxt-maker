@@ -72,7 +72,12 @@
         "libs/stitchkit",
         "libs/teknikio-bluebird",
         "libs/bead-motion",
-        "libs/bead-brain"
+        "libs/bead-brain",
+        "libs/bead-color",
+        "libs/bead-light",
+        "libs/bead-tattoo",
+        "libs/bead-proximity",
+        "libs/bead-environment"
     ],
     "serial": {
         "useHF2": true,
@@ -416,6 +421,7 @@
         "scriptManager": true,
         "simScreenshot": true,
         "simGif": true,
+        "qrCode": true,
         "experiments": [
             "python"
         ]

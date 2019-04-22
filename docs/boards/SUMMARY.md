@@ -19,5 +19,12 @@
     * [RedBear BLE NANO 2](/boards/redbear-ble-nano)
     * [StichKit](/boards/stitchkit)
     * [Teknikio Bluebird](/boards/teknikio-bluebird)
+* [Project Brookdale](/boards/beads)
+    * [Proximity Bead](/boards/bead-proximity)
+    * [Color Bead](/boards/bead-color)
+    * [Environmental Bead](/boards/bead-environmental)
+    * [Tattoo Bead](/boards/bead-tattoo)
+    * [Light Bead](/boards/bead-light)
     * [Motion Bead](/boards/bead-motion)
+
 * [Add a new board](/boards/add-a-new-board)

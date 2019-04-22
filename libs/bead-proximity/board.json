@@ -1,0 +1,109 @@
+{
+  "driveDisplayName": "",
+  "visual": {
+    "image": "pkg://board.svg",
+    "useCrocClips": false,
+    "width": 241.8000030517578,
+    "height": 85,
+    "pinDist": 15,
+    "pinBlocks": [
+      {
+        "x": 223.89900763448384,
+        "y": 35.999992057238714,
+        "labels": [
+          "JACK_TX"
+        ]
+      },
+      {
+        "x": 161.39961491889352,
+        "y": 2.900000635420903,
+        "labels": [
+          "3V3"
+        ]
+      },
+      {
+        "x": 142.4997809327532,
+        "y": 2.7999996822895485,
+        "labels": [
+          "SWCLK"
+        ]
+      },
+      {
+        "x": 124.49996025950374,
+        "y": 2.7999996822895485,
+        "labels": [
+          "SWDIO"
+        ]
+      },
+      {
+        "x": 106.60013956517962,
+        "y": 2.7999996822895485,
+        "labels": [
+          "GND_2_"
+        ]
+      }
+    ],
+    "leds": [
+      {
+        "x": 12.385252588339089,
+        "y": 55.29528803629524,
+        "w": 17.829431835272285,
+        "h": 6.3979545801138675,
+        "color": "#ff0000",
+        "label": "LED1_1_"
+      },
+      {
+        "x": 36.23346522376742,
+        "y": 55.29528803629524,
+        "w": 17.829431835272285,
+        "h": 6.3979545801138675,
+        "color": "#ff0000",
+        "label": "LED2"
+      }
+    ],
+    "touchPads": [],
+    "buttons": [],
+    "reset": {
+      "x": 69.80049838727784,
+      "y": 70.79999968228955,
+      "w": 7.799917340801802,
+      "h": 7.799993328080521
+    }
+  },
+  "gpioPinMap": {
+    "1": "RESETBTN_1_",
+    "2": "GND_2_",
+    "JACK_TX": "JACK_TX",
+    "JACK": "JACK_TX",
+    "TX": "JACK_TX",
+    "3V3": "3V3",
+    "SWCLK": "SWCLK",
+    "SWDIO": "SWDIO",
+    "GND_2_": "GND_2_",
+    "GND": "GND_2_",
+    "": "RESETBTN_1_",
+    "LED1_1_": "LED1_1_",
+    "LED1": "LED1_1_",
+    "LED2": "LED2",
+    "RESETBTN_1_": "RESETBTN_1_",
+    "RESETBTN": "RESETBTN_1_"
+  },
+  "groundPins": [
+    "GND_2_"
+  ],
+  "threeVoltPins": [
+    "3V3"
+  ],
+  "fiveVoltPins": [],
+  "i2cPins": {
+    "SDA": "SDA",
+    "SCL": "SCL"
+  },
+  "onboardComponents": [],
+  "marginWhenBreadboarding": [
+    0,
+    0,
+    80,
+    0
+  ]
+}

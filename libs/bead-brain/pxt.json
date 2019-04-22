@@ -1,6 +1,6 @@
 {
     "name": "bead-brain",
-    "description": "Support for Project Brookdales Brain Hub - beta",
+    "description": "Support for Project Brookdale's Brain Hub - beta",
     "files": [
         "README.md",
         "device.d.ts",

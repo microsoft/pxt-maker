@@ -1,0 +1,29 @@
+{
+    "name": "bead-environment",
+    "description": "Support for Project Brookdale's Environment Bead - beta",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts",
+        "startup.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "core": true,
+    "dependencies": {
+        "core---samd": "file:../core---samd",
+        "jacdac": "file:../jacdac"
+    },
+    "public": true,
+    "compileServiceVariant": "samd21",
+    "features": [
+        "uf2",
+        "i2c",
+        "pinled",
+        "jacdac"
+    ]
+}
