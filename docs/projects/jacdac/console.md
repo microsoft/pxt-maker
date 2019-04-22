@@ -8,7 +8,7 @@ JACDAC is still in early prototyping phase. The protocol and all hardware design
 **/
 
 jacdac.setDeviceName("thing")
-jacdac.consoleService.start()
+jacdac.consoleService()
 forever(function() {
     console.log("ping");
     pause(1000);

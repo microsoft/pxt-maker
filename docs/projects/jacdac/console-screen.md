@@ -20,7 +20,7 @@ input.buttonD1.onEvent(ButtonEvent.Click, function () {
     }
 })
 jacdac.setDeviceName("logger")
-jacdac.consoleService.start()
+jacdac.consoleService()
 logging = false
 display.showConsole()
 console.log("press btn to start")

@@ -1,2 +1,2 @@
 // start exposing environment detection service
-jacdac.consoleService.start();
+jacdac.consoleService();
