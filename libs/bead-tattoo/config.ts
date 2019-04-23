@@ -1,12 +1,13 @@
 namespace config {
 
+    export const PIN_ACCELEROMETER_TYPE = DAL.ACCELEROMETER_TYPE_LIS3DH;
     export const PIN_ACCELEROMETER_SDA = DAL.PA00;
     export const PIN_ACCELEROMETER_SCL = DAL.PA01;
     export const PIN_ACCELEROMETER_INT = DAL.PA13;
 
     export const PIN_A0 = DAL.PA02; 
     export const PIN_A1 = DAL.PA05; 
-    export const PIN_A2 = DAL.PA06; 
+    export const PIN_A2 = DAL.PA06;
     export const PIN_A3 = DAL.PA07; 
     export const PIN_A4 = DAL.PB03; 
     export const PIN_A5 = DAL.PB02; 
