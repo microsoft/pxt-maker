@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "pxt-common-packages": "6.6.1",
-    "pxt-core": "5.10.4"
+    "pxt-core": "5.11.3"
   },
   "scripts": {
     "test": "node node_modules/pxt-core/built/pxt.js travis",
