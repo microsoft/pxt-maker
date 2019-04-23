@@ -24,6 +24,9 @@
     "public": true,
     "compileServiceVariant": "samd21",
     "yotta": {
+        "optionalConfig": {
+            "DEVICE_JACDAC_DEBUG": 1
+        },
         "config": {
             "PXT_SUPPORT_LIS3DH": 1,
             "PXT_SUPPORT_MMA8653": 0,

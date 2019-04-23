@@ -25,5 +25,10 @@
         "i2c",
         "pinled",
         "jacdac"
-    ]
+    ],
+    "yotta": {
+        "optionalConfig": {
+            "DEVICE_JACDAC_DEBUG": 1
+        }
+    }    
 }

@@ -39,5 +39,10 @@
         "serial",
         "jacdac",
         "light"
-    ]
+    ],
+    "yotta": {
+        "optionalConfig": {
+            "DEVICE_JACDAC_DEBUG": 1
+        }
+    }
 }
