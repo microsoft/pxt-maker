@@ -164,7 +164,7 @@
             "type": "git",
             "branches": {
                 "https://github.com/lancaster-university/codal-samd":"f47641281ce85135bb16347bbcc6533a6a61d198",
-                "https://github.com/lancaster-university/codal-core": "ef851a5e8453a24c7fb802fab3b29b67c23b70db"
+                "https://github.com/lancaster-university/codal-core": "0d66e05a8fd6311a9935832da69c4fe1d1cc1830"
             }
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
