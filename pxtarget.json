@@ -422,9 +422,7 @@
         "simScreenshot": true,
         "simGif": true,
         "qrCode": true,
-        "experiments": [
-            "python"
-        ]
+        "python": true
     },
     "ignoreDocsErrors": true
 }

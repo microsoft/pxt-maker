@@ -5,32 +5,38 @@
     {
         "name": "Digital IO",
         "url": "/projects/digital-io",
-        "imageUrl": "/static/projects/digital-io/blinky/gallery.gif"
+        "imageUrl": "/static/projects/digital-io/blinky/gallery.png",
+        "largeImageUrl": "/static/projects/digital-io/blinky/gallery.gif"
     },
     {
         "name": "Analog IO",
         "url": "/projects/analog-io",
-        "imageUrl": "/static/projects/analog-io/blink-to-light/gallery.gif"
+        "imageUrl": "/static/projects/analog-io/blink-to-light/gallery.png",
+        "largeImageUrl": "/static/projects/analog-io/blink-to-light/gallery.gif"
     },
     {
         "name": "Pixel",
         "url": "/projects/pixel",
-        "imageUrl": "/static/projects/pixel/blinky/gallery.gif"
+        "imageUrl": "/static/projects/pixel/blinky/gallery.png",
+        "largeImageUrl": "/static/projects/pixel/blinky/gallery.gif"
     },
     {
         "name": "Light",
         "url": "/projects/light",
-        "imageUrl": "/static/projects/light/rainbow/gallery.gif"
+        "imageUrl": "/static/projects/light/rainbow/gallery.png",
+        "largeImageUrl": "/static/projects/light/rainbow/gallery.gif"
     },
     {
         "name": "Music",
         "url": "/projects/music",
-        "imageUrl": "/static/projects/music/play-sound/gallery.gif"
+        "imageUrl": "/static/projects/music/play-sound/gallery.png",
+        "largeImageUrl": "/static/projects/music/play-sound/gallery.gif"
     },
     {
         "name": "Servos",
         "url": "/projects/servos",
-        "imageUrl": "/static/projects/servos/sweep/gallery.gif"
+        "imageUrl": "/static/projects/servos/sweep/gallery.png",
+        "largeImageUrl": "/static/projects/servos/sweep/gallery.gif"
     },
     {
         "name": "HID",
@@ -39,12 +45,14 @@
     {
         "name": "Screen",
         "url": "/projects/screen",
-        "imageUrl": "/static/projects/screen/console/gallery.gif"
+        "imageUrl": "/static/projects/screen/console/gallery.png",
+        "largeImageUrl": "/static/projects/screen/console/gallery.gif"
     },
     {
         "name": "Accelerometer",
         "url": "/projects/accelerometer",
-        "imageUrl": "/static/projects/accelerometer/shake/gallery.gif"
+        "imageUrl": "/static/projects/accelerometer/shake/gallery.png",
+        "largeImageUrl": "/static/projects/accelerometer/shake/gallery.gif"
     },
     {
         "name": "Serial",
@@ -57,7 +65,8 @@
     {
         "name": "LCD",
         "url": "/projects/lcd",
-        "imageUrl": "/static/projects/lcd/hello-world/gallery.gif"
+        "imageUrl": "/static/projects/lcd/hello-world/gallery.png",
+        "largeImageUrl": "/static/projects/lcd/hello-world/gallery.gif"
     },
     {
         "name": "LoRa",
