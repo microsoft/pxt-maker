@@ -163,7 +163,7 @@
             "branch": "v1.5.4-jacdac-v0.0",
             "type": "git",
             "branches": {
-                "https://github.com/lancaster-university/codal-core": "4fa673f3d74e3a7091a7e3e33a8f652fa37d6510"
+                "https://github.com/lancaster-university/codal-core": "63c19944accd1db88247633ecd05ae9bed7f7100"
             }
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
