@@ -6,7 +6,7 @@
         "name": "Digital IO",
         "url": "/projects/digital-io",
         "imageUrl": "/static/projects/digital-io/blinky/gallery.png",
-        "largImageUrl": "/static/projects/digital-io/blinky/gallery.gif"
+        "largeImageUrl": "/static/projects/digital-io/blinky/gallery.gif"
     },
     {
         "name": "Analog IO",
@@ -29,7 +29,8 @@
     {
         "name": "Music",
         "url": "/projects/music",
-        "imageUrl": "/static/projects/music/play-sound/gallery.gif"
+        "imageUrl": "/static/projects/music/play-sound/gallery.png",
+        "largeImageUrl": "/static/projects/music/play-sound/gallery.gif"
     },
     {
         "name": "Servos",
