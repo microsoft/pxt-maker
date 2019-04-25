@@ -14,6 +14,9 @@ namespace config {
     export const PIN_A6 = DAL.PA04;
     export const PIN_A7 = DAL.PB03;
 
+    export const PIN_NEOPIXEL = PIN_A1;
+    export const NUM_NEOPIXELS = 30;
+
     export const PIN_D1 = PIN_A1;
     export const PIN_D2 = PIN_A2;
     export const PIN_D3 = PIN_A3;
