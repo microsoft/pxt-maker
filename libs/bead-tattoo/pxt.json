@@ -6,10 +6,10 @@
         "device.d.ts",
         "config.ts",
         "ns.ts",
+        "jacdac.ts",
         "startup.ts",
         "board.json",
-        "board.svg",
-        "jacdac.ts"
+        "board.svg"
     ],
     "testFiles": [
         "test.ts"
