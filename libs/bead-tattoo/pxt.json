@@ -8,7 +8,8 @@
         "ns.ts",
         "startup.ts",
         "board.json",
-        "board.svg"
+        "board.svg",
+        "jacdac.ts"
     ],
     "testFiles": [
         "test.ts"
