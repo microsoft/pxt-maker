@@ -6,6 +6,8 @@
         "device.d.ts",
         "config.ts",
         "ns.ts",
+        "tsl2591.ts",
+        "jacdac.ts",
         "startup.ts",
         "board.json",
         "board.svg"
