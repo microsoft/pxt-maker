@@ -72,47 +72,6 @@ namespace tsl2591 {
         ATIME_600_MS = 0x05     // 600 ms
     }
 
-    /* #endregion */
-
-    namespace RegisterHelper {
-
-        /**
-         * Write register of the address location
-         */
-        export function writeRegister(addr: number, reg: number, dat: number): void {
-            let _registerBuffer = pins.createBuffer(2);
-            _registerBuffer[0] = reg;
-            _registerBuffer[1] = dat;
-            pins.i2cWriteBuffer(addr, _registerBuffer);
-        }
-
-        /**
-         * Read a 8-byte register of the address location
-         */
-        export function readRegister8(addr: number, reg: number): number {
-            pins.i2cWriteNumber(addr, reg, NumberFormat.UInt8BE);
-            return pins.i2cReadNumber(addr, NumberFormat.UInt8BE);
-        }
-
-        /**
-         * Read a (UInt16) 16-byte register of the address location
-         */
-        export function readRegisterUInt16(addr: number, reg: number): number {
-            pins.i2cWriteNumber(addr, reg, NumberFormat.UInt8BE);
-            return pins.i2cReadNumber(addr, NumberFormat.UInt16LE);
-        }
-
-        /**
-         * Read a (Int16) 16-byte register of the address location
-         */
-        export function readRegisterInt16(addr: number, reg: number): number {
-            pins.i2cWriteNumber(addr, reg, NumberFormat.UInt8BE);
-            return pins.i2cReadNumber(addr, NumberFormat.Int16LE);
-
-        }
-
-    }
-
     let TSL2591_I2C_ADDR = TSL2591_I2C_ADDRESS;
     export let isConnected = false;
     let atimeIntegrationValue: TSL2591_ATIME;
@@ -121,7 +80,7 @@ namespace tsl2591 {
     export function initSensor() {
         //REGISTER FORMAT:   CMD | TRANSACTION | ADDRESS
         //REGISTER READ:     TSL2591_REGISTER_COMMAND (0x80) | TSL2591_REGISTER_COMMAND_NORMAL (0x20) | TSL2591_REGISTER_ID (0x12)
-        let device_id = RegisterHelper.readRegister8(TSL2591_I2C_ADDR, TSL2591_REGISTER_COMMAND | TSL2591_REGISTER_ID)
+        let device_id = pins.i2c.i2cReadRegister(TSL2591_I2C_ADDR, TSL2591_REGISTER_COMMAND | TSL2591_REGISTER_ID);
 
         //Check that device Identification = 0x50 (Page 19)   
         if (device_id != 0x50) {
@@ -158,13 +117,13 @@ namespace tsl2591 {
         //REGISTER VALUE:    TSL2591_REGISTER_COMMAND (0x80) | TSL2591_REGISTER_CONTROL (0x01)
         //REGISTER WRITE:    atimeIntegrationValue | gainSensorValue
 
-        RegisterHelper.writeRegister(TSL2591_I2C_ADDR, TSL2591_REGISTER_COMMAND | TSL2591_REGISTER_CONTROL, atimeIntegrationValue | gainSensorValue);
+        pins.i2c.writeRegister(TSL2591_I2C_ADDR, TSL2591_REGISTER_COMMAND | TSL2591_REGISTER_CONTROL, atimeIntegrationValue | gainSensorValue);
 
         //Turn sensor off
         disableSensor();
     }
 
-    export function enableSensor() {
+    export function enableSensor(): void {
         //1 - First set the command bit to 1, to let the device be set
         //2 - Next, turn it on, then enable ALS, enable ALS Interrupt, and enable No Persist Interrupt
 
@@ -174,13 +133,13 @@ namespace tsl2591 {
             //REGISTER VALUE:    TSL2591_REGISTER_COMMAND (0x80) | TSL2591_REGISTER_COMMAND_NORMAL (0x20) | TSL2591_REGISTER_ENABLE (0x00)
             //REGISTER WRITE:    TSL2591_REGISTER_PON_ENABLE (0x01) | TSL2591_REGISTER_AEN_ENABLE (0x02) | TSL2591_REGISTER_AIEN_ENABLE (0x10) | TSL2591_REGISTER_NPIEN_ENABLE (0x80)
 
-            RegisterHelper.writeRegister(TSL2591_I2C_ADDR, TSL2591_REGISTER_COMMAND | TSL2591_REGISTER_ENABLE, TSL2591_REGISTER_PON_ENABLE | TSL2591_REGISTER_AEN_ENABLE | TSL2591_REGISTER_AIEN_ENABLE | TSL2591_REGISTER_NPIEN_ENABLE)
+            pins.i2c.writeRegister(TSL2591_I2C_ADDR, TSL2591_REGISTER_COMMAND | TSL2591_REGISTER_ENABLE, TSL2591_REGISTER_PON_ENABLE | TSL2591_REGISTER_AEN_ENABLE | TSL2591_REGISTER_AIEN_ENABLE | TSL2591_REGISTER_NPIEN_ENABLE)
         else
             return;
 
     }
 
-    export function disableSensor() {
+    export function disableSensor(): void {
         //1 - First set the command bit to 1, to let the device be set
         //2 - Next, turn it off
 
@@ -190,12 +149,12 @@ namespace tsl2591 {
             //REGISTER VALUE:    TSL2591_REGISTER_COMMAND (0x80) | TSL2591_REGISTER_COMMAND_NORMAL (0x20) | TSL2591_REGISTER_ENABLE (0x00)
             //REGISTER WRITE:    TSL2591_REGISTER_POFF_ENABLE (0x00)
 
-            RegisterHelper.writeRegister(TSL2591_I2C_ADDR, TSL2591_REGISTER_COMMAND | TSL2591_REGISTER_ENABLE, TSL2591_REGISTER_POFF_ENABLE)
+            pins.i2c.writeRegister(TSL2591_I2C_ADDR, TSL2591_REGISTER_COMMAND | TSL2591_REGISTER_ENABLE, TSL2591_REGISTER_POFF_ENABLE)
         else
             return;
     }
 
-    export function getRawLuminosity(): NumberFormat.UInt32LE {
+    export function getRawLuminosity(): number {
         //Always make sure the sensor is connected. Useful for cases when this block is used but the sensor wasn't set randomly. 
         while (!isConnected) {
             initSensor();
@@ -209,16 +168,14 @@ namespace tsl2591 {
             basic.pause(120);
         }
 
-        let yChannel: NumberFormat.UInt32LE;
+        let yChannel: number;
 
         //REGISTER FORMAT:   CMD | TRANSACTION | ADDRESS
         //REGISTER READ:     TSL2591_REGISTER_COMMAND (0x80) | TSL2591_REGISTER_COMMAND_NORMAL (0x20) | TSL2591_REGISTER_C1DATAL (0x16)
 
-        yChannel = RegisterHelper.readRegisterUInt16(TSL2591_I2C_ADDR, TSL2591_REGISTER_COMMAND | TSL2591_REGISTER_C1DATAL);
+        yChannel = pins.i2c.readRegister(TSL2591_I2C_ADDR, TSL2591_REGISTER_COMMAND | TSL2591_REGISTER_C1DATAL, NumberFormat.UInt16LE);
         yChannel <<= 16;
-        yChannel = RegisterHelper.readRegisterUInt16(TSL2591_I2C_ADDR, TSL2591_REGISTER_COMMAND | TSL2591_REGISTER_C0DATAL);
-
-
+        yChannel = pins.i2c.readRegister(TSL2591_I2C_ADDR, TSL2591_REGISTER_COMMAND | TSL2591_REGISTER_C0DATAL, NumberFormat.UInt16LE);
 
         //Turn sensor off
         disableSensor();
@@ -226,17 +183,17 @@ namespace tsl2591 {
         return yChannel;
     }
 
-    export function getFullSpectrum(): NumberFormat.UInt32LE {
+    export function getFullSpectrum(): number {
         let fs = getRawLuminosity();
         return (fs & 0xFFFF);
     }
 
-    export function getInfraredSpectrum(): NumberFormat.UInt32LE {
+    export function getInfraredSpectrum(): number {
         let is = getRawLuminosity();
         return (is >> 16);
     }
 
-    export function getVisibleSpectrum(): NumberFormat.UInt32LE {
+    export function getVisibleSpectrum(): number {
         let vs = getRawLuminosity();
         return ((vs & 0xFFFF) - (vs >> 16));
     }
