@@ -1,0 +1,665 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 296.932 168.846" version="1.1" width="296.932" height="168.846">
+  <defs id="defs4487">
+    <style id="style4485">
+      .cls-5{fill:#fff}
+    </style>
+  </defs>
+  <path d="M281.882 113.583a16.579 16.579 0 0 0-13.421-16.58 16.579 16.579 0 1 0-25.263-20.525l-3.158 1.184c-2.368-6.316-7.105-13.026-7.105-13.421 5.131-24.869 6.71-55.263-5.132-61.974-11.842-6.71-39.079 5.526-53.684 25.263-9.079-2.368-15-2.763-24.868-2.763-9.869 0-16.974.395-26.053 2.763C110.961 9.767 80.567-4.049 71.093 1.083c-9.474 5.132-12.632 35.921-5.921 63.158-2.763 3.158-4.737 7.105-7.105 13.816l-3.158-1.58A16.579 16.579 0 1 0 29.646 97.4a16.579 16.579 0 0 0 .789 32.368 16.579 16.579 0 1 0 26.447 15l14.606-7.105c16.973 18.947 45.394 31.184 77.763 31.184 32.368 0 60.394-12.237 77.368-31.184l14.605 7.105a16.579 16.579 0 1 0 26.447-15 16.579 16.579 0 0 0 14.211-16.184zM97.54 51.609c-9.474 6.71-14.21 11.842-14.21 11.842l-3.158-20.526c-1.184-8.29-2.763-19.342 1.579-22.105 4.342-2.763 12.237 4.737 16.579 7.895 4.342 3.157 15.79 15 15.79 15s-7.5 1.578-16.58 7.894zm121.579-8.684c-.79 9.079-3.158 20.526-3.158 20.526s-4.737-5.131-14.21-11.842c-9.08-6.316-16.185-7.895-16.185-7.895s11.053-11.842 15.395-15c4.342-3.157 12.237-10.263 16.579-7.894 4.342 2.368 2.763 13.816 1.579 22.105z" id="path4489" fill="#161616" stroke-width=".395"/>
+  <path stroke-miterlimit="10" d="M258.198 117.53a8.684 8.684 0 1 0 0-8.29l-29.21-.789a43.816 43.816 0 0 0 1.578-6.71l22.5-10.263a8.29 8.29 0 0 0 8.29.789 8.684 8.684 0 0 0 3.947-11.447 8.29 8.29 0 0 0-11.053-3.948 8.684 8.684 0 0 0-4.736 7.106l-18.948 8.684c-.79-7.895-3.947-15-8.29-21.71 2.37-18.159 10.659-56.053-.394-60.79-9.868-4.342-34.342 16.974-46.184 30.79a111.316 111.316 0 0 0-53.29 0C110.567 27.135 86.489 5.82 76.62 10.161c-10.658 4.737-3.158 42.631-.79 60.79-4.341 6.71-7.5 13.815-8.289 21.71l-18.947-8.684a8.684 8.684 0 0 0-4.737-7.106 8.29 8.29 0 0 0-11.053 3.948 8.684 8.684 0 0 0 3.948 11.447 8.29 8.29 0 0 0 8.684-.79l22.105 10.264a43.816 43.816 0 0 0 1.58 6.71l-29.211.79a8.684 8.684 0 1 0 0 8.29l31.973-.79a51.316 51.316 0 0 0 3.158 5.526l-29.605 13.816a8.29 8.29 0 0 0-8.684-.79 8.684 8.684 0 0 0-3.948 11.448 8.29 8.29 0 0 0 11.053 3.947 8.684 8.684 0 0 0 4.737-7.105l31.579-14.605c14.21 16.578 39.868 27.631 69.079 27.631 29.21 0 54.473-11.053 68.684-27.631l31.579 14.605a8.684 8.684 0 0 0 4.736 7.105 8.29 8.29 0 0 0 11.053-3.947 8.684 8.684 0 0 0-3.947-11.448 8.29 8.29 0 0 0-8.684.79l-29.606-13.816a51.316 51.316 0 0 0 3.158-5.526zm7.5-7.105a3.158 3.158 0 1 1-3.158 3.158 3.158 3.158 0 0 1 3.158-3.158zm-9.08-28.816a3.158 3.158 0 0 1 3.948 1.58 3.158 3.158 0 0 1-1.579 3.946 3.158 3.158 0 0 1-3.947-1.578 3.158 3.158 0 0 1 1.579-3.948zm-213.55 3.948a3.158 3.158 0 0 1-3.948 1.578 3.158 3.158 0 0 1-1.579-3.947 3.158 3.158 0 0 1 3.948-1.579 3.158 3.158 0 0 1 1.579 3.948zM32.803 116.74a3.158 3.158 0 1 1 2.764-3.158 3.158 3.158 0 0 1-2.764 3.158zm8.685 28.815a3.158 3.158 0 0 1-3.948-1.184 3.158 3.158 0 0 1 1.58-3.947 3.158 3.158 0 0 1 3.947 1.184 3.158 3.158 0 0 1-1.58 3.947zm92.368-30.789s-18.947 1.974-29.605-8.684c-10.658-10.658-8.685-30-8.685-30s19.343-1.974 29.606 8.684c10.263 10.658 8.684 30 8.684 30zm60-8.684c-10.658 10.658-29.605 8.684-29.605 8.684s-1.974-19.342 8.684-30c10.658-10.658 29.605-8.684 29.605-8.684s1.974 18.947-8.684 30zm61.184 35.526a3.158 3.158 0 0 1 3.947-1.184 3.158 3.158 0 0 1 1.58 3.947 3.158 3.158 0 0 1-3.948 1.184 3.158 3.158 0 0 1-1.58-3.947z" id="path4491" fill="none" stroke="#fff" stroke-width=".789"/>
+  <path d="M133.856 114.767s-18.947 1.974-29.605-8.684c-10.658-10.658-8.685-30-8.685-30s19.343-1.974 29.606 8.684c10.263 10.658 8.684 30 8.684 30zm60-8.684c-10.658 10.658-29.605 8.684-29.605 8.684s-1.974-19.342 8.684-30c10.658-10.658 29.605-8.684 29.605-8.684s1.974 18.947-8.684 30z" id="path4493" fill="#eaeaea" stroke-width=".395"/>
+  <path d="M264.514 154.24a6.316 6.316 0 0 1-3.948-1.184l-7.105-5.131a6.316 6.316 0 0 1 7.105-10.263l7.5 5.131a6.316 6.316 0 0 1-3.552 11.448zm-50.921-7.894a6.316 6.316 0 0 1-4.737-2.369l-5.527-7.105a6.356 6.356 0 0 1 10.264-7.5l5.131 7.105a6.316 6.316 0 0 1-5.131 9.869zm43.42-54.868a6.316 6.316 0 0 1-3.552-11.843l7.105-4.736a6.356 6.356 0 1 1 7.5 10.263l-7.5 5.131a6.316 6.316 0 0 1-3.552 1.185zm-34.736-4.343a6.316 6.316 0 0 1-3.553-11.447l7.5-5.131a6.316 6.316 0 1 1 7.105 10.263l-7.105 5.131a6.316 6.316 0 0 1-3.947 1.184zm51.71 33.158h-8.684a6.316 6.316 0 1 1 0-12.631h8.684a6.316 6.316 0 0 1 0 12.631zm-240 33.948a6.316 6.316 0 0 0 3.553-1.185l7.5-5.131a6.356 6.356 0 0 0-7.5-10.263l-7.105 5.131a6.316 6.316 0 0 0 3.553 11.448zm50.527-7.895a6.316 6.316 0 0 0 5.131-2.369l5.527-7.105a6.356 6.356 0 0 0-10.263-7.5l-5.527 7.105a6.316 6.316 0 0 0 5.132 9.869zM41.093 91.478a6.316 6.316 0 0 0 3.947-11.843l-7.5-4.736a6.316 6.316 0 1 0-7.105 10.263l7.105 5.131a6.316 6.316 0 0 0 3.553 1.185zm34.737-4.343a6.316 6.316 0 0 0 3.552-11.447l-7.105-5.131a6.316 6.316 0 1 0-7.105 10.263l7.105 5.131a6.316 6.316 0 0 0 3.553 1.184zm-51.316 33.158h8.684a6.316 6.316 0 0 0 0-12.631h-8.684a6.316 6.316 0 1 0 0 12.631z" id="path4495" fill="#c7cbcd" stroke-width=".395"/>
+  <g id="A3" transform="translate(.83 -64.049) scale(.39474)">
+    <circle id="circle4497" class="cls-5" r="9" cy="451" cx="58" fill="#fff"/>
+    <circle id="circle4499" class="cls-5" r="9" cy="451" cx="82" fill="#fff"/>
+  </g>
+  <g id="A2" transform="translate(.83 -64.049) scale(.39474)">
+    <circle id="circle4501" class="cls-5" r="9" cy="537" cx="83" fill="#fff"/>
+    <circle id="circle4503" class="cls-5" r="9" cy="524" cx="103" fill="#fff"/>
+  </g>
+  <g id="A9" transform="translate(.83 -64.049) scale(.39474)">
+    <circle id="circle4505" class="cls-5" r="9" cy="518" cx="212" fill="#fff"/>
+    <circle id="circle4507" class="cls-5" r="9" cy="499" cx="226" fill="#fff"/>
+  </g>
+  <g id="A4" transform="translate(.83 -64.049) scale(.39474)">
+    <circle id="circle4509" class="cls-5" r="9" cy="378" cx="103" fill="#fff"/>
+    <circle id="circle4511" class="cls-5" r="9" cy="364" cx="83" fill="#fff"/>
+  </g>
+  <g id="A5" transform="translate(.83 -64.049) scale(.39474)">
+    <circle id="circle4513" class="cls-5" r="9" cy="367" cx="191" fill="#fff"/>
+    <circle id="circle4515" class="cls-5" r="9" cy="354" cx="171" fill="#fff"/>
+  </g>
+  <g id="A0" transform="translate(.83 -64.049) scale(.39474)">
+    <circle id="sdfsdf" class="cls-5" r="9" cy="451" cx="694" fill="#fff"/>
+    <circle id="circle4519" class="cls-5" r="9" cy="451" cx="670" fill="#fff"/>
+  </g>
+  <g id="A1" transform="translate(.83 -64.049) scale(.39474)">
+    <circle id="sdfdsafsdf" class="cls-5" r="9" cy="537" cx="668" fill="#fff"/>
+    <circle id="circle4523" class="cls-5" r="9" cy="524" cx="648" fill="#fff"/>
+  </g>
+  <g id="A8" transform="translate(.83 -64.049) scale(.39474)">
+    <circle id="circle4525" class="cls-5" r="9" cy="518" cx="540" fill="#fff"/>
+    <circle id="circle4527" class="cls-5" r="9" cy="499" cx="525" fill="#fff"/>
+  </g>
+  <g id="A7" transform="translate(.83 -64.049) scale(.39474)">
+    <circle id="circle4529" class="cls-5" r="9" cy="378" cx="648" fill="#fff"/>
+    <circle id="circle4531" class="cls-5" r="9" cy="364" cx="668" fill="#fff"/>
+  </g>
+  <g id="A6" transform="translate(.83 -64.049) scale(.39474)">
+    <circle id="circle4533" class="cls-5" r="9" cy="367" cx="561" fill="#fff"/>
+    <circle id="circle4535" class="cls-5" r="9" cy="354" cx="581" fill="#fff"/>
+  </g>
+  <text xml:space="preserve" style="line-height:1.25;-inkscape-font-specification:consolas" x="282.831" y="117.869" id="text4584" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="40" font-family="consolas" letter-spacing="0" word-spacing="0" fill="#000" fill-opacity="1" stroke="none">
+    <tspan id="tspan4582" x="282.831" y="117.869" font-size="13.333" fill="#000">A0</tspan>
+  </text>
+  <text xml:space="preserve" style="line-height:1.25;-inkscape-font-specification:consolas" x="272.17" y="158.97" id="text4584-4" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="40" font-family="consolas" letter-spacing="0" word-spacing="0" fill="#000" fill-opacity="1" stroke="none">
+    <tspan id="tspan4582-4" x="272.17" y="158.97" font-size="13.333" fill="#000">A1</tspan>
+  </text>
+  <text xml:space="preserve" style="line-height:1.25;-inkscape-font-specification:consolas" x="273.78" y="77.049" id="text4584-4-4" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="40" font-family="consolas" letter-spacing="0" word-spacing="0" fill="#000" fill-opacity="1" stroke="none">
+    <tspan id="tspan4582-4-6" x="273.78" y="77.049" font-size="13.333" fill="#000">A7</tspan>
+  </text>
+  <text xml:space="preserve" style="line-height:1.25;-inkscape-font-specification:consolas" x="236.933" y="68.821" id="text4584-4-8" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="40" font-family="consolas" letter-spacing="0" word-spacing="0" fill="#000" fill-opacity="1" stroke="none">
+    <tspan id="tspan4582-4-7" x="236.933" y="68.821" font-size="13.333" fill="#000">A6</tspan>
+  </text>
+  <text xml:space="preserve" style="line-height:1.25;-inkscape-font-specification:consolas" x="217.616" y="155.571" id="text4584-4-82" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="40" font-family="consolas" letter-spacing="0" word-spacing="0" fill="#000" fill-opacity="1" stroke="none">
+    <tspan id="tspan4582-4-2" x="217.616" y="155.571" font-size="13.333" fill="#000">A8</tspan>
+  </text>
+  <text xml:space="preserve" style="line-height:1.25;-inkscape-font-specification:consolas" x="45.725" y="67.748" id="text4584-4-7" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="40" font-family="consolas" letter-spacing="0" word-spacing="0" fill="#000" fill-opacity="1" stroke="none">
+    <tspan id="tspan4582-4-3" x="45.725" y="67.748" font-size="13.333" fill="#000">A5</tspan>
+  </text>
+  <text xml:space="preserve" style="line-height:1.25;-inkscape-font-specification:consolas" x="9.594" y="76.87" id="text4584-4-6" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="40" font-family="consolas" letter-spacing="0" word-spacing="0" fill="#000" fill-opacity="1" stroke="none">
+    <tspan id="tspan4582-4-1" x="9.594" y="76.87" font-size="13.333" fill="#000">A4</tspan>
+  </text>
+  <text xml:space="preserve" style="line-height:1.25;-inkscape-font-specification:consolas" x="-.065" y="115.863" id="text4584-4-46" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="40" font-family="consolas" letter-spacing="0" word-spacing="0" fill="#000" fill-opacity="1" stroke="none">
+    <tspan id="tspan4582-4-0" x="-.065" y="115.863" font-size="13.333" fill="#000">A3</tspan>
+  </text>
+  <text xml:space="preserve" style="line-height:1.25;-inkscape-font-specification:consolas" x="11.204" y="160.937" id="text4584-4-5" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="40" font-family="consolas" letter-spacing="0" word-spacing="0" fill="#000" fill-opacity="1" stroke="none">
+    <tspan id="tspan4582-4-4" x="11.204" y="160.937" font-size="13.333" fill="#000">A2</tspan>
+  </text>
+  <text xml:space="preserve" style="line-height:1.25;-inkscape-font-specification:consolas" x="66.652" y="156.108" id="text4584-4-2" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="40" font-family="consolas" letter-spacing="0" word-spacing="0" fill="#000" fill-opacity="1" stroke="none">
+    <tspan id="tspan4582-4-37" x="66.652" y="156.108" font-size="13.333" fill="#000">A9</tspan>
+  </text>
+  <path id="polygon1873" transform="rotate(90 83.904 172.06) scale(2.10098)" fill="#404040" d="M21.313 8.677V4.743l-1.511-1.511h-3.931l-1.51 1.511v11.206l1.51 1.512h3.931l1.511-1.512v-3.932z"/>
+  <path id="polygon1875" transform="rotate(90 83.904 172.06) scale(2.10098)" fill="#404040" d="M14.131 8.677V4.743l-1.509-1.511H8.69L7.177 4.743v11.206l1.513 1.512h3.932l1.509-1.512v-3.932z"/>
+  <path id="polygon1877" transform="rotate(90 83.904 172.06) scale(2.10098)" fill="#404040" d="M6.954 8.677V4.743L5.442 3.232H1.509L0 4.743v11.206l1.509 1.512h3.933l1.512-1.512v-3.932z"/>
+  <path id="polygon1879" transform="rotate(90 83.904 172.06) scale(2.10098)" fill="#404040" d="M21.313 8.677V4.743l-1.511-1.511h-3.931l-1.51 1.511v11.206l1.51 1.512h3.931l1.511-1.512v-3.932z"/>
+  <path id="polygon1881" transform="rotate(90 83.904 172.06) scale(2.10098)" fill="#404040" d="M14.131 8.677V4.743l-1.509-1.511H8.69L7.177 4.743v11.206l1.513 1.512h3.932l1.509-1.512v-3.932z"/>
+  <path id="polygon1883" transform="rotate(90 83.904 172.06) scale(2.10098)" fill="#404040" d="M6.954 8.677V4.743L5.442 3.232H1.509L0 4.743v11.206l1.509 1.512h3.933l1.512-1.512v-3.932z"/>
+  <g transform="translate(-169.379 -40.496)" id="MISO">
+    <g transform="rotate(180 216.893 97.938) scale(2.10098)" id="g3347">
+      <g id="g3345">
+        <g id="g3343">
+          <g id="g3728">
+            <g id="g3284">
+              <g id="g3918">
+                <g id="g3920">
+                  <g id="g3922">
+                    <g id="g3924">
+                      <path id="rect1895-9" fill="#8d8455" d="M16.858 12.84h2.298v2.298h-2.298z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(180 216.892 97.94) scale(2.10098)" id="g3360">
+      <g id="g3358">
+        <g id="g3356">
+          <g id="g3737">
+            <g id="g3291">
+              <g id="g3927">
+                <g id="g3929">
+                  <g id="g3931">
+                    <g id="g3933">
+                      <path id="connector49pin-3" fill="#8c8663" d="M17.416 13.399H18.6v1.183h-1.184z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1899" fill="#b8af82" d="M18.597 14.58l.559.558V12.84l-.559.559z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1901" fill="#80795b" d="M19.156 15.138h-2.298l.558-.558h1.181z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1903" fill="#5e5b43" d="M16.858 15.138V12.84l.558.559v1.181z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1905" fill="#9a916c" d="M17.416 13.399l-.558-.559h2.298l-.559.559z"/>
+  </g>
+  <g transform="translate(-169.379 -40.496)" id="MOSI">
+    <g transform="rotate(180 224.455 90.375) scale(2.10098)" id="g3334">
+      <g id="g3332">
+        <g id="g3330">
+          <g id="g3720">
+            <g id="g3276">
+              <g id="g3909">
+                <g id="g3911">
+                  <g id="g3913">
+                    <g id="g3915">
+                      <path id="rect1893-0" fill="#8d8c8c" d="M16.858 5.641h2.298v2.298h-2.298z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(180 224.457 90.375) scale(2.10098)" id="g3377">
+      <g id="g3375">
+        <g id="g3373">
+          <g id="g3749">
+            <g id="g3303">
+              <g id="g3940">
+                <g id="g3942">
+                  <g id="g3944">
+                    <g id="g3946">
+                      <path id="connector53pin" fill="#8c8663" d="M17.417 6.198h1.182v1.183h-1.182z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1909" fill="#b8af82" d="M18.597 7.38l.559.558V5.641l-.559.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1911" fill="#80795b" d="M19.156 7.938h-2.298l.558-.558h1.181z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1913" fill="#5e5b43" d="M16.858 7.938V5.641l.558.558V7.38z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1915" fill="#9a916c" d="M17.416 6.199l-.558-.558h2.298l-.559.558z"/>
+  </g>
+  <g transform="translate(-169.379 -40.496)" id="SDA">
+    <g transform="rotate(180 209.331 90.376) scale(2.10098)" id="g3321">
+      <g id="g3319">
+        <g id="g3317">
+          <g id="g3711">
+            <g id="g3269">
+              <g id="g3900">
+                <g id="g3902">
+                  <g id="g3904">
+                    <g id="g3906">
+                      <path id="rect1891-3" fill="#8d8c8c" d="M9.66 12.84h2.298v2.298H9.66z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(180 209.329 90.378) scale(2.10098)" id="g3394">
+      <g id="g3392">
+        <g id="g3390">
+          <g id="g3761">
+            <g id="g3315">
+              <g id="g3953">
+                <g id="g3955">
+                  <g id="g3957">
+                    <g id="g3959">
+                      <path id="connector47pin-2" fill="#8c8663" d="M10.217 13.399h1.184v1.184h-1.184z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1919" fill="#b8af82" d="M11.4 14.58l.557.558V12.84l-.557.559z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1921" fill="#80795b" d="M11.957 15.138H9.66l.557-.558H11.4z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1923" fill="#5e5b43" d="M9.66 15.138V12.84l.557.559v1.181z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1925" fill="#9a916c" d="M10.217 13.399l-.557-.559h2.297l-.557.559z"/>
+  </g>
+  <g transform="translate(-169.379 -40.496)" id="SCK">
+    <g transform="rotate(180 216.893 82.814) scale(2.10098)" id="g3308">
+      <g id="g3306">
+        <g id="g3304">
+          <g id="g3702">
+            <g id="g3301">
+              <g id="g3891">
+                <g id="g3893">
+                  <g id="g3895">
+                    <g id="g3897">
+                      <path id="rect1889-7" fill="#8d8c8c" d="M9.66 5.641h2.298v2.298H9.66z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(180 216.893 82.814) scale(2.10098)" id="g3411">
+      <g id="g3409">
+        <g id="g3407">
+          <g id="g3773">
+            <g id="g3326">
+              <g id="g3966">
+                <g id="g3968">
+                  <g id="g3970">
+                    <g id="g3972">
+                      <path id="connector51pin" fill="#8c8663" d="M10.218 6.198H11.4v1.184h-1.182z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1929" fill="#b8af82" d="M11.4 7.38l.557.558V5.641l-.557.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1931" fill="#80795b" d="M11.957 7.938H9.66l.557-.558H11.4z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1933" fill="#5e5b43" d="M9.66 7.938V5.641l.557.558V7.38z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1935" fill="#9a916c" d="M10.217 6.199l-.557-.558h2.297l-.557.558z"/>
+  </g>
+  <g transform="translate(-169.379 -40.496)" id="VCC">
+    <g transform="rotate(180 201.77 82.814) scale(2.10098)" id="g3294">
+      <g id="g3292">
+        <g id="g3290">
+          <g id="g3693">
+            <g id="g3255">
+              <g id="g3882">
+                <g id="g3884">
+                  <g id="g3886">
+                    <g id="g3888">
+                      <path id="rect1887-5" fill="#8d8c8c" d="M2.462 12.839H4.76v2.299H2.462z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(180 201.766 82.814) scale(2.10098)" id="g3428">
+      <g id="g3426">
+        <g id="g3424">
+          <g id="g3786">
+            <g id="g3788">
+              <g id="g3979">
+                <g id="g3981">
+                  <g id="g3983">
+                    <g id="g3985">
+                      <path id="connector45pin-7" fill="#8c8663" d="M3.017 13.398h1.184v1.185H3.017z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1939" fill="#b8af82" d="M4.2 14.58l.559.558V12.84l-.559.559z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1941" fill="#80795b" d="M4.759 15.138H2.461l.555-.558H4.2z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1943" fill="#5e5b43" d="M2.461 15.138V12.84l.555.559v1.181z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1945" fill="#9a916c" d="M3.016 13.399l-.555-.559h2.298l-.559.559z"/>
+  </g>
+  <g transform="translate(-169.379 -40.496)" id="SCL">
+    <g transform="rotate(180 209.333 75.251) scale(2.10098)" id="g3281">
+      <g id="g3279">
+        <g id="g3277">
+          <g id="g3684">
+            <g id="g3686">
+              <g id="g3873">
+                <g id="g3875">
+                  <g id="g3877">
+                    <g id="g3879">
+                      <path id="rect1885" fill="#8d8c8c" d="M2.462 5.64H4.76v2.299H2.462z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(180 209.33 75.25) scale(2.10098)" id="g3445">
+      <g id="g3443">
+        <g id="g3441">
+          <g id="g3799">
+            <g id="g3349">
+              <g id="g3992">
+                <g id="g3994">
+                  <g id="g3996">
+                    <g id="g3998">
+                      <path id="connector49pin" fill="#8c8663" d="M3.018 6.197H4.2v1.185H3.018z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon4001" fill="#b8af82" d="M4.2 7.38l.559.558V5.641l-.559.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon4003" fill="#80795b" d="M4.759 7.938H2.461l.555-.558H4.2z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1953" fill="#5e5b43" d="M2.461 7.938V5.641l.555.558V7.38z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1955" fill="#9a916c" d="M3.016 6.199l-.555-.558h2.298l-.559.558z"/>
+  </g>
+  <g transform="translate(-292.389 -72.923)" id="RESETBTN">
+    <g transform="rotate(180 201.77 82.814) scale(2.10098)" id="g3294-5">
+      <g id="g3292-8">
+        <g id="g3290-9">
+          <g id="g3693-7">
+            <g id="g3255-3">
+              <g id="g3882-2">
+                <g id="g3884-7">
+                  <g id="g3886-5">
+                    <g id="g3888-2">
+                      <path id="rect1887-5-3" fill="#8d8c8c" d="M2.462 12.839H4.76v2.299H2.462z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(180 201.766 82.814) scale(2.10098)" id="g3428-2">
+      <g id="g3426-1">
+        <g id="g3424-0">
+          <g id="g3786-8">
+            <g id="g3788-6">
+              <g id="g3979-1">
+                <g id="g3981-7">
+                  <g id="g3983-7">
+                    <g id="g3985-0">
+                      <path id="connector45pin-7-0" fill="#8c8663" d="M3.017 13.398h1.184v1.185H3.017z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1939-5" fill="#b8af82" d="M4.759 15.138V12.84l-.559.559v1.181z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1941-3" fill="#80795b" d="M2.461 15.138l.555-.558H4.2l.559.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1943-7" fill="#5e5b43" d="M2.461 12.84l.555.559v1.181l-.555.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1945-0" fill="#9a916c" d="M2.461 12.84h2.298l-.559.559H3.016z"/>
+  </g>
+  <path id="polygon1873-8" transform="rotate(90 -1.18 86.977) scale(2.10098)" fill="#404040" d="M14.361 8.677v7.272l1.51 1.512h3.931l1.511-1.512V4.743l-1.511-1.511h-3.931l-1.51 1.511z"/>
+  <path id="polygon1875-2" transform="rotate(90 -1.18 86.977) scale(2.10098)" fill="#404040" d="M7.177 8.677v7.272l1.513 1.512h3.932l1.509-1.512V4.743l-1.509-1.511H8.69L7.177 4.743z"/>
+  <path id="polygon1877-3" transform="rotate(90 -1.18 86.977) scale(2.10098)" fill="#404040" d="M0 8.677v7.272l1.509 1.512h3.933l1.512-1.512V4.743L5.442 3.232H1.509L0 4.743z"/>
+  <path id="polygon1879-6" transform="rotate(90 -1.18 86.977) scale(2.10098)" fill="#404040" d="M14.361 8.677v7.272l1.51 1.512h3.931l1.511-1.512V4.743l-1.511-1.511h-3.931l-1.51 1.511z"/>
+  <path id="polygon1881-0" transform="rotate(90 -1.18 86.977) scale(2.10098)" fill="#404040" d="M7.177 8.677v7.272l1.513 1.512h3.932l1.509-1.512V4.743l-1.509-1.511H8.69L7.177 4.743z"/>
+  <path id="polygon1883-5" transform="rotate(90 -1.18 86.977) scale(2.10098)" fill="#404040" d="M0 8.677v7.272l1.509 1.512h3.933l1.512-1.512V4.743L5.442 3.232H1.509L0 4.743z"/>
+  <g transform="translate(-339.546 -40.496)" id="X7">
+    <g transform="rotate(180 216.893 97.938) scale(2.10098)" id="g3347-5">
+      <g id="g3345-6">
+        <g id="g3343-1">
+          <g id="g3728-0">
+            <g id="g3284-4">
+              <g id="g3918-2">
+                <g id="g3920-8">
+                  <g id="g3922-8">
+                    <g id="g3924-2">
+                      <path id="rect1895-9-0" fill="#8d8455" d="M16.858 12.84h2.298v2.298h-2.298z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(180 216.892 97.94) scale(2.10098)" id="g3360-4">
+      <g id="g3358-0">
+        <g id="g3356-2">
+          <g id="g3737-4">
+            <g id="g3291-0">
+              <g id="g3927-1">
+                <g id="g3929-7">
+                  <g id="g3931-4">
+                    <g id="g3933-4">
+                      <path id="connector49pin-3-4" fill="#8c8663" d="M17.416 13.399H18.6v1.183h-1.184z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1899-0" fill="#b8af82" d="M19.156 15.138V12.84l-.559.559v1.181z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1901-3" fill="#80795b" d="M16.858 15.138l.558-.558h1.181l.559.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1903-3" fill="#5e5b43" d="M16.858 12.84l.558.559v1.181l-.558.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1905-9" fill="#9a916c" d="M16.858 12.84h2.298l-.559.559h-1.181z"/>
+  </g>
+  <g transform="translate(-339.546 -40.496)" id="I2SSCK">
+    <g transform="rotate(180 224.455 90.375) scale(2.10098)" id="g3334-3">
+      <g id="g3332-1">
+        <g id="g3330-1">
+          <g id="g3720-9">
+            <g id="g3276-7">
+              <g id="g3909-8">
+                <g id="g3911-4">
+                  <g id="g3913-0">
+                    <g id="g3915-8">
+                      <path id="rect1893-0-2" fill="#8d8c8c" d="M16.858 5.641h2.298v2.298h-2.298z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(180 224.457 90.375) scale(2.10098)" id="g3377-1">
+      <g id="g3375-0">
+        <g id="g3373-4">
+          <g id="g3749-7">
+            <g id="g3303-6">
+              <g id="g3940-0">
+                <g id="g3942-9">
+                  <g id="g3944-1">
+                    <g id="g3946-2">
+                      <path id="connector53pin-5" fill="#8c8663" d="M17.417 6.198h1.182v1.183h-1.182z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1909-4" fill="#b8af82" d="M19.156 7.938V5.641l-.559.558V7.38z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1911-1" fill="#80795b" d="M16.858 7.938l.558-.558h1.181l.559.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1913-7" fill="#5e5b43" d="M16.858 5.641l.558.558V7.38l-.558.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1915-3" fill="#9a916c" d="M16.858 5.641h2.298l-.559.558h-1.181z"/>
+  </g>
+  <g transform="translate(-339.546 -40.496)" id="X3">
+    <g transform="rotate(180 209.331 90.376) scale(2.10098)" id="g3321-8">
+      <g id="g3319-5">
+        <g id="g3317-4">
+          <g id="g3711-7">
+            <g id="g3269-9">
+              <g id="g3900-6">
+                <g id="g3902-8">
+                  <g id="g3904-9">
+                    <g id="g3906-5">
+                      <path id="rect1891-3-3" fill="#8d8c8c" d="M9.66 12.84h2.298v2.298H9.66z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(180 209.329 90.378) scale(2.10098)" id="g3394-7">
+      <g id="g3392-2">
+        <g id="g3390-6">
+          <g id="g3761-3">
+            <g id="g3315-3">
+              <g id="g3953-4">
+                <g id="g3955-2">
+                  <g id="g3957-8">
+                    <g id="g3959-9">
+                      <path id="connector47pin-2-6" fill="#8c8663" d="M10.217 13.399h1.184v1.184h-1.184z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1919-1" fill="#b8af82" d="M11.957 15.138V12.84l-.557.559v1.181z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1921-8" fill="#80795b" d="M9.66 15.138l.557-.558H11.4l.557.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1923-3" fill="#5e5b43" d="M9.66 12.84l.557.559v1.181l-.557.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1925-6" fill="#9a916c" d="M9.66 12.84h2.297l-.557.559h-1.183z"/>
+  </g>
+  <g transform="translate(-339.546 -40.496)" id="X2">
+    <g transform="rotate(180 216.893 82.814) scale(2.10098)" id="g3308-8">
+      <g id="g3306-3">
+        <g id="g3304-4">
+          <g id="g3702-4">
+            <g id="g3301-4">
+              <g id="g3891-5">
+                <g id="g3893-9">
+                  <g id="g3895-1">
+                    <g id="g3897-0">
+                      <path id="rect1889-7-2" fill="#8d8c8c" d="M9.66 5.641h2.298v2.298H9.66z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(180 216.893 82.814) scale(2.10098)" id="g3411-4">
+      <g id="g3409-3">
+        <g id="g3407-6">
+          <g id="g3773-7">
+            <g id="g3326-3">
+              <g id="g3966-8">
+                <g id="g3968-7">
+                  <g id="g3970-7">
+                    <g id="g3972-9">
+                      <path id="connector51pin-3" fill="#8c8663" d="M10.218 6.198H11.4v1.184h-1.182z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1929-8" fill="#b8af82" d="M11.957 7.938V5.641l-.557.558V7.38z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1931-2" fill="#80795b" d="M9.66 7.938l.557-.558H11.4l.557.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1933-4" fill="#5e5b43" d="M9.66 5.641l.557.558V7.38l-.557.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1935-4" fill="#9a916c" d="M9.66 5.641h2.297l-.557.558h-1.183z"/>
+  </g>
+  <g transform="translate(-339.546 -40.496)" id="GND">
+    <g transform="rotate(180 201.77 82.814) scale(2.10098)" id="g3294-3">
+      <g id="g3292-7">
+        <g id="g3290-0">
+          <g id="g3693-0">
+            <g id="g3255-6">
+              <g id="g3882-5">
+                <g id="g3884-4">
+                  <g id="g3886-8">
+                    <g id="g3888-8">
+                      <path id="rect1887-5-4" fill="#8d8c8c" d="M2.462 12.839H4.76v2.299H2.462z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(180 201.766 82.814) scale(2.10098)" id="g3428-9">
+      <g id="g3426-5">
+        <g id="g3424-7">
+          <g id="g3786-4">
+            <g id="g3788-8">
+              <g id="g3979-3">
+                <g id="g3981-6">
+                  <g id="g3983-8">
+                    <g id="g3985-7">
+                      <path id="connector45pin-7-9" fill="#8c8663" d="M3.017 13.398h1.184v1.185H3.017z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1939-1" fill="#b8af82" d="M4.759 15.138V12.84l-.559.559v1.181z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1941-6" fill="#80795b" d="M2.461 15.138l.555-.558H4.2l.559.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1943-6" fill="#5e5b43" d="M2.461 12.84l.555.559v1.181l-.555.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1945-3" fill="#9a916c" d="M2.461 12.84h2.298l-.559.559H3.016z"/>
+  </g>
+  <g transform="translate(-339.546 -40.496)" id="CS">
+    <g transform="rotate(180 209.333 75.251) scale(2.10098)" id="g3281-2">
+      <g id="g3279-5">
+        <g id="g3277-2">
+          <g id="g3684-4">
+            <g id="g3686-8">
+              <g id="g3873-6">
+                <g id="g3875-6">
+                  <g id="g3877-8">
+                    <g id="g3879-8">
+                      <path id="rect1885-2" fill="#8d8c8c" d="M2.462 5.64H4.76v2.299H2.462z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(180 209.33 75.25) scale(2.10098)" id="g3445-8">
+      <g id="g3443-2">
+        <g id="g3441-4">
+          <g id="g3799-6">
+            <g id="g3349-0">
+              <g id="g3992-9">
+                <g id="g3994-1">
+                  <g id="g3996-6">
+                    <g id="g3998-6">
+                      <path id="connector49pin-1" fill="#8c8663" d="M3.018 6.197H4.2v1.185H3.018z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon4001-9" fill="#b8af82" d="M4.759 7.938V5.641l-.559.558V7.38z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon4003-5" fill="#80795b" d="M2.461 7.938l.555-.558H4.2l.559.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1953-9" fill="#5e5b43" d="M2.461 5.641l.555.558V7.38l-.555.558z"/>
+    <path transform="rotate(90 148.346 276.998) scale(2.10098)" id="polygon1955-6" fill="#9a916c" d="M2.461 5.641h2.298l-.559.558H3.016z"/>
+  </g>
+</svg>
