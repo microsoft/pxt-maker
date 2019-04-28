@@ -1,3 +1,6 @@
+if (!jacdac.identification)
+    jacdac.identification = new jacdac.JDGPIOIdentification(pins.LED);
+
 // enable some services
 jacdac.consoleService();
 jacdac.accelerometerService.start();
