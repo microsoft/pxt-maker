@@ -1,4 +1,7 @@
 // start exposing accelerometer + touch
+if (!jacdac.identification)
+    jacdac.identification = new jacdac.JDGPIOIdentification(pins.LED);
+
 jacdac.consoleService();
 jacdac.accelerometerService.start();
 jacdac.touchA0.start();
