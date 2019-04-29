@@ -1,0 +1,47 @@
+{
+    "name": "bead-motion",
+    "description": "Support for Project Brookdale's Motion Hub - beta",
+    "files": [
+        "README.md",
+        "config.ts",
+        "device.d.ts",
+        "startup.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "core": true,
+    "dependencies": {
+        "core---samd": "file:../core---samd",
+        "accelerometer": "file:../accelerometer",
+        "jacdac": "file:../jacdac"
+    },
+    "public": true,
+    "compileServiceVariant": "samd21",
+    "features": [
+        "uf2",
+        "i2c",
+        "pinled",
+        "pina0",
+        "pina1",
+        "pind0",
+        "pind1",
+        "jacdac",
+        "accelerometer"
+    ],
+    "yotta": {
+        "optionalConfig": {
+            "DEVICE_JACDAC_DEBUG": 1
+        },
+        "config": {
+            "PXT_SUPPORT_LIS3DH": 1,
+            "PXT_SUPPORT_MMA8653": 0,
+            "PXT_SUPPORT_MMA8453": 0,
+            "PXT_SUPPORT_FXOS8700": 0,
+            "PXT_SUPPORT_MSA300": 0,
+            "PXT_SUPPORT_MPU6050": 0
+        }
+    }
+}
