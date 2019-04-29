@@ -197,8 +197,9 @@ namespace pxsim.visuals {
         public init(bus: EventBus, state: CommonNeoPixelStateConstructor, svgEl: SVGSVGElement, otherParams: Map<string>): void {
             this.stripGroup = <SVGGElement>svg.elt("g");
             this.element = this.stripGroup;
-            const pinStr = otherParams["dataPin"] || otherParams["pin"] || "pins.MOSI";
-            this.pin = parsePinString(pinStr);
+            this.pin = parsePinString(otherParams["dataPin"] || otherParams["pin"])
+                || parsePinString("pins.NEOPIXEL")
+                || parsePinString("pins.MOSI");
             this.lastLocation = [0, 0];
             this.state = state(this.pin);
 
