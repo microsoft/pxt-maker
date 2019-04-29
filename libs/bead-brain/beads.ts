@@ -61,6 +61,57 @@ namespace beads {
     export const motion2 = new MotionBead("mo2");
 
     /**
+     * A servo bead
+     */
+    //% fixedInstances
+    export class ServoBead extends Bead {
+        constructor(name: string, serviceName: string) {
+            super(name, new jacdac.ServoClient(serviceName));
+        }
+
+        /**
+         * Set the servo angle
+         */
+        //% weight=100 help=servos/set-angle
+        //% blockId=beadservoservosetangle block="set %servo angle to %degrees=protractorPicker °"
+        //% degrees.defl=90
+        //% servo.fieldEditor="gridpicker"
+        //% servo.fieldOptions.width=220
+        //% servo.fieldOptions.columns=2
+        //% blockGap=8
+        //% parts=microservo trackArgs=0
+        //% group="Servos"
+        setAngle(degrees: number) {
+            const client = this.client as ServoClient;
+            client.setAngle(degrees);
+        }
+    }
+
+    /**
+     * A servo bead
+     */
+    //% fixedInstance block="servo 1"
+    export const servo1Servo1 = new ServoBead("ser1", "ser1");
+
+    /**
+     * A servo bead
+     */
+    //% fixedInstance block="servo 2"
+    export const servo1Servo2 = new ServoBead("ser1", "ser2");
+
+    /**
+     * A servo bead
+     */
+    //% fixedInstance block="servo 1"
+    export const servo2Servo1 = new ServoBead("ser2", "ser1");
+
+    /**
+     * A servo bead
+     */
+    //% fixedInstance block="servo 2"
+    export const servo2Servo2 = new ServoBead("ser2", "ser2");
+
+    /**
      * A programmable light bead
      */
     //% fixedInstances
@@ -79,7 +130,7 @@ namespace beads {
         setAll(rgb: number) {
             const c = this.client as jacdac.LightClient;
             c.setAll(rgb);
-        }        
+        }
 
         /**
          * Show an animation or queue an animation in the animation queue
