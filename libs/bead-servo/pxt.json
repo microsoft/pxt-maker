@@ -3,10 +3,9 @@
     "description": "Support for Project Brookdale's Servo Bead - beta",
     "files": [
         "README.md",
-        "device.d.ts",
         "config.ts",
-        "ns.ts",
-        "motion.ts",
+        "device.d.ts",
+        "servo.ts",
         "startup.ts",
         "board.json",
         "board.svg"
