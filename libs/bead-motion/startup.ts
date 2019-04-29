@@ -3,3 +3,4 @@ if (!jacdac.identification)
 
 // start exposing color detection service
 jacdac.consoleService();
+jacdac.accelerometerService.start();

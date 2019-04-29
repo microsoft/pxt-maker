@@ -53,6 +53,7 @@
         "libs/bead-servo",
         "libs/bead-color",
         "libs/bead-light",
+        "libs/bead-motion",
         "libs/bead-tattoo",
         "libs/bead-proximity",
         "libs/bead-environment"
