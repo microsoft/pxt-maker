@@ -18,12 +18,12 @@ namespace light {
      * Gets the light strip attached to jack connector 6 (J18)
      */
     //% fixedInstance whenUsed block="pixels 6"
-    export const pixels6 = light.createStrip(pins.A5, 30);
+    export const pixels6 = light.createStrip(pins.A6, 30);
     /**
      * Gets the light strip attached to jack connector 7 (J18)
      */
-    //% fixedInstance whenUsed block="pixels 6"
-    export const pixels7 = light.createStrip(pins.A6, 30);
+    //% fixedInstance whenUsed block="pixels 7"
+    export const pixels7 = light.createStrip(pins.A7, 30);
 }
 
 namespace jacdac {

@@ -176,7 +176,10 @@
     "SDA": "SDA",
     "SCL": "SCL"
   },
-  "onboardComponents": [],
+  "onboardComponents": [
+    "accelerometer",
+    "jacdac"
+  ],
   "marginWhenBreadboarding": [
     0,
     0,
