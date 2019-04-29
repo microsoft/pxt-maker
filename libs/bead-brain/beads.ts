@@ -82,7 +82,7 @@ namespace beads {
         //% parts=microservo trackArgs=0
         //% group="Servos"
         setAngle(degrees: number) {
-            const client = this.client as ServoClient;
+            const client = this.client as jacdac.ServoClient;
             client.setAngle(degrees);
         }
     }
