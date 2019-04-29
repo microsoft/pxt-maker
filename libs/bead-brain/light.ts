@@ -31,35 +31,35 @@ namespace jacdac {
      * Gets the jacdac service for the pixels light strip
      */
     //% fixedInstance whenUsed block="pixels service"
-    export const pixelsService = new LightService("pixels", light.pixels);
+    export const pixelsService = new LightService("pix", light.pixels);
 
     /**
      * Gets the jacdac service for the pixels2 light strip
      */
     //% fixedInstance whenUsed block="pixels2 service"
-    export const pixels2Service = new LightService("pixels2", light.pixels2);
+    export const pixels2Service = new LightService("pix2", light.pixels2);
 
     /**
      * Gets the jacdac service for the pixels3 light strip
      */
     //% fixedInstance whenUsed block="pixels3 service"
-    export const pixels3Service = new LightService("pixels3", light.pixels3);
+    export const pixels3Service = new LightService("pix3", light.pixels3);
 
     /**
      * Gets the jacdac service for the pixels5 light strip
      */
     //% fixedInstance whenUsed block="pixels5 service"
-    export const pixels5Service = new LightService("pixels5", light.pixels5);
+    export const pixels5Service = new LightService("pix5", light.pixels5);
 
     /**
      * Gets the jacdac service for the pixels6 light strip
      */
     //% fixedInstance whenUsed block="pixels6 service"
-    export const pixels6Service = new LightService("pixels6", light.pixels6);
+    export const pixels6Service = new LightService("pix6", light.pixels6);
 
     /**
      * Gets the jacdac service for the pixels7 light strip
      */
     //% fixedInstance whenUsed block="pixels7 service"
-    export const pixels7Service = new LightService("pixels7", light.pixels7);
+    export const pixels7Service = new LightService("pix7", light.pixels7);
 }
