@@ -3,6 +3,5 @@ if (!jacdac.identification)
 
 // start exposing accelerometer
 jacdac.consoleService();
-jacdac.accelerometerService.start();
 jacdac.servoA1Service.start();
 jacdac.servoA2Service.start();
