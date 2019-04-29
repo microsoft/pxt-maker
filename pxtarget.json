@@ -72,7 +72,7 @@
         "libs/sparkfun-lumidrive",
         "libs/stitchkit",
         "libs/teknikio-bluebird",
-        "libs/bead-motion",
+        "libs/bead-servo",
         "libs/bead-brain",
         "libs/bead-color",
         "libs/bead-light",
@@ -177,7 +177,7 @@
             }
         },
         "githubCorePackage": "lancaster-university/codal",
-        "gittag": "v0.6.1",
+        "gittag": "v0.6.3",
         "serviceId": "codal2cp",
         "dockerImage": "pext/yotta:latest"
     },

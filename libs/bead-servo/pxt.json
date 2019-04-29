@@ -1,11 +1,12 @@
 {
-    "name": "bead-motion",
+    "name": "bead-servo",
     "description": "Support for Project Brookdale's Motion Bead - beta",
     "files": [
         "README.md",
         "device.d.ts",
         "config.ts",
         "ns.ts",
+        "motion.ts",
         "startup.ts",
         "board.json",
         "board.svg"
@@ -16,10 +17,9 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
-        "buttons": "file:../buttons",
+        "servo": "file:../servo",
         "accelerometer": "file:../accelerometer",
-        "jacdac": "file:../jacdac",
-        "touch": "file:../touch"
+        "jacdac": "file:../jacdac"
     },
     "public": true,
     "compileServiceVariant": "samd21",

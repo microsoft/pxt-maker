@@ -17,7 +17,6 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
-        "servo": "file:../servo",
         "buttons": "file:../buttons",
         "accelerometer": "file:../accelerometer",
         "jacdac": "file:../jacdac",

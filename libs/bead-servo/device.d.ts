@@ -38,6 +38,3 @@ declare namespace pins {
     //% fixedInstance shim=pxt::getPin(PIN_RXLED)
     const RXLED: DigitalInOutPin;
 }
-
-declare namespace input {
-}
