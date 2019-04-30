@@ -49,6 +49,7 @@
         "libs/lcd",
         "libs/color-sensor",
         "libs/light-spectrum-sensor",
+        "libs/proximity",
         "libs/bead-brain",
         "libs/bead-servo",
         "libs/bead-color",
