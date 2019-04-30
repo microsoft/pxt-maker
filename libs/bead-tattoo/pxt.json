@@ -18,7 +18,6 @@
     "dependencies": {
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
-        "accelerometer": "file:../accelerometer",
         "jacdac": "file:../jacdac",
         "touch": "file:../touch"
     },
