@@ -62,4 +62,19 @@ namespace jacdac {
      */
     //% fixedInstance whenUsed block="pixels7 service"
     export const pixels7Service = new LightService("pix7", light.pixels7);
+
+    /**
+     * Start all JACDAC services
+     */
+    //% blockId="jd_bead_bread_start_services" block="jacdac start servies"
+    export function startServices() {
+        jacdac.consoleService.start();
+        jacdac.accelerationService.start();
+        jacdac.pixelsService.start();
+        jacdac.pixels2Service.start();
+        jacdac.pixels3Service.start();
+        jacdac.pixels5Service.start();
+        jacdac.pixels6Service.start();
+        jacdac.pixels7Service.start();        
+    }
 }
