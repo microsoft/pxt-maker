@@ -3,3 +3,4 @@ if (!jacdac.identification)
 
 // start exposing light detection service
 jacdac.consoleService();
+jacdac.lightSpectrumSensorService.start();
