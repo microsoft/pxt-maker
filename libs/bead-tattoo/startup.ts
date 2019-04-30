@@ -3,7 +3,7 @@ if (!jacdac.identification)
     jacdac.identification = new jacdac.JDGPIOIdentification(pins.LED);
 
 jacdac.consoleService();
-jacdac.accelerometerService.start();
+//jacdac.accelerometerService.start();
 jacdac.touchA0.start();
 jacdac.touchA1.start();
 jacdac.touchA2.start();
