@@ -42,7 +42,8 @@
         "storage",
         "serial",
         "jacdac",
-        "light"
+        "light",
+        "brain"
     ],
     "yotta": {
         "optionalConfig": {
