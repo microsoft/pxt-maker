@@ -68,8 +68,8 @@ namespace jacdac {
      */
     //% blockId="jd_bead_bread_start_services" block="jacdac start servies"
     export function startServices() {
-        jacdac.consoleService.start();
-        jacdac.accelerationService.start();
+        jacdac.consoleService();
+        jacdac.accelerometerService.start();
         jacdac.pixelsService.start();
         jacdac.pixels2Service.start();
         jacdac.pixels3Service.start();
