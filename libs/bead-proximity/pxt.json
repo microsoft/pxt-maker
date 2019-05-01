@@ -15,8 +15,8 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
-        "proximity": "file:../proximity",
-        "jacdac": "file:../jacdac"
+        "bead": "file:../bead",
+        "proximity": "file:../proximity"
     },
     "public": true,
     "compileServiceVariant": "samd21",

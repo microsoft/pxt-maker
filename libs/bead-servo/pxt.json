@@ -16,8 +16,8 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
-        "servo": "file:../servo",
-        "jacdac": "file:../jacdac"
+        "bead": "file:../bead",
+        "servo": "file:../servo"
     },
     "public": true,
     "compileServiceVariant": "samd21",

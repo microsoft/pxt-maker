@@ -16,8 +16,8 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
-        "color-sensor": "file:../color-sensor",
-        "jacdac": "file:../jacdac"
+        "bead": "file:../bead",
+        "color-sensor": "file:../color-sensor"
     },
     "public": true,
     "compileServiceVariant": "samd21",

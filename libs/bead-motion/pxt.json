@@ -16,8 +16,8 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
-        "accelerometer": "file:../accelerometer",
-        "jacdac": "file:../jacdac"
+        "bead": "file:../bead",
+        "accelerometer": "file:../accelerometer"
     },
     "public": true,
     "compileServiceVariant": "samd21",

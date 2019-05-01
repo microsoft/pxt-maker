@@ -18,11 +18,11 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
+        "bead": "file:../bead",
         "buttons": "file:../buttons",
         "accelerometer": "file:../accelerometer",
         "touch": "file:../touch",
         "light": "file:../light",
-        "jacdac": "file:../jacdac",
         "jacdac-drivers": "file:../jacdac-drivers"
     },
     "public": true,

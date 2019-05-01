@@ -16,8 +16,8 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
-        "light-spectrum-sensor": "file:../light-spectrum-sensor",
-        "jacdac": "file:../jacdac"
+        "bead": "file:../bead",
+        "light-spectrum-sensor": "file:../light-spectrum-sensor"
     },
     "public": true,
     "compileServiceVariant": "samd21",

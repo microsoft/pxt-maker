@@ -1,0 +1,20 @@
+{
+    "name": "bead",
+    "description": "Common code for beads - beta",
+    "files": [
+        "config.ts"
+    ],
+    "testFiles": [
+    ],
+    "dependencies": {
+        "core": "file:../core",
+        "jacdac": "file:../jacdac"
+    },
+    "public": true,
+    "compileServiceVariant": "samd21",
+    "features": [
+        "uf2",
+        "bead"
+    ],
+    "hidden": true
+}

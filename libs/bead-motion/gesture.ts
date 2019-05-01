@@ -1,7 +1,3 @@
-const enum BeadGesture {
-    Step
-}
-
 namespace input {
     function stepUpdate(): () => boolean {
         let active = true;
