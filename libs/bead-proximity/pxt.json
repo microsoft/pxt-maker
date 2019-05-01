@@ -22,6 +22,7 @@
     "compileServiceVariant": "samd21",
     "yotta": {
         "optionalConfig": {
+            "DEVICE_USB": 0,
             "DEVICE_JACDAC_DEBUG": 1
         }
     },
