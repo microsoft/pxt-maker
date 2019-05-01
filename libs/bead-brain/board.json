@@ -120,7 +120,7 @@
         "w": 6.304708440698622,
         "h": 6.304769559137285,
         "color": "#ff0000",
-        "label": "LED1"
+        "label": "LED"
       },
       {
         "x": 103.87573041156793,
@@ -128,7 +128,7 @@
         "w": 6.304708440698622,
         "h": 6.304769559137285,
         "color": "#ff0000",
-        "label": "LED2"
+        "label": "RXLED"
       }
     ],
     "touchPads": [],
@@ -159,8 +159,8 @@
     "SWDIO": "SWDIO",
     "MISO": "MISO",
     "MOSI": "MOSI",
-    "LED1": "LED1",
-    "LED2": "LED2",
+    "LED": "LED",
+    "RXLED": "RXLED",
     "RESETBTN_1_": "RESETBTN_1_",
     "RESETBTN": "RESETBTN_1_",
     "": "RESETBTN_1_"
@@ -178,7 +178,6 @@
   },
   "onboardComponents": [
     "accelerometer",
-    "neopixel",
     "jacdac"
   ],
   "marginWhenBreadboarding": [
