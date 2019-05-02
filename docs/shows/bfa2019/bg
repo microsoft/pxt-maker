@@ -25,3 +25,15 @@ input.onGesture(Gesture.Shake, function () {
 //motion.onCustomGesture(BeadGesture.Step, function () {
 //    pulse();
 //})
+{
+    "name": "gv",
+    "dependencies": {
+        "bead-brain": "file:../../../../libs/bead-brain"
+    },
+    "description": "",
+    "files": [
+        "main.ts",
+        "README.md"
+    ],
+    "preferredEditor": "tsprj"
+}
