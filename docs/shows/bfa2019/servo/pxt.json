@@ -1,7 +1,7 @@
 {
-    "name": "tattoo-bead",
+    "name": "servo",
     "dependencies": {
-        "bead-tattoo": "file:../../../../libs/bead-tattoo"
+        "bead-servo": "file:../../../../libs/bead-servo"
     },
     "description": "",
     "files": [
