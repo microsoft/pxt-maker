@@ -1,7 +1,8 @@
 {
     "name": "servo-test",
     "dependencies": {
-        "bead-brain": "file:../../../../libs/bead-brain"
+        "bead-brain": "file:../../../../libs/bead-brain",
+        "servo": "file:../../../../libs/servo"
     },
     "description": "",
     "files": [
