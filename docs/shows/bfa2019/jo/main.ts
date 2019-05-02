@@ -18,13 +18,13 @@ function pulse() {
 }
 
 // events
-tattoo.onEvent(0, JDButtonEvent.Down, function () {
+tattoo.onEvent(2, JDButtonEvent.Down, function () {
     active = true;
     lights.startBrightnessTransition(0, 64, 500, 2, true,
         new light.EasingBrightnessTransition(easing.linear, easing.linear)
     );
 })
-tattoo.onEvent(0, JDButtonEvent.Up, function () {
+tattoo.onEvent(2, JDButtonEvent.Up, function () {
     active = false;
     lights.startBrightnessTransition(200, 0, 500, 1, false,
         new light.EasingBrightnessTransition(easing.linear, easing.linear)
