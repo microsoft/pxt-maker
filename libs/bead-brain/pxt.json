@@ -5,8 +5,9 @@
         "README.md",
         "config.ts",
         "device.d.ts",
-        "ns.ts",
+        "servo.ts",
         "light.ts",
+        "ns.ts",
         "startup.ts",
         "board.json",
         "board.svg"
@@ -22,6 +23,7 @@
         "accelerometer": "file:../accelerometer",
         "touch": "file:../touch",
         "light": "file:../light",
+        "servo": "file:../servo",
         "jacdac-drivers": "file:../jacdac-drivers"
     },
     "public": true,
