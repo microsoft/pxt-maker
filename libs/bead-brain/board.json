@@ -141,7 +141,6 @@
     }
   },
   "gpioPinMap": {
-    "1": "RESETBTN_1_",
     "A1": "A1",
     "NEOPIXEL": "A1",
     "A7": "A7",
@@ -160,10 +159,7 @@
     "MISO": "MISO",
     "MOSI": "MOSI",
     "LED": "LED",
-    "RXLED": "RXLED",
-    "RESETBTN_1_": "RESETBTN_1_",
-    "RESETBTN": "RESETBTN_1_",
-    "": "RESETBTN_1_"
+    "RXLED": "RXLED"
   },
   "groundPins": [
     "GND"
