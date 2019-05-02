@@ -7,7 +7,6 @@
         "device.d.ts",
         "ns.ts",
         "light.ts",
-        "beads.ts",
         "startup.ts",
         "board.json",
         "board.svg"
