@@ -1,0 +1,4 @@
+//  
+jacdac.instance().setDeviceName("D")
+
+

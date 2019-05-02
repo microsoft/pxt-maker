@@ -1,0 +1,13 @@
+{
+    "name": "bead-brain-light-test",
+    "dependencies": {
+        "bead-brain": "file:../../../../libs/bead-brain"
+    },
+    "description": "",
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "preferredEditor": "tsprj"
+}
