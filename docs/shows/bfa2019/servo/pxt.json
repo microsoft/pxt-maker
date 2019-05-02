@@ -1,7 +1,7 @@
 {
-    "name": "motion",
+    "name": "servo",
     "dependencies": {
-        "bead-motion": "file:../../../../libs/bead-motion"
+        "bead-servo": "file:../../../../libs/bead-servo"
     },
     "description": "",
     "files": [

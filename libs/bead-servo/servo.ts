@@ -17,11 +17,5 @@ namespace jacdac {
      * Gets the jacdac service for the servo A1
      */
     //% fixedInstance
-    export const servoA1Service = new jacdac.ServoService("sA1", servos.servoA1);
-
-    /**
-     * Gets the jacdac service for the servo A2
-     */
-    //% fixedInstance
-    export const servoA2Service = new jacdac.ServoService("sA2", servos.servoA2);
+    export const servosService = new jacdac.ServosService("servos", [servos.servoA1, servos.servoA2]);
 }

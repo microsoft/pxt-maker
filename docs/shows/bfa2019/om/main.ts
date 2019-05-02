@@ -1,9 +1,9 @@
 // omega
 
 // hardware
-const tattoo = new jacdac.TouchButtonsClient("tattoo");
+const tattoo = jacdac.touchButtonsClient;
 const servos = new jacdac.ServosClient("servoes", 2);
-const duration = 2000;
+const duration = 3000;
 
 // actions
 enum State {
