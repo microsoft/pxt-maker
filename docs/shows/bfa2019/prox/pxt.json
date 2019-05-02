@@ -1,0 +1,12 @@
+{
+    "name": "proximity",
+    "dependencies": {
+        "bead-proximity": "file:../../../../libs/bead-proximity"
+    },
+    "description": "",
+    "files": [
+        "main.ts",
+        "README.md"
+    ],
+    "preferredEditor": "tsprj"
+}
