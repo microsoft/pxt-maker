@@ -8,13 +8,13 @@ jg2:DONE:touch to pulse ???
 jo:TODO:touch, motion, light
 ko:DONE:touch + light
 kt:DONE:L,R motion + two strips
-mo:TODO:touch to light
+mo:DONE:touch to light
 om:PELI:motors
 q:DONE:proximity to light pulse
 rb:DONE:touch to light drip
 rn:TODO:proximity to light pulse
-sw:TODO:touch to light pulse
+sw:DONE:touch to light pulse
 tv:PELI:touch, 2 motors, shoulder light strips, words
-up:TODO:touch to pulse green
+up:DONE:touch to pulse green
 vc:DONE:
 zipora:DONE:
