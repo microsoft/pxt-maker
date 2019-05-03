@@ -13,7 +13,7 @@ om:PELI:motors
 q:CC:proximity to light pulse
 rb:CC:touch to light drip
 rn:CC:proximity to light pulse
-sw:CC:touch to light pulse
+sw:DONE:touch to light pulse
 tv:PELI:touch, 2 motors, shoulder light strips, words
 up:CC:touch to pulse green
 vc:DONE:motion to pink sparkle

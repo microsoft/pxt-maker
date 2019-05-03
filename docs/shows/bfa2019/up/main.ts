@@ -1,47 +1,57 @@
 // UP
 
 // hardware
-const tattoo = jacdac.touchButtonsClient;
+const touchLeft = new jacdac.TouchButtonsClient("touch");
+const touchRight = jacdac.touchButtonsClient;
 const lights = light.pixels;
+const lights2 = light.pixels2;
 lights.setBrightness(200);
-lights.setLength(50);
+lights.setLength(120);
+lights2.setBrightness(200);
+lights2.setLength(120);
+touchLeft.requiredDeviceName = "L"
+touchRight.requiredDeviceName = "R"
+touchLeft.onConnected = function() {
+    touchLeft.calibrate()
+}
+touchRight.onConnected = function() {
+    touchLeft.calibrate()
+}
 
 
-function interpolateColor(color1: number, color2: number, factor: number) {
-    //  factor = easing.inOutCubic(factor);
-      let r1 = color1 >> 16
-      let r2 = color2 >> 16
-      let g1 = (color1 & 0xff00) >> 8
-      let g2 = (color2 & 0xff00) >> 8
-      let b1 = color1 & 0xff
-      let b2 = color2 & 0xff
-      let r = (r1 + factor * (r2 - r1)) | 0x00
-      let g = (g1 + factor * (g2 - g1)) | 0x00
-      let b = (b1 + factor * (b2 - b1)) | 0x00
-      return (r << 16) | (g << 8) | b;
-  };
-  // My function to interpolate between two colors completely, returning an array
-  function interpolateColors(color1: number, color2: number, steps: number, i: number) {
-      let stepFactor = i / (steps - 1);
-      return interpolateColor(color1, color2, stepFactor);
-  }
-  
-  
-  function pulse() {
-      let mid = lights.length()>>1
-      for (let i = 0; i < mid; i++) {
-          lights.setPixelColor(i, interpolateColors(0xff0000, 0x0000FF, mid, i))
-      }
-      for (let i = 0; i < mid; i++) {
-          lights.setPixelColor(i+mid, interpolateColors(0x0000FF, 0xFF0000, mid, i))
-      }
-      lights.show();
-      lights.startBrightnessTransition(96, 16, 800, 1, true,
-          new light.EasingBrightnessTransition(easing.inOutCubic));
-  }
+forever(() => {
+   lights.move(LightMove.Rotate);
+   lights2.move(LightMove.Rotate);
+});
 
-  
+enum State { Green, Sparkle, Idle}
+let state = State.Idle;
+
 // events
-tattoo.onEvent(2, JDButtonEvent.Down, function () {
-    pulse();
+touchLeft.onEvent(2, JDButtonEvent.Down, function () {
+    // green
+    if (state === State.Idle) {
+        state = State.Green;
+        lights.range(0, 60).setAll(0x00ff00);
+        lights.startBrightnessTransition(80, 40, 1000, -1, true);
+        lights2.range(0, 60).setAll(0x00ff00);
+        lights2.startBrightnessTransition(80, 40, 1000, -1, true);
+    }
+})
+
+// events
+touchRight.onEvent(2, JDButtonEvent.Down, function () {
+    // sparkle
+    if (state == State.Green) {
+        state = State.Sparkle;
+        lights.clear();
+        lights.startBrightnessTransition(0, 255, 10);
+        lights2.clear();
+        lights2.startBrightnessTransition(0, 255, 10);
+        pause(1)
+
+        lights.showAnimation(light.sparkleAnimation, 60000)
+        lights2.showAnimation(light.sparkleAnimation, 60000)
+        state = State.Idle;
+    }
 })
