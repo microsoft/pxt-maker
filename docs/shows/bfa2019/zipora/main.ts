@@ -1,13 +1,9 @@
-// gevanleen
+// zipora
 
 // hardware
 const lights1 = light.pixels;
 const lights2 = light.pixels2;
 
-// actions
-function pulse() {
-
-}
 
 lights1.setLength(46);
 lights1.setBrightness(0);
