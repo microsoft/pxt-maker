@@ -15,8 +15,9 @@ touchLeft.onConnected = function() {
     touchLeft.calibrate()
 }
 touchRight.onConnected = function() {
-    touchLeft.calibrate()
+    touchRight.calibrate()
 }
+let sparkle2 = new light.SparkleAnimation(0xff, 0xff, 0xff, 50);
 
 
 forever(() => {
@@ -30,7 +31,7 @@ let state = State.Idle;
 // events
 touchLeft.onEvent(2, JDButtonEvent.Down, function () {
     // green
-    if (state === State.Idle) {
+    if (state == State.Idle) {
         state = State.Green;
         lights.range(0, 60).setAll(0x00ff00);
         lights.startBrightnessTransition(80, 40, 1000, -1, true);
@@ -49,9 +50,11 @@ touchRight.onEvent(2, JDButtonEvent.Down, function () {
         lights2.clear();
         lights2.startBrightnessTransition(0, 255, 10);
         pause(1)
-
-        lights.showAnimation(light.sparkleAnimation, 60000)
-        lights2.showAnimation(light.sparkleAnimation, 60000)
-        state = State.Idle;
+        control.runInBackground(() => {
+            lights.showAnimation(light.sparkleAnimation, 60000)
+        });
+        control.runInBackground(() => {
+            lights2.showAnimation(sparkle2, 60000)
+        });
     }
 })

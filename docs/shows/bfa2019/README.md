@@ -15,6 +15,6 @@ rb:CC:touch to light drip
 rn:CC:proximity to light pulse
 sw:DONE:touch to light pulse
 tv:PELI:touch, 2 motors, shoulder light strips, words
-up:CC:touch to pulse green
+up:DONE:touch to pulse green, touch after to sparkle
 vc:DONE:motion to pink sparkle
 zipora:CC:
