@@ -1,25 +1,82 @@
+/*
+
 const tattoo = jacdac.touchButtonsClient;
-const servo2 = servos.servo2;
-const servo3 = servos.servo3;
-const l = light.pixels5;
+const ser = new jacdac.ServosClient("ser", 2);
 
-let drift1 = -5;
-let drift2 = 3;
-//l.setAll(0x00ffff)
+let running = false;
+let forward = false;
+function anim() {
+    if (running) return;
+    running = true;
+    if (forward) {
+        ser.setAngle(0, 180);
+        ser.setAngle(1, 0);
+        pause(800)
+    } else {
+        ser.setAngle(0, 0);
+        ser.setAngle(1, 180);
+        pause(800)
+    }
+    forward = !forward;
+    running = false;
+}
+
+function stepUpdate(): () => boolean {
+    let active = true;
+    return function () {
+        const s = input.acceleration(Dimension.Strength);
+        if (!active && s > 1500) {
+            active = true;
+            return true;
+        } else if (s < 1200) {
+            active = false;
+        }
+        return false;
+    }
+}
+
+input.onCustomGesture(42, stepUpdate(), anim); // register
 
 
-tattoo.onEvent(0, JDButtonEvent.Down, function() {
-    servo2.run(80 + drift1);
-    servo3.run(80 + drift2);
-//    l.setAll(0xff0000)
-})
-tattoo.onEvent(1, JDButtonEvent.Down, function() {
-    servo2.run(0 + drift1);
-    servo3.run(0 + drift2);
-  //  l.setAll(0x0000ff)
-})
-tattoo.onEvent(2, JDButtonEvent.Down, function() {
-    servo2.run(-80 + drift1);
-    servo3.run(-80 + drift2);
-    //l.setAll(0x00ff00)
-})
+*/
+
+namespace servos {
+    //% fixedInstance
+    export const servoA1 = new servos.PinServo(pins.A1);
+    //% fixedInstance
+    export const servoA2 = new servos.PinServo(pins.A2);
+}
+
+let running = false;
+let forward = false;
+function anim() {
+    if (running) return;
+    running = true;
+    if (forward) {
+        servos.servoA1.setAngle(180)
+        servos.servoA2.setAngle(0)
+        pause(800)
+    } else {
+        servos.servoA1.setAngle(0)
+        servos.servoA2.setAngle(180)
+        pause(800)
+    }
+    forward = !forward;
+    running = false;
+}
+
+function stepUpdate(): () => boolean {
+    let active = true;
+    return function () {
+        const s = input.acceleration(Dimension.Strength);
+        if (!active && s > 1500) {
+            active = true;
+            return true;
+        } else if (s < 1200) {
+            active = false;
+        }
+        return false;
+    }
+}
+
+input.onCustomGesture(42, stepUpdate(), anim); // register
