@@ -1,2 +1,2 @@
 // motion
-jacdac.instance().setDeviceName("R");
+jacdac.instance().setDeviceName("L");
