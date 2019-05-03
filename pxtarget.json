@@ -141,10 +141,10 @@
         "codalTarget": {
             "name": "codal-circuit-playground",
             "url": "https://github.com/lancaster-university/codal-circuit-playground",
-            "branch": "v1.5.4-i2c_hack.3",
+            "branch": "v1.5.4-i2c_hack.4",
             "type": "git",
             "branches": {
-                "https://github.com/lancaster-university/codal-core": "c95dd23c2ac07ce1ab347803003fce1bc65f4317",
+                "https://github.com/lancaster-university/codal-core": "e16a98d9f74d588874aedbcd25d83ef0fe203b6a",
                 "https://github.com/lancaster-university/codal-samd": "99e2686377da59bec6bc486c62d7096909dd967f"
             }
         },
@@ -304,7 +304,7 @@
                 "codalTarget": {
                     "name": "codal-circuit-playground",
                     "url": "https://github.com/lancaster-university/codal-circuit-playground",
-                    "branch": "v1.5.4-i2c_hack.3",
+                    "branch": "v1.5.4-i2c_hack.4",
                     "type": "git"
                 },
                 "dockerImage": "pext/yotta:latest",
