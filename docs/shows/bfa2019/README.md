@@ -6,7 +6,7 @@ gv:DONE:shake to pulse two strips
 jg1:TODO:touch to pulse pink
 jg2:TODO:touch to pulse ???
 jo:TODO:touch, motion, light
-ko:touch + light
+ko:TODO:touch + light
 kt:DONE:L,R motion + two strips
 mo:TODO:touch to light
 om:PELI:motors
