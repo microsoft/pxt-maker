@@ -1,7 +1,9 @@
 {
     "name": "servo-test",
     "dependencies": {
-        "bead-brain": "file:../../../../libs/bead-brain"
+        "bead-tattoo": "file:../../../../libs/bead-tattoo",
+        "accelerometer": "file:../../../../libs/accelerometer",
+        "servo": "file:../../../../libs/servo"
     },
     "description": "",
     "files": [

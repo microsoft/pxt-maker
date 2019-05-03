@@ -2,46 +2,68 @@
 
 // hardware
 const tattoo = jacdac.touchButtonsClient;
-const lights = light.pixels;
-lights.setBrightness(200);
-lights.setLength(50);
+const btns = [4, 5, 0];
+const center = light.pixels;
+const left = light.pixels2;//.range(20, 100);
+const right = light.pixels7;
+const strips = [center, left, right];
+
+strips.forEach(strip => {
+    strip.setBrightness(60);
+    strip.setLength(120);
+    strip.setBuffered(true);
+});
 
 
-function interpolateColor(color1: number, color2: number, factor: number) {
-    //  factor = easing.inOutCubic(factor);
-      let r1 = color1 >> 16
-      let r2 = color2 >> 16
-      let g1 = (color1 & 0xff00) >> 8
-      let g2 = (color2 & 0xff00) >> 8
-      let b1 = color1 & 0xff
-      let b2 = color2 & 0xff
-      let r = (r1 + factor * (r2 - r1)) | 0x00
-      let g = (g1 + factor * (g2 - g1)) | 0x00
-      let b = (b1 + factor * (b2 - b1)) | 0x00
-      return (r << 16) | (g << 8) | b;
-  };
-  // My function to interpolate between two colors completely, returning an array
-  function interpolateColors(color1: number, color2: number, steps: number, i: number) {
-      let stepFactor = i / (steps - 1);
-      return interpolateColor(color1, color2, stepFactor);
-  }
-  
-  
-  function pulse() {
-      let mid = lights.length()>>1
-      for (let i = 0; i < mid; i++) {
-          lights.setPixelColor(i, interpolateColors(0xff0000, 0x0000FF, mid, i))
-      }
-      for (let i = 0; i < mid; i++) {
-          lights.setPixelColor(i+mid, interpolateColors(0x0000FF, 0xFF0000, mid, i))
-      }
-      lights.show();
-      lights.startBrightnessTransition(96, 16, 800, 1, true,
-          new light.EasingBrightnessTransition(easing.inOutCubic));
-  }
+let running = false;
+tattoo.onConnected = function() {
+    tattoo.calibrate();
+}
+tattoo.calibrate();
+function animLeft() {
+    while (running) {
+        left.move(LightMove.Shift);
+        if (Math.random() > 0.8)
+            left.setPixelColor(0, 0xff00ff);
+        left.show();
+        pause(1)
+    }
+}
+function animRight() {
+    while (running) {
+        right.move(LightMove.Shift, -1);
+        if (Math.random() > 0.8)
+            right.setPixelColor(right.length() - 1, 0xff00ff);
+        right.show();
+        pause(1)
+    }
+}
+function animCenter() {
+    const l = center.range(0, 60)
+    const r = center.range(60, 60)
+    while (running) {
+        l.move(LightMove.Shift);
+        if (Math.random() > 0.8)
+            l.setPixelColor(0, 0xff00ff);
+        r.move(LightMove.Shift, -1);
+        if (Math.random() > 0.8)
+            r.setPixelColor(r.length() - 1, 0xff00ff);
+        center.show();
+        pause(1)
+    }
+}
 
-  
+function anim() {
+    if (running) return;
+    running = true;
+    control.runInBackground(animCenter);
+    control.runInBackground(animLeft);
+    control.runInBackground(animRight);
+}
+
 // events
-tattoo.onEvent(2, JDButtonEvent.Down, function () {
-    pulse();
+btns.forEach(btn => {
+    tattoo.onEvent(btn, JDButtonEvent.Down, function () {
+        anim();
+    })
 })

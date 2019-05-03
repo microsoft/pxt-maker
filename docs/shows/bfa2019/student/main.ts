@@ -8,6 +8,8 @@ lights1.setBuffered(true);
 
 
 function pulse() {
+    lights1.setAll(cols[coli]);
+    coli = (coli + 1) % cols.length;
     lights1.startBrightnessTransition(96, 0, 800, 1, true,
         new light.EasingBrightnessTransition(easing.inOutCubic));
     lights7.startBrightnessTransition(96, 0, 800, 1, true,
