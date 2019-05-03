@@ -1,8 +1,12 @@
 // Victoria
 
+// wants pink lights
+
 // hardware
 const lights = light.pixels;
+lights.setLength(100);
 lights.setBrightness(255);
+lights.setColor(0xff3399);
 const motion = jacdac.accelerometerClient;
 
 // actions

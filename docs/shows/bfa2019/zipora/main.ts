@@ -25,6 +25,7 @@ function pulse() {
 input.onGesture(Gesture.Shake, function () {
     pulse();
 })
+motion.requiredDeviceName = "L"
 
 // events
 //motion.onCustomGesture(BeadGesture.Step, function () {
