@@ -3,7 +3,7 @@ dg:CC:pulsing strip with color interpolation
 dj:TODO:color sensing
 ds:CC:two tattoo to two strips
 gv:CC:shake to pulse two strips
-jg1:CC:touch to pulse pink
+jg1:DONE:touch to pulse red
 jg2:CC:touch to pulse ???
 jo:TODO:touch, motion, light
 ko:CC:touch + light
