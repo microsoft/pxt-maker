@@ -17,4 +17,4 @@ sw:DONE:touch to light pulse
 tv:PELI:touch, 2 motors, shoulder light strips, words
 up:DONE:touch to pulse green, touch after to sparkle
 vc:DONE:motion to pink sparkle
-zipora:CC:
+zipora:DONE:left,right motion to two strip
