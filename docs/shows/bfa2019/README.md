@@ -10,8 +10,8 @@ ko:CC:touch + light
 kt:CC:L,R motion + two strips
 mo:CC:touch to light
 om:PELI:motors
-q:CC:proximity to light pulse
-rb:CC:touch to light drip
+q:DONE:proximity to light pulse
+rb:DONE:touch to light drip
 rn:CC:proximity to light pulse
 sw:DONE:touch to light pulse
 tv:PELI:touch, 2 motors, shoulder light strips, words
