@@ -7,7 +7,7 @@ jg1:DONE:touch to pulse red
 jg2:DONE:touch to pulse yellow (off default)
 jo:TODO:touch, motion, light
 ko:CC:touch + light
-kt:CC:L,R motion + two strips
+kt:DONE:L,R motion + two strips
 mo:CC:touch to light
 om:PELI:motors
 q:DONE:proximity to light pulse

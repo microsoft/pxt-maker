@@ -11,10 +11,10 @@ function pulse() {
 
 lights1.setLength(46);
 lights1.setBrightness(0);
-lights1.setAll(0x00ff00);
+lights1.setAll(0xffff30);
 lights2.setLength(46);
 lights2.setBrightness(0);
-lights2.setAll(0x0000ff);
+lights2.setAll(0xffff30);
 
 //const testLights = light.pixels
 //testLights.setLength(20);
