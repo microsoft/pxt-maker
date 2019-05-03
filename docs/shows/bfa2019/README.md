@@ -1,5 +1,5 @@
 ah:CC:motion to light
-dg:CC:pulsing strip with color interpolation
+dg:DONE:pulsing strip with color interpolation
 dj:TODO:color sensing
 ds:CC:two tattoo to two strips
 gv:CC:shake to pulse two strips
