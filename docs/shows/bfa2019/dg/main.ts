@@ -28,7 +28,7 @@ function interpolateColors(color1: number, color2: number, steps: number, i: num
 // hardware
 //const motion = motion.
 const lights1 = light.pixels;
-const motion = jacdac.accelerometerClient;
+//const motion = jacdac.accelerometerClient;
 lights1.setLength(62); // 62
 lights1.setBuffered(true);
 
@@ -41,15 +41,27 @@ function pulse() {
         lights1.setPixelColor(i+mid, interpolateColors(0x0000FF, 0xFF0000, mid, i))
     }
     lights1.show();
-    lights1.startBrightnessTransition(96, 16, 800, 1, true,
+    lights1.startBrightnessTransition(96, 0, 800, 1, true,
         new light.EasingBrightnessTransition(easing.inOutCubic));
 }
 
-//input.onGesture(Gesture.Shake, function () {
-//    pulse();
-//})
+function stepUpdate(): () => boolean {
+    let active = true;
+    return function() {
+        const s = input.acceleration(Dimension.Strength);        
+        if (!active && s > 1500) {
+            active = true;
+            return true;
+        } else if (s < 1200) {
+            active = false;
+        }
+        return false;
+    }
+}
+
+input.onCustomGesture(42, stepUpdate(), pulse); // register
 
 // events
-motion.onCustomGesture(BeadGesture.Step, function () {
-    pulse();
-})
+//motion.onCustomGesture(BeadGesture.Step, function () {
+//    pulse();
+//})
