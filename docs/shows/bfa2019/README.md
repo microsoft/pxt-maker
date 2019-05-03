@@ -1,7 +1,7 @@
 ah:CC:motion to light
 dg:DONE:pulsing strip with color interpolation
-dj:TODO:color sensing
-ds:CC:two tattoo to two strips
+dj:DONE:4 strips in sequence
+ds:PELI:two tattoo to two strips
 gv:CC:shake to pulse two strips
 jg1:DONE:touch to pulse red
 jg2:DONE:touch to pulse yellow (off default)
