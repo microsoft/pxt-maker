@@ -11,4 +11,4 @@ namespace jacdac {
 }
 
 jacdac.servosService.start();
-jacdac.instance().setDeviceName("U");
+jacdac.instance().setDeviceName("R");

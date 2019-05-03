@@ -2,7 +2,7 @@
 
 // hardware: too many neopixels, sticks in bootloader mode
 let lights = [light.pixels,light.pixels2, light.pixels7, light.pixels5]
-let proximity = jacdac.proximityClient
+//let proximity = jacdac.proximityClient
 
 for(let i=0; i<lights.length; i++) {
     lights[i].setBrightness(200);
@@ -24,7 +24,7 @@ for(let i=0; i<lights.length; i++) {
       }
 }
 
-proximity.onEvent(JDPromixityEvent.Close, function () {
+forever(function () {
     for(let i=0; i<lights.length; i++) {
         pulse(i);
     }
