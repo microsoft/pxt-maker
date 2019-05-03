@@ -4,7 +4,7 @@ dj:TODO:color sensing
 ds:CC:two tattoo to two strips
 gv:CC:shake to pulse two strips
 jg1:DONE:touch to pulse red
-jg2:CC:touch to pulse ???
+jg2:DONE:touch to pulse yellow (off default)
 jo:TODO:touch, motion, light
 ko:CC:touch + light
 kt:CC:L,R motion + two strips
