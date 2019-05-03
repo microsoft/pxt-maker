@@ -24,12 +24,12 @@ const motionRight = jacdac.accelerometerClient;
 motionLeft.requiredDeviceName = "L"
 motionRight.requiredDeviceName = "R"
 
-motionLeft.onCustomGesture(BeadGesture.Step, function () {
+motionLeft.onCustomGesture(BeadGesture.LightStep, function () {
     //testLights.setAll(0xff0000)
     lights1.startBrightnessTransition(80, 0, 1000);
 })
 
-motionRight.onCustomGesture(BeadGesture.Step, function () {
+motionRight.onCustomGesture(BeadGesture.LightStep, function () {
     //testLights.setAll(0x0000ff)
     lights2.startBrightnessTransition(80, 0, 1000);
 })
