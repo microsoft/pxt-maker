@@ -1,4 +1,4 @@
 //  
-jacdac.instance().setDeviceName("D")
+jacdac.instance().setDeviceName("R")
 
 
