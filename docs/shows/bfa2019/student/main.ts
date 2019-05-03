@@ -1,13 +1,17 @@
 //const motion = motion.
 const lights1 = light.pixels;
+const lights7 = light.pixels7;
 //const motion = jacdac.accelerometerClient;
-lights1.setLength(120); // 62
-lights1.setAll(0xFF0000);
+lights1.setLength(50); // 62
+lights1.setAll(0x00FF00);
 lights1.setBuffered(true);
+
 
 function pulse() {
     lights1.startBrightnessTransition(96, 0, 800, 1, true,
         new light.EasingBrightnessTransition(easing.inOutCubic));
+    lights7.startBrightnessTransition(96, 0, 800, 1, true,
+            new light.EasingBrightnessTransition(easing.inOutCubic));
 }
 
 function stepUpdate(): () => boolean {
