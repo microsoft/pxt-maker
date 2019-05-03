@@ -1,7 +1,7 @@
-ah:TODO:motion to light
+ah:DONE:motion to light
 dg:DONE:pulsing strip with color interpolation
 dj:TODO:color sensing
-ds:TODO:two tattoo to two strips
+ds:DONE:two tattoo to two strips
 gv:DONE:shake to pulse two strips
 jg1:TODO:touch to pulse pink
 jg2:TODO:touch to pulse ???
