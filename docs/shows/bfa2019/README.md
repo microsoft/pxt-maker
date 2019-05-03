@@ -3,10 +3,10 @@ dg:DONE:pulsing strip with color interpolation
 dj:TODO:color sensing
 ds:DONE:two tattoo to two strips
 gv:DONE:shake to pulse two strips
-jg1:TODO:touch to pulse pink
-jg2:TODO:touch to pulse ???
+jg1:DONE:touch to pulse pink
+jg2:DONE:touch to pulse ???
 jo:TODO:touch, motion, light
-ko:TODO:touch + light
+ko:DONE:touch + light
 kt:DONE:L,R motion + two strips
 mo:TODO:touch to light
 om:PELI:motors
