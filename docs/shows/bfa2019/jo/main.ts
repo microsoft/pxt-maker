@@ -1,33 +1,37 @@
-// Jody
+light.pixels3.setLength(120)
+//light.pixels3.setAll(0xFF0000)
 
-// hardware
-const tattoo = jacdac.touchButtonsClient;
-const motion = jacdac.accelerometerClient;
-const lights = light.pixels;
-lights.setBrightness(0);
-lights.setAll(0xff0000);
+light.pixels5.setLength(80)
+light.pixels5.setAll(0xFF0000)
 
-// actions
-let active = false;
+light.pixels6.setLength(120)
+light.pixels6.setAll(0xFF0000)
+
+
+light.pixels5.startBrightnessTransition(72, 16, 600);
+light.pixels6.startBrightnessTransition(72, 16, 600);
+
 function pulse() {
-    if (active) {
-        lights.startBrightnessTransition(80, 0, 800);
+    light.pixels5.startBrightnessTransition(200, 16, 600);
+    light.pixels6.startBrightnessTransition(96, 16, 600);
+}
+input.onGesture(Gesture.Shake, function () {
+    pulse();
+})
+
+
+function stepUpdate(): () => boolean {
+    let active = true;
+    return function() {
+        const s = input.acceleration(Dimension.Strength);        
+        if (!active && s > 1500) {
+            active = true;
+            return true;
+        } else if (s < 1200) {
+            active = false;
+        }
+        return false;
     }
 }
 
-// events
-tattoo.onEvent(2, JDButtonEvent.Down, function () {
-    active = true;
-    lights.startBrightnessTransition(0, 64, 500, 2, true,
-        new light.EasingBrightnessTransition(easing.linear, easing.linear)
-    );
-})
-tattoo.onEvent(2, JDButtonEvent.Up, function () {
-    active = false;
-    lights.startBrightnessTransition(80, 0, 500, 1, false,
-        new light.EasingBrightnessTransition(easing.linear, easing.linear)
-    );
-})
-motion.onCustomGesture(BeadGesture.Step, function () {
-    pulse();
-})
+input.onCustomGesture(42, stepUpdate(), pulse); // register
