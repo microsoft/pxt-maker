@@ -7,28 +7,23 @@ const servo3 = servos.servo3;
 const drift2 = -5;
 const drift3 = 3;
 
-const duration = 3000;
+const duration = 15000;
+const pauseDuration = 5000;
 
 // actions
 let idle = true;
-let isup = false;
 function toggle() {
     if (!idle) return;
 
     idle = false;
-    if (!isup) {
-        moveUp();
-    } else {
-        moveDown();
-    }
+    moveUp();
     pause(duration);
     stop();
-    isup = !isup;
+    pause(pauseDuration);
+    moveDown();
+    pause(duration);
+    stop();
     idle = true;
-}
-function down() {
-    if (idle && isup) {
-    }
 }
 
 function moveUp() {
@@ -49,6 +44,9 @@ function stop() {
 // events
 tattoo.onEvent(0, JDButtonEvent.Down, function () {
     toggle();
+})
+tattoo.onEvent(1, JDButtonEvent.Down, function () {
+    stop();
 })
 tattoo.onEvent(2, JDButtonEvent.Down, function () {
     moveUp();
