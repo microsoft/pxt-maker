@@ -1,50 +1,55 @@
 // dynasty-george
 
+// Returns a single rgb color interpolation between given rgb color
+// based on the factor given; via https://codepen.io/njmcode/pen/axoyD?editors=0010
+function interpolateColor(color1: number, color2: number, factor: number) {
+  //  factor = easing.inOutCubic(factor);
+    let r1 = color1 >> 16
+    let r2 = color2 >> 16
+    let g1 = (color1 & 0xff00) >> 8
+    let g2 = (color2 & 0xff00) >> 8
+    let b1 = color1 & 0xff
+    let b2 = color2 & 0xff
+    let r = (r1 + factor * (r2 - r1)) | 0x00
+    let g = (g1 + factor * (g2 - g1)) | 0x00
+    let b = (b1 + factor * (b2 - b1)) | 0x00
+    return (r << 16) | (g << 8) | b;
+};
+// My function to interpolate between two colors completely, returning an array
+function interpolateColors(color1: number, color2: number, steps: number, i: number) {
+    let stepFactor = i / (steps - 1);
+    return interpolateColor(color1, color2, stepFactor);
+}
+
 // sunset:
 // pink = 0xff3399
 // yellow = 0xff8000
 
 // hardware
+//const motion = motion.
 const lights1 = light.pixels;
+const motion = jacdac.accelerometerClient;
+lights1.setLength(62); // 62
+lights1.setBuffered(true);
 
-lights1.setLength(62);
-
-
-//lights1.setBrightness(0);
-//lights1.setAll(0xff8000);
-function show() {
-for(let i = 0; i < 20; i++) {
-    lights1.setPixelColor(i,0xff3360)
-}
-for(let i = 20; i < 40; i++) {
-    lights1.setPixelColor(i,0xd02000)
-}
-
-for(let i = 41; i < 62; i++) {
-    lights1.setPixelColor(i,0xff8000)
-}
-lights1.show();
-}
-
-/*
-// actions
-let rotate = false
 function pulse() {
-    if (!rotate) {
-        rotate = true;
-        for(let i=0;i<100;i++) {
-            lights1.
-        }
-        rotate = false;
+    let mid = lights1.length()>>1
+    for (let i = 0; i < mid; i++) {
+        lights1.setPixelColor(i, interpolateColors(0xff0000, 0x0000FF, mid, i))
     }
+    for (let i = 0; i < mid; i++) {
+        lights1.setPixelColor(i+mid, interpolateColors(0x0000FF, 0xFF0000, mid, i))
+    }
+    lights1.show();
+    lights1.startBrightnessTransition(96, 16, 800, 1, true,
+        new light.EasingBrightnessTransition(easing.inOutCubic));
 }
-*/
 
-input.onGesture(Gesture.Shake, function () {
-    show();
-})
-
-// events
-//motion.onCustomGesture(BeadGesture.Step, function () {
+//input.onGesture(Gesture.Shake, function () {
 //    pulse();
 //})
+
+// events
+motion.onCustomGesture(BeadGesture.Step, function () {
+    pulse();
+})
