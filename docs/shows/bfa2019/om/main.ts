@@ -42,6 +42,9 @@ function stop() {
 }
 
 // events
+tattoo.onConnected = function() {
+    tattoo.calibrate();
+}
 tattoo.onEvent(0, JDButtonEvent.Down, function () {
     toggle();
 })
