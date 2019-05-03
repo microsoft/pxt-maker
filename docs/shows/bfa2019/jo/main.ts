@@ -11,9 +11,7 @@ lights.setAll(0xff0000);
 let active = false;
 function pulse() {
     if (active) {
-        lights.startBrightnessTransition(0, 200, 1000, 2, true,
-            new light.EasingBrightnessTransition(easing.linear, easing.linear)
-        );
+        lights.startBrightnessTransition(80, 0, 800);
     }
 }
 
@@ -26,7 +24,7 @@ tattoo.onEvent(2, JDButtonEvent.Down, function () {
 })
 tattoo.onEvent(2, JDButtonEvent.Up, function () {
     active = false;
-    lights.startBrightnessTransition(200, 0, 500, 1, false,
+    lights.startBrightnessTransition(80, 0, 500, 1, false,
         new light.EasingBrightnessTransition(easing.linear, easing.linear)
     );
 })

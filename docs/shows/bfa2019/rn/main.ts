@@ -14,9 +14,9 @@ bottom.setAll(0xff0000);
 
 // actions
 function pulse() {
-    top1.startBrightnessTransition(0, 200, 1000, 2, true)
-    top2.startBrightnessTransition(0, 200, 1000, 2, true)
-    bottom.startBrightnessTransition(0, 200, 1000, 2, true)
+    top1.startBrightnessTransition(80, 0, 800);
+    top2.startBrightnessTransition(80, 0, 800);
+    bottom.startBrightnessTransition(80, 0, 800);
 }
 
 // events

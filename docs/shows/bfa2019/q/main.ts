@@ -12,7 +12,7 @@ const motion = jacdac.accelerometerClient;
 let on = false
 function pulse() {
     if (!on) {
-        lights.startBrightnessTransition(0, 200, 2000, 2, true,
+        lights.startBrightnessTransition(0, 80, 2000, 2, true,
             new light.EasingBrightnessTransition(easing.linear, easing.linear)
         );
     } else {

@@ -14,4 +14,4 @@ forever(function () {
     light.pixels6.showAnimation(light.sparkleAnimation, 500)
 })
 light.pixels7.setAll(0xff0000);
-light.pixels7.startBrightnessTransition(0, 200, 1000, -1, true);
+light.pixels7.startBrightnessTransition(0, 80, 1000, -1, true);
