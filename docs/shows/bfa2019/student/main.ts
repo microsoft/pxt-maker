@@ -1,8 +1,8 @@
 //const motion = motion.
 const lights1 = light.pixels;
 //const motion = jacdac.accelerometerClient;
-lights1.setLength(62); // 62
-lights1.setAll(0xff0000);
+lights1.setLength(120); // 62
+lights1.setAll(0xFF0000);
 lights1.setBuffered(true);
 
 function pulse() {
