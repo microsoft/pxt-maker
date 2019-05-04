@@ -10,7 +10,7 @@ const strips = [center, left, right];
 
 strips.forEach(strip => {
     strip.setBrightness(60);
-    strip.setLength(120);
+    strip.setLength(30);
     strip.setBuffered(true);
 });
 
@@ -39,8 +39,8 @@ function animRight() {
     }
 }
 function animCenter() {
-    const l = center.range(0, 60)
-    const r = center.range(60, 60)
+    const l = center.range(0, center.length() / 2)
+    const r = center.range(center.length() / 2, center.length() / 2)
     while (running) {
         l.move(LightMove.Shift);
         if (Math.random() > 0.8)
@@ -48,7 +48,7 @@ function animCenter() {
         r.move(LightMove.Shift, -1);
         if (Math.random() > 0.8)
             r.setPixelColor(r.length() - 1, 0xff00ff);
-        center.show();
+        center.show();  
         pause(1)
     }
 }
@@ -60,6 +60,7 @@ function anim() {
     control.runInBackground(animLeft);
     control.runInBackground(animRight);
 }
+anim();
 
 // events
 btns.forEach(btn => {

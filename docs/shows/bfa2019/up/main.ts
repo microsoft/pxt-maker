@@ -11,50 +11,50 @@ lights2.setBrightness(200);
 lights2.setLength(120);
 touchLeft.requiredDeviceName = "L"
 touchRight.requiredDeviceName = "R"
-touchLeft.onConnected = function() {
+touchLeft.onConnected = function () {
     touchLeft.calibrate()
 }
-touchRight.onConnected = function() {
+touchRight.onConnected = function () {
     touchRight.calibrate()
 }
 let sparkle2 = new light.SparkleAnimation(0xff, 0xff, 0xff, 50);
 
 
 forever(() => {
-   lights.move(LightMove.Rotate);
-   lights2.move(LightMove.Rotate);
+    lights.move(LightMove.Rotate);
+    lights2.move(LightMove.Rotate);
 });
 
-enum State { Green, Sparkle, Idle}
+pulse();
+
+enum State { Green, Sparkle, Idle }
 let state = State.Idle;
 
+
+function pulse() {
+    state = State.Green;
+    lights.range(0, 60).setAll(0x00ff00);
+    lights.startBrightnessTransition(80, 40, 1000, -1, true);
+    lights2.range(0, 60).setAll(0x00ff00);
+    lights2.startBrightnessTransition(80, 40, 1000, -1, true);
+}
+/*
 // events
 touchLeft.onEvent(2, JDButtonEvent.Down, function () {
+    pulse();
     // green
-    if (state == State.Idle) {
-        state = State.Green;
-        lights.range(0, 60).setAll(0x00ff00);
-        lights.startBrightnessTransition(80, 40, 1000, -1, true);
-        lights2.range(0, 60).setAll(0x00ff00);
-        lights2.startBrightnessTransition(80, 40, 1000, -1, true);
-    }
+    lights.range(0, 60).setAll(0x00ff00);
+    lights.startBrightnessTransition(80, 40, 1000, -1, true);
+    lights2.range(0, 60).setAll(0x00ff00);
+    lights2.startBrightnessTransition(80, 40, 1000, -1, true);
 })
 
 // events
 touchRight.onEvent(2, JDButtonEvent.Down, function () {
-    // sparkle
-    if (state == State.Green) {
-        state = State.Sparkle;
-        lights.clear();
-        lights.startBrightnessTransition(0, 255, 10);
-        lights2.clear();
-        lights2.startBrightnessTransition(0, 255, 10);
-        pause(1)
-        control.runInBackground(() => {
-            lights.showAnimation(light.sparkleAnimation, 60000)
-        });
-        control.runInBackground(() => {
-            lights2.showAnimation(sparkle2, 60000)
-        });
-    }
+    pulse();
 })
+
+
+input.onGesture(Gesture.Shake, pulse);
+
+*/
