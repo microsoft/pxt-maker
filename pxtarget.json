@@ -51,6 +51,29 @@
         "libs/light-spectrum-sensor",
         "libs/proximity",
         "libs/bead",
+        "libs/adafruit-feather-m0-express",
+        "libs/adafruit-feather-m4-express",
+        "libs/adafruit-feather-bluefruit-nrf52",
+        "libs/redbear-ble-nano",
+        "libs/bluepill",
+        "libs/adafruit-circuit-playground-express",
+        "libs/adafruit-trinket-m0",
+        "libs/adafruit-metro-m0-express",
+        "libs/adafruit-metro-m4-express",
+        "libs/adafruit-itsybitsy-m0-express",
+        "libs/adafruit-itsybitsy-m4-express",
+        "libs/adafruit-gemma-m0",
+        "libs/arduino-zero",
+        "libs/arduino-mkr1000",
+        "libs/arduino-mkr1010",
+        "libs/arduino-mkr1300",
+        "libs/electroniccats-meow-meow",
+        "libs/sparkfun-samd21-dev-breakout",
+        "libs/sparkfun-samd21-mini-breakout",
+        "libs/sparkfun-redboard-turbo",
+        "libs/sparkfun-lumidrive",
+        "libs/stitchkit",
+        "libs/teknikio-bluebird",
         "libs/bead-brain",
         "libs/bead-servo",
         "libs/bead-color",
@@ -128,12 +151,14 @@
         "flashCodeAlign": 256,
         "upgrades": [],
         "patches": {
-            "0.0.0 - 0.6.8": [{
-                "type": "package",
-                "map": {
-                    "arduino-mkr": "arduino-mkr1000"
+            "0.0.0 - 0.6.8": [
+                {
+                    "type": "package",
+                    "map": {
+                        "arduino-mkr": "arduino-mkr1000"
+                    }
                 }
-            }]
+            ]
         }
     },
     "compileService": {
@@ -338,7 +363,8 @@
         "chooseBoardOnNewProject": true,
         "lightToc": true,
         "instructions": true,
-        "docMenu": [{
+        "docMenu": [
+            {
                 "name": "About",
                 "path": "/about"
             },
