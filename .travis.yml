@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - "8.9.4"
+before_install:
+- sudo apt-get install libudev-dev
 script:
   - "node node_modules/pxt-core/built/pxt.js travis"  
   - "node node_modules/pxt-core/built/pxt.js testdir tests"
