@@ -2,9 +2,6 @@
 
 #include "NRFLowLevelTimer.h"
 
-// TODO: hack fix linker script
-uint32_t _estack = 32 * 1024;
-
 namespace pxt {
 
 NRFLowLevelTimer lowTimer(NRF_TIMER1, TIMER1_IRQn);

@@ -3,9 +3,6 @@
 
 void early_init();
 
-// TODO: hack fix linker script
-uint32_t _estack = 32 * 1024;
-
 namespace pxt {
 
 static void initRandomSeed() {
