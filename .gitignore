@@ -33,4 +33,3 @@ lib/
 _locales
 
 **/*.DS_Store
-package-lock.json
