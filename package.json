@@ -47,7 +47,7 @@
     "svgo": "^1.1.1"
   },
   "dependencies": {
-    "pxt-common-packages": "6.8.9",
+    "pxt-common-packages": "6.8.12",
     "pxt-core": "5.12.11",
     "webusb": "^1.1.1"
   },
