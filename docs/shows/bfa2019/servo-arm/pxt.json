@@ -1,0 +1,13 @@
+{
+    "name": "servo-arm",
+    "dependencies": {
+        "bead-tattoo": "file:../../../../libs/bead-tattoo",
+        "servo": "file:../../../../libs/servo"
+    },
+    "description": "",
+    "files": [
+        "main.ts",
+        "README.md"
+    ],
+    "preferredEditor": "tsprj"
+}

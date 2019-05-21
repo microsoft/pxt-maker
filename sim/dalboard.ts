@@ -275,7 +275,7 @@ namespace pxsim {
     }
 
     export function parsePinString(pinString: string): Pin {
-        const pinName = pxsim.readPin(pinString);
-        return pinName ? pxtcore.getPin(pinIds[pinName]) : undefined;
+        const pinName = pinString && pxsim.readPin(pinString);
+        return pinName && pxtcore.getPin(pinIds[pinName]);
     }
 }

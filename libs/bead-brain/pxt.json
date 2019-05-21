@@ -3,9 +3,12 @@
     "description": "Support for Project Brookdale's Brain Hub - beta",
     "files": [
         "README.md",
-        "device.d.ts",
         "config.ts",
+        "device.d.ts",
+        "servo.ts",
+        "light.ts",
         "ns.ts",
+        "startup.ts",
         "board.json",
         "board.svg"
     ],
@@ -15,10 +18,12 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
+        "bead": "file:../bead",
         "buttons": "file:../buttons",
+        "accelerometer": "file:../accelerometer",
         "touch": "file:../touch",
         "light": "file:../light",
-        "jacdac": "file:../jacdac",
+        "servo": "file:../servo",
         "jacdac-drivers": "file:../jacdac-drivers"
     },
     "public": true,
@@ -38,11 +43,20 @@
         "storage",
         "serial",
         "jacdac",
-        "light"
+        "light",
+        "brain"
     ],
     "yotta": {
         "optionalConfig": {
             "DEVICE_JACDAC_DEBUG": 1
+        },
+        "config": {
+            "PXT_SUPPORT_LIS3DH": 1,
+            "PXT_SUPPORT_MMA8653": 0,
+            "PXT_SUPPORT_MMA8453": 0,
+            "PXT_SUPPORT_FXOS8700": 0,
+            "PXT_SUPPORT_MSA300": 0,
+            "PXT_SUPPORT_MPU6050": 0
         }
     }
 }

@@ -1,2 +1,2 @@
-// start exposing light detection service
 jacdac.consoleService();
+jacdac.lightSpectrumSensorService.start();

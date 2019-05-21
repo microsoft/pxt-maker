@@ -5,7 +5,6 @@
         "README.md",
         "device.d.ts",
         "config.ts",
-        "ns.ts",
         "startup.ts",
         "board.json",
         "board.svg"
@@ -16,19 +15,21 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
-        "jacdac": "file:../jacdac"
+        "bead": "file:../bead",
+        "proximity": "file:../proximity"
     },
     "public": true,
     "compileServiceVariant": "samd21",
+    "yotta": {
+        "optionalConfig": {
+            "DEVICE_USB": 0,
+            "DEVICE_JACDAC_DEBUG": 1
+        }
+    },
     "features": [
         "uf2",
         "i2c",
         "pinled",
         "jacdac"
-    ],
-    "yotta": {
-        "optionalConfig": {
-            "DEVICE_JACDAC_DEBUG": 1
-        }
-    }    
+    ]
 }

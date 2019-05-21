@@ -25,6 +25,6 @@
     * [Environmental Bead](/boards/bead-environmental)
     * [Tattoo Bead](/boards/bead-tattoo)
     * [Light Bead](/boards/bead-light)
-    * [Motion Bead](/boards/bead-motion)
+    * [Servo Bead](/boards/bead-servo)
 
 * [Add a new board](/boards/add-a-new-board)

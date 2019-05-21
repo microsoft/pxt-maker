@@ -48,6 +48,9 @@
         "libs/power",
         "libs/lcd",
         "libs/color-sensor",
+        "libs/light-spectrum-sensor",
+        "libs/proximity",
+        "libs/bead",
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-m4-express",
         "libs/adafruit-feather-bluefruit-nrf52",
@@ -71,10 +74,11 @@
         "libs/sparkfun-lumidrive",
         "libs/stitchkit",
         "libs/teknikio-bluebird",
-        "libs/bead-motion",
         "libs/bead-brain",
+        "libs/bead-servo",
         "libs/bead-color",
         "libs/bead-light",
+        "libs/bead-motion",
         "libs/bead-tattoo",
         "libs/bead-proximity",
         "libs/bead-environment"
@@ -147,12 +151,14 @@
         "flashCodeAlign": 256,
         "upgrades": [],
         "patches": {
-            "0.0.0 - 0.6.8": [{
-                "type": "package",
-                "map": {
-                    "arduino-mkr": "arduino-mkr1000"
+            "0.0.0 - 0.6.8": [
+                {
+                    "type": "package",
+                    "map": {
+                        "arduino-mkr": "arduino-mkr1000"
+                    }
                 }
-            }]
+            ]
         }
     },
     "compileService": {
@@ -160,11 +166,11 @@
         "codalTarget": {
             "name": "codal-circuit-playground",
             "url": "https://github.com/lancaster-university/codal-circuit-playground",
-            "branch": "v1.5.6",
+            "branch": "v1.5.4-i2c_hack.4",
             "type": "git",
             "branches": {
-                "https://github.com/lancaster-university/codal-samd":"f47641281ce85135bb16347bbcc6533a6a61d198",
-                "https://github.com/lancaster-university/codal-core": "c409a301af44f77c5ca149c9a18d379643fdc8fc"
+                "https://github.com/lancaster-university/codal-core": "e16a98d9f74d588874aedbcd25d83ef0fe203b6a",
+                "https://github.com/lancaster-university/codal-samd": "99e2686377da59bec6bc486c62d7096909dd967f"
             }
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
@@ -176,7 +182,7 @@
             }
         },
         "githubCorePackage": "lancaster-university/codal",
-        "gittag": "v0.6.1",
+        "gittag": "v0.6.3",
         "serviceId": "codal2cp",
         "dockerImage": "pext/yotta:latest"
     },
@@ -302,7 +308,7 @@
                 "codalTarget": {
                     "name": "codal-big-brainpad",
                     "url": "https://github.com/lancaster-university/codal-big-brainpad",
-                    "branch": "v1.0.21",
+                    "branch": "v1.0.22",
                     "type": "git"
                 },
                 "codalBinary": "STM32",
@@ -323,7 +329,7 @@
                 "codalTarget": {
                     "name": "codal-circuit-playground",
                     "url": "https://github.com/lancaster-university/codal-circuit-playground",
-                    "branch": "18ded06db2476c4de4b92444019b27fd4dc92dfc",
+                    "branch": "v1.5.4-master_i2c_hack.0",
                     "type": "git"
                 },
                 "dockerImage": "pext/yotta:latest",
@@ -357,7 +363,8 @@
         "chooseBoardOnNewProject": true,
         "lightToc": true,
         "instructions": true,
-        "docMenu": [{
+        "docMenu": [
+            {
                 "name": "About",
                 "path": "/about"
             },
@@ -422,9 +429,7 @@
         "simScreenshot": true,
         "simGif": true,
         "qrCode": true,
-        "experiments": [
-            "python"
-        ]
+        "python": true
     },
     "ignoreDocsErrors": true
 }
