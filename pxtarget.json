@@ -169,8 +169,9 @@
             "branch": "v1.5.4-i2c_hack.4",
             "type": "git",
             "branches": {
-                "https://github.com/lancaster-university/codal-core": "e16a98d9f74d588874aedbcd25d83ef0fe203b6a",
-                "https://github.com/lancaster-university/codal-samd": "99e2686377da59bec6bc486c62d7096909dd967f"
+                "https://github.com/lancaster-university/codal-core": "87066bd34285d82181ac764d703727304b297df5",
+                "https://github.com/lancaster-university/codal-samd": "460d6662d1d2408b03bdeaeac72b8b07c5c465be",
+                "https://github.com/lancaster-university/codal-stm32": "4ea1023e7a4613e93faf4b5dc1152ca4248baa6f"
             }
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
