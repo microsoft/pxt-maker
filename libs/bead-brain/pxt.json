@@ -24,7 +24,7 @@
         "touch": "file:../touch",
         "light": "file:../light",
         "servo": "file:../servo",
-        "jacdac-drivers": "file:../jacdac-drivers"
+        "jacdac-services": "file:../jacdac-services"
     },
     "public": true,
     "compileServiceVariant": "samd21",

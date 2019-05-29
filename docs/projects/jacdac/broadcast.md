@@ -28,7 +28,7 @@ input.buttonD0.onEvent(ButtonEvent.Down, function () {
 
 ```package
 jacdac
-jacdac-drivers
+jacdac-services
 ```
 
 ```config
