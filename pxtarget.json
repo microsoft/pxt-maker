@@ -164,14 +164,12 @@
     "compileService": {
         "buildEngine": "codal",
         "codalTarget": {
-            "name": "codal-circuit-playground",
-            "url": "https://github.com/lancaster-university/codal-circuit-playground",
-            "branch": "v1.5.4-i2c_hack.4",
+            "name": "missing",
+            "url": "https://github.com/microsoft/pxt-does-not-exist",
+            "branch": "v0",
             "type": "git",
             "branches": {
-                "https://github.com/lancaster-university/codal-core": "87066bd34285d82181ac764d703727304b297df5",
-                "https://github.com/lancaster-university/codal-samd": "460d6662d1d2408b03bdeaeac72b8b07c5c465be",
-                "https://github.com/lancaster-university/codal-stm32": "4ea1023e7a4613e93faf4b5dc1152ca4248baa6f"
+                "https://github.com/lancaster-university/codal-core": "1ccad48d7cf66f64ec76f0424c386f22739219b1"
             }
         },
         "codalBinary": "CIRCUIT_PLAYGROUND",
