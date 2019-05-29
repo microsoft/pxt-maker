@@ -288,9 +288,9 @@
             },
             "compileService": {
                 "codalTarget": {
-                    "name": "codal-bluepill",
-                    "url": "https://github.com/mmoskal/codal-bluepill",
-                    "branch": "v1.1.0",
+                    "name": "codal-jacdac-feather",
+                    "url": "https://github.com/lancaster-university/codal-jacdac-feather",
+                    "branch": "v1.1.1",
                     "type": "git"
                 },
                 "codalBinary": "STM32",
