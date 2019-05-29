@@ -282,7 +282,7 @@
                 "codalTarget": {
                     "name": "codal-jacdac-feather",
                     "url": "https://github.com/lancaster-university/codal-jacdac-feather",
-                    "branch": "v1.1.1",
+                    "branch": "v1.1.2",
                     "type": "git"
                 },
                 "codalBinary": "STM32",
