@@ -21,7 +21,7 @@ forever(function () {
 
 ```package
 jacdac
-jacdac-drivers
+jacdac-services
 ```
 
 ```config
