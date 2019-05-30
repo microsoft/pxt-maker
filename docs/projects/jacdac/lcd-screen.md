@@ -1,12 +1,14 @@
 # LCD screen
 
+## ~ hint
+
+JACDAC  is a single wire broadcast protocol for the plug and play of microcontrollers (MCUs) within the contexts of rapid prototyping, making, and physical computing. [Read more...](https://jacdac.org/).
+
+## ~
+
 Displays text on a LCD screen.
 
 ```blocks
-/**
-JACDAC is still in early prototyping phase. The protocol and all hardware design are MOST LIKELY to change during this phase. You are welcome to join us in prototyping but we strongly recommend avoiding going to production with JACDAC at the current stage.
-**/
-
 jacdac.lcdService.start()
 ```
 

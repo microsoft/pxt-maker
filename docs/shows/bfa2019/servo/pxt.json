@@ -1,0 +1,12 @@
+{
+    "name": "servo",
+    "dependencies": {
+        "bead-servo": "file:../../../../libs/bead-servo"
+    },
+    "description": "",
+    "files": [
+        "main.ts",
+        "README.md"
+    ],
+    "preferredEditor": "tsprj"
+}
