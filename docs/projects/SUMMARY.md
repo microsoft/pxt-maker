@@ -47,7 +47,7 @@
 * [Power](/projects/power)
   * [Deep Sleep](/projects/power/deep-sleep)
   * [Poke](/projects/power/poke)
-* [JacDac (PROTOTYPE)](/projects/jacdac)
+* [JACDAC](/projects/jacdac)
   * [pixel blink](/projects/jacdac/pixel-blink)
   * [broadcast](/projects/jacdac/broadcast)
   * [console](/projects/jacdac/console)

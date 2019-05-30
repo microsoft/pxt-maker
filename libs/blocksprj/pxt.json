@@ -1,7 +1,7 @@
 {
     "name": "{0}",
     "dependencies": {
-        "bead-brain": "file:../bead-brain"
+        "adafruit-metro-m0-express": "file:../adafruit-metro-m0-express"
     },
     "description": "",
     "files": [
