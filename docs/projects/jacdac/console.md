@@ -6,7 +6,7 @@ JACDAC  is a single wire broadcast protocol for the plug and play of microcontro
 
 ## ~
 
-Enable console logging service over JACDAC. Use the [console screen](/projects/jacdac/console-screen) to view the messages.
+Enable console logging service over JACDAC. Use the [JACDAC debugger](https://jacdac.org/debug) to view the messages using WebUSB.
 
 ```blocks
 jacdac.setDeviceName("thing")
