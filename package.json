@@ -47,8 +47,8 @@
     "svgo": "^1.1.1"
   },
   "dependencies": {
-    "pxt-common-packages": "6.11.3",
-    "pxt-core": "5.17.16",
+    "pxt-common-packages": "6.11.11",
+    "pxt-core": "5.17.23",
     "@jacdac/jacdac-ts": "^0.0.9",
     "webusb": "^1.1.1"
   },
