@@ -328,7 +328,7 @@
                 "codalTarget": {
                     "name": "codal-circuit-playground",
                     "url": "https://github.com/lancaster-university/codal-circuit-playground",
-                    "branch": "v1.5.4-jacdac-v0.2",
+                    "branch": "v2.0.0",
                     "type": "git"
                 },
                 "dockerImage": "pext/yotta:latest",
