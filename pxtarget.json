@@ -428,7 +428,8 @@
         "simScreenshot": true,
         "simGif": true,
         "qrCode": true,
-        "python": true
+        "python": true,
+        "addNewTypeScriptFile": true
     },
     "ignoreDocsErrors": true
 }
