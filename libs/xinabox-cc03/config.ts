@@ -1,8 +1,8 @@
 namespace config {
 
     export const PIN_LED_RED = DAL_PA04;
-	export const PIN_LED_GREEN = DAL_PA08;
-	export const PIN_LED_BLUE = DAL_PA09;
+    export const PIN_LED_GREEN = DAL_PA08;
+    export const PIN_LED_BLUE = DAL_PA09;
     export const PIN_RX = DAL.PA11;
     export const PIN_TX = DAL.PA10;
     export const PIN_MISO = DAL.PA12;
