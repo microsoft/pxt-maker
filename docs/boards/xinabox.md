@@ -1,4 +1,4 @@
-# SparkFun
+# XinaBox
 
 ## Supported boards
 
