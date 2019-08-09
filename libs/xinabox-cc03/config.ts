@@ -10,6 +10,6 @@ namespace config {
     export const PIN_SCK = DAL.PB11;
     export const PIN_SCL = DAL.PA23;
     export const PIN_SDA = DAL.PA22;
-    export const PIN_RXLED = PIN_LED_RED;
-    export const PIN_TXLED = PIN_LED_GREEN; 
+    export const PIN_RXLED = DAL.PA04;
+    export const PIN_TXLED = DAL.PA08; 
 }
