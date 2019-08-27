@@ -1,0 +1,43 @@
+{
+    "name": "xinabox-cc03",
+    "description": "Support for XinaBox CC03",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "core": true,
+    "dependencies": {
+        "core---samd": "file:../core---samd",
+        "buttons": "file:../buttons",
+        "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
+        "mixer---samd": "file:../mixer---samd",
+        "touch": "file:../touch",
+        "pixel": "file:../pixel",
+        "jacdac": "file:../jacdac"
+    },
+    "public": true,
+    "compileServiceVariant": "samd21",
+    "features": [
+        "uf2",
+        "i2c",
+        "pixel",
+        "pinled",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
+        "touchd0",
+        "touchd1",
+        "light",
+        "jacdac",
+        "music",
+        "accelerometer"
+    ]
+}
