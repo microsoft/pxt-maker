@@ -5,7 +5,6 @@ declare namespace pins {
     const PIN_LED_GREEN: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_LED_B)
     const PIN_LED_BLUE: DigitalInOutPin;
-	
     //% fixedInstance shim=pxt::getPin(PIN_RX)
     const RX: PwmPin;
     //% fixedInstance shim=pxt::getPin(PIN_TX)
@@ -20,7 +19,6 @@ declare namespace pins {
     const SCL: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_SDA)
     const SDA: DigitalInOutPin;
-
     // TODO only checked the following two for Metro M0
     //% fixedInstance shim=pxt::getPin(PIN_RXLED)
     const RXLED: DigitalInOutPin;
