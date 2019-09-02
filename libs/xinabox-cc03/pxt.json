@@ -17,9 +17,6 @@
         "storage": "file:../storage"
     },
 	"public": true,
-	"dalDTS": {
-        "corePackage": "../core---samd"
-    },
     "compileServiceVariant": "samd21",
     "features": [
         "uf2",
