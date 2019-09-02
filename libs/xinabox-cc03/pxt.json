@@ -12,7 +12,7 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
-		"serial": "file:../serial",
+	"serial": "file:../serial",
         "jacdac": "file:../jacdac",
         "storage": "file:../storage"
     },
