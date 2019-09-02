@@ -1,89 +1,17 @@
 {
-    "visual": {
-        "image": "pkg://board.svg",
-        "width": 175,
-        "height": 170,
-        "pinDist": 6.8,
-        "pinBlocks": [{
-                "x": 60,
-                "y": 53,
-                "labels": ["5V", "VIN", "VCC", "GND", "RESET", "D14/TX", "D13/RX", "D12/SCL", "D11/SDA",
-                    "D10/MISO", "D9/SCK", "D8/MOSI", "D7", "D6"
-                ]
-            },
-            {
-                "x": 60,
-                "y": 110,
-                "labels": ["AREF", "A0", "A1", "A2", "A3", "A4", "A5", "A6", "D0", "D1", "D2", "D3", "D4", "D5"]
-            }
-        ],
-        "leds": [{
-            "x": 115,
-            "y": 129,
-            "w": 4,
-            "h": 6,
-            "color": "#FFA44A",
-            "label": "LED"
-        }]
-    },
-    "gpioPinBlocks": [
-        ["5V", "VIN", "VCC", "GND", "RESET", "D14/TX", "D13/RX", "D12/SCL", "D11/SDA", "D10/MISO", "D9/SCK", "D8/MOSI", "D7", "D6"],
-        ["AREF", "A0", "A1", "A2", "A3", "A4", "A5", "A6", "D0", "D1", "D2", "D3", "D4", "D5"]
-    ],
-    "gpioPinMap": {
-        "A0": "A0",
-        "A1": "A1",
-        "A2": "A2",
-        "A3": "A3",
-        "A4": "A4",
-        "A5": "A5",
-
-        "D0": "D0",
-        "D1": "D1",
-        "D2": "D2",
-        "D3": "D3",
-        "D4": "D4",
-        "D5": "D5",
-        "D6": "D6",
-        "D7": "D7",
-        "D8": "D8/MOSI",
-        "D9": "D9/SCK",
-        "D10": "D10/MISO",
-        "D11": "D11/SDA",
-        "D12": "D12/SCL",
-        "D13": "D13/RX",
-        "D14": "D14/TX",
-
-        "P0": "A0",
-        "P1": "A1",
-        "P2": "A2",
-        "P3": "A3",
-        "P4": "A4",
-        "P5": "A5",
-        "P6": "~SDA/D0",
-        "P7": "~SCL/D1",
-        "P8": "~D2",
-        "P9": "~D3",
-        "P10": "D4",
-        "P11": "D5",
-        "P12": "D6",
-        "P13": "D7",
-        "P14": "SS/A2",
-        "P15": "SCK/A3",
-        "P16": "~MISO/A4",
-        "P19": "~MOSI/A5",
-        "TX": "D1",
-        "RX": "D0",
-        "JACK_TX": "D1",
-        "LED": "D13/RX",
-        "LCD_RESET": "D7",
-        "LCD_ENABLE": "D8",
-        "LCD_DATALINE4": "D9",
-        "LCD_DATALINE5": "D10",
-        "LCD_DATALINE6": "D11",
-        "LCD_DATALINE7": "D12",
-        "ACCELEROMETER_INT": "D2" 
-    },
+  "visual": {
+    "driveDisplayName": "XINABOX-CC03",
+    "image": "pkg://board.svg",
+    "useCrocClips": false,
+    "width": 1251.969970703125,
+    "height": 1251.969970703125,
+    "pinDist": 15,
+    "pinBlocks": [],
+    "leds": [],
+    "touchPads": [],
+    "buttons": []
+  },
+  "gpioPinMap": {},
     "groundPins": [
       "GND"
     ],
@@ -91,13 +19,13 @@
       "VCC"
     ],
     "spiPins": {
-      "MOSI": "D8/MOSI",
-      "MISO": "D10/MISO",
-      "SCK": "D9/SCK"
+      "MOSI": "MOSI",
+      "MISO": "MISO",
+      "SCK": "SCK"
     },
     "i2cPins": {
-      "SDA": "D11/SDA",
-      "SCL": "D12/SCL"
+      "SDA": "SDA",
+      "SCL": "SCL"
     },
     "onboardComponents": [],
     "marginWhenBreadboarding": [
