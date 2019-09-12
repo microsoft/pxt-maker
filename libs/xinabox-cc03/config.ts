@@ -3,7 +3,6 @@ namespace config {
     export const PIN_LED_R = DAL.PA06;
     export const PIN_LED_G = DAL.PA05;
     export const PIN_LED_B = DAL.PA07;
-	
     export const PIN_RX = DAL.PA11;
     export const PIN_TX = DAL.PA10;
     export const PIN_MISO = DAL.PA12;
