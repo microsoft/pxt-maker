@@ -1,6 +1,6 @@
 {
     "name": "xinabox-cs11",
-    "description": "Support for XinaBox CS11",
+    "description": "Support for XinaBox CS11 - Beta",
     "files": [
         "README.md",
         "device.d.ts",
@@ -12,19 +12,14 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
-        "buttons": "file:../buttons",
-        "light": "file:../light",
-        "accelerometer": "file:../accelerometer",
-        "mixer---samd": "file:../mixer---samd",
-        "touch": "file:../touch",
-        "pixel": "file:../pixel",
+		"serial": "file:../serial",
+		"storage": "file:../storage",
         "jacdac": "file:../jacdac"
     },
-    "public": true,
+	"public": true,
     "compileServiceVariant": "samd21",
     "features": [
         "uf2",
-        "i2c",
         "pixel",
         "pinled",
         "pind0",
@@ -33,11 +28,9 @@
         "pina1",
         "buttond0",
         "buttond1",
-        "touchd0",
-        "touchd1",
-        "light",
-        "jacdac",
-        "music",
-        "accelerometer"
-    ]
+        "toucha0",
+        "toucha1",
+        "storage",
+        "jacdac"
+	]
 }
