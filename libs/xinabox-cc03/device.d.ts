@@ -19,9 +19,4 @@ declare namespace pins {
     const SCL: DigitalInOutPin;
     //% fixedInstance shim=pxt::getPin(PIN_SDA)
     const SDA: DigitalInOutPin;
-    // TODO only checked the following two for Metro M0
-    //% fixedInstance shim=pxt::getPin(PIN_RXLED)
-    const RXLED: DigitalInOutPin;
-    //% fixedInstance shim=pxt::getPin(PIN_TXLED)
-    const TXLED: DigitalInOutPin;
 }
