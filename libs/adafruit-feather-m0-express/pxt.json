@@ -12,6 +12,7 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
+        "feather": "file:../feather",
         "accelerometer": "file:../accelerometer",
         "light": "file:../light",
         "buttons": "file:../buttons",
