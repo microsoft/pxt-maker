@@ -58,6 +58,7 @@
   * [Adafruit](/boards/adafruit)
   * [Sparkfun](/boards/sparkfun)
   * [Arduino](/boards/arduino)
+  * [XinaBox](/boards/xinabox)
   * [Beads](/boards/beads)
   * [Misc](/boards/misc)
   * [Add your board](/boards/add-a-new-board)
