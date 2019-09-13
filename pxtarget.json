@@ -435,7 +435,8 @@
         "simGif": true,
         "qrCode": true,
         "python": true,
-        "addNewTypeScriptFile": true
+        "addNewTypeScriptFile": true,
+        "nameProjectFirst": true
     },
     "ignoreDocsErrors": true
 }
