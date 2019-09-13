@@ -15,6 +15,6 @@
         "url": "/boards/xinabox-cs11",
         "cardType": "template",
         "imageUrl": "/static/libs/xinabox-cs11.jpg"  
-    },
+    }
 ]
 ```
