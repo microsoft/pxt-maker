@@ -437,7 +437,8 @@
         "python": true,
         "addNewTypeScriptFile": true,
         "alwaysGithubItem": true,
-        "nameProjectFirst": true
+        "nameProjectFirst": true,
+        "showProjectSettings": true
     },
     "ignoreDocsErrors": true
 }
