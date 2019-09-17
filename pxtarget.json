@@ -144,9 +144,9 @@
         "onStartNamespace": "loops",
         "onStartColor": "#40bf4a",
         "onStartWeight": 100,
-        "pauseUntilBlock": {
-            "category": "loops"
-        }
+        "pauseUntilBlock": { },
+        "breakBlock": { },
+        "continueBlock": { }
     },
     "compile": {
         "isNative": true,
