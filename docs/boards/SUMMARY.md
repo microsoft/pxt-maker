@@ -15,6 +15,9 @@
     * [LumiDrive](/boards/sparkfun-lumidrive)
     * [SAMD21 Dev Breakout](/boards/sparkfun-samd21-dev-breakout)
     * [SAMD21 Mini Breakout](/boards/sparkfun-samd21-mini-breakout)
+* [XinaBox](/boards/xinabox)
+    * [XinaBox CC03](/boards/xinabox-cc03)
+    * [XinaBox CS11](/boards/xinabox-cs11)
 * [Misc](/boards/misc)
     * [RedBear BLE NANO 2](/boards/redbear-ble-nano)
     * [StichKit](/boards/stitchkit)
@@ -25,6 +28,6 @@
     * [Environmental Bead](/boards/bead-environmental)
     * [Tattoo Bead](/boards/bead-tattoo)
     * [Light Bead](/boards/bead-light)
-    * [Motion Bead](/boards/bead-motion)
+    * [Servo Bead](/boards/bead-servo)
 
 * [Add a new board](/boards/add-a-new-board)

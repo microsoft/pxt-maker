@@ -1,0 +1,14 @@
+{
+    "name": "servo-test",
+    "dependencies": {
+        "bead-tattoo": "file:../../../../libs/bead-tattoo",
+        "accelerometer": "file:../../../../libs/accelerometer",
+        "servo": "file:../../../../libs/servo"
+    },
+    "description": "",
+    "files": [
+        "main.ts",
+        "README.md"
+    ],
+    "preferredEditor": "tsprj"
+}

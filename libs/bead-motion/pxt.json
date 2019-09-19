@@ -1,11 +1,11 @@
 {
     "name": "bead-motion",
-    "description": "Support for Project Brookdale's Motion Bead - beta",
+    "description": "Support for Project Brookdale's Motion Hub - beta",
     "files": [
         "README.md",
-        "device.d.ts",
         "config.ts",
-        "ns.ts",
+        "device.d.ts",
+        "gesture.ts",
         "startup.ts",
         "board.json",
         "board.svg"
@@ -16,23 +16,11 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
-        "buttons": "file:../buttons",
-        "accelerometer": "file:../accelerometer",
-        "jacdac": "file:../jacdac",
-        "touch": "file:../touch"
+        "bead": "file:../bead",
+        "accelerometer": "file:../accelerometer"
     },
     "public": true,
     "compileServiceVariant": "samd21",
-    "yotta": {
-        "config": {
-            "PXT_SUPPORT_LIS3DH": 1,
-            "PXT_SUPPORT_MMA8653": 0,
-            "PXT_SUPPORT_MMA8453": 0,
-            "PXT_SUPPORT_FXOS8700": 0,
-            "PXT_SUPPORT_MSA300": 0,
-            "PXT_SUPPORT_MPU6050": 0
-        }
-    },
     "features": [
         "uf2",
         "i2c",
@@ -41,9 +29,21 @@
         "pina1",
         "pind0",
         "pind1",
-        "toucha0",
-        "toucha1",
         "jacdac",
         "accelerometer"
-    ]
+    ],
+    "yotta": {
+        "optionalConfig": {
+            "DEVICE_USB": 0,
+            "DEVICE_JACDAC_DEBUG": 1
+        },
+        "config": {
+            "PXT_SUPPORT_LIS3DH": 1,
+            "PXT_SUPPORT_MMA8653": 0,
+            "PXT_SUPPORT_MMA8453": 0,
+            "PXT_SUPPORT_FXOS8700": 0,
+            "PXT_SUPPORT_MSA300": 0,
+            "PXT_SUPPORT_MPU6050": 0
+        }
+    }
 }

@@ -1,3 +1,3 @@
-// start exposing accelerometer + touch
-jacdac.accelerometerService.start();
-jacdac.consoleService.start();
+jacdac.consoleService();
+//jacdac.accelerometerService.start();
+jacdac.touchButtonsService.start();

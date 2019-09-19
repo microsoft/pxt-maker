@@ -1,12 +1,14 @@
 # Console Screen
 
+## ~ hint
+
+JACDAC  is a single wire broadcast protocol for the plug and play of microcontrollers (MCUs) within the contexts of rapid prototyping, making, and physical computing. [Read more...](https://jacdac.org/).
+
+## ~
+
 Displays the JACDAC console log on a TFT screen.
 
 ```blocks
-/**
-JACDAC is still in early prototyping phase. The protocol and all hardware design are MOST LIKELY to change during this phase. You are welcome to join us in prototyping but we strongly recommend avoiding going to production with JACDAC at the current stage.
-**/
-
 let logging = false
 input.buttonD1.onEvent(ButtonEvent.Click, function () {
     if (logging) {
@@ -20,7 +22,7 @@ input.buttonD1.onEvent(ButtonEvent.Click, function () {
     }
 })
 jacdac.setDeviceName("logger")
-jacdac.consoleService.start()
+jacdac.consoleService()
 logging = false
 display.showConsole()
 console.log("press btn to start")

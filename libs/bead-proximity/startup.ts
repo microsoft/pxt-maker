@@ -1,2 +1,2 @@
-// start exposing proximity detection service
-jacdac.consoleService.start();
+jacdac.consoleService();
+jacdac.proximityService.start();

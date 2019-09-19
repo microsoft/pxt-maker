@@ -6,6 +6,7 @@
         "device.d.ts",
         "config.ts",
         "ns.ts",
+        "jacdac.ts",
         "startup.ts",
         "board.json",
         "board.svg"
@@ -16,14 +17,17 @@
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
+        "bead": "file:../bead",
         "buttons": "file:../buttons",
-        "accelerometer": "file:../accelerometer",
-        "jacdac": "file:../jacdac",
         "touch": "file:../touch"
     },
     "public": true,
     "compileServiceVariant": "samd21",
     "yotta": {
+        "optionalConfig": {
+            "DEVICE_USB": 0,
+            "DEVICE_JACDAC_DEBUG": 1
+        },
         "config": {
             "PXT_SUPPORT_LIS3DH": 1,
             "PXT_SUPPORT_MMA8653": 0,

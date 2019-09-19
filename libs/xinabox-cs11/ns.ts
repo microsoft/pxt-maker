@@ -1,13 +1,3 @@
-
-//% color="#d65cd6"
-namespace input {
-}
-
-//% color="#F55D3E"
-namespace music {
-
-}
-
 //% color="#00b295"
 namespace control {
 

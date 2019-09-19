@@ -1,0 +1,42 @@
+{
+    "name": "bead-servo",
+    "description": "Support for Project Brookdale's Servo Bead - beta",
+    "files": [
+        "README.md",
+        "config.ts",
+        "device.d.ts",
+        "servo.ts",
+        "startup.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "core": true,
+    "dependencies": {
+        "core---samd": "file:../core---samd",
+        "bead": "file:../bead",
+        "servo": "file:../servo"
+    },
+    "public": true,
+    "compileServiceVariant": "samd21",
+    "yotta": {
+        "optionalConfig": {
+            "DEVICE_USB": 0,
+            "DEVICE_JACDAC_DEBUG": 1
+        }
+    },
+    "features": [
+        "uf2",
+        "i2c",
+        "pinled",
+        "pina0",
+        "pina1",
+        "pind0",
+        "pind1",
+        "toucha0",
+        "toucha1",
+        "jacdac"
+    ]
+}

@@ -1,6 +1,6 @@
 {
     "name": "adafruit-metro-m4-express",
-    "description": "Support for Adafruit Metro M4 Express - beta",
+    "description": "Support for Adafruit Metro M4 Express",
     "files": [
         "README.md",
         "device.d.ts",

@@ -1,4 +1,4 @@
-# Bead Motion
+# XinaBox CC03
 
 ```blocks
 forever(function() {
@@ -7,5 +7,5 @@ forever(function() {
 ```
 
 ```package
-bead-motion
+xinabox-cc03
 ```

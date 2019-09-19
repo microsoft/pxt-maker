@@ -2,7 +2,7 @@
 
 ## ~ hint
 
-CONSTRUCTION ZONE: JACDAC is still under development and subject to change. Your feedback is welcome at [![Community Discord](https://img.shields.io/discord/448979533891371018.svg)](https://aka.ms/makecodecommunity).
+JACDAC  is a single wire broadcast protocol for the plug and play of microcontrollers (MCUs) within the contexts of rapid prototyping, making, and physical computing. [Read more...](https://jacdac.org/).
 
 ## ~
 
