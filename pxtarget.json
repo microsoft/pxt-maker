@@ -145,8 +145,8 @@
         "onStartColor": "#40bf4a",
         "onStartWeight": 100,
         "pauseUntilBlock": { },
-        "breakBlock": { },
-        "continueBlock": { }
+        "breakBlock": true,
+        "continueBlock": true
     },
     "compile": {
         "isNative": true,
