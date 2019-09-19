@@ -5,6 +5,18 @@
     //% indexerGet=BufferMethods::getByte indexerSet=BufferMethods::setByte
 declare interface Buffer {
     /**
+     * Reads an unsigned byte at a particular location
+     */
+    //% shim=BufferMethods::getUint8
+    getUint8(off: int32): int32;
+
+    /**
+     * Writes an unsigned byte at a particular location
+     */
+    //% shim=BufferMethods::setUint8
+    setUint8(off: int32, v: int32): void;
+
+    /**
      * Write a number in specified format in the buffer.
      */
     //% shim=BufferMethods::setNumber
@@ -115,6 +127,12 @@ declare namespace control {
     function millis(): int32;
 
     /**
+     * Gets current time in microseconds. Overflows every ~18 minutes.
+     */
+    //% shim=control::micros
+    function micros(): int32;
+
+    /**
      * Used internally
      */
     //% flags.defl=16 shim=control::internalOnEvent
@@ -157,6 +175,13 @@ declare namespace control {
     function deviceSerialNumber(): int32;
 
     /**
+     * Derive a unique, consistent 64-bit serial number of this device from internal data.
+     */
+    //% blockId="control_device_long_serial_number" block="device long serial number" weight=9
+    //% help=control/device-long-serial-number shim=control::deviceLongSerialNumber
+    function deviceLongSerialNumber(): Buffer;
+
+    /**
      *
      */
     //% shim=control::__log
@@ -179,6 +204,12 @@ declare namespace control {
      */
     //% shim=control::heapDump
     function heapDump(): void;
+
+    /**
+     * Set flags used when connecting an external debugger.
+     */
+    //% shim=control::setDebugFlags
+    function setDebugFlags(flags: int32): void;
 
     /**
      * Return true if profiling is enabled in the current build.

@@ -99,7 +99,9 @@
     "SDA": "SDA",
     "SCL": "SCL"
   },
-  "onboardComponents": [],
+  "onboardComponents": [
+    "jacdac"
+  ],
   "marginWhenBreadboarding": [
     0,
     0,

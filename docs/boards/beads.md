@@ -41,10 +41,10 @@
         "imageUrl": "/static/libs/bead-light.jpg"  
     },  
     {
-        "name": "Motion Bead",
-        "url": "/boards/bead-motion",
+        "name": "Servo Bead",
+        "url": "/boards/bead-servo",
         "cardType": "template",
-        "imageUrl": "/static/libs/bead-motion.jpg"  
+        "imageUrl": "/static/libs/bead-servo.jpg"  
     }
 ]
 ```

@@ -1,14 +1,17 @@
-# Logging
+# Broadcast
+
+## ~ hint
+
+JACDAC  is a single wire broadcast protocol for the plug and play of microcontrollers (MCUs) within the contexts of rapid prototyping, making, and physical computing. [Read more...](https://jacdac.org/).
+
+## ~
+
 
 The **message bus** service allows to broadcast messages on the bus and run code on reception.
 
 The example shows how to author the service and client to blink an LED when clicking a button.
 
 ```blocks
-/**
-JACDAC is still in early prototyping phase. The protocol and all hardware design are MOST LIKELY to change during this phase. You are welcome to join us in prototyping but we strongly recommend avoiding going to production with JACDAC at the current stage.
-**/
-
 enum JacDacMessage {
     blink = 49614,
     message1 = 49434
@@ -25,7 +28,7 @@ input.buttonD0.onEvent(ButtonEvent.Down, function () {
 
 ```package
 jacdac
-jacdac-drivers
+jacdac-services
 ```
 
 ```config

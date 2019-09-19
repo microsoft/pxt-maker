@@ -226,17 +226,17 @@ namespace pxsim.visuals {
             svg.title(this.element, "RESET");
             // hooking up events
             pointerEvents.down.forEach(evid => this.element.addEventListener(evid, ev => {
-                svg.addClass(this.element, "pressed");
+                pxsim.U.addClass(this.element, "pressed");
                 pxsim.Runtime.postMessage(<pxsim.SimulatorCommandMessage>{
                     type: "simulator",
                     command: "restart"
                 })
             }));
             this.element.addEventListener(pointerEvents.leave, ev => {
-                svg.removeClass(this.element, "pressed");
+                pxsim.U.removeClass(this.element, "pressed");
             })
             this.element.addEventListener(pointerEvents.up, ev => {
-                svg.removeClass(this.element, "pressed");
+                pxsim.U.removeClass(this.element, "pressed");
             })
         }
     }
@@ -318,14 +318,14 @@ namespace pxsim.visuals {
             // hooking up events
             pointerEvents.down.forEach(evid => this.element.addEventListener(evid, ev => {
                 this.button.setPressed(true);
-                svg.addClass(this.element, "pressed");
+                pxsim.U.addClass(this.element, "pressed");
             }));
             this.element.addEventListener(pointerEvents.leave, ev => {
-                svg.removeClass(this.element, "pressed");
+                pxsim.U.removeClass(this.element, "pressed");
                 this.button.setPressed(false);
             })
             this.element.addEventListener(pointerEvents.up, ev => {
-                svg.removeClass(this.element, "pressed");
+                pxsim.U.removeClass(this.element, "pressed");
                 this.button.setPressed(false);
             })
         }
@@ -351,14 +351,14 @@ namespace pxsim.visuals {
             // hooking up events
             pointerEvents.down.forEach(evid => this.element.addEventListener(evid, ev => {
                 this.button.setPressed(true);
-                svg.addClass(this.element, "pressed");
+                pxsim.U.addClass(this.element, "pressed");
             }));
             this.element.addEventListener(pointerEvents.leave, ev => {
-                svg.removeClass(this.element, "pressed");
+                pxsim.U.removeClass(this.element, "pressed");
                 this.button.setPressed(false);
             })
             this.element.addEventListener(pointerEvents.up, ev => {
-                svg.removeClass(this.element, "pressed");
+                pxsim.U.removeClass(this.element, "pressed");
                 this.button.setPressed(false);
             })
         }

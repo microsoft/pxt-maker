@@ -57,15 +57,15 @@ namespace pxsim.visuals {
                 let btng = <SVGGElement>svg.elt("g");
                 let btn = svg.child(btng, "rect", { class: "sim-button-virtual", x: x, y: y, rx: corner, ry: corner, width: w, height: w});
                 let btnTxt = mkTxt(cx + txtXOff, cy + txtYOff, txtSize, 0, "A+B");
-                svg.addClass(btnTxt, "sim-text")
-                svg.addClass(btnTxt, "sim-text-virtual");
+                pxsim.U.addClass(btnTxt, "sim-text")
+                pxsim.U.addClass(btnTxt, "sim-text-virtual");
                 btng.appendChild(btnTxt);
 
                 return btng;
             }
 
             let el = svg.elt("g");
-            svg.addClass(el, "sim-buttonpair")
+            pxsim.U.addClass(el, "sim-buttonpair")
             el.appendChild(this.btn);
 
             return el;

@@ -77,7 +77,7 @@
         "url": "/projects/power"
     },
     {
-        "name": "JacDac (PROTOTYPE)",
+        "name": "JACDAC",
         "url": "/projects/jacdac"
     },
     {
@@ -104,6 +104,6 @@
 [LCD](/projects/lcd),
 [LoRa](/projects/lora),
 [Power](/projects/power),
-[JacDac (PROTOTYPE)](/projects/jacdac),
+[JACDAC](/projects/jacdac),
 [Boards](/boards)
 
