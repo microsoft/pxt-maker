@@ -436,6 +436,7 @@
         "qrCode": true,
         "python": true,
         "addNewTypeScriptFile": true,
+        "alwaysGithubItemBlocks": true,
         "alwaysGithubItem": true,
         "nameProjectFirst": true,
         "showProjectSettings": true
