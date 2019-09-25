@@ -80,6 +80,7 @@
         "libs/arduino-mkr1010",
         "libs/arduino-mkr1300",
         "libs/electroniccats-meow-meow",
+        "libs/electroniccats-escornabot-makech",
         "libs/sparkfun-samd21-dev-breakout",
         "libs/sparkfun-samd21-mini-breakout",
         "libs/sparkfun-redboard-turbo",
