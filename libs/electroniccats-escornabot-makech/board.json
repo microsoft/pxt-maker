@@ -6,64 +6,7 @@
     "width": 524,
     "height": 828,
     "pinDist": 15,
-    "pinBlocks": [
-      {
-        "x": 224.1591065559751,
-        "y": 123.5741593666373,
-        "labels": [
-          "MISO"
-        ]
-      },
-      {
-        "x": 239.28410109052774,
-        "y": 123.5741593666373,
-        "labels": [
-          "MOSI"
-        ]
-      },
-      {
-        "x": 224.1591065559751,
-        "y": 108.45122214318114,
-        "labels": [
-          "SDA"
-        ]
-      },
-      {
-        "x": 239.28410109052774,
-        "y": 108.45122214318114,
-        "labels": [
-          "SCK"
-        ]
-      },
-      {
-        "x": 224.1592060435369,
-        "y": 93.32662679019413,
-        "labels": [
-          "VCC"
-        ]
-      },
-      {
-        "x": 239.28516229118705,
-        "y": 93.32662679019413,
-        "labels": [
-          "SCL"
-        ]
-      },
-      {
-        "x": 53.99226458251395,
-        "y": 93.32622883910672,
-        "labels": [
-          "GND"
-        ]
-      },
-      {
-        "x": 69.1182042489038,
-        "y": 93.32622883910672,
-        "labels": [
-          "CS"
-        ]
-      }
-    ],
+    "pinBlocks": [],
     "leds": [
       {
         "x": 250,
@@ -71,7 +14,7 @@
         "w": 20,
         "h": 20,
         "color": "#ff0000",
-        "label": "LED"
+        "label": "LED1"
       },
       {
         "x": 250,
@@ -79,7 +22,7 @@
         "w": 20,
         "h": 20,
         "color": "#00ff00",
-        "label": "LED"
+        "label": "LED2"
       },
       {
         "x": 150,
@@ -87,7 +30,7 @@
         "w": 20,
         "h": 20,
         "color": "#0000ff",
-        "label": "LED"
+        "label": "LED3"
       },
       {
         "x": 350,
@@ -95,7 +38,7 @@
         "w": 20,
         "h": 20,
         "color": "#ffff00",
-        "label": "LED"
+        "label": "LED4"
       }
     ],
     "touchPads": [],
@@ -108,15 +51,7 @@
     }
   },
   "gpioPinMap": {
-    "MISO": "MISO",
-    "MOSI": "MOSI",
-    "SDA": "SDA",
-    "SCK": "SCK",
-    "VCC": "VCC",
-    "SCL": "SCL",
-    "RESETBTN": "RESETBTN",
-    "GND": "GND",
-    "CS": "CS"
+    "RESETBTN": "RESETBTN"
   },
   "groundPins": [
     "GND"
@@ -124,10 +59,7 @@
   "threeVoltPins": [
     "VCC"
   ],
-  "i2cPins": {
-    "SDA": "SDA",
-    "SCL": "SCL"
-  },
+  "i2cPins": {},
   "onboardComponents": [],
   "marginWhenBreadboarding": [
     0,
