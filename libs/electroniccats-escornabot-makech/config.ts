@@ -37,9 +37,13 @@ namespace config {
     export const PIN_TX = DAL.PA00;
     
     // Module WIFININA ESP32 
-    export const PIN_MISO = DAL.PA13; 
-    export const PIN_MOSI = DAL.PA14;
-    export const PIN_SCK = DAL.PA15;
+    export const PIN_WIFI_MISO = DAL.PA13;
+    export const PIN_WIFI_MOSI = DAL.PA14;
+    export const PIN_WIFI_SCK = DAL.PA15;
+    export const PIN_WIFI_CS = DAL.PA14;
+    export const PIN_WIFI_BUSY = DAL.PA21;
+    export const PIN_WIFI_RESET = DAL.PA23;
+    export const PIN_WIFI_GPIO0 = DAL.PA20;
     
     // JACDAC
     export const PIN_JACK_TX = DAL.PA00;
