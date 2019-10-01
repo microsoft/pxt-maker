@@ -1,0 +1,75 @@
+{
+  "driveDisplayName": "",
+  "visual": {
+    "image": "pkg://board.svg",
+    "useCrocClips": true,
+    "width": 524,
+    "height": 828,
+    "pinDist": 15,
+    "pinBlocks": [],
+    "leds": [
+      {
+        "x": 250,
+        "y": 500,
+        "w": 20,
+        "h": 20,
+        "color": "#ff0000",
+        "label": "LED1"
+      },
+      {
+        "x": 250,
+        "y": 660,
+        "w": 20,
+        "h": 20,
+        "color": "#00ff00",
+        "label": "LED2"
+      },
+      {
+        "x": 150,
+        "y": 580,
+        "w": 20,
+        "h": 20,
+        "color": "#0000ff",
+        "label": "LED3"
+      },
+      {
+        "x": 350,
+        "y": 580,
+        "w": 20,
+        "h": 20,
+        "color": "#ffff00",
+        "label": "LED4"
+      }
+    ],
+    "touchPads": [],
+    "buttons": [],
+    "reset": {
+      "x": 254,
+      "y": 280,
+      "w": 20.829026762740337,
+      "h": 20.830827737746443
+    }
+  },
+  "gpioPinMap": {
+    "RESETBTN": "RESETBTN"
+  },
+  "groundPins": [
+    "GND"
+  ],
+  "threeVoltPins": [
+    "VCC"
+  ],
+  "i2cPins": {},
+  "onboardComponents": [],
+  "marginWhenBreadboarding": [
+    0,
+    0,
+    80,
+    0
+  ],
+  "spiPins": {
+    "MOSI": "MOSI",
+    "MISO": "MISO",
+    "SCK": "SCK"
+  }
+}

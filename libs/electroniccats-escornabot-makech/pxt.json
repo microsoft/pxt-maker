@@ -1,0 +1,27 @@
+{
+    "name": "electroniccats-escornabot-makech",
+    "description": "Electronic Cats Escornabot Makech",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "dependencies": {
+        "core---samd": "file:../core---samd",
+        "buttons": "file:../buttons",
+        "mixer---samd": "file:../mixer---samd"
+    },
+    "core": true,
+    "public": true,
+    "compileServiceVariant": "samd21",
+    "features": [
+        "uf2",
+        "pinled",
+        "pina0",
+        "pina1",
+        "music"
+    ]
+}
