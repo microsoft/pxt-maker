@@ -106,5 +106,7 @@
    Docs
 --------------------*/
 
-@docsPrimaryColor    : #999;
+@docsPrimaryColor    : #ecf0f1;
 @docsAccentColor     : #CCC;
+@docsReadingText: 'Helvetica', 'Helvetica Neue', 'Arial', Sans-serif;
+@docsPageFont: 'Helvetica', 'Helvetica Neue', 'Arial', Sans-serif;

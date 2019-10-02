@@ -383,20 +383,8 @@
                 "path": "/boards"
             },
             {
-                "name": "Blocks",
-                "path": "/blocks"
-            },
-            {
-                "name": "JavaScript",
-                "path": "/javascript"
-            },
-            {
                 "name": "Reference",
                 "path": "/reference"
-            },
-            {
-                "name": "GitHub",
-                "path": "https://github.com/Microsoft/pxt-maker"
             }
         ],
         "invertedMenu": false,
