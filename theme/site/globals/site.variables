@@ -101,3 +101,10 @@
 --------------------*/
 
 @greenScreenBlockColor: #40bf4a;
+
+/*-------------------
+   Docs
+--------------------*/
+
+@docsPrimaryColor    : #999;
+@docsAccentColor     : #CCC;
