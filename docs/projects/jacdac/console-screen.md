@@ -12,27 +12,24 @@ Displays the JACDAC console log on a TFT screen.
 let logging = false
 input.buttonD1.onEvent(ButtonEvent.Click, function () {
     if (logging) {
-        jacdac.consoleService.setMode(JDConsoleMode.Off)
+        jacdac.consoleService().consoleMode = jacdac.JDConsoleMode.Off; 
         logging = false
         console.log("console off")
     } else {
-        jacdac.consoleService.setMode(JDConsoleMode.Listen)
+        jacdac.consoleService().consoleMode = jacdac.JDConsoleMode.Listen; 
         logging = true
         console.log("console on")
     }
 })
-jacdac.setDeviceName("logger")
+jacdac.instance().setDeviceName("logger")
 jacdac.consoleService()
 logging = false
-display.showConsole()
 console.log("press btn to start")
 console.log("jacdac console")
 ```
 
 ```package
 jacdac
-screen---st7735
-display
 ```
 
 ```config
