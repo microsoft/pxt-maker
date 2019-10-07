@@ -145,7 +145,7 @@
         "onStartNamespace": "loops",
         "onStartColor": "#40bf4a",
         "onStartWeight": 100,
-        "pauseUntilBlock": { },
+        "pauseUntilBlock": {},
         "breakBlock": true,
         "continueBlock": true
     },
@@ -441,7 +441,36 @@
         "alwaysGithubItem": true,
         "githubBlocksDiff": true,
         "nameProjectFirst": true,
-        "showProjectSettings": true
+        "showProjectSettings": true,
+        "selectLanguage": true,
+        "availableLocales": [
+            "en",
+            "ar",
+            "cs",
+            "da",
+            "de",
+            "el",
+            "es-ES",
+            "fi",
+            "fr",
+            "hu",
+            "is",
+            "it",
+            "ja",
+            "ko",
+            "nl",
+            "no",
+            "pt-BR",
+            "pt-PT",
+            "ru",
+            "si-LK",
+            "sk",
+            "sv-SE",
+            "tr",
+            "uk",
+            "zh-CN",
+            "zh-TW"
+        ]
     },
     "ignoreDocsErrors": true
 }
