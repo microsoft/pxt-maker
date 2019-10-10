@@ -84,7 +84,7 @@ Make sure to pull changes from all repos regularly. More instructions are at htt
 
 ## Repos 
 
-The pxt-microbit target depends on several other repos. The main ones are:
+The pxt-maker target depends on several other repos. The main ones are:
 - https://github.com/Microsoft/pxt, the PXT framework
 - https://github.com/Microsoft/pxt-commmon-packages, common APIs accross various MakeCode editors
 - https://github.com/lancaster-university/codal-core, CODAL core project
