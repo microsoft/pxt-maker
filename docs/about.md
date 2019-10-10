@@ -52,7 +52,7 @@ forever(function() {
 
 ## Open Source
 
-Maker is open source on GitHub at https://github.com/Microsoft/pxt-maker .
+Maker is open source on GitHub at https://github.com/microsoft/pxt-maker .
 
 ## Forum and chat
 

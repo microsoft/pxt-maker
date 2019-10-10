@@ -80,7 +80,7 @@ pxt serve --localbuild
 
 ### Updates
 
-Make sure to pull changes from all repos regularly. More instructions are at https://github.com/Microsoft/pxt#running-a-target-from-localhost
+Make sure to pull changes from all repos regularly. More instructions are at https://github.com/microsoft/pxt#running-a-target-from-localhost
 
 ## Repos 
 

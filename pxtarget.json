@@ -346,7 +346,7 @@
     "appTheme": {
         "accentColor": "#ecf0f1",
         "backgroundColor": "#ffffff",
-        "logoUrl": "https://github.com/Microsoft/pxt-maker",
+        "logoUrl": "https://github.com/microsoft/pxt-maker",
         "logo": "./static/logo.svg",
         "docsLogo": "./static/logo.svg",
         "portraitLogo": "./static/logo.svg",
@@ -359,9 +359,9 @@
         "embedUrl": "https://maker.makecode.com/",
         "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
         "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
-        "githubUrl": "https://github.com/Microsoft/pxt-maker",
-        "feedbackUrl": "https://github.com/Microsoft/pxt-maker/issues",
-        "betaUrl": "https://github.com/Microsoft/pxt-maker",
+        "githubUrl": "https://github.com/microsoft/pxt-maker",
+        "feedbackUrl": "https://forum.makecode.com/",
+        "betaUrl": "https://github.com/microsoft/pxt-maker",
         "boardName": "board",
         "homeScreenHero": "./static/hero.jpg",
         "debugger": true,
@@ -396,7 +396,7 @@
             },
             {
                 "name": "GitHub",
-                "path": "https://github.com/Microsoft/pxt-maker"
+                "path": "https://github.com/microsoft/pxt-maker"
             }
         ],
         "invertedMenu": false,
