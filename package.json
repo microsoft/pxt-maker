@@ -36,7 +36,7 @@
     "docs/static/icons/favicon.ico"
   ],
   "devDependencies": {
-    "typescript": "2.6.1",
+    "typescript": "3.6.3",
     "semantic-ui-less": "2.2.14",
     "@types/bluebird": "2.0.33",
     "@types/jquery": "3.2.16",
@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "pxt-common-packages": "6.16.11",
-    "pxt-core": "5.25.16",
+    "pxt-core": "5.27.0",
     "@jacdac/jacdac-ts": "^0.0.9",
     "webusb": "^1.1.1"
   },
