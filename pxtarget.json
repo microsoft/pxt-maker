@@ -450,6 +450,7 @@
         "nameProjectFirst": true,
         "showProjectSettings": true,
         "selectLanguage": true,
+        "authWidget": true,
         "availableLocales": [
             "en",
             "ar",
