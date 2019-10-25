@@ -128,7 +128,8 @@
         "publishing": true,
         "importing": true,
         "preferredPackages": [],
-        "githubPackages": true
+        "githubPackages": true,
+        "cloudProviders": {}
     },
     "runtime": {
         "mathBlocks": true,
