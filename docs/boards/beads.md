@@ -24,7 +24,7 @@
     },
     {
         "name": "Environmental Bead",
-        "url": "/boards/bead-environmental",
+        "url": "/boards/bead-environment",
         "cardType": "template",
         "imageUrl": "/static/libs/bead-environmental.jpg"  
     },

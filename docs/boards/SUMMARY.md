@@ -25,7 +25,7 @@
 * [Project Brookdale](/boards/beads)
     * [Proximity Bead](/boards/bead-proximity)
     * [Color Bead](/boards/bead-color)
-    * [Environmental Bead](/boards/bead-environmental)
+    * [Environmental Bead](/boards/bead-environment)
     * [Tattoo Bead](/boards/bead-tattoo)
     * [Light Bead](/boards/bead-light)
     * [Servo Bead](/boards/bead-servo)
