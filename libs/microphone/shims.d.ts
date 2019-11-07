@@ -2,7 +2,7 @@
 declare namespace input {
 
     /**
-     * Registers an event that runs when a lound sound is detected
+     * Registers an event that runs when a loud sound is detected
      */
     //% help=input/on-loud-sound
     //% blockId=input_on_loud_sound block="on loud sound"
