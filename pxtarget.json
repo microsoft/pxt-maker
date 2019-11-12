@@ -418,6 +418,7 @@
         "hasAudio": true,
         "usbDocs": "/device/usb",
         "disableBlockIcons": true,
+        "disableAPICache": true,
         "blocklyOptions": {
             "grid": {
                 "spacing": 20,
