@@ -129,7 +129,9 @@
         "importing": true,
         "preferredPackages": [],
         "githubPackages": true,
-        "cloudProviders": {}
+        "cloudProviders": {
+            "github": {}
+        }
     },
     "runtime": {
         "mathBlocks": true,
