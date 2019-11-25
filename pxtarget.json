@@ -359,6 +359,7 @@
         "logoUrl": "https://github.com/microsoft/pxt-maker",
         "logo": "./static/logo.svg",
         "docsLogo": "./static/logo.svg",
+        "docsHeader": "Microsoft MakeCode Maker",
         "portraitLogo": "./static/logo.svg",
         "footerLogo": "./static/logo.svg",
         "organization": "Microsoft MakeCode",
