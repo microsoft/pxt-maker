@@ -22,7 +22,7 @@ jobs:
           sudo apt-get install xvfb
           sudo npm install -g pxt
           npm install
-      - name: npm test
+      - name: pxt ci
         run: |
           pxt ci
         env:
