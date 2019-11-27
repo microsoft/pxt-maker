@@ -1,5 +1,7 @@
 # About
 
+// dummy change
+
 The **Maker Microsoft MakeCode editor** allows to program [various Cortex-based microcontrollers](/boards).
 
 * [Add a new board](/boards/add-a-new-board)
