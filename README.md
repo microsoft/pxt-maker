@@ -1,4 +1,4 @@
-# MakeCode Maker [![Actions Status](https://github.com/{owner}/{repo}/workflows/{workflow_name}/badge.svg)](https://github.com/{owner}/{repo}/actions)
+# MakeCode Maker [![Actions Status](https://github.com/microsoft/pxt-maker/workflows/makecode.yml/badge.svg)](https://github.com/microsoft/pxt-maker/actions)
 
 This is an experimental code editor for maker boards - try it at https://maker.makecode.com.
 
