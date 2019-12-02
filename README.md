@@ -49,8 +49,8 @@ npm install
 ```
 8. Link pxt-maker back to base pxt repo (add `sudo` for Mac/Linux shells).
 ```
-npm link ../pxt
-npm link ../pxt-common-packages
+pxt link ../pxt
+pxt link ../pxt-common-packages
 ```
 Note the above command assumes the folder structure of   
 ```
