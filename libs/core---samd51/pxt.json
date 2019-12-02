@@ -11,6 +11,7 @@
         "screen---st7735": "file:../screen---st7735",
         "switch": "file:../switch",
         "thermometer": "file:../thermometer",
-        "lcd": "file:../lcd"
+        "lcd": "file:../lcd",
+        "mixer": "file:../mixer---samd"
     }
 }
