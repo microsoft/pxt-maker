@@ -12,6 +12,6 @@
         "switch": "file:../switch",
         "thermometer": "file:../thermometer",
         "lcd": "file:../lcd",
-        "mixer": "file:../mixer---samd"
+        "mixer---samd": "file:../mixer---samd"
     }
 }
