@@ -59,8 +59,8 @@
         "name": "Accelerometer",
         "url": "/projects/accelerometer",
         "imageUrl": "/static/projects/accelerometer/shake/gallery.png",
-        "largeImageUrl": "/static/projects/accelerometer/shake/gallery.mp4",
-        "videoUrl": "/static/projects/accelerometer/level/gallery.mp4"
+        "largeImageUrl": "/static/projects/accelerometer/shake/gallery.gif",
+        "videoUrl": "/static/projects/accelerometer/shake/gallery.mp4"
     },
     {
         "name": "Serial",
