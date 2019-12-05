@@ -9,7 +9,7 @@ UF2 is an [open source file format](https://github.com/microsoft/uf2) optimized 
 If your board does not support UF2 yet, 
 
 * read UF2 specification: https://github.com/microsoft/uf2
-* if your board is SAMD21/SAMD51 based, start from https://github.com/microsoft/uf2-
+* if your board is SAMD21/SAMD51 based, start from https://github.com/microsoft/uf2-samdx1
 * if your board is STM32 based, start from https://github.com/mmoskal/uf2-stm32f
 
 ## Step 2: Add a new project
