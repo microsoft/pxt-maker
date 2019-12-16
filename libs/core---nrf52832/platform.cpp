@@ -4,9 +4,69 @@
 
 namespace pxt {
 
-NRFLowLevelTimer lowTimer(NRF_TIMER1, TIMER1_IRQn);
+struct TimerConfig {
+    uint8_t id;
+    IRQn_Type irqn;
+    NRF_TIMER_Type *addr;
+};
 
-CODAL_TIMER devTimer(lowTimer);
+#define DEF_TIM(n)                                                                                 \
+    { 0x10 + n, TIMER##n##_IRQn, NRF_TIMER##n }
+
+static const TimerConfig timers[] = {
+#ifdef NRF_TIMER0
+    DEF_TIM(0),
+#endif
+#ifdef NRF_TIMER1
+    DEF_TIM(1),
+#endif
+#ifdef NRF_TIMER2
+    DEF_TIM(2),
+#endif
+#ifdef NRF_TIMER3
+    DEF_TIM(3),
+#endif
+#ifdef NRF_TIMER4
+    DEF_TIM(4),
+#endif
+#ifdef NRF_TIMER5
+    DEF_TIM(5),
+#endif
+#ifdef NRF_TIMER6
+    DEF_TIM(6),
+#endif
+{0,(IRQn_Type)0,0}
+};
+
+#define DEF_TIMERS 0x11121013 // TIMER1 TIMER2 TIMER0 TIMER3
+
+static uint32_t usedTimers;
+static int timerIdx(uint8_t id) {
+    for (unsigned i = 0; timers[i].id; i++) {
+        if (id == timers[i].id)
+            return i;
+    }
+    return -1;
+}
+LowLevelTimer *allocateTimer() {
+    uint32_t timersToUse = getConfig(CFG_TIMERS_TO_USE, DEF_TIMERS);
+    for (int shift = 24; shift >= 0; shift -= 8) {
+        uint8_t tcId = (timersToUse >> shift) & 0xff;
+        int idx = timerIdx(tcId);
+        if (idx < 0 || (usedTimers & (1 << idx)))
+            continue;
+        auto dev = timers[idx].addr;
+        if (dev->INTENSET) // any irqs enabled?
+            continue; // then we won't allocate it
+        usedTimers |= 1 << idx;
+        DMESG("allocate TIMER%d", tcId - 0x10);
+        return new NRFLowLevelTimer(dev, timers[idx].irqn);
+    }
+
+    target_panic(PANIC_OUT_OF_TIMERS);
+    return NULL;
+}
+
 
 static void initRandomSeed() {
     int seed = 0xC0DA1;

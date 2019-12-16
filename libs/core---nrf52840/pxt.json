@@ -1,10 +1,4 @@
 {
     "name": "core---nrf52840",
-    "additionalFilePath": "../core---nrf52832",
-    "cppDependencies": {
-        "music---pwm": "file:../music---pwm",
-        "buttons": "file:../buttons",
-        "jacdac": "file:../jacdac",
-        "switch": "file:../switch"
-    }
+    "additionalFilePath": "../core---nrf52832"
 }

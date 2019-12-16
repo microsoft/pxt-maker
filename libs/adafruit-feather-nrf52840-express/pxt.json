@@ -15,8 +15,7 @@
     "dependencies": {
         "core---nrf52840": "file:../core---nrf52840",
         "pixel": "file:../pixel",
-        "buttons": "file:../buttons",
-        "music": "file:../music---pwm"
+        "buttons": "file:../buttons"
     },
     "public": true,
     "dalDTS": {
