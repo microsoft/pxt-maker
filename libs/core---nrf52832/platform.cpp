@@ -23,19 +23,25 @@ static void initRandomSeed() {
 
 static void disableNFConPins() {
     // Ensure NFC pins are configured as GPIO. If not, update the non-volatile UICR.
-    if (NRF_UICR->NFCPINS)
-    {
+    if (NRF_UICR->NFCPINS || (NRF_UICR->REGOUT0 & 7) != 5) {
         DMESG("RESET UICR\n");
         // Enable Flash Writes
         NRF_NVMC->CONFIG = (NVMC_CONFIG_WEN_Wen << NVMC_CONFIG_WEN_Pos);
-        while (NRF_NVMC->READY == NVMC_READY_READY_Busy);
+        while (NRF_NVMC->READY == NVMC_READY_READY_Busy)
+            ;
 
         // Configure PINS for GPIO use.
-        NRF_UICR->NFCPINS = 0;
+        if (NRF_UICR->NFCPINS)
+            NRF_UICR->NFCPINS = 0;
+
+        // Set VDD to 3.3V
+        if ((NRF_UICR->REGOUT0 & 7) != 5)
+            NRF_UICR->REGOUT0 = (NRF_UICR->REGOUT0 & ~7) | 5;
 
         // Disable Flash Writes
         NRF_NVMC->CONFIG = (NVMC_CONFIG_WEN_Ren << NVMC_CONFIG_WEN_Pos);
-        while (NRF_NVMC->READY == NVMC_READY_READY_Busy);
+        while (NRF_NVMC->READY == NVMC_READY_READY_Busy)
+            ;
 
         // Reset, so the changes can take effect.
         NVIC_SystemReset();
@@ -47,17 +53,16 @@ void platform_init() {
 
     disableNFConPins(); // this is needed when P0_9 and P0_10 are to be used as regular pins
 
-/*
-    if (*HF2_DBG_MAGIC_PTR == HF2_DBG_MAGIC_START) {
-        *HF2_DBG_MAGIC_PTR = 0;
-        // this will cause alignment fault at the first breakpoint
-        globals[0] = (TValue)1;
-    }
-*/
-
+    /*
+        if (*HF2_DBG_MAGIC_PTR == HF2_DBG_MAGIC_START) {
+            *HF2_DBG_MAGIC_PTR = 0;
+            // this will cause alignment fault at the first breakpoint
+            globals[0] = (TValue)1;
+        }
+    */
 }
 
-}
+} // namespace pxt
 
 void cpu_clock_init() {
     // missing in Codal
