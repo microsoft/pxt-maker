@@ -12,7 +12,7 @@
     "core": true,
     "compileServiceVariant": "nrf52832",
     "dependencies": {
-        "core---nrf52832": "file:../core---nrf52832",
+        "core---nrf52": "file:../core---nrf52",
         "buttons": "file:../buttons",
         "light": "file:../light"
     },    

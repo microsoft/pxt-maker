@@ -12,13 +12,13 @@
     "core": true,
     "compileServiceVariant": "nrf52832",
     "dependencies": {
-        "core---nrf52832": "file:../core---nrf52832",
+        "core---nrf52": "file:../core---nrf52",
         "light": "file:../light",
         "buttons": "file:../buttons"
     },
     "public": true,
     "dalDTS": {
-        "corePackage": "../core---nrf52832"
+        "corePackage": "../core---nrf52"
     },
     "features": [
         "pina0",
