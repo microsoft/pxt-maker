@@ -81,9 +81,15 @@ static void initRandomSeed() {
     seedRandom(seed);
 }
 
+#ifdef NRF52840
+#define IS_3_3_V() ((NRF_UICR->REGOUT0 & 7) == 5)
+#else
+#define IS_3_3_V() 1
+#endif
+
 static void disableNFConPins() {
     // Ensure NFC pins are configured as GPIO. If not, update the non-volatile UICR.
-    if (NRF_UICR->NFCPINS || (NRF_UICR->REGOUT0 & 7) != 5) {
+    if (NRF_UICR->NFCPINS || !IS_3_3_V()) {
         DMESG("RESET UICR\n");
         // Enable Flash Writes
         NRF_NVMC->CONFIG = (NVMC_CONFIG_WEN_Wen << NVMC_CONFIG_WEN_Pos);
@@ -94,9 +100,11 @@ static void disableNFConPins() {
         if (NRF_UICR->NFCPINS)
             NRF_UICR->NFCPINS = 0;
 
+#ifdef NRF52840
         // Set VDD to 3.3V
         if ((NRF_UICR->REGOUT0 & 7) != 5)
             NRF_UICR->REGOUT0 = (NRF_UICR->REGOUT0 & ~7) | 5;
+#endif
 
         // Disable Flash Writes
         NRF_NVMC->CONFIG = (NVMC_CONFIG_WEN_Ren << NVMC_CONFIG_WEN_Pos);

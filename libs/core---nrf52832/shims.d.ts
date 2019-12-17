@@ -248,19 +248,29 @@ declare namespace control {
     //% shim=control::dmesgPtr
     function dmesgPtr(str: string, ptr: Object): void;
 }
-declare namespace pins {
 
+
+declare interface I2C {
     /**
      * Read `size` bytes from a 7-bit I2C `address`.
      */
-    //% repeat.defl=0 shim=pins::i2cReadBuffer
-    function i2cReadBuffer(address: int32, size: int32, repeat?: boolean): Buffer;
+    //% repeat.defl=0 shim=I2CMethods::readBuffer
+    readBuffer(address: int32, size: int32, repeat?: boolean): Buffer;
 
     /**
      * Write bytes to a 7-bit I2C `address`.
      */
-    //% repeat.defl=0 shim=pins::i2cWriteBuffer
-    function i2cWriteBuffer(address: int32, buf: Buffer, repeat?: boolean): int32;
+    //% repeat.defl=0 shim=I2CMethods::writeBuffer
+    writeBuffer(address: int32, buf: Buffer, repeat?: boolean): int32;
+}
+declare namespace pins {
+
+    /**
+     * Opens a Serial communication driver
+     */
+    //% help=pins/create-i2c
+    //% parts=i2c shim=pins::createI2C
+    function createI2C(sda: DigitalInOutPin, scl: DigitalInOutPin): I2C;
 }
 declare namespace pins {
 
