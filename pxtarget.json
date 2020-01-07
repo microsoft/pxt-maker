@@ -62,7 +62,6 @@
         "libs/settings---files",
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-m4-express",
-        "libs/adafruit-feather-bluefruit-nrf52",
         "libs/bluepill",
         "libs/adafruit-circuit-playground-express",
         "libs/adafruit-trinket-m0",
