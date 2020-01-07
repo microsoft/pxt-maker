@@ -73,6 +73,7 @@
         "libs/adafruit-itsybitsy-m0-express",
         "libs/adafruit-itsybitsy-m4-express",
         "libs/adafruit-gemma-m0",
+        "libs/robohatmm1-m4"
         "libs/xinabox-cc03",
         "libs/xinabox-cs11",
         "libs/arduino-zero",
