@@ -7,3 +7,4 @@ webp:
 ignorePaths:
   - "node_modules/**"
   - "built/**"
+  - "libs/**"
