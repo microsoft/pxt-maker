@@ -11,7 +11,6 @@
         "libs/base---light",
         "libs/core",
         "libs/core---stm32",
-        "libs/core---nrf52832",
         "libs/core---nrf52840",
         "libs/core---samd",
         "libs/core---samd51",
@@ -64,7 +63,6 @@
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-m4-express",
         "libs/adafruit-feather-bluefruit-nrf52",
-        "libs/redbear-ble-nano",
         "libs/bluepill",
         "libs/adafruit-circuit-playground-express",
         "libs/adafruit-trinket-m0",
@@ -225,38 +223,6 @@
                 },
                 "codalBinary": "ITSYBITSY_M4",
                 "serviceId": "codal2samd51"
-            }
-        },
-        "nrf52832": {
-            "serial": {
-                "useHF2": false
-            },
-            "compile": {
-                "openocdScript": "source [find interface/cmsis-dap.cfg]; source [find target/nrf52.cfg]",
-                "flashChecksumAddr": 0,
-                "deployFileMarker": "MBED.HTM",
-                "vtableShift": 3,
-                "useUF2": false,
-                "webUSB": false,
-                "gc": true
-            },
-            "compileService": {
-                "codalTarget": {
-                    "name": "codal-ble-nano",
-                    "url": "https://github.com/lancaster-university/codal-ble-nano",
-                    "branch": "v0.0.3-jacdac-v0.0",
-                    "type": "git"
-                },
-                "codalBinary": "BLE_NANO",
-                "serviceId": "codal2ble",
-                "dockerImage": "pext/yotta:latest",
-                "yottaConfig": {
-                    "pxt": {
-                        "board": {
-                            "id": "BOARD_ID_NRF52832"
-                        }
-                    }
-                }
             }
         },
         "nrf52840": {
