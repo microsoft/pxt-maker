@@ -419,6 +419,7 @@
         "nameProjectFirst": true,
         "showProjectSettings": true,
         "selectLanguage": true,
+        "githubEditor": true,
         "availableLocales": [
             "en",
             "ar",
