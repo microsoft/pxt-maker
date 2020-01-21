@@ -412,6 +412,7 @@
         "simGif": true,
         "qrCode": true,
         "python": true,
+        "pythonToolbox": true,
         "addNewTypeScriptFile": true,
         "alwaysGithubItemBlocks": true,
         "alwaysGithubItem": true,
