@@ -12,7 +12,8 @@
         "imageUrl": "/static/projects/digital-io/blinky/gallery.png",
         "largeImageUrl": "/static/projects/digital-io/blinky/gallery.gif",
         "videoUrl": "/static/projects/digital-io/blinky/gallery.mp4",
-        "description": "Learn about forever, pause, digital write"
+        "description": "Learn about forever, pause, digital write",
+        "otherActions": []
     },
     {
         "name": "Button LED",
@@ -21,7 +22,8 @@
         "imageUrl": "/static/projects/digital-io/button-led/gallery.png",
         "largeImageUrl": "/static/projects/digital-io/button-led/gallery.gif",
         "videoUrl": "/static/projects/digital-io/button-led/gallery.mp4",
-        "description": "Learn about button events"
+        "description": "Learn about button events",
+        "otherActions": []
     },
     {
         "name": "Switch LED",
@@ -30,7 +32,8 @@
         "imageUrl": "/static/projects/digital-io/switch-led/gallery.png",
         "largeImageUrl": "/static/projects/digital-io/switch-led/gallery.gif",
         "videoUrl": "/static/projects/digital-io/switch-led/gallery.mp4",
-        "description": "Learn about digital read"
+        "description": "Learn about digital read",
+        "otherActions": []
     },
     {
         "name": "Multi Blinky",
@@ -46,6 +49,6 @@
 ## See Also
 
 [Blinky](/projects/digital-io/blinky),
-[Button](/projects/digital-io/button-led),
-[Switch](/projects/digital-io/switch-led),
-[Switch](/projects/digital-io/multi-blinky)
+[Button LED](/projects/digital-io/button-led),
+[Switch LED](/projects/digital-io/switch-led),
+[Multi Blinky](/projects/digital-io/multi-blinky)
