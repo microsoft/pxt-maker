@@ -1,6 +1,6 @@
 # Multi Blinky
 
-Blink multiple LEDs together> You can have multiple forever loops running concurrently to blink multiple LEDs.
+You can have multiple forever loops running concurrently to blink multiple LEDs.
 
 ```blocks
 forever(function() {

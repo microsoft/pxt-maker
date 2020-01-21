@@ -41,7 +41,8 @@
         "imageUrl": "/static/projects/digital-io/switch-led/gallery.png",
         "largeImageUrl": "/static/projects/digital-io/switch-led/gallery.gif",
         "videoUrl": "/static/projects/digital-io/switch-led/gallery.mp4",
-        "cardType": "example"
+        "cardType": "example",
+        "otherActions": []
     }
 ]
 ```
