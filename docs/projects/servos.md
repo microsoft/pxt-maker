@@ -10,7 +10,8 @@
         "imageUrl": "/static/projects/servos/sweep/gallery.png",
         "largeImageUrl": "/static/projects/servos/sweep/gallery.gif",
         "videoUrl": "/static/projects/servos/sweep/gallery.mp4",
-        "cardType": "example"
+        "cardType": "example",
+        "otherActions": []
     },
     {
         "name": "Buttons",
@@ -18,7 +19,8 @@
         "imageUrl": "/static/projects/servos/buttons/gallery.png",
         "largeImageUrl": "/static/projects/servos/buttons/gallery.gif",
         "videoUrl": "/static/projects/servos/buttons/gallery.mp4",
-        "cardType": "example"
+        "cardType": "example",
+        "otherActions": []
     }
 ]
 ```

@@ -11,7 +11,8 @@
         "largeImageUrl": "/static/projects/lcd/hello-world/gallery.gif",
         "videoUrl": "/static/projects/lcd/hello-world/gallery.mp4",
         "description": "Show text on a LCD screen",
-        "cardType": "example"
+        "cardType": "example",
+        "otherActions": []
     }
 ]
 ```

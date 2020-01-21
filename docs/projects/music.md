@@ -11,7 +11,8 @@
         "imageUrl": "/static/projects/music/play-sound/gallery.png",
         "largeImageUrl": "/static/projects/music/play-sound/gallery.gif",
         "videoUrl": "/static/projects/music/play-sound/gallery.mp4",
-        "cardType": "example"
+        "cardType": "example",
+        "otherActions": []
     },
     {
         "name": "Piano Buttons",
@@ -20,7 +21,8 @@
         "largeImageUrl": "/static/projects/music/piano-buttons/gallery.gif",
         "videoUrl": "/static/projects/music/piano-buttons/gallery.mp4",
         "url": "/projects/music/piano-buttons",
-        "cardType": "example"
+        "cardType": "example",
+        "otherActions": []
     }
 ]
 ```
