@@ -61,4 +61,4 @@
   * [XinaBox](/boards/xinabox)
   * [Beads](/boards/beads)
   * [Misc](/boards/misc)
-  * [Add your board](/boards/add-a-new-board)
+  * [Robotics Masters Robo HAT MM1 M4](/boards/robohatmm1-m4)

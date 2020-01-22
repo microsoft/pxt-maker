@@ -1,6 +1,6 @@
 {
-    "name": "adafruit-metro-m4-express",
-    "description": "Support for Adafruit Metro M4 Express",
+    "name": "robohatmm1-m4-peter",
+    "description": "Support for Robotics Masters Robo HAT MM1 M4",
     "files": [
         "README.md",
         "device.d.ts",
