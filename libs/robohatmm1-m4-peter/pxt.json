@@ -1,0 +1,39 @@
+{
+    "name": "adafruit-metro-m4-express",
+    "description": "Support for Adafruit Metro M4 Express",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "ns.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "core": true,
+    "compileServiceVariant": "samd51",
+    "dependencies": {
+        "core---samd51": "file:../core---samd51",
+        "pixel": "file:../pixel",
+        "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
+        "buttons": "file:../buttons",
+        "jacdac": "file:../jacdac"
+    },
+    "public": true,
+    "features": [
+        "uf2",
+        "pinled",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
+        "screen",
+        "jacdac",
+        "pixel",
+        "light",
+        "accelerometer",
+        "lcd"
+    ]
+}
