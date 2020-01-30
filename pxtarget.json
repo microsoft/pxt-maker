@@ -421,6 +421,7 @@
         "showProjectSettings": true,
         "selectLanguage": true,
         "githubEditor": true,
+        "tutorialBlocksDiff": true,
         "availableLocales": [
             "en",
             "ar",

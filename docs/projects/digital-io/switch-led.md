@@ -17,7 +17,6 @@ Add ``||pins:digital write||`` under the ``||loops:forever||`` to set pin **D1**
 
 ```blocks
 forever(function () {
-    // @highlight
     pins.D1.digitalWrite(false)
 })
 ```
@@ -28,7 +27,6 @@ Add ``||pins:digital read||`` in the ``LOW``/``HIGH`` slot. Change the pin to **
 
 ```blocks
 forever(function () {
-    // @highlight
     pins.D1.digitalWrite(pins.D0.digitalRead())
 })
 ```

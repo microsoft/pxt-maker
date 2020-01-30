@@ -18,7 +18,6 @@ Add a ``||pins:digital write||`` to turn the ``D0`` pin ``LOW``.
 
 ```blocks
 forever(function() {
-    // @highlight
     pins.D0.digitalWrite(false)
 })
 ```
@@ -37,11 +36,8 @@ Make sure the digital write is **HIGH**.
 ```blocks
 forever(function() {
     pins.D0.digitalWrite(false)
-    // @highlight
     pause(500)
-    // @highlight
     pins.D0.digitalWrite(true)
-    // @highlight
     pause(500)    
 })
 ```

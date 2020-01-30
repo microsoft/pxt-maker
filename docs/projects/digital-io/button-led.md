@@ -11,7 +11,6 @@ Use a button on a digital pin to control an LED.
 Add a ``||input:on event||`` to handle a "button click" on pin **D0**.
 
 ```blocks
-// @highlight
 input.buttonD0.onEvent(ButtonEvent.Click, function () {
 })
 ```
@@ -22,7 +21,6 @@ Add ``||pins:digital write||`` to set pin **D1** HIGH when **D0** is clicked.
 
 ```blocks
 input.buttonD0.onEvent(ButtonEvent.Click, function () {
-    // @highlight
     pins.D1.digitalWrite(true)
 })
 ```
@@ -42,9 +40,7 @@ turn pin **D1** to low.
 ```blocks
 input.buttonD0.onEvent(ButtonEvent.Click, function () {
     pins.D1.digitalWrite(true)
-    // @highlight
     pause(1000)
-    // @highlight
     pins.D1.digitalWrite(false)    
 })
 ```
