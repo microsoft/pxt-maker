@@ -422,6 +422,7 @@
         "selectLanguage": true,
         "githubEditor": true,
         "tutorialBlocksDiff": true,
+        "chooseLanguageRestrictionOnNewProject": true,
         "availableLocales": [
             "en",
             "ar",
