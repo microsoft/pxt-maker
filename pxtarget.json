@@ -11,7 +11,7 @@
         "libs/base---light",
         "libs/core",
         "libs/core---stm32",
-        "libs/core---nrf52840",
+        "libs/core---nrf52",
         "libs/core---samd",
         "libs/core---samd51",
         "libs/screen---st7735",
@@ -62,6 +62,7 @@
         "libs/settings---files",
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-m4-express",
+        "libs/adafruit-feather-nrf52840-express",
         "libs/bluepill",
         "libs/adafruit-circuit-playground-express",
         "libs/adafruit-trinket-m0",
@@ -152,7 +153,6 @@
         "isNative": true,
         "useUF2": true,
         "webUSB": true,
-        "gc": true,
         "hasHex": true,
         "saveAsPNG": true,
         "deployDrives": ".*",
@@ -208,8 +208,6 @@
                 "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd51g19; source [find target/at91samdXX.cfg]",
                 "openocdScriptAlt": "source [find interface/stlink-v2.cfg]; set CPUTAPID 0x2ba01477; set CHIPNAME at91samd51g19; source [find target/at91samdXX.cfg]",
                 "ramSize": 196608,
-                "vtableShift": 4,
-                "gc": true,
                 "uf2Family": "0x55114460"
             },
             "compileService": {
@@ -228,19 +226,16 @@
                 "useHF2": false
             },
             "compile": {
-                "openocdScript": "source [find board/nrf52-dk.cfg]",
+                "openocdScript": "source [find interface/cmsis-dap.cfg]; source [find target/nrf52.cfg]",
                 "flashChecksumAddr": 0,
-                "deployFileMarker": "MBED.HTM",
-                "vtableShift": 4,
-                "useUF2": false,
                 "webUSB": false,
-                "uf2Family": "0x1b57745f"
+                "uf2Family": "0xada52840"                
             },
             "compileService": {
                 "codalTarget": {
                     "name": "codal-nrf52840-dk",
                     "url": "https://github.com/mmoskal/codal-nrf52840-dk",
-                    "branch": "v0.0.12",
+                    "branch": "v1.1.0",
                     "type": "git"
                 },
                 "codalBinary": "NRF52840_DK",
@@ -262,7 +257,6 @@
                 "uf2Family": "0x5ee21072",
                 "webUSB": false,
                 "flashChecksumAddr": 0,
-                "vtableShift": 4,
                 "utf8": true
             },
             "compileService": {
@@ -281,8 +275,7 @@
             "compile": {
                 "hasHex": true,
                 "openocdScript": "source [find interface/stlink-v2.cfg]; source [find target/stm32f4x.cfg]",
-                "uf2Family": "0x57755a57",
-                "vtableShift": 4
+                "uf2Family": "0x57755a57"
             },
             "compileService": {
                 "codalTarget": {
@@ -301,8 +294,6 @@
                 "hasHex": true,
                 "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
                 "openocdScriptAlt": "source [find interface/stlink-v2.cfg]; set CPUTAPID 0x0bc11477; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
-                "vtableShift": 4,
-                "gc": true,
                 "uf2Family": "0x68ed2b88"
             },
             "compileService": {
