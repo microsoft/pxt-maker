@@ -1,11 +1,3 @@
 # Adafruit Feather Bluefruit NRF52
 
-```blocks
-forever(function() {
-
-})
-```
-
-```package
-adafruit-feather-bluefruit-nrf52
-```
+This board is no longer supported.

@@ -1,12 +1,3 @@
 # Teknikio Bluebird
 
-```blocks
-forever(function() {
-
-})
-```
-
-```package
-teknikio-bluebird
-```
-
+This board is no longer supported.

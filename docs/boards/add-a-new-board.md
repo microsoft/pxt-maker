@@ -17,9 +17,9 @@ If your board does not support UF2 yet,
 * Add a new project under lib named after your board. Start by copying **adafruit-trinket-m0** and modify all relevant parts:
 
 * update ``pxt.json`` with the title, name, description
-* update the ``compilerServiceVariant`` to match your board chipset
+* update the ``compilerServiceVariant`` in ``pxt.json`` to match your board chipset
 * update ``boardhd.svg`` with a simplified image of your board. See step below.
-* update the ``bundled-dirs`` array in ``pxtarget.json`` and your new folder
+* update the ``bundled-dirs`` array in ``pxtarget.json`` (root of respository) and add your new folder
 * add a code card in ``/docs/boards.md`` and a new markdown file under ``/docs/board/YOUBOARDNAME.md`` with an example that loads your board
 * run the local server to test your changes by launching 
 
@@ -43,7 +43,7 @@ The board that gets rendered in the simulator must be stored as a SVG in the pro
 
 Run
 
-    npm run svgo
+    svgo --config=svgo.yml libs/YOUR_BOARD_NAME/boardhd.svg -o libs/YOUR_BOARD_NAME/board.svg
 
 to generate a minified version of ``boardhd.svg``.
 

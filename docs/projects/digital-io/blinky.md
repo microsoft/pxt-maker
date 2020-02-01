@@ -6,9 +6,15 @@ Turn on and off the light pin to create a blinking effect.
 
 ![A breadboard with a blinking LED](/static/projects/digital-io/blinky/gallery.gif)
 
+```template
+forever(function() {
+    
+})
+```
+
 ## Step 1 @fullscreen
 
-Add a ``||pins:digital write||`` block to turn the ``D0`` pin ``LOW``.
+Add a ``||pins:digital write||`` to turn the ``D0`` pin ``LOW``.
 
 ```blocks
 forever(function() {
@@ -24,7 +30,7 @@ Take a peek at the simulator and make sure the LED is turned off.
 
 ## Step 3 @fullscreen
 
-Add another ``||blocks:pause||`` and ``||pins:digital write||`` block to create a blinking effect.
+Add another ``||blocks:pause||`` and ``||pins:digital write||`` to create a blinking effect.
 Make sure the digital write is **HIGH**.
 
 ```blocks
