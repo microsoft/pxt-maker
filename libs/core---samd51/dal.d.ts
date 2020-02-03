@@ -1064,7 +1064,7 @@ declare const enum DAL {
     CFG_PIN_GPS_SCL = 1032,
     CFG_PIN_GROVE0 = 1033,
     CFG_PIN_GROVE1 = 1034,
-    CFG_PIN_CS = 1035,
+    CFG_PIN_SS = 1035,
     // /pxtapp/hf2dbg.h
     HF2DBG_H = 1,
     // /pxtapp/pins.h

@@ -346,42 +346,42 @@
   <path id="GPS_SDA" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 81.6v-1.9h5.7v1.9z"/>
   <path id="GPS_SCL" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 85.3v-2h5.7v2z"/>
   <path id="5V_GPS" class="st8" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#d42328" d="M168.9 95.9v-2h5.7v2z"/>
-  <ellipse id="GND_RCC4" class="st10" cx="13.768" cy="115.08" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="5V_RCC4" class="st11" cx="31.768" cy="115.08" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="A3" class="st12" cx="49.768" cy="115.08" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="GND_RCC3" class="st10" cx="13.768" cy="97.069" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="5V_RCC3" class="st11" cx="31.768" cy="97.069" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="A2" class="st12" cx="49.768" cy="97.069" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="GND_RCC2" class="st10" cx="13.768" cy="79.059" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="5V_RCC2" class="st11" cx="31.768" cy="79.059" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="A1" class="st12" cx="49.768" cy="79.059" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="GND_RCC1" class="st10" cx="13.768" cy="61.048" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="5V_RCC1" class="st11" cx="31.768" cy="61.048" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="A0" class="st12" cx="49.768" cy="61.048" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="GND_RCC_4" class="st10" cx="13.768" cy="115.08" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="5V_RCC_4" class="st11" cx="31.768" cy="115.08" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="RCC4" class="st12" cx="49.768" cy="115.08" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="GND_RCC_3" class="st10" cx="13.768" cy="97.069" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="5V_RCC_3" class="st11" cx="31.768" cy="97.069" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="RCC3" class="st12" cx="49.768" cy="97.069" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="GND_RCC_2" class="st10" cx="13.768" cy="79.059" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="5V_RCC_2" class="st11" cx="31.768" cy="79.059" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="RCC2" class="st12" cx="49.768" cy="79.059" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="GND_RCC_1" class="st10" cx="13.768" cy="61.048" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="5V_RCC_1" class="st11" cx="31.768" cy="61.048" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="RCC1" class="st12" cx="49.768" cy="61.048" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="GND_S1" class="st10" cx="13.768" cy="151.101" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="5V_S1" class="st11" cx="31.768" cy="151.101" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="D0" class="st12" cx="49.768" cy="151.101" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="SERVO1" class="st12" cx="49.768" cy="151.101" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="GND_S2" class="st10" cx="13.768" cy="169.112" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="5V_S2" class="st11" cx="31.768" cy="169.112" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="D1" class="st12" cx="49.768" cy="169.112" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="SERVO2" class="st12" cx="49.768" cy="169.112" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="GND_S3" class="st10" cx="13.768" cy="187.122" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="5V_S3" class="st11" cx="31.768" cy="187.122" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="D2" class="st12" cx="49.768" cy="187.122" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="SERVO3" class="st12" cx="49.768" cy="187.122" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="GND_S4" class="st10" cx="13.768" cy="205.133" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="5V_S4" class="st11" cx="31.768" cy="205.133" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="D3" class="st12" cx="49.768" cy="205.133" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="SERVO4" class="st12" cx="49.768" cy="205.133" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="GND_S5" class="st10" cx="13.768" cy="223.144" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="5V_S5" class="st11" cx="31.768" cy="223.144" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="D4" class="st12" cx="49.768" cy="223.144" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="SERVO5" class="st12" cx="49.768" cy="223.144" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="GND_S6" class="st10" cx="13.768" cy="241.154" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="5V_S6" class="st11" cx="31.768" cy="241.154" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="D5" class="st12" cx="49.768" cy="241.154" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="SERVO6" class="st12" cx="49.768" cy="241.154" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="GND_S7" class="st10" cx="13.768" cy="259.165" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="5V_S7" class="st11" cx="31.768" cy="259.165" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="D6" class="st12" cx="49.768" cy="259.165" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="SERVO7" class="st12" cx="49.768" cy="259.165" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="GND_S8" class="st10" cx="13.768" cy="277.175" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="5V_S8" class="st11" cx="31.768" cy="277.175" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
-  <ellipse id="D7" class="st12" cx="49.768" cy="277.175" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
+  <ellipse id="SERVO8" class="st12" cx="49.768" cy="277.175" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="ESTOPPIN1" class="st13" cx="192.018" cy="259.165" rx="7" ry="7.004" fill="none" stroke="#ed2224" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="ESTOPPIN0" class="st13" cx="174.018" cy="259.165" rx="7" ry="7.004" fill="none" stroke="#ed2224" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="NEOPIXEL" class="st12" cx="130.768" cy="115.83" rx="5.5" ry="5.503" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
@@ -930,9 +930,9 @@
       </g>
     </g>
   </g>
-  <path id="PWR_LED" fill="#4c58a6" stroke-width="2.501" d="M39.018 316.699h10.5v10.506h-10.5z"/>
-  <path id="USB_LED" fill="#51b848" stroke-width="2.501" d="M76.518 314.948h10.5v10.506h-10.5z"/>
-  <path id="CHRG_LED" fill="#fbf282" stroke-width="2.501" d="M280.517 305.192h10.5v10.506h-10.5z"/>
-  <path id="R_LED" fill="#ed2224" stroke-width="2.501" d="M370.767 209.636h10.5v10.506h-10.5z"/>
+  <path id="PWR" fill="#4c58a6" stroke-width="2.501" d="M39.018 316.699h10.5v10.506h-10.5z"/>
+  <path id="Lusb" fill="#51b848" stroke-width="2.501" d="M76.518 314.948h10.5v10.506h-10.5z"/>
+  <path id="Lchrg" fill="#fbf282" stroke-width="2.501" d="M280.517 305.192h10.5v10.506h-10.5z"/>
+  <path id="LED" fill="#ed2224" stroke-width="2.501" d="M370.767 209.636h10.5v10.506h-10.5z"/>
   <path id="RESETBTN" d="M387.767 292.184h-21c-1.5 0-3-1.25-3-3.001v-3.503c0-1.5 1.25-3.001 3-3.001h21c1.5 0 3 1.25 3 3.001v3.503c0 1.75-1.25 3.001-3 3.001z" fill="#481212" stroke-width="2.501"/>
 </svg>
