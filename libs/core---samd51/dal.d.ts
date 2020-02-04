@@ -844,6 +844,9 @@ declare const enum DAL {
     CFG_PIN_WIFI_BUSY = 88,
     CFG_PIN_WIFI_RESET = 89,
     CFG_PIN_WIFI_GPIO0 = 90,
+    CFG_PIN_WIFI_AT_TX = 91,
+    CFG_PIN_WIFI_AT_RX = 92,
+    CFG_PIN_USB_POWER = 93,
     ACCELEROMETER_TYPE_LIS3DH = 50,
     ACCELEROMETER_TYPE_LIS3DH_ALT = 48,
     ACCELEROMETER_TYPE_MMA8453 = 56,
@@ -933,6 +936,9 @@ declare const enum DAL {
     CFG_ANALOG_BUTTON_THRESHOLD = 213,
     CFG_CPU_MHZ = 214,
     CFG_CONTROLLER_LIGHT_MAX_BRIGHTNESS = 215,
+    CFG_ANALOG_JOYSTICK_MIN = 216,
+    CFG_ANALOG_JOYSTICK_MAX = 217,
+    CFG_TIMERS_TO_USE = 218,
     CFG_PIN_B0 = 300,
     CFG_PIN_B1 = 301,
     CFG_PIN_B2 = 302,
@@ -1047,6 +1053,18 @@ declare const enum DAL {
     CFG_NUM_LCD_ROWS = 1016,
     // /pxtapp/hf2dbg.h
     HF2DBG_H = 1,
+    // /pxtapp/mixer---samd/melody.h
+    SW_TRIANGLE = 1,
+    SW_SAWTOOTH = 2,
+    SW_SINE = 3,
+    SW_NOISE = 5,
+    SW_SQUARE_10 = 11,
+    SW_SQUARE_50 = 15,
+    CODAL = 1,
+    MAX_SOUNDS = 5,
+    Waiting = 0,
+    Playing = 1,
+    Done = 2,
     // /pxtapp/pins.h
     BUTTON_ACTIVE_HIGH_PULL_DOWN = 17,
     BUTTON_ACTIVE_HIGH_PULL_UP = 33,
@@ -1149,6 +1167,7 @@ declare const enum DAL {
     RefRefLocal = 7,
     RefMap = 8,
     RefMImage = 9,
+    MMap = 10,
     User0 = 16,
     PXT_IOS_HEAP_ALLOC_BITS = 20,
     IMAGE_HEADER_MAGIC = 135,
@@ -1171,8 +1190,12 @@ declare const enum DAL {
     NUM_TRY_FRAME_REGS = 3,
     GC = 0,
     // /pxtapp/pxtconfig.h
-    PXT_GC = 1,
     PXT_UF2_FAMILY = 1427194976,
+    // /pxtapp/settings/Flash.h
+    DEVICE_FLASH_ERROR = 922,
+    // /pxtapp/settings/RAFFS.h
+    RAFFS_FOLLOWING_MASK = 32768,
+    RAFFS_FLASH_BUFFER_SIZE = 64,
     // /pxtapp/thermometer/target_temperature.h
     TEMPERATURE_NOMINAL_VALUE = 25,
     TEMPERATURE_NOMINAL_READING = 10000,

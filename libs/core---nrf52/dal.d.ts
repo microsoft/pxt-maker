@@ -746,6 +746,9 @@ declare const enum DAL {
     REF_TAG_BUFFER = 2,
     REF_TAG_IMAGE = 3,
     REF_TAG_USER = 32,
+    // /pxtapp/accelerometer/axis.h
+    ACC_SYSTEM = 3,
+    ACC_ROTATION = 0,
     // /pxtapp/configkeys.h
     CFG_PIN_NAME_MSK = 65535,
     CFG_PIN_CONFIG_MSK = 4294901760,
@@ -1059,7 +1062,7 @@ declare const enum DAL {
     BUTTON_ACTIVE_LOW_PULL_NONE = 48,
     // /pxtapp/platform.h
     PAGE_SIZE = 4096,
-    IMAGE_BITS = 1,
+    IMAGE_BITS = 4,
     DEFAULT_NEOPIXEL_PIN = 0,
     TEMPERATURE_NOMINAL_VALUE = 25,
     TEMPERATURE_NOMINAL_READING = 10000,
@@ -1180,7 +1183,7 @@ declare const enum DAL {
     NUM_TRY_FRAME_REGS = 3,
     GC = 0,
     // /pxtapp/pxtconfig.h
-    PXT_GC = 1,
+    PXT_UF2_FAMILY = 2913282112,
     // /pxtapp/uf2format.h
     BOOTLOADER_START = 0,
     BOOTLOADER_END = 8192,
