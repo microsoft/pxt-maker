@@ -128,7 +128,7 @@ namespace pxsim.visuals {
                     this.canvas.appendChild(pixel.el);
                 }
                 let color = colors[i];
-                pixel.setRgb(color as RGBW);
+                pixel.setRgb(color as [number, number, number]);
             }
 
             //show the canvas if it's hidden
