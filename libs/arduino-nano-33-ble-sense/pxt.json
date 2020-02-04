@@ -1,5 +1,5 @@
 {
-    "name": "arduino-33-ble-sense",
+    "name": "arduino-nano-33-ble-sense",
     "description": "Support for Arduino 33 BLE Sense - beta",
     "files": [
         "README.md",
