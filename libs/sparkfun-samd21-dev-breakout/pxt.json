@@ -7,8 +7,7 @@
         "board.json",
         "board.svg",
         "device.d.ts",
-        "config.ts",
-        "ns.ts"
+        "config.ts"
     ],
     "testFiles": [
         "test.ts"

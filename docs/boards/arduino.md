@@ -22,11 +22,17 @@
         "cardType": "template",
         "imageUrl": "/static/libs/arduino-mkr1300.jpg"  
     },
-        {
+    {
         "name": "Arduino MKR1010",
         "url": "/boards/arduino-mkr1010",
         "cardType": "template",
         "imageUrl": "/static/libs/arduino-mkr1010.jpg"  
+    },
+    {
+        "name": "Arduino Nano 33 BLE Sense",
+        "url": "/boards/arduino-nano-33-ble-sense",
+        "cardType": "template",
+        "imageUrl": "/static/libs/arduino-nano-33-ble-sense.jpg"  
     }
 ]
 ```
