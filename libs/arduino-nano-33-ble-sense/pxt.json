@@ -3,15 +3,16 @@
     "description": "Support for Arduino 33 BLE Sense - beta",
     "files": [
         "README.md",
-        "device.d.ts",
         "config.ts",
+        "device.d.ts",
         "board.json",
         "board.svg"
     ],
     "core": true,
     "compileServiceVariant": "nrf52840",
     "dependencies": {
-        "core---nrf52": "file:../core---nrf52"
+        "core---nrf52": "file:../core---nrf52",
+        "buttons": "file:../buttons"
     },
     "public": true,
     "features": [
