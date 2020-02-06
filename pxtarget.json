@@ -78,6 +78,7 @@
         "libs/arduino-mkr1000",
         "libs/arduino-mkr1010",
         "libs/arduino-mkr1300",
+        "libs/arduino-nano-33-ble-sense",
         "libs/electroniccats-meow-meow",
         "libs/electroniccats-escornabot-makech",
         "libs/sparkfun-samd21-dev-breakout",

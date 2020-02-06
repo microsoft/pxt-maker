@@ -7,7 +7,7 @@
         "device.d.ts",
         "servo.ts",
         "light.ts",
-        "ns.ts",
+
         "startup.ts",
         "board.json",
         "board.svg"
