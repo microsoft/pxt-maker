@@ -60,6 +60,8 @@
         "libs/azureiot",
         "libs/settings",
         "libs/settings---files",
+        "libs/radio",
+        "libs/radio-broadcast",
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-m4-express",
         "libs/adafruit-feather-nrf52840-express",
