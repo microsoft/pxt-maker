@@ -7,7 +7,8 @@
     {
         "name": "light-demo",
         "url": "/projects/beads/light-demo",
-        "cardType": "example"
+        "cardType": "example",
+        "otherActions": []
     }
 ]
 ```

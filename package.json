@@ -1,6 +1,6 @@
 {
   "name": "pxt-maker",
-  "version": "0.12.5",
+  "version": "0.13.1",
   "description": "Microsoft MakeCode Maker Boards",
   "public": true,
   "keywords": [
@@ -36,19 +36,19 @@
     "docs/static/icons/favicon.ico"
   ],
   "devDependencies": {
-    "typescript": "2.6.1",
-    "semantic-ui-less": "2.2.14",
     "@types/bluebird": "2.0.33",
-    "@types/jquery": "3.2.16",
     "@types/marked": "0.3.0",
     "@types/node": "8.0.53",
     "@types/web-bluetooth": "0.0.4",
+    "less": "2.7.3",
+    "semantic-ui-less": "2.2.14",
+    "typescript": "^3.7.5",
     "glob-exec": "^0.1.1",
     "svgo": "^1.1.1"
   },
   "dependencies": {
-    "pxt-common-packages": "6.18.3",
-    "pxt-core": "5.32.3",
+    "pxt-common-packages": "6.21.1",
+    "pxt-core": "5.34.4",
     "@jacdac/jacdac-ts": "^0.0.9",
     "webusb": "^1.1.1"
   },

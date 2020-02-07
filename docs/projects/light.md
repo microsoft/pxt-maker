@@ -10,7 +10,8 @@
         "imageUrl": "/static/projects/light/rainbow/gallery.png",
         "largeImageUrl": "/static/projects/light/rainbow/gallery.gif",
         "videoUrl": "/static/projects/light/rainbow/gallery.mp4",
-        "cardType": "example"
+        "cardType": "example",
+        "otherActions": []
     },
     {
         "name": "Range",
@@ -18,7 +19,8 @@
         "imageUrl": "/static/projects/light/range/gallery.png",
         "largeImageUrl": "/static/projects/light/range/gallery.gif",
         "videoUrl": "/static/projects/light/range/gallery.mp4",
-        "cardType": "example"
+        "cardType": "example",
+        "otherActions": []
     }
 ]
 ```

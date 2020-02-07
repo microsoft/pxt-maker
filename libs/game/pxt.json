@@ -1,5 +1,5 @@
 {
-    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/game",
+    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/game---hw",
     "dependencies": {
         "settings": "file:../settings",
         "screen---st7735": "file:../screen---st7735",

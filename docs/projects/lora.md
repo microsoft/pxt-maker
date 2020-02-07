@@ -7,12 +7,14 @@
     {
         "name": "Sender",
         "url": "/projects/lora/sender",
-        "cardType": "example"
+        "cardType": "example",
+        "otherActions": []
     },
     {
         "name": "Receiver",
         "url": "/projects/lora/receiver",
-        "cardType": "example"
+        "cardType": "example",
+        "otherActions": []
     }
 ]
 ```

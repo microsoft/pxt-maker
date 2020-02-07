@@ -5,14 +5,14 @@
         "README.md",
         "device.d.ts",
         "config.ts",
-        "ns.ts",
+
         "board.json",
         "board.svg"
     ],
     "core": true,
     "compileServiceVariant": "nrf52832",
     "dependencies": {
-        "core---nrf52832": "file:../core---nrf52832",
+        "core---nrf52": "file:../core---nrf52",
         "buttons": "file:../buttons"
     },
     "public": true,

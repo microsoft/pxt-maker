@@ -8,7 +8,7 @@ Use a button on a digital pin to control an LED.
 
 ## Step 1 @fullscreen
 
-Add a ``||input:on event||`` block to handle a "button click" on pin **D0**.
+Add a ``||input:on event||`` to handle a "button click" on pin **D0**.
 
 ```blocks
 input.buttonD0.onEvent(ButtonEvent.Click, function () {
@@ -17,7 +17,7 @@ input.buttonD0.onEvent(ButtonEvent.Click, function () {
 
 ## Step 2 @fullscreen
 
-Add a ``||pins:digital write||`` block to set pin **D1** HIGH when **D0** is clicked.
+Add ``||pins:digital write||`` to set pin **D1** HIGH when **D0** is clicked.
 
 ```blocks
 input.buttonD0.onEvent(ButtonEvent.Click, function () {
@@ -34,7 +34,7 @@ Try pressing on the button and the LED should light up.
 
 ## Step 4 @fullscreen
 
-Add a ``||loops:pause||`` block to wait some time, then another ``||pins:digital write||`` to 
+Add ``||loops:pause||`` to wait some time, then another ``||pins:digital write||`` to 
 turn pin **D1** to low.
 
 ```blocks

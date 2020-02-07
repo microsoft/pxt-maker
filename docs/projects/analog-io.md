@@ -11,7 +11,8 @@
         "imageUrl": "/static/projects/analog-io/blink-to-light/gallery.png",
         "largeImageUrl": "/static/projects/analog-io/blink-to-light/gallery.gif",
         "videoUrl": "/static/projects/analog-io/blink-to-light/gallery.mp4",
-        "description": "Learn about analog read"
+        "description": "Learn about analog read",
+        "otherActions": []
     },    
     {
         "name": "Glowy",
@@ -19,7 +20,8 @@
         "imageUrl": "/static/projects/analog-io/glowy/gallery.png",
         "largeImageUrl": "/static/projects/analog-io/glowy/gallery.gif",
         "videoUrl": "/static/projects/analog-io/glowy/gallery.mp4",
-        "cardType": "example"
+        "cardType": "example",
+        "otherActions": []
     },
     {
         "name": "Glow Light",
@@ -27,7 +29,8 @@
         "imageUrl": "/static/projects/analog-io/glowy/gallery.png",
         "largeImageUrl": "/static/projects/analog-io/glowy/gallery.gif",
         "videoUrl": "/static/projects/analog-io/glowy/gallery.mp4",
-        "cardType": "example"
+        "cardType": "example",
+        "otherActions": []
     }
 ]
 ```
