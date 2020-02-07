@@ -1,4 +1,4 @@
-# adafruit
+# Robotics Masters
 
-The adafruit library.
+The RoboHAT MM1 library.
 
