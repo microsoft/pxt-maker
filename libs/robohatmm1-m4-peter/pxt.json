@@ -17,11 +17,27 @@
         "light": "file:../light",
         "accelerometer": "file:../accelerometer",
         "buttons": "file:../buttons",
-        "jacdac": "file:../jacdac"
+        "serial": "file:../serial",
+        "jacdac": "file:../jacdac",
+        "storage": "file:../storage"
+    },
+    "yotta": {
+        "config": {
+            "PXT_SUPPORT_LIS3DH": 0,
+            "PXT_SUPPORT_MMA8653": 0,
+            "PXT_SUPPORT_MMA8453": 0,
+            "PXT_SUPPORT_FXOS8700": 0,
+            "PXT_SUPPORT_MSA300": 0,
+            "PXT_SUPPORT_MPU6050": 1
+        }
     },
     "public": true,
     "features": [
         "uf2",
+        "i2c",
+        "spi",
+        "storage",
+        "serial",
         "pinled",
         "pind0",
         "pind1",

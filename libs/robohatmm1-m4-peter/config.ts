@@ -1,4 +1,9 @@
 namespace config {
+    export const ACCELEROMETER_TYPE = DAL.ACCELEROMETER_TYPE_MPU6050_ALT;
+    export const PIN_ACCELEROMETER_SDA = DAL.PA00;
+    export const PIN_ACCELEROMETER_SCL = DAL.PA01;
+    // export const PIN_ACCELEROMETER_INT  = DAL.PA13;
+
     export const PIN_RCC1 = DAL.PA07;
     export const PIN_RCC2 = DAL.PA06;
     export const PIN_RCC3 = DAL.PA05;
@@ -12,20 +17,6 @@ namespace config {
     export const PIN_SERVO6 = DAL.PA10;
     export const PIN_SERVO7 = DAL.PA09;
     export const PIN_SERVO8 = DAL.PA08;
-
-    // export const PIN_RCC4 = PIN_A3;
-    // export const PIN_RCC3 = PIN_A2;
-    // export const PIN_RCC2 = PIN_A1;
-    // export const PIN_RCC1 = PIN_A0;
-
-    // export const PIN_SERVO1 = PIN_D0;
-    // export const PIN_SERVO2 = PIN_D1;
-    // export const PIN_SERVO3 = PIN_D2;
-    // export const PIN_SERVO4 = PIN_D3;
-    // export const PIN_SERVO5 = PIN_D4;
-    // export const PIN_SERVO6 = PIN_D5;
-    // export const PIN_SERVO7 = PIN_D6;
-    // export const PIN_SERVO8 = PIN_D7;
 
     export const PIN_GROVE0 = PIN_SERVO8;
     export const PIN_GROVE1 = PIN_SERVO7;
@@ -43,8 +34,8 @@ namespace config {
     export const PIN_SCL = DAL.PA01;
 
     //GPS_PORT
-    export const PIN_TX = DAL.PB02;
-    export const PIN_RX = DAL.PB03;
+    export const PIN_GPS_TX = DAL.PB02;
+    export const PIN_GPS_RX = DAL.PB03;
     export const PIN_GPS_SDA = PIN_SDA;
     export const PIN_GPS_SCL = PIN_SCL;
     //SPI_PORT
@@ -54,6 +45,9 @@ namespace config {
     export const PIN_SS = DAL.PB10;
 
     export const PIN_LED = DAL.PB22;
+
+    export const PIN_BTN_A = DAL.PB27;
+
     //Flash pins not implement yet
     // export const PIN_FLASH_MISO = DAL.PA14;
     // export const PIN_FLASH_MOSI = DAL.PA12;

@@ -325,27 +325,28 @@
   <path class="st9" id="polygon326" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M32.2 146.3v-5.6h1.3v5.6z"/>
   <path class="st9" id="polygon328" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M30.3 146.3v-5.6h1.3v5.6z"/>
   <path class="st9" id="polygon330" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M28.5 146.3v-5.6h1.3v5.6z"/>
-  <path id="GROVE1" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M158.4 138.2v-7.7h2.8v7.7z"/>
-  <path id="GROVE0" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M152.7 138.2v-7.7h2.8v7.7z"/>
-  <path id="5V_GROVE" class="st8" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#d42328" d="M147.1 138.2v-7.7h2.8v7.7z"/>
-  <path id="GND_GROVE" transform="matrix(2.5 0 0 2.50148 .018 -.238)" d="M141.4 138.2v-7.7h2.8v7.7z"/>
-  <path id="MOSI" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 42.4v-2h5.7v2z"/>
-  <path id="MISO" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 46v-2h5.7v2z"/>
-  <path id="GND_SPI" transform="matrix(2.5 0 0 2.50148 .018 -.238)" d="M168.9 31.7v-2h5.7v2z"/>
-  <path id="NC" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 35.2v-2h5.7v2z"/>
-  <path id="A5" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 38.9v-2h5.7v2z"/>
-  <path id="SCK" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 49.5v-2h5.7v2z"/>
-  <path id="5V_SPI" class="st8" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#d42328" d="M168.9 53.1v-2h5.7v2z"/>
-  <path id="5V_I2C" class="st8" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#d42328" d="M168.9 132v-2h5.7v2z"/>
-  <path id="GND_I2C" transform="matrix(2.5 0 0 2.50148 .018 -.238)" d="M168.9 121.2v-1.9h5.7v1.9z"/>
-  <path id="SDA" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 124.8v-2h5.7v2z"/>
-  <path id="SCL" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 128.4v-2h5.7v2z"/>
-  <path id="GPS_RX" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 88.8v-1.9h5.7v1.9z"/>
-  <path id="GPS_TX" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 92.4v-2h5.7v2z"/>
-  <path id="GND_GPS" transform="matrix(2.5 0 0 2.50148 .018 -.238)" d="M168.9 78.1v-2h5.7v2z"/>
-  <path id="GPS_SDA" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 81.6v-1.9h5.7v1.9z"/>
-  <path id="GPS_SCL" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 85.3v-2h5.7v2z"/>
-  <path id="5V_GPS" class="st8" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#d42328" d="M168.9 95.9v-2h5.7v2z"/>
+  <path transform="matrix(2.5 0 0 2.50148 .018 -.238)" class="st9" id="polygon4012" fill="#dbab27" d="M158.4 138.2v-7.7h2.8v7.7z"/>
+  <path id="polygon1630" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M158.4 130.5h2.8v7.7h-2.8z"/>
+  <path id="polygon1632" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M152.7 138.2v-7.7h2.8v7.7z"/>
+  <path id="polygon1634" class="st8" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#d42328" d="M147.1 138.2v-7.7h2.8v7.7z"/>
+  <path id="polygon1636" transform="matrix(2.5 0 0 2.50148 .018 -.238)" d="M141.4 138.2v-7.7h2.8v7.7z"/>
+  <path id="polygon1664" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 42.4v-2h5.7v2z"/>
+  <path id="polygon1666" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 46v-2h5.7v2z"/>
+  <path id="polygon3978" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M174.6 35.2h-5.7v-2h5.7z"/>
+  <path id="polygon3982" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 38.9v-2h5.7v2z"/>
+  <path id="polygon1668" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 49.5v-2h5.7v2z"/>
+  <path id="polygon1660" class="st8" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#d42328" d="M168.9 53.1v-2h5.7v2z"/>
+  <path id="polygon3980" transform="matrix(2.5 0 0 2.50148 .018 -.238)" d="M168.9 31.7v-2h5.7v2z"/>
+  <path id="polygon1638" class="st8" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#d42328" d="M168.9 132v-2h5.7v2z"/>
+  <path id="polygon1644" transform="matrix(2.5 0 0 2.50148 .018 -.238)" d="M168.9 121.2v-1.9h5.7v1.9z"/>
+  <path id="polygon1642" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 124.8v-2h5.7v2z"/>
+  <path id="polygon1640" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 128.4v-2h5.7v2z"/>
+  <path id="polygon1648" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 88.8v-1.9h5.7v1.9z"/>
+  <path id="polygon1652" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 92.4v-2h5.7v2z"/>
+  <path id="polygon1658" transform="matrix(2.5 0 0 2.50148 .018 -.238)" d="M168.9 78.1v-2h5.7v2z"/>
+  <path id="polygon1656" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 81.6v-1.9h5.7v1.9z"/>
+  <path id="polygon1654" class="st9" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#dbab27" d="M168.9 85.3v-2h5.7v2z"/>
+  <path id="polygon1646" class="st8" transform="matrix(2.5 0 0 2.50148 .018 -.238)" fill="#d42328" d="M168.9 95.9v-2h5.7v2z"/>
   <ellipse id="GND_RCC_4" class="st10" cx="13.768" cy="115.08" rx="6.25" ry="6.254" fill="none" stroke="#010101" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="5V_RCC_4" class="st11" cx="31.768" cy="115.08" rx="6.25" ry="6.254" fill="none" stroke="#d42328" stroke-width="2.501" stroke-miterlimit="10"/>
   <ellipse id="RCC4" class="st12" cx="49.768" cy="115.08" rx="6.25" ry="6.254" fill="none" stroke="#febf10" stroke-width="2.501" stroke-miterlimit="10"/>
@@ -561,7 +562,7 @@
   <path id="path5922_1_" class="st17" d="M295.017 315.448h-18.25c-.75 0-1.25-.5-1.25-1.25v-7.755c0-.75.5-1.251 1.25-1.251h18.25c.75 0 1.25.5 1.25 1.25v7.755c0 .75-.5 1.251-1.25 1.251z" fill="#dcdcdc" stroke-width="2.501"/>
   <path id="path5922_2_" class="st17" d="M91.018 325.454h-18.25c-.75 0-1.25-.5-1.25-1.25v-7.755c0-.75.5-1.251 1.25-1.251h18.25c.75 0 1.25.5 1.25 1.25v7.755c0 .75-.5 1.251-1.25 1.251z" fill="#dcdcdc" stroke-width="2.501"/>
   <path id="path5922_3_" class="st17" d="M49.268 312.696v18.261c0 .75-.5 1.251-1.25 1.251h-7.75c-.75 0-1.25-.5-1.25-1.25v-18.262c0-.75.5-1.25 1.25-1.25h7.75c.75-.25 1.25.5 1.25 1.25z" fill="#dcdcdc" stroke-width="2.501"/>
-  <path id="POWERBTN" class="st18" d="M1.268 334.96v-24.515c0-.5.5-1.25 1.25-1.25h4c.5 0 1.25.5 1.25 1.25v24.515c0 .5-.5 1.25-1.25 1.25h-4c-.75-.25-1.25-.75-1.25-1.25z" fill="#010101" stroke-width="2.501"/>
+  <path id="BTN_A" class="st18" d="M1.268 334.96v-24.515c0-.5.5-1.25 1.25-1.25h4c.5 0 1.25.5 1.25 1.25v24.515c0 .5-.5 1.25-1.25 1.25h-4c-.75-.25-1.25-.75-1.25-1.25z" fill="#010101" stroke-width="2.501"/>
   <g transform="matrix(2.5 0 0 2.50148 51.236 37.138)" id="g730">
     <g id="g728">
       <g id="g726">
@@ -691,6 +692,33 @@
                 </g>
               </g>
             </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g transform="matrix(2.5 0 0 2.50148 48.136 37.138)" id="g1037">
+    <g id="g1035">
+      <g id="g1033">
+        <g id="g1031">
+          <g id="_x34_pin_PH2.5">
+            <path class="st36" id="rect1002" fill="#c2bfbf" d="M162.7 97.4h2.5v8.3h-2.5z"/>
+            <path class="st36" id="rect1004" fill="#c2bfbf" d="M162.7 106.3h2.5v8.6h-2.5z"/>
+            <path class="st36" id="rect1006" fill="#c2bfbf" d="M162.7 115.6h2.5v8.3h-2.5z"/>
+            <path id="rect5896_17_" class="st17" fill="#dcdcdc" d="M151.4 115.521h12.1v1.1h-12.1z"/>
+            <path id="rect5896_18_" class="st17" fill="#dcdcdc" d="M151.4 111.88h12.1v1.1h-12.1z"/>
+            <path id="rect5896_19_" class="st17" fill="#dcdcdc" d="M151.4 108.28h12.1v1.1h-12.1z"/>
+            <path id="rect5896_20_" class="st17" fill="#dcdcdc" d="M151.4 104.729h12.1v1.1h-12.1z"/>
+            <path class="st17" id="rect1012" fill="#dcdcdc" d="M164.3 96.8h.8v.6h-.8z"/>
+            <path class="st17" id="rect1014" fill="#dcdcdc" d="M164.3 123.9h.8v.6h-.8z"/>
+            <path class="st33" id="rect1016" fill="#ededee" d="M162.7 123.4h1.6v1.1h-1.6z"/>
+            <path class="st33" id="rect1018" fill="#ededee" d="M162.7 96.8h1.6v1.1h-1.6z"/>
+            <path class="st37" d="M159.9 127.1h-2.2c-1.3 0-2.4-1.1-2.4-2.4V96.9c0-1.3 1.1-2.4 2.4-2.4h2.2c1.3 0 2.4 1.1 2.4 2.4v27.8c0 1.4-1 2.4-2.4 2.4z" id="path1020" fill="#e5e5e5"/>
+            <path class="st33" id="rect1022" fill="#ededee" d="M154.8 96.8h7.9v27.7h-7.9z"/>
+            <path class="st37" id="rect1024" fill="#e5e5e5" d="M158.8 124.5h4.5v2.6h-4.5z"/>
+            <path class="st37" id="rect1026" fill="#e5e5e5" d="M158.8 94.5h4.5v2.3h-4.5z"/>
+            <path id="rect5896_21_" class="st17" fill="#dcdcdc" d="M157.1 95.1h6.2v1.7h-6.2z"/>
+            <path id="rect5896_22_" class="st17" fill="#dcdcdc" d="M157.1 124.5h6.2v1.7h-6.2z"/>
           </g>
         </g>
       </g>
@@ -844,34 +872,7 @@
       </g>
     </g>
   </g>
-  <g transform="matrix(2.5 0 0 2.50148 51.236 37.138)" id="g1037">
-    <g id="g1035">
-      <g id="g1033">
-        <g id="g1031">
-          <g id="_x34_pin_PH2.5">
-            <path class="st36" id="rect1002" fill="#c2bfbf" d="M162.7 97.4h2.5v8.3h-2.5z"/>
-            <path class="st36" id="rect1004" fill="#c2bfbf" d="M162.7 106.3h2.5v8.6h-2.5z"/>
-            <path class="st36" id="rect1006" fill="#c2bfbf" d="M162.7 115.6h2.5v8.3h-2.5z"/>
-            <path id="rect5896_17_" class="st17" fill="#dcdcdc" d="M151.4 115.8h12.1v1.1h-12.1z"/>
-            <path id="rect5896_18_" class="st17" fill="#dcdcdc" d="M151.4 112.1h12.1v1.1h-12.1z"/>
-            <path id="rect5896_19_" class="st17" fill="#dcdcdc" d="M151.4 108.4h12.1v1.1h-12.1z"/>
-            <path id="rect5896_20_" class="st17" fill="#dcdcdc" d="M151.4 104.7h12.1v1.1h-12.1z"/>
-            <path class="st17" id="rect1012" fill="#dcdcdc" d="M164.3 96.8h.8v.6h-.8z"/>
-            <path class="st17" id="rect1014" fill="#dcdcdc" d="M164.3 123.9h.8v.6h-.8z"/>
-            <path class="st33" id="rect1016" fill="#ededee" d="M162.7 123.4h1.6v1.1h-1.6z"/>
-            <path class="st33" id="rect1018" fill="#ededee" d="M162.7 96.8h1.6v1.1h-1.6z"/>
-            <path class="st37" d="M159.9 127.1h-2.2c-1.3 0-2.4-1.1-2.4-2.4V96.9c0-1.3 1.1-2.4 2.4-2.4h2.2c1.3 0 2.4 1.1 2.4 2.4v27.8c0 1.4-1 2.4-2.4 2.4z" id="path1020" fill="#e5e5e5"/>
-            <path class="st33" id="rect1022" fill="#ededee" d="M154.8 96.8h7.9v27.7h-7.9z"/>
-            <path class="st37" id="rect1024" fill="#e5e5e5" d="M158.8 124.5h4.5v2.6h-4.5z"/>
-            <path class="st37" id="rect1026" fill="#e5e5e5" d="M158.8 94.5h4.5v2.3h-4.5z"/>
-            <path id="rect5896_21_" class="st17" fill="#dcdcdc" d="M157.1 95.1h6.2v1.7h-6.2z"/>
-            <path id="rect5896_22_" class="st17" fill="#dcdcdc" d="M157.1 124.5h6.2v1.7h-6.2z"/>
-          </g>
-        </g>
-      </g>
-    </g>
-  </g>
-  <g transform="matrix(2.5 0 0 2.50148 51.236 37.138)" id="g1076">
+  <g transform="matrix(2.5 0 0 2.50148 48.136 37.138)" id="g1076">
     <g id="g1074">
       <g id="g1072">
         <g id="g1070">
@@ -879,12 +880,12 @@
             <path class="st36" id="rect1039" fill="#c2bfbf" d="M162.7 54.2h2.5v8.5h-2.5z"/>
             <path class="st36" id="rect1041" fill="#c2bfbf" d="M162.7 63.5h2.5v14.9h-2.5z"/>
             <path class="st36" id="rect1043" fill="#c2bfbf" d="M162.7 79.3h2.5v8.2h-2.5z"/>
-            <path id="rect5896_28_" class="st17" fill="#dcdcdc" d="M151.4 79.6h12.1v1.1h-12.1z"/>
-            <path id="rect5896_29_" class="st17" fill="#dcdcdc" d="M151.4 76h12.1v1.1h-12.1z"/>
-            <path id="rect5896_30_" class="st17" fill="#dcdcdc" d="M151.4 72.4h12.1v1.1h-12.1z"/>
-            <path id="rect5896_27_" class="st17" fill="#dcdcdc" d="M151.4 68.8h12.1v1.1h-12.1z"/>
-            <path id="rect5896_26_" class="st17" fill="#dcdcdc" d="M151.4 65.2h12.1v1.1h-12.1z"/>
-            <path id="rect5896_25_" class="st17" fill="#dcdcdc" d="M151.4 61.5h12.1v1.1h-12.1z"/>
+            <path id="rect5896_28_" class="st17" fill="#dcdcdc" d="M151.4 79.44h12.1v1.1h-12.1z"/>
+            <path id="rect5896_29_" class="st17" fill="#dcdcdc" d="M151.4 75.92h12.1v1.1h-12.1z"/>
+            <path id="rect5896_30_" class="st17" fill="#dcdcdc" d="M151.4 72.327h12.1v1.1h-12.1z"/>
+            <path id="rect5896_27_" class="st17" fill="#dcdcdc" d="M151.4 68.776h12.1v1.1h-12.1z"/>
+            <path id="rect5896_26_" class="st17" fill="#dcdcdc" d="M151.4 65.144h12.1v1.1h-12.1z"/>
+            <path id="rect5896_25_" class="st17" fill="#dcdcdc" d="M151.4 61.582h12.1v1.1h-12.1z"/>
             <path class="st37" d="M159.9 91.3h-2.2c-1.3 0-2.4-1.1-2.4-2.4V53.2c0-1.3 1.1-2.4 2.4-2.4h2.2c1.3 0 2.4 1.1 2.4 2.4v35.7c0 1.4-1 2.4-2.4 2.4z" id="path1051" fill="#e5e5e5"/>
             <path class="st33" id="rect1053" fill="#ededee" d="M154.8 53.7h7.9v34.4h-7.9z"/>
             <path class="st37" id="rect1055" fill="#e5e5e5" d="M158.8 88h4.5v3.3h-4.5z"/>
@@ -900,7 +901,7 @@
       </g>
     </g>
   </g>
-  <g transform="matrix(2.5 0 0 2.50148 51.236 37.138)" id="g1116">
+  <g transform="matrix(2.5 0 0 2.50148 49.636 37.138)" id="g1116">
     <g id="g1114">
       <g id="g1112">
         <g id="g1110">
@@ -908,13 +909,13 @@
             <path class="st36" id="rect1078" fill="#c2bfbf" d="M162.1 8.3h2.5v8.9h-2.5z"/>
             <path class="st36" id="rect1080" fill="#c2bfbf" d="M162.1 17.8h2.5v17h-2.5z"/>
             <path class="st36" id="rect1082" fill="#c2bfbf" d="M162.1 35.3h2.5V44h-2.5z"/>
-            <path id="rect5896_39_" class="st17" fill="#dcdcdc" d="M150.8 36.8h12.1v1.1h-12.1z"/>
-            <path id="rect5896_38_" class="st17" fill="#dcdcdc" d="M150.8 33.2h12.1v1.1h-12.1z"/>
-            <path id="rect5896_37_" class="st17" fill="#dcdcdc" d="M150.8 29.6h12.1v1.1h-12.1z"/>
-            <path id="rect5896_36_" class="st17" fill="#dcdcdc" d="M150.8 26h12.1v1.1h-12.1z"/>
-            <path id="rect5896_35_" class="st17" fill="#dcdcdc" d="M150.8 22.5h12.1v1.1h-12.1z"/>
-            <path id="rect5896_34_" class="st17" fill="#dcdcdc" d="M150.8 18.9h12.1V20h-12.1z"/>
-            <path id="rect5896_33_" class="st17" fill="#dcdcdc" d="M150.8 15.3h12.1v1.1h-12.1z"/>
+            <path id="rect5896_39_" class="st17" fill="#dcdcdc" d="M150.8 36.6h12.1v1.1h-12.1z"/>
+            <path id="rect5896_38_" class="st17" fill="#dcdcdc" d="M150.8 33h12.1v1.1h-12.1z"/>
+            <path id="rect5896_37_" class="st17" fill="#dcdcdc" d="M150.8 29.521h12.1v1.1h-12.1z"/>
+            <path id="rect5896_36_" class="st17" fill="#dcdcdc" d="M150.8 25.887h12.1v1.1h-12.1z"/>
+            <path id="rect5896_35_" class="st17" fill="#dcdcdc" d="M150.8 22.382h12.1v1.1h-12.1z"/>
+            <path id="rect5896_34_" class="st17" fill="#dcdcdc" d="M150.8 18.707h12.1v1.1h-12.1z"/>
+            <path id="rect5896_33_" class="st17" fill="#dcdcdc" d="M150.8 15.193h12.1v1.1h-12.1z"/>
             <path class="st37" d="M159.4 48.1h-2.2c-1.3 0-2.4-1.1-2.4-2.4V6.9c0-1.3 1.1-2.4 2.4-2.4h2.2c1.3 0 2.4 1.1 2.4 2.4v38.8c0 1.4-1.1 2.4-2.4 2.4z" id="path1091" fill="#e5e5e5"/>
             <path class="st33" id="rect1093" fill="#ededee" d="M154.2 7.6h7.9v37h-7.9z"/>
             <path class="st37" id="rect1095" fill="#e5e5e5" d="M158.2 44.6h4.5v3.5h-4.5z"/>
@@ -930,6 +931,27 @@
       </g>
     </g>
   </g>
+  <path id="GND_I2C" transform="matrix(.26316 0 0 .75 409.755 274.566)" d="M174.6 31.7h-5.7v-2h5.7z"/>
+  <path id="SDA" class="st9" transform="matrix(.26316 0 0 .75 409.755 278.047)" fill="#dbab27" d="M174.6 36.9v2h-5.7v-2z"/>
+  <path transform="matrix(.26316 0 0 .75 409.689 166.635)" id="GND_GPS" d="M174.6 31.7h-5.7v-2h5.7z"/>
+  <path transform="matrix(.26316 0 0 .75 409.755 287.053)" class="st9" id="SCL" fill="#dbab27" d="M168.9 36.9h5.7v2h-5.7z"/>
+  <path transform="matrix(.26316 0 0 .75 409.689 170.144)" class="st9" id="GPS_SDA" fill="#dbab27" d="M168.9 36.9h5.7v2h-5.7z"/>
+  <path id="SCK" class="st9" transform="matrix(.26316 0 0 .75 409.689 89.737)" fill="#dbab27" d="M174.6 38.9h-5.7v-2h5.7z"/>
+  <path transform="matrix(.26316 0 0 .75 409.689 81.034)" class="st9" id="MISO" fill="#dbab27" d="M168.9 38.9v-2h5.7v2z"/>
+  <path id="GROVE1" class="st9" transform="matrix(.52632 0 0 1.5 305.865 330.188)" fill="#dbab27" d="M174.6 36.9v2h-5.7v-2z"/>
+  <path transform="matrix(.52632 0 0 1.5 291.615 330.188)" class="st9" id="GROVE0" fill="#dbab27" d="M174.6 38.9h-5.7v-2h5.7z"/>
+  <path transform="matrix(.26316 0 0 .75 409.689 88.093)" class="st8" id="5V_SPI" fill="#d42328" d="M174.6 51.1v2h-5.7v-2z"/>
+  <path transform="matrix(.26316 0 0 .75 409.689 188.113)" class="st9" id="GPS_RX" fill="#dbab27" d="M174.6 38.9h-5.7v-2h5.7z"/>
+  <path id="5V_I2C" class="st8" transform="matrix(.26316 0 0 .75 409.755 285.511)" fill="#d42328" d="M174.6 51.1v2h-5.7v-2z"/>
+  <path id="MOSI" class="st9" transform="matrix(.26316 0 0 .75 409.689 71.943)" fill="#dbab27" d="M168.9 36.9h5.7v2h-5.7z"/>
+  <path id="GPS_SCL" class="st9" transform="matrix(.26316 0 0 .75 409.689 179.23)" fill="#dbab27" d="M168.9 36.9h5.7v2h-5.7z"/>
+  <path transform="matrix(.52632 0 0 1.5 277.615 308.888)" class="st8" id="5V_GROVE" fill="#d42328" d="M174.6 53.1h-5.7v-2h5.7z"/>
+  <path id="GND_GROVE" class="st8" transform="matrix(.52632 0 0 1.5 263.415 308.888)" fill="#000" d="M174.6 51.1v2h-5.7v-2z"/>
+  <path transform="matrix(.26316 0 0 .75 409.689 195.256)" class="st8" id="5V_GPS" fill="#d42328" d="M168.9 51.1h5.7v2h-5.7z"/>
+  <path id="GPS_TX" class="st9" transform="matrix(.26316 0 0 .75 409.689 197.1)" fill="#dbab27" d="M168.9 38.9v-2h5.7v2z"/>
+  <path id="SS" class="st9" transform="matrix(.26316 0 0 .75 409.689 63.176)" fill="#dbab27" d="M174.6 38.9h-5.7v-2h5.7z"/>
+  <path transform="matrix(.26316 0 0 .75 409.689 50.592)" id="GND_SPI" d="M174.6 31.7h-5.7v-2h5.7z"/>
+  <path transform="matrix(.26316 0 0 .75 409.689 56.76)" class="st9" id="NC" fill="#dbab27" d="M168.9 33.2h5.7v2h-5.7z"/>
   <path id="PWR" fill="#4c58a6" stroke-width="2.501" d="M39.018 316.699h10.5v10.506h-10.5z"/>
   <path id="Lusb" fill="#51b848" stroke-width="2.501" d="M76.518 314.948h10.5v10.506h-10.5z"/>
   <path id="Lchrg" fill="#fbf282" stroke-width="2.501" d="M280.517 305.192h10.5v10.506h-10.5z"/>
