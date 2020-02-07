@@ -43,7 +43,7 @@ The board that gets rendered in the simulator must be stored as a SVG in the pro
 
 Run
 
-    npm run svgo
+    svgo --config=svgo.yml libs/YOUR_BOARD_NAME/boardhd.svg -o libs/YOUR_BOARD_NAME/board.svg
 
 to generate a minified version of ``boardhd.svg``.
 

@@ -6,9 +6,14 @@ Attach a switch on a digital pin to turn a LED on or off.
 
 ![A simulated breadboard with a switch that controls an LED](/static/projects/digital-io/switch-led/gallery.gif)
 
+```template
+forever(function () {
+
+})
+```
 ## Step 1 @fullscreen
 
-Add a ``||pins:digital write||`` block under the ``||loops:forever||`` to set pin **D1** to ``LOW`` (false).
+Add ``||pins:digital write||`` under the ``||loops:forever||`` to set pin **D1** to ``LOW`` (false).
 
 ```blocks
 forever(function () {
@@ -18,7 +23,7 @@ forever(function () {
 
 ## Step 2 @fullscreen
 
-Add a ``||pins:digital read||`` block in the ``LOW``/``HIGH`` slot. Change the pin to **D0**.
+Add ``||pins:digital read||`` in the ``LOW``/``HIGH`` slot. Change the pin to **D0**.
 
 ```blocks
 forever(function () {

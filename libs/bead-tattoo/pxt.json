@@ -5,7 +5,7 @@
         "README.md",
         "device.d.ts",
         "config.ts",
-        "ns.ts",
+
         "jacdac.ts",
         "startup.ts",
         "board.json",
