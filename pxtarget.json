@@ -416,6 +416,7 @@
         "selectLanguage": true,
         "githubEditor": true,
         "tutorialBlocksDiff": true,
+        "tutorialExplicitHints": true,
         "chooseLanguageRestrictionOnNewProject": true,
         "availableLocales": [
             "en",
