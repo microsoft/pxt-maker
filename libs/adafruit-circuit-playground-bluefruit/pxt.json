@@ -1,6 +1,6 @@
 {
-    "name": "adafruit-circuit-playground-express",
-    "description": "The Adafruit Circuit Playground Express library - beta",
+    "name": "adafruit-circuit-playground-bluefruit",
+    "description": "The Adafruit Circuit Playground Bluefruit library - beta",
     "files": [
         "README.md",
         "device.d.ts",
@@ -11,23 +11,20 @@
         "board.svg"
     ],
     "dependencies": {
-        "core---samd": "file:../core---samd",
+        "core---nrf52": "file:../core---nrf52",
         "buttons": "file:../buttons",
         "light": "file:../light",
-        "mixer---samd": "file:../mixer---samd",
+        "mixer---nrf52": "file:../mixer---nrf52",
         "switch": "file:../switch",
-        "touch": "file:../touch",
         "accelerometer": "file:../accelerometer",
         "lightsensor": "file:../lightsensor",
-        "thermometer": "file:../thermometer",
         "microphone": "file:../microphone",
+        "thermometer": "file:../thermometer",
         "serial": "file:../serial",
         "pulse": "file:../pulse",
-        "infrared": "file:../infrared",
-        "jacdac": "file:../jacdac",
-        "storage": "file:../storage"
+        "jacdac": "file:../jacdac"
     },
-    "compileServiceVariant": "samd21",
+    "compileServiceVariant": "nrf52840",
     "core": true,
     "public": true,
     "features": [
@@ -36,8 +33,6 @@
         "pinled",
         "pina0",
         "pina1",
-        "toucha0",
-        "toucha1",
         "storage",
         "serial",
         "microphone",
@@ -45,7 +40,6 @@
         "light",
         "storage",
         "music",
-        "accelerometer",
-        "ir"
+        "accelerometer"
     ]
 }
