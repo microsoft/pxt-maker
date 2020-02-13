@@ -68,6 +68,7 @@
         "libs/adafruit-feather-nrf52840-express",
         "libs/bluepill",
         "libs/adafruit-circuit-playground-express",
+        "libs/adafruit-circuit-playground-bluefruit",
         "libs/adafruit-trinket-m0",
         "libs/adafruit-metro-m0-express",
         "libs/adafruit-metro-m4-express",
