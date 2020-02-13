@@ -4,23 +4,23 @@ declare namespace pins {
 
     // pin-pads
     //% fixedInstance shim=pxt::getPin(PIN_A0)
-    const A0: AnalogOutPin;
+    const A0: PwmOnlyPin;
     //% fixedInstance shim=pxt::getPin(PIN_A1)
     const A1: PwmPin;
     //% fixedInstance shim=pxt::getPin(PIN_A2)
     const A2: PwmPin;
     //% fixedInstance shim=pxt::getPin(PIN_A3)
-    const A3: AnalogInPin;
+    const A3: PwmPin;
 
     //% fixedInstance shim=pxt::getPin(PIN_A4)
-    const A4: AnalogInPin;
+    const A4: PwmPin;
     //% fixedInstance shim=pxt::getPin(PIN_A5)
-    const A5: AnalogInPin;
+    const A5: PwmPin;
 
     //% fixedInstance shim=pxt::getPin(PIN_A6)
-    const A6: AnalogInPin; // could be PwmPin when mbed fixed
+    const A6: PwmPin;
     //% fixedInstance shim=pxt::getPin(PIN_A7)
-    const A7: AnalogInPin; // could be PwmPin when mbed fixed
+    const A7: PwmOnlyPin;
 
     // Define aliases, as Digital Pins
 

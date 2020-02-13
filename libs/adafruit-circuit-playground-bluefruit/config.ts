@@ -19,14 +19,14 @@ namespace config {
     export const PIN_BTN_B = DAL.P1_15;
     export const PIN_BTN_SLIDE = DAL.P1_6;
     
-    export const PIN_A0 = DAL.P0_26;
+    export const PIN_A0 = DAL.P0_26; // no AIN
     export const PIN_A1 = DAL.P0_2;
     export const PIN_A2 = DAL.P0_29;
     export const PIN_A3 = DAL.P0_3;
     export const PIN_A4 = DAL.P0_4;
     export const PIN_A5 = DAL.P0_5;
     export const PIN_A6 = DAL.P0_30;
-    export const PIN_A7 = DAL.P0_14; // D1
+    export const PIN_A7 = DAL.P0_14; // D1, no AIN
     export const PIN_A8 = PIN_LIGHT;
     export const PIN_A9 = PIN_TEMPERATURE;
 
