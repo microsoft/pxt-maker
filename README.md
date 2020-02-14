@@ -71,6 +71,15 @@ Note the above command assumes the folder structure of
  pxt      pxt-common-packages  pxt-maker
  ```
 
+### Refresh dal.d.ts files
+
+Whenever you make changes to the ``#defines`` in the .cpp files, you will have to refresh
+the ``dal.d.ts`` files. For that, run
+
+```
+pxt builddaldts
+```
+
 ### CODAL changes
 
 If you need to do changes to CODAL itself, follow these steps.
