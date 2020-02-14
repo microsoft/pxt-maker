@@ -86,8 +86,7 @@ the ``file:...`` path instead of ``*``
 
 ```
    dependencies: {
-        "core": "file:../../libs/core",
-        ...
+        "adafruit-metro-m0-express": "file:../../libs/adafruit-metro-m0-express"
    }
 ```
 * from the command line, set the ``PXT_NODOCKER`` environment variable to ``1``
@@ -96,7 +95,8 @@ the ``file:...`` path instead of ``*``
 export PXT_NODOCKER=1
 ```
 
-* run a local build that will create a CODAL checkout automatically
+* run a local build that will create a CODAL checkout automatically. 
+If you are missing tools, you will be notified by the build script.
 
 ```
 pxt build --local --force
@@ -106,7 +106,7 @@ pxt build --local --force
 
 ```
 cd built/codal
-code *
+code libraries/*
 ```
 
 * go to the Git tab in VS Code, and change the branch of the CODAL repository to work on to ``master``. You can create a new branch to start doing your work and pull requests.
