@@ -111,7 +111,11 @@ code libraries/*
 
 * go to the Git tab in VS Code, and change the branch of the CODAL repository to work on to ``master``. You can create a new branch to start doing your work and pull requests.
 
-* to build CODAL directly, run ``python build.py`` from ``built/codal``
+* to build CODAL directly, run ``built/codal``
+```
+python build.py
+```
+
 * to rebuild your project from pxt, run ``pxt build --local --force`` from the project folder
 
 ### Running
