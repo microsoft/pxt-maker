@@ -1,4 +1,2 @@
-# Robotics Masters
-
-The RoboHAT MM1 library.
+# Robotics Masters Robo HAT MM1 M4
 
