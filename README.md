@@ -54,6 +54,14 @@ rm -Rf node_modules/pxt-common-packages
 pxt link ../pxt
 pxt link ../pxt-common-packages
 ```
+
+If you want to know if your folders are link, run ``ls -l``
+and it will indicate them.
+
+```
+ls -l node_modules/
+```
+
 Note the above command assumes the folder structure of   
 ```
        maker.makecode.com
@@ -62,6 +70,62 @@ Note the above command assumes the folder structure of
   |       |                        |
  pxt      pxt-common-packages  pxt-maker
  ```
+
+### Refresh dal.d.ts files
+
+Whenever you make changes to the ``#defines`` in the .cpp files, you will have to refresh
+the ``dal.d.ts`` files. For that, run
+
+```
+pxt builddaldts
+```
+
+### CODAL changes
+
+If you need to do changes to CODAL itself, follow these steps.
+
+* create a new project in the web editor, then close the web server. Select the hardware you want to work with.
+* using a command prompt, open the ``projects`` folder and find the subfolder with your new project
+* open the folder in Visual Studio Code
+```
+code .
+```
+* open ``pxt.json`` and edit the dependencies to use 
+the ``file:...`` path instead of ``*``
+
+```
+   dependencies: {
+        "adafruit-metro-m0-express": "file:../../libs/adafruit-metro-m0-express"
+   }
+```
+* from the command line, set the ``PXT_NODOCKER`` environment variable to ``1``
+
+```
+export PXT_NODOCKER=1
+```
+
+* run a local build that will create a CODAL checkout automatically. 
+If you are missing tools, you will be notified by the build script.
+
+```
+pxt build --local --force
+```
+
+* go to the ``built/codal`` folder and open all CODAL in a new Visual Studio Code instance
+
+```
+cd built/codal
+code libraries/*
+```
+
+* go to the Git tab in VS Code, and change the branch of the CODAL repository to work on to ``master``. You can create a new branch to start doing your work and pull requests.
+
+* to build CODAL directly, run ``built/codal``
+```
+python build.py
+```
+
+* to rebuild your project from pxt, run ``pxt build --local --force`` from the project folder
 
 ### Running
 
