@@ -60,5 +60,5 @@
   * [Arduino](/boards/arduino)
   * [XinaBox](/boards/xinabox)
   * [Beads](/boards/beads)
+  * [Robotics Masters Robo HAT MM1 M4](/boards/robotics-masters-robohatmm1-m4)
   * [Misc](/boards/misc)
-  * [Robotics Masters Robo HAT MM1 M4](/boards/robohatmm1-m4)
