@@ -47,6 +47,8 @@
 * [Power](/projects/power)
   * [Deep Sleep](/projects/power/deep-sleep)
   * [Poke](/projects/power/poke)
+* [Bit Radio](/projects/radio)
+  * [Send Number](/projects/radio/send-number)
 * [JACDAC](/projects/jacdac)
   * [pixel blink](/projects/jacdac/pixel-blink)
   * [broadcast](/projects/jacdac/broadcast)
