@@ -67,6 +67,7 @@
         "libs/adafruit-feather-m4-express",
         "libs/adafruit-feather-nrf52840-express",
         "libs/bluepill",
+        "libs/nucleo-f411re",
         "libs/adafruit-circuit-playground-express",
         "libs/adafruit-circuit-playground-bluefruit",
         "libs/adafruit-trinket-m0",
@@ -279,14 +280,15 @@
         "stm32f401": {
             "compile": {
                 "hasHex": true,
-                "openocdScript": "source [find interface/stlink-v2.cfg]; source [find target/stm32f4x.cfg]",
+                "openocdScript": "source [find interface/cmsis-dap.cfg]; source [find target/stm32f4x.cfg]",
+                "flashChecksumAddr": 0,
                 "uf2Family": "0x57755a57"
             },
             "compileService": {
                 "codalTarget": {
                     "name": "codal-big-brainpad",
                     "url": "https://github.com/lancaster-university/codal-big-brainpad",
-                    "branch": "v1.1.3",
+                    "branch": "v1.1.5",
                     "type": "git"
                 },
                 "codalBinary": "STM32",
