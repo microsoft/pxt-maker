@@ -91,8 +91,7 @@
     },
     {
         "name": "Boards",
-        "url": "/boards",
-        "imageUrl": "/static/libs/adafruit-circuit-playground-express.jpg"
+        "url": "/boards"
     }
 ]
 ```
