@@ -3,6 +3,7 @@
 Sends a number over the Bit Radio protocol
 
 ```blocks
+radio.setGroup(42)
 radio.onReceivedNumber(function (receivedNumber) {
     console.logValue("x", receivedNumber)
 })
