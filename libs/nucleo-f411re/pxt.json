@@ -1,0 +1,28 @@
+{
+    "name": "nucleo-f411re",
+    "description": "Nucleo F411RE - beta",
+    "files": [
+        "README.md",
+        "config.ts",
+        "device.d.ts",
+
+        "board.json",
+        "board.svg"
+    ],
+    "compileServiceVariant": "stm32f401",
+    "dependencies": {
+        "core---stm32": "file:../core---stm32",
+        "jacdac": "file:../jacdac"
+    },
+    "core": true,
+    "public": true,
+    "dalDTS": {
+        "corePackage": "../core---stm32"
+    },
+    "features": [
+        "uf2",
+        "pina0",
+        "pina1",
+        "jacdac"
+    ]
+}
