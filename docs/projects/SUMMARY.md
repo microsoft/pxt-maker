@@ -49,6 +49,7 @@
   * [Poke](/projects/power/poke)
 * [Bit Radio](/projects/radio)
   * [Send Number](/projects/radio/send-number)
+  * [Send String](/projects/radio/send-string)
 * [JACDAC](/projects/jacdac)
   * [pixel blink](/projects/jacdac/pixel-blink)
   * [broadcast](/projects/jacdac/broadcast)
