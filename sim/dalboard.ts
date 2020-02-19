@@ -28,7 +28,8 @@ namespace pxsim {
         MicrophoneBoard,
         ScreenBoard,
         InfraredBoard,
-        LCDBoard {
+        LCDBoard,
+        RadioBoard {
         // state & update logic for component services
         viewHost: visuals.BoardHost;
         view: SVGElement;
@@ -48,6 +49,7 @@ namespace pxsim {
         screenState: ScreenState;
         irState: InfraredState;
         lcdState: LCDState;
+        radioState: RadioState;
 
         constructor(public boardDefinition: BoardDefinition) {
             super();
@@ -113,6 +115,10 @@ namespace pxsim {
 
             // TODO we need this.buttonState set for pxtcore.getButtonByPin(), but
             // this should be probably merged with buttonpair somehow
+            this.builtinParts["radio"] = this.radioState = new RadioState(runtime, {
+                ID_RADIO: DAL.DEVICE_ID_RADIO,
+                RADIO_EVT_DATAGRAM: 1 /*DAL.DEVICE_RADIO_EVT_DATAGRAM*/
+            });
             this.builtinParts["pinbuttons"] = this.builtinParts["buttons"]
                 = this.buttonState = new CommonButtonState();
             this.builtinParts["touch"] = this.touchButtonState = new TouchButtonState(pinList);
@@ -184,10 +190,6 @@ namespace pxsim {
                     let data = (<SimulatorSerialMessage>msg).data || "";
                     // TODO
                     break;
-                case "radiopacket":
-                    let packet = <SimulatorRadioPacketMessage>msg;
-                    //this.radioState.recievePacket(packet);
-                    break;
                 case "irpacket":
                     let irpacket = <SimulatorInfraredPacketMessage>msg;
                     this.irState.receive(irpacket.packet);
@@ -229,6 +231,7 @@ namespace pxsim {
             document.body.appendChild(this.view = this.viewHost.getView());
 
             this.accelerometerState.attachEvents(this.view);
+            this.radioState.addListeners();
 
             return Promise.resolve();
         }
