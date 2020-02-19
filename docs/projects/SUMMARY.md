@@ -62,3 +62,4 @@
   * [Beads](/boards/beads)
   * [Robotics Masters Robo HAT MM1 M4](/boards/robotics-masters-robohatmm1-m4)
   * [Misc](/boards/misc)
+  * [Add your board](/boards/add-a-new-board)
