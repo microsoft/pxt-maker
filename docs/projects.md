@@ -95,7 +95,8 @@
     },
     {
         "name": "Boards",
-        "url": "/boards"
+        "url": "/boards",
+        "imageUrl": "/static/libs/adafruit-circuit-playground-express.jpg"
     }
 ]
 ```
@@ -119,4 +120,3 @@
 [Bit Radio](/projects/radio),
 [JACDAC](/projects/jacdac),
 [Boards](/boards)
-
