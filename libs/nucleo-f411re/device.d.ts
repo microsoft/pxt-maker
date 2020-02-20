@@ -62,6 +62,39 @@ declare namespace pins {
     //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_B15)
     const B15: DigitalInOutPin;
 
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C0)
+    const C0: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C1)
+    const C1: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C2)
+    const C2: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C3)
+    const C3: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C4)
+    const C4: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C5)
+    const C5: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C6)
+    const C6: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C7)
+    const C7: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C8)
+    const C8: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C9)
+    const C9: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C10)
+    const C10: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C11)
+    const C11: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C12)
+    const C12: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C13)
+    const C13: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C14)
+    const C14: DigitalInOutPin;
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_C15)
+    const C15: DigitalInOutPin;
+
     //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_LED)
     const LED: DigitalInOutPin;
 

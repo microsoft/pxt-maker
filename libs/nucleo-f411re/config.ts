@@ -31,6 +31,23 @@ namespace config {
     export const PIN_B14 = DAL.PB_14;
     export const PIN_B15 = DAL.PB_15;
 
+    export const PIN_C0 = DAL.PC_0;
+    export const PIN_C1 = DAL.PC_1;
+    export const PIN_C2 = DAL.PC_2;
+    export const PIN_C3 = DAL.PC_3;
+    export const PIN_C4 = DAL.PC_4;
+    export const PIN_C5 = DAL.PC_5;
+    export const PIN_C6 = DAL.PC_6;
+    export const PIN_C7 = DAL.PC_7;
+    export const PIN_C8 = DAL.PC_8;
+    export const PIN_C9 = DAL.PC_9;
+    export const PIN_C10 = DAL.PC_10;
+    export const PIN_C11 = DAL.PC_11;
+    export const PIN_C12 = DAL.PC_12;
+    export const PIN_C13 = DAL.PC_13;
+    export const PIN_C14 = DAL.PC_14;
+    export const PIN_C15 = DAL.PC_15;
+
     export const PIN_SCK = PIN_A5;
     export const PIN_MISO = PIN_A6;
     export const PIN_MOSI = PIN_A7;
