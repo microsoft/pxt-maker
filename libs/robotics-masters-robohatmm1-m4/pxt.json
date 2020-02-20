@@ -1,6 +1,6 @@
 {
     "name": "robotics-masters-robohatmm1-m4",
-    "description": "Support for Robotics Masters Robo HAT MM1 M4",
+    "description": "Support for Robotics Masters Robo HAT MM1 M4 - beta",
     "files": [
         "README.md",
         "device.d.ts",
