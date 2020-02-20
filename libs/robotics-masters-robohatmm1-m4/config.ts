@@ -46,7 +46,7 @@ namespace config {
 
     export const PIN_LED = DAL.PB22;
 
-    export const PIN_BTN_A = DAL.PB27;
+    export const PIN_BTN_A = DAL.PA27;
 
     //Flash pins not implement yet
     // export const PIN_FLASH_MISO = DAL.PA14;
