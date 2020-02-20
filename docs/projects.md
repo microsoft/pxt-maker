@@ -86,6 +86,10 @@
         "url": "/projects/power"
     },
     {
+        "name": "Bit Radio",
+        "url": "/projects/radio"
+    },
+    {
         "name": "JACDAC",
         "url": "/projects/jacdac"
     },
@@ -112,6 +116,7 @@
 [LCD](/projects/lcd),
 [LoRa](/projects/lora),
 [Power](/projects/power),
+[Bit Radio](/projects/radio),
 [JACDAC](/projects/jacdac),
 [Boards](/boards)
 

@@ -23,6 +23,7 @@
     "features": [
         "pina0",
         "pina1",
-        "light"
+        "light",
+        "radio"
     ]
 }

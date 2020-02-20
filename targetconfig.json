@@ -33,6 +33,7 @@
         "LCD": "/projects/lcd",
         "LoRa": "/projects/lora",
         "Power": "/projects/power",
+        "Bit Radio": "/projects/radio",
         "JACDAC": "/projects/jacdac",
         "Boards": "/boards"
     },
