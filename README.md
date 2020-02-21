@@ -111,10 +111,10 @@ If you are missing tools, you will be notified by the build script.
 pxt build --local --force
 ```
 
-* go to the ``built/codal`` folder and open all CODAL in a new Visual Studio Code instance
+* go to the ``built/dockercodal`` folder and open all CODAL in a new Visual Studio Code instance
 
 ```
-cd built/codal
+cd built/dockercodal
 code libraries/*
 ```
 
