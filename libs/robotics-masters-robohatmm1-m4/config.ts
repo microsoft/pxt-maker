@@ -1,8 +1,9 @@
+
 namespace config {
-    export const ACCELEROMETER_TYPE = DAL.ACCELEROMETER_TYPE_MPU6050;
-    export const PIN_ACCELEROMETER_SDA = DAL.PA00;
-    export const PIN_ACCELEROMETER_SCL = DAL.PA01;
-    // export const PIN_ACCELEROMETER_INT  = DAL.PA13;
+    export const PIN_NEOPIXEL = DAL.PB23;
+    export const NUM_NEOPIXELS = 1;
+
+    export const PIN_LED = DAL.PB22;
 
     export const PIN_RCC1 = DAL.PA07;
     export const PIN_RCC2 = DAL.PA06;
@@ -18,39 +19,29 @@ namespace config {
     export const PIN_SERVO7 = DAL.PA09;
     export const PIN_SERVO8 = DAL.PA08;
 
-    export const PIN_GROVE0 = PIN_SERVO8;
-    export const PIN_GROVE1 = PIN_SERVO7;
-
-    //NEOPIXEL pin
-    export const PIN_NEOPIXEL = DAL.PB23;
-    export const NUM_NEOPIXELS = 10;
-
-    //Pi Serial
-    export const PIN_PI_TX = DAL.PA16;
-    export const PIN_PI_RX = DAL.PA17;
-
-    //I2C_PORT
-    export const PIN_SDA = DAL.PA00;
-    export const PIN_SCL = DAL.PA01;
-
-    //GPS_PORT
-    export const PIN_GPS_TX = DAL.PB02;
-    export const PIN_GPS_RX = DAL.PB03;
-    export const PIN_GPS_SDA = PIN_SDA;
-    export const PIN_GPS_SCL = PIN_SCL;
-    //SPI_PORT
     export const PIN_MOSI = DAL.PB08;
     export const PIN_MISO = DAL.PB11;
+    export const PIN_SDA = DAL.PA00;
+    export const PIN_SCL = DAL.PA01;
     export const PIN_SCK = DAL.PB09;
     export const PIN_SS = DAL.PB10;
-
-    export const PIN_LED = DAL.PB22;
+    export const PIN_PI_TX = DAL.PA16;
+    export const PIN_PI_RX = DAL.PA17;
+    export const PIN_GPS_TX = DAL.PB02;
+    export const PIN_GPS_RX = DAL.PB03;
 
     export const PIN_BTN_A = DAL.PA27;
 
-    //Flash pins not implement yet
-    // export const PIN_FLASH_MISO = DAL.PA14;
-    // export const PIN_FLASH_MOSI = DAL.PA12;
-    // export const PIN_FLASH_SCK = DAL.PB13;
-    // export const PIN_FLASH_SS = DAL.PB15;
+    export const PIN_GPS_SDA = PIN_SDA;
+    export const PIN_GPS_SCL = PIN_SCL;
+    export const PIN_TX = PIN_PI_TX;
+    export const PIN_RX = PIN_PI_RX;
+    export const PIN_JACK_TX = PIN_TX;
+    export const PIN_GROVE0 = PIN_SERVO8;
+    export const PIN_GROVE1 = PIN_SERVO7;
+
+    export const PIN_FLASH_MISO = DAL.PA14;
+    export const PIN_FLASH_MOSI = DAL.PA12;
+    export const PIN_FLASH_SCK = DAL.PA13;
+    export const PIN_FLASH_CS = DAL.PA15;
 }
