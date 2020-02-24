@@ -44,4 +44,9 @@ namespace config {
     export const PIN_FLASH_MOSI = DAL.PA12;
     export const PIN_FLASH_SCK = DAL.PA13;
     export const PIN_FLASH_CS = DAL.PA15;
+
+    export const ACCELEROMETER_TYPE = DAL.ACCELEROMETER_TYPE_MPU6050;
+    export const PIN_ACCELEROMETER_SDA = PIN_SDA;
+    export const PIN_ACCELEROMETER_SCL = PIN_SCL;
+    // export const PIN_ACCELEROMETER_INT  = DAL.PA13;
 }
