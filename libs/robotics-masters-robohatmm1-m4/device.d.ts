@@ -56,10 +56,10 @@ declare namespace pins {
 
 declare namespace input {
     /**
-     * Left button.
+     * Button On Servo Side
      */
-    //% indexedInstanceNS=input indexedInstanceShim=pxt::getButton
-    //% block="button A" weight=95 fixedInstance
-    //% shim=pxt::getButton(BTN_A)
-    const buttonA: Button;
+    //% block="button" fixedInstance
+    //% shim=pxt::getButtonByPin(PIN_BTN_A,BUTTON_ACTIVE_HIGH_PULL_DOWN)
+    //% parts="buttons"
+    const button: Button;
 }

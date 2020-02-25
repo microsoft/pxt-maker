@@ -522,7 +522,7 @@
         "y": 309.19435116230517,
         "w": 6.499953561899614,
         "h": 27.0159932634181,
-        "label": "BUTTON"
+        "label": "BTN_A"
       }
     ],
     "reset": {
@@ -550,8 +550,9 @@
     "5V_S7": "5V_S7",
     "5V_S8": "5V_S8",
     "5V_SPI": "5V_SPI",
-    "BUTTON": "BUTTON",
+    "BTN_A": "BTN_A",
     "BTN_A": "BUTTON",
+    "BUTTON": "BUTTON",
     "ESC+": "ESC+",
     "ESTOPPIN0": "ESTOPPIN0",
     "ESTOPPIN1": "ESTOPPIN1",
