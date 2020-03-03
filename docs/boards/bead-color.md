@@ -1,6 +1,6 @@
 # Bead Color
 
-```blocks
+```sim
 forever(function() {
 
 })

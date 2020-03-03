@@ -1,6 +1,6 @@
 # Arduino Nano 33 BLE Sense
 
-```blocks
+```sim
 forever(function() {
 
 })

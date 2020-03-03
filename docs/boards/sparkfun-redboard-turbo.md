@@ -1,6 +1,6 @@
 # SparkFun Redboard Turbo
 
-```blocks
+```sim
 forever(function() {
 
 })

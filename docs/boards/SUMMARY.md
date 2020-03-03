@@ -20,6 +20,7 @@
     * [XinaBox CC03](/boards/xinabox-cc03)
     * [XinaBox CS11](/boards/xinabox-cs11)
 * [Misc](/boards/misc)
+    * [Robotics Masters Robo HAT MM1 M4](/boards/robotics-masters-robohatmm1-m4)
     * [RedBear BLE NANO 2](/boards/redbear-ble-nano)
     * [StichKit](/boards/stitchkit)
     * [Teknikio Bluebird](/boards/teknikio-bluebird)

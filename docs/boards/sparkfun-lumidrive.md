@@ -1,6 +1,6 @@
 # SparkFun LumiDrive
 
-```blocks
+```sim
 forever(function() {
 
 })

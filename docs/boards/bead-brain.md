@@ -1,6 +1,6 @@
 # Bead Brain
 
-```blocks
+```sim
 forever(function() {
 
 })

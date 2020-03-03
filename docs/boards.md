@@ -37,12 +37,7 @@ This editor supports various maker boards, based on SAMD21, SAMD51, NRF52.
         "imageUrl": "/static/libs/redbear-ble-nano.jpg"  
     },
     {
-        "name": "Robotics Masters Robo HAT MM1 M4",
-        "url": "/boards/robohatmm1-m4",
-        "imageUrl": "/static/libs/robohatmm1.jpg"
-    },
-    {
-        "name": "Add your board"",
+        "name": "Add your board",
         "url": "/boards/add-a-new-board",
         "imageUrl": "/static/libs/bead-servo.jpg"
     }

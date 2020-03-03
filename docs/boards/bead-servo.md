@@ -1,6 +1,6 @@
 # Bead Servo
 
-```blocks
+```sim
 forever(function() {
 
 })

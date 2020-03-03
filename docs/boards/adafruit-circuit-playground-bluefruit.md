@@ -1,6 +1,6 @@
 # Adafruit Circuit Playground Bluefruit (alpha)
 
-```blocks
+```sim
 forever(function() {
 
 })

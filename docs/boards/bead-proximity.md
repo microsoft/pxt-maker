@@ -1,6 +1,6 @@
 # Bead Proximity
 
-```blocks
+```sim
 forever(function() {
 
 })

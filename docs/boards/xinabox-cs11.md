@@ -1,6 +1,6 @@
 # XinaBox CS11
 
-```blocks
+```sim
 forever(function() {
 
 })

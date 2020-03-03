@@ -1,6 +1,6 @@
 # Adafruit Feather Bluefruit NRF52840 Express
 
-```blocks
+```sim
 forever(function() {
 
 })

@@ -1,6 +1,6 @@
 # Robotics Masters Robo HAT MM1 M4
 
-```blocks
+```sim
 forever(function() {
 
 })

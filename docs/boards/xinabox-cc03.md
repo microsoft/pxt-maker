@@ -1,6 +1,6 @@
 # XinaBox CC03
 
-```blocks
+```sim
 forever(function() {
 
 })

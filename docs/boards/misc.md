@@ -5,6 +5,11 @@
 ```codecard
 [
     {
+        "name": "Robotics Masters Robo HAT MM1 M4",
+        "url": "/boards/robotics-masters-robohatmm1-m4",
+        "imageUrl": "/static/libs/robotics-masters-robohatmm1-m4.jpg"
+    },
+    {
         "name": "RedBear BLE NANO 2",
         "url": "/boards/redbear-ble-nano",
         "cardType": "template",
@@ -14,7 +19,7 @@
         "name": "StichKit",
         "url": "/boards/stitchkit",
         "cardType": "template",
-        "imageUrl": "/static/libs/makefashion.jpg"  
+        "imageUrl": "/static/libs/stitchkit.jpg"  
     },
     {
         "name": "Bluebird",

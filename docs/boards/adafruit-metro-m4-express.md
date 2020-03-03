@@ -1,6 +1,6 @@
 # Adafruit Metro M4 Express
 
-```blocks
+```sim
 forever(function() {
 
 })

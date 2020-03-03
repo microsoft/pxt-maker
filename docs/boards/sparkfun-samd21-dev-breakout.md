@@ -1,6 +1,6 @@
 # SparkFun SAMD21 Dev Breakout
 
-```blocks
+```sim
 forever(function() {
 
 })

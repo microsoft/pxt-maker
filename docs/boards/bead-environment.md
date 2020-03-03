@@ -1,6 +1,6 @@
 # Bead Environment
 
-```blocks
+```sim
 forever(function() {
 
 })

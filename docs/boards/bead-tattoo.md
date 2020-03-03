@@ -1,6 +1,6 @@
 # Bead Tattoo
 
-```blocks
+```sim
 forever(function() {
 
 })

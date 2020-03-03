@@ -1,6 +1,6 @@
 # Bead Light
 
-```blocks
+```sim
 forever(function() {
 
 })
