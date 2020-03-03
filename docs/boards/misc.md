@@ -34,3 +34,15 @@
     }
 ]
 ```
+
+## Deprecated boards
+
+```codecard
+[
+    {
+        "name": "StichKit",
+        "url": "/boards/stitchkit",
+        "cardType": "template",
+        "imageUrl": "/static/libs/stitchkit.jpg"  
+    }
+]
