@@ -1,0 +1,42 @@
+{
+    "name": "robotics-masters-robohatmm1-m4",
+    "description": "Support for Robotics Masters Robo HAT MM1 M4 - beta",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+
+        "board.json",
+        "board.svg"
+    ],
+    "core": true,    
+    "compileServiceVariant": "samd51",
+    "dependencies": {
+        "core---samd51": "file:../core---samd51",
+        "pixel": "file:../pixel",
+        "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
+        "buttons": "file:../buttons",
+        "serial": "file:../serial",
+        "jacdac": "file:../jacdac",
+        "storage": "file:../storage"
+    },
+    "public": true,
+    "dalDTS": {
+        "corePackage": "../core---samd51"
+    },
+    "features": [
+        "uf2",
+        "i2c",
+        "spi",
+        "storage",
+        "serial",
+        "buttond0",
+        "buttond1",
+        "screen",
+        "jacdac",
+        "light",
+        "pixel",
+        "accelerometer"
+    ]
+}
