@@ -48,7 +48,7 @@
     },
     "dependencies": {
         "pxt-common-packages": "6.21.9",
-        "pxt-core": "5.35.6",
+        "pxt-core": "5.35.10",
         "@jacdac/jacdac-ts": "^0.0.9",
         "webusb": "^1.1.1"
     },
