@@ -1,5 +1,9 @@
 # Projects
 
+* [Adafruit](/projects/boards/adafruit)
+* [Arduino](/projects/boards/arduino)
+* [SparkFun](/projects/boards/sparkfun)
+* [XinaBox](/projects/boards/sparkfun)
 * [Digital IO](/projects/digital-io)
   * [Blinky](/projects/digital-io/blinky)
   * [Button LED](/projects/digital-io/button-led)
@@ -62,6 +66,5 @@
   * [Sparkfun](/boards/sparkfun)
   * [Arduino](/boards/arduino)
   * [XinaBox](/boards/xinabox)
-  * [Beads](/boards/beads)
   * [Misc](/boards/misc)
   * [Add your board](/boards/add-a-new-board)

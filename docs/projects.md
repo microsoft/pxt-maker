@@ -3,6 +3,22 @@
 ```codecard
 [
     {
+        "name": "Adafruit",
+        "url": "/projects/boards/adafruit"
+    },
+    {
+        "name": "Arduino",
+        "url": "/projects/boards/arduino"
+    },
+    {
+        "name": "SparkFun",
+        "url": "/projects/boards/sparkfun"
+    },
+    {
+        "name": "XinaBox",
+        "url": "/projects/boards/sparkfun"
+    },
+    {
         "name": "Digital IO",
         "url": "/projects/digital-io",
         "imageUrl": "/static/projects/digital-io/blinky/gallery.png",
@@ -103,6 +119,10 @@
 
 ## See Also
 
+[Adafruit](/projects/boards/adafruit),
+[Arduino](/projects/boards/arduino),
+[SparkFun](/projects/boards/sparkfun),
+[XinaBox](/projects/boards/sparkfun),
 [Digital IO](/projects/digital-io),
 [Analog IO](/projects/analog-io),
 [Pixel](/projects/pixel),
@@ -120,3 +140,4 @@
 [Bit Radio](/projects/radio),
 [JACDAC](/projects/jacdac),
 [Boards](/boards)
+

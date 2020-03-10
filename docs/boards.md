@@ -27,11 +27,6 @@ This editor supports various maker boards, based on SAMD21, SAMD51, NRF52.
         "imageUrl": "/static/libs/xinabox-cc03.jpg"  
     },
     {
-        "name": "Beads",
-        "url": "/boards/beads",
-        "imageUrl": "/static/libs/bead-brain.jpg"  
-    },
-    {
         "name": "Misc",
         "url": "/boards/misc",
         "imageUrl": "/static/libs/redbear-ble-nano.jpg"  
