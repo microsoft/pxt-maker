@@ -12,14 +12,14 @@ This editor supports various maker boards, based on SAMD21, SAMD51, NRF52.
         "imageUrl": "/static/libs/adafruit-circuit-playground-express.jpg"
     },
     {
-        "name": "Sparkfun",
-        "url": "/boards/sparkfun",
-        "imageUrl": "/static/libs/sparkfun-samd21-dev-breakout.jpg"  
-    },
-    {
         "name": "Arduino",
         "url": "/boards/arduino",
         "imageUrl": "/static/libs/arduino-mkr1300.jpg"  
+    },
+    {
+        "name": "Sparkfun",
+        "url": "/boards/sparkfun",
+        "imageUrl": "/static/libs/sparkfun-samd21-dev-breakout.jpg"  
     },
     {
         "name": "XinaBox",
