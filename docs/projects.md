@@ -4,19 +4,28 @@
 [
     {
         "name": "Adafruit",
-        "url": "/projects/boards/adafruit"
+        "url": "/boards/adafruit",
+        "imageUrl": "/static/libs/adafruit-metro-m0-express.jpg"
     },
     {
         "name": "Arduino",
-        "url": "/projects/boards/arduino"
+        "url": "/boards/arduino",
+        "imageUrl": "/static/libs/arduino-mkr1000.jpg"
     },
     {
         "name": "SparkFun",
-        "url": "/projects/boards/sparkfun"
+        "url": "/boards/sparkfun",
+        "imageUrl": "/static/libs/sparkfun-redboard-turbo.jpg"
     },
     {
         "name": "XinaBox",
-        "url": "/projects/boards/sparkfun"
+        "url": "/boards/xinabox",
+        "imageUrl": "/static/libs/xinabox-cc03.jpg"
+    },
+    {
+        "name": "Misc",
+        "url": "/boards/misc",
+        "imageUrl": "/static/libs/robotics-masters-robohatmm1-m4.jpg"
     },
     {
         "name": "Digital IO",
@@ -119,10 +128,11 @@
 
 ## See Also
 
-[Adafruit](/projects/boards/adafruit),
-[Arduino](/projects/boards/arduino),
-[SparkFun](/projects/boards/sparkfun),
-[XinaBox](/projects/boards/sparkfun),
+[Adafruit](/boards/adafruit),
+[Arduino](/boards/arduino),
+[SparkFun](/boards/sparkfun),
+[XinaBox](/boards/xinabox),
+[Misc](/boards/misc),
 [Digital IO](/projects/digital-io),
 [Analog IO](/projects/analog-io),
 [Pixel](/projects/pixel),
