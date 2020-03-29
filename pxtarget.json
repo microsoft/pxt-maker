@@ -379,6 +379,8 @@
         "monacoToolbox": true,
         "highContrast": true,
         "greenScreen": true,
+        "blocksCollapsing": true,
+        "accessibleBlocks": true,
         "simAnimationEnter": "fly right in",
         "simAnimationExit": "fly right out",
         "hasAudio": true,
