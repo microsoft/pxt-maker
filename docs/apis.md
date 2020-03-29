@@ -2,6 +2,6 @@
 
 ## Pins
 
-```api
+```apis
 pins
 ```
