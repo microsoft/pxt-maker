@@ -49,7 +49,7 @@ function showUploadInstructionsAsync(fn: string, url: string, confirmAsync: (opt
                     <div className="content">
                         <div className="description">
                             <span className="ui blue circular label">3</span>
-                    ${lf("Click and drag the file you downloaded onto {0}.", boardDriveName)}
+                            {lf("Click and drag the file you downloaded onto {0}.", boardDriveName)}
                         </div>
                     </div>
                 </div>
