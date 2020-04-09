@@ -1,6 +1,6 @@
 {
     "name": "pxt-maker",
-    "version": "0.13.32",
+    "version": "0.13.33",
     "description": "Microsoft MakeCode Maker Boards",
     "public": true,
     "keywords": [
