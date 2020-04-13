@@ -162,4 +162,12 @@ declare namespace input {
     //% shim=pxt::getButtonByPin(PIN_D12,BUTTON_ACTIVE_LOW_PULL_UP)
     //% parts="buttons"
     const buttonD12: Button;
+
+    /**
+     * Button connecting D13 to GND.
+     */
+    //% block="button D13" fixedInstance
+    //% shim=pxt::getButtonByPin(PIN_D13,BUTTON_ACTIVE_LOW_PULL_UP)
+    //% parts="buttons"
+    const buttonD13: Button;
 }
