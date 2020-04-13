@@ -20,6 +20,7 @@
         "jacdac": "file:../jacdac"
     },
     "public": true,
+    "firmwareUrl": "https://learn.adafruit.com/adafruit-metro-m4-express-featuring-atsamd51/uf2-bootloader-details",
     "features": [
         "uf2",
         "pinled",

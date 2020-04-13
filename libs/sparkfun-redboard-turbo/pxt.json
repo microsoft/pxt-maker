@@ -50,5 +50,6 @@
         "accelerometer",
         "lcd"
     ],
-    "public": true
+    "public": true,
+    "firmwareUrl": "https://github.com/sparkfun/RedBoard_Turbo/tree/master/Firmware/UF2%20Bootloader"
 }

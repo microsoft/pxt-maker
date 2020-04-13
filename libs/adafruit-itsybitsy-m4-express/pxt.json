@@ -20,6 +20,7 @@
         "jacdac": "file:../jacdac"
     },
     "public": true,
+    "firmwareUrl": "https://learn.adafruit.com/introducing-adafruit-itsybitsy-m4#uf2-bootloader-details",
     "dalDTS": {
         "corePackage": "../core---samd51"
     },

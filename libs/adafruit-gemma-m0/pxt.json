@@ -21,6 +21,7 @@
         "jacdac": "file:../jacdac"
     },
     "public": true,
+    "firmwareUrl": "https://learn.adafruit.com/adafruit-gemma-m0/uf2-bootloader-details#updating-the-bootloader",
     "compileServiceVariant": "samd21",
     "features": [
         "uf2",
