@@ -21,6 +21,7 @@
         "jacdac": "file:../jacdac"
     },
     "public": true,
+    "firmwareUrl": "https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/update-bootloader",
     "features": [
         "uf2",
         "screen",

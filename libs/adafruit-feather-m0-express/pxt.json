@@ -24,6 +24,7 @@
         "storage": "file:../storage"
     },
     "public": true,
+    "firmwareUrl": "https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details#updating-the-bootloader",
     "dalDTS": {
         "corePackage": "../core---samd"
     },
