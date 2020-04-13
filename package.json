@@ -50,8 +50,8 @@
         "react": "16.8.3"
     },
     "dependencies": {
-        "pxt-common-packages": "6.22.1",
-        "pxt-core": "5.37.22",
+        "pxt-common-packages": "6.22.2",
+        "pxt-core": "5.37.23",
         "webusb": "^1.1.1"
     },
     "scripts": {
