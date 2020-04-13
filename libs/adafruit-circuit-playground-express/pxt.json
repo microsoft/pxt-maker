@@ -30,6 +30,7 @@
     "compileServiceVariant": "samd21",
     "core": true,
     "public": true,
+    "firmwareUrl": "https://learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-uf2-bootloader-details#updating-the-bootloader",
     "features": [
         "uf2",
         "i2c",
