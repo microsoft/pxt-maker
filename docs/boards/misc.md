@@ -16,12 +16,6 @@
         "imageUrl": "/static/libs/redbear-ble-nano.jpg"  
     },
     {
-        "name": "StichKit",
-        "url": "/boards/stitchkit",
-        "cardType": "template",
-        "imageUrl": "/static/libs/stitchkit.jpg"  
-    },
-    {
         "name": "Bluebird",
         "url": "/boards/teknikio-bluebird",
         "cardType": "template",
