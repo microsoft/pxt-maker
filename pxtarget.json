@@ -51,7 +51,6 @@
         "libs/color-sensor",
         "libs/light-spectrum-sensor",
         "libs/proximity",
-        "libs/bead",
         "libs/feather",
         "libs/edge-connector",
         "libs/esp32",
@@ -90,15 +89,7 @@
         "libs/sparkfun-samd21-mini-breakout",
         "libs/sparkfun-redboard-turbo",
         "libs/sparkfun-lumidrive",
-        "libs/stitchkit",
-        "libs/bead-brain",
-        "libs/bead-servo",
-        "libs/bead-color",
-        "libs/bead-light",
-        "libs/bead-motion",
-        "libs/bead-tattoo",
-        "libs/bead-proximity",
-        "libs/bead-environment"
+        "libs/stitchkit"
     ],
     "serial": {
         "useHF2": true,
