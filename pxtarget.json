@@ -65,7 +65,6 @@
         "libs/adafruit-feather-m0-express",
         "libs/adafruit-feather-m4-express",
         "libs/adafruit-feather-nrf52840-express",
-        "libs/bluepill",
         "libs/nucleo-f411re",
         "libs/adafruit-circuit-playground-express",
         "libs/adafruit-circuit-playground-bluefruit",
