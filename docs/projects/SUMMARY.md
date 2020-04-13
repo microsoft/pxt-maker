@@ -28,7 +28,6 @@
 * [Misc](/boards/misc)
   * [Robotics Masters Robo HAT MM1 M4](/boards/robotics-masters-robohatmm1-m4)
   * [RedBear BLE NANO 2](/boards/redbear-ble-nano)
-  * [StichKit](/boards/stitchkit)
   * [Bluebird](/boards/teknikio-bluebird)
   * [Add a new board](/boards/add-a-new-board)
 * [Digital IO](/projects/digital-io)
