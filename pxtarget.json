@@ -418,6 +418,7 @@
         "tutorialExplicitHints": true,
         "chooseLanguageRestrictionOnNewProject": true,
         "openProjectNewTab": true,
+        "errorList": true,
         "availableLocales": [
             "en",
             "ar",
