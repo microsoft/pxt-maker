@@ -1,6 +1,6 @@
 # Adafruit Gemma M0
 
-```blocks
+```sim
 forever(function() {
 
 })

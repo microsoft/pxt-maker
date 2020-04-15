@@ -1,11 +1,11 @@
 {
     "name": "adafruit-metro-m4-express",
-    "description": "Support for Adafruit Metro M4 Express - beta",
+    "description": "Support for Adafruit Metro M4 Express",
     "files": [
         "README.md",
         "device.d.ts",
         "config.ts",
-        "ns.ts",
+
         "board.json",
         "board.svg"
     ],
@@ -15,10 +15,12 @@
         "core---samd51": "file:../core---samd51",
         "pixel": "file:../pixel",
         "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
         "buttons": "file:../buttons",
         "jacdac": "file:../jacdac"
     },
     "public": true,
+    "firmwareUrl": "https://learn.adafruit.com/adafruit-metro-m4-express-featuring-atsamd51/uf2-bootloader-details",
     "features": [
         "uf2",
         "pinled",
@@ -31,6 +33,8 @@
         "screen",
         "jacdac",
         "pixel",
-        "light"
+        "light",
+        "accelerometer",
+        "lcd"
     ]
 }

@@ -1,0 +1,36 @@
+{
+    "name": "bead-light",
+    "description": "Support for Project Brookdale's Light Bead - beta",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+
+        "startup.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "core": true,
+    "dependencies": {
+        "core---samd": "file:../core---samd",
+        "bead": "file:../bead",
+        "light-spectrum-sensor": "file:../light-spectrum-sensor"
+    },
+    "public": true,
+    "compileServiceVariant": "samd21",
+    "features": [
+        "uf2",
+        "i2c",
+        "pinled",
+        "jacdac"
+    ],
+    "yotta": {
+        "optionalConfig": {
+            "DEVICE_USB": 0,
+            "DEVICE_JACDAC_DEBUG": 1
+        }
+    }    
+}

@@ -1,10 +1,10 @@
 # Write File
 
-This example takes the reading of analog pin ``A0`` and stores it into ``log.txt``.
+This example takes the reading of analog pin ``A1`` and stores it into ``log.txt``.
 
 ```blocks
 forever(function () {
-    storage.appendLine("log.txt", "a0:" + pins.A0.analogRead())
+    storage.appendLine("log.txt", "a1:" + pins.A1.analogRead())
     pause(2000)
 })
 ```
@@ -15,6 +15,6 @@ storage
 
 ```config
 feature=uf2
-feature=pina0
+feature=pina1
 feature=storage
 ```

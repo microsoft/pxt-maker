@@ -1,5 +1,11 @@
 # Blinky
 
+## ~ hint
+
+JACDAC  is a single wire broadcast protocol for the plug and play of microcontrollers (MCUs) within the contexts of rapid prototyping, making, and physical computing. [Read more...](https://jacdac.org/).
+
+## ~
+
 When pressing button A, the light client sends a command to the light service running
 on the other device to turn the lights on for 1/2 second. 
 
@@ -15,7 +21,7 @@ forever(function () {
 
 ```package
 jacdac
-jacdac-drivers
+jacdac-services
 ```
 
 ```config

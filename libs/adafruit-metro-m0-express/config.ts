@@ -33,9 +33,8 @@ namespace config {
     export const PIN_RXLED = DAL.PA31;
     export const PIN_TXLED = DAL.PA27;
     export const PIN_NEOPIXEL = DAL.PA30;
-    export const PIN_ACCELEROMETER_INT = DAL.PA10; // D1
-    export const PIN_ACCELEROMETER_SCL = DAL.PA23; // SCL
-    export const PIN_ACCELEROMETER_SDA = DAL.PA22; // SDA
+
+    export const PIN_ACCELEROMETER_INT = PIN_D2;
 
     export const PIN_FLASH_MISO = DAL.PB03;
     export const PIN_FLASH_MOSI = DAL.PB22;
@@ -56,7 +55,14 @@ namespace config {
     export const DISPLAY_CFG1 = 0x000e14ff;
     export const DISPLAY_CFG2 = 24;
     export const DISPLAY_WIDTH = 160;
-    export const DISPLAY_HEIGHT = 128;    
+    export const DISPLAY_HEIGHT = 128;   
+
+    export const PIN_LCD_RESET = PIN_D7;
+    export const PIN_LCD_ENABLE = PIN_D8;
+    export const PIN_LCD_DATALINE4 = PIN_D9;
+    export const PIN_LCD_DATALINE5 = PIN_D10;
+    export const PIN_LCD_DATALINE6 = PIN_D11;
+    export const PIN_LCD_DATALINE7 = PIN_D12;    
 }
 
 /*

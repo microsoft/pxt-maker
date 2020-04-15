@@ -22,11 +22,14 @@ namespace pxsim {
         CapTouchBoard,
         AccelerometerBoard,
         StorageBoard,
-        //JacDacBoard,
+        JacDacBoard,
         LightSensorBoard,
         TemperatureBoard,
         MicrophoneBoard,
-        ScreenBoard {
+        ScreenBoard,
+        InfraredBoard,
+        LCDBoard,
+        RadioBoard {
         // state & update logic for component services
         viewHost: visuals.BoardHost;
         view: SVGElement;
@@ -39,11 +42,14 @@ namespace pxsim {
         touchButtonState: TouchButtonState;
         accelerometerState: AccelerometerState;
         storageState: StorageState;
-        //jacdacState: JacDacState;
+        jacdacState: JacDacState;
         thermometerState: AnalogSensorState;
         thermometerUnitState: TemperatureUnit;
         microphoneState: AnalogSensorState;
         screenState: ScreenState;
+        irState: InfraredState;
+        lcdState: LCDState;
+        radioState: RadioState;
 
         constructor(public boardDefinition: BoardDefinition) {
             super();
@@ -99,14 +105,20 @@ namespace pxsim {
             this.lightState = {};
             this.microphoneState = new AnalogSensorState(DAL.DEVICE_ID_MICROPHONE, 52, 120, 75, 96);
             this.storageState = new StorageState();
-            //this.jacdacState = new JacDacState(this);
+            this.jacdacState = new JacDacState(this);
             this.lightSensorState = new AnalogSensorState(DAL.DEVICE_ID_LIGHT_SENSOR, 0, 255, 128 / 4, 896 / 4);
             this.thermometerState = new AnalogSensorState(DAL.DEVICE_ID_THERMOMETER, -20, 50, 10, 30);
             this.thermometerUnitState = TemperatureUnit.Celsius;
+            this.irState = new InfraredState();
+            this.lcdState = new LCDState();
             this.bus.setNotify(DAL.DEVICE_ID_NOTIFY, DAL.DEVICE_ID_NOTIFY_ONE);
 
             // TODO we need this.buttonState set for pxtcore.getButtonByPin(), but
             // this should be probably merged with buttonpair somehow
+            this.builtinParts["radio"] = this.radioState = new RadioState(runtime, {
+                ID_RADIO: DAL.DEVICE_ID_RADIO,
+                RADIO_EVT_DATAGRAM: 1 /*DAL.DEVICE_RADIO_EVT_DATAGRAM*/
+            });
             this.builtinParts["pinbuttons"] = this.builtinParts["buttons"]
                 = this.buttonState = new CommonButtonState();
             this.builtinParts["touch"] = this.touchButtonState = new TouchButtonState(pinList);
@@ -125,12 +137,20 @@ namespace pxsim {
             this.builtinVisuals["microservo"] = () => new visuals.MicroServoView();
 
             this.builtinParts["neopixel"] = (pin: Pin) => { return this.neopixelState(pin.id); };
-            this.builtinVisuals["neopixel"] = () => new visuals.NeoPixelView();
+            this.builtinVisuals["neopixel"] = () => new visuals.NeoPixelView(parsePinString);
             this.builtinPartVisuals["neopixel"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
 
             this.builtinParts["dotstar"] = (pin: Pin) => { return this.neopixelState(pin.id); };
-            this.builtinVisuals["dotstar"] = () => new visuals.NeoPixelView();
+            this.builtinVisuals["dotstar"] = () => new visuals.NeoPixelView(parsePinString);
             this.builtinPartVisuals["dotstar"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
+
+            this.builtinParts["lcd"] =  this.lcdState;
+            this.builtinVisuals["lcd"] = () => new visuals.LCDView();
+            this.builtinPartVisuals["lcd"] = (xy: visuals.Coord) => visuals.mkLCDPart(xy);
+            
+            this.builtinParts["pixels"] = (pin: Pin) => { return this.neopixelState(undefined); };
+            this.builtinVisuals["pixels"] = () => new visuals.NeoPixelView(parsePinString);
+            this.builtinPartVisuals["pixels"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
 
             this.builtinPartVisuals["buttons"] = (xy: visuals.Coord) => visuals.mkBtnSvg(xy);
 
@@ -170,9 +190,9 @@ namespace pxsim {
                     let data = (<SimulatorSerialMessage>msg).data || "";
                     // TODO
                     break;
-                case "radiopacket":
-                    let packet = <SimulatorRadioPacketMessage>msg;
-                    //this.radioState.recievePacket(packet);
+                case "irpacket":
+                    let irpacket = <SimulatorInfraredPacketMessage>msg;
+                    this.irState.receive(irpacket.packet);
                     break;
             }
         }
@@ -211,12 +231,13 @@ namespace pxsim {
             document.body.appendChild(this.view = this.viewHost.getView());
 
             this.accelerometerState.attachEvents(this.view);
+            this.radioState.addListeners();
 
             return Promise.resolve();
         }
 
-        screenshotAsync(): Promise<ImageData> {
-            return this.viewHost.screenshotAsync();
+        screenshotAsync(width?: number): Promise<ImageData> {
+            return this.viewHost.screenshotAsync(width);
         }
 
         accelerometer(): Accelerometer {
@@ -233,6 +254,9 @@ namespace pxsim {
         }
 
         neopixelState(pinId: number): CommonNeoPixelState {
+            if (pinId === undefined) {
+                pinId = pxtcore.getConfig(DAL.CFG_PIN_MOSI, -1);
+            }
             let state = this.lightState[pinId];
             if (!state) state = this.lightState[pinId] = new CommonNeoPixelState();
             return state;
@@ -254,7 +278,7 @@ namespace pxsim {
     }
 
     export function parsePinString(pinString: string): Pin {
-        const pinName = pxsim.readPin(pinString);
-        return pinName ? pxtcore.getPin(pinIds[pinName]) : undefined;
+        const pinName = pinString && pxsim.readPin(pinString);
+        return pinName && pxtcore.getPin(pinIds[pinName]);
     }
 }

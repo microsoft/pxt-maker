@@ -5,7 +5,7 @@
         "README.md",
         "device.d.ts",
         "config.ts",
-        "ns.ts",
+
         "board.json",
         "board.svg"
     ],
@@ -14,12 +14,14 @@
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
         "pixel": "file:../pixel",
         "touch": "file:../touch",
         "serial": "file:../serial",
         "jacdac": "file:../jacdac"
     },
     "public": true,
+    "firmwareUrl": "https://learn.adafruit.com/adafruit-gemma-m0/uf2-bootloader-details#updating-the-bootloader",
     "compileServiceVariant": "samd21",
     "features": [
         "uf2",
@@ -33,6 +35,8 @@
         "touchd1",
         "light",
         "pixel",
-        "jacdac"
+        "jacdac",
+        "music",
+        "accelerometer"
     ]
 }

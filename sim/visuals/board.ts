@@ -226,27 +226,34 @@ namespace pxsim.visuals {
             svg.title(this.element, "RESET");
             // hooking up events
             pointerEvents.down.forEach(evid => this.element.addEventListener(evid, ev => {
-                svg.addClass(this.element, "pressed");
+                pxsim.U.addClass(this.element, "pressed");
                 pxsim.Runtime.postMessage(<pxsim.SimulatorCommandMessage>{
                     type: "simulator",
                     command: "restart"
                 })
             }));
             this.element.addEventListener(pointerEvents.leave, ev => {
-                svg.removeClass(this.element, "pressed");
+                pxsim.U.removeClass(this.element, "pressed");
             })
             this.element.addEventListener(pointerEvents.up, ev => {
-                svg.removeClass(this.element, "pressed");
+                pxsim.U.removeClass(this.element, "pressed");
             })
         }
     }
 
     class BoardLed {
-        element: SVGElement;
         private colorOff = "#aaa"
+        private backElement: SVGElement;
+        private ledElement: SVGElement;
+        element: SVGElement;
 
         constructor(x: number, y: number, private colorOn: string, private pin: Pin, w: number, h: number) {
-            this.element = svg.elt("rect", { x, y, width: w, height: h, fill: this.colorOff });
+            this.backElement = svg.elt("rect", { x, y, width: w, height: h, fill: this.colorOff });
+            this.ledElement = svg.elt("rect", { x, y, width: w, height: h, fill: this.colorOn, opacity: 0 });
+            svg.filter(this.ledElement, `url(#neopixelglow)`);
+            this.element = svg.elt("g", { class: "sim-led" });
+            this.element.appendChild(this.backElement);
+            this.element.appendChild(this.ledElement);
         }
 
         updateTheme(colorOff: string, colorOn: string) {
@@ -259,14 +266,9 @@ namespace pxsim.visuals {
         }
 
         updateState() {
-            if (this.pin.value > 0) {
-                this.element.setAttribute("fill", this.colorOn)
-                svg.filter(this.element, `url(#neopixelglow)`);
-            }
-            else {
-                this.element.setAttribute("fill", this.colorOff)
-                svg.filter(this.element, null);
-            }
+            const opacity = this.pin.mode & PinFlags.Digital ? (this.pin.value > 0 ? 1 : 0)
+                : 0.1 + Math.max(0, Math.min(1023, this.pin.value)) / 1023 * 0.8;
+            this.ledElement.setAttribute("opacity", opacity.toString())
         }
     }
 
@@ -316,14 +318,14 @@ namespace pxsim.visuals {
             // hooking up events
             pointerEvents.down.forEach(evid => this.element.addEventListener(evid, ev => {
                 this.button.setPressed(true);
-                svg.addClass(this.element, "pressed");
+                pxsim.U.addClass(this.element, "pressed");
             }));
             this.element.addEventListener(pointerEvents.leave, ev => {
-                svg.removeClass(this.element, "pressed");
+                pxsim.U.removeClass(this.element, "pressed");
                 this.button.setPressed(false);
             })
             this.element.addEventListener(pointerEvents.up, ev => {
-                svg.removeClass(this.element, "pressed");
+                pxsim.U.removeClass(this.element, "pressed");
                 this.button.setPressed(false);
             })
         }
@@ -349,14 +351,14 @@ namespace pxsim.visuals {
             // hooking up events
             pointerEvents.down.forEach(evid => this.element.addEventListener(evid, ev => {
                 this.button.setPressed(true);
-                svg.addClass(this.element, "pressed");
+                pxsim.U.addClass(this.element, "pressed");
             }));
             this.element.addEventListener(pointerEvents.leave, ev => {
-                svg.removeClass(this.element, "pressed");
+                pxsim.U.removeClass(this.element, "pressed");
                 this.button.setPressed(false);
             })
             this.element.addEventListener(pointerEvents.up, ev => {
-                svg.removeClass(this.element, "pressed");
+                pxsim.U.removeClass(this.element, "pressed");
                 this.button.setPressed(false);
             })
         }

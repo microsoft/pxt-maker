@@ -5,7 +5,7 @@
         "README.md",
         "device.d.ts",
         "config.ts",
-        "ns.ts",
+
         "board.json",
         "board.svg"
     ],
@@ -14,7 +14,9 @@
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
         "touch": "file:../touch",
+        "mixer---samd": "file:../mixer---samd",
         "serial": "file:../serial",
         "jacdac": "file:../jacdac"
     },
@@ -31,6 +33,8 @@
         "toucha0",
         "toucha1",
         "light",
-        "jacdac"
+        "jacdac",
+        "music",
+        "accelerometer"
     ]
 }

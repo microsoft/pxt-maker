@@ -1,6 +1,6 @@
 # Arduino Zero
 
-```blocks
+```sim
 forever(function() {
 
 })

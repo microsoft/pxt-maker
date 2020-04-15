@@ -42,4 +42,13 @@ namespace config {
     export const PIN_FLASH_MOSI = DAL.PB22;
     export const PIN_FLASH_SCK = DAL.PB23;
     export const PIN_FLASH_CS = DAL.PA13;
+
+    export const PIN_ACCELEROMETER_INT = PIN_D2;
+
+    export const PIN_LCD_RESET = PIN_D7;
+    export const PIN_LCD_ENABLE = PIN_D8;
+    export const PIN_LCD_DATALINE4 = PIN_D9;
+    export const PIN_LCD_DATALINE5 = PIN_D10;
+    export const PIN_LCD_DATALINE6 = PIN_D11;
+    export const PIN_LCD_DATALINE7 = PIN_D12;
 }

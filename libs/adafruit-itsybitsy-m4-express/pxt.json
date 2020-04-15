@@ -1,11 +1,11 @@
 {
     "name": "adafruit-itsybitsy-m4-express",
-    "description": "Support for Adafruit ItsyBitsy M4 Express - beta",
+    "description": "Support for Adafruit ItsyBitsy M4 Express",
     "files": [
         "README.md",
         "device.d.ts",
         "config.ts",
-        "ns.ts",
+
         "board.json",
         "board.svg"
     ],
@@ -13,10 +13,14 @@
     "compileServiceVariant": "samd51",
     "dependencies": {
         "core---samd51": "file:../core---samd51",
+        "pixel": "file:../pixel",
+        "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
         "buttons": "file:../buttons",
         "jacdac": "file:../jacdac"
     },
     "public": true,
+    "firmwareUrl": "https://learn.adafruit.com/introducing-adafruit-itsybitsy-m4#uf2-bootloader-details",
     "dalDTS": {
         "corePackage": "../core---samd51"
     },
@@ -25,6 +29,9 @@
         "buttond0",
         "buttond1",
         "screen",
-        "jacdac"
+        "jacdac",
+        "light",
+        "pixel",
+        "accelerometer"
     ]
 }

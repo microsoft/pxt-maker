@@ -6,6 +6,7 @@ built
 typings
 tmp
 temp
+.vscode/ipch
 projects/**
 clients/win10/app/AppPackages
 clients/win10/app/BundlePackages
@@ -16,9 +17,10 @@ clients/win10/*.opendb
 clients/**/bin/**
 clients/**/obj/**
 clients/electron/projects
+package-lock.json
+
 
 videos/**
-
 *.user
 *.sw?
 *.ts.new

@@ -63,6 +63,9 @@
 
 @blocklyFlyoutColor : #eaeaea;
 @flyoutLabelColor: #555;
+@monacoFlyoutColor: rgba(40, 40, 40, 0.9);
+@monacoFlyoutText: fade(@white, 70%);
+@monacoFlyoutBorderColor: fade(@monacoFlyoutText, 40%);
 
 /*-------------------
    Full screen

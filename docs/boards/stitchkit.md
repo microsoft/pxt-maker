@@ -1,6 +1,6 @@
 # StitchKit
 
-```blocks
+```sim
 forever(function() {
 
 })

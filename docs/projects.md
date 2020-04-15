@@ -3,28 +3,71 @@
 ```codecard
 [
     {
+        "name": "Adafruit",
+        "url": "/boards/adafruit",
+        "imageUrl": "/static/libs/adafruit-metro-m0-express.jpg"
+    },
+    {
+        "name": "Arduino",
+        "url": "/boards/arduino",
+        "imageUrl": "/static/libs/arduino-mkr1000.jpg"
+    },
+    {
+        "name": "SparkFun",
+        "url": "/boards/sparkfun",
+        "imageUrl": "/static/libs/sparkfun-redboard-turbo.jpg"
+    },
+    {
+        "name": "XinaBox",
+        "url": "/boards/xinabox",
+        "imageUrl": "/static/libs/xinabox-cc03.jpg"
+    },
+    {
+        "name": "Misc",
+        "url": "/boards/misc",
+        "imageUrl": "/static/libs/robotics-masters-robohatmm1-m4.jpg"
+    },
+    {
         "name": "Digital IO",
         "url": "/projects/digital-io",
-        "imageUrl": "/static/projects/digital-io/blinky/gallery.gif"
+        "imageUrl": "/static/projects/digital-io/blinky/gallery.png",
+        "largeImageUrl": "/static/projects/digital-io/blinky/gallery.gif",
+        "videoUrl": "/static/projects/digital-io/blinky/gallery.mp4"
     },
     {
         "name": "Analog IO",
         "url": "/projects/analog-io",
-        "imageUrl": "/static/projects/analog-io/blink-to-light/gallery.gif"
+        "imageUrl": "/static/projects/analog-io/blink-to-light/gallery.png",
+        "largeImageUrl": "/static/projects/analog-io/blink-to-light/gallery.gif",
+        "videoUrl": "/static/projects/analog-io/blink-to-light/gallery.mp4"
     },
     {
         "name": "Pixel",
-        "url": "/projects/pixel"
+        "url": "/projects/pixel",
+        "imageUrl": "/static/projects/pixel/blinky/gallery.png",
+        "largeImageUrl": "/static/projects/pixel/blinky/gallery.gif",
+        "videoUrl": "/static/projects/pixel/blinky/gallery.mp4"
     },
     {
         "name": "Light",
         "url": "/projects/light",
-        "imageUrl": "/static/projects/light/rainbow/gallery.gif"
+        "imageUrl": "/static/projects/light/rainbow/gallery.png",
+        "largeImageUrl": "/static/projects/light/rainbow/gallery.gif",
+        "videoUrl": "/static/projects/light/rainbow/gallery.mp4"
     },
     {
-        "name": "Actuators",
-        "url": "/projects/actuators",
-        "imageUrl": "/static/projects/actuators/servo/gallery.gif"
+        "name": "Music",
+        "url": "/projects/music",
+        "imageUrl": "/static/projects/music/play-sound/gallery.png",
+        "largeImageUrl": "/static/projects/music/play-sound/gallery.gif",
+        "videoUrl": "/static/projects/music/play-sound/gallery.mp4"
+    },
+    {
+        "name": "Servos",
+        "url": "/projects/servos",
+        "imageUrl": "/static/projects/servos/sweep/gallery.png",
+        "largeImageUrl": "/static/projects/servos/sweep/gallery.gif",
+        "videoUrl": "/static/projects/servos/sweep/gallery.mp4"
     },
     {
         "name": "HID",
@@ -33,7 +76,16 @@
     {
         "name": "Screen",
         "url": "/projects/screen",
-        "imageUrl": "/static/projects/screen/console/gallery.gif"
+        "imageUrl": "/static/projects/screen/console/gallery.png",
+        "largeImageUrl": "/static/projects/screen/console/gallery.gif",
+        "videoUrl": "/static/projects/screen/console/gallery.mp4"
+    },
+    {
+        "name": "Accelerometer",
+        "url": "/projects/accelerometer",
+        "imageUrl": "/static/projects/accelerometer/shake/gallery.png",
+        "largeImageUrl": "/static/projects/accelerometer/shake/gallery.gif",
+        "videoUrl": "/static/projects/accelerometer/shake/gallery.mp4"
     },
     {
         "name": "Serial",
@@ -44,27 +96,58 @@
         "url": "/projects/storage"
     },
     {
+        "name": "LCD",
+        "url": "/projects/lcd",
+        "imageUrl": "/static/projects/lcd/hello-world/gallery.png",
+        "largeImageUrl": "/static/projects/lcd/hello-world/gallery.gif",
+        "videoUrl": "/static/projects/lcd/hello-world/gallery.mp4"
+    },
+    {
         "name": "LoRa",
         "url": "/projects/lora"
     },
     {
-        "name": "JacDac (beta)",
+        "name": "Power",
+        "url": "/projects/power"
+    },
+    {
+        "name": "Bit Radio",
+        "url": "/projects/radio"
+    },
+    {
+        "name": "JACDAC",
         "url": "/projects/jacdac"
+    },
+    {
+        "name": "Boards",
+        "url": "/boards",
+        "imageUrl": "/static/libs/adafruit-circuit-playground-express.jpg"
     }
 ]
 ```
 
 ## See Also
 
+[Adafruit](/boards/adafruit),
+[Arduino](/boards/arduino),
+[SparkFun](/boards/sparkfun),
+[XinaBox](/boards/xinabox),
+[Misc](/boards/misc),
 [Digital IO](/projects/digital-io),
 [Analog IO](/projects/analog-io),
 [Pixel](/projects/pixel),
 [Light](/projects/light),
-[Actuators](/projects/actuators),
+[Music](/projects/music),
+[Servos](/projects/servos),
 [HID](/projects/hid),
 [Screen](/projects/screen),
+[Accelerometer](/projects/accelerometer),
 [Serial](/projects/serial),
 [Storage](/projects/storage),
+[LCD](/projects/lcd),
 [LoRa](/projects/lora),
-[JacDac (beta)](/projects/jacdac)
+[Power](/projects/power),
+[Bit Radio](/projects/radio),
+[JACDAC](/projects/jacdac),
+[Boards](/boards)
 

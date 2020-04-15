@@ -1,0 +1,575 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 241.8 85" xml:space="preserve">
+  <style>
+    .st2{fill:none;stroke:#fff;stroke-width:.36;stroke-linecap:round}.st3{fill:#9a916c}.st6,.st7{stroke:#fff;stroke-width:.432;stroke-linecap:round}.st7{stroke-width:.36}.st8{fill:#dcdcdc}.st10,.st11{fill:none;stroke:#727272;stroke-width:5}.st11{stroke-width:3.251}.st12{fill:#fff}.st13{font-family:&apos;OCRAStd&apos;}.st14{font-size:8px}.st16,.st17{fill:none}.st17{stroke:#fff;stroke-width:2;stroke-miterlimit:10}.st19{font-size:6.2594px}.st20{font-size:3px}.st21{fill:none;stroke:#fff;stroke-width:.432;stroke-linecap:round}.st23{font-size:7px}.st25,.st26{stroke:#fff;stroke-width:1.1362}.st25{stroke-linecap:round}.st26{fill:none}
+  </style>
+  <path id="rect293" d="M47 65.6H0v-47h47v47z" fill="#7a7a7a"/>
+  <path id="JACK_TX" d="M236.4 49h-12.5V36h12.5v13z"/>
+  <path id="path6" d="M232.5 85V-.4H2.5V85h230zm-9.9-82.2c3.6 0 6.4 2.9 6.4 6.4s-2.9 6.4-6.4 6.4c-3.6 0-6.4-2.9-6.4-6.4s2.8-6.4 6.4-6.4zm-18 0c3.6 0 6.4 2.9 6.4 6.4s-2.9 6.4-6.4 6.4c-3.6 0-6.4-2.9-6.4-6.4s2.8-6.4 6.4-6.4zm-18 0c3.6 0 6.4 2.9 6.4 6.4s-2.9 6.4-6.4 6.4c-3.6 0-6.4-2.9-6.4-6.4s2.8-6.4 6.4-6.4zm36 66.2c3.6 0 6.4 2.9 6.4 6.4s-2.9 6.4-6.4 6.4c-3.6 0-6.4-2.9-6.4-6.4s2.8-6.4 6.4-6.4zm-18 0c3.6 0 6.4 2.9 6.4 6.4s-2.9 6.4-6.4 6.4c-3.6 0-6.4-2.9-6.4-6.4s2.8-6.4 6.4-6.4zm-18 0c3.6 0 6.4 2.9 6.4 6.4s-2.9 6.4-6.4 6.4c-3.6 0-6.4-2.9-6.4-6.4s2.8-6.4 6.4-6.4zm-19.7 0c3.6 0 6.4 2.9 6.4 6.4s-2.9 6.4-6.4 6.4c-3.6 0-6.4-2.9-6.4-6.4s2.9-6.4 6.4-6.4zm-36 0c3.6 0 6.4 2.9 6.4 6.4s-2.9 6.4-6.4 6.4c-3.6 0-6.4-2.9-6.4-6.4s2.8-6.4 6.4-6.4zM113 69c3.6 0 6.4 2.9 6.4 6.4s-2.9 6.4-6.4 6.4c-3.6 0-6.4-2.9-6.4-6.4s2.7-6.4 6.4-6.4zm54.8-66.2c3.6 0 6.4 2.9 6.4 6.4s-2.9 6.4-6.4 6.4c-3.6 0-6.4-2.9-6.4-6.4s2.8-6.4 6.4-6.4zm-54.8 0c3.6 0 6.4 2.9 6.4 6.4s-2.9 6.4-6.4 6.4c-3.6 0-6.4-2.9-6.4-6.4s2.7-6.4 6.4-6.4zm18.2 0c3.6 0 6.4 2.9 6.4 6.4s-2.9 6.4-6.4 6.4c-3.6 0-6.4-2.9-6.4-6.4s2.8-6.4 6.4-6.4zM148.4 69c3.6 0 6.4 2.9 6.4 6.4s-2.9 6.4-6.4 6.4c-3.6 0-6.4-2.9-6.4-6.4s2.8-6.4 6.4-6.4zm.5-66.2c3.6 0 6.4 2.9 6.4 6.4s-2.9 6.4-6.4 6.4c-3.6 0-6.4-2.9-6.4-6.4s2.9-6.4 6.4-6.4z" fill="#7907a3"/>
+  <g id="g273">
+    <g id="g5241" transform="translate(-3.778 .545) scale(3.3911)">
+      <g id="g5239">
+        <path id="line5221" class="st2" d="M35.1 17.8h.9"/>
+        <path id="line5223" class="st2" d="M36 17.8V17"/>
+        <path id="line5225" class="st2" d="M25.8 17.8H25"/>
+        <path id="line5227" class="st2" d="M24.9 17.8V17"/>
+        <path id="line5229" class="st2" d="M24.9 7.7v-.9"/>
+        <path id="line5231" class="st2" d="M24.9 6.8h.8"/>
+        <g id="g5237">
+          <path id="path5235" class="st2" d="M35.1 6.6h1v1l-1-1m1 .1h-.9.9m0 .2h-.7.7m0 .2h-.5.5m0 .2h-.4.4"/>
+        </g>
+      </g>
+    </g>
+    <g id="g6284" transform="matrix(0 -3.3911 3.3911 0 30.486 290.84)">
+      <g id="g6282">
+        <g id="g6280">
+          <g id="g5561">
+            <path id="connector28pin" class="st3" d="M79.1 24.4v.4h-1.2v-.4h1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6292" transform="rotate(-90 165.469 130.176) scale(3.3911)">
+      <g id="g6290">
+        <g id="g6288">
+          <g id="g5564">
+            <path id="connector29pin" class="st3" d="M80.6 22.2v.4h-1.2v-.4h1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6300" transform="rotate(-90 170.276 130.177) scale(3.3911)">
+      <g id="g6298">
+        <g id="g6296">
+          <g id="g5567">
+            <path id="connector30pin" class="st3" d="M82 20v.4h-1.2V20H82z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6308" transform="rotate(-90 175.081 130.176) scale(3.3911)">
+      <g id="g6306">
+        <g id="g6304">
+          <g id="g5570">
+            <path id="connector31pin" class="st3" d="M83.4 17.9v.4h-1.2v-.4h1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6316" transform="rotate(-90 179.888 130.177) scale(3.3911)">
+      <g id="g6314">
+        <g id="g6312">
+          <g id="g5573">
+            <path id="connector32pin" class="st3" d="M84.8 15.7v.3h-1.2v-.4l1.2.1z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6324" transform="matrix(0 -3.3911 3.3911 0 54.518 314.87)">
+      <g id="g6322">
+        <g id="g6320">
+          <g id="g5576">
+            <path id="connector33pin" class="st3" d="M86.2 13.5v.4H85v-.4h1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6332" transform="rotate(-90 189.5 130.177) scale(3.3911)">
+      <g id="g6330">
+        <g id="g6328">
+          <g id="g5579">
+            <path id="connector34pin" class="st3" d="M87.7 11.3v.4h-1.2v-.4h1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6340" transform="matrix(0 -3.3911 3.3911 0 64.13 324.483)">
+      <g id="g6338">
+        <g id="g6336">
+          <g id="g5582">
+            <path id="connector35pin" class="st3" d="M89 9.1v.4h-1.2v-.4H89z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6348" transform="matrix(0 -3.3911 3.3911 0 68.936 329.29)">
+      <g id="g6346">
+        <g id="g6344">
+          <g id="g5585">
+            <path id="connector36pin" class="st3" d="M90.5 6.9v.4h-1.2v-.4h1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6356" transform="rotate(-90 203.919 130.176) scale(3.3911)">
+      <g id="g6354">
+        <g id="g6352">
+          <g id="g5588">
+            <path id="connector37pin" class="st3" d="M91.9 4.7v.4h-1.2v-.4h1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6364" transform="rotate(-90 208.726 130.177) scale(3.3911)">
+      <g id="g6362">
+        <g id="g6360">
+          <g id="g5591">
+            <path id="connector38pin" class="st3" d="M93.4 2.5v.4h-1.2v-.4h1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6372" transform="rotate(-90 213.531 130.176) scale(3.3911)">
+      <g id="g6370">
+        <g id="g6368">
+          <g id="g5594">
+            <path id="connector39pin" class="st3" d="M94.7.3v.4h-1.2V.3h1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6380" transform="rotate(180 220.228 121.319) scale(3.3911)">
+      <g id="g6378">
+        <g id="g6376">
+          <g id="g5597">
+            <path id="connector40pin" class="st3" d="M106.4 63.5h-1.2v-.4h1.2v.4z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6388" transform="rotate(180 220.228 116.512) scale(3.3911)">
+      <g id="g6386">
+        <g id="g6384">
+          <g id="g5600">
+            <path id="connector41pin" class="st3" d="M106.4 59.9h-1.2v-.4h1.2v.4z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6396" transform="rotate(180 220.228 111.706) scale(3.3911)">
+      <g id="g6394">
+        <g id="g6392">
+          <g id="g5603">
+            <path id="connector42pin" class="st3" d="M106.4 56.3h-1.2v-.4h1.2v.4z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6404" transform="rotate(180 220.228 106.9) scale(3.3911)">
+      <g id="g6402">
+        <g id="g6400">
+          <g id="g5606">
+            <path id="connector43pin" class="st3" d="M106.4 52.7h-1.2v-.4h1.2v.4z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6412" transform="rotate(180 220.228 102.094) scale(3.3911)">
+      <g id="g6410">
+        <g id="g6408">
+          <g id="g5609">
+            <path id="connector44pin" class="st3" d="M106.4 49.1h-1.2v-.4h1.2v.4z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6420" transform="rotate(180 220.228 97.287) scale(3.3911)">
+      <g id="g6418">
+        <g id="g6416">
+          <g id="g5612">
+            <path id="connector45pin" class="st3" d="M106.4 45.5h-1.2v-.4h1.2v.4z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6428" transform="rotate(180 220.228 92.481) scale(3.3911)">
+      <g id="g6426">
+        <g id="g6424">
+          <g id="g5615">
+            <path id="connector46pin" class="st3" d="M106.4 41.9h-1.2v-.4h1.2v.4z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6436" transform="rotate(180 220.228 87.674) scale(3.3911)">
+      <g id="g6434">
+        <g id="g6432">
+          <g id="g5618">
+            <path id="connector47pin" class="st3" d="M106.4 38.3h-1.2v-.4h1.2v.4z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6444" transform="rotate(180 220.228 82.868) scale(3.3911)">
+      <g id="g6442">
+        <g id="g6440">
+          <g id="g5621">
+            <path id="connector48pin" class="st3" d="M106.4 34.7h-1.2v-.4h1.2v.4z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6452" transform="rotate(180 220.228 78.062) scale(3.3911)">
+      <g id="g6450">
+        <g id="g6448">
+          <g id="g5624">
+            <path id="connector49pin" class="st3" d="M106.4 31.1h-1.2v-.4h1.2v.4z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6460" transform="rotate(180 220.228 73.255) scale(3.3911)">
+      <g id="g6458">
+        <g id="g6456">
+          <g id="g5627">
+            <path id="connector50pin" class="st3" d="M106.4 27.5h-1.2v-.4h1.2v.4z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6468" transform="rotate(180 220.228 68.45) scale(3.3911)">
+      <g id="g6466">
+        <g id="g6464">
+          <g id="g5630">
+            <path id="connector51pin" class="st3" d="M106.4 23.9h-1.2v-.4h1.2v.4z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6476" transform="rotate(90 212.987 59.591) scale(3.3911)">
+      <g id="g6474">
+        <g id="g6472">
+          <g id="g5633">
+            <path id="connector52pin" class="st3" d="M62.4 55.4V55h1.2v.4h-1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6484" transform="rotate(90 208.182 59.592) scale(3.3911)">
+      <g id="g6482">
+        <g id="g6480">
+          <g id="g5636">
+            <path id="connector53pin" class="st3" d="M61 53.2v-.4h1.2v.4H61z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6492" transform="rotate(90 203.375 59.592) scale(3.3911)">
+      <g id="g6490">
+        <g id="g6488">
+          <g id="g5639">
+            <path id="connector54pin" class="st3" d="M59.5 51.1v-.4h1.2v.4h-1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6500" transform="rotate(90 198.567 59.59) scale(3.3911)">
+      <g id="g6498">
+        <g id="g6496">
+          <g id="g5642">
+            <path id="connector55pin" class="st3" d="M58.2 48.9v-.4h1.2v.4h-1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6508" transform="rotate(90 193.762 59.592) scale(3.3911)">
+      <g id="g6506">
+        <g id="g6504">
+          <g id="g5645">
+            <path id="connector56pin" class="st3" d="M56.8 46.7v-.4H58v.4h-1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6516" transform="rotate(90 188.955 59.591) scale(3.3911)">
+      <g id="g6514">
+        <g id="g6512">
+          <g id="g5648">
+            <path id="connector57pin" class="st3" d="M55.3 44.5v-.4h1.2v.4h-1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6524" transform="rotate(90 184.149 59.591) scale(3.3911)">
+      <g id="g6522">
+        <g id="g6520">
+          <g id="g5651">
+            <path id="connector58pin" class="st3" d="M53.9 42.3V42h1.2v.4h-1.2v-.1z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6532" transform="rotate(90 179.344 59.592) scale(3.3911)">
+      <g id="g6530">
+        <g id="g6528">
+          <g id="g5654">
+            <path id="connector59pin" class="st3" d="M52.5 40.1v-.4h1.2v.4h-1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6540" transform="rotate(90 174.537 59.591) scale(3.3911)">
+      <g id="g6538">
+        <g id="g6536">
+          <g id="g5657">
+            <path id="connector60pin" class="st3" d="M51.1 38v-.4h1.2v.4h-1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6548" transform="rotate(90 169.73 59.592) scale(3.3911)">
+      <g id="g6546">
+        <g id="g6544">
+          <g id="g5660">
+            <path id="connector61pin" class="st3" d="M49.6 35.8v-.4h1.2v.4h-1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6556" transform="rotate(90 164.924 59.591) scale(3.3911)">
+      <g id="g6554">
+        <g id="g6552">
+          <g id="g5663">
+            <path id="connector62pin" class="st3" d="M48.2 33.6v-.4h1.2v.4h-1.2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g6564" transform="rotate(90 160.119 59.592) scale(3.3911)">
+      <g id="g6562">
+        <g id="g6560">
+          <g id="g5666">
+            <path id="connector63pin" class="st3" d="M46.9 31.4V31H48v.4h-1.1z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path id="connector64pin" class="st3" d="M119.5 57.2h-3.9v-1.3h3.9v1.3z"/>
+    <path id="connector65pin" class="st3" d="M119.5 54.5h-3.9v-1.3h3.9v1.3z"/>
+    <path id="connector66pin" class="st3" d="M119.5 52h-3.9v-1.3h3.9V52z"/>
+    <path id="connector67pin" class="st3" d="M119.5 49.4h-3.9v-1.3h3.9v1.3z"/>
+    <path id="connector68pin" class="st3" d="M119.5 46.8h-3.9v-1.3h3.9v1.3z"/>
+    <path id="connector69pin" class="st3" d="M119.5 44.2h-3.9v-1.3h3.9v1.3z"/>
+    <path id="connector70pin" class="st3" d="M119.5 41.7h-3.9v-1.3h3.9v1.3z"/>
+    <path id="connector71pin" class="st3" d="M119.5 39.1h-3.9v-1.3h3.9v1.3z"/>
+    <path id="connector72pin" class="st3" d="M119.5 36.5h-3.9v-1.3h3.9v1.3z"/>
+    <path id="connector73pin" class="st3" d="M119.5 33.9h-3.9v-1.3h3.9v1.3z"/>
+    <path id="connector74pin" class="st3" d="M119.5 31.4h-3.9v-1.3h3.9v1.3z"/>
+    <path id="connector75pin" class="st3" d="M119.5 28.8h-3.9v-1.3h3.9v1.3z"/>
+    <path id="connector76pin" class="st3" d="M111.8 54.4H87.2V30.2h24.5v24.2h.1z"/>
+    <g id="g7917" transform="translate(148.585 61.442) scale(3.3911)">
+      <g id="g7915">
+        <g id="g7913">
+          <g id="tqfn48_7mm">
+            <path id="rect5919" d="M-9.1-.3h-10.8V-11h10.8V-.3z" fill="#333"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <path id="rect295" d="M158.6 50.4h-23.8V26.6h23.8v23.8z" fill="#1e1d1a"/>
+  <g id="g10264" transform="translate(-.001 -2.981) scale(2.36354)">
+    <g id="g10268">
+      <path id="line10272" class="st6" d="M29.8 5.1l2.9-.8"/>
+      <path id="line10274" class="st6" d="M32.7 4.4v1.5"/>
+      <path id="line10276" class="st6" d="M32.7 5.9l-2.9-.8"/>
+      <path id="line10278" class="st7" d="M27.4 3.6h7.7"/>
+      <path id="line10280" class="st7" d="M35.1 3.6v3.1"/>
+      <path id="line10282" class="st7" d="M35.1 6.7h-7.7"/>
+      <path id="line10284" class="st7" d="M27.4 6.7V3.6"/>
+    </g>
+  </g>
+  <g id="g5075" transform="translate(109.278 115.726) scale(2.36354)">
+    <g id="sod-123fl" transform="rotate(180 5.103 2.338)">
+      <g id="g16802">
+        <path id="rect3" class="st8" d="M30.3 50.5H20v-1.6h10.3v1.6z"/>
+        <path id="rect5" d="M29.1 51.3h-7.7v-3.1h7.7v3.1z" fill="#8c8c8c"/>
+      </g>
+    </g>
+  </g>
+  <circle id="D9" class="st10" cx="222.6" cy="9.2" r="6.4"/>
+  <circle id="3V3" class="st11" cx="166.9" cy="9.2" r="6.4"/>
+  <circle id="SWCLK" class="st11" cx="148.9" cy="9.2" r="6.4"/>
+  <circle id="SWDIO" class="st11" cx="130.9" cy="9.2" r="6.4"/>
+  <circle id="GND_1_" class="st11" cx="113" cy="9.2" r="6.4"/>
+  <circle id="A0" class="st10" cx="222.6" cy="75.4" r="6.4"/>
+  <circle id="A4" class="st10" cx="204.6" cy="75.4" r="6.4"/>
+  <circle id="A5" class="st10" cx="186.6" cy="75.4" r="6.4"/>
+  <circle id="A2" class="st10" cx="204.6" cy="9.2" r="6.4"/>
+  <circle id="A3" class="st10" cx="186.6" cy="9.2" r="6.4"/>
+  <circle class="st11" cx="166.9" cy="75.4" r="6.4"/>
+  <circle class="st11" cx="148.9" cy="75.4" r="6.4"/>
+  <circle class="st11" cx="130.9" cy="75.4" r="6.4"/>
+  <circle class="st11" cx="113" cy="75.4" r="6.4"/>
+  <text id="tA3" transform="translate(180.217 28.801)" class="st12 st13 st14">
+    A3
+  </text>
+  <text id="tA2" transform="translate(198.217 28.801)" class="st12 st13 st14">
+    A2
+  </text>
+  <text id="tA1" transform="translate(216.217 28.801)" class="st12 st13 st14">
+    A1
+  </text>
+  <text id="tA5" transform="translate(180.192 63.064)" class="st12 st13 st14">
+    A5
+  </text>
+  <text id="tA4" transform="translate(198.192 63.064)" class="st12 st13 st14">
+    A4
+  </text>
+  <text id="tA0" transform="translate(216.208 63.064)" class="st12 st13 st14">
+    A0
+  </text>
+  <text transform="translate(9.397 11.867)" class="st12 st13" font-size="10">
+    tattoo
+  </text>
+  <path class="st16" d="M150.8 35.7h13.5"/>
+  <path class="st17" d="M150.8 35.7h8.8"/>
+  <path class="st12" d="M164.3 35.7c-2.2.8-5 2.2-6.7 3.7l1.3-3.7-1.3-3.7c1.7 1.5 4.5 2.9 6.7 3.7z"/>
+  <path class="st16" d="M147.1 39.5V53"/>
+  <path class="st17" d="M147.1 39.5v8.8"/>
+  <path class="st12" d="M147.1 53c-.8-2.2-2.2-5-3.7-6.7l3.7 1.3 3.7-1.3c-1.5 1.7-2.9 4.4-3.7 6.7z"/>
+  <circle cx="147.1" cy="35.7" r="1.3" fill="#fff" stroke="#fff" stroke-width="2" stroke-miterlimit="10"/>
+  <circle class="st17" cx="147.1" cy="35.7" r="3.8"/>
+  <text transform="translate(144.849 59.044)" class="st12 st13 st19">
+    X
+  </text>
+  <text transform="translate(164.295 37.957)" class="st12 st13 st19">
+    Y
+  </text>
+  <text transform="translate(137.61 37.957)" class="st12 st13 st19">
+    Z
+  </text>
+  <text id="tGND" transform="translate(109.277 21.128)" class="st12 st13 st20">
+    GND
+  </text>
+  <text id="tSWCLK" transform="translate(125.473 21.128)" class="st12 st13 st20">
+    SWCLK
+  </text>
+  <text id="tSWDIO" transform="translate(143.4 21.128)" class="st12 st13 st20">
+    SWDIO
+  </text>
+  <text id="t3.3V" transform="translate(162.728 21.128)" class="st12 st13 st20">
+    3.3V
+  </text>
+  <g id="LED1_1_">
+    <g id="g206" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
+      <g id="g210">
+        <g id="g214">
+          <path id="path218" class="st21" d="M21.3 69.9l-.7-.9H22l-.7.9m.7-.8h-1.3H22"/>
+        </g>
+        <g id="g4601" transform="rotate(180 2.97 4.533)">
+          <g id="g4599">
+            <g id="g220">
+              <path id="rect222" class="st12" d="M-16.5-61.2h2.2v.4h-2.2v-.4z"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g4995" transform="rotate(-90 104.717 -72.151) scale(2.7412)">
+      <g id="g4993">
+        <g id="g520">
+          <path id="connector74pin_1_" class="st3" d="M-10.6-55.8h2.3v2.3h-2.3v-2.3z"/>
+        </g>
+      </g>
+    </g>
+    <g id="g5001" transform="rotate(-90 93.061 -60.495) scale(2.7412)">
+      <g id="g4999">
+        <g id="g523">
+          <path id="connector75pin_1_" class="st3" d="M-10.6-51.5h2.3v2.3h-2.3v-2.3z"/>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(90 90.763 103.937) scale(2.7412)">
+      <g id="g5225">
+        <g id="_x30_603-led-green">
+          <g id="g5220">
+            <g id="g677">
+              <path id="path679" class="st8" d="M15.4 65.2v-4c0-.2.1-.3.3-.3h1.7c.2 0 .3.1.3.3v4c0 .2-.1.3-.3.3h-1.7c-.2 0-.3-.1-.3-.3z"/>
+              <g id="g5216" transform="rotate(-90 1.134 2.268)">
+                <g id="g5214">
+                  <path id="rect681" d="M-58.7 18.8H-61v-2.3h2.3v2.3z" fill="red"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <text id="led1t" transform="rotate(-90 36.94 13.441)" class="st12 st13 st23">
+    LED1
+  </text>
+  <text id="led2t" transform="rotate(-90 49.355 1.027)" class="st12 st13 st23">
+    LED2
+  </text>
+  <g id="LED2">
+    <g id="g206_1_" transform="matrix(0 2.7412 -2.7412 0 211.757 0)">
+      <g id="g210_1_">
+        <g id="g214_1_">
+          <path id="path218_1_" class="st21" d="M21.3 61.2l-.7-.9H22l-.7.9m.7-.8h-1.3H22"/>
+        </g>
+        <g id="g4601_1_" transform="rotate(180 2.97 4.533)">
+          <g id="g4599_1_">
+            <g id="g220_1_">
+              <path id="rect222_1_" class="st12" d="M-16.5-52.5h2.2v.4h-2.2v-.4z"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="g4995_1_" transform="rotate(-90 104.717 -72.151) scale(2.7412)">
+      <g id="g4993_1_">
+        <g id="g520_1_">
+          <path id="connector74pin_2_" class="st3" d="M-10.6-47.1h2.3v2.3h-2.3v-2.3z"/>
+        </g>
+      </g>
+    </g>
+    <g id="g5001_1_" transform="rotate(-90 93.061 -60.495) scale(2.7412)">
+      <g id="g4999_1_">
+        <g id="g523_1_">
+          <path id="connector75pin_2_" class="st3" d="M-10.6-42.8h2.3v2.3h-2.3v-2.3z"/>
+        </g>
+      </g>
+    </g>
+    <g transform="rotate(90 90.763 103.937) scale(2.7412)">
+      <g id="g5225_1_">
+        <g id="_x30_603-led-green_1_">
+          <g id="g5220_1_">
+            <g id="g677_1_">
+              <path id="path679_1_" class="st8" d="M15.4 56.5v-4c0-.2.1-.3.3-.3h1.7c.2 0 .3.1.3.3v4c0 .2-.1.3-.3.3h-1.7c-.2 0-.3-.1-.3-.3z"/>
+              <g id="g5216_1_" transform="rotate(-90 1.134 2.268)">
+                <g id="g5214_1_">
+                  <path id="rect681_1_" d="M-50 18.8h-2.3v-2.3h2.3v2.3z" fill="#2f2ff7"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <path id="path4625" class="st25" d="M82.9 80.9H64.5m0 0V68.5m0 0H83m-.1 0v12.3"/>
+  <path id="path4627" class="st26" d="M78.5 73.8c0-1.5-1.2-2.6-2.6-2.6"/>
+  <path id="path4629" class="st25" d="M78.5 73.8v1.8"/>
+  <path id="path4631" class="st26" d="M75.9 78.2c1.5 0 2.6-1.2 2.6-2.6"/>
+  <path id="path4633" class="st25" d="M75.9 78.2h-4.4"/>
+  <path id="path4635" class="st26" d="M68.9 75.6c0 1.5 1.2 2.6 2.6 2.6"/>
+  <path id="path4637" class="st25" d="M68.9 75.6v-1.8"/>
+  <path id="path4639" class="st26" d="M71.5 71.2c-1.5 0-2.6 1.2-2.6 2.6"/>
+  <path id="path4641" class="st25" d="M71.5 71.2h4.4"/>
+  <g id="g4795" transform="translate(-3.983) scale(3.156)">
+    <path id="path4793" class="st3" d="M22.5 25.5h-1.4v-1.4h1.4v1.4z"/>
+  </g>
+  <g id="g4799" transform="translate(-3.983) scale(3.156)">
+    <path id="path4797" class="st3" d="M22.5 23.3h-1.4v-1.4h1.4v1.4z"/>
+  </g>
+  <g id="g4803" transform="translate(-3.983) scale(3.156)">
+    <path id="path4801" class="st3" d="M28.1 25.5h-1.4v-1.4h1.4v1.4z"/>
+  </g>
+  <g id="g4807" transform="translate(-3.983) scale(3.156)">
+    <path id="path4805" class="st3" d="M28.1 23.3h-1.4v-1.4h1.4v1.4z"/>
+  </g>
+  <path id="path5299" class="st8" d="M66 79.3v2h15.4v-2h2.2v-2.2h-2.2v-4.8h2.2v-2.2h-2.2v-2H66v2h-2.2v2.2H66v4.8h-2.2v2.2H66z"/>
+  <circle id="RESETBTN_1_" cx="73.7" cy="74.7" r="3.9" fill="#1e1e1e"/>
+  <path id="path5303" d="M82.1 81.3h-.9V68.1h.9v13.2zm-15.9 0h-.9V68.1h.9v13.2z" fill="#b4b4b4"/>
+</svg>

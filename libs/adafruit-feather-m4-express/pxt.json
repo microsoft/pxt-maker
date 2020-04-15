@@ -1,11 +1,11 @@
 {
     "name": "adafruit-feather-m4-express",
-    "description": "Support for Adafruit Feather M4 Express - beta",
+    "description": "Support for Adafruit Feather M4 Express",
     "files": [
         "README.md",
         "device.d.ts",
         "config.ts",
-        "ns.ts",
+
         "board.json",
         "board.svg"
     ],
@@ -13,15 +13,24 @@
     "compileServiceVariant": "samd51",
     "dependencies": {
         "core---samd51": "file:../core---samd51",
+        "feather": "file:../feather",
+        "pixel": "file:../pixel",
+        "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
         "buttons": "file:../buttons",
         "jacdac": "file:../jacdac"
     },
     "public": true,
+    "firmwareUrl": "https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/update-bootloader",
     "features": [
         "uf2",
         "screen",
         "buttond0",
         "buttond1",
-        "jacdac"
+        "accelerometer",
+        "jacdac",
+        "pixel",
+        "light",
+        "accelerometer"
     ]
 }

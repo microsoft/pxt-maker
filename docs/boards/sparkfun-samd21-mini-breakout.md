@@ -1,6 +1,6 @@
 # SparkFun SAM21 Mini Breakout
 
-```blocks
+```sim
 forever(function() {
 
 })

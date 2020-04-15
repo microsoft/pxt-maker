@@ -1,6 +1,6 @@
 # Arduino MKR1000
 
-```blocks
+```sim
 forever(function() {
 
 })

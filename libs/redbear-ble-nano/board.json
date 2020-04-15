@@ -1,45 +1,167 @@
 {
-    "driveDisplayName": "BLEBOOT",
-    "visual": {
-        "image": "pkg://board.svg",
-        "width": 175,
-        "height": 170,
-        "pinDist": 20,
-        "pinBlocks": [{
-                "x": 36,
-                "y": 12,
-                "labels": ["DCLK", "DIO", "P05", "P04", "GND", "VIN"]
-            },
-            {
-                "x": 36,
-                "y": 137,
-                "labels": ["VDD", "P28", "P29", "P30", "P02", "GND"]
-            }
-        ],
-        "leds": [{
-            "x": 121,
-            "y": 25,
-            "w": 3,
-            "h": 5,
-            "color": "#ffff45",
-            "label": "LED"
-        }]
-    },
-    "gpioPinMap": {
-        "P02": "P02",
-        "P04": "P04",
-        "P05": "P05",
-        "P28": "P28",
-        "P29": "P29",
-        "P30": "P30"
-    },
-    "groundPins": ["GND"],
-    "threeVoltPins": ["VDD"],
-    "onboardComponents": [],
-    "marginWhenBreadboarding": [
-        0,
-        0,
-        80,
-        0
-    ]
+  "driveDisplayName": "",
+  "visual": {
+    "image": "pkg://board.svg",
+    "useCrocClips": false,
+    "width": 190.7899932861328,
+    "height": 163.03884887695312,
+    "pinDist": 15,
+    "pinBlocks": [
+      {
+        "x": 63.16543744812734,
+        "y": 3.7447478465972357,
+        "labels": [
+          "D2_A2_SDA_SS"
+        ]
+      },
+      {
+        "x": 155.45221609878374,
+        "y": 3.7447478465972357,
+        "labels": [
+          "GND2"
+        ]
+      },
+      {
+        "x": 132.3805640523943,
+        "y": 3.7447478465972357,
+        "labels": [
+          "D3_A3_SCL_SCK"
+        ]
+      },
+      {
+        "x": 109.30894396821085,
+        "y": 3.7447478465972357,
+        "labels": [
+          "D0_A0_RX_MISO"
+        ]
+      },
+      {
+        "x": 86.23706818637945,
+        "y": 3.7447478465972357,
+        "labels": [
+          "D1_A1_MOSI_TX"
+        ]
+      },
+      {
+        "x": 40.09380670987523,
+        "y": 3.7447478465972357,
+        "labels": [
+          "VDD"
+        ]
+      },
+      {
+        "x": 62.998967625232275,
+        "y": 143.62676915372288,
+        "labels": [
+          "SWDIO"
+        ]
+      },
+      {
+        "x": 155.28547992417205,
+        "y": 143.62676915372288,
+        "labels": [
+          "VIN"
+        ]
+      },
+      {
+        "x": 132.21387049405726,
+        "y": 143.62676915372288,
+        "labels": [
+          "GND"
+        ]
+      },
+      {
+        "x": 109.14223975580516,
+        "y": 143.62676915372288,
+        "labels": [
+          "A5_D5"
+        ]
+      },
+      {
+        "x": 86.07059836348438,
+        "y": 143.62676915372288,
+        "labels": [
+          "A4_D4"
+        ]
+      },
+      {
+        "x": 39.927336886980164,
+        "y": 143.62676915372288,
+        "labels": [
+          "SWCLK"
+        ]
+      }
+    ],
+    "leds": [
+      {
+        "x": 176.0607433563775,
+        "y": 23.99449601189275,
+        "w": 4.6448543160039275,
+        "h": 9.293214556452027,
+        "color": "#ff0000",
+        "label": "LED"
+      }
+    ],
+    "touchPads": [],
+    "buttons": []
+  },
+  "gpioPinMap": {
+    "LED": "LED",
+    "D2_A2_SDA_SS": "D2_A2_SDA_SS",
+    "D2": "D2_A2_SDA_SS",
+    "A2": "D2_A2_SDA_SS",
+    "SDA": "D2_A2_SDA_SS",
+    "SS": "D2_A2_SDA_SS",
+    "GND2": "GND2",
+    "D3_A3_SCL_SCK": "D3_A3_SCL_SCK",
+    "D3": "D3_A3_SCL_SCK",
+    "A3": "D3_A3_SCL_SCK",
+    "SCL": "D3_A3_SCL_SCK",
+    "SCK": "D3_A3_SCL_SCK",
+    "D0_A0_RX_MISO": "D0_A0_RX_MISO",
+    "D0": "D0_A0_RX_MISO",
+    "A0": "D0_A0_RX_MISO",
+    "RX": "D0_A0_RX_MISO",
+    "MISO": "D0_A0_RX_MISO",
+    "D1_A1_MOSI_TX": "D1_A1_MOSI_TX",
+    "D1": "D1_A1_MOSI_TX",
+    "A1": "D1_A1_MOSI_TX",
+    "MOSI": "D1_A1_MOSI_TX",
+    "TX": "D1_A1_MOSI_TX",
+    "JACK_TX": "D1_A1_MOSI_TX",
+    "VDD": "VDD",
+    "SWDIO": "SWDIO",
+    "VIN": "VIN",
+    "GND": "GND",
+    "A5_D5": "A5_D5",
+    "A5": "A5_D5",
+    "D5": "A5_D5",
+    "A4_D4": "A4_D4",
+    "A4": "A4_D4",
+    "D4": "A4_D4",
+    "SWCLK": "SWCLK"
+  },
+  "groundPins": [
+    "GND2",
+    "GND"
+  ],
+  "threeVoltPins": [
+    "VDD"
+  ],
+  "i2cPins": {
+    "SDA": "SDA",
+    "SCL": "SCL"
+  },
+  "onboardComponents": [],
+  "marginWhenBreadboarding": [
+    0,
+    0,
+    80,
+    0
+  ],
+  "spiPins": {
+    "MOSI": "MOSI",
+    "MISO": "MISO",
+    "SCK": "SCK"
+  }
 }

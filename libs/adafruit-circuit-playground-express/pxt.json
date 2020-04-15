@@ -5,7 +5,7 @@
         "README.md",
         "device.d.ts",
         "config.ts",
-        "ns.ts",
+
         "jacdac.ts",
         "board.json",
         "board.svg"
@@ -14,7 +14,7 @@
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "light": "file:../light",
-        "music": "file:../music",
+        "mixer---samd": "file:../mixer---samd",
         "switch": "file:../switch",
         "touch": "file:../touch",
         "accelerometer": "file:../accelerometer",
@@ -22,12 +22,15 @@
         "thermometer": "file:../thermometer",
         "microphone": "file:../microphone",
         "serial": "file:../serial",
+        "pulse": "file:../pulse",
+        "infrared": "file:../infrared",
         "jacdac": "file:../jacdac",
         "storage": "file:../storage"
     },
     "compileServiceVariant": "samd21",
     "core": true,
     "public": true,
+    "firmwareUrl": "https://learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-uf2-bootloader-details#updating-the-bootloader",
     "features": [
         "uf2",
         "i2c",
@@ -41,6 +44,9 @@
         "microphone",
         "jacdac",
         "light",
-        "storage"
+        "storage",
+        "music",
+        "accelerometer",
+        "ir"
     ]
 }

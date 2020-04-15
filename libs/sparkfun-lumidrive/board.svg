@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400.87mm" height="857.399" viewBox="0 0 400.87 226.853" version="1.1" id="svg8">
+  <g id="layer1" transform="translate(-28.915 82.745)" stroke-width=".804">
+    <path id="rect3909" fill="red" d="M40.976-82.745h388.809v226.853H40.976z"/>
+    <circle id="A3" cx="274.147" cy="-73.843" r="6.892"/>
+    <circle id="A4" cx="256.917" cy="-73.843" r="6.892"/>
+    <circle id="D8" cx="239.688" cy="-73.843" r="6.892"/>
+    <circle id="D9" cx="223.033" cy="-73.843" r="6.892"/>
+    <circle id="GND2" cx="205.229" cy="-73.843" r="6.892"/>
+    <circle id="3V3" cx="188.574" cy="-73.843" r="6.892"/>
+    <circle id="RESETBTN" cx="110.468" cy="124.582" r="6.892"/>
+    <circle id="D6" cx="175.939" cy="123.433" r="6.892"/>
+    <circle id="LED" cx="198.912" cy="-7.51" r="6.892"/>
+    <path id="rect3911" fill="#280b0b" d="M43.273-34.503h61.451v58.006H43.273z"/>
+    <path id="rect3913" fill="#241c1c" d="M344.213-29.334h82.701v55.708h-82.701z"/>
+    <path id="rect3917" fill="#c8beb7" d="M28.915 33.841h58.006v61.451H28.915z"/>
+    <path id="rect3913-9" fill="#241c1c" d="M344.213 26.375h82.701v55.708h-82.701z"/>
+    <circle id="VCC" cx="416.289" cy="-14.976" r="6.892"/>
+    <circle id="LED_CLK" cx="416.289" cy="13.165" r="6.892"/>
+    <circle id="LED_MOSI" cx="416.289" cy="45.327" r="6.892"/>
+    <circle id="GND" cx="416.289" cy="75.191" r="6.892"/>
+  </g>
+</svg>

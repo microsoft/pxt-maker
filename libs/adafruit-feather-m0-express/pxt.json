@@ -5,23 +5,26 @@
         "README.md",
         "device.d.ts",
         "config.ts",
-        "ns.ts",
+
         "board.json",
         "board.svg"
     ],
     "core": true,
     "dependencies": {
         "core---samd": "file:../core---samd",
+        "feather": "file:../feather",
+        "accelerometer": "file:../accelerometer",
         "light": "file:../light",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
-        "music": "file:../music",
+        "mixer---samd": "file:../mixer---samd",
         "pixel": "file:../pixel",
         "serial": "file:../serial",
         "jacdac": "file:../jacdac",
         "storage": "file:../storage"
     },
     "public": true,
+    "firmwareUrl": "https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details#updating-the-bootloader",
     "dalDTS": {
         "corePackage": "../core---samd"
     },
@@ -41,6 +44,8 @@
         "storage",
         "light",
         "screen",
-        "jacdac"
+        "jacdac",
+        "music",
+        "accelerometer"
     ]
 }

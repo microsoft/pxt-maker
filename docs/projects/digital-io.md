@@ -9,27 +9,40 @@
         "url": "/projects/digital-io/blinky",
         "label": "New? Start Here!",
         "cardType": "tutorial",
-        "imageUrl": "/static/projects/digital-io/blinky/gallery.gif",
-        "description": "Learn about forever, pause, digital write"
+        "imageUrl": "/static/projects/digital-io/blinky/gallery.png",
+        "largeImageUrl": "/static/projects/digital-io/blinky/gallery.gif",
+        "videoUrl": "/static/projects/digital-io/blinky/gallery.mp4",
+        "description": "Learn about forever, pause, digital write",
+        "otherActions": []
     },
     {
         "name": "Button LED",
         "url": "/projects/digital-io/button-led",
         "cardType": "tutorial",
-        "imageUrl": "/static/projects/digital-io/button-led/gallery.gif",
-        "description": "Learn about button events"
+        "imageUrl": "/static/projects/digital-io/button-led/gallery.png",
+        "largeImageUrl": "/static/projects/digital-io/button-led/gallery.gif",
+        "videoUrl": "/static/projects/digital-io/button-led/gallery.mp4",
+        "description": "Learn about button events",
+        "otherActions": []
     },
     {
         "name": "Switch LED",
         "url": "/projects/digital-io/switch-led",
         "cardType": "tutorial",
-        "imageUrl": "/static/projects/digital-io/switch-led/gallery.gif",
-        "description": "Learn about digital read"
+        "imageUrl": "/static/projects/digital-io/switch-led/gallery.png",
+        "largeImageUrl": "/static/projects/digital-io/switch-led/gallery.gif",
+        "videoUrl": "/static/projects/digital-io/switch-led/gallery.mp4",
+        "description": "Learn about digital read",
+        "otherActions": []
     },
     {
         "name": "Multi Blinky",
         "url": "/projects/digital-io/multi-blinky",
-        "cardType": "example"
+        "imageUrl": "/static/projects/digital-io/switch-led/gallery.png",
+        "largeImageUrl": "/static/projects/digital-io/switch-led/gallery.gif",
+        "videoUrl": "/static/projects/digital-io/switch-led/gallery.mp4",
+        "cardType": "example",
+        "otherActions": []
     }
 ]
 ```
@@ -37,6 +50,6 @@
 ## See Also
 
 [Blinky](/projects/digital-io/blinky),
-[Button](/projects/digital-io/button-led),
-[Switch](/projects/digital-io/switch-led),
-[Switch](/projects/digital-io/multi-blinky)
+[Button LED](/projects/digital-io/button-led),
+[Switch LED](/projects/digital-io/switch-led),
+[Multi Blinky](/projects/digital-io/multi-blinky)

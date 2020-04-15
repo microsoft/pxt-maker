@@ -3,12 +3,10 @@
 ## Example
 
 ```blocks
-let end: light.NeoPixelStrip = null
-let start: light.NeoPixelStrip = null
-let strip: light.NeoPixelStrip = null
-strip = light.createStrip(pins.D0, 30)
-start = strip.range(0, 10)
-end = strip.range(20, 10)
+let strip = light.defaultStrip()
+light.setLength(30)
+let start = strip.range(0, 10)
+let end = strip.range(20, 10)
 forever(function () {
     start.showAnimation(light.rainbowAnimation, 2000)
 })

@@ -6,20 +6,24 @@
     <title>MakeCode Maker - Board Designer</title>
     <!-- @include head.html -->
     <style>
-        #svg, #svg svg {
-            width:100%;
-            height:100%;
+        #svg,
+        #svg svg {
+            width: 100%;
+            height: 100%;
         }
+
         #svg svg circle:hover,
         #svg svg rect:hover {
             stroke: grey !important;
         }
+
         #svg svg .selected {
             stroke: yellow !important;
         }
+
         textarea {
-            width:100%;
-            height:18rem;
+            width: 100%;
+            height: 18rem;
             font-family: monospace;
             font-size: small;
         }
@@ -29,6 +33,9 @@
     <script>
         const cfgs = {};
         `
+#define CFG_MAGIC0 0x1e9e10f1
+#define CFG_MAGIC1 0x20227a79
+
 // these define keys for getConfig() function
 #define CFG_PIN_ACCELEROMETER_INT 1
 #define CFG_PIN_ACCELEROMETER_SCL 2
@@ -99,6 +106,22 @@
 #define CFG_PIN_JACK_BUSLED 66
 #define CFG_PIN_JACK_COMMLED 67
 
+#define CFG_PIN_BTN_SOFT_RESET 69
+#define CFG_ACCELEROMETER_TYPE 70
+#define CFG_PIN_BTNMX_LATCH 71
+#define CFG_PIN_BTNMX_CLOCK 72
+#define CFG_PIN_BTNMX_DATA 73
+#define CFG_PIN_BTN_MENU2 74
+#define CFG_PIN_BATTSENSE 75
+#define CFG_PIN_VIBRATION 76
+#define CFG_PIN_PWREN 77
+
+#define ACCELEROMETER_TYPE_LIS3DH 0x32
+#define ACCELEROMETER_TYPE_MMA8453 0x38
+#define ACCELEROMETER_TYPE_FXOS8700 0x3C
+#define ACCELEROMETER_TYPE_MMA8653 0x3A
+#define ACCELEROMETER_TYPE_MSA300 0x4C
+
 #define CFG_PIN_A0 100
 #define CFG_PIN_A1 101
 #define CFG_PIN_A2 102
@@ -115,6 +138,22 @@
 #define CFG_PIN_A13 113
 #define CFG_PIN_A14 114
 #define CFG_PIN_A15 115
+#define CFG_PIN_A16 116
+#define CFG_PIN_A17 117
+#define CFG_PIN_A18 118
+#define CFG_PIN_A19 119
+#define CFG_PIN_A20 120
+#define CFG_PIN_A21 121
+#define CFG_PIN_A22 122
+#define CFG_PIN_A23 123
+#define CFG_PIN_A24 124
+#define CFG_PIN_A25 125
+#define CFG_PIN_A26 126
+#define CFG_PIN_A27 127
+#define CFG_PIN_A28 128
+#define CFG_PIN_A29 129
+#define CFG_PIN_A30 130
+#define CFG_PIN_A31 131
 
 #define CFG_PIN_D0 150
 #define CFG_PIN_D1 151
@@ -132,12 +171,111 @@
 #define CFG_PIN_D13 163
 #define CFG_PIN_D14 164
 #define CFG_PIN_D15 165
+#define CFG_PIN_D16 166
+#define CFG_PIN_D17 167
+#define CFG_PIN_D18 168
+#define CFG_PIN_D19 169
+#define CFG_PIN_D20 170
+#define CFG_PIN_D21 171
+#define CFG_PIN_D22 172
+#define CFG_PIN_D23 173
+#define CFG_PIN_D24 174
+#define CFG_PIN_D25 175
+#define CFG_PIN_D26 176
+#define CFG_PIN_D27 177
+#define CFG_PIN_D28 178
+#define CFG_PIN_D29 179
+#define CFG_PIN_D30 180
+#define CFG_PIN_D31 181
 
 #define CFG_NUM_NEOPIXELS 200
 #define CFG_NUM_DOTSTARS 201
 #define CFG_DEFAULT_BUTTON_MODE 202
 #define CFG_SWD_ENABLED 203
 #define CFG_FLASH_BYTES 204
+#define CFG_RAM_BYTES 205
+#define CFG_SYSTEM_HEAP_BYTES 206
+#define CFG_LOW_MEM_SIMULATION_KB 207
+#define CFG_BOOTLOADER_BOARD_ID 208
+#define CFG_UF2_FAMILY 209
+#define CFG_PINS_PORT_SIZE 210
+#define CFG_BOOTLOADER_PROTECTION 211
+#define CFG_POWER_DEEPSLEEP_TIMEOUT 212
+
+#define CFG_PIN_B0 300
+#define CFG_PIN_B1 301
+#define CFG_PIN_B2 302
+#define CFG_PIN_B3 303
+#define CFG_PIN_B4 304
+#define CFG_PIN_B5 305
+#define CFG_PIN_B6 306
+#define CFG_PIN_B7 307
+#define CFG_PIN_B8 308
+#define CFG_PIN_B9 309
+#define CFG_PIN_B10 310
+#define CFG_PIN_B11 311
+#define CFG_PIN_B12 312
+#define CFG_PIN_B13 313
+#define CFG_PIN_B14 314
+#define CFG_PIN_B15 315
+#define CFG_PIN_B16 316
+#define CFG_PIN_B17 317
+#define CFG_PIN_B18 318
+#define CFG_PIN_B19 319
+#define CFG_PIN_B20 320
+#define CFG_PIN_B21 321
+#define CFG_PIN_B22 322
+#define CFG_PIN_B23 323
+#define CFG_PIN_B24 324
+#define CFG_PIN_B25 325
+#define CFG_PIN_B26 326
+#define CFG_PIN_B27 327
+#define CFG_PIN_B28 328
+#define CFG_PIN_B29 329
+#define CFG_PIN_B30 330
+#define CFG_PIN_B31 331
+
+#define CFG_PIN_C0 350
+#define CFG_PIN_C1 351
+#define CFG_PIN_C2 352
+#define CFG_PIN_C3 353
+#define CFG_PIN_C4 354
+#define CFG_PIN_C5 355
+#define CFG_PIN_C6 356
+#define CFG_PIN_C7 357
+#define CFG_PIN_C8 358
+#define CFG_PIN_C9 359
+#define CFG_PIN_C10 360
+#define CFG_PIN_C11 361
+#define CFG_PIN_C12 362
+#define CFG_PIN_C13 363
+#define CFG_PIN_C14 364
+#define CFG_PIN_C15 365
+#define CFG_PIN_C16 366
+#define CFG_PIN_C17 367
+#define CFG_PIN_C18 368
+#define CFG_PIN_C19 369
+#define CFG_PIN_C20 370
+#define CFG_PIN_C21 371
+#define CFG_PIN_C22 372
+#define CFG_PIN_C23 373
+#define CFG_PIN_C24 374
+#define CFG_PIN_C25 375
+#define CFG_PIN_C26 376
+#define CFG_PIN_C27 377
+#define CFG_PIN_C28 378
+#define CFG_PIN_C29 379
+#define CFG_PIN_C30 380
+#define CFG_PIN_C31 381
+
+#define CFG_PIN_LORA_MISO 1001
+#define CFG_PIN_LORA_MOSI 1002
+#define CFG_PIN_LORA_SCK 1003
+#define CFG_PIN_LORA_CS 1004
+#define CFG_PIN_LORA_BOOT 1005
+#define CFG_PIN_LORA_RESET 1006
+#define CFG_PIN_IRRXLED 1007
+#define CFG_PIN_IRTXLED 1008
 `.replace(/#define CFG_(\w+) /g, function (m, id) { cfgs[id] = id });
         console.log(`known cfgs:`)
         console.log(cfgs);
@@ -225,8 +363,10 @@
             }
             else if (/GND/.test(id) && boardjson.groundPins.indexOf(id) < 0)
                 boardjson.groundPins.push(id);
-            else if (/(\+3V3|3V|VCC|VOUT)/.test(id) && boardjson.threeVoltPins.indexOf(id) < 0)
+            else if (/(\+?3V3|3V|VCC|VOUT|VDD)/.test(id) && boardjson.threeVoltPins.indexOf(id) < 0)
                 boardjson.threeVoltPins.push(id);
+            else if (/(\+?5V)/.test(id) && boardjson.fiveVoltPins.indexOf(id) < 0)
+                boardjson.fiveVoltPins.push(id);
             else if (/(BUTTON|BTN_[AB])/.test(id)) {
                 boardjson.visual.buttons.push({
                     x: rect.x,
@@ -316,6 +456,7 @@
                 gpioPinMap: {},
                 groundPins: [],
                 threeVoltPins: [],
+                fiveVoltPins: [],
                 i2cPins: {
                     "SDA": "SDA",
                     "SCL": "SCL"
@@ -421,14 +562,14 @@
             </li>
         </ul>
         <div class="ui segment">
-            <h2>board.svg</h2>
+            <h2>boardhd.svg</h2>
             <ul>
-                <li>Save this file as <code>board.svg</code> in your project and it to the <code>files</code> list in
+                <li>Save this file as <code>boardhd.svg</code> in your project and it to the <code>files</code> list in
                     <code>pxt.json</code></li>
                 <li>
-                    <emph>Keep it small!</emph>: remove extra graphical elements and run <a href="https://github.com/svg/svgo"
-                        target="_blank">SVGO</a> to shrink the size.
+                    <emph>Keep it small!</emph>: remove extra graphical elements to shrink the size.
                 </li>
+                <li>Run <code>npm run svgo</code> to compress boardhd.svg into board.svg</li>
             </ul>
             <textarea class="ui fluid" id="svginput"></textarea>
         </div>

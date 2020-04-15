@@ -7,8 +7,7 @@
         "board.json",
         "board.svg",
         "device.d.ts",
-        "config.ts",
-        "ns.ts"
+        "config.ts"
     ],
     "testFiles": [
         "test.ts"
@@ -18,7 +17,8 @@
         "buttons": "file:../buttons",
         "touch": "file:../touch",
         "light": "file:../light",
-        "music": "file:../music",
+        "accelerometer": "file:../accelerometer",
+        "mixer---samd": "file:../mixer---samd",
         "serial": "file:../serial",
         "jacdac": "file:../jacdac"
     },
@@ -39,6 +39,8 @@
         "spi",
         "i2c",
         "serial",
-        "jacdac"
+        "jacdac",
+        "music",
+        "accelerometer"
     ]
 }

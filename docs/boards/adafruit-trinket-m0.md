@@ -1,6 +1,6 @@
 # Adafruit Trinket M0
 
-```blocks
+```sim
 forever(function() {
 
 })

@@ -1,5 +1,9 @@
 # Boards
 
+This editor supports various maker boards, based on SAMD21, SAMD51, NRF52.
+
+## Current
+
 ```codecard
 [
     {
@@ -8,14 +12,19 @@
         "imageUrl": "/static/libs/adafruit-circuit-playground-express.jpg"
     },
     {
+        "name": "Arduino",
+        "url": "/boards/arduino",
+        "imageUrl": "/static/libs/arduino-mkr1300.jpg"  
+    },
+    {
         "name": "Sparkfun",
         "url": "/boards/sparkfun",
         "imageUrl": "/static/libs/sparkfun-samd21-dev-breakout.jpg"  
     },
     {
-        "name": "Arduino",
-        "url": "/boards/arduino",
-        "imageUrl": "/static/libs/arduino-mkr1300.jpg"  
+        "name": "XinaBox",
+        "url": "/boards/xinabox",
+        "imageUrl": "/static/libs/xinabox-cc03.jpg"  
     },
     {
         "name": "Misc",
@@ -24,7 +33,8 @@
     },
     {
         "name": "Add your board",
-        "url": "/boards/add-a-new-board"
+        "url": "/boards/add-a-new-board",
+        "imageUrl": "/static/libs/bead-servo.jpg"
     }
 ]
 ```
@@ -34,5 +44,6 @@
 [Adafruit](/boards/adafruit),
 [Sparkfun](/boards/sparkfun),
 [Arduino](/boards/arduino),
+[Project Brookdale](/boards/beads),
 [Misc](/boards/misc),
 [Add a new board](/boards/add-a-new-board)

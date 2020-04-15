@@ -1,7 +1,4 @@
-# MakeCode Maker 
-
-[![Build Status](https://travis-ci.org/Microsoft/pxt-maker.svg?branch=master)](https://travis-ci.org/Microsoft/pxt-maker)
-[![Community Discord](https://img.shields.io/discord/448979533891371018.svg)](https://aka.ms/makecodecommunity)
+# MakeCode Maker [![Actions Status](https://github.com/microsoft/pxt-maker/workflows/pxt-buildtarget/badge.svg)](https://github.com/microsoft/pxt-maker/actions)
 
 This is an experimental code editor for maker boards - try it at https://maker.makecode.com.
 
@@ -52,9 +49,19 @@ npm install
 ```
 8. Link pxt-maker back to base pxt repo (add `sudo` for Mac/Linux shells).
 ```
-npm link ../pxt
-npm link ../pxt-common-packages
+rm -Rf node_modules/pxt-core
+rm -Rf node_modules/pxt-common-packages
+pxt link ../pxt
+pxt link ../pxt-common-packages
 ```
+
+If you want to know if your folders are link, run ``ls -l``
+and it will indicate them.
+
+```
+ls -l node_modules/
+```
+
 Note the above command assumes the folder structure of   
 ```
        maker.makecode.com
@@ -63,6 +70,62 @@ Note the above command assumes the folder structure of
   |       |                        |
  pxt      pxt-common-packages  pxt-maker
  ```
+
+### Refresh dal.d.ts files
+
+Whenever you make changes to the ``#defines`` in the .cpp files, you will have to refresh
+the ``dal.d.ts`` files. For that, run
+
+```
+pxt builddaldts
+```
+
+### CODAL changes
+
+If you need to do changes to CODAL itself, follow these steps.
+
+* create a new project in the web editor, then close the web server. Select the hardware you want to work with.
+* using a command prompt, open the ``projects`` folder and find the subfolder with your new project
+* open the folder in Visual Studio Code
+```
+code .
+```
+* open ``pxt.json`` and edit the dependencies to use 
+the ``file:...`` path instead of ``*``
+
+```
+   dependencies: {
+        "adafruit-metro-m0-express": "file:../../libs/adafruit-metro-m0-express"
+   }
+```
+* from the command line, set the ``PXT_NODOCKER`` environment variable to ``1``
+
+```
+export PXT_NODOCKER=1
+```
+
+* run a local build that will create a CODAL checkout automatically. 
+If you are missing tools, you will be notified by the build script.
+
+```
+pxt build --local --force
+```
+
+* go to the ``built/dockercodal`` folder and open all CODAL in a new Visual Studio Code instance
+
+```
+cd built/dockercodal
+code libraries/*
+```
+
+* go to the Git tab in VS Code, and change the branch of the CODAL repository to work on to ``master``. You can create a new branch to start doing your work and pull requests.
+
+* to build CODAL directly, run ``built/codal``
+```
+python build.py
+```
+
+* to rebuild your project from pxt, run ``pxt build --local --force`` from the project folder
 
 ### Running
 
@@ -80,14 +143,14 @@ pxt serve --localbuild
 
 ### Updates
 
-Make sure to pull changes from all repos regularly. More instructions are at https://github.com/Microsoft/pxt#running-a-target-from-localhost
+Make sure to pull changes from all repos regularly. More instructions are at https://github.com/microsoft/pxt#running-a-target-from-localhost
 
 ## Repos 
 
-The pxt-microbit target depends on several other repos. The main ones are:
-- https://github.com/Microsoft/pxt, the PXT framework
-- https://github.com/Microsoft/pxt-commmon-packages, common APIs accross various MakeCode editors
-- https://github.com/lancaster-university/code-core, CODAL core project
+The pxt-maker target depends on several other repos. The main ones are:
+- https://github.com/microsoft/pxt, the PXT framework
+- https://github.com/microsoft/pxt-commmon-packages, common APIs accross various MakeCode editors
+- https://github.com/lancaster-university/codal-core, CODAL core project
 - https://github.com/lancaster-university/codal-mbed, mbed layer
 - https://github.com/lancaster-university/codal-samd21, CODAL SAMD21 layer
 - https://github.com/lancaster-university/codal-circuit-playground, Adafruit CPX layer

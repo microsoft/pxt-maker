@@ -1,0 +1,54 @@
+{
+  "driveDisplayName": "CS11",
+  "visual": {
+    "image": "pkg://board.svg",
+    "useCrocClips": false,
+    "width": 1251.969970703125,
+    "height": 1251.969970703125,
+    "pinDist": 15,
+    "pinBlocks": [],
+    "leds": [
+      {
+        "x": 437.0403616599677,
+        "y": 819.3046181348628,
+        "w": 20,
+        "h": 20,
+        "color": "#0000ff",
+        "label": "LED_B"
+      },
+      {
+        "x": 437.0403616599677,
+        "y": 839.3046181348628,
+        "w": 20,
+        "h": 20,
+        "color": "#00ff00",
+        "label": "LED_G"
+      },
+      {
+        "x": 437.0403616599677,
+        "y": 859.3046181348628,
+        "w": 20,
+        "h": 20,
+        "color": "#ff0000",
+        "label": "LED_R"
+      }
+    ],
+    "touchPads": [],
+    "buttons": []
+  },
+  "gpioPinMap": {},
+  "groundPins": [],
+  "threeVoltPins": [],
+  "fiveVoltPins": [],
+  "i2cPins": {
+    "SDA": "SDA",
+    "SCL": "SCL"
+  },
+  "onboardComponents": [],
+  "marginWhenBreadboarding": [
+    0,
+    0,
+    80,
+    0
+  ]
+}

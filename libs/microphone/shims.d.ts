@@ -2,7 +2,7 @@
 declare namespace input {
 
     /**
-     * Registers an event that runs when a lound sound is detected
+     * Registers an event that runs when a loud sound is detected
      */
     //% help=input/on-loud-sound
     //% blockId=input_on_loud_sound block="on loud sound"
@@ -25,7 +25,7 @@ declare namespace input {
     //% help=input/set-loud-sound-threshold
     //% blockId=input_set_loud_sound_threshold block="set loud sound threshold %value"
     //% parts="microphone"
-    //% value.min=1 value.max=100
+    //% value.min=1 value.max=255
     //% group="More" weight=14 blockGap=8 shim=input::setLoudSoundThreshold
     function setLoudSoundThreshold(value: int32): void;
 }

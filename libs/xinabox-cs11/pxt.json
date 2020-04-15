@@ -1,0 +1,36 @@
+{
+    "name": "xinabox-cs11",
+    "description": "Support for XinaBox CS11 - Beta",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+
+        "board.json",
+        "board.svg"
+    ],
+    "core": true,
+    "dependencies": {
+        "core---samd": "file:../core---samd",
+	"serial": "file:../serial",
+	"storage": "file:../storage",
+        "jacdac": "file:../jacdac"
+    },
+	"public": true,
+    "compileServiceVariant": "samd21",
+    "features": [
+        "uf2",
+        "pixel",
+        "pinled",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
+        "toucha0",
+        "toucha1",
+        "storage",
+        "jacdac"
+	]
+}

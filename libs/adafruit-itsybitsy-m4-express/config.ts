@@ -9,7 +9,7 @@ namespace config {
     export const PIN_A0 = DAL.PA02;
     export const PIN_A1 = DAL.PA05;
     export const PIN_A2 = DAL.PB08;
-    export const PIN_A3 = DAL.PA09;
+    export const PIN_A3 = DAL.PB09;
     export const PIN_A4 = DAL.PA04;
     export const PIN_A5 = DAL.PA06;
 
@@ -41,6 +41,8 @@ namespace config {
     export const PIN_TX = PIN_D1;
     export const PIN_JACK_TX = PIN_TX;
     export const PIN_JACK_COMMLED = PIN_LED;
+
+    export const PIN_ACCELEROMETER_INT = PIN_D2;
 
     export const PIN_DISPLAY_CS = PIN_A2;
     export const PIN_DISPLAY_SCK = PIN_SCK;

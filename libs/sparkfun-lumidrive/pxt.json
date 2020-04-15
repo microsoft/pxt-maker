@@ -1,0 +1,29 @@
+{
+    "name": "sparkfun-lumidrive",
+    "description": "The SparkFun LumiDrive - beta",
+    "core": true,
+    "files": [
+        "README.md",
+        "board.json",
+        "board.svg",
+        "device.d.ts",
+        "config.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "dependencies": {
+        "core---samd": "file:../core---samd",
+        "buttons": "file:../buttons",
+        "touch": "file:../touch",
+        "light": "file:../light",
+        "jacdac": "file:../jacdac"
+    },
+    "compileServiceVariant": "samd21",
+    "features": [
+        "uf2",
+        "light",
+        "jacdac"
+    ],
+    "public": true
+}

@@ -7,8 +7,7 @@
         "board.json",
         "board.svg",
         "device.d.ts",
-        "config.ts",
-        "ns.ts"
+        "config.ts"
     ],
     "testFiles": [
         "test.ts"
@@ -18,7 +17,9 @@
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "touch": "file:../touch",
-        "music": "file:../music",
+        "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
+        "mixer---samd": "file:../mixer---samd",
         "pixel": "file:../pixel",
         "serial": "file:../serial",
         "jacdac": "file:../jacdac",
@@ -43,7 +44,12 @@
         "i2c",
         "serial",
         "jacdac",
-        "storage"
+        "storage",
+        "music",
+        "light",
+        "accelerometer",
+        "lcd"
     ],
-    "public": true
+    "public": true,
+    "firmwareUrl": "https://github.com/sparkfun/RedBoard_Turbo/tree/master/Firmware/UF2%20Bootloader"
 }

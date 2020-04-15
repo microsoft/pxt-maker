@@ -5,7 +5,7 @@
         "README.md",
         "device.d.ts",
         "config.ts",
-        "ns.ts",
+
         "board.json",
         "board.svg"
     ],
@@ -14,6 +14,8 @@
         "core---samd": "file:../core---samd",
         "buttons": "file:../buttons",
         "light": "file:../light",
+        "accelerometer": "file:../accelerometer",
+        "mixer---samd": "file:../mixer---samd",
         "touch": "file:../touch",
         "pixel": "file:../pixel",
         "serial": "file:../serial",
@@ -22,6 +24,7 @@
     },
     "public": true,
     "compileServiceVariant": "samd21",
+    "firmwareUrl": "https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details#updating-the-bootloader",
     "weight": 100,
     "features": [
         "uf2",
@@ -38,6 +41,9 @@
         "storage",
         "light",
         "screen",
-        "jacdac"
+        "jacdac",
+        "music",
+        "accelerometer",
+        "lcd"
     ]
 }

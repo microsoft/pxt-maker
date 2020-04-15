@@ -1,4 +1,24 @@
 // Auto-generated. Do not edit.
+declare namespace light {
+
+    /**
+     * Send a programmable light buffer to the specified digital pin
+     * @param data The pin that the lights are connected to
+     * @param clk the clock line if any
+     * @param mode the color encoding mode
+     * @param buf The buffer to send to the pin
+     */
+    //% shim=light::sendBuffer
+    function sendBuffer(data: DigitalInOutPin, clk: DigitalInOutPin, mode: int32, buf: Buffer): void;
+}
+declare namespace control {
+
+    /**
+     * Determines if the USB has been enumerated.
+     */
+    //% shim=control::isUSBInitialized
+    function isUSBInitialized(): boolean;
+}
 declare namespace pins {
 
     /**
@@ -119,7 +139,7 @@ declare interface DigitalInOutPin {
      * @param value the value of the pulse (default high)
      * @param maximum duration in micro-seconds
      */
-    //% blockId="pins_pulse_in" block="pulse in (µs)|pin %name|pulsed %high||timeout %maxDuration (us)"
+    //% blockId="pins_pulse_in" block="pulse in (µs)|pin %name|pulsed %high||timeout %maxDuration (µs)"
     //% weight=18 blockGap=8
     //% help="pins/pulse-in"
     //% blockNamespace=pins
@@ -194,6 +214,12 @@ declare interface PwmOnlyPin {
     //% name.fieldOptions.width=220
     //% name.fieldOptions.columns=4 shim=PwmOnlyPinMethods::servoSetPulse
     servoSetPulse(duration: int32): void;
+
+    /**
+     * Indicates if the servo is running continuously
+     */
+    //% blockHidden=1 shim=PwmOnlyPinMethods::servoSetContinuous
+    servoSetContinuous(continuous: boolean): void;
 }
 declare namespace control {
 
@@ -260,6 +286,12 @@ declare namespace pins {
     //% help=pins/create-spi
     //% parts=spi shim=pins::createSPI
     function createSPI(mosiPin: DigitalInOutPin, misoPin: DigitalInOutPin, sckPin: DigitalInOutPin): SPI;
+
+    /**
+     * Opens a slave SPI driver
+     */
+    //% parts=spi shim=pins::createSlaveSPI
+    function createSlaveSPI(mosiPin: DigitalInOutPin, misoPin: DigitalInOutPin, sckPin: DigitalInOutPin, csPin: DigitalInOutPin): SPI;
 }
 
 
@@ -273,7 +305,7 @@ declare interface SPI {
     /**
      * Transfer buffers over the SPI bus
      */
-    //% shim=SPIMethods::transfer
+    //% argsNullable shim=SPIMethods::transfer
     transfer(command: Buffer, response: Buffer): void;
 
     /**
@@ -288,17 +320,35 @@ declare interface SPI {
     //% shim=SPIMethods::setMode
     setMode(mode: int32): void;
 }
-declare namespace light {
+declare namespace configStorage {
 
     /**
-     * Send a programmable light buffer to the specified digital pin
-     * @param data The pin that the light are connected to
-     * @param clk the clock line if nay
-     * @param mode the color encoding mode
-     * @param buf The buffer to send to the pin
+     * Puts an entry in the device storage. Key may have up to 16 characters (bytes).
+     * @param key the identifier (max 16 characters)
+     * @param value the data (max 32 characters)
      */
-    //% shim=light::sendBuffer
-    function sendBuffer(data: DigitalInOutPin, clk: DigitalInOutPin, mode: int32, buf: Buffer): void;
+    //% shim=configStorage::setBuffer
+    function setBuffer(key: string, value: Buffer): void;
+
+    /**
+     * Gets an entry from the device storage. Key may have up to 16 characters (bytes).
+     * @param key the identifier (max 16 characters)
+     */
+    //% shim=configStorage::getBuffer
+    function getBuffer(key: string): Buffer;
+
+    /**
+     * Removes the key from local storage
+     * @param key the identifier (max 16 characters)
+     */
+    //% shim=configStorage::removeItem
+    function removeItem(key: string): void;
+
+    /**
+     * Clears the local storage
+     */
+    //% shim=configStorage::clear
+    function clear(): void;
 }
 
 // Auto-generated. Do not edit. Really.

@@ -1,6 +1,9 @@
 {
-    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/game",
+    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/game---hw",
     "dependencies": {
-        "screen---st7735": "file:../screen---st7735"
+        "settings": "file:../settings",
+        "screen---st7735": "file:../screen---st7735",
+        "mixer": "file:../mixer",
+        "power": "file:../power"
     }
 }

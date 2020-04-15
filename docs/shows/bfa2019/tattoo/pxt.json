@@ -1,0 +1,12 @@
+{
+    "name": "tattoo-bead",
+    "dependencies": {
+        "bead-tattoo": "file:../../../../libs/bead-tattoo"
+    },
+    "description": "",
+    "files": [
+        "main.ts",
+        "README.md"
+    ],
+    "preferredEditor": "tsprj"
+}

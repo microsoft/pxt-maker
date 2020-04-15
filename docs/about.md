@@ -52,4 +52,9 @@ forever(function() {
 
 ## Open Source
 
-Maker is open source on GitHub at https://github.com/Microsoft/pxt-maker .
+Maker is open source on GitHub at https://github.com/microsoft/pxt-maker .
+
+## Forum and chat
+
+* Post a question on the [MakeCode Forum](https://forum.makecode.com)
+* Chat with other users on the [MakeCode Discord](https://aka.ms/makecodecommunity)

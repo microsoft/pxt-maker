@@ -21,7 +21,7 @@ namespace config {
     export const PIN_D12 = DAL.PA22;
     export const PIN_D3 = PIN_D12; // D12
     export const PIN_D13 = DAL.PA23;
-    export const PIN_LED = DAL.PA23;  // D13
+    export const PIN_LED = PIN_D13;  // D13
     export const PIN_RX = DAL.PB17; // D0
     export const PIN_TX = DAL.PB16; // D1
     export const PIN_MISO = DAL.PB22;
@@ -36,6 +36,8 @@ namespace config {
     export const PIN_FLASH_MOSI = DAL.PA08; // QSPI_DATA[0]
     export const PIN_FLASH_SCK = DAL.PB10; // QSPI_SCK
     export const PIN_FLASH_CS = DAL.PB11; // QSPI_CS
+
+    export const PIN_ACCELEROMETER_INT = PIN_D5;
 
     export const PIN_JACK_TX = PIN_TX; // A4
     export const PIN_JACK_COMMLED = PIN_LED; // LED
