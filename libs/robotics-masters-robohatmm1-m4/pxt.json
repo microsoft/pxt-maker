@@ -22,9 +22,6 @@
         "storage": "file:../storage"
     },
     "public": true,
-    "dalDTS": {
-        "corePackage": "../core---samd51"
-    },
     "features": [
         "uf2",
         "i2c",

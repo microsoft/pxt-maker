@@ -17,9 +17,6 @@
         "buttons": "file:../buttons"
     },
     "public": true,
-    "dalDTS": {
-        "corePackage": "../core---nrf52"
-    },
     "features": [
         "pina0",
         "pina1",

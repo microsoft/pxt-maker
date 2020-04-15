@@ -1,0 +1,31 @@
+{
+    "name": "adafruit-neotrellis-m4-express",
+    "description": "Support for Adafruit Neotrellis M4 Express - beta",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "core": true,
+    "compileServiceVariant": "samd51",
+    "dependencies": {
+        "core---samd51": "file:../core---samd51",
+        "light": "file:../light",
+        "pixel": "file:../pixel",
+        "matrix-keypad": "file:../matrix-keypad"
+    },
+    "public": true,
+    "features": [
+        "uf2",
+        "pixel",
+        "light",
+        "storage",
+        "jacdac",
+        "keypad"
+    ]
+}
