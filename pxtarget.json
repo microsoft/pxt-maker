@@ -151,7 +151,6 @@
     "compile": {
         "isNative": true,
         "useUF2": true,
-        "webUSB": true,
         "hasHex": true,
         "saveAsPNG": true,
         "deployDrives": ".*",
@@ -207,6 +206,7 @@
                 "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd51g19; source [find target/atsame5x.cfg]",
                 "openocdScriptAlt": "source [find interface/stlink-v2.cfg]; set CPUTAPID 0x2ba01477; set CHIPNAME at91samd51g19; source [find target/at91samdXX.cfg]",
                 "ramSize": 196608,
+                "webUSB": true,
                 "uf2Family": "0x55114460"
             },
             "compileService": {
@@ -294,7 +294,8 @@
                 "hasHex": true,
                 "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
                 "openocdScriptAlt": "source [find interface/stlink-v2.cfg]; set CPUTAPID 0x0bc11477; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
-                "uf2Family": "0x68ed2b88"
+                "uf2Family": "0x68ed2b88",
+                "webUSB": false
             },
             "compileService": {
                 "codalTarget": {
