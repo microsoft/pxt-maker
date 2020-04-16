@@ -398,7 +398,6 @@
             "arrays": "#8A1C7C"
         },
         "allowPackageExtensions": true,
-        "extendEditor": true,
         "crowdinProject": "kindscript",
         "scriptManager": true,
         "simScreenshot": true,
