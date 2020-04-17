@@ -147,10 +147,6 @@ namespace pxsim {
             this.builtinParts["lcd"] =  this.lcdState;
             this.builtinVisuals["lcd"] = () => new visuals.LCDView();
             this.builtinPartVisuals["lcd"] = (xy: visuals.Coord) => visuals.mkLCDPart(xy);
-            
-            this.builtinParts["pixels"] = (pin: Pin) => { return this.neopixelState(undefined); };
-            this.builtinVisuals["pixels"] = () => new visuals.NeoPixelView(parsePinString);
-            this.builtinPartVisuals["pixels"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
 
             this.builtinPartVisuals["buttons"] = (xy: visuals.Coord) => visuals.mkBtnSvg(xy);
 
@@ -171,10 +167,14 @@ namespace pxsim {
             this.builtinPartVisuals["screen"] = (xy: visuals.Coord) => visuals.mkScreenPart(xy);
 
             
-            const neopixelPinCfg = getConfig(DAL.CFG_PIN_NEOPIXEL) ||
-                getConfig(DAL.CFG_PIN_DOTSTAR_DATA);
-            if (neopixelPinCfg !== null)
-                this.neopixelPin = this.edgeConnectorState.getPin(neopixelPinCfg);
+            this.neopixelPin = this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_ONBOARD_DOTSTAR_DATA)) 
+            || this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_ONBOARD_NEOPIXEL))
+            || this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_DOTSTAR_DATA)) 
+            || this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_NEOPIXEL));
+            
+            this.builtinParts["pixels"] = (pin: Pin) => { return this.neopixelState(!!this.neopixelPin && this.neopixelPin.id); };
+            this.builtinVisuals["pixels"] = () => new visuals.NeoPixelView(parsePinString);
+            this.builtinPartVisuals["pixels"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);    
         }
 
         receiveMessage(msg: SimulatorMessage) {

@@ -1,8 +1,8 @@
 
 namespace config {
-    export const PIN_DOTSTAR_DATA = DAL.PA00;
-    export const PIN_DOTSTAR_CLOCK = DAL.PA01;
-    export const NUM_DOTSTARS = 1;
+    export const PIN_ONBOARD_DOTSTAR_DATA = DAL.PA00;
+    export const PIN_ONBOARD_DOTSTAR_CLOCK = DAL.PA01;
+    export const NUM_ONBOARD_DOTSTARS = 1;
 
     export const PIN_D0 = DAL.PA08;
     export const PIN_D1 = DAL.PA02;
@@ -31,6 +31,4 @@ namespace config {
 
     // not supported
     export const PIN_JACK_TX = PIN_TX;
-
-    export const PIN_ACCELEROMETER_INT = PIN_D1;
 }
