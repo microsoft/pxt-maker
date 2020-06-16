@@ -19,8 +19,7 @@
         "light": "file:../light",
         "accelerometer": "file:../accelerometer",
         "mixer---samd": "file:../mixer---samd",
-        "serial": "file:../serial",
-        "jacdac": "file:../jacdac"
+        "serial": "file:../serial"
     },
     "public": true,
     "compileServiceVariant": "samd21",

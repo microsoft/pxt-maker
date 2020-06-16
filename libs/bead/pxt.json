@@ -7,8 +7,7 @@
     "testFiles": [
     ],
     "dependencies": {
-        "core": "file:../core",
-        "jacdac": "file:../jacdac"
+        "core": "file:../core"
     },
     "public": true,
     "compileServiceVariant": "samd21",

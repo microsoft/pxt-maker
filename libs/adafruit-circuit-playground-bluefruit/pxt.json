@@ -5,8 +5,6 @@
         "README.md",
         "device.d.ts",
         "config.ts",
-
-        "jacdac.ts",
         "board.json",
         "board.svg"
     ],
@@ -21,8 +19,7 @@
         "microphone": "file:../microphone",
         "thermometer": "file:../thermometer",
         "serial": "file:../serial",
-        "pulse": "file:../pulse",
-        "jacdac": "file:../jacdac"
+        "pulse": "file:../pulse"
     },
     "compileServiceVariant": "nrf52840",
     "core": true,

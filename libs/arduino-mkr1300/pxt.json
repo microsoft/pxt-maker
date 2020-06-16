@@ -19,7 +19,6 @@
         "touch": "file:../touch",
         "mixer---samd": "file:../mixer---samd",
         "serial": "file:../serial",
-        "jacdac": "file:../jacdac",
         "lora": "file:../lora"
     },
     "public": true,

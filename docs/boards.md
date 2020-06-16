@@ -44,6 +44,5 @@ This editor supports various maker boards, based on SAMD21, SAMD51, NRF52.
 [Adafruit](/boards/adafruit),
 [Sparkfun](/boards/sparkfun),
 [Arduino](/boards/arduino),
-[Project Brookdale](/boards/beads),
 [Misc](/boards/misc),
 [Add a new board](/boards/add-a-new-board)

@@ -16,8 +16,7 @@
         "light": "file:../light",
         "pixel": "file:../pixel",
         "touch": "file:../touch",
-        "serial": "file:../serial",
-        "jacdac": "file:../jacdac"
+        "serial": "file:../serial"
     },
     "public": true,
     "firmwareUrl": "https://learn.adafruit.com/adafruit-gemma-m0/uf2-bootloader-details#updating-the-bootloader",

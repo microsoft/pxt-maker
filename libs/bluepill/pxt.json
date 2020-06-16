@@ -12,8 +12,7 @@
     "compileServiceVariant": "stm32f103",
     "dependencies": {
         "base---light": "file:../base---light",
-        "core---stm32": "file:../core---stm32",
-        "jacdac": "file:../jacdac"
+        "core---stm32": "file:../core---stm32"        
     },
     "core": true,
     "public": true,

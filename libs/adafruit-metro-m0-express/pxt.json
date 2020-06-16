@@ -19,7 +19,6 @@
         "touch": "file:../touch",
         "pixel": "file:../pixel",
         "serial": "file:../serial",
-        "jacdac": "file:../jacdac",
         "storage": "file:../storage"
     },
     "public": true,

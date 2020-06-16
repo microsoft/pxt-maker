@@ -115,10 +115,6 @@
         "url": "/projects/radio"
     },
     {
-        "name": "JACDAC",
-        "url": "/projects/jacdac"
-    },
-    {
         "name": "Boards",
         "url": "/boards",
         "imageUrl": "/static/libs/adafruit-circuit-playground-express.jpg"
@@ -148,6 +144,5 @@
 [LoRa](/projects/lora),
 [Power](/projects/power),
 [Bit Radio](/projects/radio),
-[JACDAC](/projects/jacdac),
 [Boards](/boards)
 

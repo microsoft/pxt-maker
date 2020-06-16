@@ -23,8 +23,7 @@
         "accelerometer": "file:../accelerometer",
         "touch": "file:../touch",
         "light": "file:../light",
-        "servo": "file:../servo",
-        "jacdac-services": "file:../jacdac-services"
+        "servo": "file:../servo"
     },
     "public": true,
     "compileServiceVariant": "samd21",
