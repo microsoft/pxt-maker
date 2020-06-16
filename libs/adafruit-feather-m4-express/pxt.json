@@ -17,8 +17,7 @@
         "pixel": "file:../pixel",
         "light": "file:../light",
         "accelerometer": "file:../accelerometer",
-        "buttons": "file:../buttons",
-        "jacdac": "file:../jacdac"
+        "buttons": "file:../buttons"
     },
     "public": true,
     "firmwareUrl": "https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/update-bootloader",

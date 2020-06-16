@@ -3,7 +3,6 @@
     "cppDependencies": {
         "accelerometer": "file:../accelerometer",
         "buttons": "file:../buttons",
-        "jacdac": "file:../jacdac",
         "light": "file:../light",
         "lightsensor": "file:../lightsensor",
         "screen---st7735": "file:../screen---st7735",

@@ -22,7 +22,6 @@
         "mixer---samd": "file:../mixer---samd",
         "pixel": "file:../pixel",
         "serial": "file:../serial",
-        "jacdac": "file:../jacdac",
         "storage": "file:../storage"
     },
     "compileServiceVariant": "samd21",

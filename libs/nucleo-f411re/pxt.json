@@ -11,8 +11,7 @@
     ],
     "compileServiceVariant": "stm32f401",
     "dependencies": {
-        "core---stm32": "file:../core---stm32",
-        "jacdac": "file:../jacdac"
+        "core---stm32": "file:../core---stm32"
     },
     "core": true,
     "public": true,

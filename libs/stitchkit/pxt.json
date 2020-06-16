@@ -15,8 +15,7 @@
         "buttons": "file:../buttons",
         "touch": "file:../touch",
         "light": "file:../light",
-        "accelerometer": "file:../accelerometer",
-        "jacdac": "file:../jacdac"
+        "accelerometer": "file:../accelerometer"        
     },
     "public": true,
     "compileServiceVariant": "samd21",

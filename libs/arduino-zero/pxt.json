@@ -17,8 +17,7 @@
         "accelerometer": "file:../accelerometer",
         "touch": "file:../touch",
         "mixer---samd": "file:../mixer---samd",
-        "serial": "file:../serial",
-        "jacdac": "file:../jacdac"
+        "serial": "file:../serial"
     },
     "public": true,
     "compileServiceVariant": "samd21",

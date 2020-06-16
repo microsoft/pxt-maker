@@ -13,7 +13,6 @@
     "dependencies": {
         "core---samd": "file:../core---samd",
 	"serial": "file:../serial",
-        "jacdac": "file:../jacdac",
         "storage": "file:../storage"
     },
 	"public": true,

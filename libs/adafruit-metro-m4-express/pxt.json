@@ -16,8 +16,7 @@
         "pixel": "file:../pixel",
         "light": "file:../light",
         "accelerometer": "file:../accelerometer",
-        "buttons": "file:../buttons",
-        "jacdac": "file:../jacdac"
+        "buttons": "file:../buttons"
     },
     "public": true,
     "firmwareUrl": "https://learn.adafruit.com/adafruit-metro-m4-express-featuring-atsamd51/uf2-bootloader-details",

@@ -15,8 +15,7 @@
         "light": "file:../light",
         "touch": "file:../touch",
         "mixer---samd": "file:../mixer---samd",
-        "servo": "file:../servo",
-        "jacdac": "file:../jacdac"
+        "servo": "file:../servo"
     },
     "core": true,
     "public": true,

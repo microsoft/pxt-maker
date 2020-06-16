@@ -15,8 +15,7 @@
         "light": "file:../light",
         "mixer---samd": "file:../mixer---samd",
         "touch": "file:../touch",
-        "pixel": "file:../pixel",
-        "jacdac": "file:../jacdac"
+        "pixel": "file:../pixel"
     },
     "public": true,
     "compileServiceVariant": "samd21",

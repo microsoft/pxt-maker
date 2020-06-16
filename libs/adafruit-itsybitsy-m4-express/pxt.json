@@ -16,8 +16,7 @@
         "pixel": "file:../pixel",
         "light": "file:../light",
         "accelerometer": "file:../accelerometer",
-        "buttons": "file:../buttons",
-        "jacdac": "file:../jacdac"
+        "buttons": "file:../buttons"
     },
     "public": true,
     "firmwareUrl": "https://learn.adafruit.com/introducing-adafruit-itsybitsy-m4#uf2-bootloader-details",

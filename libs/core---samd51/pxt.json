@@ -4,7 +4,6 @@
         "accelerometer": "file:../accelerometer",
         "buttons": "file:../buttons",
         "game": "file:../game",
-        "jacdac": "file:../jacdac",
         "light": "file:../light",
         "lightsensor": "file:../lightsensor",
         "microphone": "file:../microphone",
