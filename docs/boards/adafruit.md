@@ -80,6 +80,12 @@
         "imageUrl": "/static/libs/adafruit-feather-nrf52840-express.jpg"  
     },
     {
+        "name": "Adafruit ItsyBitsy NRF52840 Express",
+        "url": "/boards/adafruit-itsybitsy-nrf52840-express",
+        "cardType": "template",
+        "imageUrl": "/static/libs/adafruit-itsybitsy-nrf52840-express.jpg"  
+    },
+    {
         "name": "Adafruit Circuit Playground Bluefruit",
         "url": "/boards/adafruit-circuit-playground-bluefruit",
         "cardType": "template",

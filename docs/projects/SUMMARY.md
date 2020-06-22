@@ -10,6 +10,7 @@
   * [Adafruit Feather M4 Express](/boards/adafruit-feather-m4-express)
   * [Adafruit ItsyBitsy M4 Express](/boards/adafruit-itsybitsy-m4-express)
   * [Adafruit Feather Bluefruit NRF52840](/boards/adafruit-feather-nrf52840-express)
+  * [Adafruit ItsyBitsy NRF52840 Express](/boards/adafruit-itsybitsy-nrf52840-express)
   * [Adafruit Circuit Playground Bluefruit](/boards/adafruit-circuit-playground-bluefruit)
 * [Arduino](/boards/arduino)
   * [Arduino MKR](/boards/arduino-mkr1000)
