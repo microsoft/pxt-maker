@@ -549,6 +549,8 @@ declare const enum DAL {
     LEVEL_DETECTOR_SPL_HIGH_THRESHOLD_PASSED = 2,
     LEVEL_DETECTOR_SPL_LOW_THRESHOLD_PASSED = 4,
     LEVEL_DETECTOR_SPL_DEFAULT_WINDOW_SIZE = 128,
+    // /libraries/codal-core/inc/streams/MemorySource.h
+    MEMORY_SOURCE_MAX_BUFFER = 256,
     // /libraries/codal-core/inc/streams/Synthesizer.h
     SYNTHESIZER_SAMPLE_RATE = 44100,
     TONE_WIDTH = 1024,
@@ -932,9 +934,6 @@ declare const enum DAL {
     CFG_PIN_SS = 1042,
     // /pxtapp/hf2dbg.h
     HF2DBG_H = 1,
-    // /pxtapp/jacdac/jdprotocol.h
-    JDSPI_MAGIC = 31437,
-    JDSPI_MAGIC_NOOP = 46029,
     // /pxtapp/pins.h
     BUTTON_ACTIVE_HIGH_PULL_DOWN = 17,
     BUTTON_ACTIVE_HIGH_PULL_UP = 33,
@@ -1065,11 +1064,6 @@ declare const enum DAL {
     GC = 0,
     // /pxtapp/pxtconfig.h
     PXT_UF2_FAMILY = 1467308631,
-    // /pxtapp/settings/Flash.h
-    DEVICE_FLASH_ERROR = 922,
-    // /pxtapp/settings/RAFFS.h
-    RAFFS_FOLLOWING_MASK = 32768,
-    RAFFS_FLASH_BUFFER_SIZE = 64,
     // /pxtapp/uf2hid.h
     UF2_HID_H = 1,
 }

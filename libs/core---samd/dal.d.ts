@@ -935,9 +935,6 @@ declare const enum DAL {
     CFG_PIN_SS = 1042,
     // /pxtapp/hf2dbg.h
     HF2DBG_H = 1,
-    // /pxtapp/jacdac/jdprotocol.h
-    JDSPI_MAGIC = 31437,
-    JDSPI_MAGIC_NOOP = 46029,
     // /pxtapp/mixer---samd/melody.h
     SW_TRIANGLE = 1,
     SW_SAWTOOTH = 2,
@@ -1078,6 +1075,9 @@ declare const enum DAL {
     GC = 0,
     // /pxtapp/pxtconfig.h
     PXT_UF2_FAMILY = 1760373640,
+    // /pxtapp/screen---st7735/jdprotocol.h
+    JDSPI_MAGIC = 31437,
+    JDSPI_MAGIC_NOOP = 46029,
     // /pxtapp/serial/serial-common.h
     BaudRate115200 = 115200,
     BaudRate57600 = 57600,
@@ -1099,10 +1099,11 @@ declare const enum DAL {
     Colon = 58,
     Fullstop = 46,
     Hash = 35,
-    SemiColumn = 59,
+    CarriageReturn = 13,
     Space = 32,
     Tab = 9,
     Pipe = 124,
+    SemiColon = 59,
     // /pxtapp/settings/RAFFS.h
     RAFFS_FOLLOWING_MASK = 32768,
     RAFFS_FLASH_BUFFER_SIZE = 64,

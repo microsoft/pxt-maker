@@ -87,7 +87,8 @@
         "libs/sparkfun-samd21-mini-breakout",
         "libs/sparkfun-redboard-turbo",
         "libs/sparkfun-lumidrive",
-        "libs/stitchkit"
+        "libs/stitchkit",
+        "libs/teknikio-bluebird"
     ],
     "serial": {
         "useHF2": true,
@@ -232,6 +233,35 @@
                     "name": "codal-nrf52840-dk",
                     "url": "https://github.com/mmoskal/codal-nrf52840-dk",
                     "branch": "v1.1.7",
+                    "type": "git"
+                },
+                "codalBinary": "NRF52840_DK",
+                "serviceId": "codal2nrf52840",
+                "dockerImage": "pext/yotta:latest",
+                "yottaConfig": {
+                    "pxt": {
+                        "board": {
+                            "id": "BOARD_ID_NRF52840"
+                        }
+                    }
+                }
+            }
+        },
+        "nrf52840b": {
+            "serial": {
+                "useHF2": false
+            },
+            "compile": {
+                "openocdScript": "source [find interface/cmsis-dap.cfg]; source [find target/nrf52.cfg]",
+                "flashChecksumAddr": 0,
+                "webUSB": false,
+                "uf2Family": "0xada52840"                
+            },
+            "compileService": {
+                "codalTarget": {
+                    "name": "codal-nrf52840-dk",
+                    "url": "https://github.com/Teknikio/codal-nrf52840-dk",
+                    "branch": "master",
                     "type": "git"
                 },
                 "codalBinary": "NRF52840_DK",
