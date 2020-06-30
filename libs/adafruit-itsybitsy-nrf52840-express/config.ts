@@ -29,6 +29,12 @@ namespace config {
 
     export const PIN_BTN_A = DAL.P0_29;
 
+    /*
+    export const PIN_JACK_TX = PIN_D13;
+    export const PIN_JACK_PWREN = PIN_D9;
+    export const PIN_JACK_SENSE = PIN_D7;
+    */
+
     export const PIN_DOTSTAR_DATA = DAL.P0_8;
     export const PIN_DOTSTAR_CLOCK = DAL.P1_9;
     export const NUM_DOTSTARS = 1;
