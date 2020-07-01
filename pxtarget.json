@@ -71,6 +71,7 @@
         "libs/adafruit-metro-m4-express",
         "libs/adafruit-itsybitsy-m0-express",
         "libs/adafruit-itsybitsy-m4-express",
+        "libs/adafruit-itsybitsy-nrf52840-express",
         "libs/adafruit-neotrellis-m4-express",
         "libs/adafruit-gemma-m0",
         "libs/robotics-masters-robohatmm1-m4",

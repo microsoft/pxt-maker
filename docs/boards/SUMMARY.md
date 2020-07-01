@@ -10,6 +10,7 @@
     * [Feather M4 Express](/boards/adafruit-feather-m4-express)
     * [ItsyBitsy M4 Express](/boards/adafruit-itsybitsy-m4-express)
     * [Feather Bluefruit NRF52840](/boards/adafruit-feather-nrf52840-express)
+    * [ItsyBitsy nrf52840 Express](/boards/adafruit-itsybitsy-nrf52840-express)
     * [Circuit Playground Bluefruit](/boards/adafruit-circuit-playground-bluefruit)
 * [SparkFun](/boards/sparkfun)
     * [RedBoard Turbo](/boards/sparkfun-redboard-turbo)
