@@ -18,6 +18,11 @@
     "dalDTS": {
         "corePackage": "../core---stm32"
     },
+    "yotta": {
+        "config": {
+            "DEVICE_USB": 1
+        }
+    },
     "features": [
         "uf2",
         "pina0",
