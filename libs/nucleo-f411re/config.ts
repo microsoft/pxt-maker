@@ -47,13 +47,4 @@ namespace config {
     export const PIN_C13 = DAL.PC_13;
     export const PIN_C14 = DAL.PC_14;
     export const PIN_C15 = DAL.PC_15;
-
-    export const PIN_SCK = PIN_A5;
-    export const PIN_MISO = PIN_A6;
-    export const PIN_MOSI = PIN_A7;
-
-    export const PIN_JACK_TX = PIN_A2;
-
-    export const PIN_LED = PIN_B3;
-    //export const PIN_LED = DAL.PC_9;
 }
