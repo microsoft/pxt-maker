@@ -194,7 +194,7 @@
             }
         },
         "githubCorePackage": "lancaster-university/codal",
-        "gittag": "v0.7.0",
+        "gittag": "v0.8.0",
         "serviceId": "codal2cp",
         "dockerImage": "pext/yotta:latest"
     },
@@ -205,6 +205,7 @@
                 "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd51g19; source [find target/atsame5x.cfg]",
                 "openocdScriptAlt": "source [find interface/stlink-v2.cfg]; set CPUTAPID 0x2ba01477; set CHIPNAME at91samd51g19; source [find target/at91samdXX.cfg]",
                 "ramSize": 196608,
+                "flashEnd": 524288,
                 "uf2Family": "0x55114460"
             },
             "compileService": {
@@ -226,7 +227,8 @@
                 "openocdScript": "source [find interface/cmsis-dap.cfg]; source [find target/nrf52.cfg]",
                 "flashChecksumAddr": 0,
                 "webUSB": false,
-                "uf2Family": "0xada52840"                
+                "flashEnd": 1007616,
+                "uf2Family": "0xada52840"
             },
             "compileService": {
                 "codalTarget": {
@@ -273,6 +275,7 @@
                 "hasHex": true,
                 "openocdScript": "source [find interface/cmsis-dap.cfg]; source [find target/stm32f4x.cfg]",
                 "flashChecksumAddr": 0,
+                "flashEnd": 524288,
                 "uf2Family": "0x57755a57"
             },
             "compileService": {
@@ -292,6 +295,7 @@
                 "hasHex": true,
                 "openocdScript": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
                 "openocdScriptAlt": "source [find interface/stlink-v2.cfg]; set CPUTAPID 0x0bc11477; set CHIPNAME at91samd21g18; source [find target/at91samdXX.cfg]",
+                "flashEnd": 262144,
                 "uf2Family": "0x68ed2b88"
             },
             "compileService": {
