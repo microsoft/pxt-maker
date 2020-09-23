@@ -400,7 +400,6 @@
             "arrays": "#8A1C7C"
         },
         "allowPackageExtensions": true,
-        "crowdinProject": "kindscript",
         "scriptManager": true,
         "simScreenshot": true,
         "simGif": true,
