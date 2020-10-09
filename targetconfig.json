@@ -4,6 +4,7 @@
             "Microsoft"
         ],
         "approvedRepos": [
+            "microsoft/pxt-jacdac-services",
             "Adafruit/pxt-crickit",
             "Adafruit/pxt-seesaw",
             "ElectronicCats/pxt-bme280",
@@ -11,6 +12,7 @@
             "ElectronicCats/pxt-lora"
         ],
         "preferredRepos": [
+            "microsoft/pxt-jacdac-services",
             "Adafruit/pxt-crickit",
             "Adafruit/pxt-seesaw",
             "ElectronicCats/pxt-bme280",
