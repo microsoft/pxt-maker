@@ -2,28 +2,29 @@
 
 ## Examples
 
-```codecard
-[
-    {
-        "name": "Keyboard",
-        "url": "/projects/hid/keyboard",
-        "cardType": "example",
-        "otherActions": []
-    },
-    {
-        "name": "Gamepad",
-        "url": "/projects/hid/gamepad",
-        "cardType": "example",
-        "otherActions": []
-    },
-    {
-        "name": "Mouse",
-        "url": "/projects/hid/mouse",
-        "cardType": "example",
-        "otherActions": []
-    }
-]
-```
+### ~ codecard
+
+* name: Keyboard
+* url: /projects/hid/keyboard
+* cardType: example
+
+
+---
+
+* name: Gamepad
+* url: /projects/hid/gamepad
+* cardType: example
+
+
+---
+
+* name: Mouse
+* url: /projects/hid/mouse
+* cardType: example
+
+
+### ~
+
 
 ## See Also
 
