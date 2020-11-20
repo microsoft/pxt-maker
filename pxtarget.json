@@ -308,6 +308,22 @@
                 "dockerImage": "pext/yotta:latest",
                 "codalBinary": "CIRCUIT_PLAYGROUND"
             }
+        },
+        "esp32": {
+            "compile": {
+                "hasHex": true,
+                "useELF": true,
+                "flashCodeAlign": 256,
+                "webUSB": false,
+                "nativeType": "vm",
+                "stackAlign": 2
+            },
+            "compileService": {
+                "buildEngine": "dockerespidf",
+                "dockerImage": "espressif/idf:release-v4.2",
+                "serviceId": "espidf",
+                "skipCloudBuild": true
+            }
         }
     },
     "appTheme": {
