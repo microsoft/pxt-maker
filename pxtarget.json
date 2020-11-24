@@ -321,6 +321,7 @@
             "compileService": {
                 "buildEngine": "dockerespidf",
                 "dockerImage": "espressif/idf:release-v4.2",
+                "dockerArgs": [],
                 "serviceId": "espidf",
                 "skipCloudBuild": true
             }
