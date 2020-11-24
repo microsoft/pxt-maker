@@ -25,5 +25,6 @@
     * [RedBear BLE NANO 2](/boards/redbear-ble-nano)
     * [StichKit](/boards/stitchkit)
     * [Teknikio Bluebird](/boards/teknikio-bluebird)
+    * [JD Brain NRF52840](/boards/brain-nrf52840)
 
 * [Add a new board](/boards/add-a-new-board)

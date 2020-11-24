@@ -1,0 +1,24 @@
+{
+    "name": "brain-nrf52840",
+    "description": "Support for JD Brain NRF52840 - beta",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+
+        "board.json",
+        "board.svg"
+    ],
+    "core": true,
+    "compileServiceVariant": "nrf52840",
+    "dependencies": {
+        "core---nrf52": "file:../core---nrf52"
+    },
+    "public": true,
+    "dalDTS": {
+        "corePackage": "../core---nrf52"
+    },
+    "features": [
+        "radio"
+    ]
+}

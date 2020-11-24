@@ -31,6 +31,12 @@
 
 ---
 
+* name: Brain NRF5840
+* url: /boards/brain-nrf52840
+* cardType: template
+
+---
+
 * name: Add a new board
 * url: /boards/add-a-new-board
 * cardType: url
