@@ -5,7 +5,7 @@
             "PXT_SUPPORT_LIS3DH": 1,
             "PXT_SUPPORT_MMA8653": 1,
             "PXT_SUPPORT_MMA8453": 1,
-            "PXT_SUPPORT_FXOS8700": 1,
+            "PXT_SUPPORT_FXOS8700": 0,
             "PXT_SUPPORT_MPU6050": 1
         },
         "userConfigs": [
