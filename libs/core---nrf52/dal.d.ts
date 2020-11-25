@@ -935,9 +935,15 @@ declare const enum DAL {
     CFG_PIN_GROVE0 = 1040,
     CFG_PIN_GROVE1 = 1041,
     CFG_PIN_SS = 1042,
+    CFG_PIN_JDPWR_PRE_SENSE = 1100,
+    CFG_PIN_JDPWR_GND_SENSE = 1101,
+    CFG_PIN_JDPWR_PULSE = 1102,
+    CFG_PIN_JDPWR_OVERLOAD_LED = 1103,
+    CFG_PIN_JDPWR_ENABLE = 1104,
+    CFG_PIN_JDPWR_FAULT = 1105,
     // /pxtapp/hf2dbg.h
     HF2DBG_H = 1,
-    // /pxtapp/jacdac/jdprotocol.h
+    // /pxtapp/jacdac-services/jdprotocol.h
     JDSPI_MAGIC = 31437,
     JDSPI_MAGIC_NOOP = 46029,
     // /pxtapp/mixer---nrf52/melody.h
@@ -945,9 +951,13 @@ declare const enum DAL {
     SW_TRIANGLE = 1,
     SW_SAWTOOTH = 2,
     SW_SINE = 3,
+    SW_TUNEDNOISE = 4,
     SW_NOISE = 5,
     SW_SQUARE_10 = 11,
     SW_SQUARE_50 = 15,
+    SW_SQUARE_CYCLE_16 = 16,
+    SW_SQUARE_CYCLE_32 = 17,
+    SW_SQUARE_CYCLE_64 = 18,
     CODAL = 1,
     MAX_SOUNDS = 5,
     Waiting = 0,
@@ -1036,6 +1046,7 @@ declare const enum DAL {
     P1_30 = 62,
     P1_31 = 63,
     // /pxtapp/pxt.h
+    PXT_COMM_BASE = 536879104,
     DEVICE_ID_BUTTON_SLIDE = 3000,
     DEVICE_ID_MICROPHONE = 3001,
     DEVICE_ID_FIRST_BUTTON = 4000,
