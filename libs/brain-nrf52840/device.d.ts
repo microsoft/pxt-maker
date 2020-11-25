@@ -1,5 +1,5 @@
 declare namespace pins {
-    //% fixedInstance shim=pxt::getPin(PIN_BATTSENSE)
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_BATTSENSE)
     const VBAT: AnalogInPin;
 
     //% fixedInstance shim=pxt::getPin(P0_29)
@@ -8,17 +8,12 @@ declare namespace pins {
     //% fixedInstance shim=pxt::getPin(P1_8)
     const LIGHT_PWR: DigitalInOutPin;
 
-    //% fixedInstance shim=pxt::getPin(PIN_NEOPIXEL)
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_NEOPIXEL)
     const LIGHT_DATA: DigitalInOutPin;
 
     //% fixedInstance shim=pxt::getPin(P1_5)
     const LDO_EN: DigitalInOutPin;
 
-    //% fixedInstance shim=pxt::getPin(PIN_LED)
+    //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_LED)
     const LED: DigitalInOutPin;
-
-    //% fixedInstance shim=pxt::getPin(PIN_SCL)
-    const SCL: DigitalInOutPin;
-    //% fixedInstance shim=pxt::getPin(PIN_SDA)
-    const SDA: DigitalInOutPin;
 }

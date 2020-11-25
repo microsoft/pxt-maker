@@ -1,4 +1,6 @@
 namespace config {
+    // all in Bootloader
+    /*
     export const PIN_FLASH_CS = DAL.P0_22
     export const PIN_FLASH_MISO = DAL.P0_24
     export const PIN_FLASH_MOSI = DAL.P0_23
@@ -14,8 +16,9 @@ namespace config {
     //  export const PIN_ACCELEROMETER_INT = 
 
     export const PIN_JACK_TX = DAL.P0_7
-    export const PIN_JACK_PWREN = DAL.P1_15
-    export const PIN_JACK_SENSE = DAL.P0_28 // fault
+    export const PIN_JDPWR_ENABLE = DAL.P1_15
+    export const PIN_JDPWR_FAULT = DAL.P0_28
 
     export const PIN_NEOPIXEL = DAL.P0_14
+    */
 }
