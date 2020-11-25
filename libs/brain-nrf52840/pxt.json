@@ -12,7 +12,8 @@
     "core": true,
     "compileServiceVariant": "nrf52840",
     "dependencies": {
-        "core---nrf52": "file:../core---nrf52"
+        "core---nrf52": "file:../core---nrf52",
+        "accelerometer": "file:../accelerometer"
     },
     "public": true,
     "dalDTS": {
