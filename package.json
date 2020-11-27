@@ -51,7 +51,7 @@
     },
     "dependencies": {
         "pxt-common-packages": "8.3.3",
-        "pxt-core": "6.6.15",
+        "pxt-core": "6.6.16",
         "webusb": "^1.1.1"
     },
     "scripts": {
