@@ -937,9 +937,6 @@ declare const enum DAL {
     CFG_PIN_SS = 1042,
     // /pxtapp/hf2dbg.h
     HF2DBG_H = 1,
-    // /pxtapp/jacdac/jdprotocol.h
-    JDSPI_MAGIC = 31437,
-    JDSPI_MAGIC_NOOP = 46029,
     // /pxtapp/mixer---nrf52/melody.h
     OUTPUT_BITS = 10,
     SW_TRIANGLE = 1,
@@ -1086,11 +1083,9 @@ declare const enum DAL {
     GC = 0,
     // /pxtapp/pxtconfig.h
     PXT_UF2_FAMILY = 2913282112,
-    // /pxtapp/settings/Flash.h
-    DEVICE_FLASH_ERROR = 922,
-    // /pxtapp/settings/RAFFS.h
-    RAFFS_FOLLOWING_MASK = 32768,
-    RAFFS_FLASH_BUFFER_SIZE = 64,
+    // /pxtapp/screen---st7735/jdprotocol.h
+    JDSPI_MAGIC = 31437,
+    JDSPI_MAGIC_NOOP = 46029,
     // /pxtapp/uf2format.h
     BOOTLOADER_START = 0,
     BOOTLOADER_END = 8192,
