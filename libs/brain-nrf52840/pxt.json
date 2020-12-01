@@ -5,6 +5,7 @@
         "README.md",
         "device.d.ts",
         "config.ts",
+        "platform.ts",
 
         "board.json",
         "board.svg"
