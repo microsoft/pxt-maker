@@ -2,10 +2,10 @@ declare namespace pins {
     //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_BATTSENSE)
     const VBAT: AnalogInPin;
 
-    //% fixedInstance shim=pxt::getPin(P0_29)
+    //% fixedInstance shim=pxt::getPinCfg(1093769773)
     const LIGHT_FAULT: DigitalInOutPin;
 
-    //% fixedInstance shim=pxt::getPin(P1_8)
+    //% fixedInstance shim=pxt::getPinCfg(605349461)
     const LIGHT_PWR: DigitalInOutPin;
 
     //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_NEOPIXEL)
