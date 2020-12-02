@@ -5,7 +5,9 @@ namespace control {
     const CFG_PIN_JDPWR_ENABLE = 1104
 
     export function enableNeopixelPower(enabled = true) {
-        pins.LIGHT_PWR.digitalWrite(!enabled)
+        const pin = pins.LIGHT_PWR
+        if (pin)
+            pin.digitalWrite(!enabled)
     }
 
     export function deepSleep() {
@@ -18,17 +20,22 @@ namespace control {
     }
 
     function init() {
-        pins.LIGHT_FAULT.setPull(PinPullMode.PullUp)
-        pins.LIGHT_FAULT.digitalRead()
+        if (pins.LDO_EN)
+            pins.LDO_EN.digitalWrite(true)
         enableNeopixelPower()
-        forever(() => {
-            if (pins.LIGHT_FAULT.digitalRead() == false) {
-                enableNeopixelPower(false)
-                pause(10)
-                enableNeopixelPower(true)
-            }
-            pause(1000)
-        })
+        const fault = pins.LIGHT_FAULT
+        if (fault) {
+            fault.setPull(PinPullMode.PullUp)
+            fault.digitalRead()
+            forever(() => {
+                if (pins.LIGHT_FAULT.digitalRead() == false) {
+                    enableNeopixelPower(false)
+                    pause(10)
+                    enableNeopixelPower(true)
+                }
+                pause(1000)
+            })
+        }
     }
     init()
 }

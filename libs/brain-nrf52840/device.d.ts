@@ -9,7 +9,7 @@ declare namespace pins {
     const LIGHT_PWR: DigitalInOutPin;
 
     //% fixedInstance shim=pxt::getPinCfg(CFG_PIN_NEOPIXEL)
-    const LIGHT_DATA: DigitalInOutPin;
+    const NEOPIXEL: DigitalInOutPin;
 
     //% fixedInstance shim=pxt::getPin(P1_5)
     const LDO_EN: DigitalInOutPin;

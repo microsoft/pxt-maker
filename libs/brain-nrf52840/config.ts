@@ -21,4 +21,7 @@ namespace config {
 
     export const PIN_NEOPIXEL = DAL.P0_14
     */
+
+   export const NUM_NEOPIXELS = 170
+
 }
