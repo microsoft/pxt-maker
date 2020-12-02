@@ -58,7 +58,7 @@ namespace pxsim {
             const servos: Map<number> = {}
             const syntheticPins: Map<number> = {}
 
-            function pinId(name: string) {
+            function pinId(name: string): number {
                 let key = getConfigKey("PIN_" + name)
                 if (key != null)
                     return getConfig(key)
@@ -70,6 +70,12 @@ namespace pxsim {
                 if (!syntheticPins[name])
                     syntheticPins[name] = 100 + Object.keys(syntheticPins).length
                 return syntheticPins[name]
+            }
+
+
+            function parsePinString(pinString: string): Pin {
+                const pinName = pinString && pxsim.readPin(pinString);
+                return pinName && pxtcore.getPin(pinId(pinName));
             }
 
             pinIds = {}
@@ -279,10 +285,5 @@ namespace pxsim {
 
     if (!pxsim.initCurrentRuntime) {
         pxsim.initCurrentRuntime = initRuntimeWithDalBoard;
-    }
-
-    export function parsePinString(pinString: string): Pin {
-        const pinName = pinString && pxsim.readPin(pinString);
-        return pinName && pxtcore.getPin(pinIds[pinName]);
     }
 }
