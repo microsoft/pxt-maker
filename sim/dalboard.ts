@@ -56,6 +56,7 @@ namespace pxsim {
 
             const pinList: number[] = []
             const servos: Map<number> = {}
+            const syntheticPins: Map<number> = {}
 
             function pinId(name: string) {
                 let key = getConfigKey("PIN_" + name)
@@ -65,7 +66,10 @@ namespace pxsim {
                 let m = /^P(\d+)$/.exec(name)
                 if (m)
                     return parseInt(m[1])
-                return null
+                // this happens when pins are defined in the bootloader
+                if (!syntheticPins[name])
+                    syntheticPins[name] = 100 + Object.keys(syntheticPins).length
+                return syntheticPins[name]
             }
 
             pinIds = {}
@@ -144,7 +148,7 @@ namespace pxsim {
             this.builtinVisuals["dotstar"] = () => new visuals.NeoPixelView(parsePinString);
             this.builtinPartVisuals["dotstar"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
 
-            this.builtinParts["lcd"] =  this.lcdState;
+            this.builtinParts["lcd"] = this.lcdState;
             this.builtinVisuals["lcd"] = () => new visuals.LCDView();
             this.builtinPartVisuals["lcd"] = (xy: visuals.Coord) => visuals.mkLCDPart(xy);
 
@@ -166,15 +170,15 @@ namespace pxsim {
             this.builtinVisuals["screen"] = () => new visuals.ScreenView();
             this.builtinPartVisuals["screen"] = (xy: visuals.Coord) => visuals.mkScreenPart(xy);
 
-            
-            this.neopixelPin = this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_ONBOARD_DOTSTAR_DATA)) 
-            || this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_ONBOARD_NEOPIXEL))
-            || this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_DOTSTAR_DATA)) 
-            || this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_NEOPIXEL));
-            
+
+            this.neopixelPin = this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_ONBOARD_DOTSTAR_DATA))
+                || this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_ONBOARD_NEOPIXEL))
+                || this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_DOTSTAR_DATA))
+                || this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_NEOPIXEL));
+
             this.builtinParts["pixels"] = (pin: Pin) => { return this.neopixelState(!!this.neopixelPin && this.neopixelPin.id); };
             this.builtinVisuals["pixels"] = () => new visuals.NeoPixelView(parsePinString);
-            this.builtinPartVisuals["pixels"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);    
+            this.builtinPartVisuals["pixels"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
         }
 
         receiveMessage(msg: SimulatorMessage) {
