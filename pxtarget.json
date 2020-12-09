@@ -113,7 +113,10 @@
         "aspectRatio": 1.0,
         "parts": true,
         "partsAspectRatio": 0.69,
-        "dynamicBoardDefinition": true
+        "dynamicBoardDefinition": true,
+        "messageSimulators": {
+            "jacdac": "http://microsoft.github.io/jacdac-ts?webusb=0"
+        }
     },
     "cloud": {
         "workspace": false,
