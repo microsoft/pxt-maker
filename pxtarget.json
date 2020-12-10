@@ -115,7 +115,9 @@
         "partsAspectRatio": 0.69,
         "dynamicBoardDefinition": true,
         "messageSimulators": {
-            "jacdac": "http://microsoft.github.io/jacdac-ts?webusb=0"
+            "jacdac": {
+                "url": "http://microsoft.github.io/jacdac-ts?webusb=0"
+            }
         }
     },
     "cloud": {
