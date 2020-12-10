@@ -113,7 +113,13 @@
         "aspectRatio": 1.0,
         "parts": true,
         "partsAspectRatio": 0.69,
-        "dynamicBoardDefinition": true
+        "dynamicBoardDefinition": true,
+        "messageSimulators": {
+            "jacdac": {
+                "url": "https://microsoft.github.io/jacdac-ts/tools/makecode-sim?webusb=0&parentOrigin=$PARENT_ORIGIN$",
+                "localHostUrl": "http://localhost:8000/tools/makecode-sim?webusb=0&parentOrigin=$PARENT_ORIGIN$"
+            }
+        }
     },
     "cloud": {
         "workspace": false,
