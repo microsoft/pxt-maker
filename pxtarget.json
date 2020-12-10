@@ -116,7 +116,8 @@
         "dynamicBoardDefinition": true,
         "messageSimulators": {
             "jacdac": {
-                "url": "http://microsoft.github.io/jacdac-ts/tools/makecode-sim?webusb=0&parentOrigin=$PARENT_ORIGIN$"
+                "url": "https://microsoft.github.io/jacdac-ts/tools/makecode-sim?webusb=0&parentOrigin=$PARENT_ORIGIN$",
+                "localHostUrl": "http://localhost:8000/tools/makecode-sim?webusb=0&parentOrigin=$PARENT_ORIGIN$"
             }
         }
     },
