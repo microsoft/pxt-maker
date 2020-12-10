@@ -281,7 +281,7 @@
         "w": 14.983197169864086,
         "h": 14.983508638238446,
         "color": "#ff0000",
-        "label": "PC13_LED"
+        "label": "C13"
       }
     ],
     "touchPads": [],
@@ -343,9 +343,9 @@
     "A0": "PA0_A0",
     "PC15": "PC15",
     "PC14": "PC14",
-    "PC13_LED": "PC13_LED",
-    "PC13": "PC13_LED",
-    "LED": "PC13_LED",
+    "PC13_LED": "PIN_C13",
+    "PC13": "PIN_C13",
+    "LED": "PIN_C13",
     "VBAT": "VBAT",
     "PB12_SS2_B12": "PB12_SS2_B12",
     "PB12": "PB12_SS2_B12",
