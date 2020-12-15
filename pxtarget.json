@@ -89,6 +89,7 @@
         "libs/sparkfun-samd21-mini-breakout",
         "libs/sparkfun-redboard-turbo",
         "libs/sparkfun-lumidrive",
+        "libs/brain-nrf52840"
         "libs/stitchkit"
     ],
     "serial": {
