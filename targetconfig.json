@@ -18,6 +18,9 @@
             "ElectronicCats/pxt-bme280",
             "ElectronicCats/pxt-airQuality",
             "ElectronicCats/pxt-lora"
+        ],
+        "approvedEditorExtensionUrls": [
+            "https://microsoft.github.io/jacdac-ts/tools/makecode-editor-extension"
         ]
     },
     "galleries": {
