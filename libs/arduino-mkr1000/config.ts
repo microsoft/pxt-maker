@@ -33,7 +33,7 @@ namespace config {
 
     // export const PIN_AREF = DAL.PA03;
 
-    export const PIN_LED = DAL.PB08;
+    export const PIN_LED = DAL.PA20;
 
     export const PIN_MOSI = DAL.PA16; // MOSI
     export const PIN_SCK = DAL.PA17; // SCK
