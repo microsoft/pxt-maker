@@ -115,22 +115,6 @@
     ],
     "leds": [
       {
-        "x": 143.64726358645467,
-        "y": 117.87656419347279,
-        "w": 7.491260535887221,
-        "h": 10.307417510334698,
-        "color": "#ff0000",
-        "label": "IRRXLED"
-      },
-      {
-        "x": 98.69974222572388,
-        "y": 117.87656419347279,
-        "w": 7.491274487418067,
-        "h": 10.307417510334698,
-        "color": "#ff0000",
-        "label": "IRTXLED"
-      },
-      {
         "x": 152.43907187621588,
         "y": 12.582555305516507,
         "w": 6.1438774929653714,
@@ -304,8 +288,6 @@
     "THERMOMETER": "THERMOMETER",
     "LIGHTSENSOR": "LIGHTSENSOR",
     "MICROPHONE": "MICROPHONE",
-    "IRRXLED": "IRRXLED",
-    "IRTXLED": "IRTXLED",
     "ACCELEROMETER": "ACCELEROMETER",
     "LED": "LED",
     "NEOPIXEL6": "NEOPIXEL6",
