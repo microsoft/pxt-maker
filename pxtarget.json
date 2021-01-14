@@ -88,6 +88,7 @@
         "libs/sparkfun-samd21-mini-breakout",
         "libs/sparkfun-redboard-turbo",
         "libs/sparkfun-lumidrive",
+        "libs/brain-nrf52840",
         "libs/stitchkit"
     ],
     "serial": {
@@ -112,7 +113,13 @@
         "aspectRatio": 1.0,
         "parts": true,
         "partsAspectRatio": 0.69,
-        "dynamicBoardDefinition": true
+        "dynamicBoardDefinition": true,
+        "messageSimulators": {
+            "jacdac": {
+                "url": "https://microsoft.github.io/jacdac-ts/tools/makecode-sim?webusb=0&parentOrigin=$PARENT_ORIGIN$",
+                "localHostUrl": "http://localhost:8000/tools/makecode-sim?webusb=0&parentOrigin=$PARENT_ORIGIN$"
+            }
+        }
     },
     "cloud": {
         "workspace": false,
@@ -234,7 +241,7 @@
                 "codalTarget": {
                     "name": "codal-nrf52840-dk",
                     "url": "https://github.com/mmoskal/codal-nrf52840-dk",
-                    "branch": "v1.1.7",
+                    "branch": "v1.1.8",
                     "type": "git"
                 },
                 "codalBinary": "NRF52840_DK",

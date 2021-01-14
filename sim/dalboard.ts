@@ -108,14 +108,14 @@ namespace pxsim {
             this.lightSensorState = new AnalogSensorState(DAL.DEVICE_ID_LIGHT_SENSOR, 0, 255, 128 / 4, 896 / 4);
             this.thermometerState = new AnalogSensorState(DAL.DEVICE_ID_THERMOMETER, -20, 50, 10, 30);
             this.thermometerUnitState = TemperatureUnit.Celsius;
-            this.irState = new InfraredState();
+            this.irState = new InfraredState(this);
             this.lcdState = new LCDState();
             this.controlMessageState = new ControlMessageState(this);
             this.bus.setNotify(DAL.DEVICE_ID_NOTIFY, DAL.DEVICE_ID_NOTIFY_ONE);
 
             // TODO we need this.buttonState set for pxtcore.getButtonByPin(), but
             // this should be probably merged with buttonpair somehow
-            this.builtinParts["radio"] = this.radioState = new RadioState(runtime, {
+            this.builtinParts["radio"] = this.radioState = new RadioState(runtime, this, {
                 ID_RADIO: DAL.DEVICE_ID_RADIO,
                 RADIO_EVT_DATAGRAM: 1 /*DAL.DEVICE_RADIO_EVT_DATAGRAM*/
             });
@@ -177,26 +177,6 @@ namespace pxsim {
             this.builtinPartVisuals["pixels"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);    
         }
 
-        receiveMessage(msg: SimulatorMessage) {
-            super.receiveMessage(msg);
-            if (!runtime || runtime.dead) return;
-
-            switch (msg.type || "") {
-                case "eventbus":
-                    let ev = <SimulatorEventBusMessage>msg;
-                    this.bus.queue(ev.id, ev.eventid, ev.value);
-                    break;
-                case "serial":
-                    let data = (<SimulatorSerialMessage>msg).data || "";
-                    // TODO
-                    break;
-                case "irpacket":
-                    let irpacket = <SimulatorInfraredPacketMessage>msg;
-                    this.irState.receive(irpacket.packet);
-                    break;
-            }
-        }
-
         kill() {
             super.kill();
             AudioContextManager.stop();
@@ -231,7 +211,6 @@ namespace pxsim {
             document.body.appendChild(this.view = this.viewHost.getView());
 
             this.accelerometerState.attachEvents(this.view);
-            this.radioState.addListeners();
 
             return Promise.resolve();
         }
