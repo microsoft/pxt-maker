@@ -319,7 +319,7 @@
         "esp32": {
             "compile": {
                 "hasHex": true,
-                "useELF": true,
+                "useESP": true,
                 "flashCodeAlign": 256,
                 "webUSB": false,
                 "nativeType": "vm",
