@@ -75,6 +75,7 @@
         "libs/adafruit-neotrellis-m4-express",
         "libs/adafruit-gemma-m0",
         "libs/robotics-masters-robohatmm1-m4",
+        "libs/adafruit-grand-central-m4-express",
         "libs/xinabox-cc03",
         "libs/xinabox-cs11",
         "libs/arduino-zero",
