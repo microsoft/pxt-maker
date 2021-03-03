@@ -1,0 +1,27 @@
+{
+    "name": "machachi",
+    "description": "Support for Machachi - beta",
+    "dependencies": {
+        "core---nrf52": "file:../core---nrf52",
+        "light": "file:../light",
+        "buttons": "file:../buttons"
+    },
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "platform.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "public": true,
+    "core": true,
+    "compileServiceVariant": "nrf52840",
+    "dalDTS": {
+        "corePackage": "../core---nrf52"
+    },
+    "features": [
+        "radio",
+        "uf2"
+    ]
+}
