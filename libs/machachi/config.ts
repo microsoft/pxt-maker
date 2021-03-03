@@ -12,6 +12,8 @@ namespace config {
 
     export const PIN_D8 = DAL.P0_7
 
+    export const PIN_BTN_SOFT_RESET = DAL.P0_5
+
     export const PIN_DOTSTAR_DATA = DAL.P0_19;
     export const PIN_DOTSTAR_CLOCK = DAL.P0_21;
     export const NUM_DOTSTARS = 15;
