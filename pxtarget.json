@@ -90,7 +90,8 @@
         "libs/sparkfun-redboard-turbo",
         "libs/sparkfun-lumidrive",
         "libs/brain-nrf52840",
-        "libs/stitchkit"
+        "libs/stitchkit",
+        "libs/machachi"
     ],
     "serial": {
         "useHF2": true,
