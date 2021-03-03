@@ -30,44 +30,44 @@ declare namespace input {
     //% block="button east" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_D0,BUTTON_ACTIVE_LOW_PULL_UP)
     //% parts="buttons"
-    const EAST: Button;
+    const east: Button;
     //% block="button south east" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_D1,BUTTON_ACTIVE_LOW_PULL_UP)
     //% parts="buttons"
-    const SOUTH_EAST: Button;
+    const southEast: Button;
     //% block="button south" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_D2,BUTTON_ACTIVE_LOW_PULL_UP)
     //% parts="buttons"
-    const SOUTH: Button;
+    const south: Button;
 
     //% block="button south west" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_D3,BUTTON_ACTIVE_LOW_PULL_UP)
     //% parts="buttons"
-    const SOUTH_WEST: Button;
+    const southWest: Button;
 
     //% block="button west" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_D4,BUTTON_ACTIVE_LOW_PULL_UP)
     //% parts="buttons"
-    const WEST: Button;
+    const west: Button;
 
     //% block="button north west" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_D5,BUTTON_ACTIVE_LOW_PULL_UP)
     //% parts="buttons"
-    const NORTH_WEST: Button;
+    const northWest: Button;
 
     //% block="button north" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_D6,BUTTON_ACTIVE_LOW_PULL_UP)
     //% parts="buttons"
-    const NORTH: Button;
+    const north: Button;
 
     //% block="button north east" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_D7,BUTTON_ACTIVE_LOW_PULL_UP)
     //% parts="buttons"
-    const NORTH_EAST: Button;
+    const northEast: Button;
 
-    //% block="button soft reset" fixedInstance
+    //% block="button reset" fixedInstance
     //% shim=pxt::getButtonByPin(PIN_BTN_SOFT_RESET,BUTTON_ACTIVE_LOW_PULL_UP)
     //% parts="buttons"
-    const SOFT_RESET: Button;
+    const reset: Button;
 }
 
