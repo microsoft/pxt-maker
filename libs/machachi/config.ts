@@ -1,5 +1,5 @@
 namespace config {
-    export const PIN_JACK_TX = DAL.P0_2
+    export const PIN_JACK_TX = DAL.P0_7
 
     export const PIN_D0 = DAL.P0_10
     export const PIN_D1 = DAL.P0_9
@@ -10,7 +10,7 @@ namespace config {
     export const PIN_D6 = DAL.P0_4
     export const PIN_D7 = DAL.P1_2
 
-    export const PIN_D8 = DAL.P0_7
+    export const PIN_D8 = DAL.P0_2
 
     export const PIN_BTN_SOFT_RESET = DAL.P0_5
 
