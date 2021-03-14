@@ -68,6 +68,15 @@
 * cardType: template
 * imageUrl: /static/libs/adafruit-itsybitsy-m4-express.jpg
 
+---
+
+* name: Adafruit Grand Central M4 Express 
+* url: /boards/adafruit-grand-central-m4-express
+* cardType: template
+* imageUrl: /static/libs/adafruit-grand-central-m4-express.jpg
+
+---
+
 ### ~
 
 
