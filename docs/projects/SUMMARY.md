@@ -9,6 +9,7 @@
   * [Adafruit Metro M4 Express](/boards/adafruit-metro-m4-express)
   * [Adafruit Feather M4 Express](/boards/adafruit-feather-m4-express)
   * [Adafruit ItsyBitsy M4 Express](/boards/adafruit-itsybitsy-m4-express)
+  * [Adafruit Grand Central M4 Express ](/boards/adafruit-grand-central-m4-express)
   * [Adafruit Feather Bluefruit NRF52840](/boards/adafruit-feather-nrf52840-express)
   * [Adafruit ItsyBitsy NRF52840 Express](/boards/adafruit-itsybitsy-nrf52840-express)
   * [Adafruit Circuit Playground Bluefruit](/boards/adafruit-circuit-playground-bluefruit)
