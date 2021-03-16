@@ -38,14 +38,9 @@
     "devDependencies": {
         "@types/marked": "0.3.0",
         "@types/node": "8.10.66",
-        "@types/react": "16.8.25",
-        "@types/react-dom": "16.0.3",
-        "@types/web-bluetooth": "0.0.9",
-        "glob-exec": "^0.1.1",
+        "@types/web-bluetooth": "0.0.4",
         "less": "2.7.3",
-        "react": "16.8.3",
         "semantic-ui-less": "2.2.14",
-        "svgo": "^1.1.1",
         "typescript": "3.7.5"
     },
     "dependencies": {
