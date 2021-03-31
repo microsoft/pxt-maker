@@ -75,6 +75,7 @@
         "libs/adafruit-neotrellis-m4-express",
         "libs/adafruit-gemma-m0",
         "libs/robotics-masters-robohatmm1-m4",
+        "libs/adafruit-grand-central-m4-express",
         "libs/xinabox-cc03",
         "libs/xinabox-cs11",
         "libs/arduino-zero",
@@ -89,7 +90,8 @@
         "libs/sparkfun-redboard-turbo",
         "libs/sparkfun-lumidrive",
         "libs/brain-nrf52840",
-        "libs/stitchkit"
+        "libs/stitchkit",
+        "libs/machachi"
     ],
     "serial": {
         "useHF2": true,
@@ -116,8 +118,10 @@
         "dynamicBoardDefinition": true,
         "messageSimulators": {
             "jacdac": {
-                "url": "https://microsoft.github.io/jacdac-ts/tools/makecode-sim?webusb=0&parentOrigin=$PARENT_ORIGIN$",
-                "localHostUrl": "http://localhost:8000/tools/makecode-sim?webusb=0&parentOrigin=$PARENT_ORIGIN$"
+                "url": "https://microsoft.github.io/jacdac-docs/tools/makecode-sim?webusb=0&parentOrigin=$PARENT_ORIGIN$",
+                "localHostUrl": "http://localhost:8000/tools/makecode-sim?webusb=0&parentOrigin=$PARENT_ORIGIN$",
+                "aspectRatio": 0.89,
+                "permanent": true
             }
         }
     },
