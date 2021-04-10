@@ -18,15 +18,21 @@
         "buttons": "file:../buttons"
     },
     "public": true,
-    "firmwareUrl": "https://learn.adafruit.com/introducing-adafruit-itsybitsy-m4#uf2-bootloader-details",
+    "firmwareUrl": "https://learn.adafruit.com/adafruit-grand-central/uf2-bootloader-details",
     "dalDTS": {
         "corePackage": "../core---samd51"
     },
     "features": [
-        "screen",
+        "uf2",
+        "pinled",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1",
         "jacdac",
-        "light",
         "pixel",
-        "neopixel"
+        "light"
     ]
 }
