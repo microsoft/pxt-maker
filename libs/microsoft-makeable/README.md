@@ -1,4 +1,4 @@
-# adafruit
+# Microsoft
 
-The adafruit library.
+The Microsoft Makeable device library.
 
