@@ -244,11 +244,41 @@
             "compileService": {
                 "codalTarget": {
                     "name": "codal-nrf52840-dk",
-                    "url": "https://github.com/mmoskal/codal-nrf52840-dk",
-                    "branch": "v1.1.8",
+                    "url": "https://github.com/jamesadevine/codal-nrf52840-dk",
+                    "branch": "v1.1.8-usb.2",
                     "type": "git"
                 },
                 "codalBinary": "NRF52840_DK",
+                "serviceId": "codal2nrf52840",
+                "dockerImage": "pext/yotta:latest",
+                "yottaConfig": {
+                    "pxt": {
+                        "board": {
+                            "id": "BOARD_ID_NRF52840"
+                        }
+                    }
+                }
+            }
+        },
+        "nrf52833": {
+            "serial": {
+                "useHF2": true
+            },
+            "compile": {
+                "openocdScript": "source [find interface/cmsis-dap.cfg]; source [find target/nrf52.cfg]",
+                "flashChecksumAddr": 0,
+                "webUSB": true,
+                "flashEnd": 1007616,
+                "uf2Family": "0xada52840"
+            },
+            "compileService": {
+                "codalTarget": {
+                    "name": "codal-makeable",
+                    "url": "https://github.com/jamesadevine/codal-makeable",
+                    "branch": "v0.0.0-main.1",
+                    "type": "git"
+                },
+                "codalBinary": "MAKEABLE",
                 "serviceId": "codal2nrf52840",
                 "dockerImage": "pext/yotta:latest",
                 "yottaConfig": {
