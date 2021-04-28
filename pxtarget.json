@@ -268,7 +268,7 @@
                 "openocdScript": "source [find interface/cmsis-dap.cfg]; source [find target/nrf52.cfg]",
                 "flashChecksumAddr": 0,
                 "webUSB": true,
-                "flashEnd": 1007616,
+                "flashEnd": 425984,
                 "uf2Family": "0xada52840"
             },
             "compileService": {
