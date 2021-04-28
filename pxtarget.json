@@ -92,7 +92,7 @@
         "libs/brain-nrf52840",
         "libs/stitchkit",
         "libs/machachi",
-        "libs/makeable"
+        "libs/microsoft-makeable"
     ],
     "serial": {
         "useHF2": true,
