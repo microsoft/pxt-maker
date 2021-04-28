@@ -91,7 +91,8 @@
         "libs/sparkfun-lumidrive",
         "libs/brain-nrf52840",
         "libs/stitchkit",
-        "libs/machachi"
+        "libs/machachi",
+        "libs/makeable"
     ],
     "serial": {
         "useHF2": true,
