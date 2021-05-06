@@ -276,7 +276,7 @@
                 "codalTarget": {
                     "name": "codal-makeable",
                     "url": "https://github.com/jamesadevine/codal-makeable",
-                    "branch": "v0.0.2",
+                    "branch": "v0.0.4",
                     "type": "git"
                 },
                 "codalBinary": "MAKEABLE",
