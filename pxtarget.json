@@ -276,16 +276,16 @@
                 "codalTarget": {
                     "name": "codal-makeable",
                     "url": "https://github.com/jamesadevine/codal-makeable",
-                    "branch": "v0.0.4",
+                    "branch": "v0.0.5",
                     "type": "git"
                 },
-                "codalBinary": "MAKEABLE",
-                "serviceId": "codal2nrf52840",
+                "codalBinary": "NRF52",
+                "serviceId": "codal2nrf52",
                 "dockerImage": "pext/yotta:latest",
                 "yottaConfig": {
                     "pxt": {
                         "board": {
-                            "id": "BOARD_ID_NRF52840"
+                            "id": "BOARD_ID_NRF52833"
                         }
                     }
                 }
