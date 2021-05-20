@@ -18,6 +18,7 @@
         "libs/pulse",
         "libs/infrared",
         "libs/game",
+        "libs/game---light",
         "libs/mixer",
         "libs/mixer---none",
         "libs/mixer---samd",
