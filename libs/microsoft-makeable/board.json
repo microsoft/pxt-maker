@@ -1,0 +1,24 @@
+{
+    "driveDisplayName": "MAKEABLE",
+    "visual": {
+        "image": "pkg://board.svg",
+        "outlineImage": "pkg://boardwireframe.svg",
+        "width": 175,
+        "height": 170,
+        "pinDist": 8.4,
+        "pinBlocks": []
+    },
+    "gpioPinBlocks": [
+    ],
+    "gpioPinMap": {
+    },
+    "groundPins": [""],
+    "threeVoltPins": [""],
+    "onboardComponents": [""],
+    "marginWhenBreadboarding": [
+        0,
+        0,
+        80,
+        0
+    ]
+}

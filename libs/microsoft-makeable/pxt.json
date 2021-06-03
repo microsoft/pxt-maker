@@ -1,0 +1,24 @@
+{
+    "name": "microsoft-makeable",
+    "description": "Support for Microsoft Makeable - beta",
+    "dependencies": {
+        "core---nrf52": "file:../core---nrf52"
+    },
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "board.json",
+        "board.svg",
+        "boardwireframe.svg"
+    ],
+    "public": true,
+    "core": true,
+    "compileServiceVariant": "nrf52833",
+    "dalDTS": {
+        "corePackage": "../core---nrf52"
+    },
+    "features": [
+        "radio"
+    ]
+}
