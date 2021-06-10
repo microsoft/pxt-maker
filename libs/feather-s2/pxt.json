@@ -1,0 +1,21 @@
+{
+    "name": "feather-s2",
+    "description": "Support for FeatherS2 (ESP32-S2)",
+    "files": [
+        "README.md",
+        "board.json",
+        "board.svg"
+    ],
+    "core": true,
+    "compileServiceVariant": "esp32",
+    "dependencies": {
+        "core---esp32": "file:../core---esp32s2"
+    },
+    "public": true,
+    "features": [
+        "pinled",
+        "pind0",
+        "pind1",
+        "jacdac"
+    ]
+}
