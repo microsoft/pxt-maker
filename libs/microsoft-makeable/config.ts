@@ -12,9 +12,9 @@ namespace config {
     export const PIN_D5 = DAL.P0_5
     export const PIN_D6 = DAL.P0_6
 
-    export const PIN_ILIM_FAULT0 = DAL.P0_26;
-    export const PIN_ILIM_FAULT1 = DAL.P0_25;
-    export const PIN_ILIM_FAULT2 = DAL.P0_24;
+    export const PIN_D7 = DAL.P0_26;
+    export const PIN_D8 = DAL.P0_25;
+    export const PIN_D9 = DAL.P0_24;
 
     export const PIN_NEOPIXEL = DAL.P0_14;
     export const NUM_NEOPIXELS = 4;
