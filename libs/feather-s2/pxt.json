@@ -7,7 +7,7 @@
         "board.svg"
     ],
     "core": true,
-    "compileServiceVariant": "esp32",
+    "compileServiceVariant": "esp32s2",
     "dependencies": {
         "core---esp32": "file:../core---esp32s2"
     },
