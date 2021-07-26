@@ -4,7 +4,9 @@
     "files": [
         "README.md",
         "board.json",
-        "board.svg"
+        "board.svg",
+        "config.ts",
+        "device.d.ts"
     ],
     "core": true,
     "compileServiceVariant": "esp32s2",

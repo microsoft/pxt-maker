@@ -19,6 +19,7 @@ namespace config {
     export const PIN_P25 = 25
     export const PIN_P26 = 26
     export const PIN_P27 = 27
+    /*
     export const PIN_P32 = 32
     export const PIN_P33 = 33
     export const PIN_P34 = 34
@@ -32,12 +33,13 @@ namespace config {
     export const PIN_P44 = 44
     export const PIN_P45 = 45
     export const PIN_P46 = 46
+    */
 
     export const PIN_JACK_TX = PIN_P17
 
-    export const PIN_LED_R = PIN_P8
-    export const PIN_LED_G = PIN_P7
-    export const PIN_LED_B = PIN_P6
+    export const PIN_LED_R = 8
+    export const PIN_LED_G = 7
+    export const PIN_LED_B = 6
     export const PIN_LED = PIN_LED_G
 
     export const PIN_JDPWR_OVERLOAD_LED = PIN_LED_R | DAL.CFG_PIN_CONFIG_ACTIVE_LO
