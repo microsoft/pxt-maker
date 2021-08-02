@@ -43,7 +43,7 @@ namespace config {
     export const PIN_LED = PIN_LED_G
 
     export const PIN_JDPWR_OVERLOAD_LED = PIN_LED_R | DAL.CFG_PIN_CONFIG_ACTIVE_LO
-    export const PIN_JDPWR_ENABLE = PIN_P2
+    export const PIN_JDPWR_ENABLE = PIN_P2 | DAL.CFG_PIN_CONFIG_ACTIVE_LO
     export const PIN_JDPWR_FAULT = PIN_P13
 
     // PIN_P3 is for 500/900mA switch
