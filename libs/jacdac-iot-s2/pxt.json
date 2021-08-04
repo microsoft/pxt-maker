@@ -11,7 +11,7 @@
     "core": true,
     "compileServiceVariant": "esp32s2",
     "dependencies": {
-        "core---esp32": "file:../core---esp32s2",
+        "core---esp32s2": "file:../core---esp32s2",
         "settings---esp32": "file:../settings---esp32",
         "wifi---esp32": "file:../wifi---esp32"
     },
