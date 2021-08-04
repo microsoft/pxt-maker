@@ -54,9 +54,11 @@
         "libs/esp32",
         "libs/net",
         "libs/net-game",
+        "libs/wifi---esp32",
         "libs/mqtt",
         "libs/azureiot",
         "libs/settings",
+        "libs/settings---esp32",
         "libs/settings---files",
         "libs/radio",
         "libs/radio-broadcast",
@@ -93,7 +95,9 @@
         "libs/brain-nrf52840",
         "libs/stitchkit",
         "libs/machachi",
-        "libs/microsoft-makeable"
+        "libs/microsoft-makeable",
+        "libs/espressif-esp32-devkit-c",
+        "libs/jacdac-iot-s2"
     ],
     "serial": {
         "useHF2": true,
@@ -364,10 +368,9 @@
             },
             "compileService": {
                 "buildEngine": "dockerespidf",
-                "dockerImage": "espressif/idf:release-v4.3",
+                "dockerImage": "pext/esp:latest",
                 "dockerArgs": [],
-                "serviceId": "espidf",
-                "skipCloudBuild": true
+                "serviceId": "espidf"
             }
         },
         "esp32s2": {
@@ -383,10 +386,9 @@
             },
             "compileService": {
                 "buildEngine": "dockerespidf",
-                "dockerImage": "espressif/idf:release-v4.3",
+                "dockerImage": "pext/esp:latest",
                 "dockerArgs": [],
-                "serviceId": "espidf",
-                "skipCloudBuild": true
+                "serviceId": "espidf"
             }
         }
     },
