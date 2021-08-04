@@ -3,6 +3,8 @@
     "description": "Support for Espressif ESP32-DevKitC",
     "files": [
         "README.md",
+        "device.d.ts",
+        "config.ts",
         "board.json",
         "board.svg"
     ],
