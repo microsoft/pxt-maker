@@ -14,6 +14,8 @@
         "libs/core---nrf52",
         "libs/core---samd",
         "libs/core---samd51",
+        "libs/core---esp32",
+        "libs/core---esp32s2",
         "libs/screen---st7735",
         "libs/pulse",
         "libs/infrared",
