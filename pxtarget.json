@@ -14,6 +14,8 @@
         "libs/core---nrf52",
         "libs/core---samd",
         "libs/core---samd51",
+        "libs/core---esp32",
+        "libs/core---esp32s2",
         "libs/screen---st7735",
         "libs/pulse",
         "libs/infrared",
@@ -54,9 +56,11 @@
         "libs/esp32",
         "libs/net",
         "libs/net-game",
+        "libs/wifi---esp32",
         "libs/mqtt",
         "libs/azureiot",
         "libs/settings",
+        "libs/settings---esp32",
         "libs/settings---files",
         "libs/radio",
         "libs/radio-broadcast",
@@ -93,7 +97,9 @@
         "libs/brain-nrf52840",
         "libs/stitchkit",
         "libs/machachi",
-        "libs/microsoft-makeable"
+        "libs/microsoft-makeable",
+        "libs/espressif-esp32-devkit-c",
+        "libs/jacdac-iot-s2"
     ],
     "serial": {
         "useHF2": true,
@@ -350,6 +356,41 @@
                 },
                 "dockerImage": "pext/yotta:latest",
                 "codalBinary": "CIRCUIT_PLAYGROUND"
+            }
+        },
+        "esp32": {
+            "compile": {
+                "hasHex": true,
+                "useESP": true,
+                "useUF2": false,
+                "flashCodeAlign": 256,
+                "webUSB": false,
+                "nativeType": "vm",
+                "stackAlign": 2
+            },
+            "compileService": {
+                "buildEngine": "dockerespidf",
+                "dockerImage": "pext/esp:latest",
+                "dockerArgs": [],
+                "serviceId": "espidf"
+            }
+        },
+        "esp32s2": {
+            "compile": {
+                "hasHex": true,
+                "useESP": true,
+                "useUF2": true,
+                "flashCodeAlign": 256,
+                "webUSB": false,
+                "nativeType": "vm",
+                "uf2Family": "0xbfdd4eee",
+                "stackAlign": 2
+            },
+            "compileService": {
+                "buildEngine": "dockerespidf",
+                "dockerImage": "pext/esp:latest",
+                "dockerArgs": [],
+                "serviceId": "espidf"
             }
         }
     },

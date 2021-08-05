@@ -1,0 +1,23 @@
+{
+    "name": "jacdac-iot-s2",
+    "description": "Support for MSR Jacdac IoT 48 (ESP32-S2)",
+    "files": [
+        "README.md",
+        "board.json",
+        "board.svg",
+        "config.ts",
+        "device.d.ts"
+    ],
+    "core": true,
+    "compileServiceVariant": "esp32s2",
+    "dependencies": {
+        "core---esp32s2": "file:../core---esp32s2",
+        "settings---esp32": "file:../settings---esp32",
+        "wifi---esp32": "file:../wifi---esp32"
+    },
+    "public": true,
+    "features": [
+        "pinled",
+        "jacdac"
+    ]
+}

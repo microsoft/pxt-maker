@@ -1,0 +1,25 @@
+{
+    "name": "espressif-esp32-devkit-c",
+    "description": "Support for Espressif ESP32-DevKitC",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "core": true,
+    "compileServiceVariant": "esp32",
+    "dependencies": {
+        "core---esp32": "file:../core---esp32",
+        "settings---esp32": "file:../settings---esp32",
+        "wifi---esp32": "file:../wifi---esp32"
+    },
+    "public": true,
+    "features": [
+        "pinled",
+        "pind0",
+        "pind1",
+        "jacdac"
+    ]
+}

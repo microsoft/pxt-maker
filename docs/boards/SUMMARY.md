@@ -22,9 +22,10 @@
     * [XinaBox CS11](/boards/xinabox-cs11)
 * [Misc](/boards/misc)
     * [Robotics Masters Robo HAT MM1 M4](/boards/robotics-masters-robohatmm1-m4)
+    * [MSR Jacdac IoT Brain 48 (ESP32-S2)](/boards/jacdac-iot-s2)
+    * [Espressif ESP32 DevKit-C](/boards/espressif-esp32-devkit-c)
     * [RedBear BLE NANO 2](/boards/redbear-ble-nano)
     * [StichKit](/boards/stitchkit)
     * [Teknikio Bluebird](/boards/teknikio-bluebird)
     * [JD Brain NRF52840](/boards/brain-nrf52840)
-
-* [Add a new board](/boards/add-a-new-board)
+    * [Add a new board](/boards/add-a-new-board)

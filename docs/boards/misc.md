@@ -10,6 +10,20 @@
 
 ---
 
+* name: MSR Jacdac IoT Brain 48 (ESP32-S2)
+* url: /boards/jacdac-iot-s2
+* cardType: template
+* imageUrl: /static/libs/jacdac-iot-s2.jpg
+
+---
+
+* name: Espressif ESP32 DevKit-C
+* url: /boards/espressif-esp32-devkit-c
+* cardType: template
+* imageUrl: /static/libs/espressif-esp32-devkit-c.jpg
+
+---
+
 * name: RedBear BLE NANO 2
 * url: /boards/redbear-ble-nano
 * cardType: template
