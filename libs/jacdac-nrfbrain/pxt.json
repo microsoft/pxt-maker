@@ -1,6 +1,6 @@
 {
-    "name": "microsoft-makeable",
-    "description": "Support for Microsoft Makeable - beta",
+    "name": "JacdacNRFBrain",
+    "description": "Support for the Jacdac NRFBrain - beta",
     "dependencies": {
         "core---nrf52": "file:../core---nrf52"
     },
