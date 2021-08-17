@@ -97,7 +97,7 @@
         "libs/brain-nrf52840",
         "libs/stitchkit",
         "libs/machachi",
-        "libs/microsoft-makeable",
+        "libs/jacdac-nrfbrain",
         "libs/espressif-esp32-devkit-c",
         "libs/jacdac-iot-s2"
     ],
