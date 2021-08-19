@@ -5,6 +5,7 @@
         ],
         "approvedRepos": [
             "microsoft/pxt-jacdac",
+            "microsoft/pxt-ml4f",
             "Adafruit/pxt-crickit",
             "Adafruit/pxt-seesaw",
             "ElectronicCats/pxt-bme280",
@@ -20,7 +21,8 @@
             "ElectronicCats/pxt-lora"
         ],
         "approvedEditorExtensionUrls": [
-            "https://microsoft.github.io/jacdac-docs/tools/makecode-editor-extension"
+            "https://microsoft.github.io/jacdac-docs/tools/makecode-editor-extension",
+            "https://microsoft.github.io/ml4f/"
         ]
     },
     "galleries": {
