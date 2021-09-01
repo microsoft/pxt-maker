@@ -6,15 +6,15 @@ declare namespace _wifi {
     function socketAlloc(): int32;
 
     /** Connect with TLS */
-    //% shim=_wifi::socketConnectTLS
+    //% promise shim=_wifi::socketConnectTLS
     function socketConnectTLS(fd: int32, host: string, port: int32): int32;
 
     /** Write to socket */
-    //% shim=_wifi::socketWrite
+    //% promise shim=_wifi::socketWrite
     function socketWrite(fd: int32, data: Buffer): int32;
 
     /** Read from a socket; the return type is really number|Buffer */
-    //% shim=_wifi::socketRead
+    //% promise shim=_wifi::socketRead
     function socketRead(fd: int32, size: int32): int32;
 
     /** See how many bytes are available for reading */
