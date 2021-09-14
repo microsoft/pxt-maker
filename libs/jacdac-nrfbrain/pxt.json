@@ -1,5 +1,5 @@
 {
-    "name": "JacdacNRFBrain",
+    "name": "jacdac-nrfbrain",
     "description": "Support for the Jacdac NRFBrain - beta",
     "dependencies": {
         "core---nrf52": "file:../core---nrf52"
