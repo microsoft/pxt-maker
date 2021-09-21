@@ -3,16 +3,96 @@
   "visual": {
     "image": "pkg://board.svg",
     "useCrocClips": false,
-    "width": 210,
-    "height": 151,
+    "width": 343,
+    "height": 172,
     "pinDist": 15,
-    "pinBlocks": [],
+    "pinBlocks": [
+      {
+        "x": 85.19873566204326,
+        "y": 103.12977654517205,
+        "labels": [
+          "MISO"
+        ]
+      },
+      {
+        "x": 97.11066907933298,
+        "y": 103.12977654517205,
+        "labels": [
+          "MOSI"
+        ]
+      },
+      {
+        "x": 109.0226216503817,
+        "y": 103.12977654517205,
+        "labels": [
+          "SCK"
+        ]
+      },
+      {
+        "x": 132.84646933120212,
+        "y": 103.12977654517205,
+        "labels": [
+          "GND"
+        ]
+      },
+      {
+        "x": 144.7583261334558,
+        "y": 103.12977654517205,
+        "labels": [
+          "_3V"
+        ]
+      },
+      {
+        "x": 156.67031701202254,
+        "y": 103.12977654517205,
+        "labels": [
+          "_5V"
+        ]
+      },
+      {
+        "x": 168.58228873683026,
+        "y": 103.12977654517205,
+        "labels": [
+          "LIGHT_FAULT"
+        ]
+      },
+      {
+        "x": 180.49414553908395,
+        "y": 103.12977654517205,
+        "labels": [
+          "LIGHT_PWR"
+        ]
+      },
+      {
+        "x": 192.40642372403576,
+        "y": 103.12977654517205,
+        "labels": [
+          "VBAT"
+        ]
+      }
+      ,
+      {
+        "x": 205.40642372403576,
+        "y": 103.12977654517205,
+        "labels": [
+          "LED"
+        ]
+      }
+    ],
     "leds": [
       {
-        "x": 36.3439176372727,
-        "y": 27.592803376252533,
-        "w": 5.463899017361905,
-        "h": 4.714000572214601,
+        "x": 120.93449760639439,
+        "y": 103.12977654517205,
+        "w": 5.9999150086845265,
+        "h": 5.996997231091599,
+        "color": "neopixel",
+        "label": "NEOPIXEL"
+      },
+      {
+        "x": 98.93901029902648,
+        "y": 38.202999828947746,
+        "w": 5.463839601619682,
+        "h": 4.714004636228868,
         "color": "#ff0000",
         "label": "LED"
       }
@@ -21,20 +101,49 @@
     "buttons": []
   },
   "gpioPinMap": {
+    "MISO": "MISO",
+    "MOSI": "MOSI",
+    "SCK": "SCK",
+    "NEOPIXEL": "NEOPIXEL",
+    "GND": "GND",
+    "_3V": "_3V",
+    "": "_5V",
+    "3V": "_3V",
+    "_5V": "_5V",
+    "5V": "_5V",
+    "LIGHT_FAULT": "LIGHT_FAULT",
+    "LIGHT": "LIGHT_PWR",
+    "FAULT": "LIGHT_FAULT",
+    "LIGHT_PWR": "LIGHT_PWR",
+    "PWR": "LIGHT_PWR",
+    "VBAT": "VBAT",
     "LED": "LED"
   },
-  "groundPins": [],
-  "threeVoltPins": [],
-  "fiveVoltPins": [],
+  "groundPins": [
+    "GND"
+  ],
+  "threeVoltPins": [
+    "_3V"
+  ],
+  "fiveVoltPins": [
+    "_5V"
+  ],
   "i2cPins": {
     "SDA": "SDA",
     "SCL": "SCL"
   },
-  "onboardComponents": [],
+  "onboardComponents": [
+    "pixel"
+  ],
   "marginWhenBreadboarding": [
     0,
     0,
     80,
     0
-  ]
+  ],
+  "spiPins": {
+    "MOSI": "MOSI",
+    "MISO": "MISO",
+    "SCK": "SCK"
+  }
 }
