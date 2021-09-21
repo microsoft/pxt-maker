@@ -213,7 +213,7 @@
             }
         },
         "githubCorePackage": "lancaster-university/codal",
-        "gittag": "v0.8.0",
+        "gittag": "v0.9.0",
         "serviceId": "codal2cp",
         "dockerImage": "pext/yotta:latest"
     },
@@ -391,6 +391,26 @@
                 "dockerImage": "pext/esp:latest",
                 "dockerArgs": [],
                 "serviceId": "espidf"
+            }
+        },
+        "rp2040": {
+            "compile": {
+                "hasHex": true,
+                "openocdScript": "???",
+                "flashChecksumAddr": 0,
+                "flashEnd": 2097152,
+                "uf2Family": "0xe48bff56"
+            },
+            "compileService": {
+                "codalTarget": {
+                    "name": "codal-pi-pico",
+                    "url": "https://github.com/lancaster-university/codal-pi-pico",
+                    "branch": "v0.0.3",
+                    "type": "git"
+                },
+                "codalBinary": "PI-PICO",
+                "serviceId": "codal2pico",
+                "dockerImage": "pext/yotta:latest"
             }
         }
     },
