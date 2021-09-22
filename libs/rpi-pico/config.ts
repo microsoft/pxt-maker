@@ -32,5 +32,7 @@ namespace config {
     export const PIN_P28 = 28
     export const PIN_P29 = 29
 
+    export const PIN_JACK_TX = 1
+
     export const PIN_LED = PIN_P25
 }
