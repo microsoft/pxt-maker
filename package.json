@@ -44,8 +44,8 @@
         "typescript": "3.7.5"
     },
     "dependencies": {
-        "pxt-common-packages": "9.2.5",
-        "pxt-core": "7.2.9",
+        "pxt-common-packages": "9.2.7",
+        "pxt-core": "7.2.17",
         "webusb": "^1.1.1"
     },
     "scripts": {
