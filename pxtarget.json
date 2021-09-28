@@ -410,12 +410,12 @@
                 "codalTarget": {
                     "name": "codal-pi-pico",
                     "url": "https://github.com/lancaster-university/codal-pi-pico",
-                    "branch": "v0.0.5",
+                    "branch": "v0.0.6",
                     "type": "git"
                 },
                 "codalBinary": "PI-PICO",
                 "serviceId": "codal2pico",
-                "dockerImage": "pext/yotta:latest"
+                "dockerImage": "pext/arm:gcc9"
             }
         }
     },
