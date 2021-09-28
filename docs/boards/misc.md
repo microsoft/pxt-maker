@@ -10,17 +10,17 @@
 
 ---
 
-* name: MSR Jacdac IoT Brain 48 (ESP32-S2)
-* url: /boards/jacdac-iot-s2
-* cardType: template
-* imageUrl: /static/libs/jacdac-iot-s2.jpg
-
----
-
 * name: Espressif ESP32 DevKit-C
 * url: /boards/espressif-esp32-devkit-c
 * cardType: template
 * imageUrl: /static/libs/espressif-esp32-devkit-c.jpg
+
+---
+
+* name: Raspberry Pi Pico RP2040
+* url: /boards/rpi-pico
+* cardType: template
+* imageUrl: /static/libs/rpi-pico.jpg
 
 ---
 

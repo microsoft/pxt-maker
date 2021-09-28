@@ -1,0 +1,31 @@
+{
+    "name": "jacdac-brain-f4",
+    "description": "MSR Jacdac Brain F4 41 - beta",
+    "files": [
+        "README.md",
+        "config.ts",
+        "device.d.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "compileServiceVariant": "stm32f401",
+    "dependencies": {
+        "core---stm32": "file:../core---stm32"
+    },
+    "core": true,
+    "public": true,
+    "dalDTS": {
+        "corePackage": "../core---stm32"
+    },
+    "yotta": {
+        "config": {
+            "DEVICE_USB": 1
+        }
+    },
+    "features": [
+        "uf2",
+        "pina0",
+        "pina1",
+        "jacdac"
+    ]
+}

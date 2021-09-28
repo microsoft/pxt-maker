@@ -12,6 +12,7 @@
         "libs/core",
         "libs/core---stm32",
         "libs/core---nrf52",
+        "libs/core---rp2040",
         "libs/core---samd",
         "libs/core---samd51",
         "libs/core---esp32",
@@ -26,6 +27,7 @@
         "libs/mixer---samd",
         "libs/mixer---stm32",
         "libs/mixer---nrf52",
+        "libs/mixer---rp2040",
         "libs/pixel",
         "libs/buttons",
         "libs/touch",
@@ -97,8 +99,11 @@
         "libs/brain-nrf52840",
         "libs/stitchkit",
         "libs/machachi",
-        "libs/jacdac-nrfbrain",
         "libs/espressif-esp32-devkit-c",
+        "libs/rpi-pico",
+        "libs/jacdac-nrfbrain",
+        "libs/jacdac-brain-f4",
+        "libs/jacdac-brain-rp2040",
         "libs/jacdac-iot-s2"
     ],
     "serial": {

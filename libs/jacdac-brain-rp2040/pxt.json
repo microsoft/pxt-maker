@@ -1,0 +1,23 @@
+{
+    "name": "jacdac-brain-rp2040",
+    "description": "MSR Jacdac Brain RP2040 59 - beta",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "core": true,
+    "compileServiceVariant": "rp2040",
+    "dependencies": {
+        "core---rp2040": "file:../core---rp2040"
+    },
+    "public": true,
+    "features": [
+        "pinled",
+        "pind0",
+        "pind1",
+        "jacdac"
+    ]
+}
