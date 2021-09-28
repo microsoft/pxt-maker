@@ -17,8 +17,6 @@ clients/win10/*.opendb
 clients/**/bin/**
 clients/**/obj/**
 clients/electron/projects
-package-lock.json
-
 
 videos/**
 *.user
