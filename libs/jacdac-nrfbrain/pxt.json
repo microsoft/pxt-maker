@@ -1,6 +1,6 @@
 {
     "name": "jacdac-nrfbrain",
-    "description": "Support for the Jacdac NRFBrain - beta",
+    "description": "MSR Jacdac NRF52833 High Power 32 - beta",
     "dependencies": {
         "core---nrf52": "file:../core---nrf52"
     },
@@ -9,8 +9,7 @@
         "device.d.ts",
         "config.ts",
         "board.json",
-        "board.svg",
-        "boardwireframe.svg"
+        "board.svg"
     ],
     "public": true,
     "core": true,
