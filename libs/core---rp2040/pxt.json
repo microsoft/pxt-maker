@@ -1,0 +1,14 @@
+{
+    "additionalFilePath": "../../node_modules/pxt-common-packages/libs/core---rp2040",
+    "cppDependencies": {
+        "accelerometer": "file:../accelerometer",
+        "buttons": "file:../buttons",
+        "light": "file:../light",
+        "lightsensor": "file:../lightsensor",
+        "screen---st7735": "file:../screen---st7735",
+        "switch": "file:../switch",
+        "thermometer": "file:../thermometer",
+        "lcd": "file:../lcd",
+        "mixer---rp2040": "file:../mixer---rp2040"
+    }
+}

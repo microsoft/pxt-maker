@@ -18,6 +18,11 @@
         "imageUrl": "/static/libs/sparkfun-redboard-turbo.jpg"
     },
     {
+        "name": "Jacdac",
+        "url": "/boards/jacdac",
+        "imageUrl": "/static/libs/jacdac-iot-s2.jpg"
+    },
+    {
         "name": "XinaBox",
         "url": "/boards/xinabox",
         "imageUrl": "/static/libs/xinabox-cc03.jpg"
@@ -127,6 +132,7 @@
 [Adafruit](/boards/adafruit),
 [Arduino](/boards/arduino),
 [SparkFun](/boards/sparkfun),
+[Jacdac](/boards/jacdac),
 [XinaBox](/boards/xinabox),
 [Misc](/boards/misc),
 [Digital IO](/projects/digital-io),

@@ -1,24 +1,51 @@
 {
     "driveDisplayName": "MAKEABLE",
     "visual": {
-        "image": "pkg://board.svg",
-        "outlineImage": "pkg://boardwireframe.svg",
-        "width": 175,
-        "height": 170,
-        "pinDist": 8.4,
-        "pinBlocks": []
+      "image": "pkg://board.svg",
+      "useCrocClips": false,
+      "width": 208.3,
+      "height": 118.4,
+      "pinDist": 15,
+      "pinBlocks": [],
+      "leds": [
+        {
+          "x": 185.376333394688,
+          "y": 99.02860797644898,
+          "w": 6.217042416665318,
+          "h": 6.2170332202557015,
+          "color": "#ff0000",
+          "label": "LED"
+        },
+        {
+          "x": 92.0207047046369,
+          "y": 38.39268871460768,
+          "w": 11.120971341395725,
+          "h": 10.030683027224555,
+          "color": "neopixel",
+          "label": "NEOPIXEL"
+        }
+      ],
+      "touchPads": [],
+      "buttons": [],
+      "reset": {
+        "x": 17.83250718937794,
+        "y": 45.50404575993516,
+        "w": 13.596367783800709,
+        "h": 13.596390332336691
+      }
     },
-    "gpioPinBlocks": [
+    "gpioPinMap": {},
+    "groundPins": [],
+    "threeVoltPins": [],
+    "i2cPins": {},
+    "onboardComponents": [
+      "pixel"
     ],
-    "gpioPinMap": {
-    },
-    "groundPins": [""],
-    "threeVoltPins": [""],
-    "onboardComponents": [""],
     "marginWhenBreadboarding": [
-        0,
-        0,
-        80,
-        0
-    ]
-}
+      0,
+      0,
+      80,
+      0
+    ],
+    "spiPins": {}
+  }
