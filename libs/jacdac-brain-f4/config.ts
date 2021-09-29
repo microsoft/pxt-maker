@@ -5,7 +5,7 @@ namespace config {
   export const PIN_LED_B = DAL.PA_6 | DAL.CFG_PIN_CONFIG_ACTIVE_LO;
 
   // defined in bootloader as well - this takes priority!
-  export const PIN_JACK_TX = DAL.PA02;
+  export const PIN_JACK_TX = DAL.PA_2;
 
   // missing from bootloader
   export const PIN_JDPWR_OVERLOAD_LED = PIN_LED_R
