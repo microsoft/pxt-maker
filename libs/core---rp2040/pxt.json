@@ -9,6 +9,6 @@
         "switch": "file:../switch",
         "thermometer": "file:../thermometer",
         "lcd": "file:../lcd",
-        "mixer---rp20402": "file:../mixer---rp2040"
+        "mixer---rp2040": "file:../mixer---rp2040"
     }
 }
