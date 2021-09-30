@@ -46,6 +46,8 @@ namespace config {
     export const PIN_JDPWR_ENABLE = PIN_P2 | DAL.CFG_PIN_CONFIG_ACTIVE_LO // ILIM_ENABLE
     export const PIN_JDPWR_FAULT = PIN_P13 // ILIM_FAULT
 
+    export const BOOTLOADER_BOARD_ID = 0x3a9b6daf
+
     // PIN_P3 is for 500/900mA switch
 
 }

@@ -18,4 +18,6 @@ namespace config {
 
     export const PIN_NEOPIXEL = DAL.P0_14;
     export const NUM_NEOPIXELS = 4;
+
+    export const BOOTLOADER_BOARD_ID = 0x3c72e7c2
 }

@@ -44,4 +44,6 @@ namespace config {
     export const PIN_JDPWR_OVERLOAD_LED = PIN_LED_R
     export const PIN_JDPWR_ENABLE = 19 | DAL.CFG_PIN_CONFIG_ACTIVE_LO // ILIM_ENABLE
     export const PIN_JDPWR_FAULT = 25 // ILIM_FAULT
+
+    export const BOOTLOADER_BOARD_ID = 0x34b55eab
 }
