@@ -4,7 +4,7 @@ namespace config {
     export const PIN_LED_G = 13 | DAL.CFG_PIN_CONFIG_ACTIVE_LO;
     export const PIN_LED_B = 15 | DAL.CFG_PIN_CONFIG_ACTIVE_LO;
     // The early setting of this seems to cause crashes - to be investigated
-    // export const PIN_LED = PIN_LED_B;
+    export const PIN_LED = PIN_LED_B;
 
     export const PIN_P0 = 0
     export const PIN_P1 = 1
