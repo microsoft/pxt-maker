@@ -37,9 +37,9 @@ namespace config {
 
     export const PIN_JACK_TX = PIN_P17
 
-    export const PIN_LED_R = 8
-    export const PIN_LED_G = 7
-    export const PIN_LED_B = 6
+    export const PIN_LED_R = 8 | DAL.CFG_PIN_CONFIG_ACTIVE_LO
+    export const PIN_LED_G = 7 | DAL.CFG_PIN_CONFIG_ACTIVE_LO
+    export const PIN_LED_B = 6 | DAL.CFG_PIN_CONFIG_ACTIVE_LO
     export const PIN_LED = PIN_LED_G
 
     export const PIN_JDPWR_OVERLOAD_LED = PIN_LED_R | DAL.CFG_PIN_CONFIG_ACTIVE_LO
