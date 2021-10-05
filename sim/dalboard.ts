@@ -144,7 +144,7 @@ namespace pxsim {
             this.builtinVisuals["dotstar"] = () => new visuals.NeoPixelView(parsePinString);
             this.builtinPartVisuals["dotstar"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
 
-            this.builtinParts["lcd"] =  this.lcdState;
+            this.builtinParts["lcd"] = this.lcdState;
             this.builtinVisuals["lcd"] = () => new visuals.LCDView();
             this.builtinPartVisuals["lcd"] = (xy: visuals.Coord) => visuals.mkLCDPart(xy);
 
@@ -166,15 +166,17 @@ namespace pxsim {
             this.builtinVisuals["screen"] = () => new visuals.ScreenView();
             this.builtinPartVisuals["screen"] = (xy: visuals.Coord) => visuals.mkScreenPart(xy);
 
-            
-            this.neopixelPin = this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_ONBOARD_DOTSTAR_DATA)) 
-            || this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_ONBOARD_NEOPIXEL))
-            || this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_DOTSTAR_DATA)) 
-            || this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_NEOPIXEL));
-            
+            this.neopixelPin = this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_ONBOARD_DOTSTAR_DATA))
+                || this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_ONBOARD_NEOPIXEL))
+                || this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_DOTSTAR_DATA))
+                || this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_NEOPIXEL));
+
+            if (!this.neopixelPin && (boardDefinition.visual as BoardImageDefinition)?.leds?.some(l => l.color == "neopixel"))
+                this.neopixelPin = this.edgeConnectorState.getPin(getConfig(DAL.CFG_PIN_LED_B))
+
             this.builtinParts["pixels"] = (pin: Pin) => { return this.neopixelState(!!this.neopixelPin && this.neopixelPin.id); };
             this.builtinVisuals["pixels"] = () => new visuals.NeoPixelView(parsePinString);
-            this.builtinPartVisuals["pixels"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);    
+            this.builtinPartVisuals["pixels"] = (xy: visuals.Coord) => visuals.mkNeoPixelPart(xy);
         }
 
         kill() {
@@ -259,5 +261,18 @@ namespace pxsim {
     export function parsePinString(pinString: string): Pin {
         const pinName = pinString && pxsim.readPin(pinString);
         return pinName && pxtcore.getPin(pinIds[pinName]);
+    }
+
+    export namespace jacdac {
+        export function _setLedChannel(ch: number, val: number) {
+            const b = board() as DalBoard
+            if (b.neopixelPin) {
+                const state = b.neopixelState(b.neopixelPin.id);
+                state.mode = NeoPixelMode.RGB_RGB;
+                if (!state.buffer)
+                    state.buffer = new Uint8Array(3);
+                state.buffer[ch] = val >> 8;
+            }
+        }
     }
 }
