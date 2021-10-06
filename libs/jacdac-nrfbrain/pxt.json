@@ -1,23 +1,16 @@
 {
-    "name": "jacdac-nrfbrain",
-    "description": "MSR Jacdac NRF52833 High Power 32 - beta",
-    "dependencies": {
-        "core---nrf52": "file:../core---nrf52"
-    },
-    "files": [
-        "README.md",
-        "device.d.ts",
-        "config.ts",
-        "board.json",
-        "board.svg"
-    ],
-    "public": true,
-    "core": true,
-    "compileServiceVariant": "nrf52833",
-    "dalDTS": {
-        "corePackage": "../core---nrf52"
-    },
-    "features": [
-        "radio"
-    ]
+  "name": "jacdac-nrfbrain",
+  "description": "MSR Jacdac NRF52833 High Power 32",
+  "dependencies": {
+    "core---nrf52": "file:../core---nrf52"
+  },
+  "files": ["README.md", "device.d.ts", "config.ts", "board.json", "board.svg"],
+  "public": true,
+  "core": true,
+  "compileServiceVariant": "nrf52833",
+  "dalDTS": {
+    "corePackage": "../core---nrf52"
+  },
+  "weight": 1000,
+  "features": ["radio"]
 }

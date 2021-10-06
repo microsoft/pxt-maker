@@ -1,5 +1,10 @@
 # Projects
 
+* [Jacdac](/boards/jacdac)
+  * [MSR Jacdac IoT Brain 48 (ESP32-S2)](/boards/jacdac-iot-s2)
+  * [MSR Jacdac Brain RP2040 59](/boards/jacdac-brain-rp2040)
+  * [MSR Jacdac Brain F4 41](/boards/jacdac-brain-f4)
+  * [MSR Jacdac NRF52833 High Power 32](/boards/jacdac-nrfbrain)
 * [Adafruit](/boards/adafruit)
   * [Adafruit Metro M0 Express](/boards/adafruit-metro-m0-express)
   * [Adafruit Feather M0 Express](/boards/adafruit-feather-m0-express)
@@ -24,11 +29,6 @@
   * [Sparkfun LumiDrive](/boards/sparkfun-lumidrive)
   * [Sparkfun SAMD21 Dev Breakout](/boards/sparkfun-samd21-dev-breakout)
   * [Sparkfun SAMD21 Mini Breakout](/boards/sparkfun-samd21-mini-breakout)
-* [Jacdac](/boards/jacdac)
-  * [MSR Jacdac IoT Brain 48 (ESP32-S2)](/boards/jacdac-iot-s2)
-  * [MSR Jacdac Brain RP2040 59](/boards/jacdac-brain-rp2040)
-  * [MSR Jacdac Brain F4 41](/boards/jacdac-brain-f4)
-  * [MSR Jacdac NRF52833 High Power 32](/boards/jacdac-nrfbrain)
 * [XinaBox](/boards/xinabox)
   * [XinaBox CC03](/boards/xinabox-cc03)
   * [XinaBox CS11](/boards/xinabox-cs11)

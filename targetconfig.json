@@ -1,52 +1,50 @@
 {
-    "packages": {
-        "approvedOrgs": [
-            "Microsoft"
-        ],
-        "approvedRepos": [
-            "microsoft/pxt-jacdac",
-            "microsoft/pxt-ml4f",
-            "Adafruit/pxt-crickit",
-            "Adafruit/pxt-seesaw",
-            "ElectronicCats/pxt-bme280",
-            "ElectronicCats/pxt-airQuality",
-            "ElectronicCats/pxt-lora"
-        ],
-        "preferredRepos": [
-            "microsoft/pxt-jacdac",
-            "Adafruit/pxt-crickit",
-            "Adafruit/pxt-seesaw",
-            "ElectronicCats/pxt-bme280",
-            "ElectronicCats/pxt-airQuality",
-            "ElectronicCats/pxt-lora"
-        ],
-        "approvedEditorExtensionUrls": [
-            "https://microsoft.github.io/jacdac-docs/tools/makecode-editor-extension",
-            "https://microsoft.github.io/ml4f/"
-        ]
-    },
-    "galleries": {
-        "Adafruit": "/boards/adafruit",
-        "Arduino": "/boards/arduino",
-        "SparkFun": "/boards/sparkfun",
-        "Jacdac": "/boards/jacdac",
-        "XinaBox": "/boards/xinabox",
-        "Misc": "/boards/misc",
-        "Digital IO": "/projects/digital-io",
-        "Analog IO": "/projects/analog-io",
-        "Pixel": "/projects/pixel",
-        "Light": "/projects/light", 
-        "Music": "/projects/music",
-        "Servos": "/projects/servos",
-        "HID": "/projects/hid",
-        "Screen": "/projects/screen",
-        "Accelerometer": "/projects/accelerometer",
-        "Serial": "/projects/serial",
-        "Storage": "/projects/storage",
-        "LCD": "/projects/lcd",
-        "LoRa": "/projects/lora",
-        "Power": "/projects/power",
-        "Bit Radio": "/projects/radio",
-        "Boards": "/boards"
-    }
+  "packages": {
+    "approvedOrgs": ["Microsoft"],
+    "approvedRepos": [
+      "microsoft/pxt-jacdac",
+      "microsoft/pxt-ml4f",
+      "Adafruit/pxt-crickit",
+      "Adafruit/pxt-seesaw",
+      "ElectronicCats/pxt-bme280",
+      "ElectronicCats/pxt-airQuality",
+      "ElectronicCats/pxt-lora"
+    ],
+    "preferredRepos": [
+      "microsoft/pxt-jacdac",
+      "Adafruit/pxt-crickit",
+      "Adafruit/pxt-seesaw",
+      "ElectronicCats/pxt-bme280",
+      "ElectronicCats/pxt-airQuality",
+      "ElectronicCats/pxt-lora"
+    ],
+    "approvedEditorExtensionUrls": [
+      "https://microsoft.github.io/jacdac-docs/tools/makecode-editor-extension",
+      "https://microsoft.github.io/ml4f/"
+    ]
+  },
+  "galleries": {
+    "Jacdac": "/boards/jacdac",
+    "Adafruit": "/boards/adafruit",
+    "Arduino": "/boards/arduino",
+    "SparkFun": "/boards/sparkfun",
+    "XinaBox": "/boards/xinabox",
+    "Misc": "/boards/misc",
+    "Digital IO": "/projects/digital-io",
+    "Analog IO": "/projects/analog-io",
+    "Pixel": "/projects/pixel",
+    "Light": "/projects/light",
+    "Music": "/projects/music",
+    "Servos": "/projects/servos",
+    "HID": "/projects/hid",
+    "Screen": "/projects/screen",
+    "Accelerometer": "/projects/accelerometer",
+    "Serial": "/projects/serial",
+    "Storage": "/projects/storage",
+    "LCD": "/projects/lcd",
+    "LoRa": "/projects/lora",
+    "Power": "/projects/power",
+    "Bit Radio": "/projects/radio",
+    "Boards": "/boards"
+  }
 }

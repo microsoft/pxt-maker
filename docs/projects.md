@@ -3,6 +3,11 @@
 ```codecard
 [
     {
+        "name": "Jacdac",
+        "url": "/boards/jacdac",
+        "imageUrl": "/static/libs/jacdac-iot-s2.jpg"
+    },
+    {
         "name": "Adafruit",
         "url": "/boards/adafruit",
         "imageUrl": "/static/libs/adafruit-metro-m0-express.jpg"
@@ -16,11 +21,6 @@
         "name": "SparkFun",
         "url": "/boards/sparkfun",
         "imageUrl": "/static/libs/sparkfun-redboard-turbo.jpg"
-    },
-    {
-        "name": "Jacdac",
-        "url": "/boards/jacdac",
-        "imageUrl": "/static/libs/jacdac-iot-s2.jpg"
     },
     {
         "name": "XinaBox",
@@ -129,10 +129,10 @@
 
 ## See Also
 
+[Jacdac](/boards/jacdac),
 [Adafruit](/boards/adafruit),
 [Arduino](/boards/arduino),
 [SparkFun](/boards/sparkfun),
-[Jacdac](/boards/jacdac),
 [XinaBox](/boards/xinabox),
 [Misc](/boards/misc),
 [Digital IO](/projects/digital-io),
