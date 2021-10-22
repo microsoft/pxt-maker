@@ -271,7 +271,10 @@ namespace pxsim {
                 state.mode = NeoPixelMode.RGB_RGB;
                 if (!state.buffer)
                     state.buffer = new Uint8Array(3);
+                if (val > 0xffff) val = 0xffff;
+                if (val < 0) val = 0;
                 state.buffer[ch] = val >> 8;
+                runtime.updateDisplay();
             }
         }
     }
