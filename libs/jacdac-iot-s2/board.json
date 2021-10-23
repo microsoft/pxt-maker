@@ -1,18 +1,18 @@
 {
-  "driveDisplayName": "JDIOTBOOT",
+  "driveDisplayName": "IOT-BOOT",
   "visual": {
     "image": "pkg://board.svg",
     "useCrocClips": false,
-    "width": 208.3,
-    "height": 118.4,
+    "width": 281,
+    "height": 182,
     "pinDist": 15,
     "pinBlocks": [],
     "leds": [
       {
-        "x": 92.0207047046369,
-        "y": 38.39268871460768,
-        "w": 11.120971341395725,
-        "h": 10.030683027224555,
+        "x": 70,
+        "y": 90,
+        "w": 5,
+        "h": 5,
         "color": "neopixel",
         "label": "NEOPIXEL"
       }
@@ -20,10 +20,10 @@
     "touchPads": [],
     "buttons": [],
     "reset": {
-      "x": 17.83250718937794,
-      "y": 45.50404575993516,
-      "w": 13.596367783800709,
-      "h": 13.596390332336691
+      "x": 197,
+      "y": 163,
+      "w": 15,
+      "h": 15
     }
   },
   "gpioPinMap": {},
