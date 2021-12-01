@@ -14,6 +14,21 @@ declare namespace pins {
     //% shim=pins::createBuffer
     function createBuffer(size: int32): Buffer;
 }
+declare namespace control {
+
+    /**
+     * Enable a watchdog timer that need to be fed or it will reset the device.
+     * If timeout is not positive, the watchdog is disabled.
+     */
+    //% shim=control::setWatchdog
+    function setWatchdog(timeout_s: int32): void;
+
+    /**
+     * Reset timeout on previously enabled watchdog.
+     */
+    //% shim=control::feedWatchdog
+    function feedWatchdog(): void;
+}
 
 
 declare interface DigitalInOutPin {
