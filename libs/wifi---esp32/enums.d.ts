@@ -8,6 +8,8 @@
     GotIP = 2,
     //%
     Disconnected = 3,
+    //%
+    AccessPointCredentialsAvailable = 4,
     }
 
 // Auto-generated. Do not edit. Really.
