@@ -10,6 +10,8 @@
     Disconnected = 3,
     //%
     AccessPointCredentialsAvailable = 4,
+    //%
+    LoginServerStarted = 5,
     }
 
 // Auto-generated. Do not edit. Really.

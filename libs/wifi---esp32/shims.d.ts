@@ -55,6 +55,10 @@ declare namespace _wifi {
     //% shim=_wifi::isConnected
     function isConnected(): boolean;
 
+    /** Check if login server is running */
+    //% shim=_wifi::isLoginServerEnabled
+    function isLoginServerEnabled(): boolean;
+
     /** Return ipv4 address, netmask, and gateway. */
     //% shim=_wifi::ipInfo
     function ipInfo(): Buffer;
