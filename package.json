@@ -1,6 +1,6 @@
 {
     "name": "pxt-maker",
-    "version": "0.15.63",
+    "version": "0.15.62",
     "description": "Microsoft MakeCode Maker Boards",
     "public": true,
     "keywords": [
@@ -43,7 +43,7 @@
         "typescript": "^4.2.3"
     },
     "dependencies": {
-        "pxt-common-packages": "9.5.10",
+        "pxt-common-packages": "9.5.1",
         "pxt-core": "7.5.27",
         "webusb": "^1.1.1"
     },

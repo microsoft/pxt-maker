@@ -104,7 +104,8 @@
         "libs/jacdac-nrfbrain",
         "libs/jacdac-brain-f4",
         "libs/jacdac-brain-rp2040",
-        "libs/jacdac-iot-s2"
+        "libs/jacdac-iot-s2","libs/aebo-joystick"
+        
     ],
     "serial": {
         "useHF2": true,
