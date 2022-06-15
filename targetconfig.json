@@ -21,7 +21,28 @@
     "approvedEditorExtensionUrls": [
       "https://microsoft.github.io/jacdac-docs/tools/makecode-editor-extension",
       "https://microsoft.github.io/ml4f/"
-    ]
+    ],
+    "approvedRepoLib": {
+      "microsoft/pxt-jacdac": {
+        "preferred": true
+      },
+      "microsoft/pxt-ml4f": {},
+      "adafruit/pxt-crickit": {
+        "preferred": true
+      },
+      "adafruit/pxt-seesaw": {
+        "preferred": true
+      },
+      "electroniccats/pxt-bme280": {
+        "preferred": true
+      },
+      "electroniccats/pxt-airquality": {
+        "preferred": true
+      },
+      "electroniccats/pxt-lora": {
+        "preferred": true
+      }
+    }
   },
   "galleries": {
     "Jacdac": "/boards/jacdac",
