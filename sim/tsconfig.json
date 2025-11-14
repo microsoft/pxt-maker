@@ -4,10 +4,16 @@
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "declaration": true,
-        "out": "../built/sim.js",
-        "rootDir": ".",
+        "outFile": "../built/sim.js",
+        "rootDir": "..",
         "newLine": "LF",
+        "moduleResolution": "node",
         "sourceMap": false,
-        "typeRoots": ["../node_modules/@types"]
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "scripthost",
+            "es2017"
+        ]
     }
 }

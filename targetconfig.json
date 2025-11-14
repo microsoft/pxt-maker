@@ -3,6 +3,7 @@
     "approvedOrgs": ["Microsoft"],
     "approvedRepos": [
       "microsoft/pxt-jacdac",
+      "jacdac/pxt-jacdac",
       "microsoft/pxt-ml4f",
       "Adafruit/pxt-crickit",
       "Adafruit/pxt-seesaw",
@@ -11,7 +12,7 @@
       "ElectronicCats/pxt-lora"
     ],
     "preferredRepos": [
-      "microsoft/pxt-jacdac",
+      "jacdac/pxt-jacdac",
       "Adafruit/pxt-crickit",
       "Adafruit/pxt-seesaw",
       "ElectronicCats/pxt-bme280",
@@ -19,12 +20,19 @@
       "ElectronicCats/pxt-lora"
     ],
     "approvedEditorExtensionUrls": [
-      "https://microsoft.github.io/jacdac-docs/tools/makecode-editor-extension",
       "https://microsoft.github.io/ml4f/"
     ],
     "approvedRepoLib": {
+      "jacdac/pxt-jacdac": {
+          "preferred": true,
+          "simx": {
+              "sha": "1ef117792fecdb6ce91165cc67ff855e540a589a",
+              "devUrl": "https://jacdac.github.io/jacdac-docs/tools/makecode-sim/"
+          }
+      },
       "microsoft/pxt-jacdac": {
-        "preferred": true
+          "upgrades": [ "move:jacdac/pxt-jacdac" ],
+          "hidden": true
       },
       "microsoft/pxt-ml4f": {},
       "adafruit/pxt-crickit": {

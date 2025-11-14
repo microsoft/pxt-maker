@@ -44,7 +44,7 @@ namespace pxsim {
         storageState: StorageState;
         thermometerState: AnalogSensorState;
         thermometerUnitState: TemperatureUnit;
-        microphoneState: AnalogSensorState;
+        microphoneState: MicrophoneState;
         screenState: ScreenState;
         irState: InfraredState;
         lcdState: LCDState;
@@ -103,7 +103,7 @@ namespace pxsim {
             }
 
             this.lightState = {};
-            this.microphoneState = new AnalogSensorState(DAL.DEVICE_ID_MICROPHONE, 52, 120, 75, 96);
+            this.microphoneState = new MicrophoneState(DAL.DEVICE_ID_MICROPHONE, 52, 120, 75, 96);
             this.storageState = new StorageState();
             this.lightSensorState = new AnalogSensorState(DAL.DEVICE_ID_LIGHT_SENSOR, 0, 255, 128 / 4, 896 / 4);
             this.thermometerState = new AnalogSensorState(DAL.DEVICE_ID_THERMOMETER, -20, 50, 10, 30);
