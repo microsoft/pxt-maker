@@ -3,6 +3,6 @@
         "target": "es5",
         "noImplicitAny": true,
         "outDir": "built",
-        "rootDir": "."
-    }
+        "rootDir": ".",
+        "types": []
 }
