@@ -9,3 +9,9 @@
 * [Blocks](/blocks)
 * [JavaScript](/javascript)
 * [Reference](/reference)
+
+* ## Other Documentation
+
+* [Arcade](https://arcade.makecode.com/docs)
+* [MakeCode](https://www.makecode.com/docs)
+* [Minecraft](https://minecraft.makecode.com/docs)
