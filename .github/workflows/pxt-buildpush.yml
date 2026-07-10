@@ -85,11 +85,39 @@ jobs:
       - name: pxt ci (with publish capability)
         run: |
           pxt ci --publish
+
+      - name: Clone release repo
+        uses: actions/checkout@main
+        with:
+          repository: ${{ secrets.BUILT_REPO_NAME }}
+          path: tmp/releases/release
+          fetch-depth: 3
+          fetch-tags: true
+          ssh-key: ${{ secrets.BUILT_REPO_DEPLOY_KEY }}
+
+      - name: Read release info
+        id: release_info
+        run: |
+          content=`cat tmp/releases/release.json`
+          echo "::set-output name=releaseInfo::$content"
+
+      - name: Push artifacts to release repo
+        run: |
+          cp -r tmp/releases/built/ tmp/releases/release/
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          cd tmp/releases/release
+          git add .
+          git commit -m "Release ${{fromJson(steps.release_info.outputs.releaseInfo).tag}} from ${{fromJson(steps.release_info.outputs.releaseInfo).url}}"
+          git tag ${{fromJson(steps.release_info.outputs.releaseInfo).tag}}
+          git push
+          git push --tags
+
         env:
           CROWDIN_KEY: ${{ secrets.CROWDIN_KEY }}
           PXT_ACCESS_TOKEN: ${{ secrets.PXT_ACCESS_TOKEN }}
-          PXT_RELEASE_REPO: ${{ secrets.PXT_RELEASE_REPO }}
           NPM_PUBLISH: true
           CHROME_BIN: chromium-browser
           DISPLAY: :99.0
           CI: true
+          PXT_SKIP_GIT_COMMIT: true
