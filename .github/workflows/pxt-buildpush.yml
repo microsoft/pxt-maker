@@ -85,6 +85,14 @@ jobs:
       - name: pxt ci (with publish capability)
         run: |
           pxt ci --publish
+        env:
+          CROWDIN_KEY: ${{ secrets.CROWDIN_KEY }}
+          PXT_ACCESS_TOKEN: ${{ secrets.PXT_ACCESS_TOKEN }}
+          NPM_PUBLISH: true
+          CHROME_BIN: chromium-browser
+          DISPLAY: :99.0
+          CI: true
+          PXT_SKIP_GIT_COMMIT: true
 
       - name: Clone release repo
         uses: actions/checkout@main
@@ -112,12 +120,3 @@ jobs:
           git tag ${{fromJson(steps.release_info.outputs.releaseInfo).tag}}
           git push
           git push --tags
-
-        env:
-          CROWDIN_KEY: ${{ secrets.CROWDIN_KEY }}
-          PXT_ACCESS_TOKEN: ${{ secrets.PXT_ACCESS_TOKEN }}
-          NPM_PUBLISH: true
-          CHROME_BIN: chromium-browser
-          DISPLAY: :99.0
-          CI: true
-          PXT_SKIP_GIT_COMMIT: true
