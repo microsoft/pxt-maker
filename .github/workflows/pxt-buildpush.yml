@@ -106,8 +106,10 @@ jobs:
       - name: Read release info
         id: release_info
         run: |
-          content=`cat tmp/releases/release.json`
-          echo "::set-output name=releaseInfo::$content"
+          tag=$(cat tmp/releases/release.json | jq -r '.tag')
+          url=$(cat tmp/releases/release.json | jq -r '.url')
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "url=$url" >> "$GITHUB_OUTPUT"
 
       - name: Push artifacts to release repo
         run: |
@@ -116,7 +118,7 @@ jobs:
           git config user.email "github-actions@users.noreply.github.com"
           cd tmp/releases/release
           git add .
-          git commit -m "Release ${{fromJson(steps.release_info.outputs.releaseInfo).tag}} from ${{fromJson(steps.release_info.outputs.releaseInfo).url}}"
-          git tag ${{fromJson(steps.release_info.outputs.releaseInfo).tag}}
+          git commit -m "Release ${{steps.release_info.outputs.tag}} from ${{steps.release_info.outputs.url}}"
+          git tag ${{steps.release_info.outputs.tag}}
           git push
           git push --tags
