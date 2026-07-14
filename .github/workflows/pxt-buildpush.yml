@@ -113,7 +113,7 @@ jobs:
 
       - name: Push artifacts to release repo
         run: |
-          cp -r tmp/releases/built/ tmp/releases/release/
+          cp -a tmp/releases/built/. tmp/releases/release
           cd tmp/releases/release
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
