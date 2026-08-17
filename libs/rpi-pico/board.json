@@ -302,6 +302,7 @@
         "buttons": []
     },
     "gpioPinMap": {
+        "LED": "LED",
         "GP0": "GP0",
         "GP1": "GP1",
         "GND0": "GND0",
