@@ -1,43 +1,405 @@
 {
-  "driveDisplayName": "RPI-RP2",
-  "visual": {
-    "image": "pkg://board.svg",
-    "useCrocClips": false,
-    "width": 208.3,
-    "height": 118.4,
-    "pinDist": 15,
-    "pinBlocks": [],
-    "leds": [
-      {
-        "x": 92.0207047046369,
-        "y": 38.39268871460768,
-        "w": 11.120971341395725,
-        "h": 10.030683027224555,
-        "color": "neopixel",
-        "label": "NEOPIXEL"
-      }
+    "driveDisplayName": "RPI-RP2",
+    "visual": {
+        "image": "pkg://board.svg",
+        "useCrocClips": false,
+        "width": 406.0,
+        "height": 319.5,
+        "pinDist": 18.72,
+        "pinBlocks": [
+            {
+                "x": 24.3,
+                "y": 215.8,
+                "labels": [
+                    "GP0"
+                ]
+            },
+            {
+                "x": 43.0,
+                "y": 215.8,
+                "labels": [
+                    "GP1"
+                ]
+            },
+            {
+                "x": 61.8,
+                "y": 215.8,
+                "labels": [
+                    "GND0"
+                ]
+            },
+            {
+                "x": 80.5,
+                "y": 215.8,
+                "labels": [
+                    "GP2"
+                ]
+            },
+            {
+                "x": 99.2,
+                "y": 215.8,
+                "labels": [
+                    "GP3"
+                ]
+            },
+            {
+                "x": 117.9,
+                "y": 215.8,
+                "labels": [
+                    "GP4"
+                ]
+            },
+            {
+                "x": 136.6,
+                "y": 215.8,
+                "labels": [
+                    "GP5"
+                ]
+            },
+            {
+                "x": 155.3,
+                "y": 215.8,
+                "labels": [
+                    "GND1"
+                ]
+            },
+            {
+                "x": 174.0,
+                "y": 215.8,
+                "labels": [
+                    "GP6"
+                ]
+            },
+            {
+                "x": 192.7,
+                "y": 215.8,
+                "labels": [
+                    "GP7"
+                ]
+            },
+            {
+                "x": 211.4,
+                "y": 215.8,
+                "labels": [
+                    "GP8"
+                ]
+            },
+            {
+                "x": 230.2,
+                "y": 215.8,
+                "labels": [
+                    "GP9"
+                ]
+            },
+            {
+                "x": 248.9,
+                "y": 215.8,
+                "labels": [
+                    "GND2"
+                ]
+            },
+            {
+                "x": 267.7,
+                "y": 215.8,
+                "labels": [
+                    "GP10"
+                ]
+            },
+            {
+                "x": 286.4,
+                "y": 215.8,
+                "labels": [
+                    "GP11"
+                ]
+            },
+            {
+                "x": 305.2,
+                "y": 215.8,
+                "labels": [
+                    "GP12"
+                ]
+            },
+            {
+                "x": 323.9,
+                "y": 215.8,
+                "labels": [
+                    "GP13"
+                ]
+            },
+            {
+                "x": 342.7,
+                "y": 215.8,
+                "labels": [
+                    "GND3"
+                ]
+            },
+            {
+                "x": 361.4,
+                "y": 215.8,
+                "labels": [
+                    "GP14"
+                ]
+            },
+            {
+                "x": 380.2,
+                "y": 215.8,
+                "labels": [
+                    "GP15"
+                ]
+            },
+            {
+                "x": 24.3,
+                "y": 83.6,
+                "labels": [
+                    "VBUS"
+                ]
+            },
+            {
+                "x": 43.0,
+                "y": 83.6,
+                "labels": [
+                    "VSYS"
+                ]
+            },
+            {
+                "x": 61.8,
+                "y": 83.6,
+                "labels": [
+                    "GND6"
+                ]
+            },
+            {
+                "x": 80.5,
+                "y": 83.6,
+                "labels": [
+                    "3V3_EN"
+                ]
+            },
+            {
+                "x": 99.2,
+                "y": 83.6,
+                "labels": [
+                    "3V3"
+                ]
+            },
+            {
+                "x": 117.9,
+                "y": 83.6,
+                "labels": [
+                    "ADC_VREF"
+                ]
+            },
+            {
+                "x": 136.6,
+                "y": 83.6,
+                "labels": [
+                    "GP28"
+                ]
+            },
+            {
+                "x": 155.4,
+                "y": 83.6,
+                "labels": [
+                    "AGND"
+                ]
+            },
+            {
+                "x": 174.1,
+                "y": 83.6,
+                "labels": [
+                    "GP27"
+                ]
+            },
+            {
+                "x": 192.8,
+                "y": 83.6,
+                "labels": [
+                    "GP26"
+                ]
+            },
+            {
+                "x": 211.5,
+                "y": 83.6,
+                "labels": [
+                    "RUN"
+                ]
+            },
+            {
+                "x": 230.2,
+                "y": 83.6,
+                "labels": [
+                    "GP22"
+                ]
+            },
+            {
+                "x": 248.9,
+                "y": 83.6,
+                "labels": [
+                    "GND5"
+                ]
+            },
+            {
+                "x": 267.6,
+                "y": 83.6,
+                "labels": [
+                    "GP21"
+                ]
+            },
+            {
+                "x": 286.3,
+                "y": 83.6,
+                "labels": [
+                    "GP20"
+                ]
+            },
+            {
+                "x": 305.0,
+                "y": 83.6,
+                "labels": [
+                    "GP19"
+                ]
+            },
+            {
+                "x": 323.7,
+                "y": 83.6,
+                "labels": [
+                    "GP18"
+                ]
+            },
+            {
+                "x": 342.5,
+                "y": 83.6,
+                "labels": [
+                    "GND4"
+                ]
+            },
+            {
+                "x": 361.2,
+                "y": 83.6,
+                "labels": [
+                    "GP17"
+                ]
+            },
+            {
+                "x": 379.9,
+                "y": 83.6,
+                "labels": [
+                    "GP16"
+                ]
+            }
+        ],
+        "leds": [
+            {
+                "x": 42.5,
+                "y": 156.7,
+                "w": 5.9,
+                "h": 8.8,
+                "color": "#00ff00",
+                "label": "LED"
+            }
+        ],
+        "touchPads": [],
+        "buttons": []
+    },
+    "gpioPinMap": {
+        "LED": "LED",
+        "GP0": "GP0",
+        "GP1": "GP1",
+        "GND0": "GND0",
+        "GP2": "GP2",
+        "GP3": "GP3",
+        "GP4": "GP4",
+        "GP5": "GP5",
+        "GND1": "GND1",
+        "GP6": "GP6",
+        "GP7": "GP7",
+        "GP8": "GP8",
+        "GP9": "GP9",
+        "GND2": "GND2",
+        "GP10": "GP10",
+        "GP11": "GP11",
+        "GP12": "GP12",
+        "GP13": "GP13",
+        "GND3": "GND3",
+        "GP14": "GP14",
+        "GP15": "GP15",
+        "VBUS": "VBUS",
+        "VSYS": "VSYS",
+        "GND6": "GND6",
+        "3V3_EN": "3V3_EN",
+        "3V3": "3V3",
+        "ADC_VREF": "ADC_VREF",
+        "GP28": "GP28",
+        "AGND": "AGND",
+        "GP27": "GP27",
+        "GP26": "GP26",
+        "RUN": "RUN",
+        "GP22": "GP22",
+        "GND5": "GND5",
+        "GP21": "GP21",
+        "GP20": "GP20",
+        "GP19": "GP19",
+        "GP18": "GP18",
+        "GND4": "GND4",
+        "GP17": "GP17",
+        "GP16": "GP16",
+        "P0": "GP0",
+        "P1": "GP1",
+        "P2": "GP2",
+        "P3": "GP3",
+        "P4": "GP4",
+        "P5": "GP5",
+        "P6": "GP6",
+        "P7": "GP7",
+        "P8": "GP8",
+        "P9": "GP9",
+        "P10": "GP10",
+        "P11": "GP11",
+        "P12": "GP12",
+        "P13": "GP13",
+        "P14": "GP14",
+        "P15": "GP15",
+        "P16": "GP16",
+        "P17": "GP17",
+        "P18": "GP18",
+        "P19": "GP19",
+        "P20": "GP20",
+        "P21": "GP21",
+        "P22": "GP22",
+        "P26": "GP26",
+        "P27": "GP27",
+        "P28": "GP28",
+        "GND": "GND3"
+    },
+    "groundPins": [
+        "GND0",
+        "GND1",
+        "GND2",
+        "GND3",
+        "GND4",
+        "GND5",
+        "GND6",
+        "AGND"
     ],
-    "touchPads": [],
-    "buttons": [],
-    "reset": {
-      "x": 17.83250718937794,
-      "y": 45.50404575993516,
-      "w": 13.596367783800709,
-      "h": 13.596390332336691
-    }
-  },
-  "gpioPinMap": {},
-  "groundPins": [],
-  "threeVoltPins": [],
-  "i2cPins": {},
-  "onboardComponents": [
-    "pixel"
-  ],
-  "marginWhenBreadboarding": [
-    0,
-    0,
-    80,
-    0
-  ],
-  "spiPins": {}
+    "threeVoltPins": [
+        "3V3"
+    ],
+    "i2cPins": {
+        "SDA": "GP4",
+        "SCL": "GP5"
+    },
+    "spiPins": {
+        "MOSI": "GP19",
+        "MISO": "GP16",
+        "SCK": "GP18"
+    },
+    "onboardComponents": [
+        "pixel"
+    ],
+    "marginWhenBreadboarding": [
+        0,
+        0,
+        80,
+        0
+    ]
 }
