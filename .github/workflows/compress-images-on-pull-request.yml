@@ -9,8 +9,8 @@ jobs:
     name: calibreapp/image-actions
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - uses: calibreapp/image-actions@master
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: calibreapp/image-actions@9d037c06280028c110ff61c433ad4dc7d33c3c43 # 1.5.0
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           jpegQuality: "80"
